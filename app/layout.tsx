@@ -6,7 +6,11 @@ import Footer from '@/components/Footer';
 import { generateOrganizationSchema } from '@/lib/schema';
 import { COMPANY_INFO } from '@/lib/utils';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: '--font-inter',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(COMPANY_INFO.website),
@@ -116,7 +120,7 @@ export default function RootLayout({
           </>
         )}
       </head>
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${inter.variable} font-sans antialiased bg-base-50`}>
         <Header />
         <main className="min-h-screen">
           {children}

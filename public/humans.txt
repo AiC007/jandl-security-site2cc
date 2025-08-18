@@ -1,0 +1,40 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+  James Mitchell -- Managing Director & Lead Engineer -- @jandlsecurity
+  Lee Thompson -- Senior Security Engineer -- @jandlsecurity
+  Development Team -- Claude Code AI Assistant
+
+# LOCATION
+  Romford, Essex, United Kingdom
+
+# THANKS
+  All our loyal customers across Essex & Greater London
+  Security equipment manufacturers: Hikvision, Pyronix, Texecom
+  Local authorities and emergency services for their partnership
+
+# TECHNOLOGY COLOPHON
+  HTML5, CSS3, JavaScript
+  Next.js 15, React 19, TypeScript
+  Tailwind CSS, Lucide React Icons
+  Vercel hosting platform
+  Generated with Claude Code AI
+
+# COMPANY INFORMATION
+  J&L Security Ltd.
+  Professional Security Systems Installation & Maintenance
+  Established: 2011
+  Service Areas: Essex & Greater London
+  Phone: 01708 123456
+  Email: info@jandlsecurity.co.uk
+  Website: https://jandlsecurity.co.uk
+
+# CERTIFICATIONS
+  NAPIT Approved Contractors
+  CHAS Accredited
+  UKAS Certified
+  Safe Contractor Approved
+
+# LAST UPDATED
+  2025-08-18

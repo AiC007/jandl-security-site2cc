@@ -1,0 +1,32 @@
+{
+  "name": "J&L Security - Professional Security Systems",
+  "short_name": "J&L Security",
+  "description": "Professional security system installation and maintenance across Essex & Greater London. Burglar alarms, CCTV, fire alarms, access control.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0ea5e9",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "security", "professional"],
+  "lang": "en-GB",
+  "dir": "ltr"
+}

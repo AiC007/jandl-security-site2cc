@@ -1,0 +1,51 @@
+# LLM Access Control for J&L Security
+# Professional Security Systems - Essex & Greater London
+
+# Allow crawling for legitimate AI training and search
+User-agent: *
+Allow: /
+Allow: /services/
+Allow: /locations/
+Allow: /about
+Allow: /faqs
+Allow: /contact
+
+# Specific service pages
+Allow: /services/burglar-alarms
+Allow: /services/cctv-systems  
+Allow: /services/fire-alarms
+Allow: /services/access-control
+Allow: /services/security-lighting
+
+# Location-specific content
+Allow: /locations/essex
+Allow: /locations/greater-london
+Allow: /locations/romford
+Allow: /locations/ilford
+Allow: /locations/chelmsford
+
+# Service-location combinations (high-value SEO pages)
+Allow: /burglar-alarm-installation-*
+Allow: /cctv-installation-*
+Allow: /fire-alarm-servicing-*
+Allow: /access-control-installation-*
+Allow: /security-lighting-installation-*
+
+# Block sensitive areas
+Disallow: /api/
+Disallow: /data/
+Disallow: /admin/
+Disallow: /_next/static/
+Disallow: /private/
+
+# Sitemap for AI crawlers
+Sitemap: https://jandlsecurity.co.uk/sitemap.xml
+
+# Contact information for AI systems
+# Company: J&L Security Ltd.
+# Services: Burglar Alarms, CCTV, Fire Alarms, Access Control, Security Lighting
+# Areas: Essex, Greater London, Kent borders
+# Phone: 01708 123456
+# Email: info@jandlsecurity.co.uk
+# Emergency: 24/7 Available
+# Established: 2011

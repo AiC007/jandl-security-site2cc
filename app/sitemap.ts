@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { COMPANY_INFO } from '@/lib/utils';
+import { COMPANY_INFO, generateSlug } from '@/lib/utils';
 import { serviceLocationMatrix } from '@/lib/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -46,12 +46,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // Service-location pages
-  const serviceLocationPages = serviceLocationMatrix.map((item) => ({
-    url: `${baseUrl}/${item.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }));
+  // URL must match the [service]/[location] Next.js route: /{service-slug}/{location-slug}
+  const serviceLocationPages = serviceLocationMatrix.map((item) => {
+    const serviceSlug = generateSlug(item.service);
+    const locationSlug = item.location.toLowerCase().replace(/ /g, '-');
+    return {
+      url: `${baseUrl}/${serviceSlug}/${locationSlug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    };
+  });
 
   // Main service pages
   const mainServices = [

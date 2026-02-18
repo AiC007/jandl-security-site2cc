@@ -19,7 +19,6 @@ Disallow: /api/
 Disallow: /data/
 Disallow: /_next/
 Disallow: /admin/
-Disallow: *.json
 
 # Sitemaps
 Sitemap: ${COMPANY_INFO.website}/sitemap.xml

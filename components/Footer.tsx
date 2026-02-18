@@ -142,7 +142,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-base-400">
               © {new Date().getFullYear()} {COMPANY_INFO.name}. All rights reserved. 
-              <span className="ml-2">Company Registration: 12345678</span>
+              <span className="ml-2">Registered in England & Wales</span>
             </div>
             <div className="flex space-x-6 text-sm">
               <Link href="/privacy" className="text-base-400 hover:text-primary-400 transition-colors">

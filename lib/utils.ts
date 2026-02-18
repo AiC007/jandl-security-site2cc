@@ -28,8 +28,8 @@ export function formatPhoneNumber(phone: string): string {
 export const COMPANY_INFO = {
   name: "J&L Security",
   tagline: "Alarms, CCTV & Fire Protection — Installed & Maintained Across Essex & Greater London",
-  phone: "01708 123456",
-  whatsapp: "447708123456",
+  phone: "0204 538 5925",
+  whatsapp: "442045385925",
   email: "info@jandlsecurity.co.uk",
   address: "Unit 3, Security House, Romford, Essex RM1 2XX",
   website: "https://jandlsecurity.co.uk",

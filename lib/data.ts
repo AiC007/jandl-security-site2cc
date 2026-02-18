@@ -93,6 +93,96 @@ export const locations: Location[] = [
     postcode: 'SS13-SS16',
     nearbyAreas: ['Wickford', 'Billericay', 'Laindon', 'Pitsea'],
     landmarks: ['Eastgate Shopping Centre', 'Basildon Sporting Village', 'Wat Tyler Country Park']
+  },
+  {
+    id: 'hornchurch',
+    name: 'Hornchurch',
+    slug: 'hornchurch',
+    county: 'Greater London',
+    postcode: 'RM11-RM12',
+    nearbyAreas: ['Upminster', 'Emerson Park', 'Elm Park', 'Rainham', 'Dagenham'],
+    landmarks: ['Hornchurch Country Park', 'Queen Elizabeth II Country Park', "St Andrew's Church"]
+  },
+  {
+    id: 'barking',
+    name: 'Barking',
+    slug: 'barking',
+    county: 'Greater London',
+    postcode: 'IG11',
+    nearbyAreas: ['Dagenham', 'Ilford', 'Chadwell Heath', 'East Ham', 'Goodmayes'],
+    landmarks: ['Barking Station', 'Barking Park', 'Barking Abbey Ruins']
+  },
+  {
+    id: 'dagenham',
+    name: 'Dagenham',
+    slug: 'dagenham',
+    county: 'Greater London',
+    postcode: 'RM9-RM10',
+    nearbyAreas: ['Barking', 'Rainham', 'Romford', 'Hornchurch', 'Chadwell Heath'],
+    landmarks: ['Central Park Dagenham', 'Dagenham Civic Centre', 'Beam Parklands']
+  },
+  {
+    id: 'redbridge',
+    name: 'Redbridge',
+    slug: 'redbridge',
+    county: 'Greater London',
+    postcode: 'IG4-IG6',
+    nearbyAreas: ['Ilford', 'Wanstead', 'Woodford', 'Gants Hill', 'Barkingside'],
+    landmarks: ['Redbridge Town Hall', 'Valentines Park', 'Gants Hill Station']
+  },
+  {
+    id: 'enfield',
+    name: 'Enfield',
+    slug: 'enfield',
+    county: 'Greater London',
+    postcode: 'EN1-EN3',
+    nearbyAreas: ['Barnet', 'Waltham Forest', 'Chingford', 'Waltham Abbey', 'Southgate'],
+    landmarks: ['Enfield Town Station', 'Forty Hall Estate', 'Chase Farm Hospital']
+  },
+  {
+    id: 'stratford',
+    name: 'Stratford',
+    slug: 'stratford',
+    county: 'Greater London',
+    postcode: 'E15',
+    nearbyAreas: ['West Ham', 'Forest Gate', 'Leyton', 'Bow', 'Canary Wharf'],
+    landmarks: ['Westfield Stratford City', 'Queen Elizabeth Olympic Park', 'Stratford International Station']
+  },
+  {
+    id: 'canary-wharf',
+    name: 'Canary Wharf',
+    slug: 'canary-wharf',
+    county: 'Greater London',
+    postcode: 'E14',
+    nearbyAreas: ['Docklands', 'Isle of Dogs', 'Greenwich', 'Bermondsey', 'Poplar'],
+    landmarks: ['Canary Wharf Tower', 'Jubilee Line Station', 'West India Quay', 'Crossrail Station']
+  },
+  {
+    id: 'greenwich',
+    name: 'Greenwich',
+    slug: 'greenwich',
+    county: 'Greater London',
+    postcode: 'SE10',
+    nearbyAreas: ['Woolwich', 'Lewisham', 'Deptford', 'Blackheath', 'Charlton'],
+    landmarks: ['Royal Observatory', 'National Maritime Museum', 'Cutty Sark', 'The O2 Arena']
+  },
+  {
+    id: 'harlow',
+    name: 'Harlow',
+    slug: 'harlow',
+    county: 'Essex',
+    postcode: 'CM17-CM20',
+    nearbyAreas: ['Epping', 'Bishops Stortford', 'Sawbridgeworth', 'Loughton', 'Hoddesdon'],
+    landmarks: ['The Harvey Centre', 'Harlow Town Park', 'Gibberd Garden', 'Harlow Town Station']
+  },
+  {
+    id: 'epping',
+    name: 'Epping',
+    slug: 'epping',
+    county: 'Essex',
+    postcode: 'CM16',
+    nearbyAreas: ['Loughton', 'Buckhurst Hill', 'Chigwell', 'Ongar', 'Waltham Abbey'],
+    landmarks: ['Epping Forest', 'Epping Station', 'Epping High Street', 'Copped Hall']
   }
 ];
 

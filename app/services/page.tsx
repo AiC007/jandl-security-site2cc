@@ -212,8 +212,8 @@ export default function ServicesPage() {
                     <p className="text-lg text-gray-600 mb-6">{service.description}</p>
                     
                     {service.specialNote && (
-                      <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
-                        <p className="text-sm text-blue-700">{service.specialNote}</p>
+                      <div className="bg-primary-50 border-l-4 border-primary-400 p-4 mb-6">
+                        <p className="text-sm text-primary-700">{service.specialNote}</p>
                       </div>
                     )}
 
@@ -222,7 +222,7 @@ export default function ServicesPage() {
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                         {service.features.map((feature, idx) => (
                           <li key={idx} className="flex items-center text-gray-700">
-                            <CheckCircle className="h-4 w-4 text-green-600 mr-2 flex-shrink-0" />
+                            <CheckCircle className="h-4 w-4 text-primary-600 mr-2 flex-shrink-0" />
                             <span className="text-sm">{feature}</span>
                           </li>
                         ))}
@@ -244,7 +244,7 @@ export default function ServicesPage() {
                     </div>
 
                     <div className="mb-8">
-                      <p className="text-lg font-medium text-green-600 mb-4">{service.priceRange}</p>
+                      <p className="text-lg font-medium text-primary-600 mb-4">{service.priceRange}</p>
                       <Link
                         href={`/services/${service.slug}`}
                         className="bg-primary-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-700 transition-colors inline-flex items-center"
@@ -276,7 +276,7 @@ export default function ServicesPage() {
                       <ul className="space-y-2">
                         {service.benefits.map((benefit, idx) => (
                           <li key={idx} className="flex items-center text-sm text-gray-700">
-                            <CheckCircle className="h-4 w-4 text-green-600 mr-2 flex-shrink-0" />
+                            <CheckCircle className="h-4 w-4 text-primary-600 mr-2 flex-shrink-0" />
                             {benefit}
                           </li>
                         ))}

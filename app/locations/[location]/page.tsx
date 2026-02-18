@@ -381,7 +381,7 @@ export default async function LocationPage({ params }: Props) {
                   <ul className="space-y-1 mb-4">
                     {service.features.slice(0, 3).map((f) => (
                       <li key={f} className="flex items-center gap-2 text-xs text-gray-600">
-                        <CheckCircle className="h-3 w-3 text-green-500 flex-shrink-0" />
+                        <CheckCircle className="h-3 w-3 text-primary-500 flex-shrink-0" />
                         {f}
                       </li>
                     ))}

@@ -201,7 +201,7 @@ export default function ContactPage() {
                 <ul className="space-y-2">
                   {servicePromises.map((promise, index) => (
                     <li key={index} className="flex items-center text-gray-700">
-                      <CheckCircle className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-primary-600 mr-3 flex-shrink-0" />
                       <span className="text-sm">{promise}</span>
                     </li>
                   ))}

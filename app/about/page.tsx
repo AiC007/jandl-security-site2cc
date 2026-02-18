@@ -192,7 +192,7 @@ export default function AboutPage() {
                     <div className="space-y-1">
                       {member.qualifications.map((qual, idx) => (
                         <div key={idx} className="flex items-center text-sm text-gray-600">
-                          <CheckCircle className="h-4 w-4 text-green-600 mr-2 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-primary-600 mr-2 flex-shrink-0" />
                           {qual}
                         </div>
                       ))}
@@ -229,12 +229,12 @@ export default function AboutPage() {
             ))}
           </div>
 
-          <div className="mt-12 bg-blue-50 border border-blue-200 rounded-lg p-6">
+          <div className="mt-12 bg-primary-50 border border-primary-200 rounded-lg p-6">
             <div className="flex items-start">
-              <Award className="h-6 w-6 text-blue-600 mr-4 flex-shrink-0 mt-1" />
+              <Award className="h-6 w-6 text-primary-600 mr-4 flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-semibold text-blue-900 mb-2">Health & Safety Commitment</h3>
-                <p className="text-blue-800">
+                <h3 className="text-lg font-semibold text-primary-900 mb-2">Health & Safety Commitment</h3>
+                <p className="text-primary-800">
                   All our engineers are fully qualified with up-to-date health and safety training. We maintain 
                   comprehensive insurance coverage including Public Liability (£2M) and Employers' Liability (£10M). 
                   Our work is carried out in strict compliance with current regulations including CDM 2015, 
@@ -304,9 +304,9 @@ export default function AboutPage() {
                 ))}
               </div>
 
-              <div className="mt-6 bg-green-50 border border-green-200 rounded-lg p-4">
-                <h4 className="font-semibold text-green-900 mb-2">Extended Warranties Available</h4>
-                <p className="text-green-800 text-sm">
+              <div className="mt-6 bg-primary-50 border border-primary-200 rounded-lg p-4">
+                <h4 className="font-semibold text-primary-900 mb-2">Extended Warranties Available</h4>
+                <p className="text-primary-800 text-sm">
                   Ask about our extended warranty packages for additional peace of mind and 
                   priority support options.
                 </p>

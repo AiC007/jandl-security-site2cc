@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Phone, MessageCircle, CalendarDays, Shield, CheckCircle, MapPin } from 'lucide-react';
 import { serviceLocationMatrix } from '@/lib/data';
 import { COMPANY_INFO } from '@/lib/utils';
-import { generateFAQPageSchema, generateServiceSchema } from '@/lib/schema';
+import { generateFAQPageSchema, generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
 
 interface ServiceLocationPageProps {
@@ -537,6 +537,11 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
     content.metaDescription,
     combination.location
   );
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: COMPANY_INFO.website },
+    { name: 'Services', url: `${COMPANY_INFO.website}/services` },
+    { name: `${combination.service} in ${combination.location}`, url: `${COMPANY_INFO.website}/${resolvedParams.service}-${resolvedParams.location}` },
+  ]);
 
   return (
     <>
@@ -544,9 +549,35 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([faqSchema, serviceSchema]),
+          __html: JSON.stringify([faqSchema, serviceSchema, breadcrumbSchema]),
         }}
       />
+
+      {/* Breadcrumb Navigation */}
+      <nav aria-label="Breadcrumb" className="bg-gray-100 border-b border-gray-200 py-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ol className="flex items-center space-x-2 text-sm" itemScope itemType="https://schema.org/BreadcrumbList">
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <Link href="/" className="text-primary-600 hover:text-primary-700 font-medium" itemProp="item">
+                <span itemProp="name">Home</span>
+              </Link>
+              <meta itemProp="position" content="1" />
+            </li>
+            <li aria-hidden="true"><span className="text-gray-400 mx-1">/</span></li>
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <Link href="/services" className="text-primary-600 hover:text-primary-700 font-medium" itemProp="item">
+                <span itemProp="name">Services</span>
+              </Link>
+              <meta itemProp="position" content="2" />
+            </li>
+            <li aria-hidden="true"><span className="text-gray-400 mx-1">/</span></li>
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem" className="text-gray-600 font-medium truncate">
+              <span itemProp="name">{combination.service} in {combination.location}</span>
+              <meta itemProp="position" content="3" />
+            </li>
+          </ol>
+        </div>
+      </nav>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-12 lg:py-20">

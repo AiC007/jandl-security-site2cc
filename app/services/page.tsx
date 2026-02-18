@@ -38,12 +38,12 @@ const serviceDetails = [
     benefits: ['Insurance premium discounts', 'Deterrent effect on intruders', 'Peace of mind 24/7', 'Remote monitoring capability', 'Quick emergency response'],
     priceRange: 'From £300 for basic systems',
     childPages: [
-      'Wireless Alarm Installation',
-      'Smart Alarm Systems', 
-      'Alarm System Upgrades',
-      'Alarm Servicing & Maintenance',
-      'Alarm System Repairs',
-      'Alarm Takeover Services'
+      { name: 'Wireless Alarm Installation', href: '/wireless-alarm-installation/hornchurch' },
+      { name: 'Smart Alarm Systems',         href: '/smart-alarm-installation/hainault' },
+      { name: 'Alarm System Upgrades',       href: '/alarm-takeover-upgrade/emerson-park' },
+      { name: 'Alarm Servicing & Maintenance', href: '/burglar-alarm-servicing/romford' },
+      { name: 'Alarm System Repairs',        href: '/alarm-repairs/upminster' },
+      { name: 'Alarm Takeover Services',     href: '/takeover-old-alarms/dagenham' },
     ]
   },
   {
@@ -56,12 +56,12 @@ const serviceDetails = [
     benefits: ['Crime prevention & deterrent', 'Evidence collection capability', 'Remote property monitoring', 'Staff & visitor protection', 'Insurance compliance'],
     priceRange: 'From £500 for basic systems',
     childPages: [
-      'IP Camera Systems',
-      '4K CCTV Installation',
-      'NVR System Upgrades', 
-      'CCTV Maintenance',
-      'CCTV System Repairs',
-      'Commercial CCTV Solutions'
+      { name: 'IP Camera Systems',           href: '/cctv-installation/goodmayes' },
+      { name: '4K CCTV Installation',        href: '/cctv-upgrades-4k/stratford' },
+      { name: 'NVR System Upgrades',         href: '/cctv-remote-viewing-setup/goodmayes' },
+      { name: 'CCTV Maintenance',            href: '/cctv-maintenance/dagenham' },
+      { name: 'CCTV System Repairs',         href: '/cctv-repairs/seven-kings' },
+      { name: 'Commercial CCTV Solutions',   href: '/commercial-cctv-installation/redbridge' },
     ]
   },
   {
@@ -74,12 +74,12 @@ const serviceDetails = [
     benefits: ['Life safety protection', 'Property damage prevention', 'Legal compliance assured', 'Insurance requirement met', 'Early fire detection'],
     priceRange: 'From £800 for small commercial',
     childPages: [
-      'Commercial Fire Alarms',
-      'HMO Fire Detection',
-      'Fire Alarm Servicing',
-      'Fire System Maintenance',
-      'BS 5839-1 Compliance',
-      'Fire Alarm Monitoring'
+      { name: 'Commercial Fire Alarms',      href: '/fire-alarm-installation/brentwood' },
+      { name: 'HMO Fire Detection',          href: '/hmo-fire-alarm-testing/basildon' },
+      { name: 'Fire Alarm Servicing',        href: '/fire-alarm-servicing/chelmsford' },
+      { name: 'Fire System Maintenance',     href: '/fire-alarm-maintenance/harlow' },
+      { name: 'BS 5839-1 Compliance',        href: '/bs5839-compliance/docklands' },
+      { name: 'Fire Alarm Monitoring',       href: '/fire-alarm-monitoring/greenwich' },
     ],
     specialNote: 'Professional fire alarm servicing is typically performed every 6 months to align with BS 5839-1 recommendations. Recent 2025 updates allow a 5–7 month window for scheduled visits, with weekly user tests advised.'
   },
@@ -93,12 +93,12 @@ const serviceDetails = [
     benefits: ['Controlled building access', 'Employee tracking capability', 'Visitor management system', 'Enhanced security levels', 'Remote operation possible'],
     priceRange: 'From £400 for basic systems',
     childPages: [
-      'Door Entry Systems',
-      'Video Intercom Installation',
-      'Keypad Access Systems',
-      'Biometric Access Control',
-      'Magnetic Lock Installation',
-      'Access System Maintenance'
+      { name: 'Door Entry Systems',          href: '/door-entry-systems/loughton' },
+      { name: 'Video Intercom Installation', href: '/video-intercom-installation/buckhurst-hill' },
+      { name: 'Keypad Access Systems',       href: '/keypad-fob-systems/barnet' },
+      { name: 'Biometric Access Control',    href: '/access-control-installation/chigwell' },
+      { name: 'Magnetic Lock Installation',  href: '/maglock-installation/harrow' },
+      { name: 'Access System Maintenance',   href: '/access-control-maintenance/islington' },
     ]
   },
   {
@@ -111,12 +111,12 @@ const serviceDetails = [
     benefits: ['Crime deterrent effect', 'Safe evacuation routes', 'Legal compliance met', 'Energy efficient operation', 'Automatic operation'],
     priceRange: 'From £150 per light point',
     childPages: [
-      'Security Lighting Installation',
-      'Emergency Lighting Systems',
-      'LED Security Lights',
-      'PIR Sensor Lights',
-      'Emergency Light Testing',
-      'Lighting Maintenance'
+      { name: 'Security Lighting Installation', href: '/security-lighting-installation/woodford' },
+      { name: 'Emergency Lighting Systems',     href: '/emergency-lighting-installation/billericay' },
+      { name: 'LED Security Lights',            href: '/security-lighting-installation/woodford' },
+      { name: 'PIR Sensor Lights',              href: '/security-lighting-maintenance/upminster' },
+      { name: 'Emergency Light Testing',        href: '/emergency-lighting-testing/walthamstow' },
+      { name: 'Lighting Maintenance',           href: '/security-lighting-maintenance/upminster' },
     ]
   }
 ];
@@ -260,11 +260,11 @@ export default function ServicesPage() {
                       {service.childPages.map((childPage, idx) => (
                         <Link
                           key={idx}
-                          href={`/services/${service.slug}/${childPage.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-')}`}
+                          href={childPage.href}
                           className="block text-gray-700 hover:text-primary-600 transition-colors"
                         >
                           <div className="flex items-center justify-between py-2 border-b border-gray-200 last:border-b-0">
-                            <span className="text-sm">{childPage}</span>
+                            <span className="text-sm">{childPage.name}</span>
                             <ArrowRight className="h-4 w-4" />
                           </div>
                         </Link>

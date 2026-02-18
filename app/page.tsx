@@ -81,7 +81,7 @@ export default function Home() {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-16 lg:py-24">
+      <section className="bg-gradient-to-br from-primary-900 via-primary-700 to-primary-600 text-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -108,7 +108,7 @@ export default function Home() {
               </div>
               <div className="flex flex-wrap gap-2">
                 {trustBadges.map((badge) => (
-                  <span key={badge} className="bg-primary-500 px-3 py-1 rounded-full text-sm">
+                  <span key={badge} className="bg-white/15 border border-white/30 px-3 py-1 rounded-full text-sm font-medium backdrop-blur-sm">
                     {badge}
                   </span>
                 ))}
@@ -126,23 +126,31 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <Clock className="h-12 w-12 text-primary-600 mx-auto mb-4" />
+            <div className="text-center p-6 rounded-xl hover:bg-white hover:shadow-md transition-all">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-50 rounded-full mb-4">
+                <Clock className="h-8 w-8 text-primary-600" />
+              </div>
               <h3 className="text-lg font-semibold mb-2">Same-Day Surveys</h3>
               <p className="text-gray-600 text-sm">Free security assessments available today</p>
             </div>
-            <div className="text-center">
-              <Shield className="h-12 w-12 text-primary-600 mx-auto mb-4" />
+            <div className="text-center p-6 rounded-xl hover:bg-white hover:shadow-md transition-all">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-50 rounded-full mb-4">
+                <Shield className="h-8 w-8 text-primary-600" />
+              </div>
               <h3 className="text-lg font-semibold mb-2">NSI Standards</h3>
               <p className="text-gray-600 text-sm">Professional installation to industry standards</p>
             </div>
-            <div className="text-center">
-              <CheckCircle className="h-12 w-12 text-primary-600 mx-auto mb-4" />
+            <div className="text-center p-6 rounded-xl hover:bg-white hover:shadow-md transition-all">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-50 rounded-full mb-4">
+                <CheckCircle className="h-8 w-8 text-primary-600" />
+              </div>
               <h3 className="text-lg font-semibold mb-2">24/7 Monitoring</h3>
               <p className="text-gray-600 text-sm">Round-the-clock monitoring and support</p>
             </div>
-            <div className="text-center">
-              <Lightbulb className="h-12 w-12 text-primary-600 mx-auto mb-4" />
+            <div className="text-center p-6 rounded-xl hover:bg-white hover:shadow-md transition-all">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-50 rounded-full mb-4">
+                <Lightbulb className="h-8 w-8 text-primary-600" />
+              </div>
               <h3 className="text-lg font-semibold mb-2">Local Engineers</h3>
               <p className="text-gray-600 text-sm">Essex & Greater London based team</p>
             </div>
@@ -167,9 +175,11 @@ export default function Home() {
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <div key={index} className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <div key={index} className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl hover:border-primary-200 transition-all group">
                   <div className="flex items-center mb-4">
-                    <Icon className="h-8 w-8 text-primary-600 mr-4" />
+                    <div className="flex-shrink-0 w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary-100 transition-colors">
+                      <Icon className="h-6 w-6 text-primary-600" />
+                    </div>
                     <h3 className="text-xl font-semibold">{service.name}</h3>
                   </div>
                   <p className="text-gray-600 mb-4">{service.description}</p>
@@ -218,8 +228,8 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
             {['Ilford', 'Romford', 'Chelmsford', 'Brentwood', 'Basildon', 'Hornchurch', 
               'Barking', 'Redbridge', 'Enfield', 'Stratford', 'Canary Wharf', 'Greenwich'].map((location) => (
-              <div key={location} className="bg-white p-4 rounded-lg shadow-sm">
-                <Link 
+              <div key={location} className="bg-white p-4 rounded-lg shadow-sm border-2 border-transparent hover:border-primary-400 hover:shadow-md transition-all">
+                <Link
                   href={`/locations/${location.toLowerCase().replace(' ', '-')}`}
                   className="text-gray-700 hover:text-primary-600 font-medium"
                 >
@@ -251,7 +261,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-lg p-6">
+              <div key={index} className="bg-white border border-gray-200 rounded-xl p-6 border-l-4 border-l-primary-500 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
@@ -269,7 +279,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-primary-600 text-white">
+      <section className="py-16 bg-gradient-to-br from-primary-800 to-primary-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             Ready to Secure Your Property?

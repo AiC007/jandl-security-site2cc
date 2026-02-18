@@ -14,17 +14,17 @@ export default {
       },
       colors: {
         primary: {
-          50: '#ecfdf5',
-          100: '#d1fae5',
-          200: '#a7f3d0',
-          300: '#6ee7b7',
-          400: '#34d399',
-          500: '#10b981', // emerald-500
-          600: '#059669', // emerald-600
-          700: '#047857',
-          800: '#065f46',
-          900: '#064e3b',
-          950: '#022c22',
+          50: '#fff5ea',
+          100: '#fde8d2',
+          200: '#fbc9a0',
+          300: '#f9a66a',
+          400: '#f77f38',
+          500: '#f97015', // brand orange
+          600: '#e9550b', // main brand orange
+          700: '#bf3f0c',
+          800: '#8e2b0a',
+          900: '#6b1e07',
+          950: '#3d1004',
         },
         accent: {
           50: '#f0f9ff',
@@ -70,7 +70,7 @@ export default {
       },
       boxShadow: {
         'glass': '0 0 0 1px rgba(255, 255, 255, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
-        'glow': '0 0 20px rgba(16, 185, 129, 0.15)',
+        'glow': '0 0 20px rgba(233, 85, 11, 0.20)',
       },
       backdropBlur: {
         'xs': '2px',

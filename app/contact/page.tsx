@@ -161,7 +161,7 @@ export default function ContactPage() {
                       {COMPANY_INFO.address}
                     </address>
                     <p className="text-sm text-gray-600 mt-2">
-                      Easily accessible from the A12 and A127, with parking available on-site.
+                      Easily accessible from the A127 and M25, with parking available on-site.
                     </p>
                   </div>
                 </div>
@@ -218,7 +218,7 @@ export default function ContactPage() {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Find Us</h2>
             <p className="text-lg text-gray-600">
-              Centrally located in Romford for easy access across Essex and Greater London
+              Located in Great Warley, Brentwood for easy access across Essex and Greater London
             </p>
           </div>
 
@@ -229,7 +229,7 @@ export default function ContactPage() {
               <p className="text-gray-600 text-lg">Interactive Google Map</p>
               <p className="text-gray-500 text-sm mt-2">
                 Embed Google Maps showing our location at:<br />
-                Unit 3, Security House, Romford, Essex RM1 2XX
+                Jubilee House No3, The Drive, Great Warley, Brentwood CM13 3FR
               </p>
             </div>
           </div>
@@ -239,22 +239,22 @@ export default function ContactPage() {
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
               <h3 className="text-lg font-semibold mb-3">By Car</h3>
               <p className="text-gray-700 text-sm">
-                Easy access from A12 and A127. Free on-site parking available. 
-                Sat nav postcode: RM1 2XX
+                Easy access from A127 and M25. Free on-site parking available.
+                Sat nav postcode: CM13 3FR
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
               <h3 className="text-lg font-semibold mb-3">By Train</h3>
               <p className="text-gray-700 text-sm">
-                Romford Station: 5 minutes walk. Direct services from Liverpool Street, 
-                Stratford, and Elizabeth Line connections.
+                Brentwood Station: short drive. Direct services from Liverpool Street
+                and Elizabeth Line connections.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
               <h3 className="text-lg font-semibold mb-3">By Bus</h3>
               <p className="text-gray-700 text-sm">
-                Multiple bus routes serve Romford. Stop at Romford Station or 
-                Main Road for easy walking access to our office.
+                Multiple bus routes serve the Brentwood area.
+                Contact us for detailed directions to our office.
               </p>
             </div>
           </div>

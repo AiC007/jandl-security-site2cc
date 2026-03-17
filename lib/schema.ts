@@ -12,10 +12,10 @@ export function generateOrganizationSchema() {
     "email": COMPANY_INFO.email,
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Unit 3, Security House",
-      "addressLocality": "Romford",
+      "streetAddress": "Jubilee House No3, The Drive, Great Warley",
+      "addressLocality": "Brentwood",
       "addressRegion": "Essex",
-      "postalCode": "RM1 2XX",
+      "postalCode": "CM13 3FR",
       "addressCountry": "GB"
     },
     "areaServed": [
@@ -90,16 +90,16 @@ export function generateLocalBusinessSchema() {
     "email": COMPANY_INFO.email,
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Unit 3, Security House",
-      "addressLocality": "Romford",
+      "streetAddress": "Jubilee House No3, The Drive, Great Warley",
+      "addressLocality": "Brentwood",
       "addressRegion": "Essex",
-      "postalCode": "RM1 2XX",
+      "postalCode": "CM13 3FR",
       "addressCountry": "GB"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "51.5807",
-      "longitude": "0.1816"
+      "latitude": "51.5880",
+      "longitude": "0.2580"
     },
     "openingHoursSpecification": [
       {

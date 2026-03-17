@@ -27,7 +27,7 @@ const locationExtended: Record<string, {
     description: 'Historic market town and major retail centre in East London, now part of the London Borough of Havering. Romford is home to a large residential population alongside a busy commercial and hospitality sector, creating demand for everything from domestic alarm systems to commercial CCTV.',
     population: '~122,000',
     commuting: 'Elizabeth Line to Bond Street in 35 minutes; Liverpool Street in 28 minutes.',
-    whyLocal: 'Based in Romford, J&L Security\'s engineers know the area well. We regularly install systems throughout RM1–RM7 and can offer some of the fastest response times in the area.',
+    whyLocal: 'Based in Brentwood, J&L Security\'s engineers know the area well. We regularly install systems throughout RM1–RM7 and can offer some of the fastest response times in the area.',
     residential: ['Gidea Park', 'Harold Wood', 'Rise Park', 'Collier Row', 'Heath Park', 'Rush Green'],
   },
   chelmsford: {
@@ -146,7 +146,7 @@ const locationFaqs = (locationName: string) => [
   },
   {
     question: `Are you based near ${locationName}?`,
-    answer: `J&L Security is based in Romford, Essex — giving us excellent coverage across ${locationName} and the surrounding areas. Our engineers work throughout Essex and Greater London daily.`,
+    answer: `J&L Security is based in Brentwood, Essex — giving us excellent coverage across ${locationName} and the surrounding areas. Our engineers work throughout Essex and Greater London daily.`,
   },
   {
     question: `Do you provide maintenance contracts in ${locationName}?`,
@@ -295,7 +295,7 @@ export default async function LocationPage({ params }: Props) {
                 <div className="bg-primary-50 rounded-xl p-5">
                   <MapPin className="h-6 w-6 text-primary-600 mb-3" />
                   <h3 className="font-semibold text-gray-900 mb-1">Locally Based</h3>
-                  <p className="text-sm text-gray-600">Engineers working from our Romford base cover {location.name} daily</p>
+                  <p className="text-sm text-gray-600">Engineers working from our Brentwood base cover {location.name} daily</p>
                 </div>
               </div>
             </div>

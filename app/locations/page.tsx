@@ -185,7 +185,7 @@ export default function LocationsPage() {
               </p>
             </div>
             <p className="text-gray-700">
-              Our engineers cover a 30-mile radius from our Romford base, ensuring comprehensive 
+              Our engineers cover a 30-mile radius from our Brentwood base, ensuring comprehensive 
               coverage across Essex, Greater London, and surrounding areas.
             </p>
           </div>

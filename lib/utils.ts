@@ -31,7 +31,7 @@ export const COMPANY_INFO = {
   phone: "0204 538 5925",
   whatsapp: "442045385925",
   email: "info@jandlsecurity.co.uk",
-  address: "Unit 3, Security House, Romford, Essex RM1 2XX",
+  address: "Jubilee House No3, The Drive, Great Warley, Brentwood CM13 3FR",
   website: "https://jandlsecurity.co.uk",
   yearEstablished: "2011",
   serviceAreas: ["Essex", "Greater London", "Kent borders"],

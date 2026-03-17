@@ -37,7 +37,7 @@ const faqCategories = [
       },
       {
         question: 'What areas do you cover?',
-        answer: 'We provide services across Essex, Greater London, and surrounding areas within a 30-mile radius of our Romford base. This includes major towns like Ilford, Chelmsford, Brentwood, Basildon, Stratford, and many others.'
+        answer: 'We provide services across Essex, Greater London, and surrounding areas within a 30-mile radius of our Brentwood base. This includes major towns like Ilford, Romford, Chelmsford, Basildon, Stratford, and many others.'
       },
       {
         question: 'Are your engineers qualified and insured?',

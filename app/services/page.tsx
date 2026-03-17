@@ -33,10 +33,10 @@ const serviceDetails = [
     name: 'Intruder/Burglar Alarms',
     slug: 'burglar-alarms',
     description: 'Comprehensive burglar alarm systems for complete property protection',
-    features: ['Wired & wireless systems', '24/7 monitoring available', 'Smartphone app control', 'Police response eligible', 'Pet-friendly detectors', 'NSI-equivalent installation'],
+    features: ['Wired & wireless systems', '24/7 monitoring available', 'Smartphone app control', 'Police response eligible', 'Pet-friendly detectors', 'SSAIB approved installation'],
     process: ['Free security survey', 'Custom system design', 'Professional installation', 'Full system commissioning', 'User training provided', 'Ongoing maintenance'],
     benefits: ['Insurance premium discounts', 'Deterrent effect on intruders', 'Peace of mind 24/7', 'Remote monitoring capability', 'Quick emergency response'],
-    priceRange: 'From £300 for basic systems',
+    priceRange: 'From £450 for basic systems',
     childPages: [
       { name: 'Wireless Alarm Installation', href: '/wireless-alarm-installation/hornchurch' },
       { name: 'Smart Alarm Systems',         href: '/smart-alarm-installation/hainault' },
@@ -54,7 +54,7 @@ const serviceDetails = [
     features: ['4K resolution cameras', 'Night vision capability', 'Remote viewing via app', 'Cloud & local storage', 'Motion detection alerts', 'Weatherproof design'],
     process: ['Site survey & planning', 'Camera positioning design', 'Professional installation', 'Network configuration', 'Remote access setup', 'Training & handover'],
     benefits: ['Crime prevention & deterrent', 'Evidence collection capability', 'Remote property monitoring', 'Staff & visitor protection', 'Insurance compliance'],
-    priceRange: 'From £500 for basic systems',
+    priceRange: 'From £850 for a 2 camera system',
     childPages: [
       { name: 'IP Camera Systems',           href: '/cctv-installation/goodmayes' },
       { name: '4K CCTV Installation',        href: '/cctv-upgrades-4k/stratford' },
@@ -72,7 +72,7 @@ const serviceDetails = [
     features: ['BS 5839-1 compliant design', 'Smoke & heat detectors', 'Manual call points', 'Automatic fire detection', '6-monthly professional servicing', 'Emergency lighting integration'],
     process: ['Fire risk assessment', 'System design & specification', 'Installation & commissioning', 'Testing & verification', 'Documentation handover', 'Ongoing servicing schedule'],
     benefits: ['Life safety protection', 'Property damage prevention', 'Legal compliance assured', 'Insurance requirement met', 'Early fire detection'],
-    priceRange: 'From £800 for small commercial',
+    priceRange: '',
     childPages: [
       { name: 'Commercial Fire Alarms',      href: '/fire-alarm-installation/brentwood' },
       { name: 'HMO Fire Detection',          href: '/hmo-fire-alarm-testing/basildon' },
@@ -91,7 +91,7 @@ const serviceDetails = [
     features: ['Key fob & card systems', 'Biometric readers available', 'Video door entry', 'Magnetic door locks', 'Audit trail reporting', 'Remote access control'],
     process: ['Security needs assessment', 'System design & specification', 'Hardware installation', 'Software configuration', 'User enrollment', 'Training & support'],
     benefits: ['Controlled building access', 'Employee tracking capability', 'Visitor management system', 'Enhanced security levels', 'Remote operation possible'],
-    priceRange: 'From £400 for basic systems',
+    priceRange: '',
     childPages: [
       { name: 'Door Entry Systems',          href: '/door-entry-systems/loughton' },
       { name: 'Video Intercom Installation', href: '/video-intercom-installation/buckhurst-hill' },
@@ -109,7 +109,7 @@ const serviceDetails = [
     features: ['PIR motion sensors', 'LED energy-efficient lights', 'Timer & daylight controls', 'Emergency backup power', 'Weatherproof housings', 'Automatic testing systems'],
     process: ['Lighting survey & design', 'Compliance assessment', 'Installation planning', 'Professional fitting', 'System commissioning', 'Testing & certification'],
     benefits: ['Crime deterrent effect', 'Safe evacuation routes', 'Legal compliance met', 'Energy efficient operation', 'Automatic operation'],
-    priceRange: 'From £150 per light point',
+    priceRange: '',
     childPages: [
       { name: 'Security Lighting Installation', href: '/security-lighting-installation/woodford' },
       { name: 'Emergency Lighting Systems',     href: '/emergency-lighting-installation/billericay' },
@@ -244,7 +244,7 @@ export default function ServicesPage() {
                     </div>
 
                     <div className="mb-8">
-                      <p className="text-lg font-medium text-primary-600 mb-4">{service.priceRange}</p>
+                      {service.priceRange && <p className="text-lg font-medium text-primary-600 mb-4">{service.priceRange}</p>}
                       <Link
                         href={`/services/${service.slug}`}
                         className="bg-primary-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-700 transition-colors inline-flex items-center"

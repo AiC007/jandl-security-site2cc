@@ -28,8 +28,8 @@ const servicePageData: Record<string, {
   'burglar-alarms': {
     heroTagline: 'Professional Burglar Alarm Installation & Maintenance',
     overview: [
-      'A professionally installed burglar alarm is one of the most effective deterrents against break-ins. At J&L Security we design, supply and install wired and wireless intruder alarm systems for homes, businesses, HMOs and commercial premises across Essex and Greater London.',
-      'Every system we install meets NSI-equivalent standards and is eligible for police response. Our engineers carry out a free on-site survey to identify your risk profile, then recommend the right grade of system — from a simple standalone bell-box to a fully monitored, app-controlled smart alarm with police URN.',
+      'We install and maintain Pyronix wired and wireless systems. A professionally installed burglar alarm is one of the most effective deterrents against break-ins. At J&L Security we design, supply and install wired and wireless intruder alarm systems for homes, businesses, HMOs and commercial premises across Essex and Greater London.',
+      'Every system we install meets SSAIB standards and is eligible for police response.',
     ],
     process: [
       { step: 'Free Security Survey', detail: 'One of our engineers visits your property, assesses entry points, and identifies vulnerabilities at no charge.' },
@@ -47,19 +47,15 @@ const servicePageData: Record<string, {
       'Schools and healthcare facilities',
       'Listed buildings (wireless systems available)',
     ],
-    pricing: 'From £350 for a standard domestic system — full quote provided after free survey.',
+    pricing: 'From £400 for a standard domestic system — full quote provided after free survey.',
     faqs: [
       {
-        question: 'What is the difference between a monitored and unmonitored alarm?',
-        answer: 'An unmonitored (bell-only) alarm sounds a siren and strobe when triggered. A monitored alarm also sends an alert to an Alarm Receiving Centre (ARC) staffed 24/7 who can dispatch a key holder or the police. Monitored alarms are typically required by insurers for higher-risk properties.',
-      },
-      {
         question: 'Do you install wireless burglar alarms?',
-        answer: 'Yes. Wireless alarms are ideal for properties where cable runs are difficult — listed buildings, rented premises, or properties with solid walls. We install Texecom, Pyronix, and Ajax wireless systems. Battery life on modern wireless sensors typically exceeds 3 years.',
+        answer: 'Yes. Wireless alarms are ideal for properties where cable runs are difficult — listed buildings, rented premises, or properties with solid walls. We install Pyronix wireless systems. Battery life on modern wireless sensors typically exceeds 3 years.',
       },
       {
         question: 'Will a burglar alarm reduce my home insurance premium?',
-        answer: 'Most insurers offer a discount of 5–15% for a professionally installed, NSI-equivalent alarm. We provide the documentation your insurer requires.',
+        answer: 'Some insurers may offer a discount for a professionally installed SSAIB approved intruder alarm. Once installed, we provide all the documentation your insurer requires.',
       },
       {
         question: 'Can you take over my existing alarm system?',
@@ -71,7 +67,7 @@ const servicePageData: Record<string, {
       },
       {
         question: 'What alarm brands do you install?',
-        answer: 'We install Texecom, Pyronix, Honeywell, Ajax, and Bosch systems depending on the application and customer requirements.',
+        answer: 'We install and maintain Pyronix Euro range or the Enforcer Range (version 11).',
       },
     ],
   },
@@ -80,7 +76,7 @@ const servicePageData: Record<string, {
     heroTagline: 'CCTV Installation & Maintenance — 4K Cameras, Remote Viewing',
     overview: [
       'High-definition CCTV is essential for both deterrence and evidence collection. J&L Security designs and installs IP CCTV systems for residential and commercial properties throughout Essex and Greater London, from a single camera above a front door to a 64-channel enterprise system covering a warehouse complex.',
-      'All our systems include remote viewing via smartphone app, motion detection alerts, and recording options ranging from local NVR storage to cloud backup. We use Hikvision, Dahua, and Axis cameras depending on the application.',
+      'We install and maintain Uniview cameras. All our systems include remote viewing via smartphone app, motion detection alerts, and recording options ranging from local NVR storage to cloud backup.',
     ],
     process: [
       { step: 'Site Survey & Design', detail: 'We survey your site, identify blind spots, assess lighting conditions, and design an optimal camera layout.' },
@@ -98,7 +94,7 @@ const servicePageData: Record<string, {
       'Schools and care homes',
       'Construction sites',
     ],
-    pricing: 'From £500 for a 4-camera 4K domestic system — full quote after free survey.',
+    pricing: 'From £850 for a 2 camera system.',
     faqs: [
       {
         question: 'What resolution CCTV do you recommend?',
@@ -106,19 +102,11 @@ const servicePageData: Record<string, {
       },
       {
         question: 'Can I view my CCTV remotely on my phone?',
-        answer: 'Yes. All our modern IP systems include app-based remote viewing (Hik-Connect, DMSS, or similar). You can view live and recorded footage from anywhere with an internet connection, and receive motion alert notifications.',
-      },
-      {
-        question: 'How long is CCTV footage stored?',
-        answer: 'Retention depends on the size of your hard drive and the number of cameras. We typically configure systems for 30 days of continuous recording. We can advise on storage capacity during the survey.',
+        answer: 'The cameras we install can be accessed through the UniEase app. This allows you to view live footage, record footage and playback.',
       },
       {
         question: 'Do I need planning permission to install CCTV?',
         answer: 'Domestic CCTV on your own property does not generally require planning permission. Commercial CCTV may require signage under the ICO CCTV Code of Practice. We advise on compliance during installation.',
-      },
-      {
-        question: 'Can you upgrade my old analogue CCTV to IP?',
-        answer: 'In many cases we can reuse existing cabling with HD-TVI or AHD cameras for a cost-effective upgrade. Where cabling is too old or insufficient, we can install new IP cameras over CAT6 or WiFi.',
       },
       {
         question: 'Do you offer CCTV maintenance contracts?',
@@ -130,15 +118,14 @@ const servicePageData: Record<string, {
   'fire-alarms': {
     heroTagline: 'Fire Alarm Installation & Servicing — BS 5839-1 Compliant',
     overview: [
-      'A properly designed and maintained fire alarm system saves lives and protects property. J&L Security installs, commissions, and services fire detection systems for commercial premises, HMOs, schools, care homes, and landlord properties across Essex and Greater London.',
-      'All our commercial fire alarm installations comply with BS 5839-1:2017 and are designed following a fire risk assessment. We install conventional and addressable systems from Morley, Gent, and Apollo, and provide 6-monthly servicing contracts to keep your system legally compliant.',
+      'All of our fire alarms are installed to comply with BS 5839:1. We install both conventional and addressable systems from C-Tech, Fike, Haes, Kentech, Advanced, EDA, EMS, Smartcell and Zeta. We can also provide service contracts to ensure your system remains legally compliant.',
     ],
     process: [
       { step: 'Fire Risk Assessment Review', detail: 'We review your existing fire risk assessment (or recommend one) to determine the appropriate category of system.' },
-      { step: 'System Design', detail: 'We produce a design drawing showing detector and call point positions, zoning, and panel location in accordance with BS 5839-1.' },
+      { step: 'System Design', detail: 'We produce a tailored quotation to meet your system design requirements which outlines positioning of equipment to ensure compliance with BS 5839:1.' },
       { step: 'Installation', detail: 'Qualified engineers install the system with trunking and conduit work to a professional standard.' },
       { step: 'Commissioning', detail: 'The system is fully commissioned with all devices walked and tested. We produce a commissioning certificate.' },
-      { step: 'Documentation', detail: 'You receive the design drawing, commissioning certificate, logbook, and any compliance documentation required by your insurer or local authority.' },
+      { step: 'Documentation', detail: 'You will receive all relevant compliance documentation once the final balance has been paid which includes a log book.' },
       { step: '6-Monthly Servicing', detail: 'We service your system twice per year as required by BS 5839-1, including testing all detectors, call points, and sounders.' },
     ],
     whoFor: [
@@ -149,7 +136,7 @@ const servicePageData: Record<string, {
       'Warehouses and industrial buildings',
       'Residential blocks and flats',
     ],
-    pricing: 'From £800 for a small commercial system — full quote after free survey.',
+    pricing: '',
     faqs: [
       {
         question: 'What is the difference between a conventional and addressable fire alarm?',
@@ -165,15 +152,15 @@ const servicePageData: Record<string, {
       },
       {
         question: 'Can you take over servicing an existing fire alarm?',
-        answer: 'Yes. We inspect your existing system, assess its condition, update any outstanding maintenance, and place it under our service contract. We work with all major panel manufacturers.',
+        answer: 'Yes. We inspect your existing system, assess its condition, update any outstanding maintenance, and place it under our service contract.',
       },
       {
         question: 'Do you provide emergency fire alarm call-outs?',
-        answer: 'Yes. We offer 24/7 emergency call-out for fire alarm faults to customers on our maintenance contract, typically responding within 2–4 hours.',
+        answer: 'Yes, we offer 24/7 emergency call out for fire alarm customers who are under our maintenance contract with a visit made within 8 hours.',
       },
       {
         question: 'What documentation do I receive after installation?',
-        answer: 'You receive a full commissioning certificate, system design drawing, BS 5839-1 compliance certificate, service logbook, and a handover pack including user instructions.',
+        answer: 'You will receive all relevant compliance documentation once the final balance has been paid which includes a log book.',
       },
     ],
   },
@@ -181,13 +168,12 @@ const servicePageData: Record<string, {
   'access-control': {
     heroTagline: 'Access Control & Door Entry System Installation',
     overview: [
-      'Controlling who can enter your building — and when — is a fundamental security requirement for commercial premises, apartment blocks, and any site with restricted areas. J&L Security installs door access control systems ranging from a single-door keypad to multi-site enterprise systems with time-and-attendance reporting.',
-      'We install proximity fob and card readers, biometric fingerprint and facial recognition systems, video door entry intercoms, and maglocks across Essex and Greater London. All systems include audit trail reporting so you can see exactly who entered each door and when.',
+      'We do access control enabled door entry systems which can be video and/or audio.',
     ],
     process: [
       { step: 'Security Needs Assessment', detail: 'We assess which doors need controlled access, how many users, and what level of audit trail is required.' },
       { step: 'System Design', detail: 'We design the system including reader types, controller positions, door hardware, and cabling routes.' },
-      { step: 'Hardware Installation', detail: 'Readers, controllers, maglocks or electric strikes, and exit buttons are installed to a professional standard.' },
+      { step: 'Hardware Installation', detail: 'All hardware is installed to a high standard by our professional and qualified staff.' },
       { step: 'Software Configuration', detail: 'We configure the access control software, add users, set time zones, and define access levels.' },
       { step: 'User Enrolment', detail: 'We enrol credentials (fobs, cards, or biometrics) for all users and configure any PIN-only backup access.' },
       { step: 'Training & Support', detail: 'We train your administrator to add/remove users and run audit reports, with ongoing telephone support.' },
@@ -200,31 +186,15 @@ const servicePageData: Record<string, {
       'Warehouses with restricted zones',
       'Retail stockrooms and server rooms',
     ],
-    pricing: 'From £450 for a single-door system — full quote after free survey.',
+    pricing: '',
     faqs: [
-      {
-        question: 'What is the difference between a proximity fob and a smart card?',
-        answer: 'Proximity fobs and cards both use RFID technology. Standard proximity (125kHz) is widely used and cost-effective. Smart cards (13.56MHz MIFARE/DESFire) are more secure as credentials are encrypted — recommended for higher-security applications.',
-      },
-      {
-        question: 'Can access control be integrated with my CCTV system?',
-        answer: 'Yes. Modern access control systems can link with CCTV so that a camera records footage every time a door is accessed. This is particularly useful for audit and incident investigation.',
-      },
-      {
-        question: 'Can I control door access remotely from my phone?',
-        answer: 'Yes. App-based access control allows you to unlock doors, grant temporary access to visitors, and view the audit trail remotely.',
-      },
       {
         question: 'Do maglocks fail safe or fail secure?',
         answer: 'Maglocks are fail-safe — they release when power is lost, allowing occupants to exit safely. This is the standard for fire evacuation compliance. Electric strikes can be configured as either fail-safe or fail-secure depending on the application.',
       },
       {
         question: 'Can you service or upgrade an existing access control system?',
-        answer: 'Yes. We service and maintain most major brands including Paxton, HID, and Salto. We can often add doors or upgrade credentials without replacing the whole system.',
-      },
-      {
-        question: 'Is access control suitable for a residential flat?',
-        answer: 'Yes. Video door entry with fob access is ideal for flats and apartment blocks. We install systems that allow residents to answer the door from a handset or smartphone app and grant access with a single button press.',
+        answer: 'Yes, we can service and maintain brands including Paxton and Comelit.',
       },
     ],
   },
@@ -251,7 +221,7 @@ const servicePageData: Record<string, {
       'Retail and hospitality venues',
       'Domestic driveways and gardens',
     ],
-    pricing: 'From £150 per external light point — full quote after free survey.',
+    pricing: '',
     faqs: [
       {
         question: 'What is the difference between security lighting and emergency lighting?',
@@ -266,16 +236,8 @@ const servicePageData: Record<string, {
         answer: 'Monthly flick tests (a few seconds each) should be carried out by the building manager. A full 3-hour duration test is required annually and must be certified — we carry out and certify this test for our maintenance customers.',
       },
       {
-        question: 'Can you replace old fluorescent emergency fittings with LED?',
-        answer: 'Yes. Modern LED emergency fittings are more energy efficient, have longer battery life, and provide better light output. We carry out like-for-like LED replacements and new installations.',
-      },
-      {
         question: 'What PIR security lights do you install?',
-        answer: 'We install a range of LED PIR floodlights from manufacturers including Philips, Ansell, and Luceco. We recommend lights with adjustable sensitivity, duration, and lux settings to minimise false activations.',
-      },
-      {
-        question: 'Do you install CCTV-integrated lighting?',
-        answer: 'Yes. We can integrate security lighting with your CCTV system so that cameras switch to colour night vision mode when lights activate, improving footage quality.',
+        answer: 'We install a range of security lighting from a range of manufacturers.',
       },
     ],
   },
@@ -402,7 +364,7 @@ export default async function ServicePage({ params }: Props) {
                 {ext.overview.map((para, i) => (
                   <p key={i} className="text-gray-700 leading-relaxed mb-4 text-lg">{para}</p>
                 ))}
-                <p className="mt-6 text-lg font-medium text-primary-600">{ext.pricing}</p>
+                {ext.pricing && <p className="mt-6 text-lg font-medium text-primary-600">{ext.pricing}</p>}
               </div>
               <div className="space-y-6">
                 <div className="bg-primary-50 rounded-xl p-6">

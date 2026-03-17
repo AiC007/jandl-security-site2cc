@@ -2,8 +2,6 @@
 # The humans responsible & technology colophon
 
 # TEAM
-  James Mitchell -- Managing Director & Lead Engineer -- @jandlsecurity
-  Lee Thompson -- Senior Security Engineer -- @jandlsecurity
   Development Team -- Claude Code AI Assistant
 
 # LOCATION
@@ -11,7 +9,7 @@
 
 # THANKS
   All our loyal customers across Essex & Greater London
-  Security equipment manufacturers: Hikvision, Pyronix, Texecom
+  Security equipment manufacturers: Pyronix, Uniview, Advanced, Paxton, Comelit
   Local authorities and emergency services for their partnership
 
 # TECHNOLOGY COLOPHON
@@ -31,10 +29,10 @@
   Website: https://jandlsecurity.co.uk
 
 # CERTIFICATIONS
-  NAPIT Approved Contractors
+  SSAIB Approved
   CHAS Accredited
-  UKAS Certified
-  Safe Contractor Approved
+  FIA Member
+  BAFE Certified
 
 # LAST UPDATED
   2025-08-18

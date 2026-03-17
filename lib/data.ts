@@ -220,7 +220,7 @@ export const faqs: FAQ[] = [
   {
     id: '6',
     question: 'Do your systems qualify for insurance discounts?',
-    answer: 'Many of our NSI/SSAIB equivalent systems qualify for insurance premium discounts. We\'ll provide certification documentation to submit to your insurer.',
+    answer: 'Many of our SSAIB approved systems qualify for insurance premium discounts. We\'ll provide certification documentation to submit to your insurer.',
     category: 'insurance'
   },
   {

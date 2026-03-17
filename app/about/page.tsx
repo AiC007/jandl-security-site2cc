@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Shield, Award, Clock, Users, CheckCircle, Wrench, Phone } from 'lucide-react';
+import { Shield, Award, Clock, CheckCircle, Wrench, Phone } from 'lucide-react';
 import { COMPANY_INFO } from '@/lib/utils';
 import { generateOrganizationSchema } from '@/lib/schema';
 
@@ -20,38 +20,12 @@ export const metadata: Metadata = {
   },
 };
 
-const teamMembers = [
-  {
-    name: 'James Mitchell',
-    role: 'Managing Director & Lead Engineer',
-    qualifications: ['NAPIT Registered', '18 years experience', 'City & Guilds qualified'],
-    description: 'Founded J&L Security with a vision to provide honest, professional security services to Essex and Greater London.'
-  },
-  {
-    name: 'Lee Thompson',
-    role: 'Senior Security Engineer',
-    qualifications: ['ECS Gold Card holder', '15 years experience', 'Fire alarm specialist'],
-    description: 'Specializes in commercial fire alarm systems and large-scale CCTV installations with expertise in BS 5839-1 compliance.'
-  },
-  {
-    name: 'David Roberts',
-    role: 'Installation Engineer',
-    qualifications: ['SSAIB trained', '12 years experience', 'Access control specialist'],
-    description: 'Expert in access control systems and smart security technology, covering residential and commercial installations.'
-  },
-  {
-    name: 'Sarah Williams',
-    role: 'Customer Service Manager',
-    qualifications: ['Customer service specialist', '8 years with J&L', 'Scheduling coordinator'],
-    description: 'Ensures exceptional customer experience from initial enquiry through to ongoing maintenance and support.'
-  }
-];
 
 const accreditations = [
   {
-    name: 'NAPIT',
-    description: 'National Association of Professional Inspectors and Testers - ensuring electrical safety compliance',
-    logo: '/images/napit-logo.png'
+    name: 'SSAIB',
+    description: 'Security Systems and Alarms Inspection Board - ensuring quality installation and maintenance standards',
+    logo: '/images/ssaib-logo.png'
   },
   {
     name: 'CHAS',
@@ -59,20 +33,20 @@ const accreditations = [
     logo: '/images/chas-logo.png'
   },
   {
-    name: 'UKAS',
-    description: 'United Kingdom Accreditation Service - quality management and technical competence',
-    logo: '/images/ukas-logo.png'
+    name: 'FIA',
+    description: 'Fire Industry Association - representing fire safety professionals and ensuring industry standards',
+    logo: '/images/fia-logo.png'
   },
   {
-    name: 'Safe Contractor',
-    description: 'Health and safety pre-qualification scheme for contractors',
-    logo: '/images/safe-contractor-logo.png'
+    name: 'BAFE',
+    description: 'British Approvals for Fire Equipment - independent third-party certification for fire safety',
+    logo: '/images/bafe-logo.png'
   }
 ];
 
 const supplierBrands = [
-  'Hikvision', 'Pyronix', 'Texecom', 'Honeywell', 'Bosch', 'RISCO', 
-  'Paxton', 'Vanderbilt', 'Advanced', 'Morley-IAS', 'Apollo', 'Gent'
+  'Pyronix', 'Advanced', 'Paxton', 'Comelit', 'Uniview', 'C-Tech',
+  'Fike', 'Haes', 'Kentech', 'EDA', 'EMS', 'Smartcell', 'Zeta'
 ];
 
 const keyStats = [
@@ -136,7 +110,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Founded in 2011 by James Mitchell and Lee Thompson, J&L Security began with a simple mission: 
+                  J&L Security began with a simple mission:
                   to provide honest, professional security services to homes and businesses across Essex and Greater London.
                 </p>
                 <p>
@@ -168,42 +142,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
-            <p className="text-lg text-gray-600">
-              Experienced professionals dedicated to your security and peace of mind
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-primary-100 rounded-full p-3 flex-shrink-0">
-                    <Users className="h-8 w-8 text-primary-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h3>
-                    <p className="text-primary-600 font-medium mb-3">{member.role}</p>
-                    <p className="text-gray-700 mb-4">{member.description}</p>
-                    <div className="space-y-1">
-                      {member.qualifications.map((qual, idx) => (
-                        <div key={idx} className="flex items-center text-sm text-gray-600">
-                          <CheckCircle className="h-4 w-4 text-primary-600 mr-2 flex-shrink-0" />
-                          {qual}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Accreditations */}
       <section className="py-16">
@@ -235,10 +173,9 @@ export default function AboutPage() {
               <div>
                 <h3 className="text-lg font-semibold text-primary-900 mb-2">Health & Safety Commitment</h3>
                 <p className="text-primary-800">
-                  All our engineers are fully qualified with up-to-date health and safety training. We maintain 
-                  comprehensive insurance coverage including Public Liability (£2M) and Employers' Liability (£10M). 
-                  Our work is carried out in strict compliance with current regulations including CDM 2015, 
-                  Construction (Design and Management) Regulations.
+                  All our engineers are fully qualified with up-to-date health and safety training. We maintain
+                  comprehensive insurance coverage including Public Liability (£2M) and Employers' Liability (£10M).
+                  Our work is carried out in strict compliance with current regulations.
                 </p>
               </div>
             </div>
@@ -258,7 +195,7 @@ export default function AboutPage() {
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Professional Installation</h3>
                     <p className="text-gray-700">
-                      All installations meet or exceed industry standards including NSI/SSAIB guidelines. 
+                      All installations meet or exceed industry standards including SSAIB guidelines.
                       We use only high-quality, certified equipment from trusted manufacturers.
                     </p>
                   </div>

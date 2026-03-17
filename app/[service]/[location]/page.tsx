@@ -282,7 +282,7 @@ function generateServiceFAQs(service: string, location: string) {
       },
       {
         question: `Do your burglar alarms qualify for insurance discounts in ${location}?`,
-        answer: `Yes, our NSI-equivalent burglar alarm systems installed in ${location} often qualify for insurance premium discounts of 10-15%. We provide all necessary certification documentation.`
+        answer: `Yes, our SSAIB approved burglar alarm systems installed in ${location} often qualify for insurance premium discounts. We provide all necessary certification documentation.`
       },
       {
         question: `Can I control my ${location} burglar alarm remotely?`,
@@ -420,7 +420,7 @@ function generateContent(service: string, location: string) {
     whyChoose: [
       'Same-day free surveys available',
       'Local engineers based in Essex & Greater London',
-      'NSI-equivalent installation standards',
+      'SSAIB installation standards',
       '24/7 emergency response available',
       'Comprehensive warranties and ongoing support',
       'Competitive pricing with transparent quotes'

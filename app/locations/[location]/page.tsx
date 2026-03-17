@@ -290,7 +290,7 @@ export default async function LocationPage({ params }: Props) {
                 <div className="bg-primary-50 rounded-xl p-5">
                   <CheckCircle className="h-6 w-6 text-primary-600 mb-3" />
                   <h3 className="font-semibold text-gray-900 mb-1">Accredited Engineers</h3>
-                  <p className="text-sm text-gray-600">NAPIT, CHAS and UKAS certified — installation to NSI-equivalent standards</p>
+                  <p className="text-sm text-gray-600">SSAIB, CHAS, FIA and BAFE certified — installation to SSAIB standards</p>
                 </div>
                 <div className="bg-primary-50 rounded-xl p-5">
                   <MapPin className="h-6 w-6 text-primary-600 mb-3" />

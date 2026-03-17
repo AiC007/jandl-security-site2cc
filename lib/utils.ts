@@ -35,7 +35,7 @@ export const COMPANY_INFO = {
   website: "https://jandlsecurity.co.uk",
   yearEstablished: "2011",
   serviceAreas: ["Essex", "Greater London", "Kent borders"],
-  accreditations: ["NAPIT", "CHAS", "UKAS", "Safe Contractor"],
+  accreditations: ["SSAIB", "CHAS", "FIA", "BAFE"],
   emergencyHours: "24/7",
   responseTime: "Same day surveys available"
 };

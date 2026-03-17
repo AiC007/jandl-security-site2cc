@@ -16,7 +16,7 @@ export default function Home() {
       icon: Shield,
       name: 'Burglar Alarms',
       description: 'Wireless & wired systems with 24/7 monitoring and smartphone app control',
-      features: ['Same-day surveys', 'NSI-equivalent standards', 'Insurance approved'],
+      features: ['Same-day surveys', 'SSAIB standards', 'Insurance approved'],
       link: '/services/burglar-alarms'
     },
     {
@@ -64,10 +64,8 @@ export default function Home() {
   ];
 
   const trustBadges = [
-    'NAPIT Approved',
-    'CHAS Accredited',
-    'UKAS Certified',
-    'Safe Contractor'
+    'SSAIB Approved',
+    'CHAS Accredited'
   ];
 
   return (
@@ -89,7 +87,7 @@ export default function Home() {
                 {COMPANY_INFO.tagline}
               </h1>
               <p className="text-xl mb-8 text-primary-100">
-                Professional security systems with same-day surveys, NSI-equivalent standards, 
+                Professional security systems with same-day surveys, SSAIB standards,
                 and 24/7 monitoring options. Trusted by thousands across Essex and Greater London since 2011.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -137,7 +135,7 @@ export default function Home() {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-50 rounded-full mb-4">
                 <Shield className="h-8 w-8 text-primary-600" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">NSI Standards</h3>
+              <h3 className="text-lg font-semibold mb-2">SSAIB Standards</h3>
               <p className="text-gray-600 text-sm">Professional installation to industry standards</p>
             </div>
             <div className="text-center p-6 rounded-xl hover:bg-white hover:shadow-md transition-all">
@@ -286,7 +284,7 @@ export default function Home() {
           </h2>
           <p className="text-xl mb-8 text-primary-100">
             Get a free, no-obligation security survey from our professional engineers. 
-            Same-day appointments available.
+            Same-day appointments available, subject to availability.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

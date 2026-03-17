@@ -41,7 +41,7 @@ const faqCategories = [
       },
       {
         question: 'Are your engineers qualified and insured?',
-        answer: 'All our engineers are fully qualified with relevant certifications including NAPIT registration, ECS Gold Cards, and ongoing professional development. We maintain comprehensive insurance including Public Liability (£2M) and Employers\' Liability (£10M).'
+        answer: 'All our engineers are fully qualified with relevant certifications including ECS Gold Cards and ongoing professional development. We maintain comprehensive insurance including Public Liability (£2M) and Employers\' Liability (£10M).'
       },
       {
         question: 'Do you offer payment plans?',
@@ -63,7 +63,7 @@ const faqCategories = [
       },
       {
         question: 'How do I know if my alarm qualifies for police response?',
-        answer: 'For police response eligibility, your system must be professionally installed to NSI/SSAIB standards and monitored through a recognised Alarm Receiving Centre (ARC). We can assess your current system and advise on any upgrades needed for police response qualification.'
+        answer: 'For police response eligibility, your system must be professionally installed to SSAIB standards and monitored through a recognised Alarm Receiving Centre (ARC). We can assess your current system and advise on any upgrades needed for police response qualification.'
       },
       {
         question: 'What maintenance do burglar alarms need?',
@@ -141,7 +141,7 @@ const faqCategories = [
       },
       {
         question: 'How do you price your services?',
-        answer: 'Pricing depends on system complexity, property size, and specific requirements. We provide transparent, fixed-price quotes with no hidden costs. Typical starting prices: burglar alarms from £300, CCTV systems from £500, fire alarms from £800.'
+        answer: 'Pricing depends on system complexity, property size, and specific requirements. We provide transparent, fixed-price quotes with no hidden costs. Typical starting prices: burglar alarms from £450, CCTV systems from £850.'
       },
       {
         question: 'Do your systems qualify for insurance discounts?',

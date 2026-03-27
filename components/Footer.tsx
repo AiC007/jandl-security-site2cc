@@ -129,8 +129,8 @@ export default function Footer() {
                   <Clock className="h-4 w-4 text-primary-400" />
                 </div>
                 <div className="text-base-300 text-sm leading-relaxed">
-                  <div>Mon-Fri: 8AM-6PM</div>
-                  <div>Sat: 8AM-4PM</div>
+                  <div>Mon-Fri: 9AM-5PM</div>
+                  <div>Sat: 9AM-1PM</div>
                 </div>
               </div>
             </div>

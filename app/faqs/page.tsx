@@ -29,7 +29,7 @@ const faqCategories = [
     faqs: [
       {
         question: 'How quickly can you respond to emergency callouts?',
-        answer: 'We offer 24/7 emergency response across Essex and Greater London, typically arriving within 2-4 hours depending on location and time of day. Emergency callout charges apply outside normal business hours (Mon-Fri 8AM-6PM, Sat 8AM-4PM).'
+        answer: 'We offer 24/7 emergency response across Essex and Greater London, typically arriving within 2-4 hours depending on location and time of day. Emergency callout charges apply outside normal business hours (Mon-Fri 9AM-5PM, Sat 9AM-1PM).'
       },
       {
         question: 'Do you provide free security surveys?',
@@ -43,10 +43,6 @@ const faqCategories = [
         question: 'Are your engineers qualified and insured?',
         answer: 'All our engineers are fully qualified with relevant certifications including ECS Gold Cards and ongoing professional development. We maintain comprehensive insurance including Public Liability (£2M) and Employers\' Liability (£10M).'
       },
-      {
-        question: 'Do you offer payment plans?',
-        answer: 'Yes, we offer flexible payment options including staged payments for larger installations and maintenance contracts with monthly payment options. We accept cash, card payments, and bank transfers.'
-      }
     ]
   },
   {
@@ -141,7 +137,7 @@ const faqCategories = [
       },
       {
         question: 'How do you price your services?',
-        answer: 'Pricing depends on system complexity, property size, and specific requirements. We provide transparent, fixed-price quotes with no hidden costs. Typical starting prices: burglar alarms from £450, CCTV systems from £850.'
+        answer: 'Pricing depends on system complexity, property size, and specific requirements. We provide transparent, fixed-price quotes with no hidden costs. All prices are plus VAT. Typical starting prices: burglar alarms from £450 plus VAT, CCTV systems from £850 plus VAT.'
       },
       {
         question: 'Do your systems qualify for insurance discounts?',

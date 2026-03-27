@@ -112,7 +112,7 @@ export function generateLocalBusinessSchema() {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Saturday",
         "opens": "09:00",
-        "closes": "12:00"
+        "closes": "13:00"
       }
     ],
     "priceRange": "££",

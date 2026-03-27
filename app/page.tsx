@@ -65,7 +65,8 @@ export default function Home() {
 
   const trustBadges = [
     'SSAIB Approved',
-    'CHAS Accredited'
+    'CHAS Accredited',
+    'BAFE Registered'
   ];
 
   return (

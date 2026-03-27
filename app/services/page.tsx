@@ -36,7 +36,7 @@ const serviceDetails = [
     features: ['Wired & wireless systems', '24/7 monitoring available', 'Smartphone app control', 'Police response eligible', 'Pet-friendly detectors', 'SSAIB approved installation'],
     process: ['Free security survey', 'Custom system design', 'Professional installation', 'Full system commissioning', 'User training provided', 'Ongoing maintenance'],
     benefits: ['Insurance premium discounts', 'Deterrent effect on intruders', 'Peace of mind 24/7', 'Remote monitoring capability', 'Quick emergency response'],
-    priceRange: 'From £450 for basic systems',
+    priceRange: 'From £450 plus VAT',
     childPages: [
       { name: 'Wireless Alarm Installation', href: '/wireless-alarm-installation/hornchurch' },
       { name: 'Smart Alarm Systems',         href: '/smart-alarm-installation/hainault' },
@@ -54,7 +54,7 @@ const serviceDetails = [
     features: ['4K resolution cameras', 'Night vision capability', 'Remote viewing via app', 'Cloud & local storage', 'Motion detection alerts', 'Weatherproof design'],
     process: ['Site survey & planning', 'Camera positioning design', 'Professional installation', 'Network configuration', 'Remote access setup', 'Training & handover'],
     benefits: ['Crime prevention & deterrent', 'Evidence collection capability', 'Remote property monitoring', 'Staff & visitor protection', 'Insurance compliance'],
-    priceRange: 'From £850 for a 2 camera system',
+    priceRange: 'From £850 plus VAT',
     childPages: [
       { name: 'IP Camera Systems',           href: '/cctv-installation/goodmayes' },
       { name: '4K CCTV Installation',        href: '/cctv-upgrades-4k/stratford' },

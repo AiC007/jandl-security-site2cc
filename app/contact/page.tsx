@@ -60,8 +60,8 @@ const contactMethods = [
 ];
 
 const openingHours = [
-  { day: 'Monday - Friday', hours: '8:00 AM - 6:00 PM', type: 'regular' },
-  { day: 'Saturday', hours: '8:00 AM - 4:00 PM', type: 'regular' },
+  { day: 'Monday - Friday', hours: '9:00 AM - 5:00 PM', type: 'regular' },
+  { day: 'Saturday', hours: '9:00 AM - 1:00 PM', type: 'regular' },
   { day: 'Sunday', hours: 'Emergency Only', type: 'emergency' },
   { day: 'Bank Holidays', hours: 'Emergency Only', type: 'emergency' }
 ];

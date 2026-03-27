@@ -56,24 +56,6 @@ const keyStats = [
   { number: '30', label: 'Mile Coverage', description: 'Service radius' }
 ];
 
-const warranties = [
-  {
-    type: 'Equipment Warranty',
-    duration: '2 Years',
-    coverage: 'All installed equipment including cameras, alarms, detectors, and control panels'
-  },
-  {
-    type: 'Installation Warranty', 
-    duration: '12 Months',
-    coverage: 'Workmanship guarantee on all installation work and system commissioning'
-  },
-  {
-    type: 'Technical Support',
-    duration: 'Lifetime',
-    coverage: 'Ongoing technical support, advice, and guidance for all installed systems'
-  }
-];
-
 export default function AboutPage() {
   const organizationSchema = generateOrganizationSchema();
 
@@ -126,6 +108,10 @@ export default function AboutPage() {
                 <p>
                   Today, with over 2,500 successful installations and a team of qualified engineers, we continue 
                   to uphold the same values that founded our company: integrity, expertise, and exceptional service.
+                </p>
+                <p className="text-gray-700 leading-relaxed mt-4 bg-primary-50 border border-primary-200 rounded-lg p-4">
+                  J&L Security trades as part of the same team behind J&L Alarms, bringing over 13 years of
+                  experience under one dedicated security brand.
                 </p>
               </div>
             </div>
@@ -186,68 +172,33 @@ export default function AboutPage() {
       {/* Quality Standards */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Quality Standards</h2>
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <Shield className="h-6 w-6 text-primary-600 mr-4 flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-lg font-semibold mb-2">Professional Installation</h3>
-                    <p className="text-gray-700">
-                      All installations meet or exceed industry standards including SSAIB guidelines.
-                      We use only high-quality, certified equipment from trusted manufacturers.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <Wrench className="h-6 w-6 text-primary-600 mr-4 flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-lg font-semibold mb-2">Ongoing Support</h3>
-                    <p className="text-gray-700">
-                      Comprehensive after-sales support including maintenance contracts, emergency callouts, 
-                      and system upgrades. We're here for the lifetime of your security system.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <Clock className="h-6 w-6 text-primary-600 mr-4 flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-lg font-semibold mb-2">Response Times</h3>
-                    <p className="text-gray-700">
-                      Same-day surveys available across our coverage area. Emergency callouts typically 
-                      within 2-4 hours, 24/7 across Essex and Greater London.
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Quality Standards</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <Shield className="h-6 w-6 text-primary-600 mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Professional Installation</h3>
+              <p className="text-gray-700">
+                All installations meet or exceed industry standards including SSAIB guidelines.
+                We use only high-quality, certified equipment from trusted manufacturers.
+              </p>
             </div>
 
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Warranties</h2>
-              <div className="space-y-4">
-                {warranties.map((warranty, index) => (
-                  <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className="text-lg font-semibold text-gray-900">{warranty.type}</h3>
-                      <span className="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm font-medium">
-                        {warranty.duration}
-                      </span>
-                    </div>
-                    <p className="text-gray-700 text-sm">{warranty.coverage}</p>
-                  </div>
-                ))}
-              </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <Wrench className="h-6 w-6 text-primary-600 mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Ongoing Support</h3>
+              <p className="text-gray-700">
+                Comprehensive after-sales support including maintenance contracts, emergency callouts,
+                and system upgrades. We're here for the lifetime of your security system.
+              </p>
+            </div>
 
-              <div className="mt-6 bg-primary-50 border border-primary-200 rounded-lg p-4">
-                <h4 className="font-semibold text-primary-900 mb-2">Extended Warranties Available</h4>
-                <p className="text-primary-800 text-sm">
-                  Ask about our extended warranty packages for additional peace of mind and 
-                  priority support options.
-                </p>
-              </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <Clock className="h-6 w-6 text-primary-600 mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Response Times</h3>
+              <p className="text-gray-700">
+                Same-day surveys available across our coverage area. Emergency callouts typically
+                within 2-4 hours, 24/7 across Essex and Greater London.
+              </p>
             </div>
           </div>
         </div>

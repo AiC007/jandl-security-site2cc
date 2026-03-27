@@ -47,7 +47,7 @@ const servicePageData: Record<string, {
       'Schools and healthcare facilities',
       'Listed buildings (wireless systems available)',
     ],
-    pricing: 'From £400 for a standard domestic system — full quote provided after free survey.',
+    pricing: 'From £450 plus VAT for a standard domestic system — full quote provided after free survey.',
     faqs: [
       {
         question: 'Do you install wireless burglar alarms?',
@@ -75,7 +75,7 @@ const servicePageData: Record<string, {
   'cctv-systems': {
     heroTagline: 'CCTV Installation & Maintenance — 4K Cameras, Remote Viewing',
     overview: [
-      'High-definition CCTV is essential for both deterrence and evidence collection. J&L Security designs and installs IP CCTV systems for residential and commercial properties throughout Essex and Greater London, from a single camera above a front door to a 64-channel enterprise system covering a warehouse complex.',
+      'High-definition CCTV is essential for both deterrence and evidence collection. J&L Security designs and installs SSAIB-compliant IP CCTV systems for residential and commercial properties throughout Essex and Greater London, from a single camera above a front door to a 64-channel enterprise system covering a warehouse complex.',
       'We install and maintain Uniview cameras. All our systems include remote viewing via smartphone app, motion detection alerts, and recording options ranging from local NVR storage to cloud backup.',
     ],
     process: [
@@ -94,7 +94,7 @@ const servicePageData: Record<string, {
       'Schools and care homes',
       'Construction sites',
     ],
-    pricing: 'From £850 for a 2 camera system.',
+    pricing: 'From £850 plus VAT for a 2 camera system.',
     faqs: [
       {
         question: 'What resolution CCTV do you recommend?',
@@ -106,7 +106,7 @@ const servicePageData: Record<string, {
       },
       {
         question: 'Do I need planning permission to install CCTV?',
-        answer: 'Domestic CCTV on your own property does not generally require planning permission. Commercial CCTV may require signage under the ICO CCTV Code of Practice. We advise on compliance during installation.',
+        answer: 'Domestic CCTV on your own property does not generally require planning permission. Commercial CCTV may require signage under the ICO CCTV Code of Practice.',
       },
       {
         question: 'Do you offer CCTV maintenance contracts?',

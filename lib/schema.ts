@@ -218,6 +218,47 @@ export function generateServiceSchema(serviceName: string, description: string, 
   };
 }
 
+export function generateBlogPostingSchema(post: {
+  title: string;
+  description: string;
+  slug: string;
+  datePublished: string;
+  dateModified: string;
+  wordCount: number;
+  keywords: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.description,
+    "url": `${COMPANY_INFO.website}/blog/${post.slug}`,
+    "datePublished": post.datePublished,
+    "dateModified": post.dateModified,
+    "wordCount": post.wordCount,
+    "keywords": post.keywords.join(', '),
+    "author": {
+      "@type": "Organization",
+      "name": COMPANY_INFO.name,
+      "url": COMPANY_INFO.website
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": COMPANY_INFO.name,
+      "url": COMPANY_INFO.website,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${COMPANY_INFO.website}/images/jandl-security-logo.jpg`
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${COMPANY_INFO.website}/blog/${post.slug}`
+    },
+    "inLanguage": "en-GB"
+  };
+}
+
 export function generateBreadcrumbSchema(breadcrumbs: Array<{name: string; url: string}>) {
   return {
     "@context": "https://schema.org",

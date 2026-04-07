@@ -156,6 +156,26 @@ Coverage extends to Kent border areas on request.
 5. Professional installation by qualified engineers
 6. Handover, training, and ongoing support
 
+## Blog
+
+J&L Security publishes practical guides on security systems, fire protection, and choosing an installer. All articles are written by professional installers with hands-on experience.
+
+### How Much Does a Burglar Alarm Cost in 2026? A UK Guide
+URL: https://jandlsecurity.co.uk/blog/burglar-alarm-cost-uk-2026
+A practical guide to burglar alarm costs in the UK for 2026. Covers bell-only systems (GBP 350 to 600), speech dialler systems (GBP 450 to 800), and monitored systems (GBP 600 to 2,500 plus monitoring). Includes installation costs, ongoing maintenance costs, and factors that affect pricing such as property size, wired vs wireless, and smart features.
+
+### CCTV Installation Guide for Essex Homeowners
+URL: https://jandlsecurity.co.uk/blog/cctv-installation-guide-essex
+A guide to home CCTV installation in Essex. Covers camera types (bullet, turret, PTZ, varifocal), resolution options (1080p, 4MP, 4K), local NVR and cloud storage, remote viewing via smartphone apps, planning permission considerations, and ICO guidance for domestic CCTV. Includes pricing from GBP 850 for a basic 2-camera system.
+
+### Fire Alarm Requirements for HMO Landlords: BS 5839-1 Explained
+URL: https://jandlsecurity.co.uk/blog/hmo-fire-alarm-requirements-bs5839
+A guide to fire alarm requirements for HMO landlords in the UK. Covers BS 5839-1 system categories (LD1, LD2, LD3), system grades (Grade A, Grade D), 6-monthly servicing requirements, weekly testing obligations, the Regulatory Reform (Fire Safety) Order 2005, and local authority licensing conditions. Includes common compliance mistakes.
+
+### How to Choose a Security Company: 7 Questions to Ask Before You Hire
+URL: https://jandlsecurity.co.uk/blog/how-to-choose-security-company
+Seven practical questions to ask before hiring a security installer: inspectorate registration (SSAIB/NSI), insurance coverage, property surveys, pricing transparency, aftercare provisions, equipment quality, and local coverage. Includes red flags to watch for and guidance on comparing quotes.
+
 ---
 
 Last updated: 7 April 2026

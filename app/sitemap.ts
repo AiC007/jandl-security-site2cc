@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { COMPANY_INFO, generateSlug } from '@/lib/utils';
 import { serviceLocationMatrix } from '@/lib/data';
+import { blogPosts } from '@/lib/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = COMPANY_INFO.website;
@@ -88,10 +89,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  // Blog pages
+  const blogIndexPage = {
+    url: `${baseUrl}/blog`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  };
+
+  const blogPostPages = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.dateModified),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }));
+
   return [
     ...corePages,
     ...servicePages,
     ...locationPages,
     ...serviceLocationPages,
+    blogIndexPage,
+    ...blogPostPages,
   ];
 }

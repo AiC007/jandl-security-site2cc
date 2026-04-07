@@ -5,7 +5,7 @@ import { COMPANY_INFO } from '@/lib/utils';
 import { generateFAQPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions - Security Systems | J&L Security',
+  title: 'Frequently Asked Questions - Security Systems',
   description: 'Common questions about burglar alarms, CCTV systems, fire alarms, maintenance, warranties, and emergency callouts. Expert answers from Essex & Greater London security specialists.',
   keywords: [
     'security system FAQ',

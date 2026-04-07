@@ -167,7 +167,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const location = locations.find((l) => l.slug === locationSlug);
   if (!location) return {};
   return {
-    title: `Security Systems ${location.name} — Alarms, CCTV & Fire Protection | J&L Security`,
+    title: `Security Systems ${location.name} — Alarms, CCTV & Fire Protection`,
     description: `Professional security system installation in ${location.name}, ${location.county}. Burglar alarms, CCTV, fire alarms, access control. Free surveys, same-day service. Call J&L Security.`,
     keywords: [
       `security systems ${location.name}`,
@@ -180,7 +180,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ],
     alternates: { canonical: `${COMPANY_INFO.website}/locations/${locationSlug}` },
     openGraph: {
-      title: `Security Systems ${location.name} | J&L Security`,
+      title: `Security Systems ${location.name}`,
       description: `Burglar alarms, CCTV, fire alarms & access control in ${location.name}. Free surveys, same-day service.`,
     },
   };

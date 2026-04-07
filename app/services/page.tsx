@@ -6,7 +6,7 @@ import { generateServiceSchema, generateFAQPageSchema } from '@/lib/schema';
 import { COMPANY_INFO } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Security Services - Alarms, CCTV, Fire Protection | J&L Security',
+  title: 'Security Services - Alarms, CCTV, Fire Protection',
   description: 'Professional security services across Essex & Greater London. Burglar alarms, CCTV systems, fire alarms, access control, security lighting. Free surveys, same-day service.',
   keywords: [
     'security services Essex',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'emergency locksmith Essex'
   ],
   openGraph: {
-    title: 'Security Services - Alarms, CCTV, Fire Protection | J&L Security',
+    title: 'Security Services - Alarms, CCTV, Fire Protection',
     description: 'Professional security services across Essex & Greater London. Free surveys, same-day service, 24/7 emergency support.',
   },
   alternates: {

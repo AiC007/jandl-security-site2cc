@@ -257,7 +257,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return {};
   const ext = servicePageData[serviceSlug];
   return {
-    title: `${ext?.heroTagline ?? service.name} | J&L Security`,
+    title: `${ext?.heroTagline ?? service.name}`,
     description: `${service.description}. Professional installation and maintenance across Essex & Greater London. Free surveys, same-day service, 24/7 support. Call J&L Security today.`,
     keywords: [
       `${service.name.toLowerCase()} Essex`,
@@ -269,7 +269,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ],
     alternates: { canonical: `${COMPANY_INFO.website}/services/${serviceSlug}` },
     openGraph: {
-      title: `${ext?.heroTagline ?? service.name} | J&L Security`,
+      title: `${ext?.heroTagline ?? service.name}`,
       description: `${service.description}. Free surveys across Essex & Greater London.`,
     },
   };

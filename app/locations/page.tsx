@@ -5,7 +5,7 @@ import { COMPANY_INFO } from '@/lib/utils';
 import { generateLocalBusinessSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Service Areas - Essex & Greater London Coverage | J&L Security',
+  title: 'Service Areas - Essex & Greater London Coverage',
   description: 'J&L Security provides professional security system services across Essex and Greater London. Find your local area for burglar alarms, CCTV, fire alarms and access control.',
   keywords: [
     'security services Essex',

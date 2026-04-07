@@ -6,27 +6,32 @@ export function GET() {
 
 User-agent: *
 Allow: /
-
-# Prioritize important pages
-Allow: /services
-Allow: /locations
-Allow: /about
-Allow: /contact
-Allow: /faqs
-
-# Block unnecessary crawling
 Disallow: /api/
 Disallow: /data/
 Disallow: /_next/
 Disallow: /admin/
 
-# Sitemaps
-Sitemap: ${COMPANY_INFO.website}/sitemap.xml
+# AI Search Crawlers - explicitly allowed
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
 
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
-
-# Specific bot instructions
+# Standard Search Crawlers
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
@@ -35,11 +40,29 @@ User-agent: Bingbot
 Allow: /
 Crawl-delay: 2
 
+# Social Crawlers
 User-agent: facebookexternalhit
 Allow: /
-
 User-agent: Twitterbot
-Allow: /`;
+Allow: /
+
+# SEO Scraper Bots - blocked
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: DotBot
+Disallow: /
+
+Crawl-delay: 1
+
+Sitemap: ${COMPANY_INFO.website}/sitemap.xml
+
+# LLM context files
+# LLM-Summary: ${COMPANY_INFO.website}/llms.txt
+# LLM-Full: ${COMPANY_INFO.website}/llms-full.txt`;
 
   return new Response(robotsTxt, {
     headers: {

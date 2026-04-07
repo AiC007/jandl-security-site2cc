@@ -66,9 +66,7 @@ export const metadata: Metadata = {
     description: "Professional security systems across Essex & Greater London. Free surveys, same-day service, 24/7 emergency support.",
     images: ['/images/og-image.jpg'],
   },
-  verification: {
-    google: 'your-google-verification-code',
-  },
+  // Google Search Console: verify via DNS TXT record after domain is connected
   alternates: {
     canonical: COMPANY_INFO.website,
   },

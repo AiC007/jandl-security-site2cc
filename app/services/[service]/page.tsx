@@ -168,7 +168,8 @@ const servicePageData: Record<string, {
   'access-control': {
     heroTagline: 'Access Control & Door Entry System Installation',
     overview: [
-      'We do access control enabled door entry systems which can be video and/or audio.',
+      'Access control systems replace traditional keys with electronic credentials: proximity fobs, PIN codes, biometric readers, or video intercoms. This eliminates the cost and disruption of changing locks when a key is lost or a staff member leaves. The system records who entered which door and when, giving you a full audit trail.',
+      'J&L Security installs and maintains Paxton (Net2, Paxton10) and Comelit access control and door entry systems for offices, residential blocks, schools, healthcare premises, and commercial buildings across Essex and Greater London. We handle everything from a single controlled door to multi-site networked systems.',
     ],
     process: [
       { step: 'Security Needs Assessment', detail: 'We assess which doors need controlled access, how many users, and what level of audit trail is required.' },
@@ -194,7 +195,15 @@ const servicePageData: Record<string, {
       },
       {
         question: 'Can you service or upgrade an existing access control system?',
-        answer: 'Yes, we can service and maintain brands including Paxton and Comelit.',
+        answer: 'Yes, we service and maintain Paxton and Comelit systems. Common upgrades include replacing standalone keypads with networked readers, adding video intercom to an existing fob system, or moving from a legacy system to Paxton Net2 or Paxton10 for cloud-based management.',
+      },
+      {
+        question: 'Can I manage access control remotely?',
+        answer: 'Yes. Paxton10 and Net2 both offer remote administration. You can add or revoke credentials, set time-based access schedules, and view door activity logs from any web browser or smartphone. This is particularly useful for managing multiple sites or granting temporary access to contractors.',
+      },
+      {
+        question: 'How does a video intercom work for flats?',
+        answer: 'A Comelit video intercom places a camera and call panel at the main entrance. When a visitor presses a flat number, the resident sees and speaks to them on their handset or smartphone app before deciding whether to release the door. Each flat has its own handset, and the building manager can program access for deliveries or maintenance staff.',
       },
     ],
   },
@@ -237,7 +246,11 @@ const servicePageData: Record<string, {
       },
       {
         question: 'What PIR security lights do you install?',
-        answer: 'We install a range of security lighting from a range of manufacturers.',
+        answer: 'We install LED PIR floodlights in various wattages depending on the area to be covered. For domestic properties, a 20W to 30W LED floodlight covers a typical driveway or rear garden. For commercial car parks and yard areas, we install 50W to 150W units. All PIR sensors have adjustable sensitivity, range, and timer settings.',
+      },
+      {
+        question: 'Can security lighting work with my CCTV system?',
+        answer: 'Yes. Positioning security lights to complement your CCTV cameras significantly improves image quality at night. We design lighting and CCTV schemes together so that camera coverage areas are properly illuminated when motion is detected.',
       },
     ],
   },

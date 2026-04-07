@@ -103,22 +103,29 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  J&L Security began with a simple mission:
-                  to provide honest, professional security services to homes and businesses across Essex and Greater London.
+                  J&L Security is a security systems installation and maintenance company based in
+                  Brentwood, Essex, serving homes and businesses across Essex and Greater London since 2011.
+                  We install and maintain burglar alarms, CCTV systems, fire alarms, access control systems,
+                  and security lighting.
                 </p>
                 <p>
-                  Starting with just burglar alarm installations, we've grown to become a comprehensive security 
-                  solutions provider, covering everything from advanced CCTV systems to commercial fire alarm 
-                  installations and access control systems.
+                  The company started with intruder alarm installations for residential properties in
+                  the Romford and Ilford areas. Over the following years, we expanded into CCTV, fire alarm
+                  compliance work for commercial landlords and HMO owners, and access control for offices
+                  and residential blocks. That growth came from repeat business and referrals, not
+                  marketing spend.
                 </p>
                 <p>
-                  What sets us apart is our commitment to quality workmanship, transparent pricing, and genuine 
-                  customer care. We believe security shouldn't be complicated or overpriced – it should simply work 
-                  when you need it most.
+                  Our engineers are qualified, DBS checked, and work to SSAIB standards on every job.
+                  We carry GBP 2 million public liability insurance and GBP 10 million employers&apos;
+                  liability insurance. Every installation comes with full documentation, system training,
+                  and ongoing support.
                 </p>
                 <p>
-                  Today, with over 2,500 successful installations and a team of qualified engineers, we continue 
-                  to uphold the same values that founded our company: integrity, expertise, and exceptional service.
+                  We work with equipment from manufacturers we trust and have tested over thousands of
+                  installations: Pyronix and Texecom for intruder alarms, Uniview for CCTV, Advanced and
+                  C-Tech for fire alarm panels, and Paxton and Comelit for access control. We do not
+                  install cheap or unbranded equipment.
                 </p>
                 <p className="text-gray-700 leading-relaxed mt-4 bg-primary-50 border border-primary-200 rounded-lg p-4">
                   J&L Security trades as part of the same team behind J&L Alarms, bringing over 13 years of
@@ -135,6 +142,39 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How We Work */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">How We Work</h2>
+          <div className="space-y-4 text-gray-700 leading-relaxed">
+            <p>
+              Every job starts with a free survey. One of our engineers visits your property, assesses
+              the security requirements, and discusses your priorities and budget. There is no sales
+              pressure and no obligation. After the survey, you receive a written quote with a fixed
+              price that will not change unless you ask for additional work.
+            </p>
+            <p>
+              Installation is carried out by the same team that surveyed your property. We do not
+              subcontract. A typical domestic burglar alarm installation takes half a day. A 4-camera
+              CCTV system is usually completed in one day. Commercial fire alarm installations may
+              take longer depending on the building size and system category.
+            </p>
+            <p>
+              On completion, we commission the system, walk you through how to use it, set up any
+              smartphone apps, and provide all documentation. For fire alarms, this includes the
+              commissioning certificate and log book. For monitored intruder alarms, we handle the
+              URN registration for police response.
+            </p>
+            <p>
+              After installation, we offer maintenance contracts for all system types. For fire alarms,
+              6-monthly servicing is a legal requirement under BS 5839-1. For intruder alarms and
+              CCTV, annual servicing keeps your system reliable and your insurance valid.
+              If something goes wrong between visits, our 24/7 emergency callout service is available.
+            </p>
           </div>
         </div>
       </section>

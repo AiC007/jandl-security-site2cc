@@ -277,124 +277,197 @@ function generateServiceFAQs(service: string, location: string) {
   const faqSets = {
     'burglar': [
       {
+        question: `How much does a burglar alarm cost in ${location}?`,
+        answer: `Domestic burglar alarm systems in ${location} start from GBP 450 plus VAT. A typical 3-bedroom house with PIR detectors in the main ground-floor rooms, magnetic contacts on entry doors, a keypad, and an external bell box usually costs between GBP 450 and GBP 800 plus VAT. Wireless systems cost slightly more than wired but avoid the need for cable runs. Adding 24/7 monitoring with police response is an additional monthly cost. We provide a fixed-price quote after a free survey with no obligation.`
+      },
+      {
         question: `How quickly can you install a burglar alarm in ${location}?`,
-        answer: `We typically complete burglar alarm installations in ${location} within 1-2 days of your free survey. Same-day surveys are available, and we can often install wireless systems the same day for urgent requirements.`
+        answer: `We typically complete domestic burglar alarm installations in ${location} within 3 to 5 working days of the survey. A standard home installation takes approximately half a day. For urgent requirements, same-week installation is usually available. Wireless systems can sometimes be installed on the day of the survey for straightforward properties.`
       },
       {
         question: `Do your burglar alarms qualify for insurance discounts in ${location}?`,
-        answer: `Yes, our SSAIB approved burglar alarm systems installed in ${location} often qualify for insurance premium discounts. We provide all necessary certification documentation.`
+        answer: `Some insurers offer a discount for a professionally installed, SSAIB-approved intruder alarm system. Once your alarm in ${location} is installed, we provide all the certification and documentation your insurer requires. The discount varies by insurer, so check with your provider for the specific amount.`
       },
       {
-        question: `Can I control my ${location} burglar alarm remotely?`,
-        answer: `Absolutely. Our modern alarm systems in ${location} include smartphone app control, allowing you to arm/disarm, receive alerts, and monitor your property remotely from anywhere.`
-      },
-      {
-        question: `What happens if my burglar alarm activates in ${location}?`,
-        answer: `Depending on your chosen monitoring package, alarms in ${location} can trigger our 24/7 monitoring centre, police response (if eligible), or direct notifications to your phone and nominated contacts.`
+        question: `Can I control my burglar alarm in ${location} from my phone?`,
+        answer: `Yes. The Pyronix systems we install include smartphone app control. You can arm and disarm the system, receive instant push notifications when the alarm activates, check the system status, and view an event log showing when the alarm was set and unset. This is particularly useful for ${location} residents who commute to London and want to check their property is secure during the day.`
       },
       {
         question: `How often should burglar alarms be serviced in ${location}?`,
-        answer: `We recommend annual servicing for burglar alarms in ${location} to ensure optimal performance. This includes battery checks, sensor testing, and system updates.`
+        answer: `We recommend annual servicing for burglar alarms in ${location}. A service visit takes 45 to 60 minutes and includes testing every detector and contact, checking battery condition in sensors and the backup battery, verifying communication links for monitored systems, and updating firmware. Annual servicing is often a condition of your home insurance where the alarm is a policy requirement.`
       }
     ],
     'cctv': [
       {
-        question: `What CCTV resolution do you recommend for properties in ${location}?`,
-        answer: `For ${location} properties, we typically recommend 4K cameras for main areas and entrances, with 1080p suitable for secondary locations. The choice depends on your specific security requirements and budget.`
+        question: `What CCTV resolution do you recommend for ${location} properties?`,
+        answer: `For most domestic properties in ${location}, 2MP (1080p) or 4MP cameras provide clear footage at a reasonable cost. We recommend 4K (8MP) cameras for high-priority positions such as the front door, driveway, or any area where you need to identify faces or read number plates at a distance. A mixed system with 4K on key positions and 2MP on secondary coverage areas is often the best balance of quality and budget.`
       },
       {
         question: `Can I view my ${location} CCTV remotely?`,
-        answer: `Yes, all our CCTV systems in ${location} include remote viewing via smartphone apps or web browsers, allowing you to monitor your property from anywhere with an internet connection.`
+        answer: `Yes. All Uniview systems we install include remote viewing through the EZView app on iOS and Android. You can view live footage from all cameras, play back recorded footage, download clips for evidence, and receive motion detection alerts. The app works on mobile data and Wi-Fi, so you can check your ${location} property from anywhere with an internet connection.`
       },
       {
-        question: `How long do you store CCTV footage in ${location}?`,
-        answer: `Storage duration depends on your system specification. Typically, we configure systems in ${location} to store 30-90 days of footage locally, with cloud backup options available.`
+        question: `How long does CCTV footage record for in ${location}?`,
+        answer: `Recording duration depends on the NVR storage capacity, the number of cameras, and the resolution. As a guide, a 4-camera 2MP system with a 2TB NVR typically records approximately 14 days of continuous footage. With motion-only recording enabled, that extends to 30 days or more. We configure the retention period during installation based on your requirements.`
       },
       {
-        question: `What maintenance do CCTV systems need in ${location}?`,
-        answer: `CCTV systems in ${location} benefit from annual maintenance including camera cleaning, software updates, and storage system checks to ensure reliable operation year-round.`
+        question: `Do I need planning permission for CCTV in ${location}?`,
+        answer: `Domestic CCTV on your own property in ${location} does not generally require planning permission. If your cameras overlook a public area or a neighbour's property, ICO guidance on domestic CCTV applies, and you should display signage. For commercial CCTV, data protection regulations require signage, a documented purpose, and reasonable retention periods. We advise on these requirements during the survey.`
       },
       {
         question: `Can you upgrade my existing CCTV system in ${location}?`,
-        answer: `Absolutely. We can upgrade older systems in ${location} to modern 4K resolution, add remote viewing capabilities, or expand coverage while often utilizing existing cabling.`
+        answer: `Yes. We regularly upgrade older analogue CCTV systems in ${location} to modern IP cameras. If your existing cabling is Cat5e or better, we can often reuse it, which reduces the installation cost. If the cabling is older coaxial, replacement may be needed. We assess this during the free site survey and include any cabling work in the quote.`
       }
     ],
     'fire': [
       {
         question: `How often do fire alarms need servicing in ${location}?`,
-        answer: `Fire alarms in ${location} require professional servicing every 6 months to comply with BS 5839-1 standards. We provide comprehensive testing and certification for all commercial and HMO properties.`
+        answer: `Fire alarm systems in ${location} require professional servicing every 6 months under BS 5839-1. Each service visit tests every detector, call point, and sounder in the system; checks backup battery condition; inspects cabling for damage; and updates the fire alarm log book. Recent guidance allows a scheduling window of 5 to 7 months between visits. We also recommend weekly user tests, which involve activating one call point and take approximately 2 minutes.`
       },
       {
-        question: `Are your fire alarm systems compliant for HMOs in ${location}?`,
-        answer: `Yes, our fire alarm installations in ${location} fully comply with HMO licensing requirements and BS 5839-1 standards, including interlinked detectors and emergency lighting where required.`
+        question: `What fire alarm do I need for an HMO in ${location}?`,
+        answer: `HMO fire alarm requirements in ${location} depend on the number of storeys, the number of occupants, and your local authority licensing conditions. Most HMOs require at least a Category LD2 system: interlinked smoke detectors in hallways and landings, heat detectors in kitchens, and smoke detectors in bedrooms. Larger or higher-risk HMOs may require a Grade A addressable system with a dedicated fire alarm panel. We review your specific requirements and local authority conditions during the survey.`
       },
       {
-        question: `What's included in fire alarm servicing in ${location}?`,
-        answer: `Our ${location} fire alarm service includes detector testing, battery replacement, panel diagnostics, emergency lighting checks, and full compliance documentation.`
+        question: `What is included in fire alarm servicing in ${location}?`,
+        answer: `Each 6-monthly service visit for ${location} properties includes: functional testing of every detector, manual call point, and sounder; checking the fire alarm panel for logged faults; testing backup battery capacity; inspecting cable routes for damage; checking that fire doors close correctly on alarm activation (where connected); issuing a service certificate; and updating the fire alarm log book. We also check emergency lighting if it is part of the system.`
       },
       {
-        question: `Can you provide fire risk assessments in ${location}?`,
-        answer: `Yes, we conduct comprehensive fire risk assessments for commercial properties in ${location}, identifying risks and recommending appropriate fire safety measures.`
+        question: `Can you take over servicing an existing fire alarm in ${location}?`,
+        answer: `Yes. We regularly take over fire alarm service contracts in ${location} from other providers. We carry out an initial inspection to assess the system condition, resolve any outstanding faults, update the log book, and place the system on our 6-monthly service schedule. If the system was installed by another company and is still in good working order, a takeover avoids the cost of a full replacement.`
       },
       {
-        question: `What happens if a fire alarm activates in ${location}?`,
-        answer: `Monitored fire systems in ${location} immediately alert our 24/7 control centre and the fire brigade. Unmonitored systems provide local audible warnings to ensure rapid evacuation.`
+        question: `Do you provide fire alarm monitoring in ${location}?`,
+        answer: `Yes, we offer 24/7 fire alarm monitoring for commercial properties in ${location} through an approved Alarm Receiving Centre. When the system activates, the ARC contacts nominated keyholders and can request fire brigade attendance. Monitoring is particularly important for unoccupied commercial properties and buildings where there may not always be someone present to hear the alarm.`
       }
     ],
     'access': [
       {
         question: `What access control options are available in ${location}?`,
-        answer: `We install various access control systems in ${location} including key fobs, proximity cards, biometric readers, video intercoms, and smartphone-controlled systems.`
+        answer: `We install Paxton and Comelit access control systems in ${location}. Options include proximity fob and card readers, PIN keypads, biometric fingerprint readers, video intercom handsets, and smartphone-based access via the Paxton app. For residential blocks, Comelit video intercom allows residents to see and speak to visitors before releasing the door. For offices, Paxton Net2 provides networked control across multiple doors with time-based schedules and audit trails.`
       },
       {
-        question: `Can you integrate access control with existing systems in ${location}?`,
-        answer: `Yes, we can integrate new access control systems in ${location} with existing CCTV, alarms, and building management systems for comprehensive security management.`
+        question: `Can you integrate access control with CCTV in ${location}?`,
+        answer: `Yes. We can configure the access control system to trigger CCTV recording when a door is accessed, or to display a camera view on a monitor when someone requests entry. This provides a visual record alongside the electronic audit trail. The integration works between Paxton access control and Uniview CCTV, both of which we install and maintain.`
       },
       {
-        question: `How do you program access control systems in ${location}?`,
-        answer: `Our engineers program access control systems in ${location} during installation, setting up user groups, time zones, and access levels. We provide full training on system operation.`
+        question: `What happens if the access control system loses power in ${location}?`,
+        answer: `All maglock installations include a backup battery that maintains the system for a defined period during power loss. Maglocks are fail-safe by design: they release when power is lost entirely, allowing occupants to exit safely for fire evacuation. Electric strikes can be configured as fail-safe or fail-secure depending on the application. Every installation includes a break-glass release on the inside of controlled doors.`
       },
       {
-        question: `What happens if the access control system fails in ${location}?`,
-        answer: `Access control systems in ${location} typically include battery backup and fail-safe mechanisms. We offer 24/7 emergency response for critical system failures.`
+        question: `How much does access control cost in ${location}?`,
+        answer: `Access control pricing in ${location} varies significantly by scope. A single standalone door with a keypad and maglock is considerably less expensive than a multi-door networked Paxton system with video intercom. We provide detailed quotes after a free site assessment, so you know exactly what the system will cost before committing.`
       },
       {
-        question: `Can access control systems provide audit trails in ${location}?`,
-        answer: `Yes, our access control systems in ${location} maintain detailed logs of all entry attempts, successful access, and system events for security and compliance purposes.`
+        question: `Can I manage who has access to my ${location} building remotely?`,
+        answer: `Yes. Paxton Net2 and Paxton10 both offer remote administration. You can add or revoke user credentials, set time-based access schedules (e.g., cleaners only between 6pm and 8pm), and review door activity logs from any web browser. Paxton10 also supports smartphone-based credentials, so users can tap their phone instead of carrying a fob.`
       }
     ],
     'security': [
       {
-        question: `What types of security lighting are available in ${location}?`,
-        answer: `We install various security lighting in ${location} including PIR-activated floodlights, LED security lights, timer-controlled systems, and emergency backup lighting.`
+        question: `What types of security lighting do you install in ${location}?`,
+        answer: `We install LED PIR-activated floodlights for driveways, gardens, and building perimeters; dusk-to-dawn lights that operate automatically based on ambient light levels; and BS 5266-1 compliant emergency lighting for commercial premises. For domestic properties, a 20W to 30W LED floodlight typically covers a driveway or rear garden. For commercial sites, we install 50W to 150W units with adjustable PIR sensitivity and timer settings.`
       },
       {
-        question: `How long do LED security lights last in ${location}?`,
-        answer: `LED security lights installed in ${location} typically last 25,000-50,000 hours (10-20 years) with minimal maintenance, making them highly cost-effective.`
+        question: `Is emergency lighting a legal requirement in ${location}?`,
+        answer: `Emergency lighting is a legal requirement for most commercial premises in ${location} under the Regulatory Reform (Fire Safety) Order 2005. This includes offices, shops, restaurants, warehouses, HMOs with common areas, and any workplace where people could be at risk if the mains lighting fails. The system must illuminate escape routes for a minimum of 3 hours (1 hour for some premises). BS 5266-1 provides the detailed technical requirements.`
       },
       {
-        question: `Can security lighting integrate with alarms in ${location}?`,
-        answer: `Yes, security lighting in ${location} can be integrated with burglar alarms to activate upon detection, providing visual deterrent and improved CCTV recording conditions.`
+        question: `How often does emergency lighting need testing in ${location}?`,
+        answer: `Emergency lighting in ${location} commercial premises requires monthly brief function tests (switching off the mains and checking that each fitting illuminates) and an annual full 3-hour duration test. The annual test must be carried out and certified by a competent person. We provide this testing and certification as part of our maintenance service. Results are recorded in the premises log book.`
       },
       {
-        question: `What maintenance do security lights need in ${location}?`,
-        answer: `Security lighting in ${location} requires minimal maintenance - typically annual cleaning and sensor testing. LED systems virtually eliminate bulb replacement costs.`
+        question: `Can security lighting work with CCTV in ${location}?`,
+        answer: `Yes, and we recommend it. Positioning PIR security lights to illuminate CCTV camera coverage areas significantly improves night-time image quality. When motion is detected, the floodlight activates and the camera captures well-lit footage rather than relying solely on infrared. We design security lighting and CCTV schemes together when both services are being installed.`
       },
       {
-        question: `Do you install emergency lighting in ${location}?`,
-        answer: `Yes, we install BS 5266-compliant emergency lighting systems in ${location} for commercial properties, including exit route lighting and open area anti-panic lighting.`
+        question: `How much does security lighting cost in ${location}?`,
+        answer: `Security lighting costs in ${location} depend on the number of fittings, cable runs, and whether existing wiring can be reused. LED PIR floodlights are energy-efficient and have a lifespan of 25,000 to 50,000 hours, so running costs are low. Emergency lighting is quoted based on the building layout and the number of fittings required for BS 5266-1 compliance. All quotes follow a free survey with no obligation.`
       }
     ]
   };
 
-  // Determine service type from service name
-  let serviceType = 'burglar';
-  if (baseService.includes('cctv')) serviceType = 'cctv';
-  else if (baseService.includes('fire')) serviceType = 'fire';
-  else if (baseService.includes('access') || baseService.includes('door') || baseService.includes('intercom')) serviceType = 'access';
-  else if (baseService.includes('lighting') || baseService.includes('emergency')) serviceType = 'security';
-
+  const serviceType = getServiceType(baseService);
   return faqSets[serviceType as keyof typeof faqSets] || faqSets.burglar;
+}
+
+// Service-specific detail blocks for richer, non-generic content
+const serviceDetailBlocks: Record<string, {
+  typicalProjects: string[];
+  equipmentUsed: string;
+  complianceNote: string;
+  maintenanceInfo: string;
+  pricingIndicator: string;
+}> = {
+  burglar: {
+    typicalProjects: [
+      'Full intruder alarm installation for a 3-bedroom semi-detached house with PIR detectors covering all ground-floor rooms, magnetic contacts on front and rear doors, and a bell box visible from the street',
+      'Wireless alarm upgrade for a rented flat where the landlord does not permit cable runs, using Pyronix wireless sensors with a 3+ year battery life',
+      'Commercial alarm system for a retail unit with opening/closing schedules, staff-specific PIN codes, and 24/7 monitoring with police response',
+      'Alarm takeover for a homeowner whose previous security company ceased trading, retaining existing sensors where possible and replacing the control panel'
+    ],
+    equipmentUsed: 'We install Pyronix Euro and Enforcer (version 11) alarm panels. Sensors include dual-technology PIR detectors, pet-friendly PIRs (up to 25kg), magnetic door and window contacts, vibration sensors, and external sounder/strobe bell boxes.',
+    complianceNote: 'All installations follow SSAIB guidelines. Systems are eligible for police response via URN registration where monitoring is selected. We provide the documentation your insurer requires for any premium discount.',
+    maintenanceInfo: 'Annual servicing keeps your alarm system compliant with insurance requirements and in reliable working order. A typical service visit takes 45 to 60 minutes and includes testing all detectors, checking battery condition, verifying communication links, and updating firmware.',
+    pricingIndicator: 'Domestic intruder alarm systems start from GBP 450 plus VAT. The final price depends on the number of detectors, monitoring options, and any additional features such as smartphone control. All quotes are provided after a free survey with no obligation.'
+  },
+  cctv: {
+    typicalProjects: [
+      'Four-camera residential system covering the front door, rear garden, driveway, and side passage, with a 2TB NVR providing approximately 14 days of continuous recording',
+      'Eight-camera commercial system for a warehouse with 4K cameras at loading bays and 2MP cameras covering general areas, configured with motion zones to reduce false alerts',
+      'Single doorbell-style camera installation for a flat, connected to an existing Wi-Fi network with cloud backup and smartphone notifications',
+      'CCTV upgrade from an analogue system to IP cameras, retaining existing cable runs where the cabling is Cat5e or better'
+    ],
+    equipmentUsed: 'We install Uniview IP cameras ranging from 2MP (1080p) to 8MP (4K). Camera types include dome, bullet, turret, and PTZ. All systems include a Uniview NVR with at least 1TB storage. Remote viewing is through the Uniview EZView app on iOS and Android.',
+    complianceNote: 'Domestic CCTV on your own property does not normally require planning permission. If cameras overlook a public area or a neighbour\'s property, ICO guidance on domestic CCTV applies. For commercial installations, we advise on signage requirements under the ICO CCTV Code of Practice and GDPR data controller obligations.',
+    maintenanceInfo: 'Annual CCTV maintenance includes cleaning camera lenses and housings, checking cable connections, verifying recording schedules, testing night vision performance, updating NVR firmware, and confirming remote access is working correctly.',
+    pricingIndicator: 'A 2-camera domestic CCTV system starts from GBP 850 plus VAT. Commercial systems are quoted individually based on camera count, resolution, and site requirements. All quotes follow a free site survey.'
+  },
+  fire: {
+    typicalProjects: [
+      'Category L2 fire alarm for a 6-bedroom HMO in compliance with the local authority licensing conditions, including heat detectors in the kitchen, smoke detectors in hallways and bedrooms, and manual call points at exits',
+      'Category M system for a small office with manual call points and sounders at each exit, suitable for premises with a straightforward layout and low fire risk',
+      'Full addressable fire alarm for a 3-storey commercial building with 40+ devices, zoned by floor, with a repeater panel at reception',
+      'Fire alarm takeover and service for a property where the previous contractor did not complete the 6-monthly service visit'
+    ],
+    equipmentUsed: 'We install fire alarm systems from Advanced, C-Tech, Fike, Haes, Kentech, EDA, EMS, Smartcell, and Zeta. Equipment includes conventional and addressable panels, optical and heat detectors, manual call points, sounders, and beacon strobes.',
+    complianceNote: 'All installations comply with BS 5839-1. The system category (L1 to L5, M, or P1/P2) is determined by the fire risk assessment and the property type. HMOs typically require at least a Category LD2 system. Commercial premises fall under the Regulatory Reform (Fire Safety) Order 2005.',
+    maintenanceInfo: 'BS 5839-1 requires professional servicing every 6 months. Each service visit tests every detector, call point, and sounder; checks battery condition and backup power; inspects cabling for damage; and updates the fire alarm log book. Weekly user testing (activating one call point) is also advised and takes approximately 2 minutes.',
+    pricingIndicator: 'Fire alarm pricing depends on the system category, building size, and number of devices. We provide a detailed quotation after reviewing your fire risk assessment and surveying the property. HMO alarm packages and 6-monthly service contracts are available.'
+  },
+  access: {
+    typicalProjects: [
+      'Paxton Net2 system for an office building with controlled entry at the main door and 3 internal restricted areas, with 50 user credentials and time-based access schedules',
+      'Comelit video intercom for a residential block of 12 flats, allowing each resident to see and speak to visitors before granting entry',
+      'Standalone keypad and maglock on a commercial stockroom door, providing simple access control without a networked system',
+      'Access control upgrade from a key-based system to proximity fobs, eliminating the cost of lock changes when staff leave'
+    ],
+    equipmentUsed: 'We install Paxton access control (Net2, Paxton10) and Comelit door entry systems. Hardware includes proximity card readers, keypad readers, biometric fingerprint readers, maglocks, electric strikes, and video intercom handsets.',
+    complianceNote: 'All maglock installations include a break-glass release or request-to-exit button for fire evacuation compliance. Maglocks are fail-safe: they release when power is lost, ensuring occupants can always exit the building safely.',
+    maintenanceInfo: 'Access control maintenance includes checking all readers and locks for correct operation, testing break-glass units, verifying backup battery condition, reviewing audit logs for anomalies, and updating user credentials as staff change.',
+    pricingIndicator: 'Access control pricing varies by the number of doors, reader types, and user count. A single-door standalone system is significantly less expensive than a networked multi-door system. All quotes follow a free site assessment.'
+  },
+  security: {
+    typicalProjects: [
+      'PIR floodlight installation covering the front and rear of a residential property, with adjustable sensitivity and timer settings',
+      'BS 5266-1 emergency lighting for a commercial office, including maintained exit signs above all fire doors and non-maintained bulkhead fittings in corridors and stairwells',
+      'LED dusk-to-dawn security lights for a car park, replacing older halogen fittings and reducing energy consumption by approximately 70%',
+      'Annual emergency lighting test and certification for a landlord with multiple commercial units'
+    ],
+    equipmentUsed: 'We install LED PIR floodlights, dusk-to-dawn sensors, bulkhead emergency fittings, maintained and non-maintained emergency lights, and illuminated exit signs. All emergency lighting meets BS 5266-1 requirements.',
+    complianceNote: 'Emergency lighting is a legal requirement for most commercial premises under the Regulatory Reform (Fire Safety) Order 2005. BS 5266-1 specifies the minimum illumination levels, battery duration (3 hours for most premises), and testing requirements.',
+    maintenanceInfo: 'Emergency lighting requires monthly brief function tests and an annual full 3-hour duration test. We carry out and certify the annual test. Security lighting requires minimal maintenance beyond occasional lens cleaning and PIR sensor adjustment.',
+    pricingIndicator: 'Security lighting installation costs depend on the number of fittings, cable runs, and whether existing wiring can be reused. Emergency lighting is quoted based on the building layout and number of fittings required for compliance. All quotes follow a free survey.'
+  }
+};
+
+function getServiceType(service: string): string {
+  const s = service.toLowerCase();
+  if (s.includes('cctv')) return 'cctv';
+  if (s.includes('fire')) return 'fire';
+  if (s.includes('access') || s.includes('door') || s.includes('intercom') || s.includes('maglock') || s.includes('keypad') || s.includes('fob')) return 'access';
+  if (s.includes('lighting') || s.includes('emergency')) return 'security';
+  return 'burglar';
 }
 
 // Generate unique content for each service-location combination
@@ -407,33 +480,47 @@ function generateContent(service: string, location: string) {
     postcode: ''
   };
 
-  const isFireService = service.toLowerCase().includes('fire');
+  const serviceType = getServiceType(service);
+  const details = serviceDetailBlocks[serviceType] || serviceDetailBlocks.burglar;
+  const isFireService = serviceType === 'fire';
+  const nearbyList = locationData.nearbyAreas.slice(0, 3).join(', ');
+  const landmarkList = locationData.landmarks.slice(0, 2).join(' or ');
 
   return {
     h1: `${service} ${location} - Professional Installation & Maintenance`,
     metaDescription: `Expert ${service.toLowerCase()} services in ${location}. Professional installation, maintenance & 24/7 support. Free surveys available. Call ${COMPANY_INFO.phone} or ${COMPANY_INFO.phone2} today.`,
-    
-    hero: `Looking for reliable ${service.toLowerCase()} in ${location}? J&L Security provides professional installation and maintenance services throughout ${location} and surrounding areas. With same-day surveys available and over 12 years of experience, we're your trusted local security specialists.`,
-    
-    intro: `Our experienced engineers serve ${location} and the surrounding ${locationData.nearbyAreas.slice(0, 3).join(', ')} areas, providing comprehensive ${service.toLowerCase()} solutions for homes and businesses. Whether you're located near ${locationData.landmarks.slice(0, 2).join(' or ')}, our local team ensures rapid response times and personalized service.`,
-    
+
+    hero: `Looking for reliable ${service.toLowerCase()} in ${location}? J&L Security provides professional installation and maintenance services throughout ${location} and surrounding areas. With same-day surveys available and over 12 years of experience, we are your trusted local security specialists.`,
+
+    intro: `Our experienced engineers serve ${location} and the surrounding ${nearbyList} areas, providing comprehensive ${service.toLowerCase()} solutions for homes and businesses.${landmarkList ? ` Whether you are located near ${landmarkList}, our` : ' Our'} local team ensures rapid response times and personalised service. Every installation is carried out to SSAIB standards with full documentation and aftercare.`,
+
     whyChoose: [
-      'Same-day free surveys available',
-      'Local engineers based in Essex & Greater London',
-      'SSAIB installation standards',
-      '24/7 emergency response available',
-      'Comprehensive warranties and ongoing support',
-      'Competitive pricing with transparent quotes'
+      `Local engineers covering ${location} (${locationData.postcode || 'local area'}) and surrounding areas`,
+      'Free, no-obligation security survey with same-day availability',
+      'All installations to SSAIB standards',
+      '24/7 emergency response for existing customers',
+      'Transparent, fixed-price quotes with no hidden charges',
+      'Ongoing maintenance contracts available'
     ],
-    
+
     serviceIncludes: generateServiceIncludes(service),
-    
-    localInfo: `${location} is a ${locationData.localCharacteristics}, making security a priority for residents and businesses. Our ${service.toLowerCase()} solutions are tailored to the specific needs of ${location} properties, from period homes to modern developments. With excellent ${locationData.commuterRoutes[0] || 'transport connections'}, many ${location} residents commute to London, making remote monitoring and smartphone control particularly valuable.`,
-    
-    coverage: `We provide ${service.toLowerCase()} services throughout ${location} (${locationData.postcode}) and nearby areas including ${locationData.nearbyAreas.join(', ')}. Our local knowledge ensures we understand the specific security challenges facing ${location} residents and businesses.`,
-    
-    fireCompliance: isFireService ? `All our fire alarm installations in ${location} comply with BS 5839-1 standards and include the mandatory 6-monthly servicing to maintain compliance. This is particularly important for HMOs, commercial properties, and shared residential buildings throughout ${location}.` : null,
-    
+
+    equipmentUsed: details.equipmentUsed,
+
+    typicalProjects: details.typicalProjects,
+
+    complianceNote: details.complianceNote,
+
+    localInfo: `${location} is a ${locationData.localCharacteristics}, making security a priority for residents and businesses. Our ${service.toLowerCase()} solutions are tailored to the specific needs of ${location} properties, from period homes to modern developments.${locationData.commuterRoutes[0] ? ` With excellent ${locationData.commuterRoutes[0]}, many ${location} residents commute to London, making remote monitoring and smartphone control particularly valuable for keeping an eye on their property while away.` : ''}`,
+
+    maintenanceInfo: details.maintenanceInfo,
+
+    pricingIndicator: details.pricingIndicator,
+
+    coverage: `We provide ${service.toLowerCase()} services throughout ${location} (${locationData.postcode}) and nearby areas including ${locationData.nearbyAreas.join(', ')}. Our local knowledge means we understand the specific security challenges facing ${location} residents and businesses, from the property types common in the area to the response times achievable from our base in Brentwood.`,
+
+    fireCompliance: isFireService ? `All our fire alarm installations in ${location} comply with BS 5839-1 standards and include the mandatory 6-monthly servicing to maintain compliance. This is particularly important for HMOs, commercial properties, and shared residential buildings throughout ${location}. We provide full compliance documentation including commissioning certificates and log books.` : null,
+
     faqs: generateServiceFAQs(service, location)
   };
 }
@@ -685,22 +772,22 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
         </div>
       </section>
 
-      {/* Local Information */}
+      {/* Equipment & Compliance */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            Local {combination.service} Services in {combination.location}
+            What We Install in {combination.location}
           </h2>
-          
+
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 leading-relaxed mb-6">
-              {content.localInfo}
+              {content.equipmentUsed}
             </p>
-            
-            <p className="text-gray-700 leading-relaxed">
-              {content.coverage}
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              {content.complianceNote}
             </p>
-            
+
             {content.fireCompliance && (
               <div className="bg-orange-50 border-l-4 border-orange-400 p-6 my-8">
                 <div className="flex">
@@ -718,6 +805,57 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
                 </div>
               </div>
             )}
+          </div>
+        </div>
+      </section>
+
+      {/* Typical Projects */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Example Projects in {combination.location}
+          </h2>
+          <p className="text-gray-600 text-center mb-8">
+            The types of {combination.service.toLowerCase()} work we carry out for customers in {combination.location} and surrounding areas:
+          </p>
+          <div className="space-y-4">
+            {content.typicalProjects.map((project, index) => (
+              <div key={index} className="bg-white rounded-lg p-5 border border-gray-200">
+                <div className="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-primary-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 leading-relaxed">{project}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Local Information & Maintenance */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Local {combination.service} Services in {combination.location}
+          </h2>
+
+          <div className="prose prose-lg max-w-none">
+            <p className="text-gray-700 leading-relaxed mb-6">
+              {content.localInfo}
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              {content.coverage}
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Ongoing Maintenance</h3>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              {content.maintenanceInfo}
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Pricing</h3>
+            <p className="text-gray-700 leading-relaxed">
+              {content.pricingIndicator}
+            </p>
           </div>
         </div>
       </section>

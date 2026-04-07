@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Shield, Camera, Flame, Lock, Lightbulb, CheckCircle, ArrowRight, HelpCircle } from 'lucide-react';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
-import { generateServiceSchema, generateFAQPageSchema } from '@/lib/schema';
+import { generateServiceSchema, generateFAQPageSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { COMPANY_INFO } from '@/lib/utils';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Security Services - Alarms, CCTV, Fire Protection',
@@ -168,8 +169,12 @@ export default function ServicesPage() {
     'Security System Services',
     'Comprehensive security system installation and maintenance services across Essex and Greater London'
   );
-  
+
   const faqSchema = generateFAQPageSchema(faqs);
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: COMPANY_INFO.website },
+    { name: 'Services', url: `${COMPANY_INFO.website}/services` },
+  ]);
 
   return (
     <>
@@ -177,9 +182,11 @@ export default function ServicesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([serviceSchema, faqSchema]),
+          __html: JSON.stringify([serviceSchema, faqSchema, breadcrumbSchema]),
         }}
       />
+
+      <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Services' }]} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-16">

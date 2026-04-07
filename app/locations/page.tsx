@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Phone, Clock, CheckCircle } from 'lucide-react';
 import { COMPANY_INFO } from '@/lib/utils';
-import { generateLocalBusinessSchema } from '@/lib/schema';
+import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '@/lib/schema';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Service Areas - Essex & Greater London Coverage',
@@ -16,6 +17,10 @@ export const metadata: Metadata = {
     'security company London',
     'local security installer'
   ],
+  openGraph: {
+    title: 'Service Areas - Essex & Greater London Coverage',
+    description: 'Find J&L Security services in your local area across Essex and Greater London.',
+  },
   alternates: {
     canonical: `${COMPANY_INFO.website}/locations`,
   },
@@ -104,6 +109,10 @@ const greaterLondonLocations = [
 
 export default function LocationsPage() {
   const localBusinessSchema = generateLocalBusinessSchema();
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: COMPANY_INFO.website },
+    { name: 'Locations', url: `${COMPANY_INFO.website}/locations` },
+  ]);
 
   return (
     <>
@@ -111,9 +120,11 @@ export default function LocationsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(localBusinessSchema),
+          __html: JSON.stringify([localBusinessSchema, breadcrumbSchema]),
         }}
       />
+
+      <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Locations' }]} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-16">

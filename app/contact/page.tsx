@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import { Phone, Mail, MapPin, Clock, MessageSquare, Calendar, CheckCircle } from 'lucide-react';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
 import { COMPANY_INFO } from '@/lib/utils';
-import { generateLocalBusinessSchema } from '@/lib/schema';
+import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '@/lib/schema';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Contact J&L Security - Free Surveys & Emergency Callouts',
@@ -15,6 +16,10 @@ export const metadata: Metadata = {
     'Essex security contact',
     'London security services'
   ],
+  openGraph: {
+    title: 'Contact J&L Security - Free Surveys & Emergency Callouts',
+    description: 'Contact J&L Security for free security surveys, emergency callouts, and expert advice across Essex and Greater London.',
+  },
   alternates: {
     canonical: `${COMPANY_INFO.website}/contact`,
   },
@@ -77,6 +82,10 @@ const servicePromises = [
 
 export default function ContactPage() {
   const localBusinessSchema = generateLocalBusinessSchema();
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: COMPANY_INFO.website },
+    { name: 'Contact', url: `${COMPANY_INFO.website}/contact` },
+  ]);
 
   return (
     <>
@@ -84,9 +93,11 @@ export default function ContactPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(localBusinessSchema),
+          __html: JSON.stringify([localBusinessSchema, breadcrumbSchema]),
         }}
       />
+
+      <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Contact' }]} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-16">
@@ -222,16 +233,18 @@ export default function ContactPage() {
             </p>
           </div>
 
-          {/* Map Placeholder */}
-          <div className="bg-gray-100 rounded-lg h-96 flex items-center justify-center mb-8">
-            <div className="text-center">
-              <MapPin className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-              <p className="text-gray-600 text-lg">Interactive Google Map</p>
-              <p className="text-gray-500 text-sm mt-2">
-                Embed Google Maps showing our location at:<br />
-                Jubilee House No3, The Drive, Great Warley, Brentwood CM13 3FR
-              </p>
-            </div>
+          {/* Google Map */}
+          <div className="rounded-lg overflow-hidden h-96 mb-8">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.5!2d0.258!3d51.588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00000000000%3A0x0!2sThe+Drive%2C+Great+Warley%2C+Brentwood+CM13+3FR!5e0!3m2!1sen!2suk!4v1"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="J&amp;L Security office location in Great Warley, Brentwood"
+            />
           </div>
 
           {/* Directions */}

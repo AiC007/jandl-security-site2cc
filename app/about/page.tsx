@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Shield, Award, Clock, CheckCircle, Wrench, Phone } from 'lucide-react';
 import { COMPANY_INFO } from '@/lib/utils';
-import { generateOrganizationSchema } from '@/lib/schema';
+import { generateOrganizationSchema, generateBreadcrumbSchema } from '@/lib/schema';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'About J&L Security - 13+ Years Professional Security Services',
@@ -15,6 +16,10 @@ export const metadata: Metadata = {
     'security company London',
     'trusted security services'
   ],
+  openGraph: {
+    title: 'About J&L Security - 13+ Years Professional Security Services',
+    description: 'Established security company serving Essex & Greater London since 2011. Accredited engineers and 24/7 emergency support.',
+  },
   alternates: {
     canonical: `${COMPANY_INFO.website}/about`,
   },
@@ -58,6 +63,10 @@ const keyStats = [
 
 export default function AboutPage() {
   const organizationSchema = generateOrganizationSchema();
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: COMPANY_INFO.website },
+    { name: 'About', url: `${COMPANY_INFO.website}/about` },
+  ]);
 
   return (
     <>
@@ -65,9 +74,11 @@ export default function AboutPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationSchema),
+          __html: JSON.stringify([organizationSchema, breadcrumbSchema]),
         }}
       />
+
+      <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'About' }]} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-16">

@@ -864,5 +864,8 @@ export async function generateMetadata({ params }: ServiceLocationPageProps) {
       description: content.metaDescription,
       type: 'website',
     },
+    alternates: {
+      canonical: `${COMPANY_INFO.website}/${resolvedParams.service}/${resolvedParams.location}`,
+    },
   };
 }

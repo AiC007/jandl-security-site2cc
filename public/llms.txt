@@ -45,7 +45,8 @@ Sitemap: https://jandlsecurity.co.uk/sitemap.xml
 # Company: J&L Security Ltd.
 # Services: Burglar Alarms, CCTV, Fire Alarms, Access Control, Security Lighting
 # Areas: Essex, Greater London, Kent borders
-# Phone: 01708 123456
+# Phone: 0204 538 5925
+# Phone (secondary): 0208 220 4770
 # Email: info@jandlsecurity.co.uk
 # Emergency: 24/7 Available
 # Established: 2011

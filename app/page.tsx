@@ -92,12 +92,20 @@ export default function Home() {
                 and 24/7 monitoring options. Trusted by thousands across Essex and Greater London since 2011.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <a
-                  href={`tel:${COMPANY_INFO.phone}`}
-                  className="bg-white text-primary-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors text-center"
-                >
-                  Call {COMPANY_INFO.phone}
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a
+                    href={`tel:${COMPANY_INFO.phone}`}
+                    className="bg-white text-primary-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors text-center"
+                  >
+                    Call {COMPANY_INFO.phone}
+                  </a>
+                  <a
+                    href={`tel:${COMPANY_INFO.phone2}`}
+                    className="text-primary-200 hover:text-white text-sm text-center transition-colors"
+                  >
+                    or call {COMPANY_INFO.phone2}
+                  </a>
+                </div>
                 <Link
                   href="/contact"
                   className="bg-primary-500 text-white px-8 py-3 rounded-md font-semibold hover:bg-primary-400 border-2 border-primary-400 transition-colors text-center"
@@ -288,12 +296,20 @@ export default function Home() {
             Same-day appointments available, subject to availability.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={`tel:${COMPANY_INFO.phone}`}
-              className="bg-white text-primary-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
-            >
-              Call {COMPANY_INFO.phone}
-            </a>
+            <div className="flex flex-col gap-1">
+              <a
+                href={`tel:${COMPANY_INFO.phone}`}
+                className="bg-white text-primary-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Call {COMPANY_INFO.phone}
+              </a>
+              <a
+                href={`tel:${COMPANY_INFO.phone2}`}
+                className="text-primary-200 hover:text-white text-sm text-center transition-colors"
+              >
+                or call {COMPANY_INFO.phone2}
+              </a>
+            </div>
             <a
               href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hi, I'd like a free security survey`}
               className="bg-green-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors"

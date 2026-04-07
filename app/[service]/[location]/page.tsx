@@ -411,7 +411,7 @@ function generateContent(service: string, location: string) {
 
   return {
     h1: `${service} ${location} - Professional Installation & Maintenance`,
-    metaDescription: `Expert ${service.toLowerCase()} services in ${location}. Professional installation, maintenance & 24/7 support. Free surveys available. Call ${COMPANY_INFO.phone} today.`,
+    metaDescription: `Expert ${service.toLowerCase()} services in ${location}. Professional installation, maintenance & 24/7 support. Free surveys available. Call ${COMPANY_INFO.phone} or ${COMPANY_INFO.phone2} today.`,
     
     hero: `Looking for reliable ${service.toLowerCase()} in ${location}? J&L Security provides professional installation and maintenance services throughout ${location} and surrounding areas. With same-day surveys available and over 12 years of experience, we're your trusted local security specialists.`,
     
@@ -600,13 +600,21 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href={`tel:${COMPANY_INFO.phone}`}
-                  className="bg-white text-primary-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors text-center inline-flex items-center justify-center"
-                >
-                  <Phone className="h-5 w-5 mr-2" />
-                  Call {COMPANY_INFO.phone}
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a
+                    href={`tel:${COMPANY_INFO.phone}`}
+                    className="bg-white text-primary-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors text-center inline-flex items-center justify-center"
+                  >
+                    <Phone className="h-5 w-5 mr-2" />
+                    Call {COMPANY_INFO.phone}
+                  </a>
+                  <a
+                    href={`tel:${COMPANY_INFO.phone2}`}
+                    className="text-primary-200 hover:text-white text-sm text-center transition-colors"
+                  >
+                    or call {COMPANY_INFO.phone2}
+                  </a>
+                </div>
                 <a
                   href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hi, I need ${combination.service.toLowerCase()} in ${combination.location}`}
                   className="bg-green-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors text-center inline-flex items-center justify-center"
@@ -748,13 +756,21 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={`tel:${COMPANY_INFO.phone}`}
-              className="bg-white text-primary-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
-            >
-              <Phone className="h-5 w-5 mr-2" />
-              Call {COMPANY_INFO.phone}
-            </a>
+            <div className="flex flex-col gap-1">
+              <a
+                href={`tel:${COMPANY_INFO.phone}`}
+                className="bg-white text-primary-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
+              >
+                <Phone className="h-5 w-5 mr-2" />
+                Call {COMPANY_INFO.phone}
+              </a>
+              <a
+                href={`tel:${COMPANY_INFO.phone2}`}
+                className="text-primary-200 hover:text-white text-sm text-center transition-colors"
+              >
+                or call {COMPANY_INFO.phone2}
+              </a>
+            </div>
             <a
               href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hi, I need ${combination.service.toLowerCase()} in ${combination.location}. Please send me a quote.`}
               className="bg-green-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center"

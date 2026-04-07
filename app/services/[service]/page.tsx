@@ -333,12 +333,20 @@ export default async function ServicePage({ params }: Props) {
               </h1>
               <p className="text-xl text-primary-100 mb-8">{service.description}</p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href={`tel:${COMPANY_INFO.phone}`}
-                  className="bg-white text-primary-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors text-center"
-                >
-                  Call {COMPANY_INFO.phone}
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a
+                    href={`tel:${COMPANY_INFO.phone}`}
+                    className="bg-white text-primary-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors text-center"
+                  >
+                    Call {COMPANY_INFO.phone}
+                  </a>
+                  <a
+                    href={`tel:${COMPANY_INFO.phone2}`}
+                    className="text-primary-200 hover:text-white text-sm text-center transition-colors"
+                  >
+                    or call {COMPANY_INFO.phone2}
+                  </a>
+                </div>
                 <Link
                   href="/contact"
                   className="bg-primary-500 text-white px-8 py-3 rounded-md font-semibold hover:bg-primary-400 border-2 border-primary-400 transition-colors text-center"
@@ -494,13 +502,21 @@ export default async function ServicePage({ params }: Props) {
             No-obligation assessment from our qualified engineers. Same-day appointments available across Essex and Greater London.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={`tel:${COMPANY_INFO.phone}`}
-              className="inline-flex items-center justify-center gap-2 bg-white text-primary-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
-            >
-              <Phone className="h-4 w-4" />
-              Call {COMPANY_INFO.phone}
-            </a>
+            <div className="flex flex-col gap-1">
+              <a
+                href={`tel:${COMPANY_INFO.phone}`}
+                className="inline-flex items-center justify-center gap-2 bg-white text-primary-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                Call {COMPANY_INFO.phone}
+              </a>
+              <a
+                href={`tel:${COMPANY_INFO.phone2}`}
+                className="text-primary-200 hover:text-white text-sm text-center transition-colors"
+              >
+                or call {COMPANY_INFO.phone2}
+              </a>
+            </div>
             <a
               href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hi, I'd like a free ${service.name} survey`}
               className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors"

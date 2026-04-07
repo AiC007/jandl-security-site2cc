@@ -96,11 +96,18 @@ export default function Footer() {
                   <Phone className="h-4 w-4 text-primary-400" />
                 </div>
                 <div>
-                  <a 
-                    href={`tel:${COMPANY_INFO.phone}`} 
+                  <a
+                    href={`tel:${COMPANY_INFO.phone}`}
                     className="text-base-300 hover:text-white text-sm font-medium transition-colors"
                   >
                     {COMPANY_INFO.phone}
+                  </a>
+                  <br />
+                  <a
+                    href={`tel:${COMPANY_INFO.phone2}`}
+                    className="text-base-300 hover:text-white text-sm font-medium transition-colors"
+                  >
+                    {COMPANY_INFO.phone2}
                   </a>
                   <div className="text-xs text-base-400">24/7 Emergency</div>
                 </div>

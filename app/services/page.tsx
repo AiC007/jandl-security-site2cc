@@ -343,12 +343,20 @@ export default function ServicesPage() {
                 We'll assess your needs and recommend the most suitable security solutions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href={`tel:${COMPANY_INFO.phone}`}
-                  className="bg-white text-primary-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors text-center"
-                >
-                  Call {COMPANY_INFO.phone}
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a
+                    href={`tel:${COMPANY_INFO.phone}`}
+                    className="bg-white text-primary-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors text-center"
+                  >
+                    Call {COMPANY_INFO.phone}
+                  </a>
+                  <a
+                    href={`tel:${COMPANY_INFO.phone2}`}
+                    className="text-primary-200 hover:text-white text-sm text-center transition-colors"
+                  >
+                    or call {COMPANY_INFO.phone2}
+                  </a>
+                </div>
                 <Link
                   href="/contact"
                   className="bg-primary-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-400 border-2 border-primary-400 transition-colors text-center"

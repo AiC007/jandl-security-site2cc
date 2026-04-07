@@ -127,12 +127,20 @@ export default function LocationsPage() {
               Same-day surveys available, with local engineers covering all major towns and cities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href={`tel:${COMPANY_INFO.phone}`}
-                className="bg-white text-primary-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Call {COMPANY_INFO.phone}
-              </a>
+              <div className="flex flex-col gap-1">
+                <a
+                  href={`tel:${COMPANY_INFO.phone}`}
+                  className="bg-white text-primary-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors text-center"
+                >
+                  Call {COMPANY_INFO.phone}
+                </a>
+                <a
+                  href={`tel:${COMPANY_INFO.phone2}`}
+                  className="text-primary-200 hover:text-white text-sm text-center transition-colors"
+                >
+                  or call {COMPANY_INFO.phone2}
+                </a>
+              </div>
               <Link
                 href="/contact"
                 className="bg-primary-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-400 border-2 border-primary-400 transition-colors"
@@ -309,7 +317,14 @@ export default function LocationsPage() {
                 href={`tel:${COMPANY_INFO.phone}`}
                 className="bg-primary-600 text-white px-6 py-2 rounded-md font-medium hover:bg-primary-700 transition-colors"
               >
-                Check Coverage
+                Call {COMPANY_INFO.phone}
+              </a>
+              <span className="text-gray-500 mx-1">or</span>
+              <a
+                href={`tel:${COMPANY_INFO.phone2}`}
+                className="bg-primary-600 text-white px-6 py-2 rounded-md font-medium hover:bg-primary-700 transition-colors"
+              >
+                Call {COMPANY_INFO.phone2}
               </a>
             </div>
           </div>
@@ -325,13 +340,21 @@ export default function LocationsPage() {
             Same-day appointments available across all our service areas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={`tel:${COMPANY_INFO.phone}`}
-              className="bg-white text-primary-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
-            >
-              <Phone className="inline h-4 w-4 mr-2" />
-              Call {COMPANY_INFO.phone}
-            </a>
+            <div className="flex flex-col gap-1">
+              <a
+                href={`tel:${COMPANY_INFO.phone}`}
+                className="bg-white text-primary-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
+              >
+                <Phone className="inline h-4 w-4 mr-2" />
+                Call {COMPANY_INFO.phone}
+              </a>
+              <a
+                href={`tel:${COMPANY_INFO.phone2}`}
+                className="text-primary-200 hover:text-white text-sm text-center transition-colors"
+              >
+                or call {COMPANY_INFO.phone2}
+              </a>
+            </div>
             <a
               href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hi, I'd like a free security survey in [YOUR AREA]`}
               className="bg-green-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors"

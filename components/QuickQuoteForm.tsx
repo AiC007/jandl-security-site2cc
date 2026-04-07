@@ -64,13 +64,20 @@ export default function QuickQuoteForm() {
         <p className="text-green-700 mb-4">
           We&apos;ve received your enquiry and will call you within 2 hours during business hours.
         </p>
-        <div className="flex justify-center space-x-4">
+        <div className="flex justify-center flex-wrap gap-2">
           <a
             href={`tel:${COMPANY_INFO.phone}`}
             className="inline-flex items-center space-x-2 bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700"
           >
             <Phone className="h-4 w-4" />
-            <span>Call Now</span>
+            <span>{COMPANY_INFO.phone}</span>
+          </a>
+          <a
+            href={`tel:${COMPANY_INFO.phone2}`}
+            className="inline-flex items-center space-x-2 bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700"
+          >
+            <Phone className="h-4 w-4" />
+            <span>{COMPANY_INFO.phone2}</span>
           </a>
           <a
             href={`https://wa.me/${COMPANY_INFO.whatsapp}`}
@@ -156,13 +163,20 @@ export default function QuickQuoteForm() {
         <p className="text-xs text-gray-600 text-center mb-3">
           Or contact us directly:
         </p>
-        <div className="flex justify-center space-x-4">
+        <div className="flex justify-center flex-wrap gap-x-4 gap-y-1">
           <a
             href={`tel:${COMPANY_INFO.phone}`}
             className="inline-flex items-center space-x-2 text-primary-600 hover:text-primary-700 text-sm"
           >
             <Phone className="h-4 w-4" />
-            <span>Call Now</span>
+            <span>{COMPANY_INFO.phone}</span>
+          </a>
+          <a
+            href={`tel:${COMPANY_INFO.phone2}`}
+            className="inline-flex items-center space-x-2 text-primary-600 hover:text-primary-700 text-sm"
+          >
+            <Phone className="h-4 w-4" />
+            <span>{COMPANY_INFO.phone2}</span>
           </a>
           <a
             href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hi, I'd like a security quote`}

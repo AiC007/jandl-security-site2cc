@@ -10,6 +10,18 @@ export function generateOrganizationSchema() {
     "logo": COMPANY_INFO.website + "/images/jandl-security-logo.jpg",
     "telephone": COMPANY_INFO.phone,
     "email": COMPANY_INFO.email,
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": COMPANY_INFO.phone,
+        "contactType": "customer service"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": COMPANY_INFO.phone2,
+        "contactType": "customer service"
+      }
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Jubilee House No3, The Drive, Great Warley",
@@ -88,6 +100,18 @@ export function generateLocalBusinessSchema() {
     "url": COMPANY_INFO.website,
     "telephone": COMPANY_INFO.phone,
     "email": COMPANY_INFO.email,
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": COMPANY_INFO.phone,
+        "contactType": "customer service"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": COMPANY_INFO.phone2,
+        "contactType": "customer service"
+      }
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Jubilee House No3, The Drive, Great Warley",

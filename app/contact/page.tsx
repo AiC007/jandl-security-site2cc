@@ -24,7 +24,7 @@ const contactMethods = [
   {
     icon: Phone,
     title: 'Phone',
-    primary: COMPANY_INFO.phone,
+    primary: `${COMPANY_INFO.phone} / ${COMPANY_INFO.phone2}`,
     secondary: '24/7 Emergency Line',
     description: 'Speak directly with our team for immediate assistance or to book your free survey.',
     action: `tel:${COMPANY_INFO.phone}`,
@@ -280,6 +280,12 @@ export default function ContactPage() {
               Call {COMPANY_INFO.phone}
             </a>
             <a
+              href={`tel:${COMPANY_INFO.phone2}`}
+              className="bg-red-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-red-700 transition-colors"
+            >
+              Call {COMPANY_INFO.phone2}
+            </a>
+            <a
               href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=EMERGENCY - I need immediate assistance`}
               className="bg-green-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-green-700 transition-colors"
               target="_blank"
@@ -312,7 +318,8 @@ export default function ContactPage() {
             <p className="text-gray-600">
               Not sure if we cover your area? 
               <a href={`tel:${COMPANY_INFO.phone}`} className="text-primary-600 hover:text-primary-700 font-medium ml-1">
-                Call us to check
+                Call us on {COMPANY_INFO.phone}</a> or <a href={`tel:${COMPANY_INFO.phone2}`} className="text-primary-600 hover:text-primary-700 font-medium">
+                {COMPANY_INFO.phone2} to check
               </a>
             </p>
           </div>

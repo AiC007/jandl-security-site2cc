@@ -21,7 +21,7 @@ export default function Header() {
     <>
       {/* Emergency Banner */}
       <div className="bg-red-600 text-white text-center py-2 text-sm">
-        <strong>24/7 Emergency Callouts Available</strong> - Call {COMPANY_INFO.phone} Now
+        <strong>24/7 Emergency Callouts Available</strong> - Call {COMPANY_INFO.phone} or {COMPANY_INFO.phone2} Now
       </div>
 
       <header className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
@@ -51,13 +51,22 @@ export default function Header() {
 
             {/* Contact Info */}
             <div className="hidden lg:flex items-center space-x-4">
-              <a
-                href={`tel:${COMPANY_INFO.phone}`}
-                className="flex items-center space-x-2 text-primary-600 hover:text-primary-700"
-              >
-                <Phone className="h-4 w-4" />
-                <span className="text-sm font-medium">{COMPANY_INFO.phone}</span>
-              </a>
+              <div className="flex items-center space-x-3">
+                <Phone className="h-4 w-4 text-primary-600" />
+                <a
+                  href={`tel:${COMPANY_INFO.phone}`}
+                  className="text-sm font-medium text-primary-600 hover:text-primary-700"
+                >
+                  {COMPANY_INFO.phone}
+                </a>
+                <span className="text-gray-300">|</span>
+                <a
+                  href={`tel:${COMPANY_INFO.phone2}`}
+                  className="text-sm font-medium text-primary-600 hover:text-primary-700"
+                >
+                  {COMPANY_INFO.phone2}
+                </a>
+              </div>
               <Link
                 href="/contact"
                 className="bg-primary-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-primary-700 transition-colors"
@@ -98,6 +107,13 @@ export default function Header() {
                 >
                   <Phone className="h-4 w-4" />
                   <span>{COMPANY_INFO.phone}</span>
+                </a>
+                <a
+                  href={`tel:${COMPANY_INFO.phone2}`}
+                  className="flex items-center space-x-2 px-3 py-2 text-primary-600"
+                >
+                  <Phone className="h-4 w-4" />
+                  <span>{COMPANY_INFO.phone2}</span>
                 </a>
                 <Link
                   href="/contact"

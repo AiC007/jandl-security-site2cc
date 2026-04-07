@@ -278,13 +278,21 @@ export default function FAQsPage() {
             Our experienced team is here to help. Get in touch for expert advice and personalized solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={`tel:${COMPANY_INFO.phone}`}
-              className="bg-primary-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-700 transition-colors inline-flex items-center justify-center"
-            >
-              <Phone className="mr-2 h-4 w-4" />
-              Call {COMPANY_INFO.phone}
-            </a>
+            <div className="flex flex-col gap-1">
+              <a
+                href={`tel:${COMPANY_INFO.phone}`}
+                className="bg-primary-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-700 transition-colors inline-flex items-center justify-center"
+              >
+                <Phone className="mr-2 h-4 w-4" />
+                Call {COMPANY_INFO.phone}
+              </a>
+              <a
+                href={`tel:${COMPANY_INFO.phone2}`}
+                className="text-gray-500 hover:text-primary-600 text-sm text-center transition-colors"
+              >
+                or call {COMPANY_INFO.phone2}
+              </a>
+            </div>
             <a
               href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hi, I have a question about security systems`}
               className="bg-green-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center"

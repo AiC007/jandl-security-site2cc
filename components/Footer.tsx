@@ -152,6 +152,9 @@ export default function Footer() {
               <span className="ml-2">Registered in England & Wales</span>
             </div>
             <div className="flex space-x-6 text-sm">
+              <Link href="/blog" className="text-base-400 hover:text-primary-400 transition-colors">
+                Blog
+              </Link>
               <Link href="/privacy" className="text-base-400 hover:text-primary-400 transition-colors">
                 Privacy Policy
               </Link>

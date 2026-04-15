@@ -36,7 +36,8 @@ SSAIB, CHAS, FIA, BAFE
 - **GitHub repo:** AiC007/jandl-security-site2cc
 - **Vercel team:** team_afVMAZNN9jXKLV3BIuRVTky6
 - **Vercel project ID:** prj_kjQddN8ApAxbOT3e6zr7zKYiRKJ3
-- **Production domain:** jandlsecurity.co.uk (DNS not yet connected, still on Vercel staging URL)
+- **Production domain:** jandlsecurity.co.uk (LIVE on Vercel as of 12 April 2026, apex canonical, www 308-redirects to apex)
+- **Redirect domain:** jandlalarms.co.uk (LIVE as of 12 April 2026, both apex and www 308-redirect to jandlsecurity.co.uk via Vercel edge, uses Microsoft 365 for email)
 
 ## SEO and Discoverability
 

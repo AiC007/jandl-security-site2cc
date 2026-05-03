@@ -8,6 +8,7 @@ export interface BlogPost {
   keywords: string[];
   wordCount: number;
   content: string;
+  faqs?: Array<{ question: string; answer: string }>;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -310,15 +311,15 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'hmo-fire-alarm-requirements-bs5839',
-    title: 'Fire Alarm Requirements for HMO Landlords: BS 5839-1 Explained',
-    metaTitle: 'HMO Fire Alarm Requirements: BS 5839-1 Guide',
-    description: 'A guide to fire alarm requirements for HMO landlords in the UK. Covers BS 5839-1 system categories, grades, servicing obligations, and licensing conditions.',
+    title: 'Fire Alarm Requirements for HMO Landlords: BS 5839 Explained',
+    metaTitle: 'HMO Fire Alarm Requirements: BS 5839 Guide (2026)',
+    description: 'A guide to fire alarm requirements for HMO landlords in the UK. Covers BS 5839-6 grades, system categories, costs, servicing obligations, and licensing conditions.',
     datePublished: '2026-04-07',
-    dateModified: '2026-04-07',
-    keywords: ['HMO fire alarm requirements', 'BS 5839-1', 'fire alarm HMO landlord', 'fire alarm servicing requirements'],
-    wordCount: 1950,
+    dateModified: '2026-05-03',
+    keywords: ['HMO fire alarm requirements', 'BS 5839-6', 'BS 5839-1', 'fire alarm HMO landlord', 'fire alarm servicing requirements', 'HMO fire alarm cost', 'Grade D1 HMO', 'Grade A HMO fire alarm'],
+    wordCount: 3450,
     content: `
-<p>A House in Multiple Occupation (HMO) is a property rented to three or more tenants forming two or more separate households who share facilities such as a kitchen or bathroom. Under UK law, HMO landlords must install and maintain a fire alarm system that meets BS 5839-1, the British Standard for fire detection and alarm systems in buildings. The specific system category and grade required depends on the property layout, the number of storeys, and the conditions set by your local authority's licensing team.</p>
+<p>A House in Multiple Occupation (HMO) is a property rented to three or more tenants forming two or more separate households who share facilities such as a kitchen or bathroom. Under UK law, HMO landlords must install and maintain a fire alarm system that meets the relevant British Standard: BS 5839-6 for domestic-scale HMOs, or BS 5839-1 for larger or higher-risk HMOs. The specific system category and grade required depends on the property layout, the number of storeys, the number of occupants, and the conditions set by your local authority's licensing team.</p>
 
 <p>This guide explains what BS 5839-1 requires, what the different system categories and grades mean, and what landlords must do to stay compliant.</p>
 
@@ -386,7 +387,102 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Limitations:</strong> no central panel, no fault monitoring, no zone information, may not meet the licensing conditions for larger HMOs</li>
 </ul>
 
-<p>Many landlords install Grade D systems to save money, only to find that their local authority requires a Grade A system for licensing. Always check your licensing conditions before choosing a system grade.</p>
+<p>Many landlords install Grade D systems to save money, only to find that their local authority requires a Grade A system for licensing. Always check your licensing conditions before choosing a system grade. If you are letting in Essex or East London, our local teams in <a href="/fire-alarm-installation/brentwood">Brentwood</a> and <a href="/fire-alarm-installation/romford">Romford</a> regularly survey HMOs and confirm the correct grade against the relevant council's licence schedule before installation.</p>
+
+<h2>BS 5839-6 Grades and Categories: Comparison Table</h2>
+
+<p>BS 5839-6 is the British Standard for fire detection and fire alarm systems in domestic premises, including most HMOs. It defines a system using two attributes: a <strong>grade</strong> (the type of equipment, A through F) and a <strong>category</strong> (the scope of coverage, LD1 to LD3 for life safety, or PD for property protection). The table below summarises the grades and categories most commonly specified for HMOs.</p>
+
+<table>
+<thead>
+<tr>
+<th>Grade or Category</th>
+<th>System type</th>
+<th>Where required</th>
+<th>Typical install cost range<sup>1</sup></th>
+<th>Monitoring required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Grade A</strong></td>
+<td>Full BS 5839-1 style fire alarm panel with dedicated wiring, commercial-grade detectors, sounders, manual call points, and standby power supply</td>
+<td>Larger HMOs (typically 3+ storeys, 5+ occupants), licensed HMOs where the council schedule specifies Grade A, or any property identified as higher-risk by the fire risk assessment</td>
+<td>From ~£800 (small system) to £2,500+ installed for a typical HMO; up to £4,000+ for larger properties</td>
+<td>Optional, can connect to an Alarm Receiving Centre (ARC) for remote monitoring</td>
+</tr>
+<tr>
+<td><strong>Grade D1</strong></td>
+<td>Mains-powered interlinked detectors, each with a tamper-proof, sealed-in standby battery (typically a 10-year sealed lithium cell)</td>
+<td>Most modern HMOs that the council accepts for Grade D rather than Grade A; this is the current default for new installations under BS 5839-6</td>
+<td>From ~£150 supply-only for detectors; typical installed cost £350 to £900 for a 5-bedroom HMO depending on detector count and cable runs</td>
+<td>No (standalone)</td>
+</tr>
+<tr>
+<td><strong>Grade D2</strong></td>
+<td>Mains-powered interlinked detectors with a user-replaceable standby battery</td>
+<td>Permitted in some HMOs where the council schedule does not insist on D1; less common in new installations because the replaceable battery introduces a maintenance liability</td>
+<td>Similar to Grade D1, slightly lower equipment cost; typically £300 to £800 installed</td>
+<td>No (standalone)</td>
+</tr>
+<tr>
+<td><strong>Category LD1</strong></td>
+<td>Detection in <em>all</em> rooms and circulation areas (excluding bathrooms, shower rooms, and WCs). Combine with a grade (typically D1 or A).</td>
+<td>Highest-risk HMOs and any property where the fire risk assessment identifies LD1 as appropriate. Often required for larger or shared-cooking HMOs.</td>
+<td>Reflected in detector count: a 5-bed HMO under LD1 needs 7 to 10 detectors, adding £30 to £60 per detector to the base install</td>
+<td>Determined by grade</td>
+</tr>
+<tr>
+<td><strong>Category LD2</strong></td>
+<td>Detection on escape routes plus rooms presenting a high fire risk (kitchens, living rooms, bedrooms in some cases). Combine with a grade.</td>
+<td>The most commonly specified category for licensable HMOs across England</td>
+<td>Mid-range: typically 5 to 8 detectors for a 5-bed HMO</td>
+<td>Determined by grade</td>
+</tr>
+<tr>
+<td><strong>Category LD3</strong></td>
+<td>Detection on escape routes only (hallways, landings, stairwells). Combine with a grade.</td>
+<td>Smaller, lower-risk HMOs where the council schedule accepts it. Becoming less common.</td>
+<td>Lowest detector count, smallest install cost</td>
+<td>Determined by grade</td>
+</tr>
+</tbody>
+</table>
+
+<p><sup>1</sup> Cost ranges are indicative, based on typical Essex and Greater London installations carried out by J&L Security from 2024 to 2026, supply and installed inclusive of VAT. They assume a standard property layout, accessible cable routes, and no significant making-good or remedial electrical work. Final costs depend on detector count, number of floors, cable runs, and the condition of any existing wiring. <a href="/contact">Book a free site survey</a> for a fixed-price quotation against your specific property.</p>
+
+<h2>What Does an HMO Fire Alarm System Cost?</h2>
+
+<p>Pricing for HMO fire alarm systems is one of the most common questions landlords ask. The honest answer is that it depends on the grade, the category, the property layout, and the number of detectors required. The figures below are indicative ranges drawn from typical installations across Essex and Greater London. Use them for budgeting only; your actual quote will be based on a free site survey.</p>
+
+<h3>Typical 5-Bedroom HMO (Grade D1, Category LD2 or LD3)</h3>
+
+<p>For a standard 5-bedroom HMO that the council accepts under Grade D1 with a Category LD2 or LD3 layout (interlinked mains-powered detectors with sealed lithium batteries on escape routes and in higher-risk rooms), you should budget approximately <strong>£350 to £600 installed</strong>. This typically includes:</p>
+
+<ul>
+<li>5 to 8 interlinked detectors (smoke, heat, and CO as appropriate)</li>
+<li>First-fix and second-fix wiring</li>
+<li>Commissioning, testing, and a handover certificate suitable for the council licence file</li>
+<li>VAT</li>
+</ul>
+
+<h3>Larger HMO Requiring Grade A (3+ storeys, 5+ occupants, or licence-specified)</h3>
+
+<p>For a larger HMO where the council schedule or fire risk assessment requires a Grade A panel-controlled system, expect a typical installed cost of <strong>£1,200 to £2,500 installed</strong> for most properties, rising above £4,000 for larger or more complex sites. This includes:</p>
+
+<ul>
+<li>A conventional or addressable fire alarm control panel with standby battery</li>
+<li>Optical smoke detectors, heat detectors, and manual call points</li>
+<li>Sounders or sounder-beacons sized to the property</li>
+<li>Dedicated fire-alarm cable (FP200 or equivalent)</li>
+<li>Commissioning, testing, log book, and a BAFE-compliant handover certificate</li>
+</ul>
+
+<h3>Annual Servicing</h3>
+
+<p>BS 5839-1 (and the maintenance recommendations in BS 5839-6) require regular professional servicing. For HMO Grade A systems, this is two visits per year. For Grade D systems, one visit per year is the practical minimum to maintain the council's expectation of "good working order". <strong>Annual servicing typically starts from around £120 per year</strong> for a small Grade D HMO, rising to £180 to £300 per year for a Grade A system, depending on detector count and travel.</p>
+
+<p><em>Pricing note: these are indicative ranges based on representative Essex and Greater London installations. Exact costs depend on property layout, number of floors, number of detectors, cable accessibility, and any remedial electrical work. J&L Security provides <a href="/contact">free site surveys</a> with fixed-price quotations before any work is committed.</em></p>
 
 <h2>Servicing Requirements</h2>
 
@@ -438,6 +534,32 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Forgetting emergency lighting:</strong> fire alarm compliance and emergency lighting are usually both required as part of the licensing conditions.</li>
 </ul>
 
+<h2>HMO Fire Alarm FAQs</h2>
+
+<h3>What fire alarm grade do I need for an HMO?</h3>
+
+<p>The grade required depends on the size of the HMO, the number of storeys, and your local authority's licence schedule. For most modern HMOs of 2 storeys with up to 5 occupants, councils accept a <strong>Grade D1</strong> system: mains-powered interlinked detectors with sealed 10-year lithium batteries, installed to Category LD2 or LD3 coverage. For HMOs of 3 or more storeys, or with 5 or more occupants under mandatory licensing, councils typically require a <strong>Grade A</strong> system: a panel-controlled fire alarm with dedicated wiring and commercial-grade detectors. Always check the licence schedule for your specific property before installation, because the wrong grade is one of the most expensive mistakes a landlord can make.</p>
+
+<h3>Is Grade D1 sufficient for an HMO?</h3>
+
+<p>Grade D1 is sufficient for many smaller HMOs. The key tests are: (1) does your council's HMO licence schedule accept a Grade D system, and (2) does the fire risk assessment for the property identify Grade D as appropriate? In Essex and Greater London, councils such as Brentwood, Havering, and Redbridge typically accept Grade D1 for 2-storey HMOs with up to 4 or 5 occupants. They do not generally accept Grade D for HMOs of 3 or more storeys, or for properties identified as higher-risk. If your fire risk assessor has specified a Grade D system in writing, and your council schedule accepts it, Grade D1 is sufficient. If either is in doubt, a Grade A system is the safe choice.</p>
+
+<h3>How often should HMO fire alarms be tested?</h3>
+
+<p>HMO fire alarms must be tested at three different intervals. <strong>Weekly:</strong> the responsible person (the landlord or managing agent) must activate one manual call point or detector test button each week and confirm the system sounds throughout the building, recording the result in the log book. <strong>6-monthly:</strong> a competent fire alarm engineer must carry out a service visit, testing every detector, sounder, and call point, checking battery condition, and inspecting cabling. The 2025 update to BS 5839-1 introduced a 5-to-7-month flexibility window for scheduling. <strong>Annually:</strong> for Grade D systems where 6-monthly servicing is not specified, an annual professional service is the practical minimum.</p>
+
+<h3>Do I need a mains-wired alarm in an HMO?</h3>
+
+<p>Yes, in almost all cases. BS 5839-6 Grade D systems are by definition mains-powered with battery backup. Battery-only domestic smoke alarms (BS 5839-6 Grade F) are not normally acceptable for licensable HMOs because they are not interlinked across the building and cannot reliably wake all occupants. If your council schedule accepts Grade D, this means Grade D1 (sealed lithium battery) or Grade D2 (replaceable battery), both of which are mains-wired. Battery-only Grade F1 or F2 detectors are only ever acceptable in the smallest, lowest-risk HMOs and even then only where the council schedule explicitly permits them; in practice most councils require mains-wired interlinked detectors as a minimum.</p>
+
+<h3>What is the difference between Grade A and Grade D fire alarms?</h3>
+
+<p>The principal differences are the architecture, the components, and the level of monitoring. A <strong>Grade A</strong> system uses a dedicated fire alarm control panel, fire-rated cabling (FP200 or equivalent), commercial-grade optical smoke and heat detectors, manual call points at each exit, and sounders or sounder-beacons. The panel monitors the system continuously for faults, logs alarm events, and can be connected to an Alarm Receiving Centre. A <strong>Grade D</strong> system has no central panel: each detector is mains-powered with a battery backup, and the detectors are interlinked so that when one triggers, all sound. Grade A provides more comprehensive coverage, fault monitoring, and zone identification; Grade D is significantly cheaper to install and is appropriate for smaller HMOs that the council accepts.</p>
+
+<h3>What is BS 5839-6 and does it apply to my HMO?</h3>
+
+<p>BS 5839-6 is the British Standard <em>Fire detection and fire alarm systems for buildings: Part 6: Code of practice for the design, installation, commissioning and maintenance of fire detection and fire alarm systems in domestic premises</em>. It is the standard that applies to most HMOs. BS 5839-6 defines the grades (A through F) and the categories (LD1 to LD3 for life safety, PD1 and PD2 for property protection). For larger HMOs that fall outside the scope of BS 5839-6, BS 5839-1 (the standard for non-domestic premises) applies instead. In practice, a fire risk assessment will identify which standard applies to your specific HMO. Most HMOs in England fall under BS 5839-6 with a council-specified grade and category, while HMOs that are very large, of unusual layout, or commercially run typically fall under BS 5839-1.</p>
+
 <h2>What We Provide for HMO Landlords</h2>
 
 <p>At J&L Security, we are BAFE certified and FIA members, and we have been installing BS 5839-1 compliant fire alarm systems for HMO landlords across Essex and Greater London since 2011. Our service includes:</p>
@@ -452,10 +574,36 @@ export const blogPosts: BlogPost[] = [
 <li>Certificates suitable for submission to your local authority licensing team</li>
 </ul>
 
-<p>If you are unsure what system your HMO needs, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a>. We can advise on the requirements for your specific property and local authority area.</p>
+<p>If you are unsure what system your HMO needs, <a href="/contact">contact us for a free survey</a> or call <a href="tel:02045385925">0204 538 5925</a>. We can advise on the requirements for your specific property and local authority area.</p>
 
-<p>Read more about our <a href="/services/fire-alarms">fire alarm installation and servicing</a> or explore our <a href="/services">full range of security services</a>.</p>
-`
+<p>Read more about our <a href="/services/fire-alarms">fire alarm installation and servicing</a>, or see how we work with HMO landlords in <a href="/fire-alarm-installation/brentwood">Brentwood</a>, <a href="/fire-alarm-installation/romford">Romford</a>, and across <a href="/services">our full service area</a>.</p>
+`,
+    faqs: [
+      {
+        question: 'What fire alarm grade do I need for an HMO?',
+        answer: 'The grade required depends on the size of the HMO, the number of storeys, and your local authority\'s licence schedule. For most modern HMOs of 2 storeys with up to 5 occupants, councils accept a Grade D1 system: mains-powered interlinked detectors with sealed 10-year lithium batteries, installed to Category LD2 or LD3 coverage. For HMOs of 3 or more storeys, or with 5 or more occupants under mandatory licensing, councils typically require a Grade A system: a panel-controlled fire alarm with dedicated wiring and commercial-grade detectors. Always check the licence schedule for your specific property before installation, because the wrong grade is one of the most expensive mistakes a landlord can make.'
+      },
+      {
+        question: 'Is Grade D1 sufficient for an HMO?',
+        answer: 'Grade D1 is sufficient for many smaller HMOs. The key tests are: (1) does your council\'s HMO licence schedule accept a Grade D system, and (2) does the fire risk assessment for the property identify Grade D as appropriate? In Essex and Greater London, councils such as Brentwood, Havering, and Redbridge typically accept Grade D1 for 2-storey HMOs with up to 4 or 5 occupants. They do not generally accept Grade D for HMOs of 3 or more storeys, or for properties identified as higher-risk. If your fire risk assessor has specified a Grade D system in writing, and your council schedule accepts it, Grade D1 is sufficient. If either is in doubt, a Grade A system is the safe choice.'
+      },
+      {
+        question: 'How often should HMO fire alarms be tested?',
+        answer: 'HMO fire alarms must be tested at three different intervals. Weekly: the responsible person (the landlord or managing agent) must activate one manual call point or detector test button each week and confirm the system sounds throughout the building, recording the result in the log book. 6-monthly: a competent fire alarm engineer must carry out a service visit, testing every detector, sounder, and call point, checking battery condition, and inspecting cabling. The 2025 update to BS 5839-1 introduced a 5-to-7-month flexibility window for scheduling. Annually: for Grade D systems where 6-monthly servicing is not specified, an annual professional service is the practical minimum.'
+      },
+      {
+        question: 'Do I need a mains-wired alarm in an HMO?',
+        answer: 'Yes, in almost all cases. BS 5839-6 Grade D systems are by definition mains-powered with battery backup. Battery-only domestic smoke alarms (BS 5839-6 Grade F) are not normally acceptable for licensable HMOs because they are not interlinked across the building and cannot reliably wake all occupants. If your council schedule accepts Grade D, this means Grade D1 (sealed lithium battery) or Grade D2 (replaceable battery), both of which are mains-wired. Battery-only Grade F1 or F2 detectors are only ever acceptable in the smallest, lowest-risk HMOs and even then only where the council schedule explicitly permits them; in practice most councils require mains-wired interlinked detectors as a minimum.'
+      },
+      {
+        question: 'What is the difference between Grade A and Grade D fire alarms?',
+        answer: 'The principal differences are the architecture, the components, and the level of monitoring. A Grade A system uses a dedicated fire alarm control panel, fire-rated cabling (FP200 or equivalent), commercial-grade optical smoke and heat detectors, manual call points at each exit, and sounders or sounder-beacons. The panel monitors the system continuously for faults, logs alarm events, and can be connected to an Alarm Receiving Centre. A Grade D system has no central panel: each detector is mains-powered with a battery backup, and the detectors are interlinked so that when one triggers, all sound. Grade A provides more comprehensive coverage, fault monitoring, and zone identification; Grade D is significantly cheaper to install and is appropriate for smaller HMOs that the council accepts.'
+      },
+      {
+        question: 'What is BS 5839-6 and does it apply to my HMO?',
+        answer: 'BS 5839-6 is the British Standard "Fire detection and fire alarm systems for buildings: Part 6: Code of practice for the design, installation, commissioning and maintenance of fire detection and fire alarm systems in domestic premises". It is the standard that applies to most HMOs. BS 5839-6 defines the grades (A through F) and the categories (LD1 to LD3 for life safety, PD1 and PD2 for property protection). For larger HMOs that fall outside the scope of BS 5839-6, BS 5839-1 (the standard for non-domestic premises) applies instead. In practice, a fire risk assessment will identify which standard applies to your specific HMO. Most HMOs in England fall under BS 5839-6 with a council-specified grade and category, while HMOs that are very large, of unusual layout, or commercially run typically fall under BS 5839-1.'
+      }
+    ]
   },
   {
     slug: 'how-to-choose-security-company',

@@ -20,6 +20,14 @@ interface LocationData {
   nearbyAreas: string[];
   localCharacteristics: string;
   postcode: string;
+  // Optional enrichment for priority SEO locations (Brentwood, Romford, Ilford,
+  // Chelmsford, Upminster). Used by the matrix template to render a local
+  // security context block, property type list, key industries list, and
+  // location-specific FAQs that are appended to the FAQPage schema.
+  localSecurityContext?: string;
+  propertyTypes?: string[];
+  keyIndustries?: string[];
+  locationFAQs?: Array<{ question: string; answer: string }>;
 }
 
 const extendedLocationData: Record<string, LocationData> = {
@@ -28,28 +36,160 @@ const extendedLocationData: Record<string, LocationData> = {
     commuterRoutes: ['Elizabeth Line to Central London', 'Great Eastern Main Line to Liverpool Street'],
     nearbyAreas: ['Seven Kings', 'Goodmayes', 'Redbridge', 'Gants Hill', 'Newbury Park'],
     localCharacteristics: 'busy commercial centre with excellent transport links',
-    postcode: 'IG1-IG6'
+    postcode: 'IG1-IG6',
+    localSecurityContext: 'Ilford is one of the most densely populated areas in Greater London, with a major retail centre at The Exchange and significant commercial activity along Ilford Hill and Cranbrook Road. The borough\'s mix of large retail, high-density residential, and HMO-conversion stock creates substantial demand for both intruder alarm systems and graded commercial CCTV. Higher-footfall town-centre areas carry elevated opportunistic-crime risk, and a number of insurance providers specify Grade 2 monitored systems for IG1 commercial premises.',
+    propertyTypes: [
+      'Victorian and Edwardian terraced housing across Valentines and Cranbrook',
+      'High-density residential blocks and modern flats around Ilford Station',
+      'HMO conversions across Seven Kings and Goodmayes',
+      'Town-centre retail and commercial units along the High Road and at The Exchange',
+      'Office and professional services premises along Cranbrook Road'
+    ],
+    keyIndustries: [
+      'Retail (The Exchange and Ilford High Road)',
+      'Healthcare (King George Hospital and surrounding clinics)',
+      'Hospitality and food service',
+      'Faith and community organisations',
+      'Education and private tuition'
+    ],
+    locationFAQs: [
+      {
+        question: 'What burglar alarm grades do you install in Ilford residential properties?',
+        answer: 'For most Ilford residential properties (terraced and semi-detached, IG1 to IG6), we install Grade 2 systems to EN 50131. Grade 2 covers the typical risk profile of suburban Ilford housing and is sufficient for the majority of UK home insurers. For higher-value properties or those flagged by insurers as higher-risk (typically £100,000+ contents), we install Grade 3 systems with additional anti-tamper resilience and confirmed-activation criteria. Both grades are eligible for police response under the URN scheme through our SSAIB approval.'
+      },
+      {
+        question: 'Do you install commercial CCTV systems for Ilford retail and shop premises?',
+        answer: 'Yes. We design and install commercial CCTV across Ilford retail and hospitality premises, particularly along the High Road, around The Exchange, and through the Ilford Hill commercial corridor. Standard installations use Uniview IP cameras (2MP to 8MP, depending on detail required), an on-site NVR, and the Uniview EZView app for remote viewing. We design to ICO CCTV Code of Practice standards, including signage, retention period, and DPIA support where required. All systems include night vision and are graded to commercial standards.'
+      },
+      {
+        question: 'Do you cover the IG1 to IG6 postcodes from a single Ilford-area engineer?',
+        answer: 'Yes. Ilford and the surrounding IG1 to IG6 postcodes (Seven Kings, Goodmayes, Newbury Park, Gants Hill, Redbridge, Barkingside) are within our daily routing from Brentwood. We dispatch the closest available engineer for callouts and surveys, and most locations across the IG belt receive a same-day or next-day appointment.'
+      },
+      {
+        question: 'Is J&L Security SSAIB approved for the police-response URN scheme in Ilford?',
+        answer: 'Yes. J&L Security is SSAIB approved, which is one of the two UK inspectorates (the other is NSI) accredited to install and maintain monitored alarm systems eligible for police response under the URN (Unique Reference Number) scheme. For Ilford properties, this means a monitored Grade 2 or 3 system installed by us is eligible for direct police dispatch under the Met Police\'s confirmed-activation policy. We handle the URN registration on the customer\'s behalf as part of the installation.'
+      }
+    ]
   },
   'romford': {
     landmarks: ['Romford Station', 'The Liberty Shopping Centre', 'Raphael Park', 'Romford Market'],
     commuterRoutes: ['TfL Rail to Liverpool Street', 'Greater Anglia services'],
     nearbyAreas: ['Hornchurch', 'Upminster', 'Emerson Park', 'Harold Wood', 'Collier Row'],
     localCharacteristics: 'major town centre with strong commercial and residential areas',
-    postcode: 'RM1-RM3'
+    postcode: 'RM1-RM3',
+    localSecurityContext: 'Romford combines a high-density residential population with one of East London\'s busiest town centres, including The Liberty Shopping Centre and Romford Market. Higher-footfall retail and night-time economy areas around South Street and the market square have elevated rates of opportunistic theft and shoplifting, and many commercial premises specify Grade 2 or 3 monitored systems. A large proportion of housing across Heath Park, Rush Green, and Collier Row is Victorian and Edwardian terraced, well suited to wireless intruder alarm systems where finished interiors restrict cable runs.',
+    propertyTypes: [
+      'Victorian and Edwardian terraced housing across Heath Park and Rush Green',
+      'Inter-war and 1930s semi-detached homes',
+      'Town-centre retail and hospitality units around The Liberty and South Street',
+      'HMO conversions across Heath Park, Romford town centre, and the RM1 cluster',
+      'Office and commercial space along the Western Road and Eastern Road corridors'
+    ],
+    keyIndustries: [
+      'Retail (The Liberty Shopping Centre, Romford Market, and out-of-town parks)',
+      'Hospitality and night-time economy (South Street, Market Place)',
+      'Healthcare (Queen\'s Hospital and feeder clinics)',
+      'Logistics and distribution along the A12 corridor',
+      'Independent professional services and trade businesses'
+    ],
+    locationFAQs: [
+      {
+        question: 'Do you install burglar alarms in Romford town centre commercial properties?',
+        answer: 'Yes. Romford town centre commercial work is one of our regular weekly patterns. For retail and hospitality premises around The Liberty Shopping Centre, South Street, and the Market Place, we typically install Grade 2 or Grade 3 monitored intruder alarm systems with confirmed-activation criteria, panic alarms at point of sale, and remote arm/disarm via the Pyronix or Texecom app. All systems are SSAIB-installed and eligible for police response under the URN scheme. We also handle integration with CCTV and access control where the premises require it.'
+      },
+      {
+        question: 'How quickly can J&L Security respond to a callout in Romford?',
+        answer: 'For customers on a maintenance contract, we aim to respond to emergency callouts in Romford within 2 to 4 hours, 24 hours a day, 7 days a week. From our Brentwood base, Romford is within our priority response zone and most callouts are met inside that window. For non-emergency surveys and quotes, we typically attend within 1 to 3 working days; same-day surveys are sometimes available if you call before noon.'
+      },
+      {
+        question: 'Do you fit wireless alarms suitable for Victorian terraced housing in Romford?',
+        answer: 'Yes. A large share of Romford\'s housing stock (Heath Park, Rush Green, Collier Row) is Victorian and Edwardian terraced with finished plaster, original floorboards, and limited loft access, which makes wireless systems significantly more practical than wired. We install Pyronix wireless systems with sealed lithium-cell sensors that have a 3 to 5 year battery life, no visible cable runs, and full smartphone control. The wireless premium is typically 15 to 25 per cent above the equivalent wired install.'
+      },
+      {
+        question: 'Are your fire alarm engineers BAFE certified for Romford HMO and commercial work?',
+        answer: 'Yes. J&L Security is BAFE certified and an FIA member, which is the standard required by most local authority HMO licence schedules and commercial fire risk assessors. For Romford HMOs (Havering Council licence schedule typically applies), we install BS 5839-6 Grade D1 systems for smaller properties and BS 5839-1 Grade A panel-controlled systems for larger HMOs. All installations include the BAFE handover certificate, log book, and 6-monthly servicing eligible to be cited in the council\'s licence file.'
+      }
+    ]
   },
   'chelmsford': {
     landmarks: ['Chelmsford Cathedral', 'High Chelmer Shopping Centre', 'Hylands Park', 'Essex County Cricket Ground'],
     commuterRoutes: ['Great Eastern Main Line to London', 'A12 corridor'],
     nearbyAreas: ['Brentwood', 'Billericay', 'Great Baddow', 'Galleywood', 'Springfield'],
     localCharacteristics: 'Essex county town with thriving business district',
-    postcode: 'CM1-CM3'
+    postcode: 'CM1-CM3',
+    localSecurityContext: 'Chelmsford is one of the fastest-growing cities in the East of England, with a thriving business district anchored by the Chelmer Valley business park, an active retail centre at High Chelmer, and rapid expansion in residential new-builds across Springfield and Beaulieu Park. The mix of large commercial premises, university accommodation around ARU\'s Chelmsford campus, and growing housing stock generates demand across all five service categories. Commercial fire alarm work for office and business-park premises is a particular concentration here.',
+    propertyTypes: [
+      'New-build estate housing across Springfield, Beaulieu Park, and Channels',
+      'Detached and semi-detached family homes across Galleywood and Great Baddow',
+      'University accommodation and student lets around the ARU campus',
+      'Town-centre retail and hospitality units around High Chelmer and Bond Street',
+      'Commercial and office premises across the Chelmer Valley business park'
+    ],
+    keyIndustries: [
+      'Professional services and finance',
+      'Higher education (Anglia Ruskin University Chelmsford campus)',
+      'Retail and hospitality (High Chelmer, Bond Street, and out-of-town parks)',
+      'Healthcare (Broomfield Hospital and feeder clinics)',
+      'Engineering and life sciences (Chelmer Valley business park)'
+    ],
+    locationFAQs: [
+      {
+        question: 'Is J&L Security SSAIB approved to install fire alarms in Chelmsford?',
+        answer: 'Yes. For fire alarms, the relevant accreditations are BAFE (British Approvals for Fire Equipment) and FIA (Fire Industry Association) membership. J&L Security holds both. For intruder alarms, we are SSAIB approved (the Security Systems and Alarms Inspection Board), which is one of the two UK inspectorates accredited for police-response monitoring under the URN scheme. All Chelmsford installations, fire and intruder, are carried out under the relevant inspectorate\'s standards with full handover certification.'
+      },
+      {
+        question: 'Do you install BS 5839-1 commercial fire alarms for Chelmsford business parks?',
+        answer: 'Yes. We design, install, commission, and service BS 5839-1 commercial fire alarm systems across the Chelmer Valley business park, the Great Baddow industrial estate, and similar Chelmsford commercial sites. Standard installations use addressable panels from Advanced, C-Tek, or Kentec, with optical smoke detectors, heat detectors, manual call points, and sounder-beacons sized to the property. We deliver to the system category specified by the client\'s fire risk assessment (typically L1 to L4 for commercial premises) and include the commissioning certificate, log book, and 6-monthly service contract.'
+      },
+      {
+        question: 'How quickly can your engineers attend a fire alarm callout in Chelmsford?',
+        answer: 'For fire alarm customers on a maintenance contract, we target a 2 to 4 hour response to Chelmsford callouts during business hours, and within 4 hours out of hours, 24/7. Chelmsford is within easy reach of our Brentwood base via the A12 corridor. For non-urgent service visits, we work to scheduled 6-monthly slots agreed at the start of the contract.'
+      },
+      {
+        question: 'Do you offer 6-monthly fire alarm servicing contracts for Chelmsford properties?',
+        answer: 'Yes. BS 5839-1 requires fire alarm systems to be serviced by a competent engineer at intervals not exceeding 6 months (the 2025 update introduced a 5-to-7-month flexibility window). We offer fixed-price annual maintenance contracts that include both 6-monthly visits, full service certification, log-book updates, priority callout response, and emergency-light testing where applicable. Pricing for Chelmsford properties starts from around £180 per year for smaller installations and is quoted individually for larger commercial systems.'
+      }
+    ]
   },
   'brentwood': {
     landmarks: ['Brentwood High Street', 'Thorndon Country Park', 'Brentwood Centre', 'Warley Place'],
     commuterRoutes: ['Greater Anglia to Liverpool Street', 'M25 Junction 28'],
     nearbyAreas: ['Billericay', 'Wickford', 'Shenfield', 'Hutton', 'Ingatestone'],
     localCharacteristics: 'affluent commuter town with excellent transport connections',
-    postcode: 'CM13-CM15'
+    postcode: 'CM13-CM15',
+    localSecurityContext: 'Brentwood is an affluent commuter belt town with a high proportion of detached and semi-detached family homes; high contents values across CM13 to CM15 drive insurance-linked demand for monitored Grade 2 and Grade 3 intruder alarms with police-response eligibility. The town centre and the Shenfield/Hutton retail spine generate steady commercial CCTV and access-control work. Properties are predominantly later 20th-century, with smaller pockets of period and listed buildings around Warley, Ingatestone, and South Weald. J&L Security is based in Brentwood (CM13 3FR), so engineer travel times in this area are minimal.',
+    propertyTypes: [
+      'Detached and semi-detached family homes across CM13 to CM15',
+      'Larger Edwardian and inter-war properties around Hutton and Shenfield',
+      'Period and listed buildings around Warley, South Weald, and Ingatestone',
+      'Town-centre retail and hospitality units along Brentwood High Street',
+      'Small office and consultancy premises across the Brentwood business cluster'
+    ],
+    keyIndustries: [
+      'Hospitality (independent restaurants and gastropubs)',
+      'Retail (Brentwood High Street and out-of-town parks)',
+      'Professional services and consultancy',
+      'Independent healthcare (clinics and dental practices)',
+      'Education (Brentwood School cluster and feeder prep schools)'
+    ],
+    locationFAQs: [
+      {
+        question: 'How quickly can J&L Security respond to a callout in Brentwood?',
+        answer: 'J&L Security is based in Brentwood (CM13 3FR), so callout response times here are the fastest in our coverage area. For maintenance contract customers, we target 1 to 2 hours for emergency callouts in CM13 to CM15, 24 hours a day, 7 days a week. Most non-urgent surveys are arranged within 1 to 2 working days; same-day surveys are available on request if you call before noon.'
+      },
+      {
+        question: 'What burglar alarm grades do you install in Brentwood residential properties?',
+        answer: 'For most Brentwood family homes, we install Grade 2 systems to EN 50131. For higher-value properties (typically £150,000+ contents) and any property where the home insurer specifies it, we install Grade 3 systems with additional anti-tamper resilience and confirmed-activation criteria. Both grades are eligible for police response under the URN scheme through our SSAIB approval. We provide the certification documentation required by Brentwood-area home insurers for premium discount.'
+      },
+      {
+        question: 'Do you cover Shenfield, Hutton, and Ingatestone alongside Brentwood?',
+        answer: 'Yes. Shenfield, Hutton, Ingatestone, Mountnessing, Doddinghurst, Kelvedon Hatch, and the wider CM4 to CM15 belt are within our daily routing. Many of our long-standing customers in these areas have transitioned from older bell-only systems to monitored Grade 2 systems with smartphone control. Our engineer is typically on-site within 24 to 48 hours of an enquiry for surveys, and within 1 to 2 hours for emergency callouts on a maintenance contract.'
+      },
+      {
+        question: 'Are J&L Security SSAIB and BAFE approved for installations in Brentwood?',
+        answer: 'Yes. J&L Security is SSAIB approved (intruder alarms, eligible for police response under the URN scheme), BAFE certified (fire alarms), an FIA member (Fire Industry Association), and CHAS accredited (health and safety). All four are displayed on every page of our site and on our handover documentation. For Brentwood properties, this means you receive the certification documentation needed for both home insurance premium discounts and any commercial fire risk assessment requirement.'
+      }
+    ]
   },
   'basildon': {
     landmarks: ['Eastgate Shopping Centre', 'Basildon Sporting Village', 'Wat Tyler Country Park', 'Festival Leisure Park'],
@@ -70,7 +210,40 @@ const extendedLocationData: Record<string, LocationData> = {
     commuterRoutes: ['District Line and c2c to Central London', 'M25 Junction 29'],
     nearbyAreas: ['Hornchurch', 'Cranham', 'Emerson Park', 'Harold Wood', 'South Ockendon'],
     localCharacteristics: 'quiet residential area popular with families and commuters',
-    postcode: 'RM14'
+    postcode: 'RM14',
+    localSecurityContext: 'Upminster is a quiet, affluent suburb on the eastern edge of Greater London with a high proportion of family homes and an established older-resident population. Reported property crime rates are relatively low, but high contents values and frequent unoccupied periods (the typical Upminster commuter household pattern) drive insurance-linked demand for monitored Grade 2 intruder alarms with smartphone notification. Commercial demand centres on the small but active retail spine around Station Road and Upminster Bridge, plus the surrounding light-industrial fringe towards Hornchurch and South Ockendon.',
+    propertyTypes: [
+      'Detached and semi-detached family homes across RM14',
+      'Bungalows and chalet-style properties around Cranham and Corbets Tey',
+      'Smaller period and Victorian properties around Upminster village',
+      'Town-centre retail and food units around Station Road and Upminster Bridge',
+      'Light industrial premises towards Hornchurch and the South Ockendon border'
+    ],
+    keyIndustries: [
+      'Retail (Station Road, Upminster Bridge, and Roomes Stores)',
+      'Hospitality (independent restaurants, cafes, and gastropubs)',
+      'Healthcare and dental practices',
+      'Professional services and accountancy',
+      'Light industry and trade businesses'
+    ],
+    locationFAQs: [
+      {
+        question: 'Do you install monitored burglar alarms in Upminster for insurance compliance?',
+        answer: 'Yes. Insurance-linked monitored alarm work is one of our core patterns in Upminster. We install Grade 2 (the standard for most domestic properties) and Grade 3 (for higher-value contents) monitored intruder alarms eligible for police response under the URN scheme. Through our SSAIB approval, the systems satisfy the requirements of all major UK home insurers, including those that specifically require an "inspectorate-approved" or "NSI/SSAIB-certified" system. We provide all the certification documentation needed for the insurer file.'
+      },
+      {
+        question: 'Can you fit wireless alarm systems in Upminster bungalows and period homes?',
+        answer: 'Yes. Wireless systems are particularly well suited to Upminster bungalows (Cranham, Corbets Tey) and the smaller period properties around Upminster village, where finished interiors, single-storey cable runs, and the absence of accessible loft space make wired installations impractical. We install Pyronix wireless systems with 3 to 5 year sealed lithium-cell battery life, full smartphone control, and no visible cable runs. The wireless premium is typically 15 to 25 per cent above the equivalent wired install, but the disruption saving usually justifies it in this property type.'
+      },
+      {
+        question: 'How quickly can J&L Security respond to a callout in Upminster?',
+        answer: 'For maintenance contract customers, we target 2 to 4 hour response to emergency callouts in Upminster, 24 hours a day, 7 days a week. From our Brentwood base, Upminster is within our priority response zone via the A127. For non-emergency surveys, we typically attend within 1 to 2 working days; same-day surveys are available on request.'
+      },
+      {
+        question: 'Do you cover Cranham, Corbets Tey, and South Ockendon alongside Upminster?',
+        answer: 'Yes. Cranham, Corbets Tey, North Ockendon, South Ockendon, Aveley, and the wider RM14 to RM15 belt are within our daily routing from Brentwood. We also cover Hornchurch, Emerson Park, and Harold Wood as part of the same engineer route, so customers in the wider Upminster area receive the same response targets and survey availability as the town itself.'
+      }
+    ]
   },
   'barking': {
     landmarks: ['Barking Park', 'Eastbury Manor House', 'Broadway Theatre', 'Barking Abbey ruins'],
@@ -486,6 +659,14 @@ function generateContent(service: string, location: string) {
   const nearbyList = locationData.nearbyAreas.slice(0, 3).join(', ');
   const landmarkList = locationData.landmarks.slice(0, 2).join(' or ');
 
+  // Combine generic service-specific FAQs with any location-specific FAQs
+  // configured for the priority SEO locations. Both sets render in the page
+  // and are included in the FAQPage schema.
+  const combinedFaqs = [
+    ...generateServiceFAQs(service, location),
+    ...(locationData.locationFAQs ?? [])
+  ];
+
   return {
     h1: `${service} ${location} - Professional Installation & Maintenance`,
     metaDescription: `Expert ${service.toLowerCase()} services in ${location}. Professional installation, maintenance & 24/7 support. Free surveys available. Call ${COMPANY_INFO.phone} or ${COMPANY_INFO.phone2} today.`,
@@ -521,7 +702,13 @@ function generateContent(service: string, location: string) {
 
     fireCompliance: isFireService ? `All our fire alarm installations in ${location} comply with BS 5839-1 standards and include the mandatory 6-monthly servicing to maintain compliance. This is particularly important for HMOs, commercial properties, and shared residential buildings throughout ${location}. We provide full compliance documentation including commissioning certificates and log books.` : null,
 
-    faqs: generateServiceFAQs(service, location)
+    faqs: combinedFaqs,
+
+    // Optional priority-location enrichment (Brentwood, Romford, Ilford,
+    // Chelmsford, Upminster). Undefined for the other 45 matrix entries.
+    localSecurityContext: locationData.localSecurityContext,
+    propertyTypes: locationData.propertyTypes,
+    keyIndustries: locationData.keyIndustries
   };
 }
 
@@ -728,6 +915,30 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
         </div>
       </section>
 
+      {/* Accreditation strip */}
+      <section className="bg-gray-50 border-b border-gray-200 py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm text-gray-700">
+            <div className="flex items-center">
+              <Shield className="h-4 w-4 text-primary-600 mr-2" aria-hidden="true" />
+              <span><strong>SSAIB</strong> Approved (Intruder Alarms)</span>
+            </div>
+            <div className="flex items-center">
+              <Shield className="h-4 w-4 text-primary-600 mr-2" aria-hidden="true" />
+              <span><strong>BAFE</strong> Certified (Fire Alarms)</span>
+            </div>
+            <div className="flex items-center">
+              <Shield className="h-4 w-4 text-primary-600 mr-2" aria-hidden="true" />
+              <span><strong>FIA</strong> Member</span>
+            </div>
+            <div className="flex items-center">
+              <Shield className="h-4 w-4 text-primary-600 mr-2" aria-hidden="true" />
+              <span><strong>CHAS</strong> Accredited</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Introduction */}
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -736,6 +947,57 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
           </p>
         </div>
       </section>
+
+      {/* Local security context (priority locations only) */}
+      {(content.localSecurityContext || content.propertyTypes || content.keyIndustries) && (
+        <section className="py-16 bg-white border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Security in {combination.location}: Local Context
+            </h2>
+
+            {content.localSecurityContext && (
+              <p className="text-gray-700 leading-relaxed mb-8">
+                {content.localSecurityContext}
+              </p>
+            )}
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {content.propertyTypes && content.propertyTypes.length > 0 && (
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Typical {combination.location} Property Types
+                  </h3>
+                  <ul className="space-y-2">
+                    {content.propertyTypes.map((type, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-primary-600 mr-3 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">{type}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {content.keyIndustries && content.keyIndustries.length > 0 && (
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Key {combination.location} Commercial Sectors
+                  </h3>
+                  <ul className="space-y-2">
+                    {content.keyIndustries.map((industry, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-primary-600 mr-3 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">{industry}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Why Choose Us */}
       <section className="py-16 bg-gray-50">

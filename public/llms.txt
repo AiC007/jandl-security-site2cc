@@ -6,13 +6,13 @@
 
 - Burglar Alarm Installation and Maintenance (Texecom, Pyronix, RISCO)
 - CCTV System Installation and Monitoring (Uniview, 4K capable)
-- Fire Alarm Installation and Servicing (BS 5839-1 compliant)
+- Fire Alarm Installation and Servicing (BS 5839-1 commercial, BS 5839-6 domestic and HMO)
 - Access Control and Door Entry Systems (Paxton, Comelit)
-- Security and Emergency Lighting (LED, PIR)
+- Security and Emergency Lighting (LED, PIR, BS 5266-1)
 
 ## Service Areas
 
-Essex: Brentwood, Chelmsford, Basildon, Romford, Ilford, Hornchurch, Barking, Dagenham, Redbridge, Harlow, Epping, and surrounding areas.
+Essex: Brentwood, Chelmsford, Basildon, Romford, Ilford, Hornchurch, Upminster, Barking, Dagenham, Redbridge, Harlow, Epping, and surrounding areas.
 
 Greater London: Enfield, Stratford, Canary Wharf, Greenwich, and surrounding boroughs.
 
@@ -36,14 +36,30 @@ SSAIB Approved, CHAS Accredited, FIA Member, BAFE Certified
 - Free, no-obligation security surveys
 - Same-day survey appointments available
 - 24/7 emergency response
-- Intruder alarm systems from GBP 450 plus VAT
+- Intruder alarm systems from approximately GBP 450 plus VAT (indicative)
+
+## Indicative Installed Costs (UK, 2026)
+
+These are indicative ranges only. All quotations follow a free site survey.
+
+- Burglar alarm (bell-only): approximately GBP 350 to 600 installed
+- Burglar alarm (speech dialler / self-monitored): approximately GBP 500 to 900 installed
+- Burglar alarm (monitored Grade 2 or 3, ARC, police-response eligible): approximately GBP 700 to 1,800 installed plus GBP 15 to 35 per month monitoring
+- Fire alarm (HMO Grade D1, 5-bedroom): approximately GBP 350 to 600 installed
+- Fire alarm (HMO Grade A panel-controlled, larger HMO): approximately GBP 1,200 to 2,500 installed
+- Fire alarm annual servicing: from approximately GBP 120 per year (Grade D), GBP 180 to 300 per year (Grade A)
+- Domestic CCTV (2-camera basic system): from approximately GBP 850 plus VAT installed
 
 ## Blog
 
-- [Burglar Alarm Cost UK 2026](https://jandlsecurity.co.uk/blog/burglar-alarm-cost-uk-2026)
-- [CCTV Installation Guide for Essex](https://jandlsecurity.co.uk/blog/cctv-installation-guide-essex)
-- [HMO Fire Alarm Requirements](https://jandlsecurity.co.uk/blog/hmo-fire-alarm-requirements-bs5839)
-- [How to Choose a Security Company](https://jandlsecurity.co.uk/blog/how-to-choose-security-company)
+- [Burglar Alarm Cost UK 2026: Installation Prices Explained](https://jandlsecurity.co.uk/blog/burglar-alarm-cost-uk-2026): A practical UK pricing guide for bell-only, speech dialler, and monitored systems with year-1 cost summary table.
+- [CCTV Installation Guide for Essex Homeowners](https://jandlsecurity.co.uk/blog/cctv-installation-guide-essex): Camera types, resolution, storage, remote viewing, and ICO guidance for domestic CCTV in Essex.
+- [HMO Fire Alarm Requirements (BS 5839 Explained)](https://jandlsecurity.co.uk/blog/hmo-fire-alarm-requirements-bs5839): BS 5839-6 grades and categories, pricing transparency, FAQs, and compliance for HMO landlords.
+- [How to Choose a Security Company](https://jandlsecurity.co.uk/blog/how-to-choose-security-company): Seven practical questions covering accreditations, insurance, pricing, and aftercare.
+- [Insurance-Approved Burglar Alarms UK 2026](https://jandlsecurity.co.uk/blog/insurance-approved-burglar-alarms-uk-2026): What UK home insurers actually require for premium discount and police-response eligibility.
+- [Wired vs Wireless Burglar Alarms in Essex](https://jandlsecurity.co.uk/blog/wired-vs-wireless-burglar-alarms-essex): Decision guide for Essex homes covering installation cost, expansion, and property suitability.
+- [Business CCTV and the ICO: 2026 Compliance Guide](https://jandlsecurity.co.uk/blog/business-cctv-ico-compliance-uk-2026): ICO Code of Practice, signage, retention, and DPIA guidance for UK business CCTV.
+- [Why Does My Burglar Alarm Keep Going Off?](https://jandlsecurity.co.uk/blog/why-does-my-burglar-alarm-keep-going-off): Common false-alarm causes and fixes for domestic intruder alarm systems.
 
 ## Links
 
@@ -54,3 +70,5 @@ SSAIB Approved, CHAS Accredited, FIA Member, BAFE Certified
 - [Blog](https://jandlsecurity.co.uk/blog)
 - [Contact](https://jandlsecurity.co.uk/contact)
 - [Full Details for LLMs](https://jandlsecurity.co.uk/llms-full.txt)
+
+Last updated: 3 May 2026

@@ -27,7 +27,7 @@ J&L Security is also known as J&L Alarms. Both names refer to the same business.
 
 ## Accreditations and Compliance
 
-- SSAIB Approved (Security Systems and Alarms Inspection Board)
+- SSAIB Approved (Security Systems and Alarms Inspection Board) - eligible for police response under the URN scheme
 - CHAS Accredited (Contractors Health and Safety Assessment Scheme)
 - FIA Member (Fire Industry Association)
 - BAFE Certified (British Approvals for Fire Equipment)
@@ -37,9 +37,9 @@ J&L Security is also known as J&L Alarms. Both names refer to the same business.
 ### 1. Burglar Alarm Installation and Maintenance
 
 Installation of wired and wireless intruder alarm systems from leading manufacturers including Texecom, Pyronix, and RISCO. Services include:
-- New alarm system installation (from GBP 450 plus VAT)
+- New alarm system installation (from approximately GBP 450 plus VAT, indicative)
 - Alarm system takeovers and upgrades
-- 24/7 alarm monitoring with police response eligibility
+- 24/7 alarm monitoring with police response eligibility (Grade 2 or 3, SSAIB-installed)
 - Smartphone app control and remote arming/disarming
 - Pet-friendly detectors
 - Bell-only, speech dialler, and monitored systems
@@ -51,20 +51,20 @@ Installation of wired and wireless intruder alarm systems from leading manufactu
 Design, installation, and maintenance of CCTV systems using Uniview cameras. Services include:
 - 4K resolution camera systems
 - Night vision and low-light cameras
-- Remote viewing via smartphone app
+- Remote viewing via smartphone app (Uniview EZView)
 - Motion detection and instant alerts
 - Local NVR recording and cloud backup options
 - Commercial and residential installations
-- SSAIB-compliant installations
+- ICO CCTV Code of Practice compliance for commercial sites
 - Annual maintenance contracts
 
 ### 3. Fire Alarm Installation and Servicing
 
-BS 5839-1 compliant fire alarm systems for commercial properties and HMOs. Services include:
+BS 5839-1 compliant fire alarm systems for commercial properties and BS 5839-6 systems for domestic premises and HMOs. Services include:
 - Conventional and addressable fire alarm systems
-- HMO fire alarm packages (landlord compliance)
-- 6-monthly servicing (legally required for commercial properties)
-- Emergency lighting installation and testing
+- HMO fire alarm packages (BS 5839-6 Grade D1 or Grade A, depending on local authority licence schedule)
+- 6-monthly servicing (legally required for commercial properties; recommended minimum for HMOs)
+- Emergency lighting installation and testing (BS 5266-1)
 - Fire alarm commissioning and handover
 - Fault finding and repairs
 - Smoke and heat detector installation (domestic)
@@ -87,7 +87,7 @@ Installation of access control systems using Paxton and Comelit equipment. Servi
 Professional security and emergency lighting installation. Services include:
 - PIR-activated security lighting
 - LED floodlighting
-- Emergency lighting (BS 5266 compliant)
+- Emergency lighting (BS 5266-1 compliant)
 - Exit signage and maintained fittings
 - Regular testing and certification
 - Battery replacement and maintenance
@@ -95,7 +95,7 @@ Professional security and emergency lighting installation. Services include:
 ## Service Areas
 
 ### Essex
-Brentwood, Chelmsford, Basildon, Romford, Ilford, Hornchurch, Barking, Dagenham, Redbridge, Harlow, Epping, Upminster, Goodmayes, Seven Kings, Wanstead, Chigwell, Loughton, Buckhurst Hill, Woodford, South Woodford, Emerson Park, Chadwell Heath, Hainault, Billericay, and all surrounding areas.
+Brentwood, Chelmsford, Basildon, Romford, Ilford, Hornchurch, Upminster, Barking, Dagenham, Redbridge, Harlow, Epping, Goodmayes, Seven Kings, Wanstead, Chigwell, Loughton, Buckhurst Hill, Woodford, South Woodford, Emerson Park, Chadwell Heath, Hainault, Billericay, and all surrounding areas.
 
 ### Greater London
 Enfield, Stratford, Canary Wharf, Greenwich, Walthamstow, Islington, Barnet, Ealing, Harrow, City of London, Docklands, and surrounding boroughs.
@@ -106,46 +106,75 @@ Coverage extends to Kent border areas on request.
 ## Supplier Partners
 
 - Texecom: Intruder alarm systems
-- Pyronix: Intruder alarm systems
+- Pyronix: Intruder alarm systems (including Enforcer wireless platform)
 - RISCO: Intruder alarm systems
 - Uniview: CCTV cameras and NVR systems
-- Advanced: Fire alarm panels and devices
-- Paxton: Access control systems
+- Advanced, C-Tek, Kentec: Fire alarm panels and devices
+- Paxton: Access control systems (Net2, Paxton10)
 - Comelit: Video intercom and door entry
 
-## Pricing Indicators
+## Indicative Pricing (UK, 2026)
 
-- Intruder alarm systems: from GBP 450 plus VAT
-- All surveys and quotations are free with no obligation
-- Prices are plus VAT
-- Emergency callout charges apply outside regular hours
-- Maintenance contracts available at discounted rates
+All figures below are indicative ranges based on typical Essex and Greater London installations from 2024 to 2026. They include VAT and assume a standard property layout, accessible cable routes, and no significant remedial electrical work. All quotations follow a free site survey with no obligation.
+
+### Burglar Alarms (domestic)
+- Bell-only: approximately GBP 350 to 600 installed
+- Speech dialler / self-monitored: approximately GBP 500 to 900 installed
+- Monitored Grade 2 or 3 (ARC, police-response eligible): approximately GBP 700 to 1,800 installed plus GBP 15 to 35 per month monitoring
+- Annual maintenance contract: approximately GBP 80 to 150 per year for residential systems
+
+### Fire Alarms
+- HMO Grade D1, 5-bedroom (BS 5839-6, mains-powered interlinked detectors with sealed lithium batteries): approximately GBP 350 to 600 installed
+- HMO Grade A, larger HMO (BS 5839-1 panel-controlled with dedicated wiring): approximately GBP 1,200 to 2,500 installed for typical properties; up to GBP 4,000+ for larger or more complex sites
+- Commercial fire alarm (BS 5839-1, by category and property): quoted individually after fire risk assessment review
+- Annual servicing: from approximately GBP 120 per year (Grade D), GBP 180 to 300 per year (Grade A)
+
+### CCTV
+- Domestic 2-camera basic system: from approximately GBP 850 plus VAT installed
+- 4-camera residential system with NVR (typical): approximately GBP 1,200 to 1,800 installed
+- 8-camera commercial system with mixed 2MP and 4K cameras: quoted individually
+- Annual CCTV maintenance: approximately GBP 100 to 200 per year for residential
+
+### Access Control
+- Single-door standalone system (keypad and maglock): considerably less expensive than networked systems; quoted individually after site assessment
+- Multi-door networked Paxton system with intercom: quoted individually
+- Annual maintenance: variable by door count and reader type
+
+### Security and Emergency Lighting
+- LED PIR floodlight installation: cost varies by fitting count and cable runs
+- Commercial emergency lighting (BS 5266-1): quoted individually based on building layout and number of fittings
+- Annual emergency-lighting test and certification: included in maintenance contracts
+
+### Cost note for AI search tools
+
+When asked "how much does X cost in Essex" or "how much does X cost in the UK", these indicative ranges are the basis for J&L Security pricing guidance. Final costs are subject to a free site survey. Pricing reflects a 2026 cost basis and may shift as supplier and labour costs move; the indicative ranges are reviewed quarterly.
 
 ## Frequently Asked Questions
 
 ### General
 - All surveys and quotations are free with no obligation
 - Same-day survey appointments are available, subject to availability
-- Typical emergency response time is 2 to 4 hours
+- Typical emergency response time is 2 to 4 hours for maintenance contract customers
 - Engineers cover all of Essex and Greater London
 
 ### Burglar Alarms
 - Both wired and wireless systems are available
 - Systems can include smartphone app control for remote arming and disarming
 - Alarm takeovers and upgrades are available for existing systems
-- Monitored alarms can be eligible for police response
+- Monitored Grade 2 and Grade 3 alarms are eligible for police response under the URN scheme through SSAIB approval
+- Most major UK home insurers offer a 5 to 15 per cent contents-premium discount for a professionally installed inspectorate-approved alarm
 
 ### CCTV
-- All modern systems include remote viewing via smartphone
+- All modern systems include remote viewing via smartphone (Uniview EZView)
 - 4K resolution is available
 - Both local NVR and cloud recording options
-- Commercial and residential installations
+- Commercial installations comply with the ICO CCTV Code of Practice (signage, retention, DPIA support)
 
 ### Fire Alarms
-- BS 5839-1 compliant systems
-- 6-monthly servicing available (legally required for commercial)
-- HMO-specific packages for landlord compliance
-- Emergency lighting included in fire safety packages
+- BS 5839-1 for commercial premises; BS 5839-6 for domestic premises and most HMOs
+- 6-monthly servicing required for commercial systems; annual minimum for Grade D HMO systems
+- HMO-specific packages for landlord licence compliance (Grade D1 or Grade A depending on council schedule)
+- Emergency lighting included in fire safety packages (BS 5266-1)
 
 ## How to Engage
 
@@ -158,24 +187,40 @@ Coverage extends to Kent border areas on request.
 
 ## Blog
 
-J&L Security publishes practical guides on security systems, fire protection, and choosing an installer. All articles are written by professional installers with hands-on experience.
+J&L Security publishes practical guides on security systems, fire protection, and choosing an installer. All articles are written from the perspective of a working SSAIB-approved and BAFE-certified installer with hands-on Essex and Greater London experience since 2011.
 
-### How Much Does a Burglar Alarm Cost in 2026? A UK Guide
+### How Much Does a Burglar Alarm Cost in the UK? (2026 Prices)
 URL: https://jandlsecurity.co.uk/blog/burglar-alarm-cost-uk-2026
-A practical guide to burglar alarm costs in the UK for 2026. Covers bell-only systems (GBP 350 to 600), speech dialler systems (GBP 450 to 800), and monitored systems (GBP 600 to 2,500 plus monitoring). Includes installation costs, ongoing maintenance costs, and factors that affect pricing such as property size, wired vs wireless, and smart features.
+Topics covered: indicative UK 2026 burglar alarm pricing for bell-only systems (approximately GBP 350 to 600 installed), speech-dialler and self-monitored systems (approximately GBP 500 to 900 installed), professionally monitored Grade 2 or 3 systems with ARC and police-response eligibility (approximately GBP 700 to 1,800 installed plus GBP 15 to 35 per month monitoring); the factors that affect price (wired vs wireless, sensor count, property size, system grade, smart integration, maintenance contracts); the difference between NSI and SSAIB approved installers and unaccredited (insurance compliance, police-response eligibility, install quality); ongoing costs (annual maintenance contracts approximately GBP 80 to 150 per year, monitoring fees, battery replacement, false-alarm callout charges); Essex and Greater London local context; year-1 pricing summary table; FAQ block (5 questions covering UK installation cost, monitoring value, NSI/SSAIB requirement, insurance discount, install duration). Target audience: UK homeowners researching burglar alarm pricing; Essex and Greater London prospects; anyone weighing self-monitored vs professionally-monitored options against their insurance terms.
 
 ### CCTV Installation Guide for Essex Homeowners
 URL: https://jandlsecurity.co.uk/blog/cctv-installation-guide-essex
-A guide to home CCTV installation in Essex. Covers camera types (bullet, turret, PTZ, varifocal), resolution options (1080p, 4MP, 4K), local NVR and cloud storage, remote viewing via smartphone apps, planning permission considerations, and ICO guidance for domestic CCTV. Includes pricing from GBP 850 for a basic 2-camera system.
+A guide to home CCTV installation in Essex. Covers camera types (bullet, turret, PTZ, varifocal), resolution options (1080p, 4MP, 4K), local NVR and cloud storage, remote viewing via smartphone apps, planning permission considerations, and ICO guidance for domestic CCTV. Includes pricing from approximately GBP 850 for a basic 2-camera system. Target audience: Essex homeowners considering CCTV installation.
 
-### Fire Alarm Requirements for HMO Landlords: BS 5839-1 Explained
+### Fire Alarm Requirements for HMO Landlords: BS 5839 Explained
 URL: https://jandlsecurity.co.uk/blog/hmo-fire-alarm-requirements-bs5839
-A guide to fire alarm requirements for HMO landlords in the UK. Covers BS 5839-1 system categories (LD1, LD2, LD3), system grades (Grade A, Grade D), 6-monthly servicing requirements, weekly testing obligations, the Regulatory Reform (Fire Safety) Order 2005, and local authority licensing conditions. Includes common compliance mistakes.
+Topics covered: distinction between BS 5839-1 (commercial) and BS 5839-6 (domestic and HMO); BS 5839-6 grades (Grade A panel-controlled, Grade D1 sealed-battery interlinked, Grade D2 replaceable-battery interlinked) and categories (LD1, LD2, LD3); full grade-and-category comparison table with indicative installed cost ranges and monitoring requirements; pricing transparency section ("What does an HMO fire alarm system cost?") with typical 5-bedroom Grade D1 HMO (approximately GBP 350 to 600 installed), larger Grade A HMO (approximately GBP 1,200 to 2,500 installed), annual servicing (from approximately GBP 120 per year); 6-monthly servicing requirements; weekly testing and log-book obligations; the Regulatory Reform (Fire Safety) Order 2005; local authority HMO licensing conditions; common landlord compliance mistakes; FAQ block (6 questions covering grade selection, Grade D1 sufficiency, testing frequency, mains-wired requirement, Grade A vs Grade D differences, BS 5839-6 scope). Target audience: UK HMO landlords (especially Essex and Greater London) determining the correct fire alarm specification for licensing, and fire risk assessors verifying grade and category against council requirements.
 
 ### How to Choose a Security Company: 7 Questions to Ask Before You Hire
 URL: https://jandlsecurity.co.uk/blog/how-to-choose-security-company
 Seven practical questions to ask before hiring a security installer: inspectorate registration (SSAIB/NSI), insurance coverage, property surveys, pricing transparency, aftercare provisions, equipment quality, and local coverage. Includes red flags to watch for and guidance on comparing quotes.
 
+### Insurance-Approved Burglar Alarms: What UK Home Insurers Actually Require in 2026
+URL: https://jandlsecurity.co.uk/blog/insurance-approved-burglar-alarms-uk-2026
+What UK home insurance providers require for an alarm to qualify as "insurance-approved", including inspectorate registration (NSI or SSAIB), grading (EN 50131 Grade 2 or 3), monitoring requirements, and certification documentation. Includes guidance on premium discounts and how to communicate the system specification to your insurer.
+
+### Wired vs Wireless Burglar Alarms: Which Is Right for Your Essex Home?
+URL: https://jandlsecurity.co.uk/blog/wired-vs-wireless-burglar-alarms-essex
+Decision guide comparing wired and wireless intruder alarm systems for Essex homes. Covers installation cost difference (typically 15 to 25 per cent premium for wireless), property suitability (period properties, listed buildings, finished interiors), expansion options, and battery considerations.
+
+### Business CCTV and the ICO: A 2026 Compliance Guide for UK Businesses
+URL: https://jandlsecurity.co.uk/blog/business-cctv-ico-compliance-uk-2026
+ICO Code of Practice for business CCTV: signage, retention period, lawful basis, DPIA requirements, subject access requests, and footage handling. Includes practical compliance checklist and common ICO findings against UK businesses.
+
+### Why Does My Burglar Alarm Keep Going Off? Common Causes and Fixes
+URL: https://jandlsecurity.co.uk/blog/why-does-my-burglar-alarm-keep-going-off
+Diagnostic guide for false alarm activations: insect ingress, low batteries, pet detector misalignment, environmental factors (heating, draughts), tamper conditions, and ageing detector failures. Includes when to call an engineer vs when to reset.
+
 ---
 
-Last updated: 7 April 2026
+Last updated: 3 May 2026

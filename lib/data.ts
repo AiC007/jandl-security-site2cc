@@ -183,6 +183,132 @@ export const locations: Location[] = [
     postcode: 'CM16',
     nearbyAreas: ['Loughton', 'Buckhurst Hill', 'Chigwell', 'Ongar', 'Waltham Abbey'],
     landmarks: ['Epping Forest', 'Epping Station', 'Epping High Street', 'Copped Hall']
+  },
+  {
+    id: 'islington',
+    name: 'Islington',
+    slug: 'islington',
+    county: 'Greater London',
+    postcode: 'N1, N5, N7, EC1V',
+    nearbyAreas: ['Hackney', 'Camden', 'Highbury', 'Finsbury', 'Holloway'],
+    landmarks: ['Angel Underground Station', 'Sadler\'s Wells Theatre', 'Emirates Stadium', 'Upper Street']
+  },
+  {
+    id: 'hackney',
+    name: 'Hackney',
+    slug: 'hackney',
+    county: 'Greater London',
+    postcode: 'E2, E5, E8, E9, N16',
+    nearbyAreas: ['Islington', 'Clapton', 'Dalston', 'Stoke Newington', 'Shoreditch'],
+    landmarks: ['Hackney Empire', 'Victoria Park', 'Hackney Town Hall', 'Hackney Central Station']
+  },
+  {
+    id: 'clapton',
+    name: 'Clapton',
+    slug: 'clapton',
+    county: 'Greater London',
+    postcode: 'E5',
+    nearbyAreas: ['Hackney', 'Stoke Newington', 'Stamford Hill', 'Leyton', 'Walthamstow'],
+    landmarks: ['Clapton Pond', 'Lea Bridge', 'Millfields Park', 'Clapton Station']
+  },
+  {
+    id: 'dalston',
+    name: 'Dalston',
+    slug: 'dalston',
+    county: 'Greater London',
+    postcode: 'E8',
+    nearbyAreas: ['Hackney', 'Stoke Newington', 'Islington', 'Hoxton', 'Shoreditch'],
+    landmarks: ['Dalston Junction Station', 'Ridley Road Market', 'Dalston Square', 'Kingsland High Street']
+  },
+  {
+    id: 'camden',
+    name: 'Camden',
+    slug: 'camden',
+    county: 'Greater London',
+    postcode: 'NW1, NW3, NW5',
+    nearbyAreas: ['Kentish Town', 'Primrose Hill', 'Belsize Park', 'Hampstead', 'Islington'],
+    landmarks: ['Camden Market', 'Camden Town Underground Station', 'Regent\'s Canal', 'Roundhouse']
+  },
+  {
+    id: 'southwark',
+    name: 'Southwark',
+    slug: 'southwark',
+    county: 'Greater London',
+    postcode: 'SE1, SE15, SE16, SE17',
+    nearbyAreas: ['Bermondsey', 'Camberwell', 'Peckham', 'Walworth', 'Elephant and Castle'],
+    landmarks: ['Tate Modern', 'The Shard', 'Borough Market', 'Southwark Cathedral']
+  },
+  {
+    id: 'woolwich',
+    name: 'Woolwich',
+    slug: 'woolwich',
+    county: 'Greater London',
+    postcode: 'SE18',
+    nearbyAreas: ['Greenwich', 'Plumstead', 'Charlton', 'Eltham', 'Thamesmead'],
+    landmarks: ['Woolwich Arsenal Station', 'Royal Arsenal Riverside', 'Woolwich Ferry', 'General Gordon Square']
+  },
+  {
+    id: 'westminster',
+    name: 'Westminster',
+    slug: 'westminster',
+    county: 'Greater London',
+    postcode: 'SW1, W1, W2, WC1, WC2',
+    nearbyAreas: ['Mayfair', 'Marylebone', 'Pimlico', 'Belgravia', 'Soho'],
+    landmarks: ['Houses of Parliament', 'Westminster Abbey', 'Buckingham Palace', 'Trafalgar Square']
+  },
+  {
+    id: 'hammersmith',
+    name: 'Hammersmith',
+    slug: 'hammersmith',
+    county: 'Greater London',
+    postcode: 'W6, W12, W14',
+    nearbyAreas: ['Fulham', 'Chiswick', 'Shepherd\'s Bush', 'Kensington', 'Olympia'],
+    landmarks: ['Hammersmith Apollo', 'Hammersmith Bridge', 'Westfield London', 'Charing Cross Hospital']
+  },
+  {
+    id: 'battersea',
+    name: 'Battersea',
+    slug: 'battersea',
+    county: 'Greater London',
+    postcode: 'SW8, SW11',
+    nearbyAreas: ['Clapham', 'Wandsworth', 'Vauxhall', 'Nine Elms', 'Chelsea'],
+    landmarks: ['Battersea Power Station', 'Battersea Park', 'Clapham Junction Station', 'New US Embassy']
+  },
+  {
+    id: 'fulham',
+    name: 'Fulham',
+    slug: 'fulham',
+    county: 'Greater London',
+    postcode: 'SW6, SW10',
+    nearbyAreas: ['Hammersmith', 'Chelsea', 'Parsons Green', 'Putney', 'Earls Court'],
+    landmarks: ['Fulham Palace', 'Craven Cottage', 'Stamford Bridge', 'Bishops Park']
+  },
+  {
+    id: 'streatham',
+    name: 'Streatham',
+    slug: 'streatham',
+    county: 'Greater London',
+    postcode: 'SW2, SW16',
+    nearbyAreas: ['Brixton', 'Tooting', 'Norbury', 'Balham', 'Crystal Palace'],
+    landmarks: ['Streatham Common', 'Streatham High Road', 'Streatham Hill Station', 'The Rookery']
+  },
+  {
+    id: 'finchley',
+    name: 'Finchley',
+    slug: 'finchley',
+    county: 'Greater London',
+    postcode: 'N2, N3, N12',
+    nearbyAreas: ['Barnet', 'Whetstone', 'Muswell Hill', 'Hampstead Garden Suburb', 'Hendon'],
+    landmarks: ['Finchley Central Station', 'Victoria Park Finchley', 'Avenue House', 'North Finchley High Road']
+  },
+  {
+    id: 'barnet',
+    name: 'Barnet',
+    slug: 'barnet',
+    county: 'Greater London',
+    postcode: 'EN4, EN5, N20',
+    nearbyAreas: ['Finchley', 'Whetstone', 'Cockfosters', 'Totteridge', 'New Barnet'],
+    landmarks: ['High Barnet Station', 'Barnet Hospital', 'Hadley Wood', 'Barnet Market']
   }
 ];
 

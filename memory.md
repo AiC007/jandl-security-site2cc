@@ -124,7 +124,7 @@ These require dedicated, query-matched location landing pages to convert impress
 
 4. **`serviceLocationMatrix` extension for 14 new London boroughs (NEW).** The 14 new London location pages added 2026-05-06 do not yet have matching entries in the `serviceLocationMatrix` for high-intent service-location combos (e.g. burglar-alarm-installation-islington, cctv-installation-hammersmith, fire-alarm-installation-barnet). Flagged in the original content pack as a deferred follow-up. Should be a focused next round.
 
-5. **Lighthouse SEO audit on a new location page (NEW).** Original pack asked for a Lighthouse SEO score check on one new location page after deploy. Not run in 2026-05-06 session because the local CLI lacked Lighthouse. Run from a desktop browser against `https://jandlsecurity.co.uk/locations/islington` and flag any score below 90.
+5. **Lighthouse SEO audit on a new location page.** DONE 2026-05-06. Mobile-profile audit run via Lighthouse CLI against `https://jandlsecurity.co.uk/locations/islington`. Score 100/100, all weighted SEO audits passed. Only `image-alt` and `structured-data` flagged as informational manual-check items (weight=0). No remediation required. Pass note at `/docs/2026-05-06-lighthouse-islington.md`.
 
 ### Medium-term content priorities
 
@@ -237,6 +237,7 @@ Priority sequence:
 | /docs/2026-05-06-pr-body.md | PR body for #2 (Client amendments: J&L Security, 5 May 2026) |
 | /docs/2026-05-06-implementation-summary.md | Internal record of what was implemented and shipped on 2026-05-06 |
 | /docs/2026-05-06-jag-confirmation-email.md | Draft email to Jag confirming the amendments are live (operator sends; do NOT auto-send) |
+| /docs/2026-05-06-lighthouse-islington.md | Lighthouse SEO audit pass note for /locations/islington (100/100 mobile, 2026-05-06) |
 
 ---
 
@@ -274,6 +275,6 @@ Priority sequence:
 
 **Next actions for whoever opens the next session.**
 1. Send the Jag confirmation email (operator action).
-2. Run a Lighthouse SEO audit on `https://jandlsecurity.co.uk/locations/islington`; flag anything below 90 on the SEO category.
+2. Lighthouse SEO audit on `https://jandlsecurity.co.uk/locations/islington`: DONE 2026-05-06, 100/100 mobile profile, no remediation required. See `/docs/2026-05-06-lighthouse-islington.md`.
 3. When ready: do the deferred `serviceLocationMatrix` extension for high-intent service-location combos for the 14 new London boroughs (e.g. burglar-alarm-installation-islington, cctv-installation-hammersmith, fire-alarm-installation-barnet).
 4. Watch GSC at the 4-week post-amendment review (2026-06-06) for impressions on new locations and the BS 5839 article.

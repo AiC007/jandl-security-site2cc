@@ -808,6 +808,276 @@ export const blogPosts: BlogPost[] = [
     ]
   },
   {
+    slug: 'bs5839-1-and-bs5839-6-explained-2026',
+    title: 'BS 5839-1 and BS 5839-6: A Plain-English Guide for UK Buyers in 2026',
+    metaTitle: 'BS 5839-1 vs BS 5839-6: UK Fire Alarm Standards Explained 2026',
+    description: 'A practical guide to BS 5839-1 and BS 5839-6, the two British Standards for fire detection and fire alarm systems. Covers scope, categories, grades, who each applies to, servicing obligations, and how to specify the right system.',
+    datePublished: '2026-05-06',
+    dateModified: '2026-05-06',
+    keywords: [
+      'BS 5839-1',
+      'BS 5839-6',
+      'BS 5839 explained',
+      'fire alarm british standard',
+      'fire alarm categories',
+      'fire alarm grades',
+      'BAFE fire alarm maintainers',
+      'fire risk assessment uk',
+      'fire alarm servicing uk',
+      'commercial fire alarm uk',
+      'HMO fire alarm uk',
+    ],
+    wordCount: 2150,
+    content: `
+<p>BS 5839 is the British Standard for fire detection and fire alarm systems. It is split into two parts that cover different building types: <strong>BS 5839-1 for non-domestic premises</strong> (offices, retail, schools, warehouses, care homes, and most commercial buildings) and <strong>BS 5839-6 for domestic premises</strong> (single dwellings, flats, and houses in multiple occupation). The standards set out how a system should be designed, installed, commissioned, and maintained, and they are the reference points used by insurers, fire risk assessors, and licensing authorities when judging whether a building has appropriate fire detection in place.</p>
+
+<p>This guide explains what each standard covers, the categories and grades they define, who each one applies to in practice, and what the standards mean for your obligations once a system is installed. It is written for property owners, managers, landlords, and responsible persons who need to specify or oversee a fire alarm system without having to read the full standards documents themselves.</p>
+
+<p>If you are an HMO landlord specifically, our companion article on <a href="/blog/hmo-fire-alarm-requirements-bs5839">HMO fire alarm requirements</a> goes into the licensing detail in more depth. The article you are reading now is the broader overview covering both BS 5839-1 and BS 5839-6.</p>
+
+<h2>The Quick Summary</h2>
+
+<p>If you only have time to read one section, this is it.</p>
+
+<ul>
+<li><strong>BS 5839-1</strong> applies to non-domestic premises. It uses two main category families: M (manual call points only), L (automatic detection for life safety), and P (automatic detection for property protection). Within those families, you specify the exact category (L1 to L5, P1 or P2) based on the level of cover required.</li>
+<li><strong>BS 5839-6</strong> applies to domestic premises. It uses Grades (A, B, C, D, F) and Categories (LD1, LD2, LD3). The Grade describes the type of system and how reliably it operates. The Category describes which parts of the building are protected.</li>
+<li>For both standards, the responsible person must keep the system in working order. For BS 5839-1 systems this means professional servicing approximately every six months. For BS 5839-6 systems the maintenance regime depends on the Grade.</li>
+<li>Use a <a href="/services/fire-alarms">BAFE-certified fire alarm maintainer</a> for design, installation, commissioning, and maintenance. BAFE certification is the recognised competency benchmark in the UK fire safety industry and is regularly required by insurers and fire risk assessors.</li>
+</ul>
+
+<h2>BS 5839-1: Non-Domestic Premises</h2>
+
+<p>BS 5839-1 is the standard for fire detection and fire alarm systems in non-domestic buildings. It applies to:</p>
+
+<ul>
+<li>Offices, retail premises, restaurants, hotels, and licensed venues</li>
+<li>Schools, colleges, and other educational premises</li>
+<li>Care homes, hospitals, and healthcare facilities</li>
+<li>Warehouses, factories, and industrial premises</li>
+<li>Communal areas of blocks of flats and HMOs above a certain size</li>
+<li>Any other building used for business or community purposes that is not a single private dwelling</li>
+</ul>
+
+<p>The legal driver behind BS 5839-1 is the Regulatory Reform (Fire Safety) Order 2005, which places responsibility on a "responsible person" (typically the employer, owner, or person in control of the premises) to ensure the building has appropriate fire safety measures. The fire risk assessment determines what those measures are; BS 5839-1 then sets out how to implement the fire detection and alarm element competently.</p>
+
+<h3>BS 5839-1 Categories</h3>
+
+<p>BS 5839-1 categories describe the level of automatic detection in the building. The category is chosen during fire risk assessment.</p>
+
+<ul>
+<li><strong>Category M (manual):</strong> manual call points only, no automatic detection. Fire is raised by occupants pressing a call point. Suitable only for small, simple, low-risk premises where occupants are awake, alert, and able to detect a fire themselves.</li>
+<li><strong>Category L1 (life, full coverage):</strong> automatic detectors throughout all areas of the building, including ceiling voids and roof spaces where appropriate. The most comprehensive life-safety category and typically required for sleeping risk premises such as hotels and care homes.</li>
+<li><strong>Category L2 (life, escape routes plus high-risk areas):</strong> detectors in escape routes, high-risk rooms, and rooms opening onto escape routes.</li>
+<li><strong>Category L3 (life, escape routes plus rooms opening onto them):</strong> detectors in escape routes plus rooms that open onto them, but not necessarily in every room.</li>
+<li><strong>Category L4 (life, escape routes only):</strong> detectors in escape routes only. The minimum life-safety category in BS 5839-1.</li>
+<li><strong>Category L5 (life, specific risk):</strong> a custom category covering a specific identified risk, such as a kitchen or plant room.</li>
+<li><strong>Category P1 (property, full coverage):</strong> detectors throughout the building for property protection. Often required by insurers for high-value contents or critical-process buildings.</li>
+<li><strong>Category P2 (property, defined areas only):</strong> detectors in specifically identified high-risk areas only.</li>
+</ul>
+
+<p>Categories can be combined: an L2/P1 system, for example, would protect the escape routes and high-risk rooms for life safety and the rest of the building for property protection.</p>
+
+<h3>What BS 5839-1 Requires of the Installation</h3>
+
+<p>The standard sets out detailed requirements covering detector placement, sounder coverage, panel performance, cabling, power supply, and documentation. The points that matter most to a non-specialist responsible person are:</p>
+
+<ul>
+<li>The system is professionally designed against a specific category derived from the fire risk assessment.</li>
+<li>Detector spacing and positioning meets the standard's rules (which depend on ceiling height, room geometry, and detector type).</li>
+<li>The sounder coverage achieves a minimum sound level throughout the building (typically 65 dB(A), or 75 dB(A) where occupants may be sleeping).</li>
+<li>The system is commissioned with every device tested and a commissioning certificate issued.</li>
+<li>A logbook is provided and kept on site for routine and corrective records.</li>
+<li>Servicing is carried out by a competent contractor at intervals no greater than six months. Practical guidance allows scheduling within a 5 to 7 month window.</li>
+</ul>
+
+<h2>BS 5839-6: Domestic Premises</h2>
+
+<p>BS 5839-6 is the British Standard for fire detection and fire alarm systems in domestic premises. It applies to:</p>
+
+<ul>
+<li>Single-occupancy private dwellings (houses, bungalows, flats)</li>
+<li>Houses in multiple occupation (HMOs) up to a certain size and risk profile</li>
+<li>Sheltered housing and supported housing</li>
+<li>The dwelling units within a block of flats (the communal areas of the same block typically fall under BS 5839-1)</li>
+</ul>
+
+<p>BS 5839-6 is referenced in HMO licensing conditions across most local authorities in England and Wales. It is also referenced by insurers, mortgage lenders, and fire risk assessors when determining whether a domestic property has appropriate fire detection.</p>
+
+<h3>BS 5839-6 Grades</h3>
+
+<p>BS 5839-6 uses Grades to describe the type of system, ranging from a simple battery-only smoke alarm at one end (Grade F) up to a fully panel-controlled commercial-style system at the other (Grade A). The Grade is chosen based on the property type, occupancy risk, and any licensing conditions that apply.</p>
+
+<ul>
+<li><strong>Grade A:</strong> a panel-controlled system using BS 5839-1 components. Required for larger HMOs and higher-risk domestic properties. The system has its own power supply with battery backup, dedicated sounders, and a control panel that displays system status.</li>
+<li><strong>Grade B:</strong> rarely specified in current practice; not commonly used.</li>
+<li><strong>Grade C:</strong> a system of mains-powered detectors and call points connected to a common control unit that may include a backup battery. Suitable for medium-sized HMOs.</li>
+<li><strong>Grade D:</strong> mains-powered, interlinked smoke and heat alarms with integral battery backup, no separate panel. The standard specification for most domestic and small HMO installations. Typically subdivided into Grade D1 (with sealed long-life battery backup) and Grade D2 (with replaceable battery backup).</li>
+<li><strong>Grade F:</strong> battery-only smoke alarms. Permitted only in lower-risk properties; typically not acceptable for HMO licensing purposes. Subdivided into Grade F1 and F2 by battery type.</li>
+</ul>
+
+<h3>BS 5839-6 Categories</h3>
+
+<p>The Category describes which parts of the property are protected. For domestic premises BS 5839-6 uses three categories:</p>
+
+<ul>
+<li><strong>LD1:</strong> detectors throughout the property including in all rooms used for sleeping and main circulation areas. The highest level of cover.</li>
+<li><strong>LD2:</strong> detectors in circulation areas and in any rooms that present a particularly high fire risk (for example, the kitchen and the principal habitable room).</li>
+<li><strong>LD3:</strong> detectors in circulation areas only (hallways, landings, stairwells). The minimum coverage for life safety.</li>
+</ul>
+
+<p>A typical HMO licensing requirement is for a Grade D Category LD2 system, with mains-powered interlinked detectors in circulation areas plus the kitchen and any high-risk rooms. Larger HMOs and properties with more complex layouts may require Grade A or Grade A with LD1.</p>
+
+<h3>What BS 5839-6 Requires of the Installation</h3>
+
+<ul>
+<li>The system is designed against a specific Grade and Category appropriate for the property type, occupancy, and any licensing conditions.</li>
+<li>Detectors are correctly positioned for the room type (for example, optical smoke detectors in living rooms, heat alarms in kitchens, multi-sensor units in some configurations).</li>
+<li>For Grade D and above, detectors are interlinked so that one activation triggers all sounders in the property.</li>
+<li>The system is tested and commissioned, with a certificate issued.</li>
+<li>The maintenance regime is agreed and recorded. For Grade A systems this means professional servicing under contract, similar to BS 5839-1. For Grade D systems the routine includes regular user tests by the occupant and periodic professional inspections, particularly for HMOs where licensing typically requires annual or twice-yearly servicing.</li>
+</ul>
+
+<h2>Comparison Table</h2>
+
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>BS 5839-1</th>
+<th>BS 5839-6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Building type</td>
+<td>Non-domestic (commercial, retail, schools, care, warehouses, communal areas)</td>
+<td>Domestic (private dwellings, flats, HMOs)</td>
+</tr>
+<tr>
+<td>Categories</td>
+<td>M, L1 to L5, P1, P2</td>
+<td>LD1, LD2, LD3</td>
+</tr>
+<tr>
+<td>Grades / system types</td>
+<td>One panel-controlled system architecture</td>
+<td>Grades A, B, C, D, F (with subgrades D1, D2, F1, F2)</td>
+</tr>
+<tr>
+<td>Typical specifier</td>
+<td>Fire risk assessor, building control</td>
+<td>HMO licensing officer, fire risk assessor, insurer</td>
+</tr>
+<tr>
+<td>Servicing interval</td>
+<td>Approximately every 6 months by a competent contractor</td>
+<td>User tests routinely; professional inspections per Grade and licensing conditions</td>
+</tr>
+<tr>
+<td>Typical contractor accreditation</td>
+<td>BAFE SP203-1</td>
+<td>BAFE SP203-1 (also covers domestic systems where the contractor is registered for them)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Who Decides Which Standard Applies?</h2>
+
+<p>The starting point is the fire risk assessment. For commercial premises this is a legal requirement under the Regulatory Reform (Fire Safety) Order 2005 and the assessment will identify the appropriate BS 5839-1 category. For HMOs, the local authority licensing team typically specifies a minimum standard that the property must meet, and that specification is usually expressed in BS 5839-6 terms (for example, "Grade D Category LD2 throughout, mains powered interlinked, with battery backup, professionally installed").</p>
+
+<p>For ordinary owner-occupied private homes, BS 5839-6 is the relevant standard but there is no licensing requirement; the standard sets out best practice. Many home insurance policies reference compliance with BS 5839-6 Grade D Category LD2 or similar.</p>
+
+<h2>Why BAFE Certification Matters</h2>
+
+<p>BAFE is the independent third-party certification body for fire safety service providers in the United Kingdom. The relevant BAFE scheme for fire alarm systems is SP203-1, which audits contractors against:</p>
+
+<ul>
+<li>Design competence, including ability to specify the correct category and grade against a fire risk assessment</li>
+<li>Installation competence to BS 5839-1 and BS 5839-6 requirements</li>
+<li>Commissioning processes, certification, and documentation</li>
+<li>Maintenance procedures, technician training, and record keeping</li>
+</ul>
+
+<p>Insurers, fire risk assessors, building managers, and licensing authorities frequently look for BAFE certification when assessing whether the responsible person has appointed competent contractors. Using a non-BAFE contractor is not unlawful, but it places more of the competence-evidencing burden on the responsible person and is harder to defend if the system is later found to be deficient.</p>
+
+<p><strong>J&amp;L Security is BAFE-certified under SP203-1</strong>, covering design, installation, commissioning, and maintenance of fire alarm systems for both BS 5839-1 and BS 5839-6 installations.</p>
+
+<h2>Maintenance Obligations Explained</h2>
+
+<h3>BS 5839-1 commercial servicing</h3>
+
+<p>Servicing is required at intervals no greater than six months by a competent contractor. In practice, contracts run on a 6-monthly schedule with each visit covering test of every detector and call point, sounder verification, panel checks, battery tests, and a written service report. The responsible person also records weekly user tests of one call point on a rotating basis.</p>
+
+<h3>BS 5839-6 domestic and HMO servicing</h3>
+
+<p>For Grade A systems the regime is similar to BS 5839-1: professional servicing under contract, typically annually for domestic and twice-yearly for larger HMOs. For Grade D systems the routine combines user-side testing (a periodic test from the test button on each unit) with periodic professional inspection, often annually for HMOs as a licensing condition. Battery replacement intervals depend on whether the system is Grade D1 (sealed long-life battery, typically 10 years) or Grade D2 (replaceable battery).</p>
+
+<h2>How J&amp;L Security Helps</h2>
+
+<p>We are a BAFE-certified fire alarm maintainer covering Essex and Greater London. Our work spans the full lifecycle of fire alarm systems under both BS 5839-1 and BS 5839-6:</p>
+
+<ul>
+<li>Fire risk assessments for commercial premises and HMOs</li>
+<li>Design, installation, and commissioning of new BS 5839-1 systems for commercial buildings</li>
+<li>Design, installation, and commissioning of BS 5839-6 systems for domestic properties and HMOs (Grades A, C, and D, Categories LD1 to LD3 as appropriate)</li>
+<li>6-monthly servicing contracts for BS 5839-1 systems and annual or 6-monthly servicing for BS 5839-6 systems by Grade</li>
+<li>Smoke alarm installs and smoke alarm repair for domestic and HMO landlords</li>
+<li>Take-over of existing systems where the previous maintainer is no longer suitable</li>
+</ul>
+
+<p>Annual servicing contracts start at £180 + VAT for commercial premises and £120 + VAT for residential and small HMO systems. Both packages include one routine service and one emergency callout within the contract year. New installations and fire risk assessments are quoted after a free site survey.</p>
+
+<h2>FAQs</h2>
+
+<h3>Is BS 5839 a legal requirement?</h3>
+
+<p>BS 5839 itself is a British Standard, not a law. The legal requirement is for the responsible person (under the Regulatory Reform (Fire Safety) Order 2005 for commercial premises, and under HMO licensing or housing legislation for HMOs) to ensure the building has appropriate fire detection. BS 5839 is the recognised method of demonstrating that a system meets that requirement. Insurers, fire risk assessors, and licensing authorities use it as the reference point.</p>
+
+<h3>Can a Grade D system ever be acceptable for an HMO?</h3>
+
+<p>Yes, in many cases. A Grade D Category LD2 system (mains-powered interlinked detectors in circulation areas plus the kitchen and any high-risk rooms, with battery backup) is the most common HMO licensing specification for properties up to a certain size and number of storeys. Larger HMOs, multi-storey properties, and those with bedsit-style accommodation typically require Grade A or Grade A with LD1. The local authority licensing team is the source of truth for any specific property.</p>
+
+<h3>How often does a commercial fire alarm need servicing?</h3>
+
+<p>BS 5839-1 requires professional servicing at intervals no greater than six months. In practice this means a 6-monthly contract with each visit covering full test of every detector and call point, sounder verification, panel checks, and battery tests. The responsible person should also carry out weekly user tests of one call point on a rotating basis and record these in the system logbook.</p>
+
+<h3>Do I need a fire risk assessment if I have a fire alarm fitted?</h3>
+
+<p>Yes. A fire risk assessment is a separate legal requirement under the Regulatory Reform (Fire Safety) Order 2005 for any non-domestic premises and for the common parts of HMOs and blocks of flats. The fire risk assessment is what determines the appropriate fire alarm category in the first place, so it sits ahead of the fire alarm specification rather than being replaced by it. We can carry out fire risk assessments alongside our fire alarm work.</p>
+
+<h3>What is the difference between BAFE and SSAIB?</h3>
+
+<p>BAFE (British Approvals for Fire Equipment) is the certification body for fire safety services in the United Kingdom; its SP203-1 scheme covers fire detection and fire alarm systems. SSAIB (Security Systems and Alarms Inspection Board) is one of the two main inspectorate bodies for the UK security industry, covering intruder alarms, CCTV, and access control. Most established security and fire contractors hold both: SSAIB for intruder alarm work and BAFE for fire alarm work. J&amp;L Security holds both.</p>
+
+<h2>Get a Survey</h2>
+
+<p>For a free survey covering fire alarm specification, fire risk assessment, or service contract takeover, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770. We cover all of Essex and Greater London. For more on fire alarms see our <a href="/services/fire-alarms">fire alarm services</a> page or read our <a href="/blog/hmo-fire-alarm-requirements-bs5839">HMO fire alarm requirements guide</a>.</p>
+`,
+    faqs: [
+      {
+        question: 'Is BS 5839 a legal requirement?',
+        answer: 'BS 5839 itself is a British Standard, not a law. The legal requirement is for the responsible person (under the Regulatory Reform (Fire Safety) Order 2005 for commercial premises, and under HMO licensing or housing legislation for HMOs) to ensure the building has appropriate fire detection. BS 5839 is the recognised method of demonstrating that a system meets that requirement. Insurers, fire risk assessors, and licensing authorities use it as the reference point.'
+      },
+      {
+        question: 'Can a Grade D system ever be acceptable for an HMO?',
+        answer: 'Yes, in many cases. A Grade D Category LD2 system (mains-powered interlinked detectors in circulation areas plus the kitchen and any high-risk rooms, with battery backup) is the most common HMO licensing specification for properties up to a certain size and number of storeys. Larger HMOs, multi-storey properties, and those with bedsit-style accommodation typically require Grade A or Grade A with LD1. The local authority licensing team is the source of truth for any specific property.'
+      },
+      {
+        question: 'How often does a commercial fire alarm need servicing?',
+        answer: 'BS 5839-1 requires professional servicing at intervals no greater than six months. In practice this means a 6-monthly contract with each visit covering full test of every detector and call point, sounder verification, panel checks, and battery tests. The responsible person should also carry out weekly user tests of one call point on a rotating basis and record these in the system logbook.'
+      },
+      {
+        question: 'Do I need a fire risk assessment if I have a fire alarm fitted?',
+        answer: 'Yes. A fire risk assessment is a separate legal requirement under the Regulatory Reform (Fire Safety) Order 2005 for any non-domestic premises and for the common parts of HMOs and blocks of flats. The fire risk assessment is what determines the appropriate fire alarm category in the first place, so it sits ahead of the fire alarm specification rather than being replaced by it.'
+      },
+      {
+        question: 'What is the difference between BAFE and SSAIB?',
+        answer: 'BAFE (British Approvals for Fire Equipment) is the certification body for fire safety services in the United Kingdom; its SP203-1 scheme covers fire detection and fire alarm systems. SSAIB is one of the two main inspectorate bodies for the UK security industry, covering intruder alarms, CCTV, and access control. Most established security and fire contractors hold both. J&L Security holds both.'
+      }
+    ]
+  },
+  {
     slug: 'how-to-choose-security-company',
     title: 'How to Choose a Security Company: 7 Questions to Ask Before You Hire',
     metaTitle: 'How to Choose a Security Company: 7 Questions',

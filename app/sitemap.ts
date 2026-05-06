@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import { COMPANY_INFO, generateSlug } from '@/lib/utils';
-import { serviceLocationMatrix } from '@/lib/data';
+import { serviceLocationMatrix, locations as locationsData } from '@/lib/data';
 import { blogPosts } from '@/lib/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -75,15 +75,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // Location pages
-  const locations = [
-    'ilford', 'romford', 'chelmsford', 'brentwood', 'basildon', 
-    'hornchurch', 'barking', 'dagenham', 'redbridge', 'enfield',
-    'stratford', 'canary-wharf', 'greenwich', 'harlow', 'epping'
-  ];
-
-  const locationPages = locations.map((location) => ({
-    url: `${baseUrl}/locations/${location}`,
+  // Location pages — sourced from lib/data.ts so new locations flow through automatically
+  const locationPages = locationsData.map((location) => ({
+    url: `${baseUrl}/locations/${location.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.6,

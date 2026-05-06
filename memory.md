@@ -122,6 +122,8 @@ These require dedicated, query-matched location landing pages to convert impress
 
 4. **Lint warning in app/about/page.tsx.** Pre-existing `@typescript-eslint/no-unused-vars` warning on `CheckCircle` import (unrelated to today's work). Not blocking the build but should be cleaned up in a future session.
 
+5. **Lighthouse SEO audit, /locations/islington (mobile profile, 2026-05-06):** 100/100, all weighted audits pass; only manual-check items (image-alt, structured-data) flagged informationally. No remediation needed. See /docs/2026-05-06-lighthouse-islington.md.
+
 ### Medium-term content priorities
 
 5. **Lift HMO blog post from positions 11-13 to page 1.** Add: Grade A/D1/LD1 comparison table, pricing transparency section, FAQ block targeting exact long-tail queries, updated 2026 BS 5839-6 reference. DONE 2026-05-03 (comparison table, pricing transparency section, 6-question FAQ block, internal links to Brentwood/Romford and fire alarm service page added; dateModified bumped to 2026-05-03; ranking impact to be reviewed at 8-week GSC checkpoint).

@@ -6,7 +6,7 @@
 
 - Burglar Alarm Installation and Maintenance (Texecom, Pyronix, RISCO)
 - CCTV System Installation and Monitoring (Uniview, 4K capable)
-- Fire Alarm Installation and Servicing (BS 5839-1 commercial, BS 5839-6 domestic and HMO)
+- Fire Alarm Installation and Servicing: BAFE-certified maintainer (SP203-1). BS 5839-1 commercial systems, BS 5839-6 domestic and HMO systems. Includes fire risk assessments, smoke alarm installs and repair, and 6-monthly servicing contracts.
 - Access Control and Door Entry Systems (Paxton, Comelit)
 - Security and Emergency Lighting (LED, PIR, BS 5266-1)
 
@@ -14,7 +14,11 @@
 
 Essex: Brentwood, Chelmsford, Basildon, Romford, Ilford, Hornchurch, Upminster, Barking, Dagenham, Redbridge, Harlow, Epping, and surrounding areas.
 
-Greater London: Enfield, Stratford, Canary Wharf, Greenwich, and surrounding boroughs.
+Greater London (East and Central): Enfield, Stratford, Canary Wharf, Islington, Hackney, Clapton, Dalston, Camden, Westminster.
+
+Greater London (South and South East): Greenwich, Woolwich, Southwark, Battersea, Streatham.
+
+Greater London (West and North): Hammersmith, Fulham, Finchley, Barnet.
 
 ## Contact
 
@@ -40,21 +44,29 @@ SSAIB Approved, CHAS Accredited, FIA Member, BAFE Certified
 
 ## Indicative Installed Costs (UK, 2026)
 
-These are indicative ranges only. All quotations follow a free site survey.
+These are starting prices excluding VAT. Final quotations follow a free site survey.
 
-- Burglar alarm (bell-only): approximately GBP 350 to 600 installed
-- Burglar alarm (speech dialler / self-monitored): approximately GBP 500 to 900 installed
-- Burglar alarm (monitored Grade 2 or 3, ARC, police-response eligible): approximately GBP 700 to 1,800 installed plus GBP 15 to 35 per month monitoring
-- Fire alarm (HMO Grade D1, 5-bedroom): approximately GBP 350 to 600 installed
+- Burglar alarm, J&L standard wireless Grade 2 residential package (Pyronix Enforcer V11): from GBP 485 plus VAT, including panel with keypad, one door contact, two motion detectors, two proximity tags, one wireless external siren
+- Additional motion detector: from GBP 55 plus VAT
+- Additional door contact: from GBP 45 plus VAT
+- Additional wireless external siren: from GBP 125 plus VAT
+- Vibration detector: from GBP 65 plus VAT; combined vibration plus door/window contact: from GBP 75 plus VAT
+- Homecontrol 2.0 app module plus first year subscription: from GBP 48 plus VAT; annual app subscription thereafter: from GBP 30 plus VAT
+- 24-hour UK-manned monitoring: from GBP 105 plus VAT per year (police response available for Grade 2+ systems with URN)
+- Annual maintenance, residential: from GBP 120 plus VAT per year
+- Annual maintenance, commercial: from GBP 180 plus VAT per year
+- Sector-wide indicative ranges remain available in the burglar alarm cost article for context: bell-only GBP 350 to 600, speech dialler GBP 500 to 900, monitored Grade 2 or 3 GBP 700 to 1,800 plus monthly monitoring
+- Fire alarm (HMO Grade D, BS 5839-6, 5-bedroom): approximately GBP 350 to 600 installed
 - Fire alarm (HMO Grade A panel-controlled, larger HMO): approximately GBP 1,200 to 2,500 installed
-- Fire alarm annual servicing: from approximately GBP 120 per year (Grade D), GBP 180 to 300 per year (Grade A)
-- Domestic CCTV (2-camera basic system): from approximately GBP 850 plus VAT installed
+- Fire alarm servicing: from GBP 120 plus VAT per year (residential and small HMO), from GBP 180 plus VAT per year (commercial under BS 5839-1)
+- Domestic CCTV (2-camera basic system): from GBP 850 plus VAT installed
 
 ## Blog
 
 - [Burglar Alarm Cost UK 2026: Installation Prices Explained](https://jandlsecurity.co.uk/blog/burglar-alarm-cost-uk-2026): A practical UK pricing guide for bell-only, speech dialler, and monitored systems with year-1 cost summary table.
 - [CCTV Installation Guide for Essex Homeowners](https://jandlsecurity.co.uk/blog/cctv-installation-guide-essex): Camera types, resolution, storage, remote viewing, and ICO guidance for domestic CCTV in Essex.
 - [HMO Fire Alarm Requirements (BS 5839 Explained)](https://jandlsecurity.co.uk/blog/hmo-fire-alarm-requirements-bs5839): BS 5839-6 grades and categories, pricing transparency, FAQs, and compliance for HMO landlords.
+- [BS 5839-1 and BS 5839-6 Explained (UK, 2026)](https://jandlsecurity.co.uk/blog/bs5839-1-and-bs5839-6-explained-2026): Plain-English guide to the two main UK fire alarm British Standards, covering categories, grades, who each applies to, servicing obligations, and BAFE certification.
 - [How to Choose a Security Company](https://jandlsecurity.co.uk/blog/how-to-choose-security-company): Seven practical questions covering accreditations, insurance, pricing, and aftercare.
 - [Insurance-Approved Burglar Alarms UK 2026](https://jandlsecurity.co.uk/blog/insurance-approved-burglar-alarms-uk-2026): What UK home insurers actually require for premium discount and police-response eligibility.
 - [Wired vs Wireless Burglar Alarms in Essex](https://jandlsecurity.co.uk/blog/wired-vs-wireless-burglar-alarms-essex): Decision guide for Essex homes covering installation cost, expansion, and property suitability.
@@ -71,4 +83,4 @@ These are indicative ranges only. All quotations follow a free site survey.
 - [Contact](https://jandlsecurity.co.uk/contact)
 - [Full Details for LLMs](https://jandlsecurity.co.uk/llms-full.txt)
 
-Last updated: 3 May 2026
+Last updated: 6 May 2026

@@ -44,7 +44,7 @@ const accreditations = [
   },
   {
     name: 'BAFE',
-    description: 'British Approvals for Fire Equipment - independent third-party certification for fire safety',
+    description: 'BAFE-certified fire alarm maintainer (SP203-1 scheme). Independent third-party certification covering design, installation, commissioning, and maintenance of BS 5839-1 commercial and BS 5839-6 domestic and HMO fire alarm systems.',
     logo: '/images/bafe-logo.png'
   }
 ];

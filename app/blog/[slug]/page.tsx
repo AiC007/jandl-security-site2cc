@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Calendar, ArrowLeft } from 'lucide-react';
 import { COMPANY_INFO } from '@/lib/utils';
-import { generateBlogPostingSchema, generateBreadcrumbSchema } from '@/lib/schema';
+import { generateBlogPostingSchema, generateBreadcrumbSchema, generateFAQPageSchema } from '@/lib/schema';
 import { blogPosts, getBlogPost, getAllBlogSlugs } from '@/lib/blog';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
@@ -65,6 +65,11 @@ export default async function BlogPostPage({ params }: PageProps) {
     { name: post.title, url: `${COMPANY_INFO.website}/blog/${post.slug}` },
   ]);
 
+  const schemaPayload: object[] = [blogPostingSchema, breadcrumbSchema];
+  if (post.faqs && post.faqs.length > 0) {
+    schemaPayload.push(generateFAQPageSchema(post.faqs));
+  }
+
   // Find other posts for the "More articles" section
   const otherPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
@@ -73,7 +78,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([blogPostingSchema, breadcrumbSchema]),
+          __html: JSON.stringify(schemaPayload),
         }}
       />
 

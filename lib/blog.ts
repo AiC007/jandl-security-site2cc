@@ -8,164 +8,367 @@ export interface BlogPost {
   keywords: string[];
   wordCount: number;
   content: string;
+  faqs?: Array<{ question: string; answer: string }>;
 }
 
 export const blogPosts: BlogPost[] = [
+  // PRICING NOTE: Ranges confirmed as indicative. Client to verify before publication if specific figures are used in marketing.
   {
     slug: 'burglar-alarm-cost-uk-2026',
-    title: 'How Much Does a Burglar Alarm Cost in 2026? A UK Guide',
-    metaTitle: 'Burglar Alarm Cost UK 2026: Prices Explained',
-    description: 'A practical guide to burglar alarm costs in the UK for 2026. Covers bell-only, speech dialler, and monitored systems, plus installation and ongoing costs.',
-    datePublished: '2026-04-07',
-    dateModified: '2026-04-07',
-    keywords: ['burglar alarm cost UK', 'alarm system prices', 'intruder alarm installation cost', 'monitored alarm cost'],
-    wordCount: 1850,
+    title: 'How Much Does a Burglar Alarm Cost in the UK? (2026 Prices)',
+    metaTitle: 'Burglar Alarm Cost UK 2026: Installation Prices Explained',
+    description: 'A practical guide to burglar alarm installation costs in the UK for 2026. Covers bell-only, speech dialler, and monitored systems, plus what affects the price and what to expect from an NSI-approved installer.',
+    datePublished: '2026-05-03',
+    dateModified: '2026-05-06',
+    keywords: ['burglar alarm cost uk', 'alarm installation cost', 'intruder alarm price uk', 'monitored alarm cost', 'home alarm system cost uk', 'pyronix enforcer cost', 'wireless burglar alarm price essex'],
+    wordCount: 2380,
     content: `
-<p>A burglar alarm is an electronic detection system designed to alert property owners and, in some cases, a monitoring centre when unauthorised entry is attempted. In the UK, a professionally installed burglar alarm typically costs between £450 and £2,500 for a domestic property, depending on the system type, number of detectors, and whether ongoing monitoring is included.</p>
+<p>A professionally installed burglar alarm in the UK typically costs <strong>£450 to £2,500 for a domestic property in 2026</strong>, depending on the system type, the number of detectors, and whether monitoring is included. The figures in this guide are based on our experience installing intruder alarm systems across Essex and Greater London since 2011, including hundreds of installations across Brentwood, Romford, Ilford, Chelmsford, Upminster, and the wider M25 corridor.</p>
 
-<p>This guide breaks down the real costs you can expect in 2026, based on our experience installing alarm systems across Essex and Greater London since 2011.</p>
+<p>The aim of this guide is straightforward: to give you a realistic picture of what a burglar alarm costs to install in the UK in 2026, what affects the price, and what to expect from a properly accredited installer. All figures here are indicative ranges; the only reliable way to get an exact price is to <a href="/contact">book a free site survey</a>.</p>
 
-<h2>Types of Burglar Alarm and What They Cost</h2>
+<h2>Types of Alarm and What They Cost</h2>
 
-<p>There are three main categories of burglar alarm system available in the UK. Each offers a different level of protection, and the cost reflects that.</p>
+<p>UK burglar alarms fall broadly into three system types. The right choice depends on the property, the threat profile, the insurance requirement, and whether police response is needed.</p>
 
-<h3>Bell-Only Systems</h3>
+<h3>Bell-Only Systems: £350 to £600 installed</h3>
 
-<p>A bell-only alarm sounds an external siren when triggered. It relies on the noise deterring the intruder and alerting neighbours or passers-by. There is no automatic notification to you or to a monitoring centre.</p>
+<p>A bell-only system sounds an external siren when triggered and relies on the noise deterring the intruder and alerting neighbours. There is no monitoring and no automatic notification: if no one hears the siren, no one responds.</p>
 
 <ul>
 <li><strong>Typical cost:</strong> £350 to £600 installed</li>
-<li><strong>Best for:</strong> low-risk properties, budget-conscious homeowners, or as a visible deterrent</li>
-<li><strong>Limitations:</strong> no remote notification, relies on someone hearing the siren, no police response</li>
+<li><strong>Best for:</strong> low-risk properties, lower-value homes, or as a visible deterrent</li>
+<li><strong>Limitations:</strong> no remote notification, no monitoring, not eligible for police response</li>
 </ul>
 
-<p>Bell-only systems are the most affordable option, but they offer the least protection. If your property is in a rural or isolated location, a bell-only system may not be sufficient.</p>
+<h3>Speech Dialler / Self-Monitored Systems: £500 to £900 installed</h3>
 
-<h3>Speech Dialler Systems</h3>
-
-<p>A speech dialler alarm includes all the features of a bell-only system, plus it automatically calls one or more phone numbers when triggered. The system plays a pre-recorded message telling you which zone has been activated.</p>
+<p>A speech dialler system has all the features of bell-only plus an automatic notification to your phone. When the alarm triggers, the system either places a pre-recorded voice call to a list of numbers, or sends an SMS, or pushes a notification through a smartphone app. You then decide whether to respond yourself or send a keyholder.</p>
 
 <ul>
-<li><strong>Typical cost:</strong> £450 to £800 installed</li>
-<li><strong>Best for:</strong> homeowners who want personal notification without monthly monitoring fees</li>
-<li><strong>Limitations:</strong> no professional monitoring, you need to respond yourself, relies on a phone line or SIM connection</li>
+<li><strong>Typical cost:</strong> £500 to £900 installed</li>
+<li><strong>Best for:</strong> homeowners who want personal notification without committing to monthly monitoring fees</li>
+<li><strong>Limitations:</strong> no professional monitoring, no police response eligibility, you must act on the alert yourself</li>
 </ul>
 
-<p>Modern speech dialler systems can use a SIM card rather than a landline, which is worth considering given BT's planned PSTN switch-off (the transition from traditional copper phone lines to digital services, expected to complete by January 2027).</p>
+<p>Modern speech dialler systems use a SIM card rather than a landline. This matters because BT's PSTN switch-off (the move from copper phone lines to digital, currently scheduled to complete by January 2027) makes traditional dialler-over-landline systems unreliable.</p>
 
-<h3>Monitored Alarm Systems</h3>
+<h3>Professionally Monitored (Grade 2 or 3, ARC): £700 to £1,800 installed plus £15 to £35/month</h3>
 
-<p>A monitored alarm is connected to an Alarm Receiving Centre (ARC) staffed 24 hours a day, 365 days a year. When the alarm triggers, the ARC verifies the activation and can dispatch keyholders or, where the system meets the required standards, request a police response.</p>
+<p>A monitored alarm is connected to a 24/7 Alarm Receiving Centre (ARC). When the alarm activates, the ARC verifies the signal, follows the agreed response procedure, and where the system is graded and registered, can request a police response. Police response under the URN (Unique Reference Number) scheme requires the system to be installed and maintained by an inspectorate-approved company (NSI or SSAIB) and to meet at least Grade 2 of the European EN 50131 standard.</p>
 
 <ul>
-<li><strong>Typical cost:</strong> £600 to £2,500 installed, plus £180 to £480 per year for monitoring</li>
-<li><strong>Best for:</strong> higher-value properties, homes left unoccupied for extended periods, insurance compliance</li>
-<li><strong>Key advantage:</strong> eligible for police response under the URN (Unique Reference Number) scheme when installed by an inspectorate-approved company such as an SSAIB or NSI member</li>
+<li><strong>Typical install cost:</strong> £700 to £1,800 installed for most domestic properties</li>
+<li><strong>Monitoring fees:</strong> £15 to £35 per month depending on level of service (key-holder only vs police response)</li>
+<li><strong>Best for:</strong> higher-value properties, properties left unoccupied for extended periods, properties where insurance specifies a monitored alarm, and any client who wants police response eligibility</li>
+<li><strong>Key advantage:</strong> the only system type eligible for police response and the only system that satisfies stricter insurance requirements</li>
 </ul>
 
-<p>Monitored systems are the gold standard for home security. Many insurance policies require a monitored alarm for higher-value properties, and the annual monitoring cost is often offset by reduced insurance premiums.</p>
+<h2>What Affects the Price?</h2>
 
-<h2>What Affects the Price of a Burglar Alarm?</h2>
-
-<p>The headline price of a system is only part of the picture. Several factors influence the total cost:</p>
-
-<h3>Number of Detectors</h3>
-
-<p>A standard domestic installation typically includes 4 to 8 detectors (a mix of PIR motion sensors and door contacts). Larger properties or those with outbuildings, garages, or multiple entry points will need more detectors, adding £30 to £60 per device.</p>
+<p>Beyond the system type, several factors push the price up or down. A free survey lets the installer see them all in context; the ranges below are typical contributions.</p>
 
 <h3>Wired vs Wireless</h3>
 
-<p>Wireless systems are quicker to install and cause less disruption, but the equipment is more expensive. A wireless installation typically costs 15 to 25 per cent more than a wired equivalent. However, wireless systems are easier to expand later and are the better choice for listed buildings or properties where running cables is impractical.</p>
+<p>Wireless systems use no cabling between the panel and the detectors, so they install faster and with less disruption. The equipment is more expensive, so a wireless installation typically costs 15 to 25 per cent more than a wired equivalent. Wireless is the right choice for listed buildings, finished properties, rented homes, or any property where running cable is impractical. Wired remains the default for new-builds, refurbishments, and any property where the cabling can be installed first-fix.</p>
+
+<h3>Number of Sensors and Detectors</h3>
+
+<p>A typical domestic installation has 4 to 8 detectors: a mix of PIR motion sensors, door contacts, and sometimes vibration sensors. Adding sensors costs £30 to £60 per device installed. Larger properties, properties with outbuildings, or properties with multiple entry points add cost in proportion.</p>
 
 <h3>Property Size and Layout</h3>
 
-<p>A one-bedroom flat will need fewer detectors and less cabling than a five-bedroom detached house. Multi-storey properties also take longer to install, which affects the labour cost. As a rough guide:</p>
+<p>A 1-bedroom flat needs fewer detectors and less cable than a 5-bedroom detached. Multi-storey properties take longer to install. As a rough guide for the install component:</p>
 
 <ul>
-<li>1-2 bedroom flat: £450 to £700</li>
+<li>1 to 2 bedroom flat: £450 to £700</li>
 <li>3 bedroom semi-detached: £550 to £1,000</li>
-<li>4-5 bedroom detached: £800 to £1,800</li>
-<li>Large or complex properties: £1,500 to £2,500+</li>
+<li>4 to 5 bedroom detached: £800 to £1,800</li>
+<li>Larger or complex properties: £1,500 to £2,500+</li>
 </ul>
 
-<h3>Smart Features</h3>
+<h3>System Grade (NSI/SSAIB Grade 2 or 3)</h3>
 
-<p>Modern alarm panels from manufacturers like Texecom and Pyronix offer app control, allowing you to arm and disarm remotely, receive push notifications, and view system status from your phone. Smart features typically add £50 to £150 to the system cost, plus there may be a small annual subscription for cloud connectivity.</p>
+<p>A graded system meets specific resilience and tamper-resistance standards under EN 50131. Grade 2 is appropriate for most domestic properties; Grade 3 is required for higher-risk premises (jewellers, pharmacies, properties with high-value contents). A graded installation uses certified equipment, certified installation procedures, and certified monitoring, and is the prerequisite for police response. Expect a graded installation to add £100 to £400 over an equivalent ungraded system, depending on the components specified.</p>
 
-<h3>Existing Wiring</h3>
+<h3>Smart App Integration</h3>
 
-<p>If your property has an old alarm system with intact wiring, it may be possible to reuse the cable runs. This can reduce installation time and cost. We regularly take over existing systems, replacing the panel and detectors while keeping serviceable wiring in place.</p>
+<p>Modern panels from Pyronix, Texecom, and Risco support smartphone control: arm and disarm remotely, receive push notifications, view system status, check the event log. Smart integration adds £50 to £150 to the installed cost, plus an optional small annual cloud-connectivity subscription on some manufacturers.</p>
 
-<h2>Installation Costs</h2>
+<h3>Annual Maintenance Contract</h3>
 
-<p>Most reputable installers quote a single price that includes both equipment and labour. Be cautious of quotes that separate these, as it can make comparison difficult.</p>
+<p>Most installers offer a maintenance contract that bundles servicing visits, priority callout, and (for monitored systems) the monitoring contract. The cost of the contract is sometimes baked into a slightly higher install price; sometimes it is an annual fee on top.</p>
 
-<p>A typical domestic installation takes 4 to 8 hours depending on the system type and property size. At J&L Security, our domestic alarm systems start from £450 plus VAT, which includes a free survey, professional installation, commissioning, and user training.</p>
+<h2>J&amp;L Security 2026 Pricing: Confirmed Installed Rates</h2>
 
-<p>Avoid installers who quote without surveying the property first. A proper survey ensures the system is designed for your specific layout and risk profile, and it prevents unexpected costs on installation day.</p>
+<p>The ranges above are sector-wide indicative figures. The pricing in this section is our own confirmed 2026 starting pricing for installations in Essex and Greater London. Final quotations follow a free site survey because the property layout determines the detector count and cable routes; the figures below are the published starting points.</p>
 
-<h2>Ongoing Costs</h2>
+<h3>Standard Wireless Grade 2 Residential Package: from £485 + VAT</h3>
 
-<p>Beyond the initial installation, there are recurring costs to consider:</p>
-
-<h3>Monitoring Fees</h3>
-
-<p>If you opt for a monitored system, expect to pay £15 to £40 per month depending on the level of service. Basic monitoring (ARC notification) is at the lower end; police response monitoring with keyholder dispatch is at the upper end.</p>
-
-<h3>Maintenance and Servicing</h3>
-
-<p>Annual servicing is recommended for all alarm systems and is typically required by insurance policies. A standard domestic service visit costs £80 to £150. Many installers, including J&L Security, offer maintenance contracts that bundle servicing with priority callout rates.</p>
-
-<h3>Battery Replacements</h3>
-
-<p>Alarm panel backup batteries and wireless detector batteries need periodic replacement. Panel batteries last 3 to 5 years (£15 to £30 to replace), while wireless detector batteries last 2 to 5 years depending on the device.</p>
-
-<h2>How to Get Value for Money</h2>
-
-<p>The cheapest alarm is not always the best value. Here are practical steps to get the right system at a fair price:</p>
+<p>Our standard residential package uses the Pyronix Enforcer V11 wireless Grade 2 control panel and includes everything most homes need for the main entry points and ground floor:</p>
 
 <ul>
-<li><strong>Get at least two quotes</strong> from inspectorate-registered installers (SSAIB or NSI approved). This ensures the installer meets national standards.</li>
-<li><strong>Check what is included.</strong> A good quote should cover the survey, equipment, installation, commissioning, and user training.</li>
-<li><strong>Ask about aftercare.</strong> What happens if the system develops a fault? Is there a warranty? What are the callout charges?</li>
-<li><strong>Consider your insurance requirements.</strong> If your insurer requires a monitored system, factor in the annual monitoring cost from the start.</li>
-<li><strong>Think about the future.</strong> A system that can be expanded later (additional detectors, integration with CCTV) may save money in the long run.</li>
+<li>Pyronix Enforcer V11 control panel with on-board keypad (mains powered)</li>
+<li>Wireless door contact, fitted to the main entrance door</li>
+<li>Two wireless motion detectors</li>
+<li>Two proximity tags</li>
+<li>Wireless external siren</li>
 </ul>
 
-<h2>What We Charge at J&L Security</h2>
+<p>The package starts at <strong>£485 + VAT</strong>, installed and commissioned. Most properties require additional detectors to cover side and rear access, internal high-traffic rooms, and any outbuildings. The exact specification is finalised at the survey based on the layout.</p>
 
-<p>We offer transparent, fixed-price quotes with no hidden costs. Our domestic burglar alarm installations start from £450 plus VAT, which includes:</p>
+<h3>Additional Detectors and Accessories</h3>
 
-<ul>
-<li>Free, no-obligation security survey</li>
-<li>System design tailored to your property</li>
-<li>Professional installation by qualified engineers</li>
-<li>Full commissioning and testing</li>
-<li>User training and handover documentation</li>
-<li>12-month installation warranty and 2-year equipment warranty</li>
-</ul>
-
-<p>We install systems from Texecom, Pyronix, and RISCO, and we are SSAIB approved, meaning our monitored installations are eligible for police response.</p>
-
-<p>To get a quote for your property, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> to book a free survey.</p>
-
-<h2>Summary</h2>
+<p>The following items can be added to the standard package or specified up front:</p>
 
 <table>
 <thead>
-<tr><th>System Type</th><th>Typical Installed Cost</th><th>Annual Running Cost</th></tr>
+<tr><th>Component</th><th>Price (excl. VAT)</th></tr>
 </thead>
 <tbody>
-<tr><td>Bell-only</td><td>£350 to £600</td><td>£80 to £150 (servicing)</td></tr>
-<tr><td>Speech dialler</td><td>£450 to £800</td><td>£80 to £150 (servicing)</td></tr>
-<tr><td>Monitored</td><td>£600 to £2,500</td><td>£260 to £630 (monitoring + servicing)</td></tr>
+<tr><td>Wireless motion detector</td><td>from £55</td></tr>
+<tr><td>Door contact (additional)</td><td>from £45</td></tr>
+<tr><td>Vibration detector</td><td>from £65</td></tr>
+<tr><td>Combined vibration and door/window contact</td><td>from £75</td></tr>
+<tr><td>Dummy siren (typically rear or side elevation)</td><td>from £25</td></tr>
+<tr><td>Wireless external siren (additional)</td><td>from £125</td></tr>
+<tr><td>Proximity tag (additional)</td><td>from £12</td></tr>
+<tr><td>Keyfob</td><td>from £45</td></tr>
+<tr><td>Panic button</td><td>from £65</td></tr>
+<tr><td>LCD keypad</td><td>from £115</td></tr>
 </tbody>
 </table>
 
-<p>The right alarm system depends on your property, your budget, and the level of protection you need. A free survey from a qualified installer is the best starting point, as it gives you a recommendation based on your actual risk profile rather than a generic price list.</p>
+<h3>Smartphone Control: Homecontrol 2.0 App</h3>
 
-<p>Read more about our <a href="/services/burglar-alarms">burglar alarm installation services</a> or explore our <a href="/services">full range of security services</a>.</p>
-`
+<p>The Pyronix Enforcer V11 connects to your home internet router and pairs with the Homecontrol 2.0 app. The app gives you live status, push notifications for activations and faults, and remote arm/disarm. The pricing structure is straightforward:</p>
+
+<ul>
+<li>Communication module plus first year of app subscription: <strong>from £48 + VAT</strong></li>
+<li>Annual app subscription thereafter: <strong>from £30 + VAT</strong></li>
+<li>SIM card option for properties without reliable broadband: priced on survey</li>
+</ul>
+
+<p>The system without the module is a "bells only" alarm: it sounds at the property when triggered but does not notify anyone remotely. For most residential customers, the app integration is the recommended option because it converts a passive deterrent into a system you can interact with from anywhere.</p>
+
+<h3>24-Hour Monitoring and Police Response</h3>
+
+<p>For customers who want professional monitoring on top of the app, our 24-hour UK-manned call centre option starts at <strong>£105 + VAT per year</strong>. When the alarm activates, you receive the app notification and a call handler also contacts you to confirm the situation and follow the agreed escalation path. Police response can be incorporated where the system is graded and registered for a Unique Reference Number under the police response scheme.</p>
+
+<h3>Maintenance Contracts</h3>
+
+<p>Annual servicing keeps the system reliable and is required by most home insurance policies for the alarm to remain a valid security measure. Our maintenance starts at:</p>
+
+<ul>
+<li>Residential properties: <strong>from £120 + VAT per year</strong></li>
+<li>Commercial properties: <strong>from £180 + VAT per year</strong></li>
+</ul>
+
+<p>Both packages include one routine annual maintenance visit and one emergency callout within the contract year.</p>
+
+<p><em>Note on pricing: all figures above are starting prices excluding VAT. The final quotation is provided in writing after a free site survey, because the detector count, mounting requirements, and cable routes vary by property. Pricing is current as at May 2026 and may be reviewed periodically.</em></p>
+
+<h2>NSI and SSAIB Approved Installer vs Unaccredited: Why It Matters</h2>
+
+<p>The two recognised inspectorates for the UK security industry are <strong>NSI</strong> (National Security Inspectorate) and <strong>SSAIB</strong> (Security Systems and Alarms Inspection Board). An installer that is not approved by one of these is not eligible to install systems for police response and is unlikely to satisfy stricter insurance policies.</p>
+
+<p>Why this matters in practice:</p>
+
+<ul>
+<li><strong>Insurance:</strong> many home insurers require an inspectorate-approved system as a condition of cover, particularly for higher-value contents or for properties in higher-risk postcodes. An unaccredited installation may invalidate cover.</li>
+<li><strong>Police response:</strong> the URN scheme that allows police to be dispatched on alarm activation is only available for systems installed and maintained by NSI or SSAIB approved companies, and only for Grade 2+ systems with confirmed-activation criteria.</li>
+<li><strong>Quality of installation:</strong> inspectorate approval requires periodic audit of installations, documentation, technical capability, and ongoing professional development. It is a meaningful quality signal.</li>
+</ul>
+
+<p>J&L Security is <strong>SSAIB approved</strong>. Our installations are eligible for police response under the URN scheme and meet the standards required by major UK insurers.</p>
+
+<h2>Ongoing Costs</h2>
+
+<p>The install fee is one-off; the ongoing costs are recurring and worth budgeting for from the outset.</p>
+
+<h3>Annual Maintenance Contracts</h3>
+
+<p>Most installers offer an annual maintenance contract that covers a scheduled service visit, priority response on faults, and battery replacements within scope. Most insurance policies require an annual service for the alarm to remain a valid security measure. J&amp;L Security maintenance contracts start at <strong>£120 + VAT per year for residential</strong> and <strong>£180 + VAT per year for commercial</strong> properties; both packages include one routine maintenance and one emergency callout within the contract year.</p>
+
+<h3>Monitoring Fees</h3>
+
+<p>Where the system is monitored, monthly fees typically run £15 to £35. Lower end is keyholder-response monitoring; upper end is full police response under the URN scheme.</p>
+
+<h3>Battery Replacements</h3>
+
+<p>Panel backup batteries last 3 to 5 years and cost £15 to £30 each to replace. Wireless detector batteries last 2 to 5 years; the cost varies by manufacturer.</p>
+
+<h3>False Alarm Callout Charges</h3>
+
+<p>Repeated false activations on a monitored system can incur ARC callout charges, typically £30 to £80 per callout after a free allowance. The URN scheme also has rules: too many confirmed false activations can lead to police response being suspended for the property.</p>
+
+<h2>Essex and Greater London Context</h2>
+
+<p>Local labour rates and property mix matter. Across our service area:</p>
+
+<ul>
+<li><strong>Brentwood, Shenfield, Hutton, and the wider CM13 to CM15 belt:</strong> a high proportion of detached and semi-detached family homes; insurance-driven demand for monitored systems with police response is common.</li>
+<li><strong>Romford, Hornchurch, Upminster, and the RM1 to RM14 area:</strong> mixed housing stock from terraced through to detached, plus active commercial premises in Romford town centre.</li>
+<li><strong>Ilford, Goodmayes, Seven Kings (IG1 to IG3):</strong> high-density residential and active commercial; demand is split roughly evenly between domestic and small commercial.</li>
+<li><strong>Chelmsford and the surrounding CM postcodes:</strong> growing commuter belt with new-build estates and a healthy mix of older terraced and Victorian properties.</li>
+<li><strong>Greater London (E14, SE10, IG, RM, EN postcodes):</strong> labour rates are at the higher end of our quoted ranges; commercial premises and HMOs are well represented.</li>
+</ul>
+
+<p>J&L Security covers all of Essex and Greater London. Our base in Brentwood gives us efficient coverage of the M25 north and east corridors, and we work with both domestic and commercial clients across the region.</p>
+
+<h2>Pricing Summary Table (UK, 2026)</h2>
+
+<p>The first table below shows the indicative UK market ranges for context. The second is our own published starting pricing.</p>
+
+<h3>UK market ranges (sector-wide indicative)</h3>
+
+<table>
+<thead>
+<tr>
+<th>System type</th>
+<th>Supply cost</th>
+<th>Installation</th>
+<th>Annual monitoring</th>
+<th>Total year 1 cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bell-only</td>
+<td>£200 to £350</td>
+<td>£150 to £250</td>
+<td>None</td>
+<td>£350 to £600 plus optional ~£100 servicing</td>
+</tr>
+<tr>
+<td>Speech dialler / self-monitored</td>
+<td>£300 to £550</td>
+<td>£200 to £350</td>
+<td>None (you respond)</td>
+<td>£500 to £900 plus optional ~£100 servicing</td>
+</tr>
+<tr>
+<td>Monitored (Grade 2 or 3, ARC, police response eligible)</td>
+<td>£400 to £1,200</td>
+<td>£300 to £600</td>
+<td>£180 to £420</td>
+<td>£880 to £2,220 plus ~£100 to £150 servicing</td>
+</tr>
+</tbody>
+</table>
+
+<h3>J&amp;L Security confirmed starting prices (May 2026)</h3>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>From (excl. VAT)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard wireless Grade 2 residential package (Pyronix Enforcer V11)</td>
+<td>£485</td>
+<td>Panel with keypad, one door contact, two motion detectors, two proximity tags, one wireless external siren</td>
+</tr>
+<tr>
+<td>Homecontrol 2.0 app module plus first year subscription</td>
+<td>£48</td>
+<td>Push notifications, remote arm/disarm, fault alerts</td>
+</tr>
+<tr>
+<td>Annual Homecontrol 2.0 app subscription thereafter</td>
+<td>£30</td>
+<td>Per year</td>
+</tr>
+<tr>
+<td>24-hour UK-manned monitoring</td>
+<td>£105 / year</td>
+<td>Police response can be incorporated for Grade 2+ systems with URN</td>
+</tr>
+<tr>
+<td>Annual maintenance, residential</td>
+<td>£120 / year</td>
+<td>One routine maintenance plus one emergency callout</td>
+</tr>
+<tr>
+<td>Annual maintenance, commercial</td>
+<td>£180 / year</td>
+<td>One routine maintenance plus one emergency callout</td>
+</tr>
+</tbody>
+</table>
+
+<p><em>Pricing note: all figures are starting prices excluding VAT. Final quotations follow a free site survey because the detector count, mounting requirements, and cable routes vary by property. Pricing current as at May 2026.</em></p>
+
+<h2>FAQs</h2>
+
+<h3>How much does a burglar alarm cost to install in the UK?</h3>
+
+<p>A professionally installed domestic burglar alarm in the UK in 2026 typically costs £450 to £2,500 across the market. At J&amp;L Security our standard wireless Grade 2 residential package using the Pyronix Enforcer V11 starts from £485 + VAT, including a control panel with on-board keypad, a wireless door contact, two motion detectors, two proximity tags, and a wireless external siren. Most homes specify additional detectors at the survey: motion detectors from £55 + VAT, door contacts from £45 + VAT, additional sirens from £125 + VAT. Smartphone control via the Homecontrol 2.0 app is a £48 + VAT add-on for the module and first year, then £30 + VAT per year. Optional 24-hour monitoring through our UK-manned call centre starts at £105 + VAT per year, with police response available where the system is graded and URN-registered. Final price depends on property size, detector count, and the specific options chosen.</p>
+
+<h3>Is a monitored alarm worth the monthly fee?</h3>
+
+<p>For most homeowners with average-value contents, a self-monitored system with smartphone notifications is sufficient. Monitoring is worth the monthly fee in three specific circumstances: (1) your insurer requires a monitored system as a condition of cover; (2) you want police-response eligibility under the URN scheme, which is only available for Grade 2+ systems monitored by an inspectorate-approved installer; (3) the property is left unoccupied for extended periods and there is no nearby keyholder. For higher-value properties (typically £100,000+ contents) the monitoring fee is often offset by an insurance premium reduction.</p>
+
+<h3>Do I need an NSI or SSAIB approved installer?</h3>
+
+<p>Yes, in two specific cases. (1) If you want police response eligibility, the system must be installed and maintained by an NSI or SSAIB approved company. (2) If your home insurance requires an "inspectorate-approved" system, the installer must hold one of the two accreditations. Beyond those cases, an inspectorate-approved installer is also a strong general quality signal, because the audits cover installation standards, technical competence, and ongoing training. J&L Security is SSAIB approved.</p>
+
+<h3>Will a burglar alarm reduce my home insurance premium?</h3>
+
+<p>Often, yes. Most major UK home insurers offer a discount of around 5 to 15 per cent on the contents premium for a professionally installed alarm. A monitored, inspectorate-approved system with police-response eligibility typically attracts the largest discount. The discount varies by insurer, by postcode, and by the contents value. Check with your insurer for the specific reduction available for the system you are considering, and ask whether the policy <em>requires</em> any particular standard before installation.</p>
+
+<h3>How long does a burglar alarm installation take?</h3>
+
+<p>A standard domestic installation takes 4 to 8 hours for a wireless system, or up to a full day for a wired installation in a finished property where cable runs need careful routing. Larger or commercial installations may take two days or more. We typically complete domestic surveys, design, and installation within 3 to 5 working days of the initial enquiry.</p>
+
+<h3>What does the standard J&amp;L Security wireless burglar alarm package include?</h3>
+
+<p>The J&amp;L Security standard wireless residential package starts from £485 + VAT and uses the Pyronix Enforcer V11 Grade 2 control panel. It includes the panel with an on-board mains-powered keypad, one wireless door contact for the main entrance, two wireless motion detectors, two proximity tags for arming and disarming, and one wireless external siren. The system is supplied as a "bells only" alarm by default, meaning the siren sounds at the property when triggered. Most customers add the Homecontrol 2.0 app module (£48 + VAT for the module plus the first year) so they can receive push notifications and arm or disarm remotely. Additional detectors, panic buttons, vibration sensors, dummy sirens, keyfobs, and an LCD keypad can be added at fixed accessory prices, with the final specification finalised at the free site survey.</p>
+
+<h3>How much does ongoing burglar alarm monitoring and maintenance cost with J&amp;L Security?</h3>
+
+<p>J&amp;L Security offers two ongoing options. The Homecontrol 2.0 app subscription is £30 + VAT per year after the first year (the module and first year are £48 + VAT) and gives the customer push notifications and remote control. Professional 24-hour monitoring through our UK-manned call centre starts at £105 + VAT per year and adds a call handler who contacts you when the alarm activates, with police response available for Grade 2 or higher systems registered for a Unique Reference Number. Annual maintenance starts at £120 + VAT for residential properties and £180 + VAT for commercial properties; both contracts include one routine service visit and one emergency callout within the contract year. All figures are starting prices.</p>
+
+<h2>Get a Quote</h2>
+
+<p>Burglar alarm pricing depends on too many factors to accurately quote without seeing the property. Every J&L Security installation starts with a free site survey: we visit the property, agree the system specification, and provide a fixed-price written quotation before any work starts. There is no obligation, and the survey itself is genuinely free.</p>
+
+<p>To book a free survey, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770. We cover all of Essex and Greater London, with active customers across <a href="/locations/brentwood">Brentwood</a>, <a href="/burglar-alarm-servicing/romford">Romford</a>, Ilford, Chelmsford, Upminster, and across our 14 London target boroughs from Islington and Hackney through to Hammersmith, Battersea, and Barnet. For more on our intruder alarm offer, see our <a href="/services/burglar-alarms">burglar alarm services</a> page or read about <a href="/blog/insurance-approved-burglar-alarms-uk-2026">insurance-approved burglar alarms in 2026</a>.</p>
+`,
+    faqs: [
+      {
+        question: 'How much does a burglar alarm cost to install in the UK?',
+        answer: 'A professionally installed domestic burglar alarm in the UK in 2026 typically costs £450 to £2,500 across the market. At J&L Security our standard wireless Grade 2 residential package using the Pyronix Enforcer V11 starts from £485 + VAT, including a control panel with on-board keypad, a wireless door contact, two motion detectors, two proximity tags, and a wireless external siren. Most homes specify additional detectors at the survey: motion detectors from £55 + VAT, door contacts from £45 + VAT, additional sirens from £125 + VAT. Smartphone control via the Homecontrol 2.0 app is a £48 + VAT add-on for the module and first year, then £30 + VAT per year. Optional 24-hour monitoring through our UK-manned call centre starts at £105 + VAT per year, with police response available where the system is graded and URN-registered. Final price depends on property size, detector count, and the specific options chosen.'
+      },
+      {
+        question: 'Is a monitored alarm worth the monthly fee?',
+        answer: 'For most homeowners with average-value contents, a self-monitored system with smartphone notifications is sufficient. Monitoring is worth the monthly fee in three specific circumstances: (1) your insurer requires a monitored system as a condition of cover; (2) you want police-response eligibility under the URN scheme, which is only available for Grade 2+ systems monitored by an inspectorate-approved installer; (3) the property is left unoccupied for extended periods and there is no nearby keyholder. For higher-value properties (typically £100,000+ contents) the monitoring fee is often offset by an insurance premium reduction.'
+      },
+      {
+        question: 'Do I need an NSI or SSAIB approved installer?',
+        answer: 'Yes, in two specific cases. (1) If you want police response eligibility, the system must be installed and maintained by an NSI or SSAIB approved company. (2) If your home insurance requires an "inspectorate-approved" system, the installer must hold one of the two accreditations. Beyond those cases, an inspectorate-approved installer is also a strong general quality signal, because the audits cover installation standards, technical competence, and ongoing training. J&L Security is SSAIB approved.'
+      },
+      {
+        question: 'Will a burglar alarm reduce my home insurance premium?',
+        answer: 'Often, yes. Most major UK home insurers offer a discount of around 5 to 15 per cent on the contents premium for a professionally installed alarm. A monitored, inspectorate-approved system with police-response eligibility typically attracts the largest discount. The discount varies by insurer, by postcode, and by the contents value. Check with your insurer for the specific reduction available for the system you are considering, and ask whether the policy requires any particular standard before installation.'
+      },
+      {
+        question: 'How long does a burglar alarm installation take?',
+        answer: 'A standard domestic installation takes 4 to 8 hours for a wireless system, or up to a full day for a wired installation in a finished property where cable runs need careful routing. Larger or commercial installations may take two days or more. We typically complete domestic surveys, design, and installation within 3 to 5 working days of the initial enquiry.'
+      },
+      {
+        question: 'What does the standard J&L Security wireless burglar alarm package include?',
+        answer: 'The J&L Security standard wireless residential package starts from £485 + VAT and uses the Pyronix Enforcer V11 Grade 2 control panel. It includes the panel with an on-board mains-powered keypad, one wireless door contact for the main entrance, two wireless motion detectors, two proximity tags for arming and disarming, and one wireless external siren. The system is supplied as a "bells only" alarm by default, meaning the siren sounds at the property when triggered. Most customers add the Homecontrol 2.0 app module (£48 + VAT for the module plus the first year) so they can receive push notifications and arm or disarm remotely. Additional detectors, panic buttons, vibration sensors, dummy sirens, keyfobs, and an LCD keypad can be added at fixed accessory prices, with the final specification finalised at the free site survey.'
+      },
+      {
+        question: 'How much does ongoing burglar alarm monitoring and maintenance cost with J&L Security?',
+        answer: 'J&L Security offers two ongoing options. The Homecontrol 2.0 app subscription is £30 + VAT per year after the first year (the module and first year are £48 + VAT) and gives the customer push notifications and remote control. Professional 24-hour monitoring through our UK-manned call centre starts at £105 + VAT per year and adds a call handler who contacts you when the alarm activates, with police response available for Grade 2 or higher systems registered for a Unique Reference Number. Annual maintenance starts at £120 + VAT for residential properties and £180 + VAT for commercial properties; both contracts include one routine service visit and one emergency callout within the contract year. All figures are starting prices.'
+      }
+    ]
   },
   {
     slug: 'cctv-installation-guide-essex',
@@ -310,15 +513,15 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'hmo-fire-alarm-requirements-bs5839',
-    title: 'Fire Alarm Requirements for HMO Landlords: BS 5839-1 Explained',
-    metaTitle: 'HMO Fire Alarm Requirements: BS 5839-1 Guide',
-    description: 'A guide to fire alarm requirements for HMO landlords in the UK. Covers BS 5839-1 system categories, grades, servicing obligations, and licensing conditions.',
+    title: 'Fire Alarm Requirements for HMO Landlords: BS 5839 Explained',
+    metaTitle: 'HMO Fire Alarm Requirements: BS 5839 Guide (2026)',
+    description: 'A guide to fire alarm requirements for HMO landlords in the UK. Covers BS 5839-6 grades, system categories, costs, servicing obligations, and licensing conditions.',
     datePublished: '2026-04-07',
-    dateModified: '2026-04-07',
-    keywords: ['HMO fire alarm requirements', 'BS 5839-1', 'fire alarm HMO landlord', 'fire alarm servicing requirements'],
-    wordCount: 1950,
+    dateModified: '2026-05-03',
+    keywords: ['HMO fire alarm requirements', 'BS 5839-6', 'BS 5839-1', 'fire alarm HMO landlord', 'fire alarm servicing requirements', 'HMO fire alarm cost', 'Grade D1 HMO', 'Grade A HMO fire alarm'],
+    wordCount: 3450,
     content: `
-<p>A House in Multiple Occupation (HMO) is a property rented to three or more tenants forming two or more separate households who share facilities such as a kitchen or bathroom. Under UK law, HMO landlords must install and maintain a fire alarm system that meets BS 5839-1, the British Standard for fire detection and alarm systems in buildings. The specific system category and grade required depends on the property layout, the number of storeys, and the conditions set by your local authority's licensing team.</p>
+<p>A House in Multiple Occupation (HMO) is a property rented to three or more tenants forming two or more separate households who share facilities such as a kitchen or bathroom. Under UK law, HMO landlords must install and maintain a fire alarm system that meets the relevant British Standard: BS 5839-6 for domestic-scale HMOs, or BS 5839-1 for larger or higher-risk HMOs. The specific system category and grade required depends on the property layout, the number of storeys, the number of occupants, and the conditions set by your local authority's licensing team.</p>
 
 <p>This guide explains what BS 5839-1 requires, what the different system categories and grades mean, and what landlords must do to stay compliant.</p>
 
@@ -386,7 +589,102 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Limitations:</strong> no central panel, no fault monitoring, no zone information, may not meet the licensing conditions for larger HMOs</li>
 </ul>
 
-<p>Many landlords install Grade D systems to save money, only to find that their local authority requires a Grade A system for licensing. Always check your licensing conditions before choosing a system grade.</p>
+<p>Many landlords install Grade D systems to save money, only to find that their local authority requires a Grade A system for licensing. Always check your licensing conditions before choosing a system grade. If you are letting in Essex or East London, our local teams in <a href="/fire-alarm-installation/brentwood">Brentwood</a> and the wider <a href="/locations/romford">Romford</a> area regularly survey HMOs and confirm the correct grade against the relevant council's licence schedule before installation.</p>
+
+<h2>BS 5839-6 Grades and Categories: Comparison Table</h2>
+
+<p>BS 5839-6 is the British Standard for fire detection and fire alarm systems in domestic premises, including most HMOs. It defines a system using two attributes: a <strong>grade</strong> (the type of equipment, A through F) and a <strong>category</strong> (the scope of coverage, LD1 to LD3 for life safety, or PD for property protection). The table below summarises the grades and categories most commonly specified for HMOs.</p>
+
+<table>
+<thead>
+<tr>
+<th>Grade or Category</th>
+<th>System type</th>
+<th>Where required</th>
+<th>Typical install cost range<sup>1</sup></th>
+<th>Monitoring required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Grade A</strong></td>
+<td>Full BS 5839-1 style fire alarm panel with dedicated wiring, commercial-grade detectors, sounders, manual call points, and standby power supply</td>
+<td>Larger HMOs (typically 3+ storeys, 5+ occupants), licensed HMOs where the council schedule specifies Grade A, or any property identified as higher-risk by the fire risk assessment</td>
+<td>From ~£800 (small system) to £2,500+ installed for a typical HMO; up to £4,000+ for larger properties</td>
+<td>Optional, can connect to an Alarm Receiving Centre (ARC) for remote monitoring</td>
+</tr>
+<tr>
+<td><strong>Grade D1</strong></td>
+<td>Mains-powered interlinked detectors, each with a tamper-proof, sealed-in standby battery (typically a 10-year sealed lithium cell)</td>
+<td>Most modern HMOs that the council accepts for Grade D rather than Grade A; this is the current default for new installations under BS 5839-6</td>
+<td>From ~£150 supply-only for detectors; typical installed cost £350 to £900 for a 5-bedroom HMO depending on detector count and cable runs</td>
+<td>No (standalone)</td>
+</tr>
+<tr>
+<td><strong>Grade D2</strong></td>
+<td>Mains-powered interlinked detectors with a user-replaceable standby battery</td>
+<td>Permitted in some HMOs where the council schedule does not insist on D1; less common in new installations because the replaceable battery introduces a maintenance liability</td>
+<td>Similar to Grade D1, slightly lower equipment cost; typically £300 to £800 installed</td>
+<td>No (standalone)</td>
+</tr>
+<tr>
+<td><strong>Category LD1</strong></td>
+<td>Detection in <em>all</em> rooms and circulation areas (excluding bathrooms, shower rooms, and WCs). Combine with a grade (typically D1 or A).</td>
+<td>Highest-risk HMOs and any property where the fire risk assessment identifies LD1 as appropriate. Often required for larger or shared-cooking HMOs.</td>
+<td>Reflected in detector count: a 5-bed HMO under LD1 needs 7 to 10 detectors, adding £30 to £60 per detector to the base install</td>
+<td>Determined by grade</td>
+</tr>
+<tr>
+<td><strong>Category LD2</strong></td>
+<td>Detection on escape routes plus rooms presenting a high fire risk (kitchens, living rooms, bedrooms in some cases). Combine with a grade.</td>
+<td>The most commonly specified category for licensable HMOs across England</td>
+<td>Mid-range: typically 5 to 8 detectors for a 5-bed HMO</td>
+<td>Determined by grade</td>
+</tr>
+<tr>
+<td><strong>Category LD3</strong></td>
+<td>Detection on escape routes only (hallways, landings, stairwells). Combine with a grade.</td>
+<td>Smaller, lower-risk HMOs where the council schedule accepts it. Becoming less common.</td>
+<td>Lowest detector count, smallest install cost</td>
+<td>Determined by grade</td>
+</tr>
+</tbody>
+</table>
+
+<p><sup>1</sup> Cost ranges are indicative, based on typical Essex and Greater London installations carried out by J&L Security from 2024 to 2026, supply and installed inclusive of VAT. They assume a standard property layout, accessible cable routes, and no significant making-good or remedial electrical work. Final costs depend on detector count, number of floors, cable runs, and the condition of any existing wiring. <a href="/contact">Book a free site survey</a> for a fixed-price quotation against your specific property.</p>
+
+<h2>What Does an HMO Fire Alarm System Cost?</h2>
+
+<p>Pricing for HMO fire alarm systems is one of the most common questions landlords ask. The honest answer is that it depends on the grade, the category, the property layout, and the number of detectors required. The figures below are indicative ranges drawn from typical installations across Essex and Greater London. Use them for budgeting only; your actual quote will be based on a free site survey.</p>
+
+<h3>Typical 5-Bedroom HMO (Grade D1, Category LD2 or LD3)</h3>
+
+<p>For a standard 5-bedroom HMO that the council accepts under Grade D1 with a Category LD2 or LD3 layout (interlinked mains-powered detectors with sealed lithium batteries on escape routes and in higher-risk rooms), you should budget approximately <strong>£350 to £600 installed</strong>. This typically includes:</p>
+
+<ul>
+<li>5 to 8 interlinked detectors (smoke, heat, and CO as appropriate)</li>
+<li>First-fix and second-fix wiring</li>
+<li>Commissioning, testing, and a handover certificate suitable for the council licence file</li>
+<li>VAT</li>
+</ul>
+
+<h3>Larger HMO Requiring Grade A (3+ storeys, 5+ occupants, or licence-specified)</h3>
+
+<p>For a larger HMO where the council schedule or fire risk assessment requires a Grade A panel-controlled system, expect a typical installed cost of <strong>£1,200 to £2,500 installed</strong> for most properties, rising above £4,000 for larger or more complex sites. This includes:</p>
+
+<ul>
+<li>A conventional or addressable fire alarm control panel with standby battery</li>
+<li>Optical smoke detectors, heat detectors, and manual call points</li>
+<li>Sounders or sounder-beacons sized to the property</li>
+<li>Dedicated fire-alarm cable (FP200 or equivalent)</li>
+<li>Commissioning, testing, log book, and a BAFE-compliant handover certificate</li>
+</ul>
+
+<h3>Annual Servicing</h3>
+
+<p>BS 5839-1 (and the maintenance recommendations in BS 5839-6) require regular professional servicing. For HMO Grade A systems, this is two visits per year. For Grade D systems, one visit per year is the practical minimum to maintain the council's expectation of "good working order". <strong>Annual servicing typically starts from around £120 per year</strong> for a small Grade D HMO, rising to £180 to £300 per year for a Grade A system, depending on detector count and travel.</p>
+
+<p><em>Pricing note: these are indicative ranges based on representative Essex and Greater London installations. Exact costs depend on property layout, number of floors, number of detectors, cable accessibility, and any remedial electrical work. J&L Security provides <a href="/contact">free site surveys</a> with fixed-price quotations before any work is committed.</em></p>
 
 <h2>Servicing Requirements</h2>
 
@@ -438,6 +736,32 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Forgetting emergency lighting:</strong> fire alarm compliance and emergency lighting are usually both required as part of the licensing conditions.</li>
 </ul>
 
+<h2>HMO Fire Alarm FAQs</h2>
+
+<h3>What fire alarm grade do I need for an HMO?</h3>
+
+<p>The grade required depends on the size of the HMO, the number of storeys, and your local authority's licence schedule. For most modern HMOs of 2 storeys with up to 5 occupants, councils accept a <strong>Grade D1</strong> system: mains-powered interlinked detectors with sealed 10-year lithium batteries, installed to Category LD2 or LD3 coverage. For HMOs of 3 or more storeys, or with 5 or more occupants under mandatory licensing, councils typically require a <strong>Grade A</strong> system: a panel-controlled fire alarm with dedicated wiring and commercial-grade detectors. Always check the licence schedule for your specific property before installation, because the wrong grade is one of the most expensive mistakes a landlord can make.</p>
+
+<h3>Is Grade D1 sufficient for an HMO?</h3>
+
+<p>Grade D1 is sufficient for many smaller HMOs. The key tests are: (1) does your council's HMO licence schedule accept a Grade D system, and (2) does the fire risk assessment for the property identify Grade D as appropriate? In Essex and Greater London, councils such as Brentwood, Havering, and Redbridge typically accept Grade D1 for 2-storey HMOs with up to 4 or 5 occupants. They do not generally accept Grade D for HMOs of 3 or more storeys, or for properties identified as higher-risk. If your fire risk assessor has specified a Grade D system in writing, and your council schedule accepts it, Grade D1 is sufficient. If either is in doubt, a Grade A system is the safe choice.</p>
+
+<h3>How often should HMO fire alarms be tested?</h3>
+
+<p>HMO fire alarms must be tested at three different intervals. <strong>Weekly:</strong> the responsible person (the landlord or managing agent) must activate one manual call point or detector test button each week and confirm the system sounds throughout the building, recording the result in the log book. <strong>6-monthly:</strong> a competent fire alarm engineer must carry out a service visit, testing every detector, sounder, and call point, checking battery condition, and inspecting cabling. The 2025 update to BS 5839-1 introduced a 5-to-7-month flexibility window for scheduling. <strong>Annually:</strong> for Grade D systems where 6-monthly servicing is not specified, an annual professional service is the practical minimum.</p>
+
+<h3>Do I need a mains-wired alarm in an HMO?</h3>
+
+<p>Yes, in almost all cases. BS 5839-6 Grade D systems are by definition mains-powered with battery backup. Battery-only domestic smoke alarms (BS 5839-6 Grade F) are not normally acceptable for licensable HMOs because they are not interlinked across the building and cannot reliably wake all occupants. If your council schedule accepts Grade D, this means Grade D1 (sealed lithium battery) or Grade D2 (replaceable battery), both of which are mains-wired. Battery-only Grade F1 or F2 detectors are only ever acceptable in the smallest, lowest-risk HMOs and even then only where the council schedule explicitly permits them; in practice most councils require mains-wired interlinked detectors as a minimum.</p>
+
+<h3>What is the difference between Grade A and Grade D fire alarms?</h3>
+
+<p>The principal differences are the architecture, the components, and the level of monitoring. A <strong>Grade A</strong> system uses a dedicated fire alarm control panel, fire-rated cabling (FP200 or equivalent), commercial-grade optical smoke and heat detectors, manual call points at each exit, and sounders or sounder-beacons. The panel monitors the system continuously for faults, logs alarm events, and can be connected to an Alarm Receiving Centre. A <strong>Grade D</strong> system has no central panel: each detector is mains-powered with a battery backup, and the detectors are interlinked so that when one triggers, all sound. Grade A provides more comprehensive coverage, fault monitoring, and zone identification; Grade D is significantly cheaper to install and is appropriate for smaller HMOs that the council accepts.</p>
+
+<h3>What is BS 5839-6 and does it apply to my HMO?</h3>
+
+<p>BS 5839-6 is the British Standard <em>Fire detection and fire alarm systems for buildings: Part 6: Code of practice for the design, installation, commissioning and maintenance of fire detection and fire alarm systems in domestic premises</em>. It is the standard that applies to most HMOs. BS 5839-6 defines the grades (A through F) and the categories (LD1 to LD3 for life safety, PD1 and PD2 for property protection). For larger HMOs that fall outside the scope of BS 5839-6, BS 5839-1 (the standard for non-domestic premises) applies instead. In practice, a fire risk assessment will identify which standard applies to your specific HMO. Most HMOs in England fall under BS 5839-6 with a council-specified grade and category, while HMOs that are very large, of unusual layout, or commercially run typically fall under BS 5839-1.</p>
+
 <h2>What We Provide for HMO Landlords</h2>
 
 <p>At J&L Security, we are BAFE certified and FIA members, and we have been installing BS 5839-1 compliant fire alarm systems for HMO landlords across Essex and Greater London since 2011. Our service includes:</p>
@@ -452,10 +776,306 @@ export const blogPosts: BlogPost[] = [
 <li>Certificates suitable for submission to your local authority licensing team</li>
 </ul>
 
-<p>If you are unsure what system your HMO needs, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a>. We can advise on the requirements for your specific property and local authority area.</p>
+<p>If you are unsure what system your HMO needs, <a href="/contact">contact us for a free survey</a> or call <a href="tel:02045385925">0204 538 5925</a>. We can advise on the requirements for your specific property and local authority area.</p>
 
-<p>Read more about our <a href="/services/fire-alarms">fire alarm installation and servicing</a> or explore our <a href="/services">full range of security services</a>.</p>
-`
+<p>Read more about our <a href="/services/fire-alarms">fire alarm installation and servicing</a>, or see how we work with HMO landlords in <a href="/fire-alarm-installation/brentwood">Brentwood</a>, <a href="/locations/romford">Romford</a>, and across <a href="/services">our full service area</a>.</p>
+`,
+    faqs: [
+      {
+        question: 'What fire alarm grade do I need for an HMO?',
+        answer: 'The grade required depends on the size of the HMO, the number of storeys, and your local authority\'s licence schedule. For most modern HMOs of 2 storeys with up to 5 occupants, councils accept a Grade D1 system: mains-powered interlinked detectors with sealed 10-year lithium batteries, installed to Category LD2 or LD3 coverage. For HMOs of 3 or more storeys, or with 5 or more occupants under mandatory licensing, councils typically require a Grade A system: a panel-controlled fire alarm with dedicated wiring and commercial-grade detectors. Always check the licence schedule for your specific property before installation, because the wrong grade is one of the most expensive mistakes a landlord can make.'
+      },
+      {
+        question: 'Is Grade D1 sufficient for an HMO?',
+        answer: 'Grade D1 is sufficient for many smaller HMOs. The key tests are: (1) does your council\'s HMO licence schedule accept a Grade D system, and (2) does the fire risk assessment for the property identify Grade D as appropriate? In Essex and Greater London, councils such as Brentwood, Havering, and Redbridge typically accept Grade D1 for 2-storey HMOs with up to 4 or 5 occupants. They do not generally accept Grade D for HMOs of 3 or more storeys, or for properties identified as higher-risk. If your fire risk assessor has specified a Grade D system in writing, and your council schedule accepts it, Grade D1 is sufficient. If either is in doubt, a Grade A system is the safe choice.'
+      },
+      {
+        question: 'How often should HMO fire alarms be tested?',
+        answer: 'HMO fire alarms must be tested at three different intervals. Weekly: the responsible person (the landlord or managing agent) must activate one manual call point or detector test button each week and confirm the system sounds throughout the building, recording the result in the log book. 6-monthly: a competent fire alarm engineer must carry out a service visit, testing every detector, sounder, and call point, checking battery condition, and inspecting cabling. The 2025 update to BS 5839-1 introduced a 5-to-7-month flexibility window for scheduling. Annually: for Grade D systems where 6-monthly servicing is not specified, an annual professional service is the practical minimum.'
+      },
+      {
+        question: 'Do I need a mains-wired alarm in an HMO?',
+        answer: 'Yes, in almost all cases. BS 5839-6 Grade D systems are by definition mains-powered with battery backup. Battery-only domestic smoke alarms (BS 5839-6 Grade F) are not normally acceptable for licensable HMOs because they are not interlinked across the building and cannot reliably wake all occupants. If your council schedule accepts Grade D, this means Grade D1 (sealed lithium battery) or Grade D2 (replaceable battery), both of which are mains-wired. Battery-only Grade F1 or F2 detectors are only ever acceptable in the smallest, lowest-risk HMOs and even then only where the council schedule explicitly permits them; in practice most councils require mains-wired interlinked detectors as a minimum.'
+      },
+      {
+        question: 'What is the difference between Grade A and Grade D fire alarms?',
+        answer: 'The principal differences are the architecture, the components, and the level of monitoring. A Grade A system uses a dedicated fire alarm control panel, fire-rated cabling (FP200 or equivalent), commercial-grade optical smoke and heat detectors, manual call points at each exit, and sounders or sounder-beacons. The panel monitors the system continuously for faults, logs alarm events, and can be connected to an Alarm Receiving Centre. A Grade D system has no central panel: each detector is mains-powered with a battery backup, and the detectors are interlinked so that when one triggers, all sound. Grade A provides more comprehensive coverage, fault monitoring, and zone identification; Grade D is significantly cheaper to install and is appropriate for smaller HMOs that the council accepts.'
+      },
+      {
+        question: 'What is BS 5839-6 and does it apply to my HMO?',
+        answer: 'BS 5839-6 is the British Standard "Fire detection and fire alarm systems for buildings: Part 6: Code of practice for the design, installation, commissioning and maintenance of fire detection and fire alarm systems in domestic premises". It is the standard that applies to most HMOs. BS 5839-6 defines the grades (A through F) and the categories (LD1 to LD3 for life safety, PD1 and PD2 for property protection). For larger HMOs that fall outside the scope of BS 5839-6, BS 5839-1 (the standard for non-domestic premises) applies instead. In practice, a fire risk assessment will identify which standard applies to your specific HMO. Most HMOs in England fall under BS 5839-6 with a council-specified grade and category, while HMOs that are very large, of unusual layout, or commercially run typically fall under BS 5839-1.'
+      }
+    ]
+  },
+  {
+    slug: 'bs5839-1-and-bs5839-6-explained-2026',
+    title: 'BS 5839-1 and BS 5839-6: A Plain-English Guide for UK Buyers in 2026',
+    metaTitle: 'BS 5839-1 vs BS 5839-6: UK Fire Alarm Standards Explained 2026',
+    description: 'A practical guide to BS 5839-1 and BS 5839-6, the two British Standards for fire detection and fire alarm systems. Covers scope, categories, grades, who each applies to, servicing obligations, and how to specify the right system.',
+    datePublished: '2026-05-06',
+    dateModified: '2026-05-06',
+    keywords: [
+      'BS 5839-1',
+      'BS 5839-6',
+      'BS 5839 explained',
+      'fire alarm british standard',
+      'fire alarm categories',
+      'fire alarm grades',
+      'BAFE fire alarm maintainers',
+      'fire risk assessment uk',
+      'fire alarm servicing uk',
+      'commercial fire alarm uk',
+      'HMO fire alarm uk',
+    ],
+    wordCount: 2150,
+    content: `
+<p>BS 5839 is the British Standard for fire detection and fire alarm systems. It is split into two parts that cover different building types: <strong>BS 5839-1 for non-domestic premises</strong> (offices, retail, schools, warehouses, care homes, and most commercial buildings) and <strong>BS 5839-6 for domestic premises</strong> (single dwellings, flats, and houses in multiple occupation). The standards set out how a system should be designed, installed, commissioned, and maintained, and they are the reference points used by insurers, fire risk assessors, and licensing authorities when judging whether a building has appropriate fire detection in place.</p>
+
+<p>This guide explains what each standard covers, the categories and grades they define, who each one applies to in practice, and what the standards mean for your obligations once a system is installed. It is written for property owners, managers, landlords, and responsible persons who need to specify or oversee a fire alarm system without having to read the full standards documents themselves.</p>
+
+<p>If you are an HMO landlord specifically, our companion article on <a href="/blog/hmo-fire-alarm-requirements-bs5839">HMO fire alarm requirements</a> goes into the licensing detail in more depth. The article you are reading now is the broader overview covering both BS 5839-1 and BS 5839-6.</p>
+
+<h2>The Quick Summary</h2>
+
+<p>If you only have time to read one section, this is it.</p>
+
+<ul>
+<li><strong>BS 5839-1</strong> applies to non-domestic premises. It uses two main category families: M (manual call points only), L (automatic detection for life safety), and P (automatic detection for property protection). Within those families, you specify the exact category (L1 to L5, P1 or P2) based on the level of cover required.</li>
+<li><strong>BS 5839-6</strong> applies to domestic premises. It uses Grades (A, B, C, D, F) and Categories (LD1, LD2, LD3). The Grade describes the type of system and how reliably it operates. The Category describes which parts of the building are protected.</li>
+<li>For both standards, the responsible person must keep the system in working order. For BS 5839-1 systems this means professional servicing approximately every six months. For BS 5839-6 systems the maintenance regime depends on the Grade.</li>
+<li>Use a <a href="/services/fire-alarms">BAFE-certified fire alarm maintainer</a> for design, installation, commissioning, and maintenance. BAFE certification is the recognised competency benchmark in the UK fire safety industry and is regularly required by insurers and fire risk assessors.</li>
+</ul>
+
+<h2>BS 5839-1: Non-Domestic Premises</h2>
+
+<p>BS 5839-1 is the standard for fire detection and fire alarm systems in non-domestic buildings. It applies to:</p>
+
+<ul>
+<li>Offices, retail premises, restaurants, hotels, and licensed venues</li>
+<li>Schools, colleges, and other educational premises</li>
+<li>Care homes, hospitals, and healthcare facilities</li>
+<li>Warehouses, factories, and industrial premises</li>
+<li>Communal areas of blocks of flats and HMOs above a certain size</li>
+<li>Any other building used for business or community purposes that is not a single private dwelling</li>
+</ul>
+
+<p>The legal driver behind BS 5839-1 is the Regulatory Reform (Fire Safety) Order 2005, which places responsibility on a "responsible person" (typically the employer, owner, or person in control of the premises) to ensure the building has appropriate fire safety measures. The fire risk assessment determines what those measures are; BS 5839-1 then sets out how to implement the fire detection and alarm element competently.</p>
+
+<h3>BS 5839-1 Categories</h3>
+
+<p>BS 5839-1 categories describe the level of automatic detection in the building. The category is chosen during fire risk assessment.</p>
+
+<ul>
+<li><strong>Category M (manual):</strong> manual call points only, no automatic detection. Fire is raised by occupants pressing a call point. Suitable only for small, simple, low-risk premises where occupants are awake, alert, and able to detect a fire themselves.</li>
+<li><strong>Category L1 (life, full coverage):</strong> automatic detectors throughout all areas of the building, including ceiling voids and roof spaces where appropriate. The most comprehensive life-safety category and typically required for sleeping risk premises such as hotels and care homes.</li>
+<li><strong>Category L2 (life, escape routes plus high-risk areas):</strong> detectors in escape routes, high-risk rooms, and rooms opening onto escape routes.</li>
+<li><strong>Category L3 (life, escape routes plus rooms opening onto them):</strong> detectors in escape routes plus rooms that open onto them, but not necessarily in every room.</li>
+<li><strong>Category L4 (life, escape routes only):</strong> detectors in escape routes only. The minimum life-safety category in BS 5839-1.</li>
+<li><strong>Category L5 (life, specific risk):</strong> a custom category covering a specific identified risk, such as a kitchen or plant room.</li>
+<li><strong>Category P1 (property, full coverage):</strong> detectors throughout the building for property protection. Often required by insurers for high-value contents or critical-process buildings.</li>
+<li><strong>Category P2 (property, defined areas only):</strong> detectors in specifically identified high-risk areas only.</li>
+</ul>
+
+<p>Categories can be combined: an L2/P1 system, for example, would protect the escape routes and high-risk rooms for life safety and the rest of the building for property protection.</p>
+
+<h3>What BS 5839-1 Requires of the Installation</h3>
+
+<p>The standard sets out detailed requirements covering detector placement, sounder coverage, panel performance, cabling, power supply, and documentation. The points that matter most to a non-specialist responsible person are:</p>
+
+<ul>
+<li>The system is professionally designed against a specific category derived from the fire risk assessment.</li>
+<li>Detector spacing and positioning meets the standard's rules (which depend on ceiling height, room geometry, and detector type).</li>
+<li>The sounder coverage achieves a minimum sound level throughout the building (typically 65 dB(A), or 75 dB(A) where occupants may be sleeping).</li>
+<li>The system is commissioned with every device tested and a commissioning certificate issued.</li>
+<li>A logbook is provided and kept on site for routine and corrective records.</li>
+<li>Servicing is carried out by a competent contractor at intervals no greater than six months. Practical guidance allows scheduling within a 5 to 7 month window.</li>
+</ul>
+
+<h2>BS 5839-6: Domestic Premises</h2>
+
+<p>BS 5839-6 is the British Standard for fire detection and fire alarm systems in domestic premises. It applies to:</p>
+
+<ul>
+<li>Single-occupancy private dwellings (houses, bungalows, flats)</li>
+<li>Houses in multiple occupation (HMOs) up to a certain size and risk profile</li>
+<li>Sheltered housing and supported housing</li>
+<li>The dwelling units within a block of flats (the communal areas of the same block typically fall under BS 5839-1)</li>
+</ul>
+
+<p>BS 5839-6 is referenced in HMO licensing conditions across most local authorities in England and Wales. It is also referenced by insurers, mortgage lenders, and fire risk assessors when determining whether a domestic property has appropriate fire detection.</p>
+
+<h3>BS 5839-6 Grades</h3>
+
+<p>BS 5839-6 uses Grades to describe the type of system, ranging from a simple battery-only smoke alarm at one end (Grade F) up to a fully panel-controlled commercial-style system at the other (Grade A). The Grade is chosen based on the property type, occupancy risk, and any licensing conditions that apply.</p>
+
+<ul>
+<li><strong>Grade A:</strong> a panel-controlled system using BS 5839-1 components. Required for larger HMOs and higher-risk domestic properties. The system has its own power supply with battery backup, dedicated sounders, and a control panel that displays system status.</li>
+<li><strong>Grade B:</strong> rarely specified in current practice; not commonly used.</li>
+<li><strong>Grade C:</strong> a system of mains-powered detectors and call points connected to a common control unit that may include a backup battery. Suitable for medium-sized HMOs.</li>
+<li><strong>Grade D:</strong> mains-powered, interlinked smoke and heat alarms with integral battery backup, no separate panel. The standard specification for most domestic and small HMO installations. Typically subdivided into Grade D1 (with sealed long-life battery backup) and Grade D2 (with replaceable battery backup).</li>
+<li><strong>Grade F:</strong> battery-only smoke alarms. Permitted only in lower-risk properties; typically not acceptable for HMO licensing purposes. Subdivided into Grade F1 and F2 by battery type.</li>
+</ul>
+
+<h3>BS 5839-6 Categories</h3>
+
+<p>The Category describes which parts of the property are protected. For domestic premises BS 5839-6 uses three categories:</p>
+
+<ul>
+<li><strong>LD1:</strong> detectors throughout the property including in all rooms used for sleeping and main circulation areas. The highest level of cover.</li>
+<li><strong>LD2:</strong> detectors in circulation areas and in any rooms that present a particularly high fire risk (for example, the kitchen and the principal habitable room).</li>
+<li><strong>LD3:</strong> detectors in circulation areas only (hallways, landings, stairwells). The minimum coverage for life safety.</li>
+</ul>
+
+<p>A typical HMO licensing requirement is for a Grade D Category LD2 system, with mains-powered interlinked detectors in circulation areas plus the kitchen and any high-risk rooms. Larger HMOs and properties with more complex layouts may require Grade A or Grade A with LD1.</p>
+
+<h3>What BS 5839-6 Requires of the Installation</h3>
+
+<ul>
+<li>The system is designed against a specific Grade and Category appropriate for the property type, occupancy, and any licensing conditions.</li>
+<li>Detectors are correctly positioned for the room type (for example, optical smoke detectors in living rooms, heat alarms in kitchens, multi-sensor units in some configurations).</li>
+<li>For Grade D and above, detectors are interlinked so that one activation triggers all sounders in the property.</li>
+<li>The system is tested and commissioned, with a certificate issued.</li>
+<li>The maintenance regime is agreed and recorded. For Grade A systems this means professional servicing under contract, similar to BS 5839-1. For Grade D systems the routine includes regular user tests by the occupant and periodic professional inspections, particularly for HMOs where licensing typically requires annual or twice-yearly servicing.</li>
+</ul>
+
+<h2>Comparison Table</h2>
+
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>BS 5839-1</th>
+<th>BS 5839-6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Building type</td>
+<td>Non-domestic (commercial, retail, schools, care, warehouses, communal areas)</td>
+<td>Domestic (private dwellings, flats, HMOs)</td>
+</tr>
+<tr>
+<td>Categories</td>
+<td>M, L1 to L5, P1, P2</td>
+<td>LD1, LD2, LD3</td>
+</tr>
+<tr>
+<td>Grades / system types</td>
+<td>One panel-controlled system architecture</td>
+<td>Grades A, B, C, D, F (with subgrades D1, D2, F1, F2)</td>
+</tr>
+<tr>
+<td>Typical specifier</td>
+<td>Fire risk assessor, building control</td>
+<td>HMO licensing officer, fire risk assessor, insurer</td>
+</tr>
+<tr>
+<td>Servicing interval</td>
+<td>Approximately every 6 months by a competent contractor</td>
+<td>User tests routinely; professional inspections per Grade and licensing conditions</td>
+</tr>
+<tr>
+<td>Typical contractor accreditation</td>
+<td>BAFE SP203-1</td>
+<td>BAFE SP203-1 (also covers domestic systems where the contractor is registered for them)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Who Decides Which Standard Applies?</h2>
+
+<p>The starting point is the fire risk assessment. For commercial premises this is a legal requirement under the Regulatory Reform (Fire Safety) Order 2005 and the assessment will identify the appropriate BS 5839-1 category. For HMOs, the local authority licensing team typically specifies a minimum standard that the property must meet, and that specification is usually expressed in BS 5839-6 terms (for example, "Grade D Category LD2 throughout, mains powered interlinked, with battery backup, professionally installed").</p>
+
+<p>For ordinary owner-occupied private homes, BS 5839-6 is the relevant standard but there is no licensing requirement; the standard sets out best practice. Many home insurance policies reference compliance with BS 5839-6 Grade D Category LD2 or similar.</p>
+
+<h2>Why BAFE Certification Matters</h2>
+
+<p>BAFE is the independent third-party certification body for fire safety service providers in the United Kingdom. The relevant BAFE scheme for fire alarm systems is SP203-1, which audits contractors against:</p>
+
+<ul>
+<li>Design competence, including ability to specify the correct category and grade against a fire risk assessment</li>
+<li>Installation competence to BS 5839-1 and BS 5839-6 requirements</li>
+<li>Commissioning processes, certification, and documentation</li>
+<li>Maintenance procedures, technician training, and record keeping</li>
+</ul>
+
+<p>Insurers, fire risk assessors, building managers, and licensing authorities frequently look for BAFE certification when assessing whether the responsible person has appointed competent contractors. Using a non-BAFE contractor is not unlawful, but it places more of the competence-evidencing burden on the responsible person and is harder to defend if the system is later found to be deficient.</p>
+
+<p><strong>J&amp;L Security is BAFE-certified under SP203-1</strong>, covering design, installation, commissioning, and maintenance of fire alarm systems for both BS 5839-1 and BS 5839-6 installations.</p>
+
+<h2>Maintenance Obligations Explained</h2>
+
+<h3>BS 5839-1 commercial servicing</h3>
+
+<p>Servicing is required at intervals no greater than six months by a competent contractor. In practice, contracts run on a 6-monthly schedule with each visit covering test of every detector and call point, sounder verification, panel checks, battery tests, and a written service report. The responsible person also records weekly user tests of one call point on a rotating basis.</p>
+
+<h3>BS 5839-6 domestic and HMO servicing</h3>
+
+<p>For Grade A systems the regime is similar to BS 5839-1: professional servicing under contract, typically annually for domestic and twice-yearly for larger HMOs. For Grade D systems the routine combines user-side testing (a periodic test from the test button on each unit) with periodic professional inspection, often annually for HMOs as a licensing condition. Battery replacement intervals depend on whether the system is Grade D1 (sealed long-life battery, typically 10 years) or Grade D2 (replaceable battery).</p>
+
+<h2>How J&amp;L Security Helps</h2>
+
+<p>We are a BAFE-certified fire alarm maintainer covering Essex and Greater London. Our work spans the full lifecycle of fire alarm systems under both BS 5839-1 and BS 5839-6:</p>
+
+<ul>
+<li>Fire risk assessments for commercial premises and HMOs</li>
+<li>Design, installation, and commissioning of new BS 5839-1 systems for commercial buildings</li>
+<li>Design, installation, and commissioning of BS 5839-6 systems for domestic properties and HMOs (Grades A, C, and D, Categories LD1 to LD3 as appropriate)</li>
+<li>6-monthly servicing contracts for BS 5839-1 systems and annual or 6-monthly servicing for BS 5839-6 systems by Grade</li>
+<li>Smoke alarm installs and smoke alarm repair for domestic and HMO landlords</li>
+<li>Take-over of existing systems where the previous maintainer is no longer suitable</li>
+</ul>
+
+<p>Annual servicing contracts start at £180 + VAT for commercial premises and £120 + VAT for residential and small HMO systems. Both packages include one routine service and one emergency callout within the contract year. New installations and fire risk assessments are quoted after a free site survey.</p>
+
+<h2>FAQs</h2>
+
+<h3>Is BS 5839 a legal requirement?</h3>
+
+<p>BS 5839 itself is a British Standard, not a law. The legal requirement is for the responsible person (under the Regulatory Reform (Fire Safety) Order 2005 for commercial premises, and under HMO licensing or housing legislation for HMOs) to ensure the building has appropriate fire detection. BS 5839 is the recognised method of demonstrating that a system meets that requirement. Insurers, fire risk assessors, and licensing authorities use it as the reference point.</p>
+
+<h3>Can a Grade D system ever be acceptable for an HMO?</h3>
+
+<p>Yes, in many cases. A Grade D Category LD2 system (mains-powered interlinked detectors in circulation areas plus the kitchen and any high-risk rooms, with battery backup) is the most common HMO licensing specification for properties up to a certain size and number of storeys. Larger HMOs, multi-storey properties, and those with bedsit-style accommodation typically require Grade A or Grade A with LD1. The local authority licensing team is the source of truth for any specific property.</p>
+
+<h3>How often does a commercial fire alarm need servicing?</h3>
+
+<p>BS 5839-1 requires professional servicing at intervals no greater than six months. In practice this means a 6-monthly contract with each visit covering full test of every detector and call point, sounder verification, panel checks, and battery tests. The responsible person should also carry out weekly user tests of one call point on a rotating basis and record these in the system logbook.</p>
+
+<h3>Do I need a fire risk assessment if I have a fire alarm fitted?</h3>
+
+<p>Yes. A fire risk assessment is a separate legal requirement under the Regulatory Reform (Fire Safety) Order 2005 for any non-domestic premises and for the common parts of HMOs and blocks of flats. The fire risk assessment is what determines the appropriate fire alarm category in the first place, so it sits ahead of the fire alarm specification rather than being replaced by it. We can carry out fire risk assessments alongside our fire alarm work.</p>
+
+<h3>What is the difference between BAFE and SSAIB?</h3>
+
+<p>BAFE (British Approvals for Fire Equipment) is the certification body for fire safety services in the United Kingdom; its SP203-1 scheme covers fire detection and fire alarm systems. SSAIB (Security Systems and Alarms Inspection Board) is one of the two main inspectorate bodies for the UK security industry, covering intruder alarms, CCTV, and access control. Most established security and fire contractors hold both: SSAIB for intruder alarm work and BAFE for fire alarm work. J&amp;L Security holds both.</p>
+
+<h2>Get a Survey</h2>
+
+<p>For a free survey covering fire alarm specification, fire risk assessment, or service contract takeover, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770. We cover all of Essex and Greater London. For more on fire alarms see our <a href="/services/fire-alarms">fire alarm services</a> page or read our <a href="/blog/hmo-fire-alarm-requirements-bs5839">HMO fire alarm requirements guide</a>.</p>
+`,
+    faqs: [
+      {
+        question: 'Is BS 5839 a legal requirement?',
+        answer: 'BS 5839 itself is a British Standard, not a law. The legal requirement is for the responsible person (under the Regulatory Reform (Fire Safety) Order 2005 for commercial premises, and under HMO licensing or housing legislation for HMOs) to ensure the building has appropriate fire detection. BS 5839 is the recognised method of demonstrating that a system meets that requirement. Insurers, fire risk assessors, and licensing authorities use it as the reference point.'
+      },
+      {
+        question: 'Can a Grade D system ever be acceptable for an HMO?',
+        answer: 'Yes, in many cases. A Grade D Category LD2 system (mains-powered interlinked detectors in circulation areas plus the kitchen and any high-risk rooms, with battery backup) is the most common HMO licensing specification for properties up to a certain size and number of storeys. Larger HMOs, multi-storey properties, and those with bedsit-style accommodation typically require Grade A or Grade A with LD1. The local authority licensing team is the source of truth for any specific property.'
+      },
+      {
+        question: 'How often does a commercial fire alarm need servicing?',
+        answer: 'BS 5839-1 requires professional servicing at intervals no greater than six months. In practice this means a 6-monthly contract with each visit covering full test of every detector and call point, sounder verification, panel checks, and battery tests. The responsible person should also carry out weekly user tests of one call point on a rotating basis and record these in the system logbook.'
+      },
+      {
+        question: 'Do I need a fire risk assessment if I have a fire alarm fitted?',
+        answer: 'Yes. A fire risk assessment is a separate legal requirement under the Regulatory Reform (Fire Safety) Order 2005 for any non-domestic premises and for the common parts of HMOs and blocks of flats. The fire risk assessment is what determines the appropriate fire alarm category in the first place, so it sits ahead of the fire alarm specification rather than being replaced by it.'
+      },
+      {
+        question: 'What is the difference between BAFE and SSAIB?',
+        answer: 'BAFE (British Approvals for Fire Equipment) is the certification body for fire safety services in the United Kingdom; its SP203-1 scheme covers fire detection and fire alarm systems. SSAIB is one of the two main inspectorate bodies for the UK security industry, covering intruder alarms, CCTV, and access control. Most established security and fire contractors hold both. J&L Security holds both.'
+      }
+    ]
   },
   {
     slug: 'how-to-choose-security-company',

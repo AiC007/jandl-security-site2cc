@@ -101,10 +101,10 @@ const locationExtended: Record<string, {
     residential: ['Canary Wharf', 'Isle of Dogs', 'Poplar', 'Millwall', 'Cubitt Town', 'South Quay'],
   },
   greenwich: {
-    description: 'The Royal Borough of Greenwich in South East London combines a rich maritime heritage with significant commercial development. The area includes Greenwich town centre, the O2 entertainment complex, and extensive residential areas from Blackheath to Woolwich.',
+    description: 'The Royal Borough of Greenwich in South East London combines a rich maritime heritage with significant commercial development. The area includes Greenwich town centre, the O2 entertainment complex, Royal Arsenal Riverside, and extensive residential areas from Blackheath through Charlton to Woolwich.',
     population: '~290,000 (borough)',
     commuting: 'DLR to Bank in 20 minutes; Elizabeth Line from Woolwich; National Rail from Greenwich to London Bridge.',
-    whyLocal: 'Our engineers service clients across SE10 and the wider Greenwich borough, including fire alarm systems for the commercial properties along the riverside and domestic security for the residential areas.',
+    whyLocal: 'Our engineers service customers across SE10 and the wider Greenwich borough, including BAFE-certified fire alarm work for the commercial properties along the riverside, domestic intruder alarms for the residential streets around Blackheath and Charlton, and access control for the new-build developments at Royal Arsenal Riverside and Kidbrooke Village.',
     residential: ['Greenwich', 'Blackheath', 'Charlton', 'Kidbrooke', 'Eltham', 'Woolwich'],
   },
   harlow: {
@@ -120,6 +120,104 @@ const locationExtended: Record<string, {
     commuting: 'Central Line to Central London (Bank/Liverpool Street area in ~50 minutes).',
     whyLocal: 'We regularly cover Epping CM16 and the surrounding Essex villages. Many of our customers in this area are looking for wireless alarm systems suitable for older and listed properties.',
     residential: ['Epping', 'Theydon Bois', 'North Weald', 'Coopersale', 'Thornwood', 'Toot Hill'],
+  },
+  islington: {
+    description: 'A central inner London borough running from the City fringes at Angel up through Highbury and Holloway. Islington combines high-density Georgian and Victorian terraced housing with a dense commercial base of offices, restaurants, and independent retail along Upper Street and Old Street. Demand is driven by high-value residential properties, owner-managed businesses, and small commercial premises that need straightforward, reliable security without disruption.',
+    population: '~245,000 (borough)',
+    commuting: 'Northern, Victoria, and Piccadilly Lines; Overground from Highbury & Islington and Caledonian Road & Barnsbury.',
+    whyLocal: 'Our engineers operate routinely across Islington N1 and the wider EC1 fringe. Wireless installations are well suited to the borough\'s period properties where minimising visible cabling matters, and we extend the same residential and small-commercial coverage we offer across our Essex base.',
+    residential: ['Angel', 'Highbury', 'Canonbury', 'Holloway', 'Barnsbury', 'Finsbury Park'],
+  },
+  hackney: {
+    description: 'A dynamic East London borough covering an area from Shoreditch in the south up through London Fields, Hackney Central, Clapton, and Stoke Newington. Hackney has experienced sustained regeneration over the past decade and now combines period housing stock, new-build apartments, and one of London\'s most active small business and creative-industry sectors. Property crime patterns make wireless intruder alarms and CCTV a priority for both residential and commercial customers.',
+    population: '~285,000 (borough)',
+    commuting: 'Overground from Hackney Central, Hackney Wick, and Dalston Junction; rail to Liverpool Street; Central Line at Stratford.',
+    whyLocal: 'We extend our coverage across the full Hackney borough including E2, E5, E8, E9, and N16. The mix of period terraces, new-build flats, and converted commercial premises is well suited to wireless Grade 2 systems with app integration, and we work regularly with both residential customers and small commercial clients across the area.',
+    residential: ['Hackney Central', 'London Fields', 'Stoke Newington', 'Clapton', 'Dalston', 'Hackney Wick'],
+  },
+  clapton: {
+    description: 'A residential area in the north of the London Borough of Hackney, covering Upper and Lower Clapton along the western edge of the River Lea. Clapton has a mix of large Victorian houses, converted flats, and a growing new-build sector around Lea Bridge Road. The area\'s period properties make wireless security systems particularly suitable, with no need to disturb existing decoration or run surface cabling.',
+    population: '~30,000',
+    commuting: 'Overground from Clapton and Hackney Downs to Liverpool Street in around 15 minutes.',
+    whyLocal: 'We work regularly across Clapton E5 and the wider Hackney borough. Our wireless Grade 2 packages suit the converted Victorian houses common in the area, and we offer both standalone installations and integration with CCTV for shared-entrance properties.',
+    residential: ['Upper Clapton', 'Lower Clapton', 'Lea Bridge', 'Hackney Downs', 'Clapton Pond'],
+  },
+  dalston: {
+    description: 'A high-density area in the south of the London Borough of Hackney centred on Kingsland High Street and Ridley Road. Dalston has a particularly strong commercial base, with independent retail, restaurants, and night-time venues alongside dense residential blocks and converted period housing. The mix drives steady demand for both commercial CCTV and access control as well as residential intruder alarms.',
+    population: '~25,000',
+    commuting: 'Overground from Dalston Junction and Dalston Kingsland; under 10 minutes to Liverpool Street and Shoreditch.',
+    whyLocal: 'Our engineers regularly cover Dalston E8 for both residential customers and the local commercial base along Kingsland Road. Door entry, access control, and CCTV are common requirements for small commercial premises and converted residential blocks in the area.',
+    residential: ['Dalston Junction', 'Dalston Kingsland', 'Kingsland', 'De Beauvoir Town', 'Haggerston'],
+  },
+  camden: {
+    description: 'A central North London borough covering Camden Town, Kentish Town, Primrose Hill, Belsize Park, and Hampstead. Camden combines major retail, music, and tourism (notably Camden Market) with high-value residential streets and a strong creative-industry commercial sector. Demand spans residential intruder alarms in the period housing stock, commercial CCTV and access control for shops and venues, and fire alarms for HMOs and shared accommodation.',
+    population: '~270,000 (borough)',
+    commuting: 'Northern Line; Overground from Camden Road; main-line interchanges at King\'s Cross, St Pancras, and Euston.',
+    whyLocal: 'We cover Camden NW1, NW3, and NW5 routinely. The area\'s period terraces and converted properties suit our wireless Grade 2 packages, and we install fire alarms to BS 5839 for the borough\'s significant HMO and shared-accommodation stock.',
+    residential: ['Camden Town', 'Kentish Town', 'Primrose Hill', 'Belsize Park', 'Chalk Farm', 'Tufnell Park'],
+  },
+  southwark: {
+    description: 'A South East London borough running along the south bank of the Thames from London Bridge through Bankside, Bermondsey, and down to Peckham, Walworth, and Camberwell. Southwark has one of London\'s largest commercial property bases, including Tate Modern and the Shard, alongside dense residential stock and significant new-build developments around Elephant and Castle. The mix drives demand for commercial fire alarms, access control, CCTV, and residential intruder alarms in roughly equal measure.',
+    population: '~310,000 (borough)',
+    commuting: 'Jubilee, Northern, and Bakerloo Lines; National Rail from London Bridge, Waterloo East, and Peckham Rye.',
+    whyLocal: 'Our engineers extend coverage to Southwark across SE1, SE15, SE16, and SE17. Commercial premises along the South Bank, residential blocks in Bermondsey and Walworth, and HMOs across the borough are all served regularly.',
+    residential: ['Bankside', 'Bermondsey', 'Peckham', 'Walworth', 'Camberwell', 'Elephant and Castle'],
+  },
+  woolwich: {
+    description: 'A historic riverside town in the south of the Royal Borough of Greenwich, with a substantial regeneration pipeline centred on Royal Arsenal Riverside and the new Elizabeth Line connection. Woolwich combines new-build apartments, converted Victorian terraces, and a busy commercial high street, with steady demand for residential intruder alarms, commercial CCTV, and access control for new-build estates.',
+    population: '~85,000',
+    commuting: 'Elizabeth Line from Woolwich to Canary Wharf in 8 minutes and Bond Street in 25 minutes; DLR; Woolwich Ferry.',
+    whyLocal: 'We service the SE18 area as part of our wider South East London coverage, including Royal Arsenal Riverside developments, residential streets across Plumstead and Charlton, and the commercial base along Powis Street and the high street.',
+    residential: ['Royal Arsenal', 'Plumstead', 'Charlton', 'Shooters Hill', 'Thamesmead', 'Eltham'],
+  },
+  westminster: {
+    description: 'A central London borough covering some of the highest-value residential and commercial property in the United Kingdom: Mayfair, Marylebone, Belgravia, Pimlico, Soho, Westminster, and the West End. The security requirements span high-net-worth residential properties, embassies, professional services and financial offices, retail, hospitality, and historic buildings. Wireless and discreet installations are routinely required where listed-building or conservation considerations apply.',
+    population: '~210,000 (borough)',
+    commuting: 'Multiple Underground lines including Bakerloo, Central, Jubilee, Piccadilly, and Victoria; mainline at Victoria, Charing Cross, and Paddington.',
+    whyLocal: 'We extend coverage to Westminster for residential and commercial customers across SW1, W1, W2, and WC1/WC2. Our wireless Grade 2 systems and SSAIB-approved monitored installations are well suited to high-value properties and listed buildings where minimising visible installation work is important.',
+    residential: ['Mayfair', 'Marylebone', 'Pimlico', 'Belgravia', 'Soho', 'St James\'s'],
+  },
+  hammersmith: {
+    description: 'A West London town and the centre of the London Borough of Hammersmith and Fulham. Hammersmith is a major commercial centre with a substantial office base and strong retail and hospitality presence, alongside a large residential population in period terraces, mansion blocks, and modern apartments. Demand is split between commercial CCTV and access control for offices and shopfronts, and residential intruder alarms for the borough\'s mixed housing stock.',
+    population: '~75,000',
+    commuting: 'Hammersmith and City, District, Piccadilly, and Circle Lines; bus interchange at Hammersmith Broadway.',
+    whyLocal: 'Our engineers cover Hammersmith W6, W12, and W14 as part of our extended West London coverage. Wireless Grade 2 systems suit the period properties, and we install commercial fire alarm and CCTV systems for the office and retail sector.',
+    residential: ['Hammersmith Broadway', 'Brook Green', 'Ravenscourt Park', 'Shepherd\'s Bush', 'Olympia', 'West Kensington'],
+  },
+  battersea: {
+    description: 'A South West London area in the London Borough of Wandsworth, covering Battersea, Nine Elms, and the south bank of the Thames opposite Pimlico. Battersea has been substantially redeveloped in the past decade with the Power Station regeneration and the Northern Line extension to Battersea Power Station; the area combines new-build apartments, period mansion blocks, and commercial premises along the riverside. Wireless intruder alarms and access control for new-build blocks are core demand.',
+    population: '~75,000',
+    commuting: 'Northern Line from Battersea Power Station and Nine Elms; Clapham Junction main-line; Overground.',
+    whyLocal: 'We extend our coverage to Battersea SW8 and SW11 for residential customers in the Power Station and Nine Elms developments, period mansion blocks across Battersea Square, and commercial premises along the riverside.',
+    residential: ['Battersea Park', 'Nine Elms', 'Clapham Junction', 'Battersea Square', 'Queenstown', 'Wandsworth'],
+  },
+  fulham: {
+    description: 'A high-value residential area in the south of the London Borough of Hammersmith and Fulham, with a strong period housing stock and an active small-commercial sector along North End Road and Fulham Road. Fulham is a settled residential market with insurance-driven demand for monitored, inspectorate-approved alarms, and a steady commercial requirement for CCTV and access control along the main retail streets.',
+    population: '~85,000',
+    commuting: 'District Line; Overground from West Brompton; Imperial Wharf and Fulham Broadway National Rail.',
+    whyLocal: 'Our engineers cover Fulham SW6 and SW10 routinely. Wireless Grade 2 packages suit the period terraces and converted flats, and our SSAIB approval supports customers with insurance policies that require an inspectorate-approved system.',
+    residential: ['Fulham Broadway', 'Parsons Green', 'Sands End', 'Imperial Wharf', 'Bishops Park', 'West Brompton'],
+  },
+  streatham: {
+    description: 'A South London area straddling the boroughs of Lambeth and Wandsworth, with a long high street running from Streatham Hill through Streatham Common. Streatham combines large Victorian and Edwardian houses, converted flats, and an active commercial high street with strong demand for both residential intruder alarms and commercial CCTV. The high concentration of converted houses and shared accommodation also drives BS 5839-6 fire alarm requirements.',
+    population: '~70,000',
+    commuting: 'National Rail from Streatham, Streatham Hill, and Streatham Common; Victoria Line via Brixton.',
+    whyLocal: 'We work regularly across Streatham SW2 and SW16, with installations covering wireless intruder alarms for residential customers, BS 5839-6 fire alarms for HMOs and shared accommodation, and commercial CCTV and access control along the high street.',
+    residential: ['Streatham Hill', 'Streatham Common', 'Streatham Vale', 'Norbury', 'Furzedown', 'Tooting Bec'],
+  },
+  finchley: {
+    description: 'A North London suburban area in the London Borough of Barnet, covering Finchley Central, North Finchley, East Finchley, and Whetstone. Finchley has a high proportion of family homes, period semi-detached and detached houses, and converted flats, alongside a steady commercial high street. Demand is led by residential intruder alarms for family homes and converted flats, with insurance-driven preference for monitored systems where contents values are higher.',
+    population: '~110,000',
+    commuting: 'Northern Line from Finchley Central, North Finchley (via Woodside Park), East Finchley, and West Finchley.',
+    whyLocal: 'Our engineers cover Finchley N2, N3, and N12 across the full borough span. Wireless Grade 2 packages suit the period semi-detached stock, and our SSAIB approval supports the higher-value residential market where insurance policies require an inspectorate-approved system.',
+    residential: ['Finchley Central', 'North Finchley', 'East Finchley', 'West Finchley', 'Whetstone', 'Woodside Park'],
+  },
+  barnet: {
+    description: 'The northernmost of the London boroughs, covering High Barnet, New Barnet, Cockfosters, Hadley Wood, and Totteridge. The Barnet area includes a high proportion of family homes, large detached and semi-detached properties, and a settled residential market with strong insurance-driven demand for monitored, inspectorate-approved alarms. Commercial demand is concentrated along Barnet High Street and the business areas around Whetstone and New Barnet.',
+    population: '~395,000 (borough)',
+    commuting: 'Northern Line terminus at High Barnet; Piccadilly Line at Cockfosters; Overground at New Barnet.',
+    whyLocal: 'We extend our coverage across the Barnet borough EN4, EN5, and N20. The area\'s family homes and high-value residential stock suit wireless Grade 2 packages with monitored options, and we provide SSAIB-approved installations for customers whose insurance policies require an inspectorate-approved alarm.',
+    residential: ['High Barnet', 'New Barnet', 'Cockfosters', 'Hadley Wood', 'Totteridge', 'Whetstone'],
   },
 };
 
@@ -151,6 +249,14 @@ const locationFaqs = (locationName: string) => [
   {
     question: `Do you provide maintenance contracts in ${locationName}?`,
     answer: `Yes. We offer annual maintenance contracts for all systems we install in ${locationName}, covering regular servicing visits, priority emergency response, and software updates.`,
+  },
+  {
+    question: `Do you install and service fire alarms in ${locationName}?`,
+    answer: `Yes. We are a BAFE-certified fire alarm maintainer covering ${locationName} and the surrounding area. We install commercial systems to BS 5839-1, domestic and HMO systems to BS 5839-6, and provide 6-monthly servicing contracts for both. We also carry out fire risk assessments where required.`,
+  },
+  {
+    question: `Can you install or repair smoke alarms in ${locationName}?`,
+    answer: `Yes. We carry out smoke alarm installs and smoke alarm repair for domestic properties and HMOs in ${locationName} under BS 5839-6, including Grade D mains-powered interlinked systems suitable for landlord licensing requirements.`,
   },
 ];
 

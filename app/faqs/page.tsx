@@ -129,6 +129,18 @@ const faqCategories = [
       {
         question: 'What happens if my fire alarm has a fault?',
         answer: 'Fire alarm faults should be addressed immediately for safety and legal compliance. We provide 24/7 emergency callouts for fire system faults, with typical response within 4 hours. Many faults can be diagnosed remotely to expedite repairs.'
+      },
+      {
+        question: 'What is the difference between BS 5839-1 and BS 5839-6 fire alarm systems?',
+        answer: 'BS 5839-1 is the British Standard for fire detection and fire alarm systems in non-domestic premises (offices, retail, schools, care homes, warehouses, and most commercial buildings). BS 5839-6 covers domestic premises including single-family homes, individual dwellings, and HMOs. The two standards specify different system categories and grades. J&L Security is a BAFE-certified fire alarm maintainer covering both.'
+      },
+      {
+        question: 'Do you carry out fire risk assessments?',
+        answer: 'Yes. We carry out fire risk assessments for commercial premises and HMOs as a separate service alongside fire alarm installation and servicing. The assessment identifies fire hazards, evaluates risk to occupants, and produces an action plan. The Regulatory Reform (Fire Safety) Order 2005 requires the responsible person for any non-domestic premises to maintain a current fire risk assessment.'
+      },
+      {
+        question: 'Can you install or repair smoke alarms in a domestic property or HMO?',
+        answer: 'Yes. We install and repair smoke alarms under BS 5839-6, covering Grade D mains-powered interlinked systems (the standard most commonly required for HMO licensing), Grade F battery-only systems where permitted, and panel-controlled Grade A systems for larger HMOs. We also assess and repair existing smoke alarm systems that have failed user tests or trigger false alarms.'
       }
     ]
   },

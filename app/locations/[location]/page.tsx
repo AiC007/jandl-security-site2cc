@@ -250,6 +250,14 @@ const locationFaqs = (locationName: string) => [
     question: `Do you provide maintenance contracts in ${locationName}?`,
     answer: `Yes. We offer annual maintenance contracts for all systems we install in ${locationName}, covering regular servicing visits, priority emergency response, and software updates.`,
   },
+  {
+    question: `Do you install and service fire alarms in ${locationName}?`,
+    answer: `Yes. We are a BAFE-certified fire alarm maintainer covering ${locationName} and the surrounding area. We install commercial systems to BS 5839-1, domestic and HMO systems to BS 5839-6, and provide 6-monthly servicing contracts for both. We also carry out fire risk assessments where required.`,
+  },
+  {
+    question: `Can you install or repair smoke alarms in ${locationName}?`,
+    answer: `Yes. We carry out smoke alarm installs and smoke alarm repair for domestic properties and HMOs in ${locationName} under BS 5839-6, including Grade D mains-powered interlinked systems suitable for landlord licensing requirements.`,
+  },
 ];
 
 // ─── Page component ──────────────────────────────────────────────────────────

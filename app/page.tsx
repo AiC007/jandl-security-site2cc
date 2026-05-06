@@ -29,7 +29,7 @@ export default function Home() {
     {
       icon: Flame,
       name: 'Fire Alarms',
-      description: 'BS 5839-1 compliant systems for commercial properties and HMOs',
+      description: 'BS 5839-1 commercial and BS 5839-6 domestic and HMO fire alarms. BAFE-certified install and service. Fire risk assessments included.',
       features: ['6-monthly servicing', 'Emergency lighting', 'Legal compliance'],
       link: '/services/fire-alarms'
     },

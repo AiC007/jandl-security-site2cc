@@ -116,9 +116,10 @@ const servicePageData: Record<string, {
   },
 
   'fire-alarms': {
-    heroTagline: 'Fire Alarm Installation & Servicing — BS 5839-1 Compliant',
+    heroTagline: 'BAFE-Certified Fire Alarm Installation, Servicing & Risk Assessments',
     overview: [
-      'All of our fire alarms are installed to comply with BS 5839:1. We install both conventional and addressable systems from C-Tech, Fike, Haes, Kentech, Advanced, EDA, EMS, Smartcell and Zeta. We can also provide service contracts to ensure your system remains legally compliant.',
+      'J&L Security is a BAFE-certified fire alarm maintainer covering Essex and Greater London. We design, install, commission, and service commercial fire alarm systems to BS 5839-1 and domestic and HMO fire alarm systems to BS 5839-6. We also support clients with fire risk assessments, smoke alarm installs and repair, and 6-monthly fire alarm servicing under contract.',
+      'We install both conventional and addressable systems from C-Tech, Fike, Haes, Kentech, Advanced, EDA, EMS, Smartcell, and Zeta. Every installation is documented, certified at commissioning, and supported with a service contract that keeps the system compliant with BS 5839 and the Regulatory Reform (Fire Safety) Order 2005.',
     ],
     process: [
       { step: 'Fire Risk Assessment Review', detail: 'We review your existing fire risk assessment (or recommend one) to determine the appropriate category of system.' },
@@ -129,14 +130,14 @@ const servicePageData: Record<string, {
       { step: '6-Monthly Servicing', detail: 'We service your system twice per year as required by BS 5839-1, including testing all detectors, call points, and sounders.' },
     ],
     whoFor: [
-      'Commercial offices and retail units',
-      'HMOs (Houses of Multiple Occupation)',
-      'Schools and educational premises',
-      'Care homes and healthcare facilities',
-      'Warehouses and industrial buildings',
-      'Residential blocks and flats',
+      'Commercial premises requiring BS 5839-1 systems',
+      'HMOs and residential blocks under BS 5839-6',
+      'Landlords needing fire risk assessments and certificates',
+      'Schools, care homes, and healthcare facilities',
+      'Domestic customers needing smoke alarm installs or smoke alarm repair',
+      'Existing system owners switching to a BAFE-certified maintainer',
     ],
-    pricing: '',
+    pricing: 'Fire alarm servicing contracts from £180 + VAT per year for commercial premises and from £120 + VAT per year for residential and HMO systems. Includes one routine maintenance and one emergency callout. Installation prices and fire risk assessment fees provided after free site survey.',
     faqs: [
       {
         question: 'What is the difference between a conventional and addressable fire alarm?',
@@ -161,6 +162,22 @@ const servicePageData: Record<string, {
       {
         question: 'What documentation do I receive after installation?',
         answer: 'You will receive all relevant compliance documentation once the final balance has been paid which includes a log book.',
+      },
+      {
+        question: 'What is the difference between BS 5839-1 and BS 5839-6?',
+        answer: 'BS 5839-1 is the British Standard for fire detection and fire alarm systems in non-domestic premises: offices, retail, schools, care homes, warehouses, factories, and most commercial buildings. BS 5839-6 is the equivalent standard for domestic premises: single-occupancy homes, individual dwellings, and houses in multiple occupation. The two standards cover different system categories and grades. We install and maintain to both standards as a BAFE-certified maintainer.',
+      },
+      {
+        question: 'Do you carry out fire risk assessments?',
+        answer: 'Yes. We carry out fire risk assessments for commercial premises and HMOs as a separate service alongside fire alarm installation and maintenance. The assessment identifies fire hazards, evaluates risk to occupants, and produces an action plan with prioritised recommendations. The Regulatory Reform (Fire Safety) Order 2005 requires the responsible person for any non-domestic premises to have a current fire risk assessment in place.',
+      },
+      {
+        question: 'Do you install and repair smoke alarms?',
+        answer: 'Yes. We carry out smoke alarm installs and smoke alarm repair for domestic properties under BS 5839-6, including for HMO landlords meeting licensing conditions. Work covers Grade D mains-powered interlinked alarms with battery backup, Grade F battery-only systems, and panel-controlled Grade A systems for larger HMOs. We can also assess and repair existing smoke alarm systems that have failed user tests.',
+      },
+      {
+        question: 'What does BAFE certification mean for fire alarm maintainers?',
+        answer: 'BAFE is the independent register for fire safety service providers in the United Kingdom. A BAFE-certified fire alarm maintainer has been audited against the BAFE SP203-1 scheme covering design, installation, commissioning, and maintenance of fire detection and fire alarm systems. Insurers, fire risk assessors, and regulators frequently look for BAFE certification when assessing whether the responsible person has appointed competent contractors. J&L Security is BAFE certified.',
       },
     ],
   },
@@ -264,26 +281,52 @@ export async function generateStaticParams() {
   return services.map((s) => ({ service: s.slug }));
 }
 
+const metaOverrides: Record<string, { description?: string; keywords?: string[] }> = {
+  'fire-alarms': {
+    description: 'BAFE-certified fire alarm installation and servicing across Essex and Greater London. BS 5839-1 commercial systems, BS 5839-6 domestic and HMO. Fire risk assessments, smoke alarm install and repair, 6-monthly servicing. Free survey.',
+    keywords: [
+      'fire alarm installation',
+      'BAFE fire alarm maintainers',
+      'BAFE certified fire alarm',
+      'fire risk assessments',
+      'smoke alarm install',
+      'smoke alarm repair',
+      'fire alarm servicing',
+      'BS 5839-1',
+      'BS 5839-6',
+      'commercial fire alarm Essex',
+      'HMO fire alarm London',
+      'J&L Security',
+    ],
+  },
+};
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { service: serviceSlug } = await params;
   const service = services.find((s) => s.slug === serviceSlug);
   if (!service) return {};
   const ext = servicePageData[serviceSlug];
-  return {
-    title: `${ext?.heroTagline ?? service.name}`,
-    description: `${service.description}. Professional installation and maintenance across Essex & Greater London. Free surveys, same-day service, 24/7 support. Call J&L Security today.`,
-    keywords: [
+  const override = metaOverrides[serviceSlug];
+  const description =
+    override?.description ??
+    `${service.description}. Professional installation and maintenance across Essex & Greater London. Free surveys, same-day service, 24/7 support. Call J&L Security today.`;
+  const keywords =
+    override?.keywords ?? [
       `${service.name.toLowerCase()} Essex`,
       `${service.name.toLowerCase()} London`,
       `${service.name.toLowerCase()} installation`,
       `${service.name.toLowerCase()} maintenance`,
       'security systems Essex',
       'J&L Security',
-    ],
+    ];
+  return {
+    title: `${ext?.heroTagline ?? service.name}`,
+    description,
+    keywords,
     alternates: { canonical: `${COMPANY_INFO.website}/services/${serviceSlug}` },
     openGraph: {
       title: `${ext?.heroTagline ?? service.name}`,
-      description: `${service.description}. Free surveys across Essex & Greater London.`,
+      description: override?.description ?? `${service.description}. Free surveys across Essex & Greater London.`,
     },
   };
 }

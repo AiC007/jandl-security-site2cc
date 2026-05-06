@@ -19,9 +19,9 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Burglar Alarm Cost UK 2026: Installation Prices Explained',
     description: 'A practical guide to burglar alarm installation costs in the UK for 2026. Covers bell-only, speech dialler, and monitored systems, plus what affects the price and what to expect from an NSI-approved installer.',
     datePublished: '2026-05-03',
-    dateModified: '2026-05-03',
-    keywords: ['burglar alarm cost uk', 'alarm installation cost', 'intruder alarm price uk', 'monitored alarm cost', 'home alarm system cost uk'],
-    wordCount: 2050,
+    dateModified: '2026-05-06',
+    keywords: ['burglar alarm cost uk', 'alarm installation cost', 'intruder alarm price uk', 'monitored alarm cost', 'home alarm system cost uk', 'pyronix enforcer cost', 'wireless burglar alarm price essex'],
+    wordCount: 2380,
     content: `
 <p>A professionally installed burglar alarm in the UK typically costs <strong>£450 to £2,500 for a domestic property in 2026</strong>, depending on the system type, the number of detectors, and whether monitoring is included. The figures in this guide are based on our experience installing intruder alarm systems across Essex and Greater London since 2011, including hundreds of installations across Brentwood, Romford, Ilford, Chelmsford, Upminster, and the wider M25 corridor.</p>
 
@@ -99,6 +99,75 @@ export const blogPosts: BlogPost[] = [
 
 <p>Most installers offer a maintenance contract that bundles servicing visits, priority callout, and (for monitored systems) the monitoring contract. The cost of the contract is sometimes baked into a slightly higher install price; sometimes it is an annual fee on top.</p>
 
+<h2>J&amp;L Security 2026 Pricing: Confirmed Installed Rates</h2>
+
+<p>The ranges above are sector-wide indicative figures. The pricing in this section is our own confirmed 2026 starting pricing for installations in Essex and Greater London. Final quotations follow a free site survey because the property layout determines the detector count and cable routes; the figures below are the published starting points.</p>
+
+<h3>Standard Wireless Grade 2 Residential Package: from £485 + VAT</h3>
+
+<p>Our standard residential package uses the Pyronix Enforcer V11 wireless Grade 2 control panel and includes everything most homes need for the main entry points and ground floor:</p>
+
+<ul>
+<li>Pyronix Enforcer V11 control panel with on-board keypad (mains powered)</li>
+<li>Wireless door contact, fitted to the main entrance door</li>
+<li>Two wireless motion detectors</li>
+<li>Two proximity tags</li>
+<li>Wireless external siren</li>
+</ul>
+
+<p>The package starts at <strong>£485 + VAT</strong>, installed and commissioned. Most properties require additional detectors to cover side and rear access, internal high-traffic rooms, and any outbuildings. The exact specification is finalised at the survey based on the layout.</p>
+
+<h3>Additional Detectors and Accessories</h3>
+
+<p>The following items can be added to the standard package or specified up front:</p>
+
+<table>
+<thead>
+<tr><th>Component</th><th>Price (excl. VAT)</th></tr>
+</thead>
+<tbody>
+<tr><td>Wireless motion detector</td><td>from £55</td></tr>
+<tr><td>Door contact (additional)</td><td>from £45</td></tr>
+<tr><td>Vibration detector</td><td>from £65</td></tr>
+<tr><td>Combined vibration and door/window contact</td><td>from £75</td></tr>
+<tr><td>Dummy siren (typically rear or side elevation)</td><td>from £25</td></tr>
+<tr><td>Wireless external siren (additional)</td><td>from £125</td></tr>
+<tr><td>Proximity tag (additional)</td><td>from £12</td></tr>
+<tr><td>Keyfob</td><td>from £45</td></tr>
+<tr><td>Panic button</td><td>from £65</td></tr>
+<tr><td>LCD keypad</td><td>from £115</td></tr>
+</tbody>
+</table>
+
+<h3>Smartphone Control: Homecontrol 2.0 App</h3>
+
+<p>The Pyronix Enforcer V11 connects to your home internet router and pairs with the Homecontrol 2.0 app. The app gives you live status, push notifications for activations and faults, and remote arm/disarm. The pricing structure is straightforward:</p>
+
+<ul>
+<li>Communication module plus first year of app subscription: <strong>from £48 + VAT</strong></li>
+<li>Annual app subscription thereafter: <strong>from £30 + VAT</strong></li>
+<li>SIM card option for properties without reliable broadband: priced on survey</li>
+</ul>
+
+<p>The system without the module is a "bells only" alarm: it sounds at the property when triggered but does not notify anyone remotely. For most residential customers, the app integration is the recommended option because it converts a passive deterrent into a system you can interact with from anywhere.</p>
+
+<h3>24-Hour Monitoring and Police Response</h3>
+
+<p>For customers who want professional monitoring on top of the app, our 24-hour UK-manned call centre option starts at <strong>£105 + VAT per year</strong>. When the alarm activates, you receive the app notification and a call handler also contacts you to confirm the situation and follow the agreed escalation path. Police response can be incorporated where the system is graded and registered for a Unique Reference Number under the police response scheme.</p>
+
+<h3>Maintenance Contracts</h3>
+
+<p>Annual servicing keeps the system reliable and is required by most home insurance policies for the alarm to remain a valid security measure. Our maintenance starts at:</p>
+
+<ul>
+<li>Residential properties: <strong>from £120 + VAT per year</strong></li>
+<li>Commercial properties: <strong>from £180 + VAT per year</strong></li>
+</ul>
+
+<p>Both packages include one routine annual maintenance visit and one emergency callout within the contract year.</p>
+
+<p><em>Note on pricing: all figures above are starting prices excluding VAT. The final quotation is provided in writing after a free site survey, because the detector count, mounting requirements, and cable routes vary by property. Pricing is current as at May 2026 and may be reviewed periodically.</em></p>
+
 <h2>NSI and SSAIB Approved Installer vs Unaccredited: Why It Matters</h2>
 
 <p>The two recognised inspectorates for the UK security industry are <strong>NSI</strong> (National Security Inspectorate) and <strong>SSAIB</strong> (Security Systems and Alarms Inspection Board). An installer that is not approved by one of these is not eligible to install systems for police response and is unlikely to satisfy stricter insurance policies.</p>
@@ -119,7 +188,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Annual Maintenance Contracts</h3>
 
-<p>For residential systems, an annual maintenance contract typically costs <strong>£80 to £150 per year</strong>. The contract covers a scheduled service visit (usually annual for domestic systems), priority response on faults, and battery replacements within scope. Many insurance policies require an annual service for the alarm to remain a valid security measure.</p>
+<p>Most installers offer an annual maintenance contract that covers a scheduled service visit, priority response on faults, and battery replacements within scope. Most insurance policies require an annual service for the alarm to remain a valid security measure. J&amp;L Security maintenance contracts start at <strong>£120 + VAT per year for residential</strong> and <strong>£180 + VAT per year for commercial</strong> properties; both packages include one routine maintenance and one emergency callout within the contract year.</p>
 
 <h3>Monitoring Fees</h3>
 
@@ -149,6 +218,10 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Pricing Summary Table (UK, 2026)</h2>
 
+<p>The first table below shows the indicative UK market ranges for context. The second is our own published starting pricing.</p>
+
+<h3>UK market ranges (sector-wide indicative)</h3>
+
 <table>
 <thead>
 <tr>
@@ -165,32 +238,76 @@ export const blogPosts: BlogPost[] = [
 <td>£200 to £350</td>
 <td>£150 to £250</td>
 <td>None</td>
-<td>£350 to £600 + optional ~£100 servicing</td>
+<td>£350 to £600 plus optional ~£100 servicing</td>
 </tr>
 <tr>
 <td>Speech dialler / self-monitored</td>
 <td>£300 to £550</td>
 <td>£200 to £350</td>
 <td>None (you respond)</td>
-<td>£500 to £900 + optional ~£100 servicing</td>
+<td>£500 to £900 plus optional ~£100 servicing</td>
 </tr>
 <tr>
 <td>Monitored (Grade 2 or 3, ARC, police response eligible)</td>
 <td>£400 to £1,200</td>
 <td>£300 to £600</td>
 <td>£180 to £420</td>
-<td>£880 to £2,220 + ~£100 to £150 servicing</td>
+<td>£880 to £2,220 plus ~£100 to £150 servicing</td>
 </tr>
 </tbody>
 </table>
 
-<p><em>Pricing note: figures are indicative ranges based on typical Essex and Greater London installations from 2024 to 2026. They include VAT and assume a standard property layout, accessible cable routes, and no significant remedial electrical work. Final costs depend on detector count, property size, and the specific monitoring tier selected.</em></p>
+<h3>J&amp;L Security confirmed starting prices (May 2026)</h3>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>From (excl. VAT)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard wireless Grade 2 residential package (Pyronix Enforcer V11)</td>
+<td>£485</td>
+<td>Panel with keypad, one door contact, two motion detectors, two proximity tags, one wireless external siren</td>
+</tr>
+<tr>
+<td>Homecontrol 2.0 app module plus first year subscription</td>
+<td>£48</td>
+<td>Push notifications, remote arm/disarm, fault alerts</td>
+</tr>
+<tr>
+<td>Annual Homecontrol 2.0 app subscription thereafter</td>
+<td>£30</td>
+<td>Per year</td>
+</tr>
+<tr>
+<td>24-hour UK-manned monitoring</td>
+<td>£105 / year</td>
+<td>Police response can be incorporated for Grade 2+ systems with URN</td>
+</tr>
+<tr>
+<td>Annual maintenance, residential</td>
+<td>£120 / year</td>
+<td>One routine maintenance plus one emergency callout</td>
+</tr>
+<tr>
+<td>Annual maintenance, commercial</td>
+<td>£180 / year</td>
+<td>One routine maintenance plus one emergency callout</td>
+</tr>
+</tbody>
+</table>
+
+<p><em>Pricing note: all figures are starting prices excluding VAT. Final quotations follow a free site survey because the detector count, mounting requirements, and cable routes vary by property. Pricing current as at May 2026.</em></p>
 
 <h2>FAQs</h2>
 
 <h3>How much does a burglar alarm cost to install in the UK?</h3>
 
-<p>A professionally installed domestic burglar alarm in the UK in 2026 typically costs £450 to £2,500. A bell-only system is £350 to £600 installed; a speech-dialler / self-monitored system is £500 to £900 installed; a fully monitored Grade 2 or 3 system with police-response eligibility is £700 to £1,800 installed plus £15 to £35 per month for monitoring. Final price depends on property size, detector count, wired vs wireless, and whether the system is graded.</p>
+<p>A professionally installed domestic burglar alarm in the UK in 2026 typically costs £450 to £2,500 across the market. At J&amp;L Security our standard wireless Grade 2 residential package using the Pyronix Enforcer V11 starts from £485 + VAT, including a control panel with on-board keypad, a wireless door contact, two motion detectors, two proximity tags, and a wireless external siren. Most homes specify additional detectors at the survey: motion detectors from £55 + VAT, door contacts from £45 + VAT, additional sirens from £125 + VAT. Smartphone control via the Homecontrol 2.0 app is a £48 + VAT add-on for the module and first year, then £30 + VAT per year. Optional 24-hour monitoring through our UK-manned call centre starts at £105 + VAT per year, with police response available where the system is graded and URN-registered. Final price depends on property size, detector count, and the specific options chosen.</p>
 
 <h3>Is a monitored alarm worth the monthly fee?</h3>
 
@@ -208,16 +325,24 @@ export const blogPosts: BlogPost[] = [
 
 <p>A standard domestic installation takes 4 to 8 hours for a wireless system, or up to a full day for a wired installation in a finished property where cable runs need careful routing. Larger or commercial installations may take two days or more. We typically complete domestic surveys, design, and installation within 3 to 5 working days of the initial enquiry.</p>
 
+<h3>What does the standard J&amp;L Security wireless burglar alarm package include?</h3>
+
+<p>The J&amp;L Security standard wireless residential package starts from £485 + VAT and uses the Pyronix Enforcer V11 Grade 2 control panel. It includes the panel with an on-board mains-powered keypad, one wireless door contact for the main entrance, two wireless motion detectors, two proximity tags for arming and disarming, and one wireless external siren. The system is supplied as a "bells only" alarm by default, meaning the siren sounds at the property when triggered. Most customers add the Homecontrol 2.0 app module (£48 + VAT for the module plus the first year) so they can receive push notifications and arm or disarm remotely. Additional detectors, panic buttons, vibration sensors, dummy sirens, keyfobs, and an LCD keypad can be added at fixed accessory prices, with the final specification finalised at the free site survey.</p>
+
+<h3>How much does ongoing burglar alarm monitoring and maintenance cost with J&amp;L Security?</h3>
+
+<p>J&amp;L Security offers two ongoing options. The Homecontrol 2.0 app subscription is £30 + VAT per year after the first year (the module and first year are £48 + VAT) and gives the customer push notifications and remote control. Professional 24-hour monitoring through our UK-manned call centre starts at £105 + VAT per year and adds a call handler who contacts you when the alarm activates, with police response available for Grade 2 or higher systems registered for a Unique Reference Number. Annual maintenance starts at £120 + VAT for residential properties and £180 + VAT for commercial properties; both contracts include one routine service visit and one emergency callout within the contract year. All figures are starting prices.</p>
+
 <h2>Get a Quote</h2>
 
 <p>Burglar alarm pricing depends on too many factors to accurately quote without seeing the property. Every J&L Security installation starts with a free site survey: we visit the property, agree the system specification, and provide a fixed-price written quotation before any work starts. There is no obligation, and the survey itself is genuinely free.</p>
 
-<p>To book a free survey, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> (or 0208 220 4770). We cover all of Essex and Greater London, with active customers across <a href="/locations/brentwood">Brentwood</a>, <a href="/burglar-alarm-servicing/romford">Romford</a>, Ilford, Chelmsford, Upminster, and the wider region. For more on our intruder alarm offer, see our <a href="/services/burglar-alarms">burglar alarm services</a> page or read about <a href="/blog/insurance-approved-burglar-alarms-uk-2026">insurance-approved burglar alarms in 2026</a>.</p>
+<p>To book a free survey, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770. We cover all of Essex and Greater London, with active customers across <a href="/locations/brentwood">Brentwood</a>, <a href="/burglar-alarm-servicing/romford">Romford</a>, Ilford, Chelmsford, Upminster, and across our 14 London target boroughs from Islington and Hackney through to Hammersmith, Battersea, and Barnet. For more on our intruder alarm offer, see our <a href="/services/burglar-alarms">burglar alarm services</a> page or read about <a href="/blog/insurance-approved-burglar-alarms-uk-2026">insurance-approved burglar alarms in 2026</a>.</p>
 `,
     faqs: [
       {
         question: 'How much does a burglar alarm cost to install in the UK?',
-        answer: 'A professionally installed domestic burglar alarm in the UK in 2026 typically costs £450 to £2,500. A bell-only system is £350 to £600 installed; a speech-dialler / self-monitored system is £500 to £900 installed; a fully monitored Grade 2 or 3 system with police-response eligibility is £700 to £1,800 installed plus £15 to £35 per month for monitoring. Final price depends on property size, detector count, wired vs wireless, and whether the system is graded.'
+        answer: 'A professionally installed domestic burglar alarm in the UK in 2026 typically costs £450 to £2,500 across the market. At J&L Security our standard wireless Grade 2 residential package using the Pyronix Enforcer V11 starts from £485 + VAT, including a control panel with on-board keypad, a wireless door contact, two motion detectors, two proximity tags, and a wireless external siren. Most homes specify additional detectors at the survey: motion detectors from £55 + VAT, door contacts from £45 + VAT, additional sirens from £125 + VAT. Smartphone control via the Homecontrol 2.0 app is a £48 + VAT add-on for the module and first year, then £30 + VAT per year. Optional 24-hour monitoring through our UK-manned call centre starts at £105 + VAT per year, with police response available where the system is graded and URN-registered. Final price depends on property size, detector count, and the specific options chosen.'
       },
       {
         question: 'Is a monitored alarm worth the monthly fee?',
@@ -234,6 +359,14 @@ export const blogPosts: BlogPost[] = [
       {
         question: 'How long does a burglar alarm installation take?',
         answer: 'A standard domestic installation takes 4 to 8 hours for a wireless system, or up to a full day for a wired installation in a finished property where cable runs need careful routing. Larger or commercial installations may take two days or more. We typically complete domestic surveys, design, and installation within 3 to 5 working days of the initial enquiry.'
+      },
+      {
+        question: 'What does the standard J&L Security wireless burglar alarm package include?',
+        answer: 'The J&L Security standard wireless residential package starts from £485 + VAT and uses the Pyronix Enforcer V11 Grade 2 control panel. It includes the panel with an on-board mains-powered keypad, one wireless door contact for the main entrance, two wireless motion detectors, two proximity tags for arming and disarming, and one wireless external siren. The system is supplied as a "bells only" alarm by default, meaning the siren sounds at the property when triggered. Most customers add the Homecontrol 2.0 app module (£48 + VAT for the module plus the first year) so they can receive push notifications and arm or disarm remotely. Additional detectors, panic buttons, vibration sensors, dummy sirens, keyfobs, and an LCD keypad can be added at fixed accessory prices, with the final specification finalised at the free site survey.'
+      },
+      {
+        question: 'How much does ongoing burglar alarm monitoring and maintenance cost with J&L Security?',
+        answer: 'J&L Security offers two ongoing options. The Homecontrol 2.0 app subscription is £30 + VAT per year after the first year (the module and first year are £48 + VAT) and gives the customer push notifications and remote control. Professional 24-hour monitoring through our UK-manned call centre starts at £105 + VAT per year and adds a call handler who contacts you when the alarm activates, with police response available for Grade 2 or higher systems registered for a Unique Reference Number. Annual maintenance starts at £120 + VAT for residential properties and £180 + VAT for commercial properties; both contracts include one routine service visit and one emergency callout within the contract year. All figures are starting prices.'
       }
     ]
   },

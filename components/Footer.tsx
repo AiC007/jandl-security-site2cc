@@ -9,6 +9,7 @@ export default function Footer() {
     { name: 'Burglar Alarms', href: '/services/burglar-alarms' },
     { name: 'CCTV Systems', href: '/services/cctv-systems' },
     { name: 'Fire Alarms', href: '/services/fire-alarms' },
+    { name: 'Fire Risk Assessments', href: '/services/fire-risk-assessments' },
     { name: 'Access Control', href: '/services/access-control' },
     { name: 'Security Lighting', href: '/services/security-lighting' },
   ];

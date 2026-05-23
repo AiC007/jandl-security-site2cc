@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Shield, Camera, Flame, Lock, Lightbulb, Clock, CheckCircle, Star } from 'lucide-react';
+import { Shield, Camera, Flame, Lock, Lightbulb, Clock, CheckCircle, Star, ClipboardCheck } from 'lucide-react';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
 import { COMPANY_INFO } from '@/lib/utils';
 import { generateLocalBusinessSchema, generateServiceSchema } from '@/lib/schema';
@@ -39,6 +39,13 @@ export default function Home() {
       description: 'Key fobs, biometric readers, and video intercom systems',
       features: ['Audit trails', 'Remote control', 'Visitor management'],
       link: '/services/access-control'
+    },
+    {
+      icon: ClipboardCheck,
+      name: 'Fire Risk Assessments',
+      description: 'Accredited fire risk assessments for landlords, HMOs, businesses and property sellers, with remedial works delivered in-house.',
+      features: ['Accredited assessors', 'Action plan delivered', 'One provider end to end'],
+      link: '/services/fire-risk-assessments'
     }
   ];
 

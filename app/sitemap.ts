@@ -62,10 +62,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Main service pages
   const mainServices = [
     'burglar-alarms',
-    'cctv-systems', 
+    'cctv-systems',
     'fire-alarms',
     'access-control',
-    'security-lighting'
+    'security-lighting',
+    'fire-risk-assessments'
   ];
 
   const servicePages = mainServices.map((service) => ({

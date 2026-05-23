@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { CheckCircle, Phone, MessageSquare, ArrowRight, MapPin, Shield, Camera, Flame, Lock, Lightbulb } from 'lucide-react';
+import { CheckCircle, Phone, MessageSquare, ArrowRight, MapPin, Shield, Camera, Flame, Lock, Lightbulb, ClipboardCheck } from 'lucide-react';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
 import { COMPANY_INFO } from '@/lib/utils';
 import { services, serviceLocationMatrix } from '@/lib/data';
@@ -15,6 +15,7 @@ const icons = {
   'fire-alarms': Flame,
   'access-control': Lock,
   'security-lighting': Lightbulb,
+  'fire-risk-assessments': ClipboardCheck,
 } as const;
 
 const servicePageData: Record<string, {
@@ -24,6 +25,7 @@ const servicePageData: Record<string, {
   whoFor: string[];
   pricing: string;
   faqs: { question: string; answer: string }[];
+  image?: { src: string; alt: string };
 }> = {
   'burglar-alarms': {
     heroTagline: 'Professional Burglar Alarm Installation & Maintenance',
@@ -118,7 +120,7 @@ const servicePageData: Record<string, {
   'fire-alarms': {
     heroTagline: 'BAFE-Certified Fire Alarm Installation, Servicing & Risk Assessments',
     overview: [
-      'J&L Security is a BAFE-certified fire alarm maintainer covering Essex and Greater London. We design, install, commission, and service commercial fire alarm systems to BS 5839-1 and domestic and HMO fire alarm systems to BS 5839-6. We also support clients with fire risk assessments, smoke alarm installs and repair, and 6-monthly fire alarm servicing under contract.',
+      'J&L Security is a BAFE-certified fire alarm maintainer covering Essex and Greater London. We design, install, commission, and service commercial fire alarm systems to BS 5839-1 and domestic and HMO fire alarm systems to BS 5839-6. We also arrange fire risk assessments through an accredited assessor we work with, deliver any resulting remedial works ourselves, and provide smoke alarm installs and repair plus 6-monthly fire alarm servicing under contract.',
       'We install both conventional and addressable systems from C-Tech, Fike, Haes, Kentech, Advanced, EDA, EMS, Smartcell, and Zeta. Every installation is documented, certified at commissioning, and supported with a service contract that keeps the system compliant with BS 5839 and the Regulatory Reform (Fire Safety) Order 2005.',
     ],
     process: [
@@ -132,7 +134,7 @@ const servicePageData: Record<string, {
     whoFor: [
       'Commercial premises requiring BS 5839-1 systems',
       'HMOs and residential blocks under BS 5839-6',
-      'Landlords needing fire risk assessments and certificates',
+      'Landlords needing fire risk assessments arranged and remedial works delivered',
       'Schools, care homes, and healthcare facilities',
       'Domestic customers needing smoke alarm installs or smoke alarm repair',
       'Existing system owners switching to a BAFE-certified maintainer',
@@ -169,7 +171,7 @@ const servicePageData: Record<string, {
       },
       {
         question: 'Do you carry out fire risk assessments?',
-        answer: 'Yes. We carry out fire risk assessments for commercial premises and HMOs as a separate service alongside fire alarm installation and maintenance. The assessment identifies fire hazards, evaluates risk to occupants, and produces an action plan with prioritised recommendations. The Regulatory Reform (Fire Safety) Order 2005 requires the responsible person for any non-domestic premises to have a current fire risk assessment in place.',
+        answer: 'Yes. We arrange fire risk assessments for commercial premises, HMOs and blocks of flats through an accredited assessor we work with, and we carry out any resulting remedial works directly. The assessment identifies fire hazards, evaluates risk to occupants, and produces an action plan with prioritised recommendations. The Regulatory Reform (Fire Safety) Order 2005 requires the responsible person for any non-domestic premises to have a current fire risk assessment in place. See our <a href="/services/fire-risk-assessments" class="text-primary-600 hover:text-primary-700 font-medium">fire risk assessments service page</a> for the full delivery model.',
       },
       {
         question: 'Do you install and repair smoke alarms?',
@@ -271,6 +273,76 @@ const servicePageData: Record<string, {
       },
     ],
   },
+
+  'fire-risk-assessments': {
+    heroTagline: 'BAFE-Certified Fire Risk Assessments in Essex & London',
+    overview: [
+      'A fire risk assessment is a structured review of a building that identifies fire hazards, judges who is at risk, and sets out the actions needed to keep people safe. It is the foundation of fire safety compliance for most non-domestic and multi-occupied buildings.',
+      'Under the Regulatory Reform (Fire Safety) Order 2005, the responsible person for a premises must carry out and maintain a suitable and sufficient fire risk assessment. The responsible person is usually the employer, building owner, landlord or managing agent. The duty applies to non-domestic premises such as offices, shops and care homes, and to the communal areas of multi-occupied residential buildings such as blocks of flats and houses in multiple occupation.',
+      'Since Section 156 of the Building Safety Act 2022 took effect on 1 October 2023, the assessment must be recorded in full regardless of the size of the business or the number of staff. The previous threshold that exempted smaller employers has been removed. The same change raised the maximum fine for relevant offences to an unlimited amount.',
+      'If you control a commercial premises, let property, manage a block of flats, or are selling a flat in a converted building, you are very likely to need a current fire risk assessment.',
+      'We take an end-to-end approach that most providers cannot match. The assessment itself is carried out by an accredited fire risk assessor we work with. You receive a written report that records the hazards found, the people at risk, and a prioritised action plan.',
+      'Where that action plan identifies remedial work, J&L Security carries it out directly. We are an established Essex and Greater London fire and security company, certified by BAFE, and we install and maintain fire alarms, emergency lighting and related life-safety systems every day. That means one point of contact from the assessment through to a compliant building, rather than a report that leaves you to find separate contractors.',
+    ],
+    process: [
+      { step: 'Free Survey and Scope', detail: 'We visit the building, agree the scope of the assessment, and confirm the right route for landlords, businesses or flat sales.' },
+      { step: 'Accredited Assessment', detail: 'An accredited fire risk assessor we work with carries out the assessment, covering ignition sources, escape routes, detection, emergency lighting, fire doors and management arrangements.' },
+      { step: 'Written Report and Action Plan', detail: 'You receive a written report recording the hazards, the people at risk, and a prioritised action plan that tells you what to do and in what order.' },
+      { step: 'Remedial Works by J&L', detail: 'Where the action plan identifies work, we deliver it directly: fire alarms to BS 5839, emergency lighting to BS 5266, electrical testing and fire door works.' },
+      { step: 'Certification and Records', detail: 'Every remedial job is documented and certified, giving you a complete record for your insurer, managing agent or an enforcing authority.' },
+    ],
+    whoFor: [
+      'Landlords and HMO operators with communal areas and licensing duties',
+      'Freeholders and managing agents of blocks of flats',
+      'Offices, shops, restaurants and warehouses under the Fire Safety Order',
+      'Care homes and similar premises requiring higher-risk assessments',
+      'Property sellers in flats and converted houses, for conveyancing',
+      'Businesses of any size since the 2023 removal of the five-employee threshold',
+    ],
+    pricing: '',
+    faqs: [
+      {
+        question: 'Is a fire risk assessment a legal requirement in the UK?',
+        answer: 'For most non-domestic premises and the communal areas of multi-occupied residential buildings, yes. The Regulatory Reform (Fire Safety) Order 2005 requires the responsible person to have a suitable and sufficient fire risk assessment. Since Section 156 of the Building Safety Act 2022 took effect on 1 October 2023, it must be recorded in full whatever the size of the business.',
+      },
+      {
+        question: 'Who is the responsible person for a fire risk assessment?',
+        answer: 'The responsible person is whoever has control of the premises. This is usually the employer, owner, landlord or managing agent. In a building with more than one responsible person, they must cooperate and share relevant information.',
+      },
+      {
+        question: 'Do landlords need a fire risk assessment?',
+        answer: 'Landlords are responsible for fire safety in the areas they control, including the communal parts of blocks and houses in multiple occupation. Licensed HMOs have specific requirements covering escape routes and alarm systems. A single dwelling let to one household sits outside the Fire Safety Order, but as soon as there is a shared or communal area the building is back in scope, and many landlord insurance policies expect an assessment in any case.',
+      },
+      {
+        question: 'Do I need a fire risk assessment to sell my flat?',
+        answer: 'When you sell a flat in a converted house or a block, the buyer’s solicitor or mortgage lender will often ask for a current fire risk assessment of the building’s communal areas before the sale completes. It is best treated as a common transaction requirement rather than an automatic legal duty on the individual seller. We can carry out an assessment and any remedial work to help keep a sale on track.',
+      },
+      {
+        question: 'What is the difference between an EWS1 form and a fire risk assessment?',
+        answer: 'They are different documents for different purposes. A fire risk assessment is a life-safety review of the whole building required under the Fire Safety Order. An EWS1 form is a separate document used by mortgage lenders to assess the external wall system of certain buildings for valuation. One is not a substitute for the other, and a building may need both.',
+      },
+      {
+        question: 'How often should a fire risk assessment be reviewed?',
+        answer: 'It should be reviewed regularly and kept up to date, and again whenever the building, its use or its occupants change in a way that affects fire safety. Many responsible persons review annually as good practice.',
+      },
+      {
+        question: 'What happens if the assessment finds problems?',
+        answer: 'The report sets out a prioritised action plan. Because J&L Security carries out fire alarm, emergency lighting and electrical remedial work directly, we can turn that action plan into a scheduled, certified programme of works, so you are not left to source separate contractors.',
+      },
+      {
+        question: 'Who carries out the assessment, and what are they accredited to?',
+        answer: 'The assessment is carried out by an accredited fire risk assessor we work with, and the remedial work is carried out by J&L Security, a BAFE-certified fire and security company. We will confirm the assessor’s specific accreditation when we discuss your building.',
+      },
+      {
+        question: 'Which areas do you cover?',
+        answer: 'We are based in Brentwood and cover Essex and Greater London. Call us if you want to check we cover your postcode.',
+      },
+    ],
+    image: {
+      src: '/images/fire-risk-assessments/fra-service-hero.webp',
+      alt: 'Fire safety professional inspecting a UK building communal hallway with fire door, alarm panel and escape-route sign',
+    },
+  },
 };
 
 // ─── Page component ──────────────────────────────────────────────────────────
@@ -281,9 +353,9 @@ export async function generateStaticParams() {
   return services.map((s) => ({ service: s.slug }));
 }
 
-const metaOverrides: Record<string, { description?: string; keywords?: string[] }> = {
+const metaOverrides: Record<string, { description?: string; keywords?: string[]; title?: string }> = {
   'fire-alarms': {
-    description: 'BAFE-certified fire alarm installation and servicing across Essex and Greater London. BS 5839-1 commercial systems, BS 5839-6 domestic and HMO. Fire risk assessments, smoke alarm install and repair, 6-monthly servicing. Free survey.',
+    description: 'BAFE-certified fire alarm installation and servicing across Essex and Greater London. BS 5839-1 commercial systems, BS 5839-6 domestic and HMO. Fire risk assessments arranged and remedial works delivered, smoke alarm install and repair, 6-monthly servicing. Free survey.',
     keywords: [
       'fire alarm installation',
       'BAFE fire alarm maintainers',
@@ -296,6 +368,23 @@ const metaOverrides: Record<string, { description?: string; keywords?: string[] 
       'BS 5839-6',
       'commercial fire alarm Essex',
       'HMO fire alarm London',
+      'J&L Security',
+    ],
+  },
+  'fire-risk-assessments': {
+    title: 'Fire Risk Assessments in Essex & London | J&L Security',
+    description: 'Accredited fire risk assessments for landlords, HMOs and businesses across Essex and London. We assess, then carry out the alarm and lighting remedials. Free survey.',
+    keywords: [
+      'fire risk assessment Essex',
+      'fire risk assessment London',
+      'fire risk assessment near me',
+      'fire risk assessment HMO',
+      'fire risk assessment landlord',
+      'fire risk assessment for business',
+      'fire risk assessment for flat sale',
+      'BAFE fire risk assessment',
+      'fire risk assessment Brentwood',
+      'fire risk assessment Romford',
       'J&L Security',
     ],
   },
@@ -319,15 +408,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       'security systems Essex',
       'J&L Security',
     ];
+  const title = override?.title ?? `${ext?.heroTagline ?? service.name}`;
+  const ogImageUrl = ext?.image ? `${COMPANY_INFO.website}${ext.image.src}` : undefined;
+  const ogImages = ogImageUrl
+    ? [{ url: ogImageUrl, width: 1600, height: 900, alt: ext?.image?.alt ?? service.name }]
+    : undefined;
   return {
-    title: `${ext?.heroTagline ?? service.name}`,
+    title,
     description,
     keywords,
     alternates: { canonical: `${COMPANY_INFO.website}/services/${serviceSlug}` },
     openGraph: {
-      title: `${ext?.heroTagline ?? service.name}`,
+      title,
       description: override?.description ?? `${service.description}. Free surveys across Essex & Greater London.`,
+      url: `${COMPANY_INFO.website}/services/${serviceSlug}`,
+      type: 'website',
+      images: ogImages,
     },
+    twitter: ogImageUrl
+      ? {
+          card: 'summary_large_image',
+          title,
+          description,
+          images: [ogImageUrl],
+        }
+      : undefined,
   };
 }
 
@@ -422,6 +527,19 @@ export default async function ServicePage({ params }: Props) {
       {ext && (
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {ext.image && (
+              <div className="mb-12 rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={ext.image.src}
+                  alt={ext.image.alt}
+                  width={1600}
+                  height={900}
+                  className="w-full h-auto block"
+                  loading="eager"
+                />
+              </div>
+            )}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div className="lg:col-span-2">
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">{service.name} from J&L Security</h2>
@@ -478,7 +596,7 @@ export default async function ServicePage({ params }: Props) {
                 </div>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Installation Process</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">{serviceSlug === 'fire-risk-assessments' ? 'Our Process' : 'Our Installation Process'}</h2>
                 <ol className="space-y-4">
                   {ext.process.map((step, i) => (
                     <li key={i} className="flex gap-4">
@@ -542,7 +660,10 @@ export default async function ServicePage({ params }: Props) {
               {ext.faqs.map((faq, i) => (
                 <div key={i} className="bg-white rounded-xl border border-gray-200 p-6">
                   <h3 className="font-semibold text-gray-900 mb-2">{faq.question}</h3>
-                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                  <p
+                    className="text-gray-600 leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: faq.answer }}
+                  />
                 </div>
               ))}
             </div>

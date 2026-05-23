@@ -372,7 +372,7 @@ const metaOverrides: Record<string, { description?: string; keywords?: string[];
     ],
   },
   'fire-risk-assessments': {
-    title: 'Fire Risk Assessments in Essex & London | J&L Security',
+    title: 'Fire Risk Assessments in Essex & London',
     description: 'Accredited fire risk assessments for landlords, HMOs and businesses across Essex and London. We assess, then carry out the alarm and lighting remedials. Free survey.',
     keywords: [
       'fire risk assessment Essex',

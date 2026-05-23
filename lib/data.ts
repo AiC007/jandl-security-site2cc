@@ -53,7 +53,7 @@ export const services: Service[] = [
     description: 'Accredited fire risk assessments with in-house remedial works across Essex and Greater London',
     category: 'fire',
     features: [
-      'Accredited fire risk assessors',
+      'Assessor holds AIFSM, TMIFPO and NEBOSH',
       'Communal areas, escape routes and fire doors assessed',
       'Written report with a prioritised action plan',
       'Remedial works carried out in-house',
@@ -64,7 +64,7 @@ export const services: Service[] = [
       'One provider from assessment to completed works',
       'Evidence for insurers and licensing',
       'Faster route to a compliant building',
-      'Local, BAFE-certified company'
+      'J&L are BAFE-accredited for fire alarm installation and maintenance'
     ]
   }
 ];

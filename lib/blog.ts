@@ -1045,7 +1045,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Do I need a fire risk assessment if I have a fire alarm fitted?</h3>
 
-<p>Yes. A fire risk assessment is a separate legal requirement under the Regulatory Reform (Fire Safety) Order 2005 for any non-domestic premises and for the common parts of HMOs and blocks of flats. The fire risk assessment is what determines the appropriate fire alarm category in the first place, so it sits ahead of the fire alarm specification rather than being replaced by it. We arrange fire risk assessments through an accredited assessor we work with and carry out any resulting remedial works directly. See our <a href="/services/fire-risk-assessments">fire risk assessments service page</a>.</p>
+<p>Yes. A fire risk assessment is a separate legal requirement under the Regulatory Reform (Fire Safety) Order 2005 for any non-domestic premises and for the common parts of HMOs and blocks of flats. The fire risk assessment is what determines the appropriate fire alarm category in the first place, so it sits ahead of the fire alarm specification rather than being replaced by it. We arrange fire risk assessments through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and we carry out any resulting remedial works directly. J&L Security is BAFE-accredited for the installation and maintenance of fire alarms. See our <a href="/services/fire-risk-assessments">fire risk assessments service page</a>.</p>
 
 <h3>What is the difference between BAFE and SSAIB?</h3>
 
@@ -1070,7 +1070,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: 'Do I need a fire risk assessment if I have a fire alarm fitted?',
-        answer: 'Yes. A fire risk assessment is a separate legal requirement under the Regulatory Reform (Fire Safety) Order 2005 for any non-domestic premises and for the common parts of HMOs and blocks of flats. The fire risk assessment is what determines the appropriate fire alarm category in the first place, so it sits ahead of the fire alarm specification rather than being replaced by it. We arrange fire risk assessments through an accredited assessor we work with and carry out any resulting remedial works directly.'
+        answer: 'Yes. A fire risk assessment is a separate legal requirement under the Regulatory Reform (Fire Safety) Order 2005 for any non-domestic premises and for the common parts of HMOs and blocks of flats. The fire risk assessment is what determines the appropriate fire alarm category in the first place, so it sits ahead of the fire alarm specification rather than being replaced by it. We arrange fire risk assessments through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and we carry out any resulting remedial works directly. J&L Security is BAFE-accredited for the installation and maintenance of fire alarms.'
       },
       {
         question: 'What is the difference between BAFE and SSAIB?',
@@ -1651,7 +1651,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Landlord Fire Risk Assessment Guide (Essex & London 2026)',
     description: 'A clear guide to fire risk assessment duties for landlords and HMO operators in Essex and London. Who needs one, what it covers, HMO licensing, and what to do when actions are found.',
     datePublished: '2026-05-23',
-    dateModified: '2026-05-23',
+    dateModified: '2026-05-23T12:00:00Z',
     keywords: ['fire risk assessment landlord', 'fire risk assessment HMO', 'landlord fire safety obligations', 'fire risk assessment rented property', 'HMO fire risk assessment Essex'],
     wordCount: 1240,
     image: {
@@ -1720,7 +1720,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Most assessments identify at least some remedial work. This is normal and is the point of the exercise. The risk for landlords is treating the report as the finish line rather than the start of the work.</p>
 
-<p>This is where dealing with a single provider helps. J&L Security arranges the assessment through an accredited assessor, and then carries out the remedial work directly: fire alarm installation and upgrades to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">the relevant BS 5839 standard</a>, emergency lighting, electrical testing, and fire door works. You get one point of contact from the assessment through to a building that meets its action plan, rather than a report that leaves you chasing separate trades. You can see the full service on our <a href="/services/fire-risk-assessments">fire risk assessments page</a> and our <a href="/services/fire-alarms">fire alarms page</a>.</p>
+<p>This is where dealing with a single provider helps. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and then carries out the remedial work directly: fire alarm installation and upgrades to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">the relevant BS 5839 standard</a> (we are BAFE-accredited for fire alarm installation and maintenance), emergency lighting, electrical testing, and fire door works. You get one point of contact from the assessment through to a building that meets its action plan, rather than a report that leaves you chasing separate trades. You can see the full service on our <a href="/services/fire-risk-assessments">fire risk assessments page</a> and our <a href="/services/fire-alarms">fire alarms page</a>.</p>
 
 <p>We work across Essex and Greater London, with local teams covering <a href="/locations/brentwood">Brentwood</a>, <a href="/locations/romford">Romford</a>, Chelmsford, Basildon and the surrounding areas.</p>
 
@@ -1752,7 +1752,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: 'Can one company do the assessment and the work?',
-        answer: 'Yes. J&L Security arranges the assessment through an accredited assessor and carries out the resulting fire alarm, emergency lighting and electrical remedial work directly across Essex and Greater London.',
+        answer: 'Yes. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and carries out the resulting fire alarm, emergency lighting and electrical remedial work directly across Essex and Greater London. J&L Security is BAFE-accredited for the installation and maintenance of fire alarms.',
       },
     ],
   },
@@ -1762,7 +1762,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Fire Risk Assessment When Selling a Flat (2026 Guide)',
     description: 'Selling a flat in a converted house or a block? Here is why the buyer’s solicitor or lender asks for a fire risk assessment, how it differs from an EWS1 form, who is responsible, and how to avoid a stalled sale.',
     datePublished: '2026-05-23',
-    dateModified: '2026-05-23',
+    dateModified: '2026-05-23T12:00:00Z',
     keywords: ['fire risk assessment for flat sale', 'fire risk assessment converted house', 'fire risk assessment to sell flat', 'EWS1 vs fire risk assessment', 'communal fire risk assessment'],
     wordCount: 930,
     image: {
@@ -1820,7 +1820,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>How J&L Security can help</h2>
 
-<p>If you are a freeholder, a management company, or a group of leaseholders who need a communal fire risk assessment arranged quickly, J&L Security can help. We arrange the assessment through an accredited assessor and, where it identifies work, we carry out the remedials directly: fire alarm, emergency lighting, electrical testing and fire door works. That single-provider route is usually the fastest way to get from a request on a conveyancing enquiry to a building that is demonstrably compliant.</p>
+<p>If you are a freeholder, a management company, or a group of leaseholders who need a communal fire risk assessment arranged quickly, J&L Security can help. We arrange the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and, where it identifies work, we carry out the remedials directly: fire alarm (we are BAFE-accredited for fire alarm installation and maintenance), emergency lighting, electrical testing and fire door works. That single-provider route is usually the fastest way to get from a request on a conveyancing enquiry to a building that is demonstrably compliant.</p>
 
 <p>We cover Essex and Greater London. See our <a href="/services/fire-risk-assessments">fire risk assessments page</a>, or call 0204 538 5925 or 0208 220 4770. You can also <a href="/contact">request a call back</a>.</p>
 `,
@@ -1849,7 +1849,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Does My Business Need a Fire Risk Assessment? (2026)',
     description: 'A practical guide to fire risk assessment duties for businesses in Essex and London. Who is the responsible person, what the 2023 law change means for small firms, what is assessed, and the consequences of getting it wrong.',
     datePublished: '2026-05-23',
-    dateModified: '2026-05-23',
+    dateModified: '2026-05-23T12:00:00Z',
     keywords: ['fire risk assessment for business', 'fire risk assessment office', 'fire risk assessment care home', 'fire risk assessment required by law', 'commercial fire risk assessment Essex'],
     wordCount: 730,
     image: {
@@ -1901,7 +1901,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The single-provider advantage</h2>
 
-<p>A fire risk assessment that simply produces a report is only half the job. The value comes from acting on the action plan. J&L Security arranges the assessment through an accredited assessor, then carries out the resulting work directly: fire alarm installation and servicing to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839</a>, <a href="/services/security-lighting">emergency lighting</a>, electrical testing, and fire door works. For a busy business owner, dealing with one company from assessment to compliant premises removes the burden of coordinating several trades.</p>
+<p>A fire risk assessment that simply produces a report is only half the job. The value comes from acting on the action plan. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, then carries out the resulting work directly: fire alarm installation and servicing to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839</a> (we are BAFE-accredited for the installation and maintenance of fire alarms), <a href="/services/security-lighting">emergency lighting</a>, electrical testing, and fire door works. For a busy business owner, dealing with one company from assessment to compliant premises removes the burden of coordinating several trades.</p>
 
 <p>We work with offices, retail, hospitality, warehousing and care settings across Essex and Greater London. See our <a href="/services/fire-risk-assessments">fire risk assessments page</a> and our <a href="/services/fire-alarms">fire alarms page</a>, or call 0204 538 5925 or 0208 220 4770 to discuss your premises. You can also <a href="/contact">request a call back</a>.</p>
 `,
@@ -1920,7 +1920,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: 'Can J&L Security do both the assessment and the remedial work?',
-        answer: 'Yes. We arrange the assessment through an accredited assessor and carry out the resulting alarm, emergency lighting and electrical work directly across Essex and Greater London.',
+        answer: 'Yes. We arrange the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and carry out the resulting alarm, emergency lighting and electrical work directly across Essex and Greater London. J&L Security is BAFE-accredited for the installation and maintenance of fire alarms.',
       },
     ],
   },
@@ -1930,7 +1930,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'After a Fire Risk Assessment: Remedial Works Explained (2026)',
     description: 'Your fire risk assessment is done and the report lists actions. Here is how to read the action plan, the remedial works that commonly follow, how they are prioritised, and why using one provider is simpler.',
     datePublished: '2026-05-23',
-    dateModified: '2026-05-23',
+    dateModified: '2026-05-23T12:00:00Z',
     keywords: ['fire safety remedial works', 'fire alarm upgrade after FRA', 'fire risk assessment action plan', 'what happens after a fire risk assessment', 'fire risk assessment remedial works Essex'],
     wordCount: 800,
     image: {
@@ -1984,7 +1984,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The awkward part of the post-assessment phase is coordination. A typical action plan can touch the alarm system, the emergency lighting, the electrics and the fire doors, which can mean four different trades, four quotes, and four sets of paperwork to chase.</p>
 
-<p>J&L Security removes that. We arrange the assessment through an accredited assessor and then carry out the remedial works directly, across alarms, emergency lighting, electrical testing and fire doors, with the certification handled in one place. You deal with one company from the report through to a building that meets its action plan. See our <a href="/services/fire-risk-assessments">fire risk assessments page</a> and <a href="/services/fire-alarms">fire alarms page</a>.</p>
+<p>J&L Security removes that. We arrange the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and then carry out the remedial works directly, across alarms (we are BAFE-accredited for fire alarm installation and maintenance), emergency lighting, electrical testing and fire doors, with the certification handled in one place. You deal with one company from the report through to a building that meets its action plan. See our <a href="/services/fire-risk-assessments">fire risk assessments page</a> and <a href="/services/fire-alarms">fire alarms page</a>.</p>
 
 <p>We cover Essex and Greater London. To turn an action plan into completed, certified work, call 0204 538 5925 or 0208 220 4770, or <a href="/contact">request a call back</a>.</p>
 `,
@@ -2003,7 +2003,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: 'Can J&L Security carry out all the remedial works?',
-        answer: 'Yes. We handle fire alarms, emergency lighting, electrical testing and fire door works directly across Essex and Greater London, with certification in one place, after arranging the assessment through an accredited assessor.',
+        answer: 'Yes. We handle fire alarms, emergency lighting, electrical testing and fire door works directly across Essex and Greater London, with certification in one place, after arranging the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH. J&L Security is BAFE-accredited for the installation and maintenance of fire alarms.',
       },
     ],
   }

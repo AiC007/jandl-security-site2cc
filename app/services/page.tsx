@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Shield, Camera, Flame, Lock, Lightbulb, CheckCircle, ArrowRight, HelpCircle } from 'lucide-react';
+import { Shield, Camera, Flame, Lock, Lightbulb, CheckCircle, ArrowRight, HelpCircle, ClipboardCheck } from 'lucide-react';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
 import { generateServiceSchema, generateFAQPageSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { COMPANY_INFO } from '@/lib/utils';
@@ -119,6 +119,42 @@ const serviceDetails = [
       { name: 'Emergency Light Testing',        href: '/emergency-lighting-testing/walthamstow' },
       { name: 'Lighting Maintenance',           href: '/security-lighting-maintenance/upminster' },
     ]
+  },
+  {
+    icon: ClipboardCheck,
+    name: 'Fire Risk Assessments',
+    slug: 'fire-risk-assessments',
+    description: 'Accredited fire risk assessments for landlords, HMOs, businesses and property sellers, with remedial works delivered in-house',
+    features: [
+      'Accredited fire risk assessors',
+      'Communal areas, escape routes and fire doors assessed',
+      'Written report with a prioritised action plan',
+      'Remedial works carried out by J&L Security',
+      'BAFE-certified fire and security company',
+      'Essex and Greater London coverage',
+    ],
+    process: [
+      'Free survey and scope',
+      'Accredited assessment',
+      'Written report and prioritised action plan',
+      'Remedial works by J&L Security',
+      'Certification and records',
+    ],
+    benefits: [
+      'Meets the Fire Safety Order duty',
+      'One provider from assessment to completed works',
+      'Evidence for insurers and licensing',
+      'Faster route to a compliant building',
+      'Local, BAFE-certified company',
+    ],
+    priceRange: '',
+    childPages: [
+      { name: 'Landlord and HMO Fire Risk Assessments', href: '/blog/landlord-fire-risk-assessment-essex-london' },
+      { name: 'Selling a Flat: Why a FRA is Needed',    href: '/blog/fire-risk-assessment-selling-flat' },
+      { name: 'Does My Business Need a FRA?',           href: '/blog/business-fire-risk-assessment-guide' },
+      { name: 'After Your FRA: Remedial Works',         href: '/blog/after-fire-risk-assessment-remedial-works' },
+    ],
+    specialNote: 'An accredited fire risk assessor we work with carries out the assessment. Where the report identifies remedial work, J&L Security delivers it directly: alarms, emergency lighting, electrical testing and fire door works.'
   }
 ];
 

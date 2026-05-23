@@ -45,6 +45,27 @@ export const services: Service[] = [
     category: 'lighting',
     features: ['PIR sensors', 'LED technology', 'Timer controls', 'Emergency backup', 'Weather resistant'],
     benefits: ['Crime deterrent', 'Safe navigation', 'Energy efficient', 'Automatic operation', 'Long lifespan']
+  },
+  {
+    id: 'fire-risk-assessments',
+    name: 'Fire Risk Assessments',
+    slug: 'fire-risk-assessments',
+    description: 'Accredited fire risk assessments with in-house remedial works across Essex and Greater London',
+    category: 'fire',
+    features: [
+      'Accredited fire risk assessors',
+      'Communal areas, escape routes and fire doors assessed',
+      'Written report with a prioritised action plan',
+      'Remedial works carried out in-house',
+      'Essex and Greater London coverage'
+    ],
+    benefits: [
+      'Meets the Fire Safety Order duty',
+      'One provider from assessment to completed works',
+      'Evidence for insurers and licensing',
+      'Faster route to a compliant building',
+      'Local, BAFE-certified company'
+    ]
   }
 ];
 

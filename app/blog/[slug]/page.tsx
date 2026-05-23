@@ -20,6 +20,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = getBlogPost(slug);
   if (!post) return {};
 
+  const ogImageUrl = post.image ? `${COMPANY_INFO.website}${post.image.src}` : undefined;
+  const ogImages = ogImageUrl
+    ? [{ url: ogImageUrl, width: 1600, height: 900, alt: post.image?.alt ?? post.title }]
+    : undefined;
+
   return {
     title: post.metaTitle,
     description: post.description,
@@ -32,11 +37,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       publishedTime: post.datePublished,
       modifiedTime: post.dateModified,
       authors: [COMPANY_INFO.name],
+      images: ogImages,
     },
     twitter: {
       card: 'summary_large_image',
       title: post.metaTitle,
       description: post.description,
+      images: ogImageUrl ? [ogImageUrl] : undefined,
     },
     alternates: {
       canonical: `${COMPANY_INFO.website}/blog/${post.slug}`,
@@ -112,6 +119,19 @@ export default async function BlogPostPage({ params }: PageProps) {
       {/* Article Content */}
       <article className="py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {post.image && (
+            <div className="mb-10 rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={post.image.src}
+                alt={post.image.alt}
+                width={1600}
+                height={900}
+                className="w-full h-auto block"
+                loading="eager"
+              />
+            </div>
+          )}
           <div
             className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-a:text-primary-600 prose-a:font-medium hover:prose-a:text-primary-700 prose-strong:text-gray-900 prose-table:border-collapse prose-th:bg-gray-100 prose-th:px-4 prose-th:py-2 prose-th:text-left prose-th:border prose-th:border-gray-300 prose-td:px-4 prose-td:py-2 prose-td:border prose-td:border-gray-300"
             dangerouslySetInnerHTML={{ __html: post.content }}

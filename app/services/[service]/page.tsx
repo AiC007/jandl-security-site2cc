@@ -120,7 +120,7 @@ const servicePageData: Record<string, {
   'fire-alarms': {
     heroTagline: 'BAFE-Certified Fire Alarm Installation, Servicing & Risk Assessments',
     overview: [
-      'J&L Security is a BAFE-certified fire alarm maintainer covering Essex and Greater London. We design, install, commission, and service commercial fire alarm systems to BS 5839-1 and domestic and HMO fire alarm systems to BS 5839-6. We also arrange fire risk assessments through an accredited assessor we work with, deliver any resulting remedial works ourselves, and provide smoke alarm installs and repair plus 6-monthly fire alarm servicing under contract.',
+      'J&L Security is a BAFE-accredited fire alarm installer and maintainer covering Essex and Greater London. We design, install, commission, and service commercial fire alarm systems to BS 5839-1 and domestic and HMO fire alarm systems to BS 5839-6. We also arrange fire risk assessments through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, deliver any resulting remedial works ourselves, and provide smoke alarm installs and repair plus 6-monthly fire alarm servicing under contract.',
       'We install both conventional and addressable systems from C-Tech, Fike, Haes, Kentech, Advanced, EDA, EMS, Smartcell, and Zeta. Every installation is documented, certified at commissioning, and supported with a service contract that keeps the system compliant with BS 5839 and the Regulatory Reform (Fire Safety) Order 2005.',
     ],
     process: [
@@ -171,7 +171,7 @@ const servicePageData: Record<string, {
       },
       {
         question: 'Do you carry out fire risk assessments?',
-        answer: 'Yes. We arrange fire risk assessments for commercial premises, HMOs and blocks of flats through an accredited assessor we work with, and we carry out any resulting remedial works directly. The assessment identifies fire hazards, evaluates risk to occupants, and produces an action plan with prioritised recommendations. The Regulatory Reform (Fire Safety) Order 2005 requires the responsible person for any non-domestic premises to have a current fire risk assessment in place. See our <a href="/services/fire-risk-assessments" class="text-primary-600 hover:text-primary-700 font-medium">fire risk assessments service page</a> for the full delivery model.',
+        answer: 'Yes. We arrange fire risk assessments for commercial premises, HMOs and blocks of flats through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and we carry out any resulting remedial works directly. The assessment identifies fire hazards, evaluates risk to occupants, and produces an action plan with prioritised recommendations. The Regulatory Reform (Fire Safety) Order 2005 requires the responsible person for any non-domestic premises to have a current fire risk assessment in place. J&L Security is BAFE-accredited for the installation and maintenance of fire alarms. See our <a href="/services/fire-risk-assessments" class="text-primary-600 hover:text-primary-700 font-medium">fire risk assessments service page</a> for the full delivery model.',
       },
       {
         question: 'Do you install and repair smoke alarms?',
@@ -275,18 +275,18 @@ const servicePageData: Record<string, {
   },
 
   'fire-risk-assessments': {
-    heroTagline: 'BAFE-Certified Fire Risk Assessments in Essex & London',
+    heroTagline: 'Accredited Fire Risk Assessments in Essex & London',
     overview: [
       'A fire risk assessment is a structured review of a building that identifies fire hazards, judges who is at risk, and sets out the actions needed to keep people safe. It is the foundation of fire safety compliance for most non-domestic and multi-occupied buildings.',
       'Under the Regulatory Reform (Fire Safety) Order 2005, the responsible person for a premises must carry out and maintain a suitable and sufficient fire risk assessment. The responsible person is usually the employer, building owner, landlord or managing agent. The duty applies to non-domestic premises such as offices, shops and care homes, and to the communal areas of multi-occupied residential buildings such as blocks of flats and houses in multiple occupation.',
       'Since Section 156 of the Building Safety Act 2022 took effect on 1 October 2023, the assessment must be recorded in full regardless of the size of the business or the number of staff. The previous threshold that exempted smaller employers has been removed. The same change raised the maximum fine for relevant offences to an unlimited amount.',
       'If you control a commercial premises, let property, manage a block of flats, or are selling a flat in a converted building, you are very likely to need a current fire risk assessment.',
-      'We take an end-to-end approach that most providers cannot match. The assessment itself is carried out by an accredited fire risk assessor we work with. You receive a written report that records the hazards found, the people at risk, and a prioritised action plan.',
-      'Where that action plan identifies remedial work, J&L Security carries it out directly. We are an established Essex and Greater London fire and security company, certified by BAFE, and we install and maintain fire alarms, emergency lighting and related life-safety systems every day. That means one point of contact from the assessment through to a compliant building, rather than a report that leaves you to find separate contractors.',
+      'We take an end-to-end approach that most providers cannot match. The assessment itself is carried out by a competent fire risk assessor we work with, who holds AIFSM, TMIFPO and NEBOSH accreditations. You receive a written report that records the hazards found, the people at risk, and a prioritised action plan.',
+      'Where that action plan identifies remedial work, J&L Security carries it out directly. We are an established Essex and Greater London fire and security company, BAFE-accredited for the installation and maintenance of fire alarms, and we install and maintain fire alarms, emergency lighting and related life-safety systems every day. That means one point of contact from the assessment through to a compliant building, rather than a report that leaves you to find separate contractors.',
     ],
     process: [
       { step: 'Free Survey and Scope', detail: 'We visit the building, agree the scope of the assessment, and confirm the right route for landlords, businesses or flat sales.' },
-      { step: 'Accredited Assessment', detail: 'An accredited fire risk assessor we work with carries out the assessment, covering ignition sources, escape routes, detection, emergency lighting, fire doors and management arrangements.' },
+      { step: 'Accredited Assessment', detail: 'The fire risk assessor we work with (AIFSM, TMIFPO, NEBOSH) carries out the assessment, covering ignition sources, escape routes, detection, emergency lighting, fire doors and management arrangements.' },
       { step: 'Written Report and Action Plan', detail: 'You receive a written report recording the hazards, the people at risk, and a prioritised action plan that tells you what to do and in what order.' },
       { step: 'Remedial Works by J&L', detail: 'Where the action plan identifies work, we deliver it directly: fire alarms to BS 5839, emergency lighting to BS 5266, electrical testing and fire door works.' },
       { step: 'Certification and Records', detail: 'Every remedial job is documented and certified, giving you a complete record for your insurer, managing agent or an enforcing authority.' },
@@ -331,7 +331,7 @@ const servicePageData: Record<string, {
       },
       {
         question: 'Who carries out the assessment, and what are they accredited to?',
-        answer: 'The assessment is carried out by an accredited fire risk assessor we work with, and the remedial work is carried out by J&L Security, a BAFE-certified fire and security company. We will confirm the assessor’s specific accreditation when we discuss your building.',
+        answer: 'The assessment is carried out by a competent fire risk assessor we work with, who holds AIFSM (Associate Member of the Institute of Fire Safety Managers), TMIFPO (Technician Member of the Institution of Fire Engineers / Fire Prevention Officers) and NEBOSH qualifications. The remedial work is carried out by J&L Security, which is BAFE-accredited for the installation and maintenance of fire alarms.',
       },
       {
         question: 'Which areas do you cover?',

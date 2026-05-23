@@ -126,11 +126,11 @@ const serviceDetails = [
     slug: 'fire-risk-assessments',
     description: 'Accredited fire risk assessments for landlords, HMOs, businesses and property sellers, with remedial works delivered in-house',
     features: [
-      'Accredited fire risk assessors',
+      'Assessor holds AIFSM, TMIFPO and NEBOSH',
       'Communal areas, escape routes and fire doors assessed',
       'Written report with a prioritised action plan',
       'Remedial works carried out by J&L Security',
-      'BAFE-certified fire and security company',
+      'J&L are BAFE-accredited for fire alarm installation and maintenance',
       'Essex and Greater London coverage',
     ],
     process: [
@@ -154,7 +154,7 @@ const serviceDetails = [
       { name: 'Does My Business Need a FRA?',           href: '/blog/business-fire-risk-assessment-guide' },
       { name: 'After Your FRA: Remedial Works',         href: '/blog/after-fire-risk-assessment-remedial-works' },
     ],
-    specialNote: 'An accredited fire risk assessor we work with carries out the assessment. Where the report identifies remedial work, J&L Security delivers it directly: alarms, emergency lighting, electrical testing and fire door works.'
+    specialNote: 'The fire risk assessor we work with holds AIFSM, TMIFPO and NEBOSH accreditations and carries out the assessment. Where the report identifies remedial work, J&L Security delivers it directly: fire alarms (we are BAFE-accredited for fire alarm installation and maintenance), emergency lighting, electrical testing and fire door works.'
   }
 ];
 

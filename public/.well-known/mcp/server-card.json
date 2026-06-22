@@ -1,0 +1,49 @@
+{
+  "serverInfo": {
+    "name": "jandl-security",
+    "title": "J&L Security",
+    "version": "1.0.0"
+  },
+  "description": "Read-only MCP server for J&L Security, a security systems installer in Essex and Greater London (established 2011, SSAIB, CHAS, FIA and BAFE accredited). Tools cover company contact details, services, service-area coverage, indicative pricing and published guides.",
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://jandlsecurity.co.uk/mcp"
+  },
+  "endpoint": "https://jandlsecurity.co.uk/mcp",
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    }
+  },
+  "authentication": {
+    "type": "none"
+  },
+  "tools": [
+    {
+      "name": "get_company_info",
+      "description": "Contact details, accreditations, opening hours and service area for J&L Security."
+    },
+    {
+      "name": "list_services",
+      "description": "List the security services J&L Security installs and maintains."
+    },
+    {
+      "name": "get_service_details",
+      "description": "Features and benefits of a specific J&L Security service."
+    },
+    {
+      "name": "check_service_area",
+      "description": "Check whether J&L Security covers a given town or UK postcode."
+    },
+    {
+      "name": "get_pricing_guide",
+      "description": "Indicative installed costs for alarms, CCTV and fire systems."
+    },
+    {
+      "name": "list_blog_articles",
+      "description": "List J&L Security guide articles with their URLs."
+    }
+  ],
+  "documentation": "https://jandlsecurity.co.uk/llms-full.txt"
+}

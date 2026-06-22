@@ -1,5 +1,26 @@
 # Agent Readiness Implementation (22 June 2026)
 
+## Result (live re-scan, 22 June 2026)
+
+After deploy, a live re-scan via the isitagentready.com API moved the site from
+**Level 1 (Basic Web Presence), original score 21/100**, to **Level 5
+(Agent-Native)**, the highest level (the scanner reports no level beyond it).
+
+| Category | Before | After |
+|---|---|---|
+| Discoverability | 2/4 | 3/4 (only DNS-AID outstanding, a registrar task) |
+| Content | 0/1 | 1/1 |
+| Bot Access Control | 1/2 | 2/2 (Web Bot Auth is N/A and not counted) |
+| Discovery (API/MCP/Skill) | 0/7 | 4/8 (OAuth x3 and WebMCP outstanding) |
+| Commerce | n/a | 0/0 (not applicable) |
+
+Outstanding checks are all either not applicable to a passive marketing site
+(OAuth discovery, OAuth protected resource, auth.md, Web Bot Auth, commerce) or
+require non-code action (DNS-AID at the registrar). WebMCP is an experimental
+browser API; the server-side MCP server at `/mcp` is the standard equivalent and
+is implemented. The A2A agent card needed a follow-up fix (PR #10): each
+`supportedInterfaces` entry requires a `url` field, not `serviceUrl`.
+
 ## Context
 
 Cloudflare's scanner at isitagentready.com scored the live site at 21/100 (Level 1,

@@ -8,10 +8,11 @@
     "url": "https://jandlsecurity.co.uk"
   },
   "documentationUrl": "https://jandlsecurity.co.uk/llms-full.txt",
+  "preferredTransport": "JSONRPC",
   "supportedInterfaces": [
     {
-      "serviceUrl": "https://jandlsecurity.co.uk/mcp",
-      "transportProtocol": "http",
+      "url": "https://jandlsecurity.co.uk/mcp",
+      "transport": "JSONRPC",
       "description": "Model Context Protocol server (Streamable HTTP, JSON-RPC 2.0)."
     }
   ],

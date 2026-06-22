@@ -42,6 +42,17 @@ const nextConfig: NextConfig = {
             key: 'Permissions-Policy',
             value: 'geolocation=(), microphone=(), camera=()'
           },
+          {
+            // Resource discovery for AI agents (RFC 8288 Link headers).
+            // Points to the API catalog, MCP server card and LLM context files.
+            key: 'Link',
+            value: [
+              '</.well-known/api-catalog>; rel="api-catalog"',
+              '</.well-known/mcp/server-card.json>; rel="service-desc"; type="application/json"',
+              '</llms-full.txt>; rel="service-doc"; type="text/plain"',
+              '</llms.txt>; rel="describedby"; type="text/plain"'
+            ].join(', ')
+          },
         ],
       },
       {
@@ -71,6 +82,22 @@ const nextConfig: NextConfig = {
           }
         ],
       }
+    ];
+  },
+
+  // Expose agent discovery and MCP endpoints at their canonical paths.
+  // The handlers live under /api so they build reliably; these rewrites map the
+  // spec-required public URLs onto them.
+  async rewrites() {
+    return [
+      {
+        source: '/.well-known/api-catalog',
+        destination: '/api/wellknown/api-catalog',
+      },
+      {
+        source: '/mcp',
+        destination: '/api/mcp',
+      },
     ];
   },
 

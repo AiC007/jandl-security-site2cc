@@ -1,0 +1,47 @@
+{
+  "name": "J&L Security",
+  "version": "1.0.0",
+  "description": "Agent interface for J&L Security, a security systems installer covering Essex and Greater London since 2011. Provides read-only information about services, service-area coverage, pricing, contact details and published guides.",
+  "url": "https://jandlsecurity.co.uk",
+  "provider": {
+    "organization": "J&L Security",
+    "url": "https://jandlsecurity.co.uk"
+  },
+  "documentationUrl": "https://jandlsecurity.co.uk/llms-full.txt",
+  "supportedInterfaces": [
+    {
+      "serviceUrl": "https://jandlsecurity.co.uk/mcp",
+      "transportProtocol": "http",
+      "description": "Model Context Protocol server (Streamable HTTP, JSON-RPC 2.0)."
+    }
+  ],
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain"],
+  "capabilities": ["tools"],
+  "skills": [
+    {
+      "id": "company-info",
+      "name": "Company information",
+      "description": "Contact details, accreditations, opening hours and service area for J&L Security.",
+      "tags": ["contact", "about", "security"]
+    },
+    {
+      "id": "service-lookup",
+      "name": "Service lookup",
+      "description": "List and describe the security services J&L installs: burglar alarms, CCTV, fire alarms, access control, security lighting and fire risk assessments.",
+      "tags": ["services", "security", "fire", "cctv"]
+    },
+    {
+      "id": "service-area-check",
+      "name": "Service-area check",
+      "description": "Check whether J&L Security covers a given town or UK postcode in Essex or Greater London.",
+      "tags": ["coverage", "location", "postcode"]
+    },
+    {
+      "id": "pricing-guide",
+      "name": "Pricing guide",
+      "description": "Indicative installed costs for alarms, CCTV and fire systems. Exact quotes follow a free survey.",
+      "tags": ["pricing", "cost", "quote"]
+    }
+  ]
+}

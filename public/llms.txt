@@ -83,4 +83,12 @@ These are starting prices excluding VAT. Final quotations follow a free site sur
 - [Contact](https://jandlsecurity.co.uk/contact)
 - [Full Details for LLMs](https://jandlsecurity.co.uk/llms-full.txt)
 
-Last updated: 6 May 2026
+## Agent Interfaces
+
+- MCP server (Streamable HTTP, read-only tools): https://jandlsecurity.co.uk/mcp
+- MCP server card: https://jandlsecurity.co.uk/.well-known/mcp/server-card.json
+- Agent skills index: https://jandlsecurity.co.uk/.well-known/agent-skills/index.json
+- API catalog (RFC 9727): https://jandlsecurity.co.uk/.well-known/api-catalog
+- Markdown is available for any page via the Accept: text/markdown request header.
+
+Last updated: 22 June 2026

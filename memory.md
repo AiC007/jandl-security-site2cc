@@ -1,6 +1,6 @@
 # J&L Security: Project Memory
 
-**Last updated:** 2026-05-06
+**Last updated:** 2026-06-27
 **Maintained by:** The AI Consultancy (London) Ltd
 **Purpose:** Living reference for all AI sessions working on this project. Update after every substantive session.
 
@@ -53,7 +53,7 @@ Both phone numbers must appear on every page and in all contact sections. No exc
 |---|---|---|
 | Phase 1: Pre-launch fixes | Complete | Titles, robots.txt, llms.txt, FAQs H1, canonical URLs |
 | Phase 2: Post-launch SEO | Largely complete | Schema, breadcrumbs, GSC submitted, Maps embed done |
-| Phase 3: Content expansion | Active. 9 blog posts live. | hmo-fire-alarm-requirements-bs5839 (strengthened 2026-05-03), burglar-alarm-cost-uk-2026 (rebuilt with confirmed J&L pricing 2026-05-06), bs5839-1-and-bs5839-6-explained-2026 (new 2026-05-06), business-cctv-ico-compliance-uk-2026, plus 5 prior posts. Matrix pages: 5 priority locations enriched 2026-05-03; remaining 45 still thin. |
+| Phase 3: Content expansion | Active. 16 blog posts live. | Earlier: hmo-fire-alarm-requirements-bs5839 (strengthened 2026-05-03), burglar-alarm-cost-uk-2026 (rebuilt 2026-05-06), bs5839-1-and-bs5839-6-explained-2026, business-cctv-ico-compliance-uk-2026, plus the May FRA cluster (landlord, selling-flat, business, after-fra). FRA cluster completed 2026-06-27 (PR #12): added ews1-form-vs-fire-risk-assessment, fire-risk-assessment-cost-essex-2026 (quote-after-survey), fire-safety-regulations-blocks-of-flats-2026, with inbound internal links wired across the cluster. Matrix pages: 5 priority locations enriched 2026-05-03; remainder now indexing at weak positions. |
 | Phase 3a: London location expansion | Complete (29 location pages live as of 2026-05-06) | 14 new London boroughs added 2026-05-06: Islington, Hackney, Clapton, Dalston, Camden, Southwark, Woolwich, Westminster, Hammersmith, Battersea, Fulham, Streatham, Finchley, Barnet. Greenwich whyLocal copy lightly enriched. Total location pages: 29 (was 15). |
 | Phase 3b: Fire alarm keyword integration | Complete 2026-05-06 | Fire alarms service page rewritten around BAFE-certified maintainer + BS 5839-1/-6 dual-standard coverage, four new service-page FAQs, three new main-FAQs items, two new generic location FAQs (fire alarms + smoke alarms) on every location page, BAFE description updated on about page, homepage Fire Alarms card description updated. Per-slug metaOverrides added to surface BAFE/BS 5839/fire risk assessment keywords on /services/fire-alarms route. |
 | Phase 4: Ongoing optimisation | In progress | GSC now monitored; backlinks not started |
@@ -242,6 +242,18 @@ Priority sequence:
 ---
 
 ## 11. Last Session Summary
+
+### 2026-06-27: June end-of-month GSC report and FRA cluster completion
+
+**GSC June performance (sc-domain:jandlsecurity.co.uk).** ~10,800 impressions and 87 clicks for June (to 26 June), up from ~3,700 / 29 in May and ~900 / 10 in April: roughly tripling month on month for a third month. Blended average position improved from ~24 (May) to ~21. Mobile CTR (~1.3%) about double desktop. Top pages: HMO fire alarm guide (37 clicks, ~4,700 impressions, position 9), homepage (20 clicks), FRA selling-a-flat guide (16 clicks, position 6), BS 5839 explainer (~1,300 impressions, climbing). Branded ("j&l alarms") healthy at position ~2. Location matrix now indexing (Basildon, Barking, Stratford, Hornchurch, Greenwich showing hundreds of impressions at weak positions). Figures pulled via the mcp-search-console MCP.
+
+**Content shipped (PR [#12](https://github.com/AiC007/jandl-security-site2cc/pull/12)).** Completed the research-backed FRA cluster by adding three posts to `lib/blog.ts`: ews1-form-vs-fire-risk-assessment, fire-risk-assessment-cost-essex-2026 (quote-after-survey, no published prices per Jag's decision), and fire-safety-regulations-blocks-of-flats-2026 (cites the Residential Evacuation Plans Regulations 2025, in force 6 April 2026). All use the client-approved accreditation wording (assessor AIFSM/TMIFPO/NEBOSH; J&L BAFE for fire alarm installation and maintenance only). Wired inbound internal links so each new post has at least two links from sibling FRA posts. Build verified 120/120; live and HTTP 200 on production.
+
+**Client comms.** June 2026 Performance Report drafted in Wendy house style and placed in Gmail drafts (ai@theaiconsultancy.ai) to info@jandlsecurity.co.uk, not sent. Repo copy: `docs/2026-06-27-june-performance-report-client-email.md`.
+
+**Earlier in June.** AI agent-readiness surfaces added 2026-06-22 (PR #9/#10), reported to the client separately; see `docs/agent-readiness-2026-06-22.md`.
+
+**Next actions.** July: rewrite the now-indexed high-impression location pages (Basildon, Barking, Stratford, Hornchurch, Greenwich); strengthen the BS 5839 explainer (position ~38) and the HMO guide; first Martyn's Law article; commercial cost guides; trade and certification directories (Checkatrade, Trustpilot, SSAIB, BAFE). Send the June report email once the new content is confirmed live.
 
 ### 2026-05-06: Client amendments from Jag's email of 5 May 2026
 

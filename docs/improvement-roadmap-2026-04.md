@@ -414,3 +414,25 @@ Phase 4: Ongoing (April-May onwards)
 ---
 
 *Roadmap created 7 April 2026. Review and adjust based on client priorities and launch timeline.*
+
+---
+
+## Update — 27 June 2026 (end of June review)
+
+The April pre-launch roadmap (Phases 1 to 3) is substantially complete: the site is live on Vercel, GSC is verified and monitored, schema and breadcrumbs are sitewide, and content has expanded well beyond the original two to three blog posts (16 posts now live). This section records current status and active priorities, superseding the April Phase 4 list.
+
+### Status at end of June 2026
+- **Search performance:** ~10,800 impressions and 87 clicks in June, up from ~3,700 / 29 in May and ~900 / 10 in April. Blended position ~21 (improved from ~24).
+- **Fire Risk Assessment cluster: complete.** Service page plus seven supporting posts. The "selling a flat" guide ranks position 6. The three remaining planned posts (EWS1 vs FRA, FRA cost, blocks-of-flats law) shipped 27 June (PR #12), with inbound internal links wired across the cluster.
+- **AI agent-readiness:** implemented 22 June (PR #9/#10); site scores top tier on Cloudflare's isitagentready scan.
+- **Location matrix:** now indexed and being served, but ranking on pages 2 to 4 with near-zero clicks. This is the main conversion opportunity.
+
+### Active priorities (July 2026)
+1. **Location page rewrites** for the highest-impression towns now indexing: Basildon (~460 impressions), Barking (~380), Stratford (~300), Hornchurch (~260), Greenwich (~240). Genuinely localised content, not clones. Highest-leverage item.
+2. **Optimise the BS 5839 explainer** (~1,300 impressions stuck at position ~38) and keep pushing the HMO guide and FRA cluster up page one.
+3. **Martyn's Law** introductory article ahead of the Spring 2027 deadline.
+4. **Commercial cost guides** for buyers comparing prices.
+5. **Backlinks and directories:** Checkatrade, Trustpilot, SSAIB and BAFE installer listings (Phase 4 item, still not started).
+6. **Next GSC review:** end of July 2026.
+
+*Update appended 27 June 2026 by The AI Consultancy (London) Ltd.*

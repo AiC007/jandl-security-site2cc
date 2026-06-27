@@ -2006,6 +2006,235 @@ export const blogPosts: BlogPost[] = [
         answer: 'Yes. We handle fire alarms, emergency lighting, electrical testing and fire door works directly across Essex and Greater London, with certification in one place, after arranging the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH. J&L Security is BAFE-accredited for the installation and maintenance of fire alarms.',
       },
     ],
+  },
+  {
+    slug: 'ews1-form-vs-fire-risk-assessment',
+    title: 'EWS1 Form vs Fire Risk Assessment: What Is the Difference?',
+    metaTitle: 'EWS1 Form vs Fire Risk Assessment (2026 Explained)',
+    description: 'EWS1 forms and fire risk assessments are often confused but do different jobs. Here is what each one is, who carries it out, when you need which, and whether your building needs both.',
+    datePublished: '2026-06-27',
+    dateModified: '2026-06-27T12:00:00Z',
+    keywords: ['EWS1 vs fire risk assessment', 'EWS1 form', 'what is an EWS1 form', 'difference between EWS1 and fire risk assessment', 'do I need an EWS1 form'],
+    wordCount: 1150,
+    content: `
+<p>If you own, manage, or are selling a flat in a block or a converted house, you may be asked for an EWS1 form, a fire risk assessment, or both. The two are routinely confused, and supplying the wrong one is a common cause of delay in a sale or remortgage. This guide explains, in plain English, what each document is, who produces it, when you need it, and whether your building needs both. It is general information rather than legal or valuation advice.</p>
+
+<h2>The short version</h2>
+
+<p>A fire risk assessment is a life-safety review of a building, required by law and carried out for the responsible person. An EWS1 form is a valuation-support document used by mortgage lenders to understand a building's external walls. They have different purposes, different legal status, and different authors. One does not replace the other.</p>
+
+<h2>What a fire risk assessment is</h2>
+
+<p>A fire risk assessment looks at how a building manages the risk of fire to the people in it. For a block of flats or a converted house, it covers the communal parts: the shared entrance, hallways, staircases, escape routes, fire doors, detection and alarm provision, emergency lighting, signage, and the way fire safety is managed day to day. It is required under the Regulatory Reform (Fire Safety) Order 2005, and the duty to have one sits with the responsible person, usually the freeholder, the residents' management company, or the managing agent.</p>
+
+<p>The output is a written report with a prioritised action plan. It is a recurring duty: the assessment must be kept up to date and reviewed regularly, not done once and forgotten. Our <a href="/services/fire-risk-assessments">fire risk assessments page</a> explains how we arrange these, and our guide to <a href="/blog/fire-risk-assessment-selling-flat">fire risk assessments when selling a flat</a> covers the conveyancing angle in detail.</p>
+
+<h2>What an EWS1 form is</h2>
+
+<p>EWS1 stands for External Wall System 1. It is a process and a one-page form introduced by the Royal Institution of Chartered Surveyors (RICS) with lenders and other bodies, to give mortgage valuers a consistent way to understand the construction of a building's external walls, including any cladding. Its purpose is to support a lending and valuation decision, not to assess day-to-day life safety.</p>
+
+<p>The key points about the EWS1 form are:</p>
+
+<ul>
+<li>It is completed by a suitably qualified professional, such as a chartered fire engineer or other competent person with the relevant expertise, not by a general fire risk assessor.</li>
+<li>One form covers the whole building, and it is normally valid for five years unless the building changes.</li>
+<li>It is requested by mortgage lenders for certain buildings during a purchase, sale, or remortgage. It is not something every building needs.</li>
+<li>Whether a building needs one depends on its height and the construction of its external walls, and on the lender's own requirements. These rules have changed several times since the form was introduced, so the current position should be checked rather than assumed.</li>
+</ul>
+
+<h2>The key differences at a glance</h2>
+
+<table>
+<thead>
+<tr><th>Point</th><th>Fire risk assessment</th><th>EWS1 form</th></tr>
+</thead>
+<tbody>
+<tr><td>Main purpose</td><td>Life safety of people in the building</td><td>Support a mortgage valuation</td></tr>
+<tr><td>Legal basis</td><td>Required under the Fire Safety Order 2005</td><td>An industry process, not a legal duty in itself</td></tr>
+<tr><td>What it looks at</td><td>The whole fire risk of the communal parts</td><td>The external wall system and cladding</td></tr>
+<tr><td>Who carries it out</td><td>A competent fire risk assessor</td><td>A suitably qualified professional, often a chartered fire engineer</td></tr>
+<tr><td>Who needs it</td><td>The responsible person for any qualifying building</td><td>Owners of certain buildings, when a lender asks</td></tr>
+<tr><td>How often</td><td>Kept current and reviewed regularly</td><td>Typically valid for five years</td></tr>
+</tbody>
+</table>
+
+<h2>Do you need both?</h2>
+
+<p>For many buildings, yes. A block of flats will usually need a current fire risk assessment as a matter of law, regardless of any sale. Separately, if a flat in that building is being bought or remortgaged and the lender's criteria call for it, an EWS1 form may also be required. The two run on different tracks: one is an ongoing safety duty, the other is triggered by a lending decision. Having one does not satisfy the other.</p>
+
+<p>This is why it pays to know which is being asked for. When a solicitor's enquiry or a valuer's request lands, check carefully whether the document wanted is the building's fire risk assessment or an EWS1 form, so you supply the right one first time.</p>
+
+<h2>Where J&L Security fits</h2>
+
+<p>J&L Security arranges fire risk assessments and carries out the fire safety work that follows. We arrange the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and where the assessment identifies work, we carry out the remedials directly: fire alarm installation and maintenance (we are BAFE-accredited for the installation and maintenance of fire alarms), emergency lighting, electrical testing, and fire door works.</p>
+
+<p>An EWS1 form is a separate, specialist exercise carried out by a qualified façade or fire engineer, and is not something we provide. What we can do is make sure the fire risk assessment side is properly handled and that any resulting alarm, lighting and fire door works are completed and certified.</p>
+
+<p>We cover Essex and Greater London. See our <a href="/services/fire-risk-assessments">fire risk assessments page</a>, or call 0204 538 5925 or 0208 220 4770. You can also <a href="/contact">request a call back</a>.</p>
+`,
+    faqs: [
+      {
+        question: 'Is an EWS1 form the same as a fire risk assessment?',
+        answer: 'No. A fire risk assessment is a life-safety review of the building required under the Fire Safety Order 2005. An EWS1 form is a separate document used by mortgage lenders to assess a building’s external walls for valuation. One does not replace the other.',
+      },
+      {
+        question: 'Who fills in an EWS1 form?',
+        answer: 'A suitably qualified professional, such as a chartered fire engineer or other competent person with the relevant external wall expertise. It is not completed by a general fire risk assessor.',
+      },
+      {
+        question: 'Does every block of flats need an EWS1 form?',
+        answer: 'No. An EWS1 is only needed for certain buildings, and only when a mortgage lender requires it. Whether it applies depends on the building’s height and external wall construction and on the lender’s criteria, which have changed over time.',
+      },
+      {
+        question: 'Does J&L Security provide EWS1 forms?',
+        answer: 'No. An EWS1 form is a specialist façade or fire engineering exercise. J&L Security arranges the fire risk assessment, through an assessor who holds AIFSM, TMIFPO and NEBOSH, and carries out the resulting fire alarm, emergency lighting, electrical and fire door works.',
+      },
+    ],
+  },
+  {
+    slug: 'fire-risk-assessment-cost-essex-2026',
+    title: 'How Much Does a Fire Risk Assessment Cost? What Determines the Price',
+    metaTitle: 'Fire Risk Assessment Cost (2026): What Drives the Price',
+    description: 'There is no single price for a fire risk assessment. Here is what actually drives the cost, why a credible quote depends on your building, and how to get an accurate, no-obligation price across Essex and London.',
+    datePublished: '2026-06-27',
+    dateModified: '2026-06-27T12:00:00Z',
+    keywords: ['fire risk assessment cost', 'how much is a fire risk assessment', 'fire risk assessment cost essex', 'fire risk assessment price', 'fire risk assessment quote'],
+    wordCount: 1020,
+    content: `
+<p>One of the most common questions we are asked is what a fire risk assessment costs. The honest answer is that there is no single price, and any figure quoted before someone understands your building should be treated with caution. This guide explains what actually drives the cost, so you can read a quote with confidence, and how to get an accurate, no-obligation price for premises across Essex and Greater London. It is general guidance rather than a price list.</p>
+
+<h2>Why there is no fixed price</h2>
+
+<p>A fire risk assessment is priced to the building, because the work involved varies enormously. Assessing the communal areas of a small two-flat conversion is a very different job from assessing a four-storey HMO, a busy restaurant, a care home, or an office over several floors. A single advertised price cannot reflect that range, which is why we give a tailored quote after a short survey of what is actually involved, rather than publishing a headline figure that would be wrong for most buildings.</p>
+
+<p>It is also worth being wary of very low fixed prices advertised online. A credible assessment takes a competent assessor time on site and a properly written report. Where a price looks too good to be true, it often reflects a brief desktop exercise, or it is a low entry price designed to lead to upselling later.</p>
+
+<h2>What drives the cost</h2>
+
+<p>The main factors that determine the price of a fire risk assessment are:</p>
+
+<ul>
+<li><strong>The type and use of the building.</strong> Premises where people sleep, such as flats, HMOs and care homes, carry a higher level of risk and need a more thorough assessment than a small, low-risk office.</li>
+<li><strong>Size and layout.</strong> Floor area, the number of storeys, the number of flats, rooms or units, and how complex the escape routes are all affect how long the assessment takes.</li>
+<li><strong>The number of premises or units assessed.</strong> Assessing several units or buildings together is different from a single set of communal areas.</li>
+<li><strong>The level of assessment required.</strong> Communal residential buildings can need anything from a visual assessment of the common parts through to a more intrusive assessment that looks behind the construction, depending on the building and its history.</li>
+<li><strong>Existing records and systems.</strong> A building with current drawings, certificates and a recent history is quicker to assess than one with no documentation at all.</li>
+<li><strong>Access and location.</strong> Practical access to all areas, and where the building sits across Essex and Greater London, both play a part.</li>
+</ul>
+
+<p>None of these can be judged accurately from a postcode and a phone call alone, which is the real reason a quality provider will want to understand the building before pricing the work.</p>
+
+<h2>What a proper assessment includes</h2>
+
+<p>So that you can compare quotes fairly, a competent fire risk assessment should include a competent assessor attending the building, a full inspection of the relevant areas, and a written report with a clear, prioritised action plan that tells you what to fix and in what order. It should be grounded in the Regulatory Reform (Fire Safety) Order 2005 and the relevant standards. Our guide on <a href="/blog/after-fire-risk-assessment-remedial-works">what happens after a fire risk assessment</a> explains how that action plan turns into completed work.</p>
+
+<h2>The cost of getting it wrong</h2>
+
+<p>It is worth keeping the price in perspective. Since October 2023 the maximum fines for serious fire safety breaches have been unlimited, and a commercial insurer can decline a claim where a required assessment was not in place. Set against that, the cost of a proper assessment is modest. Our <a href="/blog/business-fire-risk-assessment-guide">guide for businesses</a> covers the legal duties and the consequences of not having one.</p>
+
+<h2>The single-provider advantage</h2>
+
+<p>The assessment itself is only part of the total spend. The larger cost usually lies in the remedial works the assessment recommends, and this is where using one provider can save money as well as time. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and then carries out the resulting work directly: fire alarms (we are BAFE-accredited for the installation and maintenance of fire alarms), emergency lighting, electrical testing, and fire door works. Coordinating assessment and remedials through one company avoids the cost and hassle of managing several trades and several sets of paperwork.</p>
+
+<h2>How to get an accurate quote</h2>
+
+<p>The quickest way to get a realistic price is to tell us about your building. A short conversation, and where needed a brief survey, lets us give you a clear, no-obligation quote for your specific premises. We cover Essex and Greater London. See our <a href="/services/fire-risk-assessments">fire risk assessments page</a>, or call 0204 538 5925 or 0208 220 4770. You can also <a href="/contact">request a call back</a>.</p>
+`,
+    faqs: [
+      {
+        question: 'How much does a fire risk assessment cost?',
+        answer: 'There is no single price. It depends on the type, size and complexity of the building, the level of assessment required, and access. The reliable way to get a figure is a tailored, no-obligation quote after a short survey of your premises.',
+      },
+      {
+        question: 'Why do you not publish a fixed price?',
+        answer: 'Because a credible price depends on the building. A small flat conversion and a multi-storey HMO or care home are very different jobs, so a single advertised figure would be wrong for most buildings. We quote to your specific premises instead.',
+      },
+      {
+        question: 'What should a fire risk assessment include for the price?',
+        answer: 'A competent assessor attending the building, a full inspection of the relevant areas, and a written report with a clear, prioritised action plan, grounded in the Fire Safety Order 2005 and the relevant standards.',
+      },
+      {
+        question: 'Are cheap online fire risk assessments worth it?',
+        answer: 'Be cautious. A very low fixed price can reflect a brief desktop exercise or a low entry price intended to lead to upselling. Given that serious breaches now carry unlimited fines and can affect insurance, a proper assessment is the safer value.',
+      },
+    ],
+  },
+  {
+    slug: 'fire-safety-regulations-blocks-of-flats-2026',
+    title: 'Fire Safety Law for Blocks of Flats in 2026: A Plain-English Guide',
+    metaTitle: 'Fire Safety Regulations for Blocks of Flats (2026)',
+    description: 'The fire safety rules for blocks of flats have changed repeatedly since 2021. Here is the current stack of duties in 2026, who the responsible person is, and what is new this year, in plain English.',
+    datePublished: '2026-06-27',
+    dateModified: '2026-06-27T12:00:00Z',
+    keywords: ['fire safety regulations blocks of flats', 'Fire Safety England Regulations 2022', 'fire safety law flats 2026', 'responsible person blocks of flats', 'residential evacuation plans 2025'],
+    wordCount: 1350,
+    content: `
+<p>The fire safety rules for blocks of flats and other multi-occupied residential buildings have changed repeatedly since the Grenfell Tower fire, and 2026 has added another layer. If you are a freeholder, a residents' management company, or a managing agent, it can be hard to keep track of what you are actually required to do. This guide sets out the current stack of duties in plain English. It is general information rather than legal advice, and final wording should always be checked against the legislation itself.</p>
+
+<h2>Who this applies to</h2>
+
+<p>These duties attach to the common parts of buildings that contain two or more domestic premises: purpose-built blocks of flats and houses converted into flats. The person who must comply is the responsible person for those communal areas, which is typically the freeholder, the residents' management company, or the managing agent acting on their behalf. Individual leaseholders are generally not the responsible person for the building, though they have a clear interest in it being done properly.</p>
+
+<h2>The duties, in the order they arrived</h2>
+
+<h3>Regulatory Reform (Fire Safety) Order 2005</h3>
+
+<p>This is the foundation. The responsible person must carry out and maintain a suitable and sufficient fire risk assessment of the communal parts, act on what it finds, and keep it up to date. Everything below sits on top of this duty.</p>
+
+<h3>Fire Safety Act 2021</h3>
+
+<p>This Act clarified the scope of the Fire Safety Order for multi-occupied residential buildings. It confirmed that the building's structure, its external walls (including cladding, balconies and windows) and the flat entrance doors are within the scope of the fire risk assessment. In short, the assessment is not just about the hallways.</p>
+
+<h3>Fire Safety (England) Regulations 2022</h3>
+
+<p>In force since 23 January 2023, these regulations placed specific, practical duties on responsible persons of multi-occupied residential buildings. The exact duties step up with the height of the building. Additional duties apply to buildings above 11 metres, such as regular checks of fire doors in the communal areas, and further duties apply to high-rise buildings above 18 metres, such as sharing building information and plans with the fire and rescue service and installing a secure information box. There are also general duties, regardless of height, around giving residents fire safety instructions.</p>
+
+<h3>Building Safety Act 2022, Section 156</h3>
+
+<p>Effective 1 October 2023, Section 156 amended the Fire Safety Order. It removed the previous rule that only businesses with five or more employees had to record their assessment in full, so now every responsible person must record the fire risk assessment in writing. It also requires recording who carried out or reviewed the assessment, and it raised the maximum fines for serious breaches to an unlimited amount.</p>
+
+<h3>Fire Safety (Residential Evacuation Plans) (England) Regulations 2025</h3>
+
+<p>This is the change that is new for 2026. These regulations came into force on 6 April 2026 and introduce residential personal emergency evacuation plan duties for higher-risk residential buildings, aimed at residents who may not be able to evacuate without assistance. For responsible persons of qualifying buildings, this means assessing and planning for the evacuation needs of those residents, on top of the existing duties above. Much of the fire safety content written before 2026 predates this requirement, so it is worth making sure any guidance you rely on is current.</p>
+
+<h2>What this means in practice in 2026</h2>
+
+<p>For a responsible person looking after a block of flats this year, the practical checklist is:</p>
+
+<ul>
+<li>Have a current, suitable and sufficient fire risk assessment of the communal parts, recorded in full and reviewed regularly.</li>
+<li>Make sure it covers the structure, external walls and flat entrance doors, not just the internal common areas.</li>
+<li>Carry out the height-related duties that apply to your building, such as fire door checks above 11 metres and information sharing above 18 metres.</li>
+<li>For higher-risk buildings, address the new residential evacuation planning duties that took effect in April 2026.</li>
+<li>Act on the assessment's action plan and keep the certificates that prove the work was done.</li>
+</ul>
+
+<p>If a flat in the building is being sold or remortgaged, the buyer's solicitor or lender will often ask to see the current assessment, which is covered in our guide on <a href="/blog/fire-risk-assessment-selling-flat">fire risk assessments when selling a flat</a>. Landlords with flats in the block have their own overlapping duties, set out in our <a href="/blog/landlord-fire-risk-assessment-essex-london">landlord fire risk assessment guide</a>.</p>
+
+<h2>How J&L Security can help</h2>
+
+<p>Meeting these duties means having the assessment done and then acting on it. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and carries out the resulting remedial works directly: fire alarm installation and maintenance to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839</a> (we are BAFE-accredited for the installation and maintenance of fire alarms), emergency lighting, electrical testing, and fire door works. For a freeholder or managing agent, dealing with one company from assessment to certified, completed work is the simplest way to stay on top of a moving set of rules.</p>
+
+<p>We cover Essex and Greater London. See our <a href="/services/fire-risk-assessments">fire risk assessments page</a> and <a href="/services/fire-alarms">fire alarms page</a>, or call 0204 538 5925 or 0208 220 4770. You can also <a href="/contact">request a call back</a>.</p>
+`,
+    faqs: [
+      {
+        question: 'Do blocks of flats need a fire risk assessment?',
+        answer: 'Yes. The communal parts of a block of flats or a converted house need a fire risk assessment under the Regulatory Reform (Fire Safety) Order 2005. The duty sits with the responsible person, usually the freeholder, residents’ management company, or managing agent.',
+      },
+      {
+        question: 'What is new for blocks of flats in 2026?',
+        answer: 'The Fire Safety (Residential Evacuation Plans) (England) Regulations 2025 came into force on 6 April 2026. They add residential personal emergency evacuation plan duties for higher-risk residential buildings, on top of the existing duties.',
+      },
+      {
+        question: 'Who is the responsible person for a block of flats?',
+        answer: 'For the communal areas it is usually the freeholder, the residents’ management company, or the managing agent acting on their behalf. Individual leaseholders are generally not the responsible person for the building.',
+      },
+      {
+        question: 'What extra fire safety duties apply to taller blocks?',
+        answer: 'Buildings above 11 metres have additional duties such as regular checks of communal fire doors. High-rise buildings above 18 metres have further duties, including sharing building information and plans with the fire and rescue service and installing a secure information box.',
+      },
+    ],
   }
 ];
 

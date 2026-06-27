@@ -1691,7 +1691,7 @@ export const blogPosts: BlogPost[] = [
 
 <ul>
 <li><strong>Section 156 of the Building Safety Act 2022</strong>, effective 1 October 2023, removed the old threshold that only required a written assessment where there were five or more employees. The assessment must now be recorded in full, whatever the size of the operation. For a single-property landlord with a communal area, that means the assessment has to be written down and kept.</li>
-<li><strong>The Fire Safety (England) Regulations 2022</strong>, in force since 23 January 2023, added duties for multi-occupied residential buildings, with extra requirements for buildings over 11 metres and over 18 metres in height, including checks on communal and flat entrance fire doors.</li>
+<li><strong>The Fire Safety (England) Regulations 2022</strong>, in force since 23 January 2023, added duties for multi-occupied residential buildings, with extra requirements for buildings over 11 metres and over 18 metres in height, including checks on communal and flat entrance fire doors. We explain these in full in our guide to <a href="/blog/fire-safety-regulations-blocks-of-flats-2026">fire safety law for blocks of flats</a>.</li>
 <li><strong>The Fire Safety Act 2021</strong> confirmed that the structure, external walls and individual flat entrance doors of multi-occupied residential buildings fall within the scope of the assessment.</li>
 </ul>
 
@@ -1788,7 +1788,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The communal assessment versus your individual flat</h2>
 
-<p>This is the point that confuses most sellers. You generally do not commission a fire risk assessment for the inside of your own flat. What is needed is the assessment of the communal parts of the building, which is the responsibility of the freeholder or management company.</p>
+<p>This is the point that confuses most sellers. You generally do not commission a fire risk assessment for the inside of your own flat. What is needed is the assessment of the communal parts of the building, which is the responsibility of the freeholder or management company. The duties that fall on whoever controls the building are set out in our guide to <a href="/blog/fire-safety-regulations-blocks-of-flats-2026">fire safety law for blocks of flats</a>.</p>
 
 <p>In practice that means, if you are asked for the assessment, your first step is usually to contact your freeholder or managing agent and request the current document. If they have one and it is in date, the request is quickly satisfied. The problems start when the responsible person has not had an assessment done, or it is years out of date.</p>
 
@@ -1801,7 +1801,7 @@ export const blogPosts: BlogPost[] = [
 <li>An <strong>EWS1 form</strong> is a separate document used by mortgage lenders to assess the external wall system of certain buildings for valuation purposes. It is administered through the valuation process and is not a life-safety assessment in the same sense.</li>
 </ul>
 
-<p>One does not replace the other. Depending on the building, you may be asked for both. Knowing the difference helps you respond accurately when a solicitor's enquiry lands, rather than supplying the wrong document and losing more time.</p>
+<p>One does not replace the other. Depending on the building, you may be asked for both. Knowing the difference helps you respond accurately when a solicitor's enquiry lands, rather than supplying the wrong document and losing more time. For a fuller comparison, see our guide on <a href="/blog/ews1-form-vs-fire-risk-assessment">the difference between an EWS1 form and a fire risk assessment</a>.</p>
 
 <h2>Who pays for it</h2>
 
@@ -1901,7 +1901,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The single-provider advantage</h2>
 
-<p>A fire risk assessment that simply produces a report is only half the job. The value comes from acting on the action plan. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, then carries out the resulting work directly: fire alarm installation and servicing to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839</a> (we are BAFE-accredited for the installation and maintenance of fire alarms), <a href="/services/security-lighting">emergency lighting</a>, electrical testing, and fire door works. For a busy business owner, dealing with one company from assessment to compliant premises removes the burden of coordinating several trades.</p>
+<p>A fire risk assessment that simply produces a report is only half the job. The value comes from acting on the action plan. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, then carries out the resulting work directly: fire alarm installation and servicing to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839</a> (we are BAFE-accredited for the installation and maintenance of fire alarms), <a href="/services/security-lighting">emergency lighting</a>, electrical testing, and fire door works. For a busy business owner, dealing with one company from assessment to compliant premises removes the burden of coordinating several trades. Our guide on <a href="/blog/fire-risk-assessment-cost-essex-2026">what determines the cost of a fire risk assessment</a> explains how the assessment and any works are priced.</p>
 
 <p>We work with offices, retail, hospitality, warehousing and care settings across Essex and Greater London. See our <a href="/services/fire-risk-assessments">fire risk assessments page</a> and our <a href="/services/fire-alarms">fire alarms page</a>, or call 0204 538 5925 or 0208 220 4770 to discuss your premises. You can also <a href="/contact">request a call back</a>.</p>
 `,
@@ -1974,7 +1974,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Prioritising and budgeting</h2>
 
-<p>You do not have to do everything at once, but you do have to do the urgent items promptly and have a credible plan for the rest. A sensible approach is to complete all high-priority actions immediately, schedule the medium-priority items over the following weeks, and record target dates for the rest. Keeping a documented schedule of works, with dates and certificates, demonstrates that you are managing the risk, which is exactly what an enforcing authority or insurer wants to see.</p>
+<p>You do not have to do everything at once, but you do have to do the urgent items promptly and have a credible plan for the rest. A sensible approach is to complete all high-priority actions immediately, schedule the medium-priority items over the following weeks, and record target dates for the rest. Keeping a documented schedule of works, with dates and certificates, demonstrates that you are managing the risk, which is exactly what an enforcing authority or insurer wants to see. For how the assessment itself is priced, see our guide on <a href="/blog/fire-risk-assessment-cost-essex-2026">what determines the cost of a fire risk assessment</a>.</p>
 
 <h2>The records that prove compliance</h2>
 
@@ -2183,7 +2183,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Fire Safety Act 2021</h3>
 
-<p>This Act clarified the scope of the Fire Safety Order for multi-occupied residential buildings. It confirmed that the building's structure, its external walls (including cladding, balconies and windows) and the flat entrance doors are within the scope of the fire risk assessment. In short, the assessment is not just about the hallways.</p>
+<p>This Act clarified the scope of the Fire Safety Order for multi-occupied residential buildings. It confirmed that the building's structure, its external walls (including cladding, balconies and windows) and the flat entrance doors are within the scope of the fire risk assessment. In short, the assessment is not just about the hallways. External wall safety can also trigger a separate request when a flat is sold, the EWS1 form, which we cover in our guide on <a href="/blog/ews1-form-vs-fire-risk-assessment">EWS1 form vs fire risk assessment</a>.</p>
 
 <h3>Fire Safety (England) Regulations 2022</h3>
 

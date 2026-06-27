@@ -2,7 +2,7 @@
 
 **Status:** Placed in Gmail drafts on 2026-06-27 (mailbox `ai@theaiconsultancy.ai`). Operator reviews and sends. Not auto-sent.
 
-**Important sequencing:** Send only after the three new fire risk assessment guides are deployed to production, so the "completed" claims are accurate. The posts are built and build-verified (branch/PR pending operator approval to ship).
+**Ready to send:** The three new fire risk assessment guides are live in production (PR #12 merged 2026-06-27) and inbound internal links are wired, so the "now live" claims are accurate. This draft is ready to review and send.
 
 **To:** info@jandlsecurity.co.uk
 **From:** Wendy AI Assistant, The AI Consultancy (ai@theaiconsultancy.ai)
@@ -60,13 +60,15 @@ A brief reminder of how this number works: it is a single figure blended across 
 
 **Upgraded your website so AI assistants can read and recommend it.** This was the major project in June, reported to you separately on 22 June. Your site moved from the lowest tier to the highest tier on Cloudflare's public agent-readiness scoring, so that tools such as ChatGPT, Claude and Google's AI overviews can find J&L, describe your services accurately, and pass on the right contact details.
 
-**Completed three new fire risk assessment guides**, extending the section that is already performing so well:
+**Added three new fire risk assessment guides, now live on your site**, extending the section that is already performing so well:
 
 - A plain-English explainer of the difference between an EWS1 form and a fire risk assessment, which sellers and leaseholders frequently confuse.
 - A guide to what determines the cost of a fire risk assessment and how to get an accurate quote, written to direct enquiries to you rather than to publish fixed prices.
 - A 2026 guide to fire safety law for blocks of flats, covering the new residential evacuation plan rules that came into force in April 2026, which most competitor content has not yet caught up with.
 
 All three use your confirmed accreditation wording: the assessment is arranged through an assessor holding AIFSM, TMIFPO and NEBOSH, and J&L's BAFE accreditation is stated as being for fire alarm installation and maintenance.
+
+We have also connected these guides to your existing fire safety pages, so visitors and search engines can move easily between them, which helps the new pages get found in search.
 
 **Continued indexing of your May content.** Google has now indexed and begun ranking your location pages and the wider fire risk assessment cluster, which is the main reason impressions have grown so sharply this month.
 

@@ -1,6 +1,6 @@
 # J&L Security: Project Memory
 
-**Last updated:** 2026-05-06
+**Last updated:** 2026-06-22
 **Maintained by:** The AI Consultancy (London) Ltd
 **Purpose:** Living reference for all AI sessions working on this project. Update after every substantive session.
 
@@ -220,6 +220,7 @@ Priority sequence:
 - Legacy Replit URLs (/tools, /city-security, /faqs on www host) allowed to 404 naturally. No redirects.
 - Content maturity: Pilot. No demo shortcuts, no production-grade complexity unless instructed.
 - Code standard: Vibe Coding Loop (Frame, Decompose, Start, Review, Test, Refine, Checkpoint)
+- Agent-readiness (added 2026-06-22): the site exposes agent surfaces backed by real site data via `lib/agent-content.ts`. Markdown content negotiation runs through `middleware.ts` + `app/api/markdown`; the live read-only MCP server is `app/api/mcp` at `/mcp`; discovery files live in `public/.well-known/` and `app/api/wellknown/api-catalog`. Keep these in sync with `lib/data.ts`. Do not fabricate auth or commerce surfaces (deliberately omitted as N/A).
 
 ---
 
@@ -238,10 +239,39 @@ Priority sequence:
 | /docs/2026-05-06-implementation-summary.md | Internal record of what was implemented and shipped on 2026-05-06 |
 | /docs/2026-05-06-jag-confirmation-email.md | Draft email to Jag confirming the amendments are live (operator sends; do NOT auto-send) |
 | /docs/2026-05-06-lighthouse-islington.md | Lighthouse SEO audit pass note for /locations/islington (100/100 mobile, 2026-05-06) |
+| /docs/agent-readiness-2026-06-22.md | Agent-readiness implementation record (isitagentready.com): what was built, decisions, deliberately skipped checks, operator tasks |
+| /docs/2026-06-22-agent-readiness-client-email.md | Draft client update from Wendy AI on the agent-readiness work (operator sends; do NOT auto-send) |
 
 ---
 
 ## 11. Last Session Summary
+
+### 2026-06-22: Agent readiness (Cloudflare isitagentready.com)
+
+**Scope.** Implemented the applicable checks from Cloudflare's isitagentready.com scanner to make the site readable and usable by AI agents. Delivered end-to-end: two feature branches (`feat/agent-readiness`, `fix/a2a-agent-card`), PRs #9 and #10, Vercel preview verification, operator approval, merge to main, production deployment, live verification, then a live re-scan.
+
+**Result.** Scanner level moved from **Level 1 (Basic Web Presence), original score 21/100**, to **Level 5 (Agent-Native)**, the top level. Category breakdown on the live re-scan: Discoverability 3/4, Content 1/1, Bot Access Control 2/2, Discovery (API/MCP/Skill) 4/8, Commerce 0/0 (not applicable).
+
+**What shipped (all read-only, backed by real site data via `lib/agent-content.ts`).**
+- Discoverability: Link headers (RFC 8288) in `next.config.ts`.
+- Content: `Accept: text/markdown` content negotiation for every page (`middleware.ts` + `app/api/markdown/route.ts`), including HTML-to-markdown conversion of blog posts.
+- Bot Access: Content Signals (`search=yes, ai-input=yes, ai-train=yes`) and an expanded AI bot allow list in `app/robots.txt/route.ts`.
+- Discovery: RFC 9727 API catalog (`app/api/wellknown/api-catalog`), MCP server card, a live read-only MCP server at `/mcp` (`app/api/mcp/route.ts`, Streamable HTTP, JSON-RPC 2.0, six tools), Agent Skills index with verified digests, and an A2A agent card.
+
+**Decisions worth remembering.**
+- The MCP server is the substantive new surface: stateless, read-only, six tools (`get_company_info`, `list_services`, `get_service_details`, `check_service_area`, `get_pricing_guide`, `list_blog_articles`) all sourced from `lib/data.ts`/`lib/blog.ts`. No figures invented; pricing transcribed from `llms.txt`.
+- Caught and fixed a coverage matching bug (a town listed as another town's neighbour resolved to the wrong town) before shipping.
+- A2A card initially failed the scanner (interface needed `url`, not `serviceUrl`); fixed in PR #10, which lifted Discovery 3/8 to 4/8 and tipped the overall level from 4 to 5.
+- Deliberately NOT implemented (not faked): OAuth discovery / protected resource / auth.md (no authentication on the site), Web Bot Auth (site does not run its own crawler), commerce protocols (no e-commerce), WebMCP browser API (experimental client-side API; server-side MCP is the standard equivalent).
+
+**Open items for the operator.**
+1. `Content-Signal: ai-train` is set to `yes` to maximise visibility. Flip to `no` in `app/robots.txt/route.ts` if J&L would rather not permit site content for AI model training (content-licensing decision).
+2. DNS-AID is the only remaining Discoverability point and needs SVCB/HTTPS DNS records at the registrar (not a code change).
+3. Send the Wendy AI client update (`/docs/2026-06-22-agent-readiness-client-email.md`), operator action.
+
+**Branches.** `feat/agent-readiness` and `fix/a2a-agent-card` merged to main (PRs #9, #10) and can be deleted on GitHub. `fix/fra-page-differentiation` remains untouched for its own separate PR.
+
+---
 
 ### 2026-05-06: Client amendments from Jag's email of 5 May 2026
 

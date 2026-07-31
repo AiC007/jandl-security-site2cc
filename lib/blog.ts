@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'burglar-alarm-cost-uk-2026',
     title: 'How Much Does a Burglar Alarm Cost in the UK? (2026 Prices)',
     metaTitle: 'Burglar Alarm Cost UK 2026: Installation Prices Explained',
-    description: 'A practical guide to burglar alarm installation costs in the UK for 2026. Covers bell-only, speech dialler, and monitored systems, plus what affects the price and what to expect from an NSI-approved installer.',
+    description: 'A practical guide to burglar alarm installation costs in the UK for 2026. Covers bell-only, speech dialler, and monitored systems, plus what affects the price and what to expect from an inspectorate-approved installer.',
     datePublished: '2026-05-03',
     dateModified: '2026-05-06',
     keywords: ['burglar alarm cost uk', 'alarm installation cost', 'intruder alarm price uk', 'monitored alarm cost', 'home alarm system cost uk', 'pyronix enforcer cost', 'wireless burglar alarm price essex'],
@@ -1019,7 +1019,7 @@ export const blogPosts: BlogPost[] = [
 <p>We are a BAFE-certified fire alarm maintainer covering Essex and Greater London. Our work spans the full lifecycle of fire alarm systems under both BS 5839-1 and BS 5839-6:</p>
 
 <ul>
-<li>Fire risk assessments for commercial premises and HMOs</li>
+<li>Fire risk assessments for commercial premises and HMOs, arranged through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, with any resulting remedial works carried out by us directly</li>
 <li>Design, installation, and commissioning of new BS 5839-1 systems for commercial buildings</li>
 <li>Design, installation, and commissioning of BS 5839-6 systems for domestic properties and HMOs (Grades A, C, and D, Categories LD1 to LD3 as appropriate)</li>
 <li>6-monthly servicing contracts for BS 5839-1 systems and annual or 6-monthly servicing for BS 5839-6 systems by Grade</li>

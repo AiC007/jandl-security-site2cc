@@ -1431,7 +1431,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-15',
     dateModified: '2026-04-15',
     keywords: ['business CCTV ICO', 'CCTV data protection UK', 'CCTV compliance 2026', 'CCTV DPIA', 'workplace CCTV rules'],
-    wordCount: 1740,
+    wordCount: 1420,
     content: `
 <p>CCTV is one of the most widely used security technologies in UK business, and also one of the most frequently misunderstood in compliance terms. Many small businesses install cameras without a clear view of what the Information Commissioner's Office (ICO) actually expects, and only discover the gaps when a subject access request lands or a complaint is made.</p>
 
@@ -1529,6 +1529,8 @@ export const blogPosts: BlogPost[] = [
 <p>At J&L Security, every commercial CCTV installation we carry out includes compliance considerations as part of the design. We recommend camera positioning that avoids unnecessary capture of neighbouring property and public areas, set appropriate retention periods on commissioning, disable audio by default, supply initial ICO-compliant signage, and provide a written commissioning pack that forms the basis of your internal policy.</p>
 
 <p>We also review existing systems for businesses that inherited their CCTV from a previous installer or tenant. If you are unsure whether your system meets ICO expectations in 2026, a review is the cheapest way to find out.</p>
+
+<p>If you are considering adding cameras because your premises may fall within scope of Martyn's Law, note that the data protection position is unchanged: expanding a system is the point at which signage and retention obligations are most often breached. See our guide to <a href="/blog/martyns-law-premises-requirements-2026">Martyn's Law and which premises are in scope</a> for what the Act actually requires.</p>
 
 <p>To arrange a free CCTV survey or compliance review for your business, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a>. Read more about our <a href="/services/cctv-systems">CCTV installation services</a> or explore our <a href="/services">full range of business security services</a>.</p>
 
@@ -1851,7 +1853,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-05-23',
     dateModified: '2026-05-23T12:00:00Z',
     keywords: ['fire risk assessment for business', 'fire risk assessment office', 'fire risk assessment care home', 'fire risk assessment required by law', 'commercial fire risk assessment Essex'],
-    wordCount: 730,
+    wordCount: 840,
     image: {
       src: '/images/fire-risk-assessments/business-fra.webp',
       alt: 'Interior of a small UK commercial premises with ceiling smoke detector, emergency light, exit sign and fire extinguisher, illustrating a business fire risk assessment',
@@ -1902,6 +1904,8 @@ export const blogPosts: BlogPost[] = [
 <h2>The single-provider advantage</h2>
 
 <p>A fire risk assessment that simply produces a report is only half the job. The value comes from acting on the action plan. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, then carries out the resulting work directly: fire alarm installation and servicing to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839</a> (we are BAFE-accredited for the installation and maintenance of fire alarms), <a href="/services/security-lighting">emergency lighting</a>, electrical testing, and fire door works. For a busy business owner, dealing with one company from assessment to compliant premises removes the burden of coordinating several trades. Our guide on <a href="/blog/fire-risk-assessment-cost-essex-2026">what determines the cost of a fire risk assessment</a> explains how the assessment and any works are priced.</p>
+
+<p>Fire is not the only premises duty that catches business owners out. If your premises is publicly accessible and may hold 200 or more people at the same time, it may also fall within scope of <a href="/blog/martyns-law-premises-requirements-2026">Martyn's Law</a>, which is a separate duty with its own regulator. It is worth checking the two together, particularly because lockdown procedures and fire evacuation procedures need to be consistent with one another.</p>
 
 <p>We work with offices, retail, hospitality, warehousing and care settings across Essex and Greater London. See our <a href="/services/fire-risk-assessments">fire risk assessments page</a> and our <a href="/services/fire-alarms">fire alarms page</a>, or call 0204 538 5925 or 0208 220 4770 to discuss your premises. You can also <a href="/contact">request a call back</a>.</p>
 `,
@@ -2233,6 +2237,219 @@ export const blogPosts: BlogPost[] = [
       {
         question: 'What extra fire safety duties apply to taller blocks?',
         answer: 'Buildings above 11 metres have additional duties such as regular checks of communal fire doors. High-rise buildings above 18 metres have further duties, including sharing building information and plans with the fire and rescue service and installing a secure information box.',
+      },
+    ],
+  },
+  {
+    slug: 'martyns-law-premises-requirements-2026',
+    title: "Martyn's Law: Which Premises Are in Scope and What You Actually Have to Do",
+    metaTitle: "Martyn's Law 2026: Premises in Scope, Tiers and Requirements",
+    description: "A plain-English guide to Martyn's Law, the Terrorism (Protection of Premises) Act 2025. Covers the 200 and 800 capacity thresholds, the standard and enhanced tiers, what duty holders must do, and where physical security measures actually fit.",
+    datePublished: '2026-07-31',
+    dateModified: '2026-07-31',
+    keywords: [
+      "martyn's law",
+      'martyns law requirements',
+      'terrorism protection of premises act 2025',
+      "martyn's law capacity threshold",
+      'martyns law standard tier',
+      'martyns law enhanced tier',
+      'public protection procedures',
+      'public protection measures',
+      "martyn's law cctv",
+      "martyn's law access control",
+      'SIA regulator martyns law',
+    ],
+    wordCount: 2113,
+    image: {
+      src: '/images/2026-07/martyns-law-premises.webp',
+      alt: 'Entrance to a busy UK public venue with a staffed door, ceiling-mounted CCTV camera and access-controlled side door, illustrating the premises in scope of Martyn\'s Law',
+    },
+    content: `
+<p><strong>Martyn's Law is the Terrorism (Protection of Premises) Act 2025.</strong> It places duties on those responsible for certain publicly accessible premises to prepare for the possibility of a terrorist attack. It works on two tiers set by how many people may be present at the same time: a <strong>standard tier for premises where 200 to 799 individuals</strong> may be present, and an <strong>enhanced tier for premises where 800 or more</strong> may be present. The regulator is the Security Industry Authority.</p>
+
+<p>This guide explains who is in scope, what each tier actually requires, and, because we are a security systems installer, where physical security equipment does and does not fit into the picture. That last point matters more than it might seem: for most premises that fall in scope, Martyn's Law does not require you to buy anything at all.</p>
+
+<h2>Where the Law Stands Right Now</h2>
+
+<p>The Act received Royal Assent on 3 April 2025. The Government published statutory guidance in April 2026, and further provisions have been commenced since, including those that set up the Security Industry Authority's role as regulator.</p>
+
+<p><strong>The duties on premises are not yet in force, and no date has been announced for when they will be.</strong> The Government has committed to an implementation period of at least 24 months following Royal Assent before the requirements for those in scope come into force, and the statutory guidance says that further details will be provided on commencement.</p>
+
+<p>This is worth being precise about, because various dates are circulating. You may have seen a specific deadline quoted. At the time of writing, no such deadline exists in law. What exists is a commitment to a minimum implementation period and a clear signal that enforcement will not begin before 2027. The sensible reading is that there is time to prepare properly, and that you should not treat any date you have seen as a statutory cut-off, nor let a supplier use one to create urgency.</p>
+
+<h2>Is Your Premises in Scope?</h2>
+
+<p>Two things have to be true for the Act to apply. First, the premises must be used for one of a defined list of qualifying uses set out in the legislation, which covers a broad range of publicly accessible buildings. Second, it must be reasonable to expect that a threshold number of individuals may be present at the same time, from time to time.</p>
+
+<ul>
+<li><strong>Fewer than 200 individuals:</strong> not in scope. No duties apply under the Act.</li>
+<li><strong>200 to 799 individuals:</strong> standard tier.</li>
+<li><strong>800 or more individuals:</strong> enhanced tier.</li>
+</ul>
+
+<p>There is an important exception. Places of worship, childcare premises, and certain educational premises remain in the standard tier even where 800 or more individuals may be present. A parish hall or a school does not move into the enhanced tier simply because of its capacity.</p>
+
+<p>The capacity figure is about how many people may be present, not how many are usually there on a quiet Tuesday. If you are unsure whether your use is on the qualifying list, or how to arrive at a defensible capacity figure, the statutory guidance is the place to start. That determination is yours to make, and it is not something a security installer can make for you.</p>
+
+<h2>Standard Tier: 200 to 799 Individuals</h2>
+
+<p>If your premises falls into the standard tier, the responsible person has two duties.</p>
+
+<ol>
+<li><strong>Notify the Security Industry Authority</strong> that you are the responsible person for the premises.</li>
+<li><strong>Put appropriate public protection procedures in place</strong>, so far as is reasonably practicable.</li>
+</ol>
+
+<p>The procedures are expected to address four things, as appropriate to the premises:</p>
+
+<ul>
+<li><strong>Evacuation:</strong> getting people out of the premises.</li>
+<li><strong>Invacuation:</strong> moving people to a safer place within the premises, which is sometimes the right answer when the threat is outside.</li>
+<li><strong>Lockdown:</strong> securing the premises to restrict entry, such as locking doors and closing shutters.</li>
+<li><strong>Communication:</strong> alerting people on the premises to the danger and telling them what to do.</li>
+</ul>
+
+<p><strong>There is no requirement at standard tier to install security equipment.</strong> The statutory guidance describes the standard tier requirements as centred on simple, low-cost activities, with the cost relating primarily to time spent rather than to capital expenditure. This is a planning and staff-awareness exercise. If a supplier tells you that standard tier compliance requires a new system, that is a sales position rather than a statement of the law.</p>
+
+<h2>Enhanced Tier: 800 or More Individuals</h2>
+
+<p>Enhanced tier premises must do everything the standard tier requires, and then three things more.</p>
+
+<ol>
+<li><strong>Put appropriate public protection measures in place</strong>, so far as is reasonably practicable. Where procedures are about what people do, measures are about what is in place at the premises to reduce its vulnerability to an attack and the risk of physical harm if one occurs.</li>
+<li><strong>Document the procedures and measures</strong> and provide that documentation to the Security Industry Authority, including an assessment of how they reduce vulnerability and risk.</li>
+<li><strong>Designate a senior individual</strong>, where the responsible person is an organisation, to ensure compliance.</li>
+</ol>
+
+<h3>The Four Categories of Public Protection Measure</h3>
+
+<p>The statutory guidance groups measures into four categories. This is the part of the Act where physical security systems become relevant, so it is worth setting out clearly.</p>
+
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>What it addresses</th>
+<th>Examples given in the guidance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monitoring</td>
+<td>Detecting suspicious activity in and around the premises</td>
+<td>Security patrols, searches of individuals, CCTV</td>
+</tr>
+<tr>
+<td>Movement control</td>
+<td>Controlling who can move into and around the premises</td>
+<td>Doors, shutters, zoned access, screening of individuals</td>
+</tr>
+<tr>
+<td>Physical safety and security</td>
+<td>Reducing physical harm to people at the premises</td>
+<td>Vehicle security barriers and other hostile vehicle mitigation</td>
+</tr>
+<tr>
+<td>Information security</td>
+<td>Restricting access to operational and design information</td>
+<td>Limiting who can see plans and operational detail that would assist an attacker</td>
+</tr>
+</tbody>
+</table>
+
+<p>Everything in the Act is qualified by what is <strong>reasonably practicable</strong>. That means proportionate: balancing how effective a measure would be against its cost and the difficulty of putting it in place. It is not a requirement to install the maximum amount of equipment that money can buy, and a small enhanced tier venue is not expected to adopt the same measures as a major stadium.</p>
+
+<h2>Where Physical Security Systems Actually Fit</h2>
+
+<p>Of the four categories, two involve equipment of the kind a security systems installer provides. Monitoring names CCTV. Movement control names doors, shutters and zoned access, which in practice means access control, door entry and electronic locking. The other two categories are largely about site design, traffic management and information handling, and they are not our field.</p>
+
+<p>Three things are worth understanding before anyone spends money.</p>
+
+<p><strong>Equipment alone does not discharge the duty.</strong> The duty is to have appropriate procedures, and at enhanced tier appropriate measures, assessed as suitable for that specific premises and documented. A camera that nobody is monitoring, and that appears in no procedure, does not help you and will not satisfy the regulator. The procedures come first and the equipment supports them.</p>
+
+<p><strong>You may already have most of what you need.</strong> A great many premises in the enhanced tier already have CCTV and some form of access control, installed years ago for ordinary crime prevention reasons. The useful question is usually not "what should we buy" but "does what we already have still work, and does it cover what we think it covers". Cameras drift out of position, recorders fill up, retention settings get left at whatever the installer set on commissioning, and door controllers develop faults that get worked around rather than fixed.</p>
+
+<p><strong>Coverage is not the same as image quality.</strong> A camera positioned to show that someone was present is doing a different job from one positioned to identify who they were. If CCTV is going to serve as a monitoring measure, it is worth checking that the coverage and the image quality actually match the purpose you are claiming for it in your documentation.</p>
+
+<h2>If You Already Have CCTV or Access Control</h2>
+
+<p>For most enhanced tier premises the practical starting point is a review of the existing systems rather than a new installation. That means checking camera positions and fields of view against the areas you actually want monitored, confirming that recording and retention are configured as intended, testing that access control zoning still reflects how the building is used, and repairing anything that has been failing quietly.</p>
+
+<p>One point that is easy to miss: <strong>installing more CCTV for Martyn's Law does not change your data protection obligations</strong>. CCTV that captures identifiable people is personal data under UK GDPR, and the Information Commissioner's Office expectations on signage, retention, access requests and camera positioning apply exactly as before. If anything, expanding a system is the moment those obligations are most likely to be breached. Our guide to <a href="/blog/business-cctv-ico-compliance-uk-2026">business CCTV and ICO compliance</a> covers what that involves in practice.</p>
+
+<p>It is also worth checking that lockdown procedures and fire evacuation procedures do not contradict each other. A procedure that locks doors and a fire alarm system that releases them are both correct in their own terms, and the interaction between them needs to be deliberate rather than discovered during an incident. If you are reviewing fire arrangements at the same time, our guide to <a href="/blog/business-fire-risk-assessment-guide">business fire risk assessments</a> is a useful companion.</p>
+
+<h2>What J&L Security Can and Cannot Help With</h2>
+
+<p>We think it is worth being explicit about this, because Martyn's Law has attracted a good deal of marketing that blurs the line between installing equipment and providing compliance advice.</p>
+
+<p><strong>What we do:</strong></p>
+
+<ul>
+<li>Install, service and maintain <a href="/services/cctv-systems">CCTV systems</a>, including reviewing whether an existing system covers what you believe it covers</li>
+<li>Install and maintain <a href="/services/access-control">access control, door entry and electronic locking</a>, including zoned access for restricted areas</li>
+<li>Install and maintain intruder alarm systems</li>
+<li>Design, install, commission and service <a href="/services/fire-alarms">fire alarm systems</a> to BS 5839. J&amp;L Security is BAFE accredited for the installation and maintenance of fire alarms</li>
+<li>Carry out a free survey of existing systems and tell you honestly what is working and what is not</li>
+</ul>
+
+<p><strong>What we do not do:</strong></p>
+
+<ul>
+<li>Determine whether your premises is in scope, or which tier it falls into</li>
+<li>Carry out terrorism risk assessments</li>
+<li>Write your public protection procedures, or the documented assessment that enhanced tier premises must provide to the Security Industry Authority</li>
+<li>Make your notification to the Security Industry Authority</li>
+<li>Act as a counter-terrorism or security consultancy</li>
+</ul>
+
+<p>J&amp;L Security is a security systems installer and maintainer, accredited by SSAIB for security systems and by BAFE for fire alarm installation and maintenance. We are not a security consultancy and we do not offer compliance services under the Act. If you need help with the assessment, the procedures or the notification, that is work for a specialist consultant or for your own management team, and the Government's statutory guidance and the ProtectUK service are the right starting points.</p>
+
+<h2>Practical Steps to Take Now</h2>
+
+<ol>
+<li><strong>Establish your capacity figure.</strong> How many individuals may reasonably be expected to be present at the same time, from time to time. This determines everything else.</li>
+<li><strong>Check whether your use is a qualifying use</strong> under the Act, using the statutory guidance.</li>
+<li><strong>Identify the responsible person.</strong> For an organisation, this also means deciding who the designated senior individual will be if you are in the enhanced tier.</li>
+<li><strong>Start on procedures.</strong> Evacuation, invacuation, lockdown and communication, written down and known to staff. This is the substance of the duty for standard tier premises and the foundation for enhanced tier ones.</li>
+<li><strong>Enhanced tier only: consider measures and documentation.</strong> Work out what is reasonably practicable for your premises and be able to explain why.</li>
+<li><strong>Audit what you already have.</strong> Before buying anything, find out whether the existing CCTV, access control and locking actually work and cover the right areas.</li>
+<li><strong>Watch for the commencement date</strong> rather than working to a date you have seen quoted.</li>
+</ol>
+
+<h2>Get a Survey of Your Existing Systems</h2>
+
+<p>If you operate premises in Essex or Greater London and want an honest assessment of whether your existing CCTV, access control or door entry systems are doing what you think they are doing, we offer a free site survey. We will tell you what is working, what needs repair, and where coverage falls short. We will not tell you that you need to buy something in order to comply with a law that does not require it.</p>
+
+<p><a href="/contact">Contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770. We cover all of Essex and Greater London.</p>
+
+<p><em>This article is general guidance based on the Terrorism (Protection of Premises) Act 2025 and the Government's statutory guidance published in April 2026. It is not legal advice, and it is not a substitute for the statutory guidance itself. The implementation timetable may change. For advice on your specific premises, consult a qualified security or legal professional.</em></p>
+`,
+    faqs: [
+      {
+        question: "When does Martyn's Law come into force?",
+        answer: "No date has been announced for the duties on premises coming into force. The Terrorism (Protection of Premises) Act 2025 received Royal Assent on 3 April 2025, and the Government committed to an implementation period of at least 24 months from that date before the requirements come into force. Statutory guidance was published in April 2026 and some provisions have been commenced, including those establishing the Security Industry Authority as regulator, but the duties themselves are not yet live. Treat any specific deadline you have been quoted with caution.",
+      },
+      {
+        question: "Does Martyn's Law mean I have to install CCTV?",
+        answer: "No. There is no requirement at standard tier (200 to 799 individuals) to install any security equipment at all: the duties there are to notify the Security Industry Authority and to have appropriate public protection procedures covering evacuation, invacuation, lockdown and communication. At enhanced tier (800 or more) the responsible person must also have appropriate public protection measures, and CCTV is one example given under the monitoring category, but everything is qualified by what is reasonably practicable for that specific premises. Equipment on its own does not discharge the duty.",
+      },
+      {
+        question: 'My venue holds 300 people. What do I need to do?',
+        answer: 'A capacity of 300 places you in the standard tier, assuming your use is one of the qualifying uses set out in the Act. That means two duties: notifying the Security Industry Authority that you are the responsible person, and putting appropriate public protection procedures in place so far as is reasonably practicable, covering evacuation, invacuation, lockdown and communication. There is no requirement to install security equipment at standard tier.',
+      },
+      {
+        question: "Does Martyn's Law apply to places of worship?",
+        answer: 'Places of worship can fall within scope, but they remain in the standard tier even where 800 or more individuals may be present. The same applies to childcare premises and certain educational premises. This means the duties are notification and public protection procedures, rather than the additional measures and documentation required of enhanced tier premises.',
+      },
+      {
+        question: "Who enforces Martyn's Law?",
+        answer: 'The Security Industry Authority is the regulator for the Terrorism (Protection of Premises) Act 2025. Provisions establishing its regulatory role have been commenced, and it is required to publish guidance on how it will exercise those functions, subject to the approval of the Secretary of State.',
+      },
+      {
+        question: "Does installing CCTV for Martyn's Law affect my data protection obligations?",
+        answer: 'Your data protection obligations are unchanged. CCTV that captures identifiable individuals is personal data under UK GDPR, and the Information Commissioner\'s Office expectations on signage, retention periods, subject access requests and camera positioning apply exactly as they did before. Expanding a CCTV system is in fact the point at which those obligations are most often breached, so it is worth reviewing signage and retention settings whenever cameras are added.',
       },
     ],
   }

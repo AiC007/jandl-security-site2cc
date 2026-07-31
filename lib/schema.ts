@@ -226,6 +226,7 @@ export function generateBlogPostingSchema(post: {
   dateModified: string;
   wordCount: number;
   keywords: string[];
+  image?: { src: string; alt: string };
 }) {
   return {
     "@context": "https://schema.org",
@@ -237,6 +238,19 @@ export function generateBlogPostingSchema(post: {
     "dateModified": post.dateModified,
     "wordCount": post.wordCount,
     "keywords": post.keywords.join(', '),
+    // Google's Article structured data guidance recommends an image. Omitted
+    // entirely rather than emitted as null when a post has no image.
+    ...(post.image
+      ? {
+          "image": {
+            "@type": "ImageObject",
+            "url": `${COMPANY_INFO.website}${post.image.src}`,
+            "caption": post.image.alt,
+            "width": 1600,
+            "height": 900
+          }
+        }
+      : {}),
     "author": {
       "@type": "Organization",
       "name": COMPANY_INFO.name,

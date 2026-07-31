@@ -520,7 +520,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-07',
     dateModified: '2026-05-03',
     keywords: ['HMO fire alarm requirements', 'BS 5839-6', 'BS 5839-1', 'fire alarm HMO landlord', 'fire alarm servicing requirements', 'HMO fire alarm cost', 'Grade D1 HMO', 'Grade A HMO fire alarm'],
-    wordCount: 3450,
+    wordCount: 3350,
     content: `
 <p>A House in Multiple Occupation (HMO) is a property rented to three or more tenants forming two or more separate households who share facilities such as a kitchen or bathroom. Under UK law, HMO landlords must install and maintain a fire alarm system that meets the relevant British Standard: BS 5839-6 for domestic-scale HMOs, or BS 5839-1 for larger or higher-risk HMOs. The specific system category and grade required depends on the property layout, the number of storeys, the number of occupants, and the conditions set by your local authority's licensing team.</p>
 
@@ -778,6 +778,8 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <p>If you are unsure what system your HMO needs, <a href="/contact">contact us for a free survey</a> or call <a href="tel:02045385925">0204 538 5925</a>. We can advise on the requirements for your specific property and local authority area.</p>
+
+<p>Where an HMO is large enough or commercial enough to fall under BS 5839-1 rather than BS 5839-6, the pricing works differently, because the category set by the fire risk assessment drives the device count. Our guide to <a href="/blog/commercial-fire-alarm-cost-uk-2026">what determines the cost of a commercial fire alarm system</a> explains how those quotes are built up and what to check before comparing them.</p>
 
 <p>Read more about our <a href="/services/fire-alarms">fire alarm installation and servicing</a>, or see how we work with HMO landlords in <a href="/fire-alarm-installation/brentwood">Brentwood</a>, <a href="/locations/romford">Romford</a>, and across <a href="/services">our full service area</a>.</p>
 `,
@@ -1853,7 +1855,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-05-23',
     dateModified: '2026-05-23T12:00:00Z',
     keywords: ['fire risk assessment for business', 'fire risk assessment office', 'fire risk assessment care home', 'fire risk assessment required by law', 'commercial fire risk assessment Essex'],
-    wordCount: 840,
+    wordCount: 854,
     image: {
       src: '/images/fire-risk-assessments/business-fra.webp',
       alt: 'Interior of a small UK commercial premises with ceiling smoke detector, emergency light, exit sign and fire extinguisher, illustrating a business fire risk assessment',
@@ -1903,7 +1905,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The single-provider advantage</h2>
 
-<p>A fire risk assessment that simply produces a report is only half the job. The value comes from acting on the action plan. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, then carries out the resulting work directly: fire alarm installation and servicing to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839</a> (we are BAFE-accredited for the installation and maintenance of fire alarms), <a href="/services/security-lighting">emergency lighting</a>, electrical testing, and fire door works. For a busy business owner, dealing with one company from assessment to compliant premises removes the burden of coordinating several trades. Our guide on <a href="/blog/fire-risk-assessment-cost-essex-2026">what determines the cost of a fire risk assessment</a> explains how the assessment and any works are priced.</p>
+<p>A fire risk assessment that simply produces a report is only half the job. The value comes from acting on the action plan. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, then carries out the resulting work directly: fire alarm installation and servicing to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839</a> (we are BAFE-accredited for the installation and maintenance of fire alarms), <a href="/services/security-lighting">emergency lighting</a>, electrical testing, and fire door works. For a busy business owner, dealing with one company from assessment to compliant premises removes the burden of coordinating several trades. Our guide on <a href="/blog/fire-risk-assessment-cost-essex-2026">what determines the cost of a fire risk assessment</a> explains how the assessment and any works are priced, and our guide to <a href="/blog/commercial-fire-alarm-cost-uk-2026">commercial fire alarm costs</a> covers the alarm side in detail.</p>
 
 <p>Fire is not the only premises duty that catches business owners out. If your premises is publicly accessible and may hold 200 or more people at the same time, it may also fall within scope of <a href="/blog/martyns-law-premises-requirements-2026">Martyn's Law</a>, which is a separate duty with its own regulator. It is worth checking the two together, particularly because lockdown procedures and fire evacuation procedures need to be consistent with one another.</p>
 
@@ -2103,7 +2105,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-06-27',
     dateModified: '2026-06-27T12:00:00Z',
     keywords: ['fire risk assessment cost', 'how much is a fire risk assessment', 'fire risk assessment cost essex', 'fire risk assessment price', 'fire risk assessment quote'],
-    wordCount: 1020,
+    wordCount: 811,
     content: `
 <p>One of the most common questions we are asked is what a fire risk assessment costs. The honest answer is that there is no single price, and any figure quoted before someone understands your building should be treated with caution. This guide explains what actually drives the cost, so you can read a quote with confidence, and how to get an accurate, no-obligation price for premises across Essex and Greater London. It is general guidance rather than a price list.</p>
 
@@ -2138,7 +2140,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The single-provider advantage</h2>
 
-<p>The assessment itself is only part of the total spend. The larger cost usually lies in the remedial works the assessment recommends, and this is where using one provider can save money as well as time. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and then carries out the resulting work directly: fire alarms (we are BAFE-accredited for the installation and maintenance of fire alarms), emergency lighting, electrical testing, and fire door works. Coordinating assessment and remedials through one company avoids the cost and hassle of managing several trades and several sets of paperwork.</p>
+<p>The assessment itself is only part of the total spend. The larger cost usually lies in the remedial works the assessment recommends, and this is where using one provider can save money as well as time. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and then carries out the resulting work directly: fire alarms (we are BAFE-accredited for the installation and maintenance of fire alarms), emergency lighting, electrical testing, and fire door works. Coordinating assessment and remedials through one company avoids the cost and hassle of managing several trades and several sets of paperwork. Where the remedial work includes a new or upgraded fire alarm system, our guide to <a href="/blog/commercial-fire-alarm-cost-uk-2026">commercial fire alarm costs</a> explains what drives that part of the spend.</p>
 
 <h2>How to get an accurate quote</h2>
 
@@ -2263,7 +2265,7 @@ export const blogPosts: BlogPost[] = [
     wordCount: 2113,
     image: {
       src: '/images/2026-07/martyns-law-premises.webp',
-      alt: 'Entrance to a busy UK public venue with a staffed door, ceiling-mounted CCTV camera and access-controlled side door, illustrating the premises in scope of Martyn\'s Law',
+      alt: 'Members of the public entering a UK public venue through a main door, with a CCTV camera on the facade and an access control reader beside the entrance, illustrating the premises in scope of Martyn\'s Law',
     },
     content: `
 <p><strong>Martyn's Law is the Terrorism (Protection of Premises) Act 2025.</strong> It places duties on those responsible for certain publicly accessible premises to prepare for the possibility of a terrorist attack. It works on two tiers set by how many people may be present at the same time: a <strong>standard tier for premises where 200 to 799 individuals</strong> may be present, and an <strong>enhanced tier for premises where 800 or more</strong> may be present. The regulator is the Security Industry Authority.</p>
@@ -2450,6 +2452,165 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Does installing CCTV for Martyn's Law affect my data protection obligations?",
         answer: 'Your data protection obligations are unchanged. CCTV that captures identifiable individuals is personal data under UK GDPR, and the Information Commissioner\'s Office expectations on signage, retention periods, subject access requests and camera positioning apply exactly as they did before. Expanding a CCTV system is in fact the point at which those obligations are most often breached, so it is worth reviewing signage and retention settings whenever cameras are added.',
+      },
+    ],
+  },
+  {
+    slug: 'commercial-fire-alarm-cost-uk-2026',
+    title: 'How Much Does a Commercial Fire Alarm System Cost? A 2026 Guide for UK Businesses',
+    metaTitle: 'Commercial Fire Alarm Cost UK 2026: What Drives the Price',
+    description: 'What actually determines the cost of a commercial fire alarm system in 2026. Covers BS 5839-1 categories, conventional versus addressable, device counts, interfaces, commissioning and servicing, and how to compare quotes fairly.',
+    datePublished: '2026-07-31',
+    dateModified: '2026-07-31',
+    keywords: [
+      'commercial fire alarm cost',
+      'commercial fire alarm cost uk',
+      'fire alarm installation cost commercial',
+      'BS 5839-1 cost',
+      'fire alarm system cost business',
+      'addressable fire alarm cost',
+      'fire alarm servicing cost uk',
+      'fire alarm quote comparison',
+      'commercial fire alarm installation price',
+    ],
+    wordCount: 1762,
+    image: {
+      src: '/images/2026-07/commercial-security-cost.webp',
+      alt: 'Engineer commissioning a wall-mounted fire alarm control panel in a UK commercial premises, with a checklist and a ceiling-mounted camera alongside, illustrating what determines commercial fire alarm cost',
+    },
+    content: `
+<p>There is no single price for a commercial fire alarm system, and any figure quoted before someone has looked at your building should be treated with caution. Two premises of identical floor area can differ by a multiple, not a margin, because the thing that drives the cost is not the size of the building. It is the level of detection the building actually needs, and that is set by the fire risk assessment rather than by the installer.</p>
+
+<p>This guide explains what genuinely determines the price, so that you can read a quote with confidence and compare two quotes fairly. It is general guidance rather than a price list. For a figure that applies to your building, the only reliable route is a <a href="/contact">free site survey</a>.</p>
+
+<p>If you are looking for domestic or HMO costs rather than commercial, our guides to <a href="/blog/burglar-alarm-cost-uk-2026">burglar alarm costs</a> and <a href="/blog/hmo-fire-alarm-requirements-bs5839">HMO fire alarm requirements</a> cover that ground instead.</p>
+
+<h2>Why Commercial Pricing Works Differently</h2>
+
+<p>Domestic fire detection is largely a product decision: a number of interlinked detectors to a known specification. Commercial fire detection is a design decision. A system for non-domestic premises is designed to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839-1</a>, and that standard does not prescribe one system for all buildings. It sets out categories, and the category determines how much of the building is covered by automatic detection.</p>
+
+<p>That is why a quote cannot sensibly be given over the phone from a floor area. Until the category is known, nobody knows how many devices the building needs.</p>
+
+<h2>The Single Biggest Cost Driver: The Category</h2>
+
+<p>BS 5839-1 categories run from manual call points only, through varying levels of automatic detection for life safety, up to full coverage for property protection. The practical range is wide:</p>
+
+<ul>
+<li><strong>Category M</strong> is manual call points only, with no automatic detection. It is the lowest-cost option and is suitable only for small, simple, low-risk premises where occupants are awake and alert.</li>
+<li><strong>Category L4</strong> covers escape routes only. It is the minimum life-safety category and needs comparatively few detectors.</li>
+<li><strong>Category L3</strong> adds rooms opening onto escape routes, which in a building with many small rooms off a corridor can multiply the device count considerably.</li>
+<li><strong>Category L2</strong> adds high-risk rooms on top of L3.</li>
+<li><strong>Category L1</strong> covers all areas of the building, including voids and roof spaces where appropriate. It is typically required where people sleep on the premises, such as hotels and care homes.</li>
+<li><strong>Categories P1 and P2</strong> cover the building for property protection rather than life safety, and are usually driven by an insurer rather than by fire safety law.</li>
+</ul>
+
+<p>The step from L4 to L1 in the same building is not a percentage uplift. It can multiply the number of detectors, the amount of cable, the panel capacity required and the commissioning time. This is the first question to settle, and it is settled by the fire risk assessment, not by the price you would like to pay.</p>
+
+<p>It also means the single most common cause of two wildly different quotes is that they are quoting different categories. If one quote is markedly cheaper, check the category before concluding it is better value.</p>
+
+<h2>Conventional or Addressable</h2>
+
+<p>The second structural decision is the system type.</p>
+
+<p><strong>Conventional systems</strong> divide the building into zones. When a device activates, the panel indicates the zone rather than the individual device. The equipment is cheaper, but the cabling is less efficient because each zone needs its own circuit, and fault finding takes longer because a fault is located to a zone rather than to a device.</p>
+
+<p><strong>Addressable systems</strong> give every device its own address on a loop. The panel identifies the exact device, which makes fault finding and maintenance faster, and one loop can carry a large number of devices, which reduces cabling in larger buildings. The equipment costs more per device.</p>
+
+<p>For small premises with few zones, conventional is often the sensible choice. Beyond a certain size the cabling efficiency and maintenance advantage of addressable usually outweighs the equipment cost, and for buildings likely to be altered or extended, addressable is easier to modify later. There is no universal threshold; it is a judgement made at survey.</p>
+
+<h2>Device Count, Zones and Panel Capacity</h2>
+
+<p>Once the category and system type are fixed, the device schedule follows: detectors of the appropriate type for each area, manual call points on escape routes and at final exits, and sounders positioned to achieve the required sound level throughout the building. Sounder coverage is a real cost factor that is easy to overlook, because achieving an adequate level in every part of the building sometimes needs more devices than people expect, particularly where occupants may be sleeping.</p>
+
+<p>Panel capacity matters too. A panel sized exactly to today's device count leaves no room for a future extension, and replacing a panel later costs considerably more than specifying a slightly larger one at the outset.</p>
+
+<h2>The Building Itself</h2>
+
+<p>Two buildings needing the same category can still price very differently:</p>
+
+<ul>
+<li><strong>Cable routes and containment.</strong> A building with accessible voids and existing containment is quick to install. Solid construction, exposed finishes requiring surface containment, or a building where cable must be routed around occupied areas all add labour.</li>
+<li><strong>Ceiling heights and structure.</strong> High ceilings, atria, and complex roof geometry affect both detector spacing and the access equipment needed to install and later service the devices.</li>
+<li><strong>Listed and heritage buildings.</strong> Where equipment is fixed to a listed building, consent is required, and the installation has to be designed around what is acceptable rather than what is convenient.</li>
+<li><strong>Working in occupied premises.</strong> Installing around a trading business is slower than installing in an empty shell, and work that has to happen out of hours or in phases carries a labour premium.</li>
+<li><strong>Access equipment.</strong> Scaffold, towers or powered access for high-level devices is a genuine line item, and it also affects the ongoing servicing cost for the life of the system.</li>
+</ul>
+
+<h2>Interfaces and Cause and Effect</h2>
+
+<p>This is the part most often missing from a cheap quote, and it is frequently the difference between a system that passes commissioning and one that does not.</p>
+
+<p>A commercial fire alarm rarely stands alone. It may need to release door holders and magnetic locks, trigger automatic opening vents, send lifts to a designated floor, shut down plant or air handling, interface with a suppression system, or signal to an alarm receiving centre for remote monitoring. Each interface needs cabling, hardware, and, more significantly, programming and testing.</p>
+
+<p>The programmed logic that determines what happens when a given device activates is the cause and effect. Writing, agreeing and testing it takes time, particularly in a building with phased evacuation or multiple interfaces. A quote that does not mention interfaces or cause and effect in a building that plainly needs them is not a cheaper quote, it is an incomplete one.</p>
+
+<h2>Commissioning, Certification and Handover</h2>
+
+<p>A properly delivered system includes commissioning with every device tested, a commissioning certificate, an as-fitted drawing or device schedule, a logbook left on site, and a demonstration to whoever will be responsible for the system day to day. These are not optional extras. Without the certification, the responsible person has no evidence of a compliant installation to show an insurer, a fire risk assessor, or a licensing authority.</p>
+
+<p>When comparing quotes, check that commissioning and certification are itemised rather than assumed.</p>
+
+<h2>The Ongoing Cost, Which Is Not Optional</h2>
+
+<p>The installation is the start of the spend, not the whole of it. BS 5839-1 requires servicing by a competent contractor at intervals no greater than six months, so a commercial system carries a recurring cost for its whole life. Budget for:</p>
+
+<ul>
+<li><strong>Servicing.</strong> Our annual servicing contracts start at £180 + VAT for commercial premises, covering a routine service and an emergency callout within the contract year. The figure for a specific building depends on the device count and how accessible the devices are.</li>
+<li><strong>Battery replacement.</strong> Panel standby batteries and, on some systems, device batteries are consumables on a predictable replacement cycle.</li>
+<li><strong>Remote monitoring,</strong> where the system signals to an alarm receiving centre, which carries a monthly or annual charge.</li>
+<li><strong>Remedials</strong> arising from a service visit or a fire risk assessment.</li>
+</ul>
+
+<p>A system with high-level devices in an atrium will cost more to service every six months, for decades, than an otherwise identical system at accessible heights. That is worth weighing at design stage rather than discovering later.</p>
+
+<h2>Where a Cheap Quote Usually Hides the Cost</h2>
+
+<p>If one quote is substantially lower than the others, it is usually explained by one of the following rather than by efficiency:</p>
+
+<ol>
+<li>A lower category than the fire risk assessment calls for, meaning fewer detectors.</li>
+<li>Conventional equipment quoted for a building that really needs addressable, which saves on equipment and costs more in maintenance.</li>
+<li>Interfaces and cause and effect excluded, to be priced later as a variation.</li>
+<li>Commissioning, certification or the logbook not included.</li>
+<li>Sounder coverage that will not achieve the required sound level, discovered at commissioning.</li>
+<li>The first year of servicing excluded, when a competitor has included it.</li>
+<li>The contractor is not third-party certificated, so the competence evidence falls back on you as the responsible person.</li>
+</ol>
+
+<h2>Who Decides the Category</h2>
+
+<p>The fire risk assessment determines the category, which is why we recommend having the assessment in place before seeking fire alarm quotes rather than after. Quoting without it means guessing, and a guess that turns out low is a variation later.</p>
+
+<p>J&amp;L Security arranges fire risk assessments through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and we carry out any resulting remedial works directly. J&amp;L Security is BAFE accredited for the installation and maintenance of fire alarms. Our guides to <a href="/blog/business-fire-risk-assessment-guide">whether your business needs a fire risk assessment</a> and <a href="/blog/fire-risk-assessment-cost-essex-2026">what determines its cost</a> cover that side of the work.</p>
+
+<h2>Getting an Accurate Price</h2>
+
+<p>The quickest route to a realistic figure is a short survey. We will look at the building, confirm the category against the fire risk assessment, agree the system type, and give a written, no-obligation quote that itemises equipment, installation, interfaces, commissioning and certification separately, so you can see exactly what you are paying for and compare it fairly against anyone else.</p>
+
+<p>We cover Essex and Greater London. See our <a href="/services/fire-alarms">fire alarm services</a> and <a href="/services/fire-risk-assessments">fire risk assessments</a> pages, <a href="/contact">request a call back</a>, or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770.</p>
+
+<p><em>This article is general guidance on what determines the cost of a commercial fire alarm system. It is not a price list and it is not a quotation. Any figures given are indicative and subject to survey.</em></p>
+`,
+    faqs: [
+      {
+        question: 'How much does a commercial fire alarm system cost in the UK?',
+        answer: 'There is no single figure, because the cost is driven by the BS 5839-1 category the building needs rather than by its floor area. Two premises of the same size can differ by a multiple depending on whether they need manual call points only, detection on escape routes, or full coverage of every area. The category is set by the fire risk assessment. The reliable way to get a figure for a specific building is a free site survey, and a quote should itemise equipment, installation, interfaces, commissioning and certification separately.',
+      },
+      {
+        question: 'What is the difference between a conventional and an addressable fire alarm system?',
+        answer: 'A conventional system divides the building into zones and the panel indicates which zone has activated. An addressable system gives every device its own address, so the panel identifies the exact device. Addressable equipment costs more per device but uses cabling more efficiently in larger buildings, makes fault finding much faster, and is easier to extend later. Conventional is often the sensible choice for small premises with few zones. Which is appropriate is a judgement made at survey.',
+      },
+      {
+        question: 'Why are two fire alarm quotes for the same building so different?',
+        answer: 'The most common reason is that they are quoting different BS 5839-1 categories, which changes how many detectors the building gets. Other frequent causes are conventional equipment quoted where addressable is more appropriate, interfaces and cause and effect programming excluded to be priced later as a variation, commissioning or certification not included, and the first year of servicing excluded. Before comparing on price, check that both quotes cover the same category and the same scope.',
+      },
+      {
+        question: 'How often does a commercial fire alarm need servicing, and what does it cost?',
+        answer: 'BS 5839-1 requires servicing by a competent contractor at intervals no greater than six months, so it is a recurring cost for the life of the system. Our annual servicing contracts start at £180 + VAT for commercial premises, including one routine service and one emergency callout within the contract year. The figure for a specific building depends on the number of devices and how accessible they are, since high-level devices need access equipment at every visit.',
+      },
+      {
+        question: 'Do I need a fire risk assessment before getting a fire alarm quote?',
+        answer: 'It is strongly advisable. The fire risk assessment determines the category of system the building needs, and without it any quote is based on an assumption. If that assumption turns out to be lower than the assessment later requires, the difference becomes a variation and costs more than specifying it correctly at the outset. J&L Security arranges fire risk assessments through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and carries out any resulting remedial works directly.',
       },
     ],
   }

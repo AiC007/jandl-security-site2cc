@@ -244,7 +244,7 @@ const locationFaqs = (locationName: string) => [
   },
   {
     question: `Are you based near ${locationName}?`,
-    answer: `J&L Security is based in Brentwood, Essex — giving us excellent coverage across ${locationName} and the surrounding areas. Our engineers work throughout Essex and Greater London daily.`,
+    answer: `J&L Security is based in Brentwood, Essex, giving us excellent coverage across ${locationName} and the surrounding areas. Our engineers work throughout Essex and Greater London daily.`,
   },
   {
     question: `Do you provide maintenance contracts in ${locationName}?`,
@@ -273,7 +273,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const location = locations.find((l) => l.slug === locationSlug);
   if (!location) return {};
   return {
-    title: `Security Systems ${location.name} — Alarms, CCTV & Fire Protection`,
+    title: `Security Systems ${location.name}: Alarms, CCTV & Fire Protection`,
     description: `Professional security system installation in ${location.name}, ${location.county}. Burglar alarms, CCTV, fire alarms, access control. Free surveys, same-day service. Call J&L Security.`,
     keywords: [
       `security systems ${location.name}`,
@@ -343,7 +343,7 @@ export default async function LocationPage({ params }: Props) {
                 Security Systems in {location.name}
               </h1>
               <p className="text-xl text-primary-100 mb-8">
-                Professional burglar alarms, CCTV, fire alarms and access control — installed and maintained by local engineers across {location.name} and surrounding areas.
+                Professional burglar alarms, CCTV, fire alarms and access control, installed and maintained by local engineers across {location.name} and surrounding areas.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex flex-col gap-1">
@@ -404,7 +404,7 @@ export default async function LocationPage({ params }: Props) {
                 <div className="bg-primary-50 rounded-xl p-5">
                   <CheckCircle className="h-6 w-6 text-primary-600 mb-3" />
                   <h3 className="font-semibold text-gray-900 mb-1">Accredited Engineers</h3>
-                  <p className="text-sm text-gray-600">SSAIB, CHAS, FIA and BAFE certified — installation to SSAIB standards</p>
+                  <p className="text-sm text-gray-600">SSAIB, CHAS, FIA and BAFE certified, with installation to SSAIB standards</p>
                 </div>
                 <div className="bg-primary-50 rounded-xl p-5">
                   <MapPin className="h-6 w-6 text-primary-600 mb-3" />
@@ -596,7 +596,7 @@ export default async function LocationPage({ params }: Props) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Get a Free Security Survey in {location.name}</h2>
           <p className="text-xl mb-8 text-primary-100">
-            Our qualified engineers cover {location.name} and all surrounding areas. No-obligation assessment — same-day appointments available.
+            Our qualified engineers cover {location.name} and all surrounding areas. No-obligation assessment, with same-day appointments available.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="flex flex-col gap-1">

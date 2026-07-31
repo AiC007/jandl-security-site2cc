@@ -64,6 +64,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     dateModified: post.dateModified,
     wordCount: post.wordCount,
     keywords: post.keywords,
+    image: post.image,
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([

@@ -18,11 +18,11 @@ export const blogPosts: BlogPost[] = [
     slug: 'burglar-alarm-cost-uk-2026',
     title: 'How Much Does a Burglar Alarm Cost in the UK? (2026 Prices)',
     metaTitle: 'Burglar Alarm Cost UK 2026: Installation Prices Explained',
-    description: 'A practical guide to burglar alarm installation costs in the UK for 2026. Covers bell-only, speech dialler, and monitored systems, plus what affects the price and what to expect from an NSI-approved installer.',
+    description: 'A practical guide to burglar alarm installation costs in the UK for 2026. Covers bell-only, speech dialler, and monitored systems, plus what affects the price and what to expect from an inspectorate-approved installer.',
     datePublished: '2026-05-03',
     dateModified: '2026-05-06',
     keywords: ['burglar alarm cost uk', 'alarm installation cost', 'intruder alarm price uk', 'monitored alarm cost', 'home alarm system cost uk', 'pyronix enforcer cost', 'wireless burglar alarm price essex'],
-    wordCount: 2380,
+    wordCount: 3177,
     content: `
 <p>A professionally installed burglar alarm in the UK typically costs <strong>£450 to £2,500 for a domestic property in 2026</strong>, depending on the system type, the number of detectors, and whether monitoring is included. The figures in this guide are based on our experience installing intruder alarm systems across Essex and Greater London since 2011, including hundreds of installations across Brentwood, Romford, Ilford, Chelmsford, Upminster, and the wider M25 corridor.</p>
 
@@ -379,7 +379,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-07',
     dateModified: '2026-04-07',
     keywords: ['CCTV installation Essex', 'home CCTV system', 'security cameras Essex', 'CCTV planning permission'],
-    wordCount: 1900,
+    wordCount: 1549,
     content: `
 <p>CCTV (closed-circuit television) is a video surveillance system that records footage from cameras mounted at fixed positions around a property. For Essex homeowners, a professionally installed CCTV system typically includes 2 to 8 cameras, a network video recorder (NVR), and remote viewing via a smartphone app. Systems start from around £850 plus VAT for a basic domestic installation.</p>
 
@@ -520,7 +520,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-07',
     dateModified: '2026-05-03',
     keywords: ['HMO fire alarm requirements', 'BS 5839-6', 'BS 5839-1', 'fire alarm HMO landlord', 'fire alarm servicing requirements', 'HMO fire alarm cost', 'Grade D1 HMO', 'Grade A HMO fire alarm'],
-    wordCount: 3450,
+    wordCount: 3407,
     content: `
 <p>A House in Multiple Occupation (HMO) is a property rented to three or more tenants forming two or more separate households who share facilities such as a kitchen or bathroom. Under UK law, HMO landlords must install and maintain a fire alarm system that meets the relevant British Standard: BS 5839-6 for domestic-scale HMOs, or BS 5839-1 for larger or higher-risk HMOs. The specific system category and grade required depends on the property layout, the number of storeys, the number of occupants, and the conditions set by your local authority's licensing team.</p>
 
@@ -779,6 +779,10 @@ export const blogPosts: BlogPost[] = [
 
 <p>If you are unsure what system your HMO needs, <a href="/contact">contact us for a free survey</a> or call <a href="tel:02045385925">0204 538 5925</a>. We can advise on the requirements for your specific property and local authority area.</p>
 
+<p>This article covers HMO licensing specifically. For the standards themselves, including the full set of categories, grades and servicing obligations, see our companion guide to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839-1 and BS 5839-6</a>. That guide is the right starting point if you need to understand <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839-1</a> for non-domestic premises rather than the domestic and HMO requirements set out here.</p>
+
+<p>Where an HMO is large enough or commercial enough to fall under BS 5839-1 rather than BS 5839-6, the pricing works differently, because the category set by the fire risk assessment drives the device count. Our guide to <a href="/blog/commercial-fire-alarm-cost-uk-2026">what determines the cost of a commercial fire alarm system</a> explains how those quotes are built up and what to check before comparing them.</p>
+
 <p>Read more about our <a href="/services/fire-alarms">fire alarm installation and servicing</a>, or see how we work with HMO landlords in <a href="/fire-alarm-installation/brentwood">Brentwood</a>, <a href="/locations/romford">Romford</a>, and across <a href="/services">our full service area</a>.</p>
 `,
     faqs: [
@@ -819,22 +823,27 @@ export const blogPosts: BlogPost[] = [
       'BS 5839-1',
       'BS 5839-6',
       'BS 5839 explained',
+      'bs 5839-1 testing intervals',
+      'bs 5839-1 specification',
+      'bs 5839-1 fire alarm system',
+      'bs 5839 fire alarm systems',
       'fire alarm british standard',
       'fire alarm categories',
       'fire alarm grades',
+      'fire alarm systems ld1',
       'BAFE fire alarm maintainers',
       'fire risk assessment uk',
       'fire alarm servicing uk',
       'commercial fire alarm uk',
       'HMO fire alarm uk',
     ],
-    wordCount: 2150,
+    wordCount: 3032,
     content: `
 <p>BS 5839 is the British Standard for fire detection and fire alarm systems. It is split into two parts that cover different building types: <strong>BS 5839-1 for non-domestic premises</strong> (offices, retail, schools, warehouses, care homes, and most commercial buildings) and <strong>BS 5839-6 for domestic premises</strong> (single dwellings, flats, and houses in multiple occupation). The standards set out how a system should be designed, installed, commissioned, and maintained, and they are the reference points used by insurers, fire risk assessors, and licensing authorities when judging whether a building has appropriate fire detection in place.</p>
 
 <p>This guide explains what each standard covers, the categories and grades they define, who each one applies to in practice, and what the standards mean for your obligations once a system is installed. It is written for property owners, managers, landlords, and responsible persons who need to specify or oversee a fire alarm system without having to read the full standards documents themselves.</p>
 
-<p>If you are an HMO landlord specifically, our companion article on <a href="/blog/hmo-fire-alarm-requirements-bs5839">HMO fire alarm requirements</a> goes into the licensing detail in more depth. The article you are reading now is the broader overview covering both BS 5839-1 and BS 5839-6.</p>
+<p>Most of what follows concerns <strong>BS 5839-1</strong>, because non-domestic premises carry the more complex specification: a category chosen from a range of options, a formal design, commissioning certification, and a testing and servicing regime that runs for the life of the system. BS 5839-6 is covered in full further down.</p>
 
 <h2>The Quick Summary</h2>
 
@@ -879,7 +888,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Categories can be combined: an L2/P1 system, for example, would protect the escape routes and high-risk rooms for life safety and the rest of the building for property protection.</p>
 
-<h3>What BS 5839-1 Requires of the Installation</h3>
+<h3>BS 5839-1 Specification: What the Standard Requires of the Installation</h3>
 
 <p>The standard sets out detailed requirements covering detector placement, sounder coverage, panel performance, cabling, power supply, and documentation. The points that matter most to a non-specialist responsible person are:</p>
 
@@ -1004,13 +1013,23 @@ export const blogPosts: BlogPost[] = [
 
 <p><strong>J&amp;L Security is BAFE-certified under SP203-1</strong>, covering design, installation, commissioning, and maintenance of fire alarm systems for both BS 5839-1 and BS 5839-6 installations.</p>
 
-<h2>Maintenance Obligations Explained</h2>
+<h2>BS 5839-1 Testing and Servicing Intervals</h2>
 
-<h3>BS 5839-1 commercial servicing</h3>
+<p>This is the obligation that continues for the life of the system, and it is the one most often missed. Under BS 5839-1, servicing must be carried out by a competent contractor at intervals <strong>no greater than six months</strong>. Practical guidance allows each visit to be scheduled within a 5 to 7 month window, which gives contractors room to plan routes without breaching the maximum interval.</p>
 
-<p>Servicing is required at intervals no greater than six months by a competent contractor. In practice, contracts run on a 6-monthly schedule with each visit covering test of every detector and call point, sounder verification, panel checks, battery tests, and a written service report. The responsible person also records weekly user tests of one call point on a rotating basis.</p>
+<p>The full routine for a BS 5839-1 system splits between what the responsible person does and what the contractor does:</p>
 
-<h3>BS 5839-6 domestic and HMO servicing</h3>
+<ul>
+<li><strong>Weekly, by the responsible person:</strong> test one manual call point, taking a different call point each week so that all are tested over time, and record the result in the logbook.</li>
+<li><strong>Periodically, by the responsible person:</strong> visual checks that the panel shows no fault, that call points and detectors are unobstructed, and that any faults raised previously have been cleared.</li>
+<li><strong>At intervals no greater than six months, by a competent contractor:</strong> a full service visit covering testing of every detector and call point, sounder verification against the required sound level, panel checks, standby battery tests, examination of any interfaces and cause and effect programming, and a written service report.</li>
+</ul>
+
+<p>Two points are worth emphasising. First, the six-month figure is a maximum, not a target: a system serviced at seven months and one day is outside the standard. Second, the logbook matters. An insurer, a fire risk assessor or a licensing authority asking whether the system has been maintained will ask to see the records, and a well-maintained system with no logbook is difficult to evidence.</p>
+
+<p>Servicing is a recurring cost for the life of the system, and it varies with the device count and how accessible the devices are. Our guide to <a href="/blog/commercial-fire-alarm-cost-uk-2026">commercial fire alarm costs</a> covers how that is priced alongside the installation.</p>
+
+<h2>BS 5839-6 Domestic and HMO Servicing</h2>
 
 <p>For Grade A systems the regime is similar to BS 5839-1: professional servicing under contract, typically annually for domestic and twice-yearly for larger HMOs. For Grade D systems the routine combines user-side testing (a periodic test from the test button on each unit) with periodic professional inspection, often annually for HMOs as a licensing condition. Battery replacement intervals depend on whether the system is Grade D1 (sealed long-life battery, typically 10 years) or Grade D2 (replaceable battery).</p>
 
@@ -1019,7 +1038,7 @@ export const blogPosts: BlogPost[] = [
 <p>We are a BAFE-certified fire alarm maintainer covering Essex and Greater London. Our work spans the full lifecycle of fire alarm systems under both BS 5839-1 and BS 5839-6:</p>
 
 <ul>
-<li>Fire risk assessments for commercial premises and HMOs</li>
+<li>Fire risk assessments for commercial premises and HMOs, arranged through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, with any resulting remedial works carried out by us directly</li>
 <li>Design, installation, and commissioning of new BS 5839-1 systems for commercial buildings</li>
 <li>Design, installation, and commissioning of BS 5839-6 systems for domestic properties and HMOs (Grades A, C, and D, Categories LD1 to LD3 as appropriate)</li>
 <li>6-monthly servicing contracts for BS 5839-1 systems and annual or 6-monthly servicing for BS 5839-6 systems by Grade</li>
@@ -1038,6 +1057,10 @@ export const blogPosts: BlogPost[] = [
 <h3>Can a Grade D system ever be acceptable for an HMO?</h3>
 
 <p>Yes, in many cases. A Grade D Category LD2 system (mains-powered interlinked detectors in circulation areas plus the kitchen and any high-risk rooms, with battery backup) is the most common HMO licensing specification for properties up to a certain size and number of storeys. Larger HMOs, multi-storey properties, and those with bedsit-style accommodation typically require Grade A or Grade A with LD1. The local authority licensing team is the source of truth for any specific property.</p>
+
+<h3>What are the BS 5839-1 testing intervals?</h3>
+
+<p>BS 5839-1 sets a maximum interval of six months between professional service visits by a competent contractor, with practical guidance allowing each visit to be scheduled within a 5 to 7 month window. Alongside that, the responsible person tests one manual call point weekly, rotating through the call points so all are covered over time, and records each test in the system logbook. Six months is a maximum rather than a target, so a system serviced at seven months and one day is outside the standard.</p>
 
 <h3>How often does a commercial fire alarm need servicing?</h3>
 
@@ -1065,6 +1088,10 @@ export const blogPosts: BlogPost[] = [
         answer: 'Yes, in many cases. A Grade D Category LD2 system (mains-powered interlinked detectors in circulation areas plus the kitchen and any high-risk rooms, with battery backup) is the most common HMO licensing specification for properties up to a certain size and number of storeys. Larger HMOs, multi-storey properties, and those with bedsit-style accommodation typically require Grade A or Grade A with LD1. The local authority licensing team is the source of truth for any specific property.'
       },
       {
+        question: 'What are the BS 5839-1 testing intervals?',
+        answer: 'BS 5839-1 sets a maximum interval of six months between professional service visits by a competent contractor, with practical guidance allowing each visit to be scheduled within a 5 to 7 month window. Alongside that, the responsible person tests one manual call point weekly, rotating through the call points so all are covered over time, and records each test in the system logbook. Six months is a maximum rather than a target, so a system serviced at seven months and one day is outside the standard.'
+      },
+      {
         question: 'How often does a commercial fire alarm need servicing?',
         answer: 'BS 5839-1 requires professional servicing at intervals no greater than six months. In practice this means a 6-monthly contract with each visit covering full test of every detector and call point, sounder verification, panel checks, and battery tests. The responsible person should also carry out weekly user tests of one call point on a rotating basis and record these in the system logbook.'
       },
@@ -1086,7 +1113,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-07',
     dateModified: '2026-04-07',
     keywords: ['how to choose security company', 'security installer UK', 'SSAIB approved installer', 'security company checklist'],
-    wordCount: 1800,
+    wordCount: 1382,
     content: `
 <p>A security company is a business that designs, installs, and maintains electronic security systems such as burglar alarms, CCTV, fire alarms, and access control. In the UK, security installers range from sole traders to large national firms, and the quality of work varies significantly. Choosing the wrong company can mean poorly installed equipment, inadequate aftercare, voided insurance, and wasted money.</p>
 
@@ -1213,7 +1240,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-15',
     dateModified: '2026-04-15',
     keywords: ['insurance approved alarm UK', 'insurance approved burglar alarm', 'SSAIB alarm insurance', 'NSI alarm requirements', 'alarm grading insurance'],
-    wordCount: 1720,
+    wordCount: 1475,
     content: `
 <p>If your home or business insurer has told you that you need an "insurance-approved" alarm, you may have been left wondering what that actually means in practice. It is not a single certificate you can buy, and it is not a make or model of alarm. It is a combination of four things: who installed it, what standard it was installed to, what grade of system it is, and whether the installing company belongs to a recognised inspectorate body.</p>
 
@@ -1323,7 +1350,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-15',
     dateModified: '2026-04-15',
     keywords: ['wired vs wireless alarm', 'wireless burglar alarm UK', 'hardwired alarm system', 'wireless alarm reliability', 'burglar alarm installation Essex'],
-    wordCount: 1680,
+    wordCount: 1304,
     content: `
 <p>One of the first decisions you face when installing a new burglar alarm is whether to choose a wired or wireless system. Twenty years ago the answer was almost always wired, because wireless systems were unreliable and expensive. Today, both technologies are mature, and the right choice depends more on the property and how much disruption you are willing to accept during installation than on the technology itself.</p>
 
@@ -1431,7 +1458,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-15',
     dateModified: '2026-04-15',
     keywords: ['business CCTV ICO', 'CCTV data protection UK', 'CCTV compliance 2026', 'CCTV DPIA', 'workplace CCTV rules'],
-    wordCount: 1740,
+    wordCount: 1420,
     content: `
 <p>CCTV is one of the most widely used security technologies in UK business, and also one of the most frequently misunderstood in compliance terms. Many small businesses install cameras without a clear view of what the Information Commissioner's Office (ICO) actually expects, and only discover the gaps when a subject access request lands or a complaint is made.</p>
 
@@ -1530,6 +1557,8 @@ export const blogPosts: BlogPost[] = [
 
 <p>We also review existing systems for businesses that inherited their CCTV from a previous installer or tenant. If you are unsure whether your system meets ICO expectations in 2026, a review is the cheapest way to find out.</p>
 
+<p>If you are considering adding cameras because your premises may fall within scope of Martyn's Law, note that the data protection position is unchanged: expanding a system is the point at which signage and retention obligations are most often breached. See our guide to <a href="/blog/martyns-law-premises-requirements-2026">Martyn's Law and which premises are in scope</a> for what the Act actually requires.</p>
+
 <p>To arrange a free CCTV survey or compliance review for your business, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a>. Read more about our <a href="/services/cctv-systems">CCTV installation services</a> or explore our <a href="/services">full range of business security services</a>.</p>
 
 <p><em>This article is general guidance based on ICO publications and is not a substitute for legal advice. For specific compliance questions, consult a qualified data protection professional or the ICO directly.</em></p>
@@ -1543,7 +1572,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-15',
     dateModified: '2026-04-15',
     keywords: ['false alarm causes', 'burglar alarm keeps going off', 'alarm false activation', 'alarm troubleshooting UK', 'alarm maintenance'],
-    wordCount: 1620,
+    wordCount: 1387,
     content: `
 <p>A burglar alarm that keeps going off for no obvious reason is one of the most frustrating problems a homeowner or business can deal with. It disturbs neighbours, erodes confidence in the system, and, if it happens often enough, risks a withdrawal of police response for monitored sites. The good news is that almost every false alarm has a knowable cause, and the majority can be diagnosed and fixed without replacing the system.</p>
 
@@ -1653,7 +1682,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-05-23',
     dateModified: '2026-05-23T12:00:00Z',
     keywords: ['fire risk assessment landlord', 'fire risk assessment HMO', 'landlord fire safety obligations', 'fire risk assessment rented property', 'HMO fire risk assessment Essex'],
-    wordCount: 1240,
+    wordCount: 1279,
     image: {
       src: '/images/fire-risk-assessments/landlord-hmo-fra.webp',
       alt: 'UK converted house and small residential block with shared entrance, ceiling smoke detector and fire door, illustrating landlord and HMO fire risk assessment',
@@ -1764,7 +1793,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-05-23',
     dateModified: '2026-05-23T12:00:00Z',
     keywords: ['fire risk assessment for flat sale', 'fire risk assessment converted house', 'fire risk assessment to sell flat', 'EWS1 vs fire risk assessment', 'communal fire risk assessment'],
-    wordCount: 930,
+    wordCount: 993,
     image: {
       src: '/images/fire-risk-assessments/selling-flat-fra.webp',
       alt: 'UK flat in a small block with communal entrance, paired with a calm document and checklist motif, illustrating the fire risk assessment a buyer solicitor asks for',
@@ -1851,7 +1880,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-05-23',
     dateModified: '2026-05-23T12:00:00Z',
     keywords: ['fire risk assessment for business', 'fire risk assessment office', 'fire risk assessment care home', 'fire risk assessment required by law', 'commercial fire risk assessment Essex'],
-    wordCount: 730,
+    wordCount: 854,
     image: {
       src: '/images/fire-risk-assessments/business-fra.webp',
       alt: 'Interior of a small UK commercial premises with ceiling smoke detector, emergency light, exit sign and fire extinguisher, illustrating a business fire risk assessment',
@@ -1901,7 +1930,9 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The single-provider advantage</h2>
 
-<p>A fire risk assessment that simply produces a report is only half the job. The value comes from acting on the action plan. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, then carries out the resulting work directly: fire alarm installation and servicing to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839</a> (we are BAFE-accredited for the installation and maintenance of fire alarms), <a href="/services/security-lighting">emergency lighting</a>, electrical testing, and fire door works. For a busy business owner, dealing with one company from assessment to compliant premises removes the burden of coordinating several trades. Our guide on <a href="/blog/fire-risk-assessment-cost-essex-2026">what determines the cost of a fire risk assessment</a> explains how the assessment and any works are priced.</p>
+<p>A fire risk assessment that simply produces a report is only half the job. The value comes from acting on the action plan. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, then carries out the resulting work directly: fire alarm installation and servicing to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839</a> (we are BAFE-accredited for the installation and maintenance of fire alarms), <a href="/services/security-lighting">emergency lighting</a>, electrical testing, and fire door works. For a busy business owner, dealing with one company from assessment to compliant premises removes the burden of coordinating several trades. Our guide on <a href="/blog/fire-risk-assessment-cost-essex-2026">what determines the cost of a fire risk assessment</a> explains how the assessment and any works are priced, and our guide to <a href="/blog/commercial-fire-alarm-cost-uk-2026">commercial fire alarm costs</a> covers the alarm side in detail.</p>
+
+<p>Fire is not the only premises duty that catches business owners out. If your premises is publicly accessible and may hold 200 or more people at the same time, it may also fall within scope of <a href="/blog/martyns-law-premises-requirements-2026">Martyn's Law</a>, which is a separate duty with its own regulator. It is worth checking the two together, particularly because lockdown procedures and fire evacuation procedures need to be consistent with one another.</p>
 
 <p>We work with offices, retail, hospitality, warehousing and care settings across Essex and Greater London. See our <a href="/services/fire-risk-assessments">fire risk assessments page</a> and our <a href="/services/fire-alarms">fire alarms page</a>, or call 0204 538 5925 or 0208 220 4770 to discuss your premises. You can also <a href="/contact">request a call back</a>.</p>
 `,
@@ -1932,7 +1963,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-05-23',
     dateModified: '2026-05-23T12:00:00Z',
     keywords: ['fire safety remedial works', 'fire alarm upgrade after FRA', 'fire risk assessment action plan', 'what happens after a fire risk assessment', 'fire risk assessment remedial works Essex'],
-    wordCount: 800,
+    wordCount: 840,
     image: {
       src: '/images/fire-risk-assessments/after-fra-remedials.webp',
       alt: 'Stylised engineer installing a wall-mounted fire alarm or emergency light beside a fire door, illustrating fire risk assessment remedial works',
@@ -2015,7 +2046,11 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-06-27',
     dateModified: '2026-06-27T12:00:00Z',
     keywords: ['EWS1 vs fire risk assessment', 'EWS1 form', 'what is an EWS1 form', 'difference between EWS1 and fire risk assessment', 'do I need an EWS1 form'],
-    wordCount: 1150,
+    wordCount: 879,
+    image: {
+      src: '/images/2026-07/ews1-vs-fra.webp',
+      alt: 'Exterior of a UK block of flats paired with two contrasting document icons, illustrating the difference between an EWS1 form and a fire risk assessment',
+    },
     content: `
 <p>If you own, manage, or are selling a flat in a block or a converted house, you may be asked for an EWS1 form, a fire risk assessment, or both. The two are routinely confused, and supplying the wrong one is a common cause of delay in a sale or remortgage. This guide explains, in plain English, what each document is, who produces it, when you need it, and whether your building needs both. It is general information rather than legal or valuation advice.</p>
 
@@ -2099,7 +2134,11 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-06-27',
     dateModified: '2026-06-27T12:00:00Z',
     keywords: ['fire risk assessment cost', 'how much is a fire risk assessment', 'fire risk assessment cost essex', 'fire risk assessment price', 'fire risk assessment quote'],
-    wordCount: 1020,
+    wordCount: 811,
+    image: {
+      src: '/images/2026-07/fra-cost.webp',
+      alt: 'Fire risk assessment report and costing sheet on a desk beside a calculator, illustrating what determines the price of a fire risk assessment',
+    },
     content: `
 <p>One of the most common questions we are asked is what a fire risk assessment costs. The honest answer is that there is no single price, and any figure quoted before someone understands your building should be treated with caution. This guide explains what actually drives the cost, so you can read a quote with confidence, and how to get an accurate, no-obligation price for premises across Essex and Greater London. It is general guidance rather than a price list.</p>
 
@@ -2134,7 +2173,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The single-provider advantage</h2>
 
-<p>The assessment itself is only part of the total spend. The larger cost usually lies in the remedial works the assessment recommends, and this is where using one provider can save money as well as time. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and then carries out the resulting work directly: fire alarms (we are BAFE-accredited for the installation and maintenance of fire alarms), emergency lighting, electrical testing, and fire door works. Coordinating assessment and remedials through one company avoids the cost and hassle of managing several trades and several sets of paperwork.</p>
+<p>The assessment itself is only part of the total spend. The larger cost usually lies in the remedial works the assessment recommends, and this is where using one provider can save money as well as time. J&L Security arranges the assessment through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and then carries out the resulting work directly: fire alarms (we are BAFE-accredited for the installation and maintenance of fire alarms), emergency lighting, electrical testing, and fire door works. Coordinating assessment and remedials through one company avoids the cost and hassle of managing several trades and several sets of paperwork. Where the remedial work includes a new or upgraded fire alarm system, our guide to <a href="/blog/commercial-fire-alarm-cost-uk-2026">commercial fire alarm costs</a> explains what drives that part of the spend.</p>
 
 <h2>How to get an accurate quote</h2>
 
@@ -2167,7 +2206,11 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-06-27',
     dateModified: '2026-06-27T12:00:00Z',
     keywords: ['fire safety regulations blocks of flats', 'Fire Safety England Regulations 2022', 'fire safety law flats 2026', 'responsible person blocks of flats', 'residential evacuation plans 2025'],
-    wordCount: 1350,
+    wordCount: 889,
+    image: {
+      src: '/images/2026-07/blocks-of-flats-fire-safety.webp',
+      alt: 'Communal entrance and stairwell of a UK block of flats with a fire door, smoke detector and emergency light, illustrating fire safety law for blocks of flats',
+    },
     content: `
 <p>The fire safety rules for blocks of flats and other multi-occupied residential buildings have changed repeatedly since the Grenfell Tower fire, and 2026 has added another layer. If you are a freeholder, a residents' management company, or a managing agent, it can be hard to keep track of what you are actually required to do. This guide sets out the current stack of duties in plain English. It is general information rather than legal advice, and final wording should always be checked against the legislation itself.</p>
 
@@ -2233,6 +2276,378 @@ export const blogPosts: BlogPost[] = [
       {
         question: 'What extra fire safety duties apply to taller blocks?',
         answer: 'Buildings above 11 metres have additional duties such as regular checks of communal fire doors. High-rise buildings above 18 metres have further duties, including sharing building information and plans with the fire and rescue service and installing a secure information box.',
+      },
+    ],
+  },
+  {
+    slug: 'martyns-law-premises-requirements-2026',
+    title: "Martyn's Law: Which Premises Are in Scope and What You Actually Have to Do",
+    metaTitle: "Martyn's Law 2026: Premises in Scope, Tiers and Requirements",
+    description: "A plain-English guide to Martyn's Law, the Terrorism (Protection of Premises) Act 2025. Covers the 200 and 800 capacity thresholds, the standard and enhanced tiers, what duty holders must do, and where physical security measures actually fit.",
+    datePublished: '2026-07-31',
+    dateModified: '2026-07-31',
+    keywords: [
+      "martyn's law",
+      'martyns law requirements',
+      'terrorism protection of premises act 2025',
+      "martyn's law capacity threshold",
+      'martyns law standard tier',
+      'martyns law enhanced tier',
+      'public protection procedures',
+      'public protection measures',
+      "martyn's law cctv",
+      "martyn's law access control",
+      'SIA regulator martyns law',
+    ],
+    wordCount: 2113,
+    image: {
+      src: '/images/2026-07/martyns-law-premises.webp',
+      alt: 'Members of the public entering a UK public venue through a main door, with a CCTV camera on the facade and an access control reader beside the entrance, illustrating the premises in scope of Martyn\'s Law',
+    },
+    content: `
+<p><strong>Martyn's Law is the Terrorism (Protection of Premises) Act 2025.</strong> It places duties on those responsible for certain publicly accessible premises to prepare for the possibility of a terrorist attack. It works on two tiers set by how many people may be present at the same time: a <strong>standard tier for premises where 200 to 799 individuals</strong> may be present, and an <strong>enhanced tier for premises where 800 or more</strong> may be present. The regulator is the Security Industry Authority.</p>
+
+<p>This guide explains who is in scope, what each tier actually requires, and, because we are a security systems installer, where physical security equipment does and does not fit into the picture. That last point matters more than it might seem: for most premises that fall in scope, Martyn's Law does not require you to buy anything at all.</p>
+
+<h2>Where the Law Stands Right Now</h2>
+
+<p>The Act received Royal Assent on 3 April 2025. The Government published statutory guidance in April 2026, and further provisions have been commenced since, including those that set up the Security Industry Authority's role as regulator.</p>
+
+<p><strong>The duties on premises are not yet in force, and no date has been announced for when they will be.</strong> The Government has committed to an implementation period of at least 24 months following Royal Assent before the requirements for those in scope come into force, and the statutory guidance says that further details will be provided on commencement.</p>
+
+<p>This is worth being precise about, because various dates are circulating. You may have seen a specific deadline quoted. At the time of writing, no such deadline exists in law. What exists is a commitment to a minimum implementation period and a clear signal that enforcement will not begin before 2027. The sensible reading is that there is time to prepare properly, and that you should not treat any date you have seen as a statutory cut-off, nor let a supplier use one to create urgency.</p>
+
+<h2>Is Your Premises in Scope?</h2>
+
+<p>Two things have to be true for the Act to apply. First, the premises must be used for one of a defined list of qualifying uses set out in the legislation, which covers a broad range of publicly accessible buildings. Second, it must be reasonable to expect that a threshold number of individuals may be present at the same time, from time to time.</p>
+
+<ul>
+<li><strong>Fewer than 200 individuals:</strong> not in scope. No duties apply under the Act.</li>
+<li><strong>200 to 799 individuals:</strong> standard tier.</li>
+<li><strong>800 or more individuals:</strong> enhanced tier.</li>
+</ul>
+
+<p>There is an important exception. Places of worship, childcare premises, and certain educational premises remain in the standard tier even where 800 or more individuals may be present. A parish hall or a school does not move into the enhanced tier simply because of its capacity.</p>
+
+<p>The capacity figure is about how many people may be present, not how many are usually there on a quiet Tuesday. If you are unsure whether your use is on the qualifying list, or how to arrive at a defensible capacity figure, the statutory guidance is the place to start. That determination is yours to make, and it is not something a security installer can make for you.</p>
+
+<h2>Standard Tier: 200 to 799 Individuals</h2>
+
+<p>If your premises falls into the standard tier, the responsible person has two duties.</p>
+
+<ol>
+<li><strong>Notify the Security Industry Authority</strong> that you are the responsible person for the premises.</li>
+<li><strong>Put appropriate public protection procedures in place</strong>, so far as is reasonably practicable.</li>
+</ol>
+
+<p>The procedures are expected to address four things, as appropriate to the premises:</p>
+
+<ul>
+<li><strong>Evacuation:</strong> getting people out of the premises.</li>
+<li><strong>Invacuation:</strong> moving people to a safer place within the premises, which is sometimes the right answer when the threat is outside.</li>
+<li><strong>Lockdown:</strong> securing the premises to restrict entry, such as locking doors and closing shutters.</li>
+<li><strong>Communication:</strong> alerting people on the premises to the danger and telling them what to do.</li>
+</ul>
+
+<p><strong>There is no requirement at standard tier to install security equipment.</strong> The statutory guidance describes the standard tier requirements as centred on simple, low-cost activities, with the cost relating primarily to time spent rather than to capital expenditure. This is a planning and staff-awareness exercise. If a supplier tells you that standard tier compliance requires a new system, that is a sales position rather than a statement of the law.</p>
+
+<h2>Enhanced Tier: 800 or More Individuals</h2>
+
+<p>Enhanced tier premises must do everything the standard tier requires, and then three things more.</p>
+
+<ol>
+<li><strong>Put appropriate public protection measures in place</strong>, so far as is reasonably practicable. Where procedures are about what people do, measures are about what is in place at the premises to reduce its vulnerability to an attack and the risk of physical harm if one occurs.</li>
+<li><strong>Document the procedures and measures</strong> and provide that documentation to the Security Industry Authority, including an assessment of how they reduce vulnerability and risk.</li>
+<li><strong>Designate a senior individual</strong>, where the responsible person is an organisation, to ensure compliance.</li>
+</ol>
+
+<h3>The Four Categories of Public Protection Measure</h3>
+
+<p>The statutory guidance groups measures into four categories. This is the part of the Act where physical security systems become relevant, so it is worth setting out clearly.</p>
+
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>What it addresses</th>
+<th>Examples given in the guidance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monitoring</td>
+<td>Detecting suspicious activity in and around the premises</td>
+<td>Security patrols, searches of individuals, CCTV</td>
+</tr>
+<tr>
+<td>Movement control</td>
+<td>Controlling who can move into and around the premises</td>
+<td>Doors, shutters, zoned access, screening of individuals</td>
+</tr>
+<tr>
+<td>Physical safety and security</td>
+<td>Reducing physical harm to people at the premises</td>
+<td>Vehicle security barriers and other hostile vehicle mitigation</td>
+</tr>
+<tr>
+<td>Information security</td>
+<td>Restricting access to operational and design information</td>
+<td>Limiting who can see plans and operational detail that would assist an attacker</td>
+</tr>
+</tbody>
+</table>
+
+<p>Everything in the Act is qualified by what is <strong>reasonably practicable</strong>. That means proportionate: balancing how effective a measure would be against its cost and the difficulty of putting it in place. It is not a requirement to install the maximum amount of equipment that money can buy, and a small enhanced tier venue is not expected to adopt the same measures as a major stadium.</p>
+
+<h2>Where Physical Security Systems Actually Fit</h2>
+
+<p>Of the four categories, two involve equipment of the kind a security systems installer provides. Monitoring names CCTV. Movement control names doors, shutters and zoned access, which in practice means access control, door entry and electronic locking. The other two categories are largely about site design, traffic management and information handling, and they are not our field.</p>
+
+<p>Three things are worth understanding before anyone spends money.</p>
+
+<p><strong>Equipment alone does not discharge the duty.</strong> The duty is to have appropriate procedures, and at enhanced tier appropriate measures, assessed as suitable for that specific premises and documented. A camera that nobody is monitoring, and that appears in no procedure, does not help you and will not satisfy the regulator. The procedures come first and the equipment supports them.</p>
+
+<p><strong>You may already have most of what you need.</strong> A great many premises in the enhanced tier already have CCTV and some form of access control, installed years ago for ordinary crime prevention reasons. The useful question is usually not "what should we buy" but "does what we already have still work, and does it cover what we think it covers". Cameras drift out of position, recorders fill up, retention settings get left at whatever the installer set on commissioning, and door controllers develop faults that get worked around rather than fixed.</p>
+
+<p><strong>Coverage is not the same as image quality.</strong> A camera positioned to show that someone was present is doing a different job from one positioned to identify who they were. If CCTV is going to serve as a monitoring measure, it is worth checking that the coverage and the image quality actually match the purpose you are claiming for it in your documentation.</p>
+
+<h2>If You Already Have CCTV or Access Control</h2>
+
+<p>For most enhanced tier premises the practical starting point is a review of the existing systems rather than a new installation. That means checking camera positions and fields of view against the areas you actually want monitored, confirming that recording and retention are configured as intended, testing that access control zoning still reflects how the building is used, and repairing anything that has been failing quietly.</p>
+
+<p>One point that is easy to miss: <strong>installing more CCTV for Martyn's Law does not change your data protection obligations</strong>. CCTV that captures identifiable people is personal data under UK GDPR, and the Information Commissioner's Office expectations on signage, retention, access requests and camera positioning apply exactly as before. If anything, expanding a system is the moment those obligations are most likely to be breached. Our guide to <a href="/blog/business-cctv-ico-compliance-uk-2026">business CCTV and ICO compliance</a> covers what that involves in practice.</p>
+
+<p>It is also worth checking that lockdown procedures and fire evacuation procedures do not contradict each other. A procedure that locks doors and a fire alarm system that releases them are both correct in their own terms, and the interaction between them needs to be deliberate rather than discovered during an incident. If you are reviewing fire arrangements at the same time, our guide to <a href="/blog/business-fire-risk-assessment-guide">business fire risk assessments</a> is a useful companion.</p>
+
+<h2>What J&L Security Can and Cannot Help With</h2>
+
+<p>We think it is worth being explicit about this, because Martyn's Law has attracted a good deal of marketing that blurs the line between installing equipment and providing compliance advice.</p>
+
+<p><strong>What we do:</strong></p>
+
+<ul>
+<li>Install, service and maintain <a href="/services/cctv-systems">CCTV systems</a>, including reviewing whether an existing system covers what you believe it covers</li>
+<li>Install and maintain <a href="/services/access-control">access control, door entry and electronic locking</a>, including zoned access for restricted areas</li>
+<li>Install and maintain intruder alarm systems</li>
+<li>Design, install, commission and service <a href="/services/fire-alarms">fire alarm systems</a> to BS 5839. J&amp;L Security is BAFE accredited for the installation and maintenance of fire alarms</li>
+<li>Carry out a free survey of existing systems and tell you honestly what is working and what is not</li>
+</ul>
+
+<p><strong>What we do not do:</strong></p>
+
+<ul>
+<li>Determine whether your premises is in scope, or which tier it falls into</li>
+<li>Carry out terrorism risk assessments</li>
+<li>Write your public protection procedures, or the documented assessment that enhanced tier premises must provide to the Security Industry Authority</li>
+<li>Make your notification to the Security Industry Authority</li>
+<li>Act as a counter-terrorism or security consultancy</li>
+</ul>
+
+<p>J&amp;L Security is a security systems installer and maintainer, accredited by SSAIB for security systems and by BAFE for fire alarm installation and maintenance. We are not a security consultancy and we do not offer compliance services under the Act. If you need help with the assessment, the procedures or the notification, that is work for a specialist consultant or for your own management team, and the Government's statutory guidance and the ProtectUK service are the right starting points.</p>
+
+<h2>Practical Steps to Take Now</h2>
+
+<ol>
+<li><strong>Establish your capacity figure.</strong> How many individuals may reasonably be expected to be present at the same time, from time to time. This determines everything else.</li>
+<li><strong>Check whether your use is a qualifying use</strong> under the Act, using the statutory guidance.</li>
+<li><strong>Identify the responsible person.</strong> For an organisation, this also means deciding who the designated senior individual will be if you are in the enhanced tier.</li>
+<li><strong>Start on procedures.</strong> Evacuation, invacuation, lockdown and communication, written down and known to staff. This is the substance of the duty for standard tier premises and the foundation for enhanced tier ones.</li>
+<li><strong>Enhanced tier only: consider measures and documentation.</strong> Work out what is reasonably practicable for your premises and be able to explain why.</li>
+<li><strong>Audit what you already have.</strong> Before buying anything, find out whether the existing CCTV, access control and locking actually work and cover the right areas.</li>
+<li><strong>Watch for the commencement date</strong> rather than working to a date you have seen quoted.</li>
+</ol>
+
+<h2>Get a Survey of Your Existing Systems</h2>
+
+<p>If you operate premises in Essex or Greater London and want an honest assessment of whether your existing CCTV, access control or door entry systems are doing what you think they are doing, we offer a free site survey. We will tell you what is working, what needs repair, and where coverage falls short. We will not tell you that you need to buy something in order to comply with a law that does not require it.</p>
+
+<p><a href="/contact">Contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770. We cover all of Essex and Greater London.</p>
+
+<p><em>This article is general guidance based on the Terrorism (Protection of Premises) Act 2025 and the Government's statutory guidance published in April 2026. It is not legal advice, and it is not a substitute for the statutory guidance itself. The implementation timetable may change. For advice on your specific premises, consult a qualified security or legal professional.</em></p>
+`,
+    faqs: [
+      {
+        question: "When does Martyn's Law come into force?",
+        answer: "No date has been announced for the duties on premises coming into force. The Terrorism (Protection of Premises) Act 2025 received Royal Assent on 3 April 2025, and the Government committed to an implementation period of at least 24 months from that date before the requirements come into force. Statutory guidance was published in April 2026 and some provisions have been commenced, including those establishing the Security Industry Authority as regulator, but the duties themselves are not yet live. Treat any specific deadline you have been quoted with caution.",
+      },
+      {
+        question: "Does Martyn's Law mean I have to install CCTV?",
+        answer: "No. There is no requirement at standard tier (200 to 799 individuals) to install any security equipment at all: the duties there are to notify the Security Industry Authority and to have appropriate public protection procedures covering evacuation, invacuation, lockdown and communication. At enhanced tier (800 or more) the responsible person must also have appropriate public protection measures, and CCTV is one example given under the monitoring category, but everything is qualified by what is reasonably practicable for that specific premises. Equipment on its own does not discharge the duty.",
+      },
+      {
+        question: 'My venue holds 300 people. What do I need to do?',
+        answer: 'A capacity of 300 places you in the standard tier, assuming your use is one of the qualifying uses set out in the Act. That means two duties: notifying the Security Industry Authority that you are the responsible person, and putting appropriate public protection procedures in place so far as is reasonably practicable, covering evacuation, invacuation, lockdown and communication. There is no requirement to install security equipment at standard tier.',
+      },
+      {
+        question: "Does Martyn's Law apply to places of worship?",
+        answer: 'Places of worship can fall within scope, but they remain in the standard tier even where 800 or more individuals may be present. The same applies to childcare premises and certain educational premises. This means the duties are notification and public protection procedures, rather than the additional measures and documentation required of enhanced tier premises.',
+      },
+      {
+        question: "Who enforces Martyn's Law?",
+        answer: 'The Security Industry Authority is the regulator for the Terrorism (Protection of Premises) Act 2025. Provisions establishing its regulatory role have been commenced, and it is required to publish guidance on how it will exercise those functions, subject to the approval of the Secretary of State.',
+      },
+      {
+        question: "Does installing CCTV for Martyn's Law affect my data protection obligations?",
+        answer: 'Your data protection obligations are unchanged. CCTV that captures identifiable individuals is personal data under UK GDPR, and the Information Commissioner\'s Office expectations on signage, retention periods, subject access requests and camera positioning apply exactly as they did before. Expanding a CCTV system is in fact the point at which those obligations are most often breached, so it is worth reviewing signage and retention settings whenever cameras are added.',
+      },
+    ],
+  },
+  {
+    slug: 'commercial-fire-alarm-cost-uk-2026',
+    title: 'How Much Does a Commercial Fire Alarm System Cost? A 2026 Guide for UK Businesses',
+    metaTitle: 'Commercial Fire Alarm Cost UK 2026: What Drives the Price',
+    description: 'What actually determines the cost of a commercial fire alarm system in 2026. Covers BS 5839-1 categories, conventional versus addressable, device counts, interfaces, commissioning and servicing, and how to compare quotes fairly.',
+    datePublished: '2026-07-31',
+    dateModified: '2026-07-31',
+    keywords: [
+      'commercial fire alarm cost',
+      'commercial fire alarm cost uk',
+      'fire alarm installation cost commercial',
+      'BS 5839-1 cost',
+      'fire alarm system cost business',
+      'addressable fire alarm cost',
+      'fire alarm servicing cost uk',
+      'fire alarm quote comparison',
+      'commercial fire alarm installation price',
+    ],
+    wordCount: 1762,
+    image: {
+      src: '/images/2026-07/commercial-security-cost.webp',
+      alt: 'Engineer commissioning a wall-mounted fire alarm control panel in a UK commercial premises, with a checklist and a ceiling-mounted camera alongside, illustrating what determines commercial fire alarm cost',
+    },
+    content: `
+<p>There is no single price for a commercial fire alarm system, and any figure quoted before someone has looked at your building should be treated with caution. Two premises of identical floor area can differ by a multiple, not a margin, because the thing that drives the cost is not the size of the building. It is the level of detection the building actually needs, and that is set by the fire risk assessment rather than by the installer.</p>
+
+<p>This guide explains what genuinely determines the price, so that you can read a quote with confidence and compare two quotes fairly. It is general guidance rather than a price list. For a figure that applies to your building, the only reliable route is a <a href="/contact">free site survey</a>.</p>
+
+<p>If you are looking for domestic or HMO costs rather than commercial, our guides to <a href="/blog/burglar-alarm-cost-uk-2026">burglar alarm costs</a> and <a href="/blog/hmo-fire-alarm-requirements-bs5839">HMO fire alarm requirements</a> cover that ground instead.</p>
+
+<h2>Why Commercial Pricing Works Differently</h2>
+
+<p>Domestic fire detection is largely a product decision: a number of interlinked detectors to a known specification. Commercial fire detection is a design decision. A system for non-domestic premises is designed to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839-1</a>, and that standard does not prescribe one system for all buildings. It sets out categories, and the category determines how much of the building is covered by automatic detection.</p>
+
+<p>That is why a quote cannot sensibly be given over the phone from a floor area. Until the category is known, nobody knows how many devices the building needs.</p>
+
+<h2>The Single Biggest Cost Driver: The Category</h2>
+
+<p>BS 5839-1 categories run from manual call points only, through varying levels of automatic detection for life safety, up to full coverage for property protection. The practical range is wide:</p>
+
+<ul>
+<li><strong>Category M</strong> is manual call points only, with no automatic detection. It is the lowest-cost option and is suitable only for small, simple, low-risk premises where occupants are awake and alert.</li>
+<li><strong>Category L4</strong> covers escape routes only. It is the minimum life-safety category and needs comparatively few detectors.</li>
+<li><strong>Category L3</strong> adds rooms opening onto escape routes, which in a building with many small rooms off a corridor can multiply the device count considerably.</li>
+<li><strong>Category L2</strong> adds high-risk rooms on top of L3.</li>
+<li><strong>Category L1</strong> covers all areas of the building, including voids and roof spaces where appropriate. It is typically required where people sleep on the premises, such as hotels and care homes.</li>
+<li><strong>Categories P1 and P2</strong> cover the building for property protection rather than life safety, and are usually driven by an insurer rather than by fire safety law.</li>
+</ul>
+
+<p>The step from L4 to L1 in the same building is not a percentage uplift. It can multiply the number of detectors, the amount of cable, the panel capacity required and the commissioning time. This is the first question to settle, and it is settled by the fire risk assessment, not by the price you would like to pay.</p>
+
+<p>It also means the single most common cause of two wildly different quotes is that they are quoting different categories. If one quote is markedly cheaper, check the category before concluding it is better value.</p>
+
+<h2>Conventional or Addressable</h2>
+
+<p>The second structural decision is the system type.</p>
+
+<p><strong>Conventional systems</strong> divide the building into zones. When a device activates, the panel indicates the zone rather than the individual device. The equipment is cheaper, but the cabling is less efficient because each zone needs its own circuit, and fault finding takes longer because a fault is located to a zone rather than to a device.</p>
+
+<p><strong>Addressable systems</strong> give every device its own address on a loop. The panel identifies the exact device, which makes fault finding and maintenance faster, and one loop can carry a large number of devices, which reduces cabling in larger buildings. The equipment costs more per device.</p>
+
+<p>For small premises with few zones, conventional is often the sensible choice. Beyond a certain size the cabling efficiency and maintenance advantage of addressable usually outweighs the equipment cost, and for buildings likely to be altered or extended, addressable is easier to modify later. There is no universal threshold; it is a judgement made at survey.</p>
+
+<h2>Device Count, Zones and Panel Capacity</h2>
+
+<p>Once the category and system type are fixed, the device schedule follows: detectors of the appropriate type for each area, manual call points on escape routes and at final exits, and sounders positioned to achieve the required sound level throughout the building. Sounder coverage is a real cost factor that is easy to overlook, because achieving an adequate level in every part of the building sometimes needs more devices than people expect, particularly where occupants may be sleeping.</p>
+
+<p>Panel capacity matters too. A panel sized exactly to today's device count leaves no room for a future extension, and replacing a panel later costs considerably more than specifying a slightly larger one at the outset.</p>
+
+<h2>The Building Itself</h2>
+
+<p>Two buildings needing the same category can still price very differently:</p>
+
+<ul>
+<li><strong>Cable routes and containment.</strong> A building with accessible voids and existing containment is quick to install. Solid construction, exposed finishes requiring surface containment, or a building where cable must be routed around occupied areas all add labour.</li>
+<li><strong>Ceiling heights and structure.</strong> High ceilings, atria, and complex roof geometry affect both detector spacing and the access equipment needed to install and later service the devices.</li>
+<li><strong>Listed and heritage buildings.</strong> Where equipment is fixed to a listed building, consent is required, and the installation has to be designed around what is acceptable rather than what is convenient.</li>
+<li><strong>Working in occupied premises.</strong> Installing around a trading business is slower than installing in an empty shell, and work that has to happen out of hours or in phases carries a labour premium.</li>
+<li><strong>Access equipment.</strong> Scaffold, towers or powered access for high-level devices is a genuine line item, and it also affects the ongoing servicing cost for the life of the system.</li>
+</ul>
+
+<h2>Interfaces and Cause and Effect</h2>
+
+<p>This is the part most often missing from a cheap quote, and it is frequently the difference between a system that passes commissioning and one that does not.</p>
+
+<p>A commercial fire alarm rarely stands alone. It may need to release door holders and magnetic locks, trigger automatic opening vents, send lifts to a designated floor, shut down plant or air handling, interface with a suppression system, or signal to an alarm receiving centre for remote monitoring. Each interface needs cabling, hardware, and, more significantly, programming and testing.</p>
+
+<p>The programmed logic that determines what happens when a given device activates is the cause and effect. Writing, agreeing and testing it takes time, particularly in a building with phased evacuation or multiple interfaces. A quote that does not mention interfaces or cause and effect in a building that plainly needs them is not a cheaper quote, it is an incomplete one.</p>
+
+<h2>Commissioning, Certification and Handover</h2>
+
+<p>A properly delivered system includes commissioning with every device tested, a commissioning certificate, an as-fitted drawing or device schedule, a logbook left on site, and a demonstration to whoever will be responsible for the system day to day. These are not optional extras. Without the certification, the responsible person has no evidence of a compliant installation to show an insurer, a fire risk assessor, or a licensing authority.</p>
+
+<p>When comparing quotes, check that commissioning and certification are itemised rather than assumed.</p>
+
+<h2>The Ongoing Cost, Which Is Not Optional</h2>
+
+<p>The installation is the start of the spend, not the whole of it. BS 5839-1 requires servicing by a competent contractor at intervals no greater than six months, so a commercial system carries a recurring cost for its whole life. Budget for:</p>
+
+<ul>
+<li><strong>Servicing.</strong> Our annual servicing contracts start at £180 + VAT for commercial premises, covering a routine service and an emergency callout within the contract year. The figure for a specific building depends on the device count and how accessible the devices are.</li>
+<li><strong>Battery replacement.</strong> Panel standby batteries and, on some systems, device batteries are consumables on a predictable replacement cycle.</li>
+<li><strong>Remote monitoring,</strong> where the system signals to an alarm receiving centre, which carries a monthly or annual charge.</li>
+<li><strong>Remedials</strong> arising from a service visit or a fire risk assessment.</li>
+</ul>
+
+<p>A system with high-level devices in an atrium will cost more to service every six months, for decades, than an otherwise identical system at accessible heights. That is worth weighing at design stage rather than discovering later.</p>
+
+<h2>Where a Cheap Quote Usually Hides the Cost</h2>
+
+<p>If one quote is substantially lower than the others, it is usually explained by one of the following rather than by efficiency:</p>
+
+<ol>
+<li>A lower category than the fire risk assessment calls for, meaning fewer detectors.</li>
+<li>Conventional equipment quoted for a building that really needs addressable, which saves on equipment and costs more in maintenance.</li>
+<li>Interfaces and cause and effect excluded, to be priced later as a variation.</li>
+<li>Commissioning, certification or the logbook not included.</li>
+<li>Sounder coverage that will not achieve the required sound level, discovered at commissioning.</li>
+<li>The first year of servicing excluded, when a competitor has included it.</li>
+<li>The contractor is not third-party certificated, so the competence evidence falls back on you as the responsible person.</li>
+</ol>
+
+<h2>Who Decides the Category</h2>
+
+<p>The fire risk assessment determines the category, which is why we recommend having the assessment in place before seeking fire alarm quotes rather than after. Quoting without it means guessing, and a guess that turns out low is a variation later.</p>
+
+<p>J&amp;L Security arranges fire risk assessments through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and we carry out any resulting remedial works directly. J&amp;L Security is BAFE accredited for the installation and maintenance of fire alarms. Our guides to <a href="/blog/business-fire-risk-assessment-guide">whether your business needs a fire risk assessment</a> and <a href="/blog/fire-risk-assessment-cost-essex-2026">what determines its cost</a> cover that side of the work.</p>
+
+<h2>Getting an Accurate Price</h2>
+
+<p>The quickest route to a realistic figure is a short survey. We will look at the building, confirm the category against the fire risk assessment, agree the system type, and give a written, no-obligation quote that itemises equipment, installation, interfaces, commissioning and certification separately, so you can see exactly what you are paying for and compare it fairly against anyone else.</p>
+
+<p>We cover Essex and Greater London. See our <a href="/services/fire-alarms">fire alarm services</a> and <a href="/services/fire-risk-assessments">fire risk assessments</a> pages, <a href="/contact">request a call back</a>, or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770.</p>
+
+<p><em>This article is general guidance on what determines the cost of a commercial fire alarm system. It is not a price list and it is not a quotation. Any figures given are indicative and subject to survey.</em></p>
+`,
+    faqs: [
+      {
+        question: 'How much does a commercial fire alarm system cost in the UK?',
+        answer: 'There is no single figure, because the cost is driven by the BS 5839-1 category the building needs rather than by its floor area. Two premises of the same size can differ by a multiple depending on whether they need manual call points only, detection on escape routes, or full coverage of every area. The category is set by the fire risk assessment. The reliable way to get a figure for a specific building is a free site survey, and a quote should itemise equipment, installation, interfaces, commissioning and certification separately.',
+      },
+      {
+        question: 'What is the difference between a conventional and an addressable fire alarm system?',
+        answer: 'A conventional system divides the building into zones and the panel indicates which zone has activated. An addressable system gives every device its own address, so the panel identifies the exact device. Addressable equipment costs more per device but uses cabling more efficiently in larger buildings, makes fault finding much faster, and is easier to extend later. Conventional is often the sensible choice for small premises with few zones. Which is appropriate is a judgement made at survey.',
+      },
+      {
+        question: 'Why are two fire alarm quotes for the same building so different?',
+        answer: 'The most common reason is that they are quoting different BS 5839-1 categories, which changes how many detectors the building gets. Other frequent causes are conventional equipment quoted where addressable is more appropriate, interfaces and cause and effect programming excluded to be priced later as a variation, commissioning or certification not included, and the first year of servicing excluded. Before comparing on price, check that both quotes cover the same category and the same scope.',
+      },
+      {
+        question: 'How often does a commercial fire alarm need servicing, and what does it cost?',
+        answer: 'BS 5839-1 requires servicing by a competent contractor at intervals no greater than six months, so it is a recurring cost for the life of the system. Our annual servicing contracts start at £180 + VAT for commercial premises, including one routine service and one emergency callout within the contract year. The figure for a specific building depends on the number of devices and how accessible they are, since high-level devices need access equipment at every visit.',
+      },
+      {
+        question: 'Do I need a fire risk assessment before getting a fire alarm quote?',
+        answer: 'It is strongly advisable. The fire risk assessment determines the category of system the building needs, and without it any quote is based on an assumption. If that assumption turns out to be lower than the assessment later requires, the difference becomes a variation and costs more than specifying it correctly at the outset. J&L Security arranges fire risk assessments through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and carries out any resulting remedial works directly.',
       },
     ],
   }

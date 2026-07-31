@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-05-03',
     dateModified: '2026-05-06',
     keywords: ['burglar alarm cost uk', 'alarm installation cost', 'intruder alarm price uk', 'monitored alarm cost', 'home alarm system cost uk', 'pyronix enforcer cost', 'wireless burglar alarm price essex'],
-    wordCount: 2380,
+    wordCount: 3177,
     content: `
 <p>A professionally installed burglar alarm in the UK typically costs <strong>£450 to £2,500 for a domestic property in 2026</strong>, depending on the system type, the number of detectors, and whether monitoring is included. The figures in this guide are based on our experience installing intruder alarm systems across Essex and Greater London since 2011, including hundreds of installations across Brentwood, Romford, Ilford, Chelmsford, Upminster, and the wider M25 corridor.</p>
 
@@ -379,7 +379,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-07',
     dateModified: '2026-04-07',
     keywords: ['CCTV installation Essex', 'home CCTV system', 'security cameras Essex', 'CCTV planning permission'],
-    wordCount: 1900,
+    wordCount: 1549,
     content: `
 <p>CCTV (closed-circuit television) is a video surveillance system that records footage from cameras mounted at fixed positions around a property. For Essex homeowners, a professionally installed CCTV system typically includes 2 to 8 cameras, a network video recorder (NVR), and remote viewing via a smartphone app. Systems start from around £850 plus VAT for a basic domestic installation.</p>
 
@@ -520,7 +520,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-07',
     dateModified: '2026-05-03',
     keywords: ['HMO fire alarm requirements', 'BS 5839-6', 'BS 5839-1', 'fire alarm HMO landlord', 'fire alarm servicing requirements', 'HMO fire alarm cost', 'Grade D1 HMO', 'Grade A HMO fire alarm'],
-    wordCount: 3350,
+    wordCount: 3407,
     content: `
 <p>A House in Multiple Occupation (HMO) is a property rented to three or more tenants forming two or more separate households who share facilities such as a kitchen or bathroom. Under UK law, HMO landlords must install and maintain a fire alarm system that meets the relevant British Standard: BS 5839-6 for domestic-scale HMOs, or BS 5839-1 for larger or higher-risk HMOs. The specific system category and grade required depends on the property layout, the number of storeys, the number of occupants, and the conditions set by your local authority's licensing team.</p>
 
@@ -837,7 +837,7 @@ export const blogPosts: BlogPost[] = [
       'commercial fire alarm uk',
       'HMO fire alarm uk',
     ],
-    wordCount: 2150,
+    wordCount: 3032,
     content: `
 <p>BS 5839 is the British Standard for fire detection and fire alarm systems. It is split into two parts that cover different building types: <strong>BS 5839-1 for non-domestic premises</strong> (offices, retail, schools, warehouses, care homes, and most commercial buildings) and <strong>BS 5839-6 for domestic premises</strong> (single dwellings, flats, and houses in multiple occupation). The standards set out how a system should be designed, installed, commissioned, and maintained, and they are the reference points used by insurers, fire risk assessors, and licensing authorities when judging whether a building has appropriate fire detection in place.</p>
 
@@ -1113,7 +1113,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-07',
     dateModified: '2026-04-07',
     keywords: ['how to choose security company', 'security installer UK', 'SSAIB approved installer', 'security company checklist'],
-    wordCount: 1800,
+    wordCount: 1382,
     content: `
 <p>A security company is a business that designs, installs, and maintains electronic security systems such as burglar alarms, CCTV, fire alarms, and access control. In the UK, security installers range from sole traders to large national firms, and the quality of work varies significantly. Choosing the wrong company can mean poorly installed equipment, inadequate aftercare, voided insurance, and wasted money.</p>
 
@@ -1240,7 +1240,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-15',
     dateModified: '2026-04-15',
     keywords: ['insurance approved alarm UK', 'insurance approved burglar alarm', 'SSAIB alarm insurance', 'NSI alarm requirements', 'alarm grading insurance'],
-    wordCount: 1720,
+    wordCount: 1475,
     content: `
 <p>If your home or business insurer has told you that you need an "insurance-approved" alarm, you may have been left wondering what that actually means in practice. It is not a single certificate you can buy, and it is not a make or model of alarm. It is a combination of four things: who installed it, what standard it was installed to, what grade of system it is, and whether the installing company belongs to a recognised inspectorate body.</p>
 
@@ -1350,7 +1350,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-15',
     dateModified: '2026-04-15',
     keywords: ['wired vs wireless alarm', 'wireless burglar alarm UK', 'hardwired alarm system', 'wireless alarm reliability', 'burglar alarm installation Essex'],
-    wordCount: 1680,
+    wordCount: 1304,
     content: `
 <p>One of the first decisions you face when installing a new burglar alarm is whether to choose a wired or wireless system. Twenty years ago the answer was almost always wired, because wireless systems were unreliable and expensive. Today, both technologies are mature, and the right choice depends more on the property and how much disruption you are willing to accept during installation than on the technology itself.</p>
 
@@ -1572,7 +1572,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-15',
     dateModified: '2026-04-15',
     keywords: ['false alarm causes', 'burglar alarm keeps going off', 'alarm false activation', 'alarm troubleshooting UK', 'alarm maintenance'],
-    wordCount: 1620,
+    wordCount: 1387,
     content: `
 <p>A burglar alarm that keeps going off for no obvious reason is one of the most frustrating problems a homeowner or business can deal with. It disturbs neighbours, erodes confidence in the system, and, if it happens often enough, risks a withdrawal of police response for monitored sites. The good news is that almost every false alarm has a knowable cause, and the majority can be diagnosed and fixed without replacing the system.</p>
 
@@ -1682,7 +1682,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-05-23',
     dateModified: '2026-05-23T12:00:00Z',
     keywords: ['fire risk assessment landlord', 'fire risk assessment HMO', 'landlord fire safety obligations', 'fire risk assessment rented property', 'HMO fire risk assessment Essex'],
-    wordCount: 1240,
+    wordCount: 1279,
     image: {
       src: '/images/fire-risk-assessments/landlord-hmo-fra.webp',
       alt: 'UK converted house and small residential block with shared entrance, ceiling smoke detector and fire door, illustrating landlord and HMO fire risk assessment',
@@ -1793,7 +1793,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-05-23',
     dateModified: '2026-05-23T12:00:00Z',
     keywords: ['fire risk assessment for flat sale', 'fire risk assessment converted house', 'fire risk assessment to sell flat', 'EWS1 vs fire risk assessment', 'communal fire risk assessment'],
-    wordCount: 930,
+    wordCount: 993,
     image: {
       src: '/images/fire-risk-assessments/selling-flat-fra.webp',
       alt: 'UK flat in a small block with communal entrance, paired with a calm document and checklist motif, illustrating the fire risk assessment a buyer solicitor asks for',
@@ -1963,7 +1963,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-05-23',
     dateModified: '2026-05-23T12:00:00Z',
     keywords: ['fire safety remedial works', 'fire alarm upgrade after FRA', 'fire risk assessment action plan', 'what happens after a fire risk assessment', 'fire risk assessment remedial works Essex'],
-    wordCount: 800,
+    wordCount: 840,
     image: {
       src: '/images/fire-risk-assessments/after-fra-remedials.webp',
       alt: 'Stylised engineer installing a wall-mounted fire alarm or emergency light beside a fire door, illustrating fire risk assessment remedial works',
@@ -2046,7 +2046,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-06-27',
     dateModified: '2026-06-27T12:00:00Z',
     keywords: ['EWS1 vs fire risk assessment', 'EWS1 form', 'what is an EWS1 form', 'difference between EWS1 and fire risk assessment', 'do I need an EWS1 form'],
-    wordCount: 1150,
+    wordCount: 879,
     image: {
       src: '/images/2026-07/ews1-vs-fra.webp',
       alt: 'Exterior of a UK block of flats paired with two contrasting document icons, illustrating the difference between an EWS1 form and a fire risk assessment',
@@ -2206,7 +2206,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-06-27',
     dateModified: '2026-06-27T12:00:00Z',
     keywords: ['fire safety regulations blocks of flats', 'Fire Safety England Regulations 2022', 'fire safety law flats 2026', 'responsible person blocks of flats', 'residential evacuation plans 2025'],
-    wordCount: 1350,
+    wordCount: 889,
     image: {
       src: '/images/2026-07/blocks-of-flats-fire-safety.webp',
       alt: 'Communal entrance and stairwell of a UK block of flats with a fire door, smoke detector and emergency light, illustrating fire safety law for blocks of flats',

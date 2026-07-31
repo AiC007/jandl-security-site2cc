@@ -779,6 +779,8 @@ export const blogPosts: BlogPost[] = [
 
 <p>If you are unsure what system your HMO needs, <a href="/contact">contact us for a free survey</a> or call <a href="tel:02045385925">0204 538 5925</a>. We can advise on the requirements for your specific property and local authority area.</p>
 
+<p>This article covers HMO licensing specifically. For the standards themselves, including the full set of categories, grades and servicing obligations, see our companion guide to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839-1 and BS 5839-6</a>. That guide is the right starting point if you need to understand <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839-1</a> for non-domestic premises rather than the domestic and HMO requirements set out here.</p>
+
 <p>Where an HMO is large enough or commercial enough to fall under BS 5839-1 rather than BS 5839-6, the pricing works differently, because the category set by the fire risk assessment drives the device count. Our guide to <a href="/blog/commercial-fire-alarm-cost-uk-2026">what determines the cost of a commercial fire alarm system</a> explains how those quotes are built up and what to check before comparing them.</p>
 
 <p>Read more about our <a href="/services/fire-alarms">fire alarm installation and servicing</a>, or see how we work with HMO landlords in <a href="/fire-alarm-installation/brentwood">Brentwood</a>, <a href="/locations/romford">Romford</a>, and across <a href="/services">our full service area</a>.</p>
@@ -821,9 +823,14 @@ export const blogPosts: BlogPost[] = [
       'BS 5839-1',
       'BS 5839-6',
       'BS 5839 explained',
+      'bs 5839-1 testing intervals',
+      'bs 5839-1 specification',
+      'bs 5839-1 fire alarm system',
+      'bs 5839 fire alarm systems',
       'fire alarm british standard',
       'fire alarm categories',
       'fire alarm grades',
+      'fire alarm systems ld1',
       'BAFE fire alarm maintainers',
       'fire risk assessment uk',
       'fire alarm servicing uk',
@@ -836,7 +843,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>This guide explains what each standard covers, the categories and grades they define, who each one applies to in practice, and what the standards mean for your obligations once a system is installed. It is written for property owners, managers, landlords, and responsible persons who need to specify or oversee a fire alarm system without having to read the full standards documents themselves.</p>
 
-<p>If you are an HMO landlord specifically, our companion article on <a href="/blog/hmo-fire-alarm-requirements-bs5839">HMO fire alarm requirements</a> goes into the licensing detail in more depth. The article you are reading now is the broader overview covering both BS 5839-1 and BS 5839-6.</p>
+<p>Most of what follows concerns <strong>BS 5839-1</strong>, because non-domestic premises carry the more complex specification: a category chosen from a range of options, a formal design, commissioning certification, and a testing and servicing regime that runs for the life of the system. BS 5839-6 is covered in full further down.</p>
 
 <h2>The Quick Summary</h2>
 
@@ -881,7 +888,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Categories can be combined: an L2/P1 system, for example, would protect the escape routes and high-risk rooms for life safety and the rest of the building for property protection.</p>
 
-<h3>What BS 5839-1 Requires of the Installation</h3>
+<h3>BS 5839-1 Specification: What the Standard Requires of the Installation</h3>
 
 <p>The standard sets out detailed requirements covering detector placement, sounder coverage, panel performance, cabling, power supply, and documentation. The points that matter most to a non-specialist responsible person are:</p>
 
@@ -1006,13 +1013,23 @@ export const blogPosts: BlogPost[] = [
 
 <p><strong>J&amp;L Security is BAFE-certified under SP203-1</strong>, covering design, installation, commissioning, and maintenance of fire alarm systems for both BS 5839-1 and BS 5839-6 installations.</p>
 
-<h2>Maintenance Obligations Explained</h2>
+<h2>BS 5839-1 Testing and Servicing Intervals</h2>
 
-<h3>BS 5839-1 commercial servicing</h3>
+<p>This is the obligation that continues for the life of the system, and it is the one most often missed. Under BS 5839-1, servicing must be carried out by a competent contractor at intervals <strong>no greater than six months</strong>. Practical guidance allows each visit to be scheduled within a 5 to 7 month window, which gives contractors room to plan routes without breaching the maximum interval.</p>
 
-<p>Servicing is required at intervals no greater than six months by a competent contractor. In practice, contracts run on a 6-monthly schedule with each visit covering test of every detector and call point, sounder verification, panel checks, battery tests, and a written service report. The responsible person also records weekly user tests of one call point on a rotating basis.</p>
+<p>The full routine for a BS 5839-1 system splits between what the responsible person does and what the contractor does:</p>
 
-<h3>BS 5839-6 domestic and HMO servicing</h3>
+<ul>
+<li><strong>Weekly, by the responsible person:</strong> test one manual call point, taking a different call point each week so that all are tested over time, and record the result in the logbook.</li>
+<li><strong>Periodically, by the responsible person:</strong> visual checks that the panel shows no fault, that call points and detectors are unobstructed, and that any faults raised previously have been cleared.</li>
+<li><strong>At intervals no greater than six months, by a competent contractor:</strong> a full service visit covering testing of every detector and call point, sounder verification against the required sound level, panel checks, standby battery tests, examination of any interfaces and cause and effect programming, and a written service report.</li>
+</ul>
+
+<p>Two points are worth emphasising. First, the six-month figure is a maximum, not a target: a system serviced at seven months and one day is outside the standard. Second, the logbook matters. An insurer, a fire risk assessor or a licensing authority asking whether the system has been maintained will ask to see the records, and a well-maintained system with no logbook is difficult to evidence.</p>
+
+<p>Servicing is a recurring cost for the life of the system, and it varies with the device count and how accessible the devices are. Our guide to <a href="/blog/commercial-fire-alarm-cost-uk-2026">commercial fire alarm costs</a> covers how that is priced alongside the installation.</p>
+
+<h2>BS 5839-6 Domestic and HMO Servicing</h2>
 
 <p>For Grade A systems the regime is similar to BS 5839-1: professional servicing under contract, typically annually for domestic and twice-yearly for larger HMOs. For Grade D systems the routine combines user-side testing (a periodic test from the test button on each unit) with periodic professional inspection, often annually for HMOs as a licensing condition. Battery replacement intervals depend on whether the system is Grade D1 (sealed long-life battery, typically 10 years) or Grade D2 (replaceable battery).</p>
 
@@ -1041,6 +1058,10 @@ export const blogPosts: BlogPost[] = [
 
 <p>Yes, in many cases. A Grade D Category LD2 system (mains-powered interlinked detectors in circulation areas plus the kitchen and any high-risk rooms, with battery backup) is the most common HMO licensing specification for properties up to a certain size and number of storeys. Larger HMOs, multi-storey properties, and those with bedsit-style accommodation typically require Grade A or Grade A with LD1. The local authority licensing team is the source of truth for any specific property.</p>
 
+<h3>What are the BS 5839-1 testing intervals?</h3>
+
+<p>BS 5839-1 sets a maximum interval of six months between professional service visits by a competent contractor, with practical guidance allowing each visit to be scheduled within a 5 to 7 month window. Alongside that, the responsible person tests one manual call point weekly, rotating through the call points so all are covered over time, and records each test in the system logbook. Six months is a maximum rather than a target, so a system serviced at seven months and one day is outside the standard.</p>
+
 <h3>How often does a commercial fire alarm need servicing?</h3>
 
 <p>BS 5839-1 requires professional servicing at intervals no greater than six months. In practice this means a 6-monthly contract with each visit covering full test of every detector and call point, sounder verification, panel checks, and battery tests. The responsible person should also carry out weekly user tests of one call point on a rotating basis and record these in the system logbook.</p>
@@ -1065,6 +1086,10 @@ export const blogPosts: BlogPost[] = [
       {
         question: 'Can a Grade D system ever be acceptable for an HMO?',
         answer: 'Yes, in many cases. A Grade D Category LD2 system (mains-powered interlinked detectors in circulation areas plus the kitchen and any high-risk rooms, with battery backup) is the most common HMO licensing specification for properties up to a certain size and number of storeys. Larger HMOs, multi-storey properties, and those with bedsit-style accommodation typically require Grade A or Grade A with LD1. The local authority licensing team is the source of truth for any specific property.'
+      },
+      {
+        question: 'What are the BS 5839-1 testing intervals?',
+        answer: 'BS 5839-1 sets a maximum interval of six months between professional service visits by a competent contractor, with practical guidance allowing each visit to be scheduled within a 5 to 7 month window. Alongside that, the responsible person tests one manual call point weekly, rotating through the call points so all are covered over time, and records each test in the system logbook. Six months is a maximum rather than a target, so a system serviced at seven months and one day is outside the standard.'
       },
       {
         question: 'How often does a commercial fire alarm need servicing?',
@@ -2022,6 +2047,10 @@ export const blogPosts: BlogPost[] = [
     dateModified: '2026-06-27T12:00:00Z',
     keywords: ['EWS1 vs fire risk assessment', 'EWS1 form', 'what is an EWS1 form', 'difference between EWS1 and fire risk assessment', 'do I need an EWS1 form'],
     wordCount: 1150,
+    image: {
+      src: '/images/2026-07/ews1-vs-fra.webp',
+      alt: 'Exterior of a UK block of flats paired with two contrasting document icons, illustrating the difference between an EWS1 form and a fire risk assessment',
+    },
     content: `
 <p>If you own, manage, or are selling a flat in a block or a converted house, you may be asked for an EWS1 form, a fire risk assessment, or both. The two are routinely confused, and supplying the wrong one is a common cause of delay in a sale or remortgage. This guide explains, in plain English, what each document is, who produces it, when you need it, and whether your building needs both. It is general information rather than legal or valuation advice.</p>
 
@@ -2106,6 +2135,10 @@ export const blogPosts: BlogPost[] = [
     dateModified: '2026-06-27T12:00:00Z',
     keywords: ['fire risk assessment cost', 'how much is a fire risk assessment', 'fire risk assessment cost essex', 'fire risk assessment price', 'fire risk assessment quote'],
     wordCount: 811,
+    image: {
+      src: '/images/2026-07/fra-cost.webp',
+      alt: 'Fire risk assessment report and costing sheet on a desk beside a calculator, illustrating what determines the price of a fire risk assessment',
+    },
     content: `
 <p>One of the most common questions we are asked is what a fire risk assessment costs. The honest answer is that there is no single price, and any figure quoted before someone understands your building should be treated with caution. This guide explains what actually drives the cost, so you can read a quote with confidence, and how to get an accurate, no-obligation price for premises across Essex and Greater London. It is general guidance rather than a price list.</p>
 
@@ -2174,6 +2207,10 @@ export const blogPosts: BlogPost[] = [
     dateModified: '2026-06-27T12:00:00Z',
     keywords: ['fire safety regulations blocks of flats', 'Fire Safety England Regulations 2022', 'fire safety law flats 2026', 'responsible person blocks of flats', 'residential evacuation plans 2025'],
     wordCount: 1350,
+    image: {
+      src: '/images/2026-07/blocks-of-flats-fire-safety.webp',
+      alt: 'Communal entrance and stairwell of a UK block of flats with a fire door, smoke detector and emergency light, illustrating fire safety law for blocks of flats',
+    },
     content: `
 <p>The fire safety rules for blocks of flats and other multi-occupied residential buildings have changed repeatedly since the Grenfell Tower fire, and 2026 has added another layer. If you are a freeholder, a residents' management company, or a managing agent, it can be hard to keep track of what you are actually required to do. This guide sets out the current stack of duties in plain English. It is general information rather than legal advice, and final wording should always be checked against the legislation itself.</p>
 

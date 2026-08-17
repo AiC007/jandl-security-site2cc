@@ -26,6 +26,11 @@ const servicePageData: Record<string, {
   pricing: string;
   faqs: { question: string; answer: string }[];
   image?: { src: string; alt: string };
+  comparator?: {
+    heading: string;
+    typical: { title: string; points: string[] };
+    jandl: { title: string; points: string[] };
+  };
 }> = {
   'burglar-alarms': {
     heroTagline: 'Professional Burglar Alarm Installation & Maintenance',
@@ -176,7 +181,7 @@ const servicePageData: Record<string, {
       },
       {
         question: 'Do you carry out fire risk assessments?',
-        answer: 'Yes. We arrange fire risk assessments for commercial premises, HMOs and blocks of flats through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and we carry out any resulting remedial works directly. The assessment identifies fire hazards, evaluates risk to occupants, and produces an action plan with prioritised recommendations. The Regulatory Reform (Fire Safety) Order 2005 requires the responsible person for any non-domestic premises to have a current fire risk assessment in place. J&L Security is BAFE-accredited for the installation and maintenance of fire alarms. See our <a href="/services/fire-risk-assessments" class="text-primary-600 hover:text-primary-700 font-medium">fire risk assessments service page</a> for the full delivery model.',
+        answer: 'Yes. See our <a href="/services/fire-risk-assessments" class="text-primary-600 hover:text-primary-700 font-medium">fire risk assessments service page</a> for the full delivery model, including the accredited assessor we work with and the in-house remedial works we deliver.',
       },
       {
         question: 'Do you install and repair smoke alarms?',
@@ -347,6 +352,27 @@ const servicePageData: Record<string, {
       src: '/images/fire-risk-assessments/fra-service-hero.webp',
       alt: 'Fire safety professional inspecting a UK building communal hallway with fire door, alarm panel and escape-route sign',
     },
+    comparator: {
+      heading: 'Fire risk assessment with remedial works under one roof',
+      typical: {
+        title: 'Most fire risk assessment providers',
+        points: [
+          'Carry out the assessment and issue the report',
+          'Hand you a written action plan, then step away',
+          'Leave you to source separate contractors for fire alarms, emergency lighting, electrical testing and fire doors',
+          'Multiple invoices, multiple certificates, multiple points of contact',
+        ],
+      },
+      jandl: {
+        title: 'J&L Security',
+        points: [
+          'Assessment by a competent assessor holding AIFSM, TMIFPO and NEBOSH',
+          'Written report and prioritised action plan',
+          'Remedial works delivered in-house: fire alarms (we are BAFE-accredited for installation and maintenance), emergency lighting, electrical testing and fire door works',
+          'One point of contact from the assessment through to a compliant building, with certification kept in one place',
+        ],
+      },
+    },
   },
 };
 
@@ -365,7 +391,6 @@ const metaOverrides: Record<string, { description?: string; keywords?: string[];
       'fire alarm installation',
       'BAFE fire alarm maintainers',
       'BAFE certified fire alarm',
-      'fire risk assessments',
       'smoke alarm install',
       'smoke alarm repair',
       'fire alarm servicing',
@@ -590,6 +615,42 @@ export default async function ServicePage({ params }: Props) {
                     ))}
                   </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Comparator (FRA only, opt-in via servicePageData) */}
+      {ext?.comparator && (
+        <section className="py-16 bg-white border-t border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-gray-900 mb-3">{ext.comparator.heading}</h2>
+              <p className="text-gray-600">Why an end-to-end provider changes the experience</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                <h3 className="font-semibold text-gray-900 mb-4">{ext.comparator.typical.title}</h3>
+                <ul className="space-y-3">
+                  {ext.comparator.typical.points.map((p) => (
+                    <li key={p} className="flex items-start gap-3 text-gray-700 text-sm">
+                      <span className="flex-shrink-0 w-1.5 h-1.5 bg-gray-400 rounded-full mt-2" aria-hidden="true" />
+                      <span>{p}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-primary-50 rounded-xl p-6 border border-primary-200">
+                <h3 className="font-semibold text-gray-900 mb-4">{ext.comparator.jandl.title}</h3>
+                <ul className="space-y-3">
+                  {ext.comparator.jandl.points.map((p) => (
+                    <li key={p} className="flex items-start gap-3 text-gray-700 text-sm">
+                      <CheckCircle className="h-4 w-4 text-primary-600 flex-shrink-0 mt-0.5" />
+                      <span>{p}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>

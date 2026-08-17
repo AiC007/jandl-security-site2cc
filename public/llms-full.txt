@@ -62,7 +62,7 @@ Design, installation, and maintenance of CCTV systems using Uniview cameras. Ser
 
 J&L Security is a BAFE-certified fire alarm maintainer (SP203-1 scheme) covering Essex and Greater London. We design, install, commission, and service BS 5839-1 commercial systems and BS 5839-6 domestic and HMO systems. Services include:
 - Fire risk assessments for commercial premises and HMOs (separate service alongside install and maintenance)
-- Conventional and addressable BS 5839-1 systems for commercial buildings (offices, retail, schools, care homes, warehouses)
+- Conventional, addressable and bi-wire BS 5839-1 systems for commercial buildings (offices, retail, schools, care homes, warehouses)
 - BS 5839-6 systems for domestic premises and HMOs across Grades A, C, and D and Categories LD1 to LD3
 - HMO fire alarm packages (Grade D mains-powered interlinked, Grade A panel-controlled where licensing requires)
 - Smoke alarm installs and smoke alarm repair for domestic properties and HMO landlords
@@ -71,6 +71,10 @@ J&L Security is a BAFE-certified fire alarm maintainer (SP203-1 scheme) covering
 - Fire alarm commissioning, certification, and handover documentation
 - Fault finding and repairs; takeover of existing systems where the previous maintainer is no longer suitable
 - Smoke and heat detector installation; interlinked detector systems
+
+**Fire alarm makes supported.** Control panels: Kentec, Advanced, C-TEC, Gent, Haes, Fike, Zeta. Wireless and hybrid systems: EMS, EDA Zerio Plus, SmartCell. Detection devices: Apollo, Hochiki. Support covers installation, servicing, fault repair and takeover of existing systems regardless of who installed them originally. Customers reporting a fault are asked for the make printed on the panel fascia, which lets the engineer check the relevant fault codes and carry the right parts to site.
+
+**System wiring types.** Conventional systems divide a building into zones and indicate the zone rather than the device. Addressable systems give each device its own address on a loop so the panel names the exact device, which speeds up fault finding on larger sites. Bi-wire systems are conventional systems in which detection and sounder signals share the same pair of cables, commonly found on smaller commercial premises and on upgrades retaining existing two-core cabling. Which type suits a given building is determined by the fire risk assessment and the site survey.
 
 ### 4. Access Control and Door Entry Systems
 
@@ -117,7 +121,9 @@ Coverage extends to Kent border areas on request.
 - Pyronix: Intruder alarm systems (including Enforcer wireless platform)
 - RISCO: Intruder alarm systems
 - Uniview: CCTV cameras and NVR systems
-- Advanced, C-Tek, Kentec: Fire alarm panels and devices
+- Kentec, Advanced, C-TEC, Gent, Haes, Fike, Zeta: Fire alarm control panels
+- EMS, EDA Zerio Plus, SmartCell: Wireless and hybrid fire alarm systems
+- Apollo, Hochiki: Fire detection devices
 - Paxton: Access control systems (Net2, Paxton10)
 - Comelit: Video intercom and door entry
 

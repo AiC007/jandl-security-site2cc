@@ -238,10 +238,28 @@ Priority sequence:
 | /docs/2026-05-06-implementation-summary.md | Internal record of what was implemented and shipped on 2026-05-06 |
 | /docs/2026-05-06-jag-confirmation-email.md | Draft email to Jag confirming the amendments are live (operator sends; do NOT auto-send) |
 | /docs/2026-05-06-lighthouse-islington.md | Lighthouse SEO audit pass note for /locations/islington (100/100 mobile, 2026-05-06) |
+| /docs/2026-08-17-fire-alarm-makes-implementation.md | Fire alarm makes and terminology round: decisions, assumptions live on production, and the five open client questions |
+| /docs/2026-08-17-fire-alarm-makes-client-email.md | Wendy email to Jag confirming the makes are live (canonical copy, operator sends) |
 
 ---
 
 ## 11. Last Session Summary
+
+### 2026-08-17: Fire alarm makes and terminology (client request of 17 August)
+
+**Trigger.** Jag emailed asking that the site name the fire alarm makes J&L supports, because customers report faults by make and model. Ten makes plus three terms (conventional, addressable, bi-wire). Wendy replied the same day agreeing, reading "CTEK" as C-TEC. Full record: `docs/2026-08-17-fire-alarm-makes-implementation.md`.
+
+**The finding that changed the job: the site was already carrying two of these makes, spelled wrong, in three spellings.** `C-Tech` and `C-Tek` both meant **C-TEC**; `Kentech` meant **Kentec**; `Smartcell` should be **SmartCell**. Jag's own email spells it "Kentec", which settles it. None of the wrong spellings matched anything a customer would type. The `C-Tek` variant was missed by the first sweep and caught only by the adversarial review. **Lesson: when correcting a brand name, grep phonetically and case-insensitively for the brand, not for the one wrong spelling you already know about.**
+
+**GSC evidence for why this matters.** Top 500 queries, 19 May to 17 Aug: 498 parsed, 354 contain "alarm", 36 contain "fire alarm", **zero** contain any manufacturer name, "panel", "fault", "addressable", "conventional" or "bi-wire". Top 500 by clicks, so not proof of zero, but proof that none is material today.
+
+**Shipped (PR [#19](https://github.com/AiC007/jandl-security-site2cc/pull/19)).** Corrected all brand spellings repo-wide; added Gent, Hochiki and Apollo; grouped the list three ways (control panels / wireless and hybrid / detection devices) because Apollo does not make panels; added bi-wire throughout; extended the fire-alarms `metaOverrides` keywords from 12 to 26 and cut the meta description from 275 to 151 characters; new "which makes do you install and service" FAQ; rewrote the stale `llms-full.txt` Supplier Partners fire row; updated `llms.txt` and `humans.txt`; renamed the about page brand section to "Makes and Systems We Support" so the framing is accurate for product ranges (SmartCell, EDA Zerio Plus) as well as manufacturers.
+
+**Assumptions now live on production, all unconfirmed by the client.** "CTEK" read as C-TEC. Fike and Zeta retained despite not being on Jag's list. "Support" used as the umbrella verb rather than "install", because Gent is a closed-protocol approved-installer range and an unqualified install claim would overclaim. The three-way equipment grouping is our trade reading, not Jag's. **No panel or model names published**, deliberately: do not add Syncro, Taktis, XFP, ZFP, MxPro, FireCell, Elan, Excel, XP95, Discovery or ESP without his confirmation.
+
+**Flagged, not actioned.** The fire alarms hero tagline reads "BAFE-Certified Fire Alarm Installation, Servicing & Risk Assessments", which on a natural reading extends BAFE to risk assessments. J&L is BAFE certified for fire alarm installation and maintenance only. Pre-existing, and an accreditation claim, so left for an operator decision. Also ten pre-existing em dashes remain in `app/services/[service]/page.tsx`.
+
+**Held.** Phase 3, a fire alarm fault guide organised by make, is the page that would actually capture "Kentec panel fault". Deferred to a second round pending Jag's answers.
 
 ### 2026-07-31: July end-of-month report and delivery of the deferred July content programme
 

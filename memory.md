@@ -240,6 +240,8 @@ Priority sequence:
 | /docs/2026-05-06-lighthouse-islington.md | Lighthouse SEO audit pass note for /locations/islington (100/100 mobile, 2026-05-06) |
 | /docs/2026-08-17-fire-alarm-makes-implementation.md | Fire alarm makes and terminology round: decisions, assumptions live on production, and the five open client questions |
 | /docs/2026-08-17-fire-alarm-makes-client-email.md | Wendy email to Jag confirming the makes are live (canonical copy, operator sends) |
+| /docs/2026-08-17-fire-alarm-makes-client-email.html | Branded HTML body of the same email, as placed in Gmail drafts |
+| /docs/2026-06-22-agent-readiness-client-email.md | Agent-readiness client email (salvaged from the abandoned PR #11) |
 
 ---
 
@@ -267,7 +269,17 @@ Priority sequence:
 
 **Two site issues found and deliberately not fixed this round.**
 1. `/bs5839-compliance/docklands` routes through `getServiceType()` on `s.includes('fire')`, falls through to the burglar default, and shows Pyronix PIR equipment under a BS 5839-1 heading. BS 5839-1 is the fire alarm standard. Small routing fix; the `isFireService` flag already exists in that file. Note the shared H2 "What We Install in {location}" must be made conditional if changed, or burglar, CCTV, access and lighting pages get wrongly relabelled.
-2. **[PR #8](https://github.com/AiC007/jandl-security-site2cc/pull/8) from May 2026 was never merged.** Commit `b05fafe` is not an ancestor of main. Vercel built the preview and it was abandoned. It contained five FRA differentiation fixes including the hero tagline correction and the removal of the fire-alarms/FRA keyword overlap that was blocking `/services/fire-risk-assessments` from indexing, still listed as outstanding at position 47. **Check for abandoned open PRs at the start of a session.**
+2. **[PR #8](https://github.com/AiC007/jandl-security-site2cc/pull/8) from May 2026 was never merged.** Commit `b05fafe` is not an ancestor of main. Vercel built the preview and it was abandoned. **Relanded the same evening as [PR #20](https://github.com/AiC007/jandl-security-site2cc/pull/20), merged as `00da5e7`.** See below.
+
+### 2026-08-17 (later): PR #8 relanded, and a PR backlog cleared
+
+**PR #8 could not be cherry-picked cleanly**, because it conflicts with the makes work that landed hours earlier in #19. Three of its five changes were relanded by hand in [PR #20](https://github.com/AiC007/jandl-security-site2cc/pull/20) (`00da5e7`) and verified live: the `fire risk assessments` keyword removed from the fire-alarms `metaOverrides`, the fire-alarms FRA FAQ cut to a one-line pointer, and the FRA comparator block (presence-guarded `comparator` field, confirmed rendering on `/services/fire-risk-assessments` only and absent from the other five service pages).
+
+**Two of PR #8's changes were deliberately NOT relanded**, and this is the thing the next session must not undo by accident. PR #8 renamed the fire-alarms `heroTagline` from "BAFE-Certified Fire Alarm Installation, Servicing & Risk Assessments" to "... Servicing & Maintenance", and dropped the FRA delivery sentence from the overview. **Question 5 of the client email drafted this evening asks Jag about that exact headline and proposes different wording** ("BAFE-Certified Fire Alarm Installation and Servicing, plus Fire Risk Assessments"). Changing the headline before he replies would make the email wrong on arrival. **Apply both once he answers, and reconcile PR #8's wording with what the email offered.**
+
+**PR backlog found and cleared.** Six PRs were open at session start, not one. #15, #16 and #17 were the July content PRs whose commits are all ancestors of main via #18, so their content shipped and only the PR records were stale. #11 was docs-only and its `memory.md` changes had been overtaken, but it carried two records worth keeping, which were salvaged onto main: `docs/2026-06-22-agent-readiness-client-email.md` and the live re-scan result in `docs/agent-readiness-2026-06-22.md` (Level 1 at 21/100 to Level 5). #1 was a Vercel security PR bumping Next from 15.4.6 to 15.4.8; main is already on 15.4.10, so it was superseded. **Audit open PRs at the start of every session: content can be merged while the PR record stays open, and a whole PR can be abandoned after its preview builds.**
+
+**Outstanding security finding, not actioned.** `npm audit --omit=dev` reports **4 high severity vulnerabilities** on the current tree: PostCSS path traversal in Next's bundled copy (GHSA-fxqj-rqcc-2cmp, GHSA-r28c-9q8g-f849) and `sharp` below 0.35.0 inheriting libvips CVE-2026-33327, CVE-2026-33328, CVE-2026-35590 and CVE-2026-35591. The fix requires `next@15.5.23`, a minor bump outside the stated range, so it needs its own session with a full regression check rather than a rushed upgrade at session end. This is a Pilot-maturity client site with no authentication and no PII, which lowers the urgency but does not remove it.
 
 ### 2026-07-31: July end-of-month report and delivery of the deferred July content programme
 

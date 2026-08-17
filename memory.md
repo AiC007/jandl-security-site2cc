@@ -1,6 +1,6 @@
 # J&L Security: Project Memory
 
-**Last updated:** 2026-06-27
+**Last updated:** 2026-08-17
 **Maintained by:** The AI Consultancy (London) Ltd
 **Purpose:** Living reference for all AI sessions working on this project. Update after every substantive session.
 
@@ -279,7 +279,22 @@ Priority sequence:
 
 **PR backlog found and cleared.** Six PRs were open at session start, not one. #15, #16 and #17 were the July content PRs whose commits are all ancestors of main via #18, so their content shipped and only the PR records were stale. #11 was docs-only and its `memory.md` changes had been overtaken, but it carried two records worth keeping, which were salvaged onto main: `docs/2026-06-22-agent-readiness-client-email.md` and the live re-scan result in `docs/agent-readiness-2026-06-22.md` (Level 1 at 21/100 to Level 5). #1 was a Vercel security PR bumping Next from 15.4.6 to 15.4.8; main is already on 15.4.10, so it was superseded. **Audit open PRs at the start of every session: content can be merged while the PR record stays open, and a whole PR can be abandoned after its preview builds.**
 
-**Outstanding security finding, not actioned.** `npm audit --omit=dev` reports **4 high severity vulnerabilities** on the current tree: PostCSS path traversal in Next's bundled copy (GHSA-fxqj-rqcc-2cmp, GHSA-r28c-9q8g-f849) and `sharp` below 0.35.0 inheriting libvips CVE-2026-33327, CVE-2026-33328, CVE-2026-35590 and CVE-2026-35591. The fix requires `next@15.5.23`, a minor bump outside the stated range, so it needs its own session with a full regression check rather than a rushed upgrade at session end. This is a Pilot-maturity client site with no authentication and no PII, which lowers the urgency but does not remove it.
+### OUTSTANDING SECURITY ACTION: upgrade Next.js to 15.5.23
+
+**This is the largest open item on the project and it is not a content task.** `npm audit --omit=dev` against main on 2026-08-17 reports four vulnerable packages at high severity: `next`, `postcss` (Next's bundled copy), `sharp` (below 0.35.0, inheriting libvips CVE-2026-33327, CVE-2026-33328, CVE-2026-35590, CVE-2026-35591) and `nanoid`. **Every one of them resolves at `next@15.5.23`.** The site is on 15.4.10.
+
+The advisory list against `next` at 15.4.10 runs to roughly 25 entries. The ones that actually touch this codebase, which has `middleware.ts` and four API routes (`/api/quote`, `/api/mcp`, `/api/markdown`, `/api/wellknown/api-catalog`):
+- Middleware / proxy bypass in App Router via segment-prefetch routes (high, plus an incomplete-fix follow-up)
+- Middleware / proxy bypass through dynamic route parameter injection (high)
+- Server-side request forgery in rewrites via attacker-controlled destination hostname (high)
+- SSRF in Server Actions on custom servers (high)
+- Several DoS paths in Server Components and the Image Optimization API
+
+**Mitigating context, which lowers urgency without removing it:** this is a public marketing site with no authentication, no user accounts, no payment handling and no PII beyond the quote form. Most of the bypass advisories are severe on apps with protected routes, which this is not.
+
+**Do not tack this onto a content release.** 15.4.10 to 15.5.23 is a minor bump outside the stated range and needs its own session: upgrade, full build, then re-verify the middleware redirects (apex/www canonical and the jandlalarms.co.uk redirect both run through `middleware.ts`), the four API routes, and the agent-readiness surfaces.
+
+**[PR #1](https://github.com/AiC007/jandl-security-site2cc/pull/1) was closed as superseded, not resolved.** It proposed 15.4.6 to 15.4.8; main was already past it at 15.4.10, so merging would have been a downgrade.
 
 ### 2026-07-31: July end-of-month report and delivery of the deferred July content programme
 

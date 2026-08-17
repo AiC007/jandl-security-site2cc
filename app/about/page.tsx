@@ -50,8 +50,9 @@ const accreditations = [
 ];
 
 const supplierBrands = [
-  'Pyronix', 'Advanced', 'Paxton', 'Comelit', 'Uniview', 'C-Tech',
-  'Fike', 'Haes', 'Kentech', 'EDA', 'EMS', 'Smartcell', 'Zeta'
+  'Pyronix', 'Advanced', 'Paxton', 'Comelit', 'Uniview', 'C-TEC',
+  'Fike', 'Haes', 'Kentec', 'EDA Zerio Plus', 'EMS', 'SmartCell', 'Zeta',
+  'Gent', 'Hochiki', 'Apollo'
 ];
 
 const keyStats = [
@@ -122,10 +123,11 @@ export default function AboutPage() {
                   and ongoing support.
                 </p>
                 <p>
-                  We work with equipment from manufacturers we trust and have tested over thousands of
-                  installations: Pyronix and Texecom for intruder alarms, Uniview for CCTV, Advanced and
-                  C-Tech for fire alarm panels, and Paxton and Comelit for access control. We do not
-                  install cheap or unbranded equipment.
+                  We work with equipment we trust and have tested over thousands of
+                  installations: Pyronix and Texecom for intruder alarms, Uniview for CCTV, Paxton and
+                  Comelit for access control, and for fire detection, Kentec, Advanced, C-TEC, Gent and
+                  Haes control panels, EMS, EDA Zerio Plus and SmartCell wireless systems, and Apollo and
+                  Hochiki detection devices. We do not install cheap or unbranded equipment.
                 </p>
                 <p className="text-gray-700 leading-relaxed mt-4 bg-primary-50 border border-primary-200 rounded-lg p-4">
                   J&L Security trades as part of the same team behind J&L Alarms, bringing over 13 years of
@@ -259,10 +261,11 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Trusted Supplier Partners</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Makes and Systems We Support</h2>
             <p className="text-lg text-gray-600">
-              We work exclusively with leading security equipment manufacturers to ensure 
-              reliability, quality, and ongoing support.
+              We work with established security and fire equipment makes to ensure
+              reliability, quality, and ongoing support. If you are reporting a fault on an
+              existing system, the make is usually printed on the front of the panel.
             </p>
           </div>
 
@@ -276,7 +279,7 @@ export default function AboutPage() {
 
           <div className="mt-8 text-center">
             <p className="text-gray-600">
-              <em>Brand logos used as examples - we maintain partnerships with all major security equipment manufacturers</em>
+              <em>Makes shown are those we install, service and take over. We also attend systems from other makes on request.</em>
             </p>
           </div>
         </div>

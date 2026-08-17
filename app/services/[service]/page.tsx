@@ -121,7 +121,8 @@ const servicePageData: Record<string, {
     heroTagline: 'BAFE-Certified Fire Alarm Installation, Servicing & Risk Assessments',
     overview: [
       'J&L Security is a BAFE-accredited fire alarm installer and maintainer covering Essex and Greater London. We design, install, commission, and service commercial fire alarm systems to BS 5839-1 and domestic and HMO fire alarm systems to BS 5839-6. We also arrange fire risk assessments through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, deliver any resulting remedial works ourselves, and provide smoke alarm installs and repair plus 6-monthly fire alarm servicing under contract.',
-      'We install both conventional and addressable systems from C-Tech, Fike, Haes, Kentech, Advanced, EDA, EMS, Smartcell, and Zeta. Every installation is documented, certified at commissioning, and supported with a service contract that keeps the system compliant with BS 5839 and the Regulatory Reform (Fire Safety) Order 2005.',
+      'We install, service and maintain conventional, addressable and bi-wire fire alarm systems. The makes we support include Kentec, Advanced, C-TEC, Gent, Haes, Fike and Zeta control panels, EMS, EDA Zerio Plus and SmartCell wireless and hybrid systems, and Apollo and Hochiki detection devices. We also take over existing systems from these makes where another contractor installed them.',
+      'Every installation is documented, certified at commissioning, and supported with a service contract that keeps the system compliant with BS 5839 and the Regulatory Reform (Fire Safety) Order 2005.',
     ],
     process: [
       { step: 'Fire Risk Assessment Review', detail: 'We review your existing fire risk assessment (or recommend one) to determine the appropriate category of system.' },
@@ -142,8 +143,12 @@ const servicePageData: Record<string, {
     pricing: 'Fire alarm servicing contracts from £180 + VAT per year for commercial premises and from £120 + VAT per year for residential and HMO systems. Includes one routine maintenance and one emergency callout. Installation prices and fire risk assessment fees provided after free site survey.',
     faqs: [
       {
-        question: 'What is the difference between a conventional and addressable fire alarm?',
-        answer: 'A conventional system divides a building into zones — if a detector activates, you know which zone. An addressable system identifies the exact device that has activated, which is essential for larger buildings. We install both depending on the size and layout of your premises.',
+        question: 'What is the difference between a conventional, addressable and bi-wire fire alarm?',
+        answer: 'A conventional system divides a building into zones. If a detector activates, you know which zone but not which device. An addressable system gives every device its own address on a loop, so the panel names the exact device that has activated, which matters on larger buildings and makes fault finding far quicker. A bi-wire system is a conventional system that carries both detection and sounder signals on the same pair of cables, so detectors and sounders share one circuit rather than needing separate ones. Bi-wire systems are commonly found on smaller commercial premises and on upgrades where existing two-core cabling is being retained. Which of the three suits your building is determined by the fire risk assessment and the site survey. We install and maintain all three.',
+      },
+      {
+        question: 'Which makes of fire alarm panel do you install and service?',
+        answer: 'We support Kentec, Advanced, C-TEC, Gent, Haes, Fike and Zeta control panels, EMS, EDA Zerio Plus and SmartCell wireless and hybrid systems, and Apollo and Hochiki detection devices, across installation, servicing, fault repair and takeover of systems installed by somebody else. If you are reporting a fault, the make is usually printed on the front of the panel. Telling us when you call helps us check the fault codes for that panel beforehand and bring the right parts.',
       },
       {
         question: 'How often does a fire alarm need to be serviced?',
@@ -355,7 +360,7 @@ export async function generateStaticParams() {
 
 const metaOverrides: Record<string, { description?: string; keywords?: string[]; title?: string }> = {
   'fire-alarms': {
-    description: 'BAFE-certified fire alarm installation and servicing across Essex and Greater London. BS 5839-1 commercial systems, BS 5839-6 domestic and HMO. Fire risk assessments arranged and remedial works delivered, smoke alarm install and repair, 6-monthly servicing. Free survey.',
+    description: 'BAFE-certified fire alarm installation, servicing and fault repair across Essex and London. Kentec, Advanced, C-TEC, Gent and Haes panels. Free survey.',
     keywords: [
       'fire alarm installation',
       'BAFE fire alarm maintainers',
@@ -364,8 +369,22 @@ const metaOverrides: Record<string, { description?: string; keywords?: string[];
       'smoke alarm install',
       'smoke alarm repair',
       'fire alarm servicing',
+      'fire alarm fault repair',
       'BS 5839-1',
       'BS 5839-6',
+      'conventional fire alarm',
+      'addressable fire alarm',
+      'bi-wire fire alarm',
+      'Kentec fire alarm panel',
+      'Advanced fire alarm panel',
+      'C-TEC fire alarm panel',
+      'Gent fire alarm',
+      'Hochiki fire alarm',
+      'Apollo fire detectors',
+      'Haes fire alarm panel',
+      'EMS wireless fire alarm',
+      'EDA Zerio Plus',
+      'SmartCell wireless fire alarm',
       'commercial fire alarm Essex',
       'HMO fire alarm London',
       'J&L Security',

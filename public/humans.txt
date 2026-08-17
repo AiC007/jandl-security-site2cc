@@ -9,7 +9,8 @@
 
 # THANKS
   All our loyal customers across Essex & Greater London
-  Security equipment manufacturers: Pyronix, Uniview, Advanced, Paxton, Comelit
+  Security equipment manufacturers: Pyronix, Texecom, Uniview, Paxton, Comelit
+  Fire alarm makes and systems: Kentec, Advanced, C-TEC, Gent, Haes, Fike, Zeta, EMS, EDA Zerio Plus, SmartCell, Apollo, Hochiki
   Local authorities and emergency services for their partnership
 
 # TECHNOLOGY COLOPHON

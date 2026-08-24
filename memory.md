@@ -244,8 +244,8 @@ Priority sequence:
 | /docs/2026-06-22-agent-readiness-client-email.md | Agent-readiness client email (salvaged from the abandoned PR #11) |
 | /docs/2026-08-24-gent-and-fault-guide-handoff-prompt.md | Standalone handoff prompt for the session acting on Jag's answers of 23 August |
 | /docs/2026-08-24-gent-and-fault-guide-implementation.md | Gent servicing-only, the approved BAFE headline and the fault guide: decisions, the nine corrected install claims, verification, and four flagged issues |
-| /docs/2026-08-24-gent-and-fault-guide-client-email.md | Wendy email to Jag confirming all three are live and re-asking for model names (canonical copy, operator sends) |
-| /docs/2026-08-24-gent-and-fault-guide-client-email.html | Branded HTML body of the same email, as placed in Gmail drafts |
+| /docs/2026-08-24-gent-and-fault-guide-client-email.md | Wendy email to Jag confirming all three are live and re-asking for model names (canonical copy; SENT 2026-08-24) |
+| /docs/2026-08-24-gent-and-fault-guide-client-email.html | Branded HTML body of the same email, as sent |
 
 ---
 
@@ -274,11 +274,17 @@ Jag replied on **23 August 2026 at 20:07** to the fire alarm makes email. Everyt
 - The three-way equipment grouping is confirmed by Jag, so it is no longer an assumption.
 - "CTEK" read as C-TEC is now effectively settled by Jag using the site copy without objection across two rounds, but he has never confirmed it in writing.
 
-**Client email.** Canonical copy written to `docs/2026-08-24-gent-and-fault-guide-client-email.md` and `.html` **before** any draft existed, reconciled word for word between the two, every claim checked against the code and against production, reviewed, and **two real defects corrected at review**: a "five of the eight" count that was not strictly true, and "the title Google shows in the search result", which over-claimed because Google rewrites titles. Only then was the draft created, **once**: Gmail draft `r-4613757720223942802`, message `1a032e438c836681`, in thread `1a010c0d1be48d99` as a reply to Jag's answers. **Not sent.** Confirmed by listing drafts that exactly one exists.
+**Client email: SENT 2026-08-24 08:53 UTC**, message `1a032f91ad2b9c64`, in thread `1a010c0d1be48d99` as a reply to Jag's answers. Operator sent it; the agent only drafted.
+
+The standing rule worked exactly as designed and is worth keeping as the template. Canonical copy was written to `docs/2026-08-24-gent-and-fault-guide-client-email.md` and `.html` **before any draft existed**, reconciled word for word between the two, every claim checked against the code and against live production, and reviewed. **Review caught two real defects, both fixed while the copy was still a file and freely editable:** a "five of the eight" count that was not strictly true (the handoff prompt's five included Greenwich monitoring, which is not servicing, maintenance or fault finding), and "the title Google shows in the search result", which over-claimed because Google rewrites titles at its own discretion. Only then was the draft created, **once**: `r-4613757720223942802`. Drafts folder confirmed empty after sending, so **no orphan or duplicate draft was left behind**. Two rounds running, the review pass has caught a real defect that would have reached the client. Do not shortcut it.
 
 **Newly recorded site defect.** The `getServiceType()` fall-through affects **four** pages, not one. Alongside the known `/bs5839-compliance/docklands`, these are `smoke-heat-detectors-south-woodford`, `domestic-smoke-alarm-install-basildon` and `interlinked-detectors-chelmsford`: all fire-domain subjects served Pyronix burglar alarm equipment. Left alone deliberately, because `getServiceType()` was not needed for the H2 work and touching it would have been silent scope expansion. A one-line fix that changes what four live pages say, so it wants its own checkpoint.
 
 **Also newly recorded.** `public/llms.txt` and `public/llms-full.txt` list **10 of 19** blog posts; the new post was added, the nine older gaps were not closed. And blog FAQs are **schema-only**: `app/blog/[slug]/page.tsx` emits `FAQPage` markup but never renders the questions, which is against Google's structured data guidance. Pre-existing across all 19 posts, so a template change.
+
+**Session closed 2026-08-24.** Everything in this round is shipped, live, reported and sent. `main` at `8ac5a09`, no open PRs, no stale branches, working tree clean. **Next session picks up from the four flagged items**, in rough priority order: (1) the Next.js 15.5.23 security upgrade, still the largest open item and needing its own session; (2) the `getServiceType()` fall-through, now known to affect **four** live pages; (3) `llms.txt` / `llms-full.txt` listing 10 of 19 posts; (4) blog FAQs emitting `FAQPage` schema without rendering the questions. **The one thing waiting on the client is Jag's answer on panel and model names (question 4).** Until that arrives, do not add model detail to the fault guide.
+
+---
 
 ### 2026-08-17: Fire alarm makes and terminology (client request of 17 August)
 
@@ -296,7 +302,7 @@ Jag replied on **23 August 2026 at 20:07** to the fire alarm makes email. Everyt
 
 **Held.** Phase 3, a fire alarm fault guide organised by make, is the page that would actually capture "Kentec panel fault". Deferred to a second round pending Jag's answers.
 
-**Shipped and verified live.** PR #19 squash-merged to main as `eb3db12` and deployed. Production checked directly: `/services/fire-alarms`, `/about` and `/llms.txt` return zero `C-Tech`, `C-Tek` and `Kentech`, and all carry C-TEC, Gent, Hochiki and Apollo. Client email placed in Gmail drafts, ID `r4367634541881298916`, one draft only, not sent.
+**Shipped and verified live.** PR #19 squash-merged to main as `eb3db12` and deployed. Production checked directly: `/services/fire-alarms`, `/about` and `/llms.txt` return zero `C-Tech`, `C-Tek` and `Kentech`, and all carry C-TEC, Gent, Hochiki and Apollo. Client email placed in Gmail drafts, ID `r4367634541881298916`, one draft only. **Subsequently sent by the operator on 2026-08-17 at 17:25 UTC** (message `1a010c175e92d926`); Jag replied to it on 23 August. Corrected here on 2026-08-24, because the entry previously read "not sent", which was true when written and misleading afterwards.
 
 **The email review earned its keep, and the lesson is about self-report.** The first draft told Jag we had used "support" rather than "install" so as not to overclaim on Gent. The site said "install, service and take over" across the whole make list in seven places, including an H2 reading "What We Install in {location}" over the make list on five pages whose subject is maintenance. The email would have reassured the client about an overclaim we had in fact published, to the one reader qualified to catch it. **When an email describes a decision recorded in the implementation notes, verify the code carries that decision through, not just that the notes state it.** Also caught: Hochiki does make control panels (L@titude), so the Apollo "detectors not panels" rationale must not be extended to it; and "the list you sent on Monday" described an email that had arrived three hours earlier the same Monday.
 

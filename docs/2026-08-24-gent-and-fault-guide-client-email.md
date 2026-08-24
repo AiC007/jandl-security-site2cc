@@ -1,12 +1,13 @@
 # Client email: Gent servicing-only, the approved headline, and the fault guide (Wendy AI)
 
-**Status:** FINAL. Reviewed, corrected, and placed in Gmail drafts on 2026-08-24.
+**Status:** SENT. Reviewed, corrected, drafted once, and sent by the operator on 2026-08-24 at 09:53 BST.
 
 **To:** info@jandlsecurity.co.uk (Jag)
 **From:** Wendy AI, The AI Consultancy (ai@theaiconsultancy.ai)
 **Subject:** Re: J&L Security Website: Fire Alarm Makes Now Live
 **Thread:** `1a010c0d1be48d99`, replying to Jag's message `1a0303c60c949132` of 2026-08-23 20:07
-**Draft ID:** `r-4613757720223942802` (message `1a032e438c836681`). One draft only. Not sent.
+**Draft ID:** `r-4613757720223942802` (draft message `1a032e438c836681`). One draft only, no duplicates.
+**Sent:** 2026-08-24 08:53:01 UTC as message `1a032f91ad2b9c64`, in thread `1a010c0d1be48d99`. Sent by the operator, not by the agent. Drafts folder confirmed empty afterwards, so no orphan draft was left behind.
 **Format:** AIC branded HTML. Matching body at `docs/2026-08-24-gent-and-fault-guide-client-email.html`.
 
 This is the third email in the thread. Jag is a busy owner, so it is deliberately short: three things shipped, one question still open.

@@ -703,7 +703,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Record Keeping</h3>
 
-<p>A fire alarm log book must be maintained for every HMO. It should record all service visits and their findings, weekly test results, any faults and the actions taken to resolve them, and any false alarms and their cause. Local authority inspectors will ask to see this log book during licensing inspections.</p>
+<p>A fire alarm log book must be maintained for every HMO. It should record all service visits and their findings, weekly test results, any faults and the actions taken to resolve them, and any false alarms and their cause. If the panel is currently showing a fault, our guide to <a href="/blog/fire-alarm-panel-fault-guide-by-make">fire alarm panel faults by make</a> covers what to record and when it needs an engineer that day. Local authority inspectors will ask to see this log book during licensing inspections.</p>
 
 <h2>The Regulatory Reform (Fire Safety) Order 2005</h2>
 
@@ -1024,6 +1024,8 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Periodically, by the responsible person:</strong> visual checks that the panel shows no fault, that call points and detectors are unobstructed, and that any faults raised previously have been cleared.</li>
 <li><strong>At intervals no greater than six months, by a competent contractor:</strong> a full service visit covering testing of every detector and call point, sounder verification against the required sound level, panel checks, standby battery tests, examination of any interfaces and cause and effect programming, and a written service report.</li>
 </ul>
+
+<p>Between service visits, the responsible person's periodic check is largely a check for faults. If the panel is showing one, our guide to <a href="/blog/fire-alarm-panel-fault-guide-by-make">what a fire alarm panel fault means, make by make</a> explains what the indication is telling you and what to have ready before you call an engineer.</p>
 
 <p>Two points are worth emphasising. First, the six-month figure is a maximum, not a target: a system serviced at seven months and one day is outside the standard. Second, the logbook matters. An insurer, a fire risk assessor or a licensing authority asking whether the system has been maintained will ask to see the records, and a well-maintained system with no logbook is difficult to evidence.</p>
 
@@ -2600,6 +2602,8 @@ export const blogPosts: BlogPost[] = [
 
 <p>A system with high-level devices in an atrium will cost more to service every six months, for decades, than an otherwise identical system at accessible heights. That is worth weighing at design stage rather than discovering later.</p>
 
+<p>Faults between visits are the other recurring call on the budget. Our guide to <a href="/blog/fire-alarm-panel-fault-guide-by-make">fire alarm panel faults by make</a> sets out what the common fault categories are and how to keep callouts down.</p>
+
 <h2>Where a Cheap Quote Usually Hides the Cost</h2>
 
 <p>If one quote is substantially lower than the others, it is usually explained by one of the following rather than by efficiency:</p>
@@ -2648,6 +2652,218 @@ export const blogPosts: BlogPost[] = [
       {
         question: 'Do I need a fire risk assessment before getting a fire alarm quote?',
         answer: 'It is strongly advisable. The fire risk assessment determines the category of system the building needs, and without it any quote is based on an assumption. If that assumption turns out to be lower than the assessment later requires, the difference becomes a variation and costs more than specifying it correctly at the outset. J&L Security arranges fire risk assessments through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, and carries out any resulting remedial works directly.',
+      },
+    ],
+  },
+  {
+    slug: 'fire-alarm-panel-fault-guide-by-make',
+    title: 'Fire Alarm Panel Fault: What It Means, Make by Make',
+    metaTitle: 'Fire Alarm Panel Fault Guide: Kentec, Advanced, C-TEC and More',
+    description: 'What a fault indication on a fire alarm panel means, what causes most faults, and what to have ready when you call. Covers the twelve makes we support.',
+    datePublished: '2026-08-24',
+    dateModified: '2026-08-24',
+    keywords: [
+      'kentec panel fault',
+      'fire alarm panel fault',
+      'fire alarm fault light',
+      'advanced fire alarm panel fault',
+      'c-tec panel fault',
+      'gent panel fault',
+      'haes panel fault',
+      'zeta fire alarm fault',
+      'fike panel fault',
+      'ems wireless fire alarm fault',
+      'apollo detector fault',
+      'hochiki detector fault',
+      'fire alarm panel buzzing',
+      'silence fire alarm panel',
+      'fire alarm fault repair essex',
+    ],
+    wordCount: 2561,
+    content: `
+<p>A fire alarm panel showing a fault is telling you that part of the system is not working as it was designed to. It is not a fire signal, and it is not something to leave until the next service visit. The correct response sits between those two, and it is straightforward: find out what the panel is reporting, write it down, and get a competent engineer to it.</p>
+
+<p>This guide explains what a fault indication on a fire alarm panel generally means, what causes most of them, and what to have ready when you call. It is organised by make, because that is how people describe the problem on the phone. Very few callers open with a category of fault. They open with "the Kentec panel is showing a fault" or "the C-TEC panel keeps buzzing".</p>
+
+<p>One thing this guide deliberately does not do is publish fault codes, reset sequences or step-by-step diagnostics for named panels. There is a section below explaining why. In short: fire detection is life safety equipment, what an indication means depends on the panel model and on how the system was configured when it was commissioned, and a generic instruction found online is a poor substitute for someone who can see the panel. If you want to know what yours is reporting, <a href="/contact">call us</a> and we will tell you.</p>
+
+<h2>Fault and Fire Are Not the Same Signal</h2>
+
+<p>Every fire alarm control panel installed to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839-1</a> distinguishes a fire condition from a fault condition, and indicates them differently.</p>
+
+<ul>
+<li><strong>A fire condition</strong> is the system doing its job. Sounders operate, the panel indicates the zone or the device in alarm, and the building should be evacuated in line with your fire procedure.</li>
+<li><strong>A fault condition</strong> means the panel has found a problem with itself, with the wiring, with a device, or with its power supply. Sounders do not operate. The panel gives a separate fault indication, conventionally amber or yellow rather than red, usually with an intermittent internal buzzer.</li>
+</ul>
+
+<p>The practical difference is that a fault is a warning about capability rather than an emergency in itself. It says the system may not respond correctly to a real fire, in whole or in part. That is exactly why a fault is urgent even though nothing dramatic is happening in the building.</p>
+
+<h2>Silencing the Buzzer Is Not Fixing the Fault</h2>
+
+<p>Most fault calls begin with the noise. Panels sound an internal buzzer on a fault precisely so that somebody notices, and most panels let an authorised user silence that buzzer at the panel.</p>
+
+<p>Two things follow, and both matter.</p>
+
+<ol>
+<li><strong>Silencing the buzzer does not clear the fault.</strong> The fault indication remains, the panel keeps the condition recorded, and whatever is wrong is still wrong.</li>
+<li><strong>Silencing it and then forgetting it is the failure we see most often.</strong> An engineer arrives for a routine six-monthly service and finds a fault that has been sitting there, quietly, for weeks. For all of that time the building did not have the system its occupants believed it had.</li>
+</ol>
+
+<p>Silence it so that people can work. Then record it in the fire alarm logbook and report it the same day.</p>
+
+<h2>What Actually Causes Most Fire Alarm Faults</h2>
+
+<p>Across every make, the large majority of fault conditions fall into a handful of categories. Naming them is useful, because it gives you a sense of what kind of visit is likely without pretending to diagnose your particular panel from a distance.</p>
+
+<h3>Power supply faults</h3>
+
+<p>A fire alarm panel runs from the mains and holds a standby battery so that the system survives a power cut. A fault here can mean the mains supply has been lost, that the charging circuit has a problem, or that the batteries are no longer holding charge. Standby batteries are consumable items with a service life, and are replaced periodically as part of maintenance. A battery fault appearing some years after installation is entirely ordinary rather than a sign that anything was installed badly.</p>
+
+<h3>Cabling and circuit faults</h3>
+
+<p>Detection and sounder circuits are monitored continuously, which is the point of them, so a break, a short circuit or a deteriorating connection is reported as a fault. In practice a great many of these are caused by building work: a cable cut by another trade, a suspended ceiling taken down, a device knocked off its base by a ladder. If anything at all has been done to the fabric of the building recently, tell us when you call. It very often shortens the visit.</p>
+
+<h3>Device faults</h3>
+
+<p>An individual detector, manual call point, sounder or interface can fail, become contaminated with dust, or drift outside tolerance as it ages. On an addressable system the panel can normally point to the specific device. On a conventional system it points to the zone, and the engineer narrows it down on site.</p>
+
+<h3>Earth faults</h3>
+
+<p>An earth fault means some part of the wiring has made unintended contact with earth. These are worth mentioning separately because they can be intermittent and are often the slowest to trace, sometimes appearing and clearing with changes in temperature or moisture.</p>
+
+<h3>System and configuration faults</h3>
+
+<p>Panels monitor themselves as well as the field wiring. A fault can relate to internal electronics, to a networked panel or repeater that has stopped communicating, or to a device the panel expects to find on a loop and cannot.</p>
+
+<h2>What to Do When a Fault Appears</h2>
+
+<p>The right first move is to gather information, not to intervene. Please do not open the panel, attempt a repair, isolate sounders or disconnect devices. Those are engineer tasks on life safety equipment, and on a monitored system some of them will generate signals of their own.</p>
+
+<p>What genuinely helps:</p>
+
+<ul>
+<li><strong>Read the make off the front of the panel.</strong> It is almost always printed on the fascia.</li>
+<li><strong>Record what the panel is displaying,</strong> word for word, or photograph it. If there is a screen, the exact wording matters. If there are indicator lights, which are lit, and whether they are steady or flashing, matters.</li>
+<li><strong>Note when it started</strong> and whether it is constant or comes and goes.</li>
+<li><strong>Note what changed.</strong> Building work, a power cut, a leak, a delivery that clipped a detector, any recent alteration to the system.</li>
+<li><strong>Enter it in the fire alarm logbook</strong> with the date, the time and what you saw.</li>
+<li><strong>Consider whether interim measures are needed.</strong> If the fault means a significant part of the building is without detection, the responsible person should consider temporary arrangements until it is put right.</li>
+</ul>
+
+<p>Then call us. With those details we can usually tell you on the phone what class of fault it looks like and what the visit is likely to involve.</p>
+
+<h2>Fault by Make</h2>
+
+<p>Below is what we do for each of the makes we support, and what to have ready when you call about it. This is deliberately kept at make level. What a given indication means, and what is needed to clear it, depend on the panel model and on how your system was configured at commissioning, so we confirm that on the phone rather than guess at it in an article. In every case, the useful things to have to hand are the same: the make from the fascia, exactly what is being displayed, and any zone or device reference the panel gives.</p>
+
+<h3>Kentec panel fault</h3>
+
+<p>Kentec is a British manufacturer of fire alarm control panels, supplying both conventional and addressable equipment widely used in UK commercial premises. We install, service, repair and take over Kentec systems. If your panel has a display, the wording on it is the single most useful thing you can give us before we attend.</p>
+
+<h3>Advanced panel fault</h3>
+
+<p>Advanced is a British manufacturer of fire alarm control panels, particularly associated with addressable and networked systems across larger and multi-building sites. We install, service, repair and take over Advanced systems. On a networked installation, tell us which panel or repeater is showing the fault as well as what it says, because that distinction can change what we bring.</p>
+
+<h3>C-TEC panel fault</h3>
+
+<p>C-TEC is a British manufacturer of fire alarm control panels and related life safety equipment. We install, service, repair and take over C-TEC systems.</p>
+
+<h3>Gent panel fault</h3>
+
+<p>Gent is an established fire detection brand supplying addressable fire systems through an approved installer network. <strong>Our position on Gent is different from the other makes on this page, and we would rather be straight about it than have you find out on the day.</strong> We service, maintain, fault find and take over Gent systems, and we do not install new Gent systems. If you have a Gent panel showing a fault, call us and we will attend it under service. If you are specifying a brand new system for a new building, we will quote you on a make we install.</p>
+
+<h3>Haes panel fault</h3>
+
+<p>Haes is a British manufacturer of fire alarm control panels covering conventional and addressable systems. We install, service, repair and take over Haes systems.</p>
+
+<h3>Fike panel fault</h3>
+
+<p>Fike supplies fire detection equipment and is also known in fire suppression. We install, service, repair and take over Fike fire alarm systems. If your premises has suppression as well as detection, say so when you call, because the two are frequently interfaced and a fault on one can present at the other.</p>
+
+<h3>Zeta panel fault</h3>
+
+<p>Zeta is a British supplier of fire alarm panels and detection devices. We install, service, repair and take over Zeta systems.</p>
+
+<h3>EMS wireless fire alarm fault</h3>
+
+<p>EMS supplies wireless and hybrid fire detection systems, where devices communicate with the panel by radio rather than over a cable. We install, service, repair and take over EMS systems. Faults on wireless systems have a category of their own: as well as the usual power and device faults, the panel monitors the radio link to each device, so a fault can indicate a device that has stopped reporting. Changes to the building that alter the radio path, such as a new partition or a metal-clad structure, are worth mentioning when you call.</p>
+
+<h3>EDA Zerio Plus fault</h3>
+
+<p>EDA Zerio Plus is a wireless fire detection range that we install, service, repair and take over. The same point about wireless applies: the panel monitors the link to each device, and physical changes to the building can affect it.</p>
+
+<h3>SmartCell fault</h3>
+
+<p>SmartCell is a wireless fire detection range that we install, service, repair and take over. As with the other wireless systems, tell us whether the fault names a particular device and whether anything about the building layout has changed.</p>
+
+<h3>Apollo detector fault</h3>
+
+<p>Apollo is a British manufacturer of fire detection devices: detectors, manual call points and interfaces rather than control panels. That means an Apollo fault will be reported to you by whatever control panel your building has, which may be a different make entirely. When you call, give us the make of the panel as well as the device, because the panel is where we start.</p>
+
+<h3>Hochiki detector fault</h3>
+
+<p>Hochiki manufactures fire detection devices, and these are the products we support under this make. As with Apollo, the fault will be indicated at your control panel, so tell us the panel make alongside the device reference.</p>
+
+<h2>Why We Do Not Publish Fault Codes</h2>
+
+<p>You will find pages online offering lists of fault codes and reset procedures for named fire alarm panels. We have chosen not to add to them, and the reasoning is worth setting out, because it is not evasiveness.</p>
+
+<p>A fire alarm panel is life safety equipment. The meaning of an indication varies between models within the same manufacturer's range, and the behaviour of any particular installation also depends on how it was programmed at commissioning: how zones were configured, what interfaces exist, what cause and effect was set. A published instruction that is right for one panel can be wrong for the panel in front of you, and acting on it can silence, disable or misconfigure detection that people rely on. It can also invalidate the commissioning position, which matters if you are ever asked to evidence that the system was maintained properly.</p>
+
+<p>There is also a plainer point. Clearing the indication is not the same as fixing the fault. A procedure that makes a light go out without addressing the cause leaves you with a building that looks compliant and is not.</p>
+
+<p>So where this guide would benefit from model-level detail, we say so and ask you to call. We will confirm what your panel is reporting on the phone, and we will tell you honestly whether it needs an engineer that day or can wait for a scheduled visit.</p>
+
+<h2>Where You Stand While a Fault Is Showing</h2>
+
+<p>For non-domestic premises, the Regulatory Reform (Fire Safety) Order 2005 puts the duty on the responsible person to keep fire safety measures in efficient working order and in good repair. A fire alarm system sitting in fault is, by definition, not in efficient working order.</p>
+
+<p>BS 5839-1 supports that with a maintenance regime: servicing by a competent person at intervals not exceeding six months, a weekly user test, and a logbook recording tests, faults and remedial action. The logbook entry matters more than people expect. It is the record that shows a fault was identified and acted on rather than ignored, and it is what a fire officer, an insurer or an incoming managing agent will ask to see.</p>
+
+<p>None of that means a fault puts you automatically in breach. It means the clock starts when the fault appears, and what you do next is what will be judged.</p>
+
+<h2>Reducing the Number of Faults You Get</h2>
+
+<p>Some faults are simply the system telling you a component has reached the end of its life, and no amount of care prevents them. Others are avoidable, and these three make the largest difference:</p>
+
+<ol>
+<li><strong>Do the weekly test.</strong> It takes a couple of minutes and it surfaces problems while they are small.</li>
+<li><strong>Keep servicing to the six-monthly cycle.</strong> Batteries, contaminated detectors and marginal connections are found at service visits, before they become a callout.</li>
+<li><strong>Tell contractors the fire alarm is there.</strong> A meaningful share of the circuit faults we attend were caused by another trade working near cabling or devices without knowing what they were near. A note in the site induction costs nothing.</li>
+</ol>
+
+<h2>Getting the Fault Cleared</h2>
+
+<p>J&amp;L Security is a BAFE-certified fire alarm maintainer covering Essex and Greater London. We attend faults on the makes listed above, whether we installed the system or not, and we take over systems from other contractors where the previous maintainer is no longer suitable. Customers under our fire alarm maintenance contract have 24/7 emergency call out with a visit made within 8 hours.</p>
+
+<p>If you are reporting a fault, have the make from the panel fascia and what it is displaying ready when you call. See our <a href="/services/fire-alarms">fire alarm services</a> page for what we cover, <a href="/contact">request a call back</a>, or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770.</p>
+
+<p><em>This article is general guidance on what a fire alarm fault indication means. It is not a diagnostic procedure for any particular panel, and it should not be used in place of attendance by a competent engineer. If you are unsure whether your building is adequately protected while a fault is present, treat it as urgent and call us.</em></p>
+`,
+    faqs: [
+      {
+        question: 'What does a fault light on a fire alarm panel mean?',
+        answer: 'A fault indication means the panel has found a problem with itself, with the wiring, with a device, or with its power supply. It is not a fire signal, and sounders do not operate. It is conventionally shown in amber or yellow rather than red, usually with an intermittent internal buzzer. The practical meaning is that the system may not respond correctly to a real fire, in whole or in part, which is why a fault is urgent even though nothing dramatic is happening. Record what the panel is displaying, enter it in the fire alarm logbook, and report it to your maintaining contractor the same day.',
+      },
+      {
+        question: 'Can I silence a buzzing fire alarm panel myself?',
+        answer: 'Most panels allow an authorised user to silence the internal buzzer at the panel, and doing so is reasonable if it is stopping people working. What matters is understanding that silencing the buzzer does not clear the fault. The fault indication remains, the panel keeps the condition recorded, and the underlying problem is unchanged. The most common failure we see is a fault that was silenced and then forgotten, and is still present weeks later when an engineer arrives for a routine service. Silence it, then log it and report it.',
+      },
+      {
+        question: 'My Kentec panel is showing a fault. What should I do?',
+        answer: 'Do not open the panel or attempt a repair. Photograph or write down exactly what the panel is displaying, including any zone or device reference and whether indicators are steady or flashing, note when it started and whether anything has changed in the building recently, and enter it in the fire alarm logbook. Then call us with those details. J&L Security installs, services, repairs and takes over Kentec systems. We do not publish fault codes or reset procedures for named panels, because what an indication means varies by panel model and by how the system was configured at commissioning, so we confirm it with you on the phone instead.',
+      },
+      {
+        question: 'Do you work on Gent fire alarm panels?',
+        answer: 'Yes, for servicing. J&L Security services, maintains, fault finds and takes over Gent fire alarm systems. We do not install new Gent systems. Gent is the only make on our supported list to which that restriction applies: we install, service, repair and take over Kentec, Advanced, C-TEC, Haes, Fike and Zeta control panels, EMS, EDA Zerio Plus and SmartCell wireless and hybrid systems, and Apollo and Hochiki detection devices. If you have a Gent panel in fault, call us and we will attend it under service.',
+      },
+      {
+        question: 'Is it a legal problem if my fire alarm is showing a fault?',
+        answer: 'For non-domestic premises, the Regulatory Reform (Fire Safety) Order 2005 requires the responsible person to keep fire safety measures in efficient working order and in good repair, and a system sitting in fault is not in efficient working order. That does not mean a fault puts you automatically in breach. It means the clock starts when the fault appears and what you do next is what will be judged. Record the fault in the logbook, report it promptly, and consider temporary arrangements if a significant part of the building is left without detection until it is repaired.',
+      },
+      {
+        question: 'How quickly can you attend a fire alarm fault?',
+        answer: 'Customers under our fire alarm maintenance contract have 24/7 emergency call out with a visit made within 8 hours. We attend faults on the makes we support whether we installed the system or not, and we take over systems from other contractors where the previous maintainer is no longer suitable. Call 0204 538 5925 or 0208 220 4770 with the make from the panel fascia and what it is displaying, and we can usually tell you on the phone what class of fault it looks like and what the visit will involve.',
       },
     ],
   }

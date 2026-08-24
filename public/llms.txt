@@ -7,7 +7,9 @@
 - Burglar Alarm Installation and Maintenance (Texecom, Pyronix, RISCO)
 - CCTV System Installation and Monitoring (Uniview, 4K capable)
 - Fire Alarm Installation, Servicing and Fault Repair: BAFE-certified maintainer (SP203-1). BS 5839-1 commercial systems, BS 5839-6 domestic and HMO systems. Conventional, addressable and bi-wire systems. Includes fire risk assessments, smoke alarm installs and repair, and 6-monthly servicing contracts.
-- Fire alarm makes supported (installation, servicing, fault repair and takeover): control panels from Kentec, Advanced, C-TEC, Gent, Haes, Fike and Zeta; wireless and hybrid systems from EMS, EDA Zerio Plus and SmartCell; detection devices from Apollo and Hochiki. Customers reporting a fault can quote the make shown on the panel fascia.
+- Fire alarm makes supported (installation, servicing, fault repair and takeover): control panels from Kentec, Advanced, C-TEC, Haes, Fike and Zeta; wireless and hybrid systems from EMS, EDA Zerio Plus and SmartCell; detection devices from Apollo and Hochiki.
+- Gent (servicing only): J&L Security services, maintains, fault finds and takes over Gent fire alarm systems, but does not install new Gent systems.
+- Customers reporting a fault can quote the make shown on the panel fascia.
 - Access Control and Door Entry Systems (Paxton, Comelit)
 - Security and Emergency Lighting (LED, PIR, BS 5266-1)
 
@@ -73,6 +75,7 @@ These are starting prices excluding VAT. Final quotations follow a free site sur
 - [Wired vs Wireless Burglar Alarms in Essex](https://jandlsecurity.co.uk/blog/wired-vs-wireless-burglar-alarms-essex): Decision guide for Essex homes covering installation cost, expansion, and property suitability.
 - [Business CCTV and the ICO: 2026 Compliance Guide](https://jandlsecurity.co.uk/blog/business-cctv-ico-compliance-uk-2026): ICO Code of Practice, signage, retention, and DPIA guidance for UK business CCTV.
 - [Why Does My Burglar Alarm Keep Going Off?](https://jandlsecurity.co.uk/blog/why-does-my-burglar-alarm-keep-going-off): Common false-alarm causes and fixes for domestic intruder alarm systems.
+- [Fire Alarm Panel Fault: What It Means, Make by Make](https://jandlsecurity.co.uk/blog/fire-alarm-panel-fault-guide-by-make): What a fault indication on a fire alarm panel means, the common fault categories, and make-by-make guidance for Kentec, Advanced, C-TEC, Gent, Haes, Fike, Zeta, EMS, EDA Zerio Plus, SmartCell, Apollo and Hochiki. No panel model names, fault codes or reset procedures are published, by design.
 
 ## Links
 

@@ -123,10 +123,10 @@ const servicePageData: Record<string, {
   },
 
   'fire-alarms': {
-    heroTagline: 'BAFE-Certified Fire Alarm Installation, Servicing & Risk Assessments',
+    heroTagline: 'BAFE-Certified Fire Alarm Installation and Servicing, plus Fire Risk Assessments',
     overview: [
-      'J&L Security is a BAFE-accredited fire alarm installer and maintainer covering Essex and Greater London. We design, install, commission, and service commercial fire alarm systems to BS 5839-1 and domestic and HMO fire alarm systems to BS 5839-6. We also arrange fire risk assessments through a fire risk assessor we work with who holds AIFSM, TMIFPO and NEBOSH, deliver any resulting remedial works ourselves, and provide smoke alarm installs and repair plus 6-monthly fire alarm servicing under contract.',
-      'We install, service and maintain conventional, addressable and bi-wire fire alarm systems. The makes we support include Kentec, Advanced, C-TEC, Gent, Haes, Fike and Zeta control panels, EMS, EDA Zerio Plus and SmartCell wireless and hybrid systems, and Apollo and Hochiki detection devices. We also take over existing systems from these makes where another contractor installed them.',
+      'J&L Security is a BAFE-accredited fire alarm installer and maintainer covering Essex and Greater London. We design, install, commission, and service commercial fire alarm systems to BS 5839-1 and domestic and HMO fire alarm systems to BS 5839-6. We also provide smoke alarm installs and smoke alarm repair, plus 6-monthly fire alarm servicing under contract.',
+      'We install, service and maintain conventional, addressable and bi-wire fire alarm systems. The makes we support include Kentec, Advanced, C-TEC, Haes, Fike and Zeta control panels, EMS, EDA Zerio Plus and SmartCell wireless and hybrid systems, and Apollo and Hochiki detection devices. We install, service, repair and take over systems from all of those makes. We also service and maintain Gent systems, including fault repair and takeover, although we do not install new Gent systems.',
       'Every installation is documented, certified at commissioning, and supported with a service contract that keeps the system compliant with BS 5839 and the Regulatory Reform (Fire Safety) Order 2005.',
     ],
     process: [
@@ -152,8 +152,8 @@ const servicePageData: Record<string, {
         answer: 'A conventional system divides a building into zones. If a detector activates, you know which zone but not which device. An addressable system gives every device its own address on a loop, so the panel names the exact device that has activated, which matters on larger buildings and makes fault finding far quicker. A bi-wire system is a conventional system that carries both detection and sounder signals on the same pair of cables, so detectors and sounders share one circuit rather than needing separate ones. Bi-wire systems are commonly found on smaller commercial premises and on upgrades where existing two-core cabling is being retained. Which of the three suits your building is determined by the fire risk assessment and the site survey. We install and maintain all three.',
       },
       {
-        question: 'Which makes of fire alarm panel do you install and service?',
-        answer: 'We support Kentec, Advanced, C-TEC, Gent, Haes, Fike and Zeta control panels, EMS, EDA Zerio Plus and SmartCell wireless and hybrid systems, and Apollo and Hochiki detection devices, across installation, servicing, fault repair and takeover of systems installed by somebody else. If you are reporting a fault, the make is usually printed on the front of the panel. Telling us when you call helps us check the fault codes for that panel beforehand and bring the right parts.',
+        question: 'Which makes of fire alarm panel do you work with?',
+        answer: 'We install, service, repair and take over Kentec, Advanced, C-TEC, Haes, Fike and Zeta control panels, EMS, EDA Zerio Plus and SmartCell wireless and hybrid systems, and Apollo and Hochiki detection devices. Gent is the one exception: we service, maintain, fault find and take over Gent systems, but we do not install new Gent systems. If you are reporting a fault, the make is usually printed on the front of the panel. Telling us when you call helps us bring the right parts and, where the panel needs a model-specific procedure, arrange the right engineer.',
       },
       {
         question: 'How often does a fire alarm need to be serviced?',
@@ -386,7 +386,7 @@ export async function generateStaticParams() {
 
 const metaOverrides: Record<string, { description?: string; keywords?: string[]; title?: string }> = {
   'fire-alarms': {
-    description: 'BAFE-certified fire alarm installation, servicing and fault repair across Essex and London. Kentec, Advanced, C-TEC, Gent and Haes panels. Free survey.',
+    description: 'BAFE-certified fire alarm installation, servicing and fault repair across Essex and London. Kentec, Advanced, C-TEC and Haes panels, plus Gent servicing. Free survey.',
     keywords: [
       'fire alarm installation',
       'BAFE fire alarm maintainers',

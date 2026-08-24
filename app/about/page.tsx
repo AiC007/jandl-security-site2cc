@@ -125,9 +125,10 @@ export default function AboutPage() {
                 <p>
                   We work with equipment we trust and have tested over thousands of
                   installations: Pyronix and Texecom for intruder alarms, Uniview for CCTV, Paxton and
-                  Comelit for access control, and for fire detection, Kentec, Advanced, C-TEC, Gent and
-                  Haes control panels, EMS, EDA Zerio Plus and SmartCell wireless systems, and Apollo and
-                  Hochiki detection devices. We do not install cheap or unbranded equipment.
+                  Comelit for access control, and for fire detection, Kentec, Advanced, C-TEC and Haes
+                  control panels, EMS, EDA Zerio Plus and SmartCell wireless systems, and Apollo and
+                  Hochiki detection devices. We also service and maintain Gent fire alarm systems,
+                  although we do not install new ones. We do not install cheap or unbranded equipment.
                 </p>
                 <p className="text-gray-700 leading-relaxed mt-4 bg-primary-50 border border-primary-200 rounded-lg p-4">
                   J&L Security trades as part of the same team behind J&L Alarms, bringing over 13 years of
@@ -279,7 +280,7 @@ export default function AboutPage() {
 
           <div className="mt-8 text-center">
             <p className="text-gray-600">
-              <em>Makes shown are those we install, service and take over. We also attend systems from other makes on request.</em>
+              <em>Makes shown are those we install, service and take over, with one exception: Gent, which we service, maintain and take over but do not install new. We also attend systems from other makes on request.</em>
             </p>
           </div>
         </div>

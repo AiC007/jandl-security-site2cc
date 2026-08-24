@@ -72,7 +72,11 @@ J&L Security is a BAFE-certified fire alarm maintainer (SP203-1 scheme) covering
 - Fault finding and repairs; takeover of existing systems where the previous maintainer is no longer suitable
 - Smoke and heat detector installation; interlinked detector systems
 
-**Fire alarm makes supported.** Control panels: Kentec, Advanced, C-TEC, Gent, Haes, Fike, Zeta. Wireless and hybrid systems: EMS, EDA Zerio Plus, SmartCell. Detection devices: Apollo, Hochiki. Support covers installation, servicing, fault repair and takeover of existing systems regardless of who installed them originally. Customers reporting a fault are asked for the make printed on the panel fascia, which lets the engineer check the relevant fault codes and carry the right parts to site.
+**Fire alarm makes supported.** Control panels: Kentec, Advanced, C-TEC, Haes, Fike, Zeta. Wireless and hybrid systems: EMS, EDA Zerio Plus, SmartCell. Detection devices: Apollo, Hochiki. For those makes, support covers installation, servicing, fault repair and takeover of existing systems regardless of who installed them originally.
+
+**Gent: servicing only.** J&L Security services, maintains, fault finds and takes over Gent fire alarm systems. J&L Security does not install new Gent systems. Gent is the only make on this list to which that restriction applies.
+
+Customers reporting a fault are asked for the make printed on the panel fascia, which lets the engineer carry the right parts to site and, where the panel needs a model-specific procedure, arrange the right engineer.
 
 **System wiring types.** Conventional systems divide a building into zones and indicate the zone rather than the device. Addressable systems give each device its own address on a loop so the panel names the exact device, which speeds up fault finding on larger sites. Bi-wire systems are conventional systems in which detection and sounder signals share the same pair of cables, commonly found on smaller commercial premises and on upgrades retaining existing two-core cabling. Which type suits a given building is determined by the fire risk assessment and the site survey.
 
@@ -121,7 +125,8 @@ Coverage extends to Kent border areas on request.
 - Pyronix: Intruder alarm systems (including Enforcer wireless platform)
 - RISCO: Intruder alarm systems
 - Uniview: CCTV cameras and NVR systems
-- Kentec, Advanced, C-TEC, Gent, Haes, Fike, Zeta: Fire alarm control panels
+- Kentec, Advanced, C-TEC, Haes, Fike, Zeta: Fire alarm control panels (installed, serviced and taken over)
+- Gent: Fire alarm control panels (serviced, maintained and taken over only; new Gent systems are not installed)
 - EMS, EDA Zerio Plus, SmartCell: Wireless and hybrid fire alarm systems
 - Apollo, Hochiki: Fire detection devices
 - Paxton: Access control systems (Net2, Paxton10)

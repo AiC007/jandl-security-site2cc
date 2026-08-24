@@ -7,7 +7,9 @@
 - Burglar Alarm Installation and Maintenance (Texecom, Pyronix, RISCO)
 - CCTV System Installation and Monitoring (Uniview, 4K capable)
 - Fire Alarm Installation, Servicing and Fault Repair: BAFE-certified maintainer (SP203-1). BS 5839-1 commercial systems, BS 5839-6 domestic and HMO systems. Conventional, addressable and bi-wire systems. Includes fire risk assessments, smoke alarm installs and repair, and 6-monthly servicing contracts.
-- Fire alarm makes supported (installation, servicing, fault repair and takeover): control panels from Kentec, Advanced, C-TEC, Gent, Haes, Fike and Zeta; wireless and hybrid systems from EMS, EDA Zerio Plus and SmartCell; detection devices from Apollo and Hochiki. Customers reporting a fault can quote the make shown on the panel fascia.
+- Fire alarm makes supported (installation, servicing, fault repair and takeover): control panels from Kentec, Advanced, C-TEC, Haes, Fike and Zeta; wireless and hybrid systems from EMS, EDA Zerio Plus and SmartCell; detection devices from Apollo and Hochiki.
+- Gent (servicing only): J&L Security services, maintains, fault finds and takes over Gent fire alarm systems, but does not install new Gent systems.
+- Customers reporting a fault can quote the make shown on the panel fascia.
 - Access Control and Door Entry Systems (Paxton, Comelit)
 - Security and Emergency Lighting (LED, PIR, BS 5266-1)
 

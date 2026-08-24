@@ -603,7 +603,7 @@ const serviceDetailBlocks: Record<string, {
       'Full addressable fire alarm for a 3-storey commercial building with 40+ devices, zoned by floor, with a repeater panel at reception',
       'Fire alarm takeover and service for a property where the previous contractor did not complete the 6-monthly service visit'
     ],
-    equipmentUsed: 'The fire alarm makes we support are Kentec, Advanced, C-TEC, Gent, Haes, Fike and Zeta control panels, EMS, EDA Zerio Plus and SmartCell wireless and hybrid systems, and Apollo and Hochiki detection devices. Equipment includes conventional, addressable and bi-wire panels, optical and heat detectors, manual call points, sounders, and beacon strobes. If you are reporting a fault on an existing system, the make is normally printed on the front of the panel, and telling us when you call helps us come prepared.',
+    equipmentUsed: 'We install, service, repair and take over Kentec, Advanced, C-TEC, Haes, Fike and Zeta control panels, EMS, EDA Zerio Plus and SmartCell wireless and hybrid systems, and Apollo and Hochiki detection devices. Gent is the one exception: we service, maintain, fault find and take over Gent systems, but we do not install new Gent systems. Equipment includes conventional, addressable and bi-wire panels, optical and heat detectors, manual call points, sounders, and beacon strobes. If you are reporting a fault on an existing system, the make is normally printed on the front of the panel, and telling us when you call helps us come prepared.',
     complianceNote: 'All installations comply with BS 5839-1. The system category (L1 to L5, M, or P1/P2) is determined by the fire risk assessment and the property type. HMOs typically require at least a Category LD2 system. Commercial premises fall under the Regulatory Reform (Fire Safety) Order 2005.',
     maintenanceInfo: 'BS 5839-1 requires professional servicing every 6 months. Each service visit tests every detector, call point, and sounder; checks battery condition and backup power; inspects cabling for damage; and updates the fire alarm log book. Weekly user testing (activating one call point) is also advised and takes approximately 2 minutes.',
     pricingIndicator: 'Fire alarm pricing depends on the system category, building size, and number of devices. We provide a detailed quotation after reviewing your fire risk assessment and surveying the property. HMO alarm packages and 6-monthly service contracts are available.'
@@ -685,6 +685,12 @@ function generateContent(service: string, location: string) {
     ],
 
     serviceIncludes: generateServiceIncludes(service),
+
+    // Drives the equipment section heading. "What We Install" is accurate for
+    // burglar, CCTV, access control and lighting pages, but not for fire pages:
+    // five of the eight are maintenance pages by subject, and the make list
+    // includes Gent, which J&L services but does not install new.
+    isFireService,
 
     equipmentUsed: details.equipmentUsed,
 
@@ -1038,7 +1044,9 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            What We Install in {combination.location}
+            {content.isFireService
+              ? `Equipment and Makes in ${combination.location}`
+              : `What We Install in ${combination.location}`}
           </h2>
 
           <div className="prose prose-lg max-w-none">

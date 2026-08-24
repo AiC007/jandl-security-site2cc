@@ -53,7 +53,7 @@ Both phone numbers must appear on every page and in all contact sections. No exc
 |---|---|---|
 | Phase 1: Pre-launch fixes | Complete | Titles, robots.txt, llms.txt, FAQs H1, canonical URLs |
 | Phase 2: Post-launch SEO | Largely complete | Schema, breadcrumbs, GSC submitted, Maps embed done |
-| Phase 3: Content expansion | Active. 16 blog posts live. | Earlier: hmo-fire-alarm-requirements-bs5839 (strengthened 2026-05-03), burglar-alarm-cost-uk-2026 (rebuilt 2026-05-06), bs5839-1-and-bs5839-6-explained-2026, business-cctv-ico-compliance-uk-2026, plus the May FRA cluster (landlord, selling-flat, business, after-fra). FRA cluster completed 2026-06-27 (PR #12): added ews1-form-vs-fire-risk-assessment, fire-risk-assessment-cost-essex-2026 (quote-after-survey), fire-safety-regulations-blocks-of-flats-2026, with inbound internal links wired across the cluster. Matrix pages: 5 priority locations enriched 2026-05-03; remainder now indexing at weak positions. |
+| Phase 3: Content expansion | Active. 19 blog posts live. | Earlier: hmo-fire-alarm-requirements-bs5839 (strengthened 2026-05-03), burglar-alarm-cost-uk-2026 (rebuilt 2026-05-06), bs5839-1-and-bs5839-6-explained-2026, business-cctv-ico-compliance-uk-2026, plus the May FRA cluster (landlord, selling-flat, business, after-fra). FRA cluster completed 2026-06-27 (PR #12): added ews1-form-vs-fire-risk-assessment, fire-risk-assessment-cost-essex-2026 (quote-after-survey), fire-safety-regulations-blocks-of-flats-2026, with inbound internal links wired across the cluster. Matrix pages: 5 priority locations enriched 2026-05-03; remainder now indexing at weak positions. |
 | Phase 3a: London location expansion | Complete (29 location pages live as of 2026-05-06) | 14 new London boroughs added 2026-05-06: Islington, Hackney, Clapton, Dalston, Camden, Southwark, Woolwich, Westminster, Hammersmith, Battersea, Fulham, Streatham, Finchley, Barnet. Greenwich whyLocal copy lightly enriched. Total location pages: 29 (was 15). |
 | Phase 3b: Fire alarm keyword integration | Complete 2026-05-06 | Fire alarms service page rewritten around BAFE-certified maintainer + BS 5839-1/-6 dual-standard coverage, four new service-page FAQs, three new main-FAQs items, two new generic location FAQs (fire alarms + smoke alarms) on every location page, BAFE description updated on about page, homepage Fire Alarms card description updated. Per-slug metaOverrides added to surface BAFE/BS 5839/fire risk assessment keywords on /services/fire-alarms route. |
 | Phase 4: Ongoing optimisation | In progress | GSC now monitored; backlinks not started |
@@ -243,34 +243,42 @@ Priority sequence:
 | /docs/2026-08-17-fire-alarm-makes-client-email.html | Branded HTML body of the same email, as placed in Gmail drafts |
 | /docs/2026-06-22-agent-readiness-client-email.md | Agent-readiness client email (salvaged from the abandoned PR #11) |
 | /docs/2026-08-24-gent-and-fault-guide-handoff-prompt.md | Standalone handoff prompt for the session acting on Jag's answers of 23 August |
+| /docs/2026-08-24-gent-and-fault-guide-implementation.md | Gent servicing-only, the approved BAFE headline and the fault guide: decisions, the nine corrected install claims, verification, and four flagged issues |
+| /docs/2026-08-24-gent-and-fault-guide-client-email.md | Wendy email to Jag confirming all three are live and re-asking for model names (canonical copy, operator sends) |
+| /docs/2026-08-24-gent-and-fault-guide-client-email.html | Branded HTML body of the same email, as placed in Gmail drafts |
 
 ---
 
 ## 11. Last Session Summary
 
-### 2026-08-24: Jag's answers received. Work specified, NOT yet implemented.
+### 2026-08-24: Jag's answers implemented and live. Gent corrected, headline applied, fault guide shipped.
 
-Jag replied on **23 August 2026 at 20:07** to the fire alarm makes email. His answers, verbatim:
+Jag replied on **23 August 2026 at 20:07** to the fire alarm makes email. Everything he settled has been built, verified on production and reported to him. Full record: `docs/2026-08-24-gent-and-fault-guide-implementation.md`.
 
-> 1. Yes we support Fike and Zeta, keep them.
-> 2. We install and service all of the makes listed but only service Gent
-> 3. Correct Apollo and Hochiki make detectors
-> 5. Yes, change the statement as in point 5.
->
-> Yes, that would be good if a search for "kentec panel fault" bring the customer to our website.
+**Shipped ([PR #21](https://github.com/AiC007/jandl-security-site2cc/pull/21), squash-merged as `cbadbd9`).**
 
-**What this settles.**
-- **Fike and Zeta stay.** The retention decision was right.
-- **Gent is SERVICE-ONLY.** Every other make is install and service. This is the one that requires code changes, and the site currently overclaims: seven places attach an unqualified install claim to a list containing Gent.
-- **The three-way grouping is confirmed correct.** No change.
-- **The BAFE headline change is approved**, in the exact wording offered: "BAFE-Certified Fire Alarm Installation and Servicing, plus Fire Risk Assessments".
-- **The fault-finding guide by make is approved.** He wants "kentec panel fault" to land on his site.
+1. **Gent is service-only, in nine places.** The brief named seven. **There were nine**, and the two extra were found by grepping rather than working from the brief: the `about` equipment prose paragraph ("equipment we trust and have tested over thousands of installations" plus "we do not install cheap or unbranded equipment", over the same list) and the fire-alarms `metaOverrides` description. Every one was **split rather than weakened**, because the install claim is true and commercially valuable for the other eleven makes. The makes FAQ was retitled to "Which makes of fire alarm panel do you work with?", since the overclaim was in the question.
+2. **The equipment H2 is now conditional.** `What We Install in {location}` was shared by all 50 matrix pages. Fire pages now read `Equipment and Makes in {location}`, driven by an `isFireService` flag returned on the content object. Verified in built HTML and on production: 42 keep the old heading, 8 fire pages carry the new one.
+3. **Jag's approved BAFE headline is live**, verbatim: "BAFE-Certified Fire Alarm Installation and Servicing, plus Fire Risk Assessments". It is both the `<h1>` and the `<title>`.
+4. **PR #8 is now fully reconciled.** Its last outstanding change, dropping the fire risk assessment delivery sentence from overview paragraph 1, was applied. Three others relanded in PR #20. Its heroTagline rename was superseded by the client's own wording. **Nothing from PR #8 remains outstanding.**
+5. **The fault guide is live:** `/blog/fire-alarm-panel-fault-guide-by-make`, 2,561 words measured from the rendered body. Twelve H3 sections headed on the query pattern ("Kentec panel fault" and so on), plus generic fault intent. Inbound links from three sibling fire posts.
 
-**Question 4 was NOT answered.** He gave no panel or model names. Do not invent them. The fault guide must be written at make level only, and Wendy should ask again for models as a follow-on rather than blocking the guide.
+**The hard constraint held, and it is worth restating for anyone who extends the guide. No panel or model names, no fault codes, no reset sequences, no panel-specific diagnostics appear anywhere in it**, verified by word-boundary grep of the live page. Question 4 was never answered, so there were none to publish. The article states the policy openly rather than leaving an unexplained gap, and reframes the reader's role from fixing to reporting. **Do not add model detail to this post without Jag's confirmation, and if it is ever added, keep the "we will confirm on the phone" routing rather than publishing procedures.**
 
-**Tension to resolve when applying the headline.** PR #8's original intent was to strip fire risk assessments off the fire alarms page entirely, to stop it cannibalising `/services/fire-risk-assessments`. Jag has approved wording that **keeps** "plus Fire Risk Assessments" in the headline. Client-approved wording wins for the headline itself. The separate PR #8 change, dropping the FRA delivery sentence from overview paragraph 1, can still proceed and is the better lever for the de-overlap.
+**Two traps respected in the guide.** Apollo is described as making detection devices rather than panels, which is correct. Hochiki is described **without the word "only"**, because Hochiki does make control panels. Manufacturer head offices, founding dates and product ranges were left out rather than asserted from memory.
 
-**Status: specified but not implemented.** A handoff prompt for a dedicated end-to-end session is at `docs/2026-08-24-gent-and-fault-guide-handoff-prompt.md`.
+**One self-caught defect worth recording.** The first draft of the C-TEC paragraph offered "C-Tec" and "CTEK" as aliases, which would have reintroduced the exact misspellings PR #19 spent a session purging and produced a false positive for any future audit of that cleanup. Cut. **Lesson: a helpful-looking alias line can undo a completed cleanup, so check new copy against past corrections, not just against the facts.**
+
+**Assumptions still outstanding with the client.**
+- **Panel and model names (question 4) remain unanswered.** Asked again in this round's email. This is the one input that would materially improve the fault guide.
+- The three-way equipment grouping is confirmed by Jag, so it is no longer an assumption.
+- "CTEK" read as C-TEC is now effectively settled by Jag using the site copy without objection across two rounds, but he has never confirmed it in writing.
+
+**Client email.** Canonical copy written to `docs/2026-08-24-gent-and-fault-guide-client-email.md` and `.html` **before** any draft existed, reconciled word for word between the two, every claim checked against the code and against production, reviewed, and **two real defects corrected at review**: a "five of the eight" count that was not strictly true, and "the title Google shows in the search result", which over-claimed because Google rewrites titles. Only then was the draft created, **once**: Gmail draft `r-4613757720223942802`, message `1a032e438c836681`, in thread `1a010c0d1be48d99` as a reply to Jag's answers. **Not sent.** Confirmed by listing drafts that exactly one exists.
+
+**Newly recorded site defect.** The `getServiceType()` fall-through affects **four** pages, not one. Alongside the known `/bs5839-compliance/docklands`, these are `smoke-heat-detectors-south-woodford`, `domestic-smoke-alarm-install-basildon` and `interlinked-detectors-chelmsford`: all fire-domain subjects served Pyronix burglar alarm equipment. Left alone deliberately, because `getServiceType()` was not needed for the H2 work and touching it would have been silent scope expansion. A one-line fix that changes what four live pages say, so it wants its own checkpoint.
+
+**Also newly recorded.** `public/llms.txt` and `public/llms-full.txt` list **10 of 19** blog posts; the new post was added, the nine older gaps were not closed. And blog FAQs are **schema-only**: `app/blog/[slug]/page.tsx` emits `FAQPage` markup but never renders the questions, which is against Google's structured data guidance. Pre-existing across all 19 posts, so a template change.
 
 ### 2026-08-17: Fire alarm makes and terminology (client request of 17 August)
 

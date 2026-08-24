@@ -1,6 +1,6 @@
 # J&L Security: Project Memory
 
-**Last updated:** 2026-08-17
+**Last updated:** 2026-08-24
 **Maintained by:** The AI Consultancy (London) Ltd
 **Purpose:** Living reference for all AI sessions working on this project. Update after every substantive session.
 
@@ -242,10 +242,35 @@ Priority sequence:
 | /docs/2026-08-17-fire-alarm-makes-client-email.md | Wendy email to Jag confirming the makes are live (canonical copy, operator sends) |
 | /docs/2026-08-17-fire-alarm-makes-client-email.html | Branded HTML body of the same email, as placed in Gmail drafts |
 | /docs/2026-06-22-agent-readiness-client-email.md | Agent-readiness client email (salvaged from the abandoned PR #11) |
+| /docs/2026-08-24-gent-and-fault-guide-handoff-prompt.md | Standalone handoff prompt for the session acting on Jag's answers of 23 August |
 
 ---
 
 ## 11. Last Session Summary
+
+### 2026-08-24: Jag's answers received. Work specified, NOT yet implemented.
+
+Jag replied on **23 August 2026 at 20:07** to the fire alarm makes email. His answers, verbatim:
+
+> 1. Yes we support Fike and Zeta, keep them.
+> 2. We install and service all of the makes listed but only service Gent
+> 3. Correct Apollo and Hochiki make detectors
+> 5. Yes, change the statement as in point 5.
+>
+> Yes, that would be good if a search for "kentec panel fault" bring the customer to our website.
+
+**What this settles.**
+- **Fike and Zeta stay.** The retention decision was right.
+- **Gent is SERVICE-ONLY.** Every other make is install and service. This is the one that requires code changes, and the site currently overclaims: seven places attach an unqualified install claim to a list containing Gent.
+- **The three-way grouping is confirmed correct.** No change.
+- **The BAFE headline change is approved**, in the exact wording offered: "BAFE-Certified Fire Alarm Installation and Servicing, plus Fire Risk Assessments".
+- **The fault-finding guide by make is approved.** He wants "kentec panel fault" to land on his site.
+
+**Question 4 was NOT answered.** He gave no panel or model names. Do not invent them. The fault guide must be written at make level only, and Wendy should ask again for models as a follow-on rather than blocking the guide.
+
+**Tension to resolve when applying the headline.** PR #8's original intent was to strip fire risk assessments off the fire alarms page entirely, to stop it cannibalising `/services/fire-risk-assessments`. Jag has approved wording that **keeps** "plus Fire Risk Assessments" in the headline. Client-approved wording wins for the headline itself. The separate PR #8 change, dropping the FRA delivery sentence from overview paragraph 1, can still proceed and is the better lever for the de-overlap.
+
+**Status: specified but not implemented.** A handoff prompt for a dedicated end-to-end session is at `docs/2026-08-24-gent-and-fault-guide-handoff-prompt.md`.
 
 ### 2026-08-17: Fire alarm makes and terminology (client request of 17 August)
 

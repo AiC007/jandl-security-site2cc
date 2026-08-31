@@ -251,6 +251,20 @@ Priority sequence:
 
 ## 11. Last Session Summary
 
+### 2026-08-31: August end-of-month review, performance report drafted and SENT.
+
+End-of-month GSC review run via the mcp-search-console MCP. All figures recomputed from daily rows, like-for-like 1 to 29 August against 1 to 29 July (GSC confirmed to 29 Aug; 30 Aug partial with 351 impressions, excluded).
+
+**August performance.** 181 clicks (from 140, +29%), 39,950 impressions (from 27,505, +45%), blended position 24.6 (from 23.2), CTR 0.45% (from 0.51%). Fifth consecutive record month for impressions. July full month settled upward to 147 clicks / 29,922 impressions (last month's report said 144 / 28,672 to 30 July). Top pages: HMO guide 79 clicks / 8,834 imps / pos 8.4 (best month yet); FRA selling-flat 54 clicks / pos 4.7 (CTR 3.0%, best converter; "do I need a fire risk assessment to sell my flat" at 3.4); homepage 27 clicks; BS 5839 explainer clicks 4 to 8, impressions 555 to 2,574, blended position diluted to 28.7 by the new visibility.
+
+**The four rewritten location pages: impressions responded, rankings have not yet.** Combined 7,362 to 11,802 impressions (+60%); positions still 26.7 to 34.1 (Barking 3,351 / 34.1, Hornchurch 3,569 / 27.3, Basildon 2,654 / 32.3, Greenwich 2,228 / 26.7); clicks near zero (Hornchurch 3). Recommendation given to the client: one more month before extending the treatment to Chelmsford (2,363 / 36.0) and Enfield (1,755 / 33.6).
+
+**Key finding: the three newest posts are NOT INDEXED.** URL Inspection 2026-08-31: martyns-law-premises-requirements-2026 "Discovered - currently not indexed"; commercial-fire-alarm-cost-uk-2026 and fire-alarm-panel-fault-guide-by-make "URL is unknown to Google". All three return HTTP 200 and are in the live sitemap (111 URLs, GSC last downloaded it 2026-08-23, status "Has warnings", 1 warning, 0 errors). Crawl lag, not a site defect. September action: request indexing manually in the GSC UI (the API cannot) and add internal links from the HMO guide and other high-traffic pages.
+
+**Client email.** Canonical copy written and reviewed BEFORE any draft, per the standing rule: `docs/2026-08-31-august-performance-report-client-email.md` and `.html` (AIC branded format, "Automated Website Performance Report" series structure). Review fixed three wordings before any draft existed (position range 26 to 35 not 27 to 34; "not yet reached" rather than "not yet crawled" for the two unknown URLs; FRA service page position stated as 42.5). Figures cross-checked against the raw pulls. September plan in the email: indexing push, FRA service page rebuild, directories (carried a third time, named candidly), location page watch, and the platform update described to the client as routine housekeeping (it is the Next.js 15.5.23 security upgrade, still the largest open internal item).
+
+**Client email SENT 2026-08-31 08:43 UTC** by the operator, message `1a056fd332dcea8f`, thread `1a056facb3ee42ce`, to info@jandlsecurity.co.uk, subject "J&L Security Website: August 2026 Performance Report". The standing rule held again: canonical copy written and reviewed first, one draft created only after operator approval (the first create_draft attempt was blocked by the session's permission classifier; the operator returned and instructed "Create the draft", draft ID `r-143907601801069081`), operator sent. Drafts folder was confirmed empty beforehand, so no orphan draft remains.
+
 ### 2026-08-24: Jag's answers implemented and live. Gent corrected, headline applied, fault guide shipped.
 
 Jag replied on **23 August 2026 at 20:07** to the fire alarm makes email. Everything he settled has been built, verified on production and reported to him. Full record: `docs/2026-08-24-gent-and-fault-guide-implementation.md`.

@@ -25,6 +25,16 @@ export function formatPhoneNumber(phone: string): string {
   return phone;
 }
 
+/**
+ * Build a WhatsApp click-to-chat link to the J&L business number.
+ * The pre-filled message is URL-encoded so apostrophes and spaces survive
+ * every browser and the WhatsApp app.
+ */
+export function whatsappLink(text?: string): string {
+  const base = `https://wa.me/${COMPANY_INFO.whatsapp}`;
+  return text ? `${base}?text=${encodeURIComponent(text)}` : base;
+}
+
 export const COMPANY_INFO = {
   name: "J&L Security",
   tagline: "Alarms, CCTV & Fire Protection — Installed & Maintained Across Essex & Greater London",

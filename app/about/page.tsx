@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Shield, Award, Clock, CheckCircle, Wrench, Phone } from 'lucide-react';
+import { Shield, Award, Clock, Wrench, Phone } from 'lucide-react';
 import { COMPANY_INFO } from '@/lib/utils';
 import { generateOrganizationSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/Breadcrumbs';

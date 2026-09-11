@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Phone, Clock, CheckCircle } from 'lucide-react';
-import { COMPANY_INFO } from '@/lib/utils';
+import { COMPANY_INFO, whatsappLink } from '@/lib/utils';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
@@ -367,7 +367,7 @@ export default function LocationsPage() {
               </a>
             </div>
             <a
-              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hi, I'd like a free security survey in [YOUR AREA]`}
+              href={whatsappLink(`Hi, I'd like a free security survey in [YOUR AREA]`)}
               className="bg-green-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors"
               target="_blank"
               rel="noopener noreferrer"

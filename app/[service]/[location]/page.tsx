@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Phone, MessageCircle, CalendarDays, Shield, CheckCircle, MapPin } from 'lucide-react';
-import { serviceLocationMatrix } from '@/lib/data';
-import { COMPANY_INFO } from '@/lib/utils';
+import { serviceLocationMatrix, serviceLocationPath } from '@/lib/data';
+import { COMPANY_INFO, whatsappLink } from '@/lib/utils';
 import { generateFAQPageSchema, generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
 
@@ -790,10 +790,10 @@ function generateServiceIncludes(service: string) {
 }
 
 export async function generateStaticParams() {
-  return serviceLocationMatrix.map((item) => ({
-    service: item.slug.split('-').slice(0, -1).join('-'),
-    location: item.slug.split('-').slice(-1)[0]
-  }));
+  return serviceLocationMatrix.map((item) => {
+    const [, service, location] = serviceLocationPath(item).split('/');
+    return { service, location };
+  });
 }
 
 export default async function ServiceLocationPage({ params }: ServiceLocationPageProps) {
@@ -896,7 +896,7 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
                   </a>
                 </div>
                 <a
-                  href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hi, I need ${combination.service.toLowerCase()} in ${combination.location}`}
+                  href={whatsappLink(`Hi, I need ${combination.service.toLowerCase()} in ${combination.location}`)}
                   className="bg-green-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors text-center inline-flex items-center justify-center"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1180,7 +1180,7 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
               </a>
             </div>
             <a
-              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hi, I need ${combination.service.toLowerCase()} in ${combination.location}. Please send me a quote.`}
+              href={whatsappLink(`Hi, I need ${combination.service.toLowerCase()} in ${combination.location}. Please send me a quote.`)}
               className="bg-green-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center"
               target="_blank"
               rel="noopener noreferrer"
@@ -1214,7 +1214,7 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
                   .map((item, index) => (
                     <Link
                       key={index}
-                      href={`/${item.slug}`}
+                      href={serviceLocationPath(item)}
                       className="text-primary-600 hover:text-primary-700 hover:underline"
                     >
                       {item.service} {item.location}
@@ -1234,7 +1234,7 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
                   .map((item, index) => (
                     <Link
                       key={index}
-                      href={`/${item.slug}`}
+                      href={serviceLocationPath(item)}
                       className="text-primary-600 hover:text-primary-700 hover:underline"
                     >
                       {item.service} {item.location}

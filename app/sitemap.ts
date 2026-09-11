@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
-import { COMPANY_INFO, generateSlug } from '@/lib/utils';
-import { serviceLocationMatrix, locations as locationsData } from '@/lib/data';
+import { COMPANY_INFO } from '@/lib/utils';
+import { serviceLocationMatrix, serviceLocationPath, locations as locationsData } from '@/lib/data';
 import { blogPosts } from '@/lib/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -49,10 +49,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Service-location pages
   // URL must match the [service]/[location] Next.js route: /{service-slug}/{location-slug}
   const serviceLocationPages = serviceLocationMatrix.map((item) => {
-    const serviceSlug = generateSlug(item.service);
-    const locationSlug = item.location.toLowerCase().replace(/ /g, '-');
     return {
-      url: `${baseUrl}/${serviceSlug}/${locationSlug}`,
+      url: `${baseUrl}${serviceLocationPath(item)}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,

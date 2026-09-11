@@ -1,98 +1,142 @@
 import { NextResponse } from 'next/server';
-import { writeFile, mkdir } from 'fs/promises';
-import { existsSync } from 'fs';
-import path from 'path';
+
+// Quote form endpoint.
+//
+// Vercel functions run on a read-only filesystem, so submissions cannot be
+// written to disk. Each enquiry is forwarded to a private notification
+// webhook (QUOTE_WEBHOOK_URL) which emails the J&L office. The webhook URL
+// and the shared token are server-side environment variables only.
 
 interface QuoteRequest {
-  name: string;
-  phone: string;
-  service: string;
-  postcode: string;
-  message?: string;
-  honeypot?: string;
-  timestamp: string;
-  timeSpent: number;
+  name?: unknown;
+  phone?: unknown;
+  service?: unknown;
+  postcode?: unknown;
+  message?: unknown;
+  honeypot?: unknown;
+  timeSpent?: unknown;
+}
+
+const ALLOWED_SERVICES = new Set([
+  'Burglar Alarms',
+  'CCTV Systems',
+  'Fire Alarms',
+  'Access Control',
+  'Security Lighting',
+  'Other',
+]);
+
+function cleanText(value: unknown, maxLength: number): string {
+  if (typeof value !== 'string') return '';
+  // Collapse whitespace and strip control characters so nothing odd reaches the email.
+  return value
+    .replace(/[\u0000-\u001f\u007f]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, maxLength);
 }
 
 export async function POST(request: Request) {
+  let data: QuoteRequest;
   try {
-    const data: QuoteRequest = await request.json();
+    data = (await request.json()) as QuoteRequest;
+  } catch {
+    return NextResponse.json({ error: 'Invalid request body' }, { status: 400 });
+  }
 
-    // Spam protection
-    if (data.honeypot) {
-      return NextResponse.json({ error: 'Invalid submission' }, { status: 400 });
-    }
+  // Spam protection: hidden honeypot field must stay empty.
+  if (typeof data.honeypot === 'string' && data.honeypot.trim() !== '') {
+    return NextResponse.json({ error: 'Invalid submission' }, { status: 400 });
+  }
 
-    // Time-based protection (must spend at least 5 seconds on form)
-    if (data.timeSpent < 5000) {
-      return NextResponse.json({ error: 'Form submitted too quickly' }, { status: 400 });
-    }
+  // Spam protection: a person needs a few seconds to fill the form in.
+  const timeSpent = typeof data.timeSpent === 'number' ? data.timeSpent : 0;
+  if (timeSpent < 5000) {
+    return NextResponse.json({ error: 'Form submitted too quickly' }, { status: 400 });
+  }
 
-    // Validate required fields
-    if (!data.name || !data.phone || !data.service || !data.postcode) {
-      return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
-    }
+  const name = cleanText(data.name, 120);
+  const phone = cleanText(data.phone, 40);
+  const service = cleanText(data.service, 60);
+  const postcode = cleanText(data.postcode, 20).toUpperCase();
+  const message = cleanText(data.message, 2000);
 
-    // Generate unique ID
-    const id = `quote_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  if (!name || !phone || !service || !postcode) {
+    return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
+  }
 
-    // Prepare submission data
-    const submission = {
-      id,
-      ...data,
-      submittedAt: new Date().toISOString(),
-      source: 'website_quote_form',
-      ip: request.headers.get('x-forwarded-for') || 'unknown',
-      userAgent: request.headers.get('user-agent') || 'unknown'
-    };
+  if (!ALLOWED_SERVICES.has(service)) {
+    return NextResponse.json({ error: 'Unknown service' }, { status: 400 });
+  }
 
-    // Ensure data directory exists
-    const dataDir = path.join(process.cwd(), 'data', 'forms');
-    if (!existsSync(dataDir)) {
-      await mkdir(dataDir, { recursive: true });
-    }
+  // Loose UK phone check: digits, spaces and a leading plus, at least 10 digits.
+  if (!/^\+?[\d\s()-]{10,}$/.test(phone) || phone.replace(/\D/g, '').length < 10) {
+    return NextResponse.json({ error: 'Please enter a valid phone number' }, { status: 400 });
+  }
 
-    // Save to JSON file
-    const filename = `${id}.json`;
-    const filepath = path.join(dataDir, filename);
-    await writeFile(filepath, JSON.stringify(submission, null, 2));
+  const webhookUrl = process.env.QUOTE_WEBHOOK_URL;
+  const webhookToken = process.env.QUOTE_WEBHOOK_TOKEN;
 
-    // In production, you would also send an email notification here
-    // For now, we'll just log it
-    console.log('New quote request:', {
-      id,
-      name: data.name,
-      service: data.service,
-      postcode: data.postcode,
-      timestamp: submission.submittedAt
+  if (!webhookUrl || !webhookToken) {
+    console.error('Quote submission error: QUOTE_WEBHOOK_URL or QUOTE_WEBHOOK_TOKEN is not configured');
+    return NextResponse.json(
+      { error: 'Enquiry service is temporarily unavailable. Please call us instead.' },
+      { status: 503 }
+    );
+  }
+
+  const id = `quote_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
+  const submittedAt = new Date().toISOString();
+
+  const payload = {
+    token: webhookToken,
+    id,
+    name,
+    phone,
+    service,
+    postcode,
+    message,
+    submittedAt,
+    source: 'website_quote_form',
+    // Preview and development deployments are routed to The AI Consultancy,
+    // so only the production site emails the J&L office.
+    environment: process.env.VERCEL_ENV || 'development',
+    page: request.headers.get('referer') || '',
+  };
+
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000);
+
+    const response = await fetch(webhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      signal: controller.signal,
     });
 
-    // TODO: Send email notification to info@jandlsecurity.co.uk
-    // This would integrate with your email service (SendGrid, SES, etc.)
+    clearTimeout(timeout);
+
+    if (!response.ok) {
+      console.error('Quote submission error: webhook responded', response.status, id);
+      return NextResponse.json(
+        { error: 'We could not send your enquiry. Please call us instead.' },
+        { status: 502 }
+      );
+    }
+
+    console.log('New quote request forwarded:', { id, service, postcode, submittedAt });
 
     return NextResponse.json({
       success: true,
       message: 'Quote request submitted successfully',
-      id
+      id,
     });
-
   } catch (error) {
     console.error('Quote submission error:', error);
     return NextResponse.json(
-      { error: 'Failed to submit quote request' },
-      { status: 500 }
+      { error: 'We could not send your enquiry. Please call us instead.' },
+      { status: 502 }
     );
   }
-}
-
-// Handle OPTIONS for CORS
-export async function OPTIONS() {
-  return new NextResponse(null, {
-    status: 200,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
-    },
-  });
 }

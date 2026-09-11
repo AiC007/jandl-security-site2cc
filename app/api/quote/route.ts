@@ -3,9 +3,16 @@ import { NextResponse } from 'next/server';
 // Quote form endpoint.
 //
 // Vercel functions run on a read-only filesystem, so submissions cannot be
-// written to disk. Each enquiry is forwarded to a private notification
-// webhook (QUOTE_WEBHOOK_URL) which emails the J&L office. The webhook URL
-// and the shared token are server-side environment variables only.
+// written to disk. Each enquiry is emailed to the J&L office through Resend's
+// HTTP API. Configuration is server-side only:
+//   RESEND_API_KEY   Resend API key (same account as the other AIC sites)
+//   ENQUIRY_FROM     Verified sender, e.g. "J&L Security Website <ai@theaiconsultancy.ai>"
+//   ENQUIRY_TO       Optional override of the recipient (defaults below)
+// Preview and development deployments are routed to The AI Consultancy so
+// only the production site emails the client.
+
+const CLIENT_INBOX = 'info@jandlsecurity.co.uk';
+const AIC_INBOX = 'ai@theaiconsultancy.ai';
 
 interface QuoteRequest {
   name?: unknown;
@@ -34,6 +41,26 @@ function cleanText(value: unknown, maxLength: number): string {
     .replace(/\s+/g, ' ')
     .trim()
     .slice(0, maxLength);
+}
+
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function formatUkTime(date: Date): string {
+  return date.toLocaleString('en-GB', {
+    timeZone: 'Europe/London',
+    weekday: 'short',
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+  });
 }
 
 export async function POST(request: Request) {
@@ -74,58 +101,99 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Please enter a valid phone number' }, { status: 400 });
   }
 
-  const webhookUrl = process.env.QUOTE_WEBHOOK_URL;
-  const webhookToken = process.env.QUOTE_WEBHOOK_TOKEN;
+  const apiKey = process.env.RESEND_API_KEY;
+  const from = process.env.ENQUIRY_FROM;
 
-  if (!webhookUrl || !webhookToken) {
-    console.error('Quote submission error: QUOTE_WEBHOOK_URL or QUOTE_WEBHOOK_TOKEN is not configured');
+  if (!apiKey || !from) {
+    console.error('Quote submission error: RESEND_API_KEY or ENQUIRY_FROM is not configured');
     return NextResponse.json(
       { error: 'Enquiry service is temporarily unavailable. Please call us instead.' },
       { status: 503 }
     );
   }
 
-  const id = `quote_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
-  const submittedAt = new Date().toISOString();
+  const environment = process.env.VERCEL_ENV || 'development';
+  const isProduction = environment === 'production';
+  const to = process.env.ENQUIRY_TO || (isProduction ? CLIENT_INBOX : AIC_INBOX);
 
-  const payload = {
-    token: webhookToken,
-    id,
-    name,
-    phone,
-    service,
-    postcode,
-    message,
-    submittedAt,
-    source: 'website_quote_form',
-    // Preview and development deployments are routed to The AI Consultancy,
-    // so only the production site emails the J&L office.
-    environment: process.env.VERCEL_ENV || 'development',
-    page: request.headers.get('referer') || '',
-  };
+  const id = `quote_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
+  const submittedAt = new Date();
+  const when = formatUkTime(submittedAt);
+  const page = request.headers.get('referer') || '';
+
+  const subject =
+    (isProduction ? '' : `[TEST ${environment}] `) +
+    `New website enquiry: ${service} in ${postcode} from ${name}`;
+
+  const text = [
+    'New enquiry from the J&L Security website quote form.',
+    '',
+    `Name: ${name}`,
+    `Phone: ${phone}`,
+    `Service: ${service}`,
+    `Postcode: ${postcode}`,
+    message ? `Message: ${message}` : '',
+    `Submitted: ${when}`,
+    page ? `Page: ${page}` : '',
+    '',
+    'The customer has been told to expect a call within 2 hours during business hours.',
+    '',
+    `Reference: ${id}`,
+    'Sent automatically by the J&L Security website via The AI Consultancy.',
+  ]
+    .filter((line) => line !== '')
+    .join('\n');
+
+  const row = (label: string, value: string) =>
+    `<tr><td style="padding:6px 12px 6px 0;color:#5b6b7b;vertical-align:top;white-space:nowrap;">${label}</td>` +
+    `<td style="padding:6px 0;color:#0A1F3D;font-weight:600;">${value}</td></tr>`;
+
+  const html =
+    '<div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#1f2d3d;line-height:1.5;max-width:640px;">' +
+    '<p style="color:#8792a2;font-size:12px;margin:0 0 14px 0;">J&amp;L Security website &middot; New enquiry</p>' +
+    '<p>A customer has just submitted the quote form on jandlsecurity.co.uk.</p>' +
+    '<table style="border-collapse:collapse;font-size:14px;">' +
+    row('Name', escapeHtml(name)) +
+    row('Phone', `<a href="tel:${escapeHtml(phone.replace(/\s+/g, ''))}" style="color:#0A1F3D;">${escapeHtml(phone)}</a>`) +
+    row('Service', escapeHtml(service)) +
+    row('Postcode', escapeHtml(postcode)) +
+    (message ? row('Message', escapeHtml(message)) : '') +
+    row('Submitted', escapeHtml(when)) +
+    (page ? row('Page', escapeHtml(page)) : '') +
+    '</table>' +
+    '<div style="background:#FEFCE8;border-left:3px solid #F59E0B;padding:10px 14px;margin:16px 0;">' +
+    'The customer has been told to expect a call within 2 hours during business hours.' +
+    '</div>' +
+    `<p style="color:#8792a2;font-size:12px;">Reference ${escapeHtml(id)} &middot; ` +
+    'Sent automatically by the J&amp;L Security website via The AI Consultancy.</p>' +
+    '</div>';
 
   try {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
 
-    const response = await fetch(webhookUrl, {
+    const response = await fetch('https://api.resend.com/emails', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ from, to: [to], subject, text, html }),
       signal: controller.signal,
     });
 
     clearTimeout(timeout);
 
     if (!response.ok) {
-      console.error('Quote submission error: webhook responded', response.status, id);
+      const detail = await response.text();
+      console.error('Quote submission error: Resend responded', response.status, detail.slice(0, 300), id);
       return NextResponse.json(
         { error: 'We could not send your enquiry. Please call us instead.' },
         { status: 502 }
       );
     }
 
-    console.log('New quote request forwarded:', { id, service, postcode, submittedAt });
+    console.log('New quote request emailed:', { id, service, postcode, to, submittedAt: submittedAt.toISOString() });
 
     return NextResponse.json({
       success: true,

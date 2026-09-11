@@ -6,13 +6,15 @@ import { NextResponse } from 'next/server';
 // written to disk. Each enquiry is emailed to the J&L office through Resend's
 // HTTP API. Configuration is server-side only:
 //   RESEND_API_KEY   Resend API key (same account as the other AIC sites)
-//   ENQUIRY_FROM     Verified sender, e.g. "J&L Security Website <ai@theaiconsultancy.ai>"
-//   ENQUIRY_TO       Optional override of the recipient (defaults below)
-// Preview and development deployments are routed to The AI Consultancy so
-// only the production site emails the client.
+//   ENQUIRY_FROM     Optional sender override (defaults to Resend's built-in sender)
+//   ENQUIRY_TO       Optional override of the recipient
+// As on the other AIC sites, the Resend account has no verified sending
+// domain, so mail goes to the Wendy inbox at The AI Consultancy and is
+// forwarded to the J&L office from there. Non-production deployments are
+// marked [TEST] in the subject.
 
-const CLIENT_INBOX = 'info@jandlsecurity.co.uk';
 const AIC_INBOX = 'ai@theaiconsultancy.ai';
+const DEFAULT_FROM = 'J&L Security Website <onboarding@resend.dev>';
 
 interface QuoteRequest {
   name?: unknown;
@@ -102,10 +104,10 @@ export async function POST(request: Request) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const from = process.env.ENQUIRY_FROM;
+  const from = process.env.ENQUIRY_FROM || DEFAULT_FROM;
 
-  if (!apiKey || !from) {
-    console.error('Quote submission error: RESEND_API_KEY or ENQUIRY_FROM is not configured');
+  if (!apiKey) {
+    console.error('Quote submission error: RESEND_API_KEY is not configured');
     return NextResponse.json(
       { error: 'Enquiry service is temporarily unavailable. Please call us instead.' },
       { status: 503 }
@@ -114,7 +116,7 @@ export async function POST(request: Request) {
 
   const environment = process.env.VERCEL_ENV || 'development';
   const isProduction = environment === 'production';
-  const to = process.env.ENQUIRY_TO || (isProduction ? CLIENT_INBOX : AIC_INBOX);
+  const to = process.env.ENQUIRY_TO || AIC_INBOX;
 
   const id = `quote_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
   const submittedAt = new Date();
@@ -123,7 +125,7 @@ export async function POST(request: Request) {
 
   const subject =
     (isProduction ? '' : `[TEST ${environment}] `) +
-    `New website enquiry: ${service} in ${postcode} from ${name}`;
+    `J&L Security website enquiry: ${service} in ${postcode} from ${name}`;
 
   const text = [
     'New enquiry from the J&L Security website quote form.',
@@ -137,6 +139,7 @@ export async function POST(request: Request) {
     page ? `Page: ${page}` : '',
     '',
     'The customer has been told to expect a call within 2 hours during business hours.',
+    'Forward to J&L Security: info@jandlsecurity.co.uk',
     '',
     `Reference: ${id}`,
     'Sent automatically by the J&L Security website via The AI Consultancy.',
@@ -162,7 +165,8 @@ export async function POST(request: Request) {
     (page ? row('Page', escapeHtml(page)) : '') +
     '</table>' +
     '<div style="background:#FEFCE8;border-left:3px solid #F59E0B;padding:10px 14px;margin:16px 0;">' +
-    'The customer has been told to expect a call within 2 hours during business hours.' +
+    'The customer has been told to expect a call within 2 hours during business hours. ' +
+    'Forward to J&amp;L Security: <a href="mailto:info@jandlsecurity.co.uk" style="color:#0A1F3D;">info@jandlsecurity.co.uk</a>' +
     '</div>' +
     `<p style="color:#8792a2;font-size:12px;">Reference ${escapeHtml(id)} &middot; ` +
     'Sent automatically by the J&amp;L Security website via The AI Consultancy.</p>' +

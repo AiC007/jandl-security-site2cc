@@ -248,10 +248,11 @@ Priority sequence:
 | /docs/2026-08-24-gent-and-fault-guide-client-email.html | Branded HTML body of the same email, as sent |
 
 ---
+- `docs/2026-09-11-enquiry-form-fix-client-email.md` / `.html`: client email for the enquiry form fix (sent 2026-09-11)
 
 ## 11. Last Session Summary
 
-### 2026-09-11: Enquiry form found broken since launch, fixed, live and verified. Three further defects fixed.
+### 2026-09-11: Enquiry form found broken since launch, fixed, live and verified. Three further defects fixed. Client email SENT.
 
 **Client report (call of 10 September, Jag to Dee's mobile, no recording):** the enquiry form was not working. The WhatsApp point from the call is unverified; the number (442045385925) is unchanged and the client email invites Jag to reply with a different one.
 
@@ -263,7 +264,11 @@ Priority sequence:
 
 **Detours, so nobody repeats them:** a Zapier durable workflow (`jandl-website-enquiry-notify`, ID `01a08fe2-2984-70e1-96a7-9282b5bfa1c2`) was built first and abandoned when the operator asked for Resend; it has no trigger and should be deleted from the Zapier account. The Vercel marketplace Resend integration was tried and rejected (free plan disabled there; terms were accepted on the team but nothing was provisioned). Two unused keys sit in Resend ("J&L", a year old, and the first "J&L Website") and can be deleted. The auto-mode classifier blocks any command that carries a secret, so key handling needs the operator.
 
-**Client email, and a lesson:** the first draft (`r-7634859591922967276`) and the first live test named enquiries@theaiconsultancy.ai as the sender. Resend accepts any local part on a verified domain, so the mail went out, but no mailbox exists there and the operator caught it: **the only AIC address is ai@theaiconsultancy.ai, never invent another.** Sender corrected in code (`5c65014`), redeployed, second test sent, replacement draft `r-1711275914861988734` created; the operator was told to send that one and delete the first. Canonical copy in `docs/2026-09-11-enquiry-form-fix-client-email.md` and `.html`.
+**Client email, and a lesson:** the first draft (`r-7634859591922967276`) and the first live test named enquiries@theaiconsultancy.ai as the sender. Resend accepts any local part on a verified domain, so the mail went out, but no mailbox exists there and the operator caught it: **the only AIC address is ai@theaiconsultancy.ai, never invent another.** Sender corrected in code (`5c65014`), redeployed, second test sent, replacement draft `r-1711275914861988734` created, **sent by the operator 2026-09-11 12:37 BST (message `1a09042528333485`, thread `1a0904194e9e0cf4`)**, and the first draft deleted. Canonical copy in `docs/2026-09-11-enquiry-form-fix-client-email.md` and `.html`.
+
+**Awaiting from Jag:** confirmation that the two test enquiries arrived, and whether he wants a different WhatsApp number (the call of 10 September mentioned WhatsApp; the number is unchanged at 442045385925).
+
+**Housekeeping still open:** delete the two unused Resend keys ("J&L", a year old, and the first "J&L Website"); delete the disabled Zapier workflow `01a08fe2-2984-70e1-96a7-9282b5bfa1c2`; consider rotating the live "J&L Website" key, which passed through a chat transcript (sending-only, restricted to theaiconsultancy.ai, so low risk).
 
 **Still outstanding from earlier sessions:** the Next.js 15.4.10 to 15.5.23 security upgrade (needs its own session).
 

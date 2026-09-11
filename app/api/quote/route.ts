@@ -13,7 +13,7 @@ import { NextResponse } from 'next/server';
 
 const CLIENT_INBOX = 'info@jandlsecurity.co.uk';
 const AIC_INBOX = 'ai@theaiconsultancy.ai';
-const DEFAULT_FROM = 'J&L Security Website <enquiries@theaiconsultancy.ai>';
+const DEFAULT_FROM = 'J&L Security Website <ai@theaiconsultancy.ai>';
 
 interface QuoteRequest {
   name?: unknown;

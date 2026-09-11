@@ -20,7 +20,7 @@ Client website for J&L Security, built and managed by The AI Consultancy (London
 - **Phone (primary):** 0204 538 5925
 - **Phone (secondary):** 0208 220 4770
 - **Email:** info@jandlsecurity.co.uk
-- **WhatsApp:** 442045385925
+- **WhatsApp:** 442082204770 (changed from 442045385925 at Jag's request, 11 September 2026)
 
 Both phone numbers must appear on every page and in all contact sections.
 

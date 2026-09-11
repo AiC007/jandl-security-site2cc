@@ -16,7 +16,7 @@
 | Phone (primary) | 0204 538 5925 |
 | Phone (secondary) | 0208 220 4770 |
 | Email | info@jandlsecurity.co.uk |
-| WhatsApp | 442045385925 |
+| WhatsApp | 442082204770 (0208 220 4770; changed from 442045385925 at Jag's request, 2026-09-11) |
 | Services | Burglar alarms, CCTV, fire alarms, access control, security lighting |
 | Service area | Essex and Greater London |
 | Accreditations | SSAIB, CHAS, FIA, BAFE |

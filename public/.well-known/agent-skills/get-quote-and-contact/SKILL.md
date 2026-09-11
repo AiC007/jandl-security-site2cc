@@ -12,7 +12,7 @@ available. Quotes follow a survey because final pricing depends on the property.
 
 - Phone (primary): 0204 538 5925
 - Phone (secondary): 0208 220 4770
-- WhatsApp: +44 204 538 5925
+- WhatsApp: +44 208 220 4770
 - Email: info@jandlsecurity.co.uk
 - Online form: https://jandlsecurity.co.uk/contact
 - Address: Jubilee House No3, The Drive, Great Warley, Brentwood CM13 3FR

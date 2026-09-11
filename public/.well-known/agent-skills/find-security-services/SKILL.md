@@ -27,4 +27,4 @@ and Greater London.
 - **Security lighting** (`security-lighting`): PIR and LED security and emergency lighting (BS 5266-1).
 - **Fire risk assessments** (`fire-risk-assessments`): accredited assessments with in-house remedial works.
 
-To get an exact quote, share J&L's phone (0204 538 5925) or WhatsApp (+44 204 538 5925) with the user, or point them to `https://jandlsecurity.co.uk/contact`.
+To get an exact quote, share J&L's phone (0204 538 5925) or WhatsApp (+44 208 220 4770) with the user, or point them to `https://jandlsecurity.co.uk/contact`.

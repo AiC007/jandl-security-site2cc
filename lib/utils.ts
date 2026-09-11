@@ -40,7 +40,7 @@ export const COMPANY_INFO = {
   tagline: "Alarms, CCTV & Fire Protection — Installed & Maintained Across Essex & Greater London",
   phone: "0204 538 5925",
   phone2: "0208 220 4770",
-  whatsapp: "442045385925",
+  whatsapp: "442082204770",
   email: "info@jandlsecurity.co.uk",
   address: "Jubilee House No3, The Drive, Great Warley, Brentwood CM13 3FR",
   website: "https://jandlsecurity.co.uk",

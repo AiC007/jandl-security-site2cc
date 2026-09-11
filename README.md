@@ -181,7 +181,7 @@ npm start
 - Customize colors in `tailwind.config.ts`
 
 ### Contact Forms
-Forms save to `data/forms/` as JSON files. Configure email notifications in `app/api/quote/route.ts`.
+Quote form submissions are emailed via Resend from `app/api/quote/route.ts` (see the comment block there for the environment variables).
 
 ### Analytics
 Google Analytics 4 is integrated. Add your tracking ID to environment variables.

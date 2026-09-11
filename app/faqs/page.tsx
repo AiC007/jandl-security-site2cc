@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { HelpCircle, Phone, MessageSquare, Search } from 'lucide-react';
-import { COMPANY_INFO } from '@/lib/utils';
+import { COMPANY_INFO, whatsappLink } from '@/lib/utils';
 import { generateFAQPageSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
@@ -317,7 +317,7 @@ export default function FAQsPage() {
               </a>
             </div>
             <a
-              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hi, I have a question about security systems`}
+              href={whatsappLink(`Hi, I have a question about security systems`)}
               className="bg-green-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center"
               target="_blank"
               rel="noopener noreferrer"

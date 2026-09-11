@@ -437,3 +437,19 @@ export const serviceLocationMatrix = [
   { service: 'Access Control Upgrades', location: 'Chigwell', slug: 'access-control-upgrades-chigwell' },
   { service: 'Door Entry Repairs', location: 'Loughton', slug: 'door-entry-repairs-loughton' }
 ];
+
+/**
+ * Canonical URL path for a service-location page.
+ * The [service]/[location] route matches `${service}-${location}` against the
+ * entry's slug, so any split works at request time; this helper fixes ONE split
+ * (service prefix, location suffix) so the sitemap, static params and every
+ * internal link agree on a single canonical URL per page.
+ */
+export function serviceLocationPath(item: { slug: string; location: string }): string {
+  const locationSlug = item.location.toLowerCase().replace(/ /g, '-');
+  if (item.slug.endsWith(`-${locationSlug}`)) {
+    return `/${item.slug.slice(0, -(locationSlug.length + 1))}/${locationSlug}`;
+  }
+  const parts = item.slug.split('-');
+  return `/${parts.slice(0, -1).join('-')}/${parts[parts.length - 1]}`;
+}

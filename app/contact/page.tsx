@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Phone, Mail, MapPin, Clock, MessageSquare, Calendar, CheckCircle } from 'lucide-react';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
-import { COMPANY_INFO } from '@/lib/utils';
+import { COMPANY_INFO, whatsappLink } from '@/lib/utils';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
@@ -41,7 +41,7 @@ const contactMethods = [
     primary: 'WhatsApp Chat',
     secondary: 'Quick Response',
     description: 'Send us a message on WhatsApp for fast responses and easy communication.',
-    action: `https://wa.me/${COMPANY_INFO.whatsapp}?text=Hi, I'd like information about security systems`,
+    action: whatsappLink(`Hi, I'd like information about security systems`),
     actionText: 'Start Chat'
   },
   {
@@ -299,7 +299,7 @@ export default function ContactPage() {
               Call {COMPANY_INFO.phone2}
             </a>
             <a
-              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=EMERGENCY - I need immediate assistance`}
+              href={whatsappLink(`EMERGENCY - I need immediate assistance`)}
               className="bg-green-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-green-700 transition-colors"
               target="_blank"
               rel="noopener noreferrer"

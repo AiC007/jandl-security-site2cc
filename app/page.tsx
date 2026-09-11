@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Shield, Camera, Flame, Lock, Lightbulb, Clock, CheckCircle, Star, ClipboardCheck } from 'lucide-react';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
-import { COMPANY_INFO } from '@/lib/utils';
+import { COMPANY_INFO, whatsappLink } from '@/lib/utils';
 import { generateLocalBusinessSchema, generateServiceSchema } from '@/lib/schema';
 
 export default function Home() {
@@ -318,7 +318,7 @@ export default function Home() {
               </a>
             </div>
             <a
-              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hi, I'd like a free security survey`}
+              href={whatsappLink(`Hi, I'd like a free security survey`)}
               className="bg-green-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors"
               target="_blank"
               rel="noopener noreferrer"

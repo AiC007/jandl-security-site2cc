@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { CheckCircle, Phone, MessageSquare, ArrowRight, MapPin, Shield, Camera, Flame, Lock, Lightbulb, ClipboardCheck } from 'lucide-react';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
-import { COMPANY_INFO } from '@/lib/utils';
-import { services, serviceLocationMatrix } from '@/lib/data';
+import { COMPANY_INFO, whatsappLink } from '@/lib/utils';
+import { services, serviceLocationMatrix, serviceLocationPath } from '@/lib/data';
 import { generateServiceSchema, generateFAQPageSchema, generateBreadcrumbSchema } from '@/lib/schema';
 
 // ─── Extended per-service content ───────────────────────────────────────────
@@ -706,12 +706,10 @@ export default async function ServicePage({ params }: Props) {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {relatedPages.map((item) => {
-                const serviceSlugPart = item.slug.replace(`-${item.location.toLowerCase().replace(/ /g, '-')}`, '');
-                const locationSlug = item.location.toLowerCase().replace(/ /g, '-');
                 return (
                   <Link
                     key={item.slug}
-                    href={`/${serviceSlugPart}/${locationSlug}`}
+                    href={serviceLocationPath(item)}
                     className="bg-white border border-gray-200 rounded-lg p-4 hover:border-primary-400 hover:shadow-md transition-all group"
                   >
                     <div className="flex items-start gap-2">
@@ -775,7 +773,7 @@ export default async function ServicePage({ params }: Props) {
               </a>
             </div>
             <a
-              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hi, I'd like a free ${service.name} survey`}
+              href={whatsappLink(`Hi, I'd like a free ${service.name} survey`)}
               className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors"
               target="_blank"
               rel="noopener noreferrer"

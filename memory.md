@@ -1,6 +1,6 @@
 # J&L Security: Project Memory
 
-**Last updated:** 2026-08-24
+**Last updated:** 2026-09-11
 **Maintained by:** The AI Consultancy (London) Ltd
 **Purpose:** Living reference for all AI sessions working on this project. Update after every substantive session.
 
@@ -250,6 +250,22 @@ Priority sequence:
 ---
 
 ## 11. Last Session Summary
+
+### 2026-09-11: Enquiry form found broken since launch; fix built on PR #22; delivery path awaiting operator permission.
+
+**Client report (call of 10 September):** Jag said the enquiry form was not working and mentioned the WhatsApp button. No Otter record and no email exists for the call, so the WhatsApp point is unverified: whether it was a fault or a request to change the number is unknown. Both numbers and the WhatsApp number (442045385925) are unchanged.
+
+**Root cause, confirmed:** `app/api/quote/route.ts` wrote each submission to `data/forms/` on the local filesystem and never sent an email. Vercel's function filesystem is read-only, so every submission since the 2026-04-12 cutover returned HTTP 500 (`ENOENT: mkdir '/var/task/data'`; Vercel runtime errors: 5 occurrences, 3 users, first 2026-06-23, last 2026-09-11 which was this session's own test). The form component swallowed the 500 and showed nothing. **No website enquiry has reached the client since the site went on Vercel.** README.md line 184 still describes the old file-save behaviour and should be corrected when the delivery path is settled.
+
+**Two further defects found and fixed in the same PR:** (a) 10 of 111 sitemap URLs were 404 because `app/sitemap.ts` built the matrix path from `generateSlug(item.service)` instead of the entry slug; (b) the "Related Services" and "Nearby Areas" links on all 50 matrix pages were `/${item.slug}` (single segment, always 404). A single `serviceLocationPath()` in `lib/data.ts` now drives sitemap, `generateStaticParams` and every internal link, so each matrix page has exactly one canonical URL. WhatsApp links now go through `whatsappLink()` in `lib/utils.ts` with the message URL-encoded.
+
+**Delivery design (site side, shipped on PR #22, branch `fix/enquiry-form-delivery`):** the route validates, then POSTs to `QUOTE_WEBHOOK_URL` with `QUOTE_WEBHOOK_TOKEN` and `environment: VERCEL_ENV`; missing env returns a clear 503, webhook failure a 502, and the form shows the error with both phone numbers. Neither env var is set on Vercel yet (`vercel env ls` showed none at all).
+
+**Delivery design (notification side, NOT DONE):** Zapier durable workflow `jandl-website-enquiry-notify` (ID `01a08fe2-2984-70e1-96a7-9282b5bfa1c2`, private, created but empty and disabled) receiving a Webhooks by Zapier catch hook and sending via `sdk.fetch` to the Gmail API on the Wendy connection (`024c3424-91f1-87ed-ac7c-4e66c5a8d192`). Production submissions go to info@jandlsecurity.co.uk; preview and development go to ai@theaiconsultancy.ai with a `[TEST]` subject. Source is in `integrations/zapier/quote-notification.workflow.ts` with a `__QUOTE_WEBHOOK_TOKEN__` placeholder. **The auto-mode permission classifier blocked `create_workflow_draft` twice**, so publishing needs the operator's explicit go-ahead. Why Zapier and not Resend: the Zapier Gmail app exposes no send action on this MCP, and both jandlsecurity.co.uk and theaiconsultancy.ai are on GoDaddy nameservers, so Resend domain verification needs DNS records nobody in this session can add. Resend on the client's own domain remains the cleaner long-term path once DNS access exists.
+
+**Remaining steps once permitted:** publish the workflow (manual test first, then attach the `hook_v2` trigger), set `QUOTE_WEBHOOK_URL` and `QUOTE_WEBHOOK_TOKEN` on Vercel (production and preview), merge PR #22, send one production test and confirm it lands, fill the placeholders in `docs/2026-09-11-enquiry-form-fix-client-email.md`, write the `.html` twin, and only then create the single Gmail draft.
+
+**Still outstanding from earlier sessions:** the Next.js 15.4.10 to 15.5.23 security upgrade (needs its own session); the unused `CheckCircle` import is now removed.
 
 ### 2026-08-31: August end-of-month review, performance report drafted and SENT.
 

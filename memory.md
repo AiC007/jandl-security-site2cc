@@ -246,9 +246,10 @@ Priority sequence:
 | /docs/2026-08-24-gent-and-fault-guide-implementation.md | Gent servicing-only, the approved BAFE headline and the fault guide: decisions, the nine corrected install claims, verification, and four flagged issues |
 | /docs/2026-08-24-gent-and-fault-guide-client-email.md | Wendy email to Jag confirming all three are live and re-asking for model names (canonical copy; SENT 2026-08-24) |
 | /docs/2026-08-24-gent-and-fault-guide-client-email.html | Branded HTML body of the same email, as sent |
+| /docs/2026-09-11-enquiry-form-fix-client-email.md | Wendy email to Jag disclosing the broken enquiry form, the fix and three other repairs (canonical copy; SENT 2026-09-11) |
+| /docs/2026-09-11-enquiry-form-fix-client-email.html | Branded HTML body of the same email, as sent |
 
 ---
-- `docs/2026-09-11-enquiry-form-fix-client-email.md` / `.html`: client email for the enquiry form fix (sent 2026-09-11)
 
 ## 11. Last Session Summary
 

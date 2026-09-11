@@ -1,6 +1,6 @@
 # Client email: reply to Jag's confirmation and WhatsApp number request (Wendy AI)
 
-**Status:** DRAFT `r-2928337199379074561` created for the operator to send (2026-09-11 12:44 BST). Reply in thread `1a0904194e9e0cf4` to Jag's message `1a0904a9fe2c8a6b` of 2026-09-11 11:46 UTC, which confirmed both test enquiries arrived and asked for the WhatsApp number to change to 02082204770.
+**Status:** SENT 2026-09-11 11:49 UTC (12:49 BST) by the operator, message `1a0904d717d0e4d0`, thread `1a0904194e9e0cf4`, from draft `r-2928337199379074561`. Reply in thread `1a0904194e9e0cf4` to Jag's message `1a0904a9fe2c8a6b` of 2026-09-11 11:46 UTC, which confirmed both test enquiries arrived and asked for the WhatsApp number to change to 02082204770.
 
 **Tier:** Operational, about 90 words.
 

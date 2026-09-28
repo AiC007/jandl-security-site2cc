@@ -903,7 +903,12 @@ function generateServiceIncludes(service: string, serviceType: string) {
     ];
   }
 
-  if (baseService.includes('burglar') || baseService.includes('alarm')) {
+  // The remaining lists follow serviceType too, so a page gets the list for
+  // its type rather than whichever word its name happens to contain. This
+  // moves Video Intercom, Keypad/Fob and Maglock pages from the generic list
+  // to the access list, and Police Response Eligibility to the intruder list.
+  // Lighting pages have no list of their own and keep the generic one.
+  if (serviceType === 'burglar') {
     return [
       'Free security survey and consultation',
       'Professional installation by qualified engineers',
@@ -917,7 +922,7 @@ function generateServiceIncludes(service: string, serviceType: string) {
     ];
   }
   
-  if (baseService.includes('cctv')) {
+  if (serviceType === 'cctv') {
     return [
       'Free site survey and system design',
       'Professional camera installation',
@@ -931,7 +936,7 @@ function generateServiceIncludes(service: string, serviceType: string) {
     ];
   }
   
-  if (baseService.includes('access') || baseService.includes('door')) {
+  if (serviceType === 'access') {
     return [
       'Free access control assessment',
       'Professional system installation',

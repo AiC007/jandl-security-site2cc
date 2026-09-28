@@ -27,38 +27,38 @@ export const metadata: Metadata = {
   },
 };
 
+// Featured towns. Facts follow each town's own area page (lib/data.ts and the
+// sourced locationExtended content); no populations or journey times, and no
+// response-time promises, as on the area pages.
 const locationData = [
   {
     name: 'Ilford',
     postcode: 'IG1-IG6',
     county: 'Greater London',
     nearbyAreas: ['Seven Kings', 'Goodmayes', 'Redbridge', 'Gants Hill', 'Chadwell Heath', 'Barking'],
-    population: '168,000',
-    description: 'Major town in East London with excellent transport links to Central London',
-    landmarks: ['Ilford Station', 'The Exchange Shopping Centre', 'Valentines Park', 'Redbridge Town Hall'],
-    commuting: 'Direct rail links to Liverpool Street (22 mins) and Stratford (15 mins)',
-    residential: ['Valentine', 'Seven Kings', 'Goodmayes', 'Newbury Park', 'Gants Hill', 'Redbridge']
+    description: "The largest town centre in the London Borough of Redbridge and one of London's Metropolitan town centres",
+    landmarks: ['Ilford Station', 'Exchange Ilford', 'Valentines Park', 'Redbridge Town Hall'],
+    commuting: 'Elizabeth line from Ilford, Seven Kings and Goodmayes; Central line from Gants Hill and Newbury Park',
+    residential: ['Cranbrook', 'Valentines', 'Seven Kings', 'Goodmayes', 'Gants Hill', 'Newbury Park']
   },
   {
     name: 'Romford',
-    postcode: 'RM1-RM3',
+    postcode: 'RM1-RM3, RM5, RM7',
     county: 'Greater London',
     nearbyAreas: ['Hornchurch', 'Upminster', 'Emerson Park', 'Harold Wood', 'Collier Row', 'Rush Green'],
-    population: '122,000',
-    description: 'Historic market town and major retail center in East London',
+    description: 'Historic market town and major retail centre in the London Borough of Havering, with a market first granted in 1247',
     landmarks: ['Romford Market', 'The Liberty Shopping Centre', 'Raphael Park', 'Romford Stadium'],
-    commuting: 'Elizabeth Line and TfL Rail to Central London (35 mins to Bond Street)',
-    residential: ['Gidea Park', 'Harold Wood', 'Rise Park', 'Collier Row', 'Heath Park']
+    commuting: 'Elizabeth line from Romford, Gidea Park and Harold Wood; London Overground (Liberty line) from Romford to Upminster',
+    residential: ['Gidea Park', 'Heath Park', 'Harold Hill', 'Harold Wood', 'Collier Row', 'Rise Park']
   },
   {
     name: 'Chelmsford',
     postcode: 'CM1-CM3',
     county: 'Essex',
     nearbyAreas: ['Brentwood', 'Billericay', 'Great Baddow', 'Galleywood', 'Springfield', 'Writtle'],
-    population: '180,000',
-    description: 'County town of Essex with thriving business district and university',
+    description: 'The county town of Essex, granted city status in 2012',
     landmarks: ['Chelmsford Cathedral', 'High Chelmer Shopping Centre', 'Hylands Park', 'Anglia Ruskin University'],
-    commuting: 'Direct rail to London Liverpool Street (35 mins)',
+    commuting: 'Greater Anglia services from Chelmsford to London Liverpool Street',
     residential: ['Great Baddow', 'Galleywood', 'Springfield', 'Writtle', 'Broomfield']
   },
   {
@@ -66,21 +66,19 @@ const locationData = [
     postcode: 'CM13-CM15',
     county: 'Essex',
     nearbyAreas: ['Billericay', 'Wickford', 'Shenfield', 'Hutton', 'Ingatestone', 'Kelvedon Hatch'],
-    population: '76,000',
-    description: 'Affluent town known for excellent schools and green spaces',
+    description: 'Market town and borough in south-west Essex, and the home of J&L Security',
     landmarks: ['Brentwood High Street', 'Thorndon Country Park', 'Brentwood Centre', 'Shenfield Common'],
-    commuting: 'Elizabeth Line to Central London (45 mins to Liverpool Street)',
-    residential: ['Shenfield', 'Hutton', 'Ingrave', 'Herongate', 'South Weald']
+    commuting: 'Elizabeth line from Brentwood and Shenfield; Greater Anglia services from Shenfield to London Liverpool Street',
+    residential: ['Shenfield', 'Hutton', 'Warley', 'Great Warley', 'Ingrave', 'Herongate']
   },
   {
     name: 'Basildon',
     postcode: 'SS13-SS16',
     county: 'Essex',
     nearbyAreas: ['Wickford', 'Billericay', 'Laindon', 'Pitsea', 'Stanford-le-Hope', 'Canvey Island'],
-    population: '185,000',
-    description: 'New town with major retail and business centers',
+    description: 'New town in south Essex, designated in 1949, with a major retail and business centre',
     landmarks: ['Eastgate Shopping Centre', 'Festival Leisure Park', 'Wat Tyler Country Park', 'Basildon Sporting Village'],
-    commuting: 'C2C line to London Fenchurch Street (45 mins)',
+    commuting: 'c2c services from Basildon, Laindon and Pitsea to London Fenchurch Street',
     residential: ['Laindon', 'Pitsea', 'Vange', 'Kingswood', 'Langdon Hills']
   },
   {
@@ -88,10 +86,9 @@ const locationData = [
     postcode: 'RM11-RM12',
     county: 'Greater London',
     nearbyAreas: ['Upminster', 'Emerson Park', 'Elm Park', 'Rainham', 'Dagenham', 'Harold Wood'],
-    population: '43,000',
-    description: 'Suburban town with historic high street and country parks',
-    landmarks: ['Queen Elizabeth II Country Park', 'Hornchurch Country Park', 'The Bull pub', 'St Andrew\'s Church'],
-    commuting: 'District Line to Central London (50 mins to Westminster)',
+    description: "Suburban town in the London Borough of Havering, with a historic high street and the Queen's Theatre",
+    landmarks: ['Hornchurch Country Park', "St Andrew's Church", "Queen's Theatre"],
+    commuting: 'District line from Hornchurch, Upminster Bridge and Elm Park; London Overground from Emerson Park',
     residential: ['Emerson Park', 'Ardleigh Green', 'Elm Park', 'St Andrews']
   }
 ];
@@ -138,8 +135,8 @@ export default function LocationsPage() {
               Service Areas Across Essex & Greater London
             </h1>
             <p className="text-xl mb-8 text-primary-100 max-w-3xl mx-auto">
-              Professional security system installation and maintenance in your local area. 
-              Same-day surveys available, with local engineers covering all major towns and cities.
+              Professional security system installation and maintenance across Essex and Greater London,
+              from our engineers based in Brentwood. Surveys are free and without obligation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <div className="flex flex-col gap-1">
@@ -173,26 +170,25 @@ export default function LocationsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
               <MapPin className="h-12 w-12 text-primary-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Local Engineers</h3>
+              <h3 className="text-xl font-semibold mb-2">Based in Brentwood</h3>
               <p className="text-gray-600">
-                Our team of qualified engineers are based across Essex and Greater London, 
-                ensuring quick response times and local knowledge.
+                Our qualified engineers work from our base at Great Warley, Brentwood,
+                and travel across Essex and Greater London.
               </p>
             </div>
             <div className="text-center">
               <Clock className="h-12 w-12 text-primary-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Same-Day Service</h3>
+              <h3 className="text-xl font-semibold mb-2">Free Surveys</h3>
               <p className="text-gray-600">
-                Free security surveys available same-day across our coverage area. 
-                Emergency callouts within 2-4 hours.
+                No-obligation security surveys, booked at a time that suits you.
               </p>
             </div>
             <div className="text-center">
               <CheckCircle className="h-12 w-12 text-primary-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Full Coverage</h3>
+              <h3 className="text-xl font-semibold mb-2">Full Service</h3>
               <p className="text-gray-600">
-                Complete security services including installation, maintenance, 
-                monitoring and emergency support across all areas.
+                Installation, maintenance and monitoring of burglar alarms, CCTV, fire alarms,
+                access control and security lighting.
               </p>
             </div>
           </div>
@@ -221,7 +217,7 @@ export default function LocationsPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Major Service Areas</h2>
             <p className="text-lg text-gray-600">
-              Detailed local knowledge and established presence in key locations
+              Six of the towns we cover, each with its own area page
             </p>
           </div>
 
@@ -232,7 +228,6 @@ export default function LocationsPage() {
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900">{location.name}</h3>
                     <p className="text-gray-600">{location.postcode} • {location.county}</p>
-                    <p className="text-sm text-gray-500">Population: {location.population}</p>
                   </div>
                   <Link
                     href={`/locations/${location.name.toLowerCase()}`}
@@ -357,8 +352,8 @@ export default function LocationsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready for Your Free Security Survey?</h2>
           <p className="text-xl mb-8 text-primary-100">
-            Our local engineers provide comprehensive security assessments at no cost. 
-            Same-day appointments available across all our service areas.
+            Our engineers provide security surveys at no cost and without obligation,
+            booked at a time that suits you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="flex flex-col gap-1">

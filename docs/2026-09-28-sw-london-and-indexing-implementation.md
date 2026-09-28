@@ -99,7 +99,7 @@ Every place fact comes from the sourced fact sheets described in section 4. The 
 
 ## 2. What was built
 
-Branch `content/sw-london-and-indexing`, six commits on `main` at `3f5baf1`:
+Branch `content/sw-london-and-indexing`, eight commits on `main` at `3f5baf1` (seven code and content, one docs):
 
 1. `cd3a5c1` fix(seo): real breadcrumb URLs on the 50 service-and-area pages; `/locations` links every area page.
 2. `a76836f` feat(locations): no response or travel-time promises on south-west London pages.
@@ -107,6 +107,8 @@ Branch `content/sw-london-and-indexing`, six commits on `main` at `3f5baf1`:
 4. `a96ad79` content(locations): extend Fulham, Battersea and Streatham.
 5. `53f36fd` feat(locations): add Clapham and Chelsea and Kensington area pages.
 6. `eeea837` fix(locations): review findings on place facts and south-west wording (section 7).
+7. `800a1cb` docs: this record, the research, memory.md.
+8. The `/locations` page's own copy (section 8), added after the review session approved the branch.
 
 ### The `noTimePromises` switch
 
@@ -201,8 +203,6 @@ Request indexing in Search Console URL Inspection, in this order:
 13. https://jandlsecurity.co.uk/locations/battersea
 14. https://jandlsecurity.co.uk/locations/streatham
 
-Before requesting item 1, consider fixing the `/locations` page's own copy (follow-up 1): it is the hub, and it still shows old populations and a retired rail name. About half an hour.
-
 Search Console limits manual requests per day; if it refuses partway, continue the next day from where it stopped. Items 12 to 14 are already indexed, so they matter least. Resubmitting the sitemap is not needed; Google read it today.
 
 **How to read the result:** check URL Inspection for items 2 to 9 weekly for four weeks. If they are crawled and indexed while the 14 untouched thin pages stay as they are, the section 1 diagnosis holds. If they are crawled and still not indexed, the cause is something else and the next step is a closer look at what Google does index for those towns.
@@ -211,7 +211,7 @@ Search Console limits manual requests per day; if it refuses partway, continue t
 
 Not done on this branch, for the operator to decide:
 
-1. **The `/locations` page's own copy** (hardcoded in `app/locations/page.tsx`) was not in scope and still contradicts the corrected area pages:
+1. **Done (section 8).** The `/locations` page's own copy (hardcoded in `app/locations/page.tsx`) contradicted the corrected area pages:
    - the six featured cards give populations (Ilford 168,000, Romford 122,000, Brentwood 76,000, Chelmsford, Basildon, Hornchurch), and the Romford card says "Elizabeth Line and TfL Rail to Central London (35 mins to Bond Street)";
    - the page says "Same-day surveys available", "Emergency callouts within 2-4 hours" and that engineers are "based across Essex and Greater London", although J&L is based in Brentwood.
    A small follow-up: remove the populations, the rail name and the journey time, and reword the base claim.
@@ -243,5 +243,25 @@ A sub-agent with no access to this conversation reviewed the five commits agains
 **Diagnosis:** the review argued that "moderate" confidence was too high, that the `/locations` anomaly needed resolving, that the proposed test could not confirm the diagnosis, and that pre-migration history had not been considered. All four are accepted: section 1 now carries low confidence, records the two further checks, and says what the manual requests can and cannot show.
 
 **Not changed:** "The Royal Borough's largest town centre is Knightsbridge" stays; it is the council's own wording in its Local Plan (para 2.80). The `/locations` page copy stays out of scope (follow-up 1).
+
+## 8. The `/locations` page's own copy
+
+The review session approved the branch and asked for one more fix: the `/locations` page's own text, to the same standard as the area pages.
+
+**Changed in `app/locations/page.tsx`:**
+- **Populations removed** from the six featured cards (Ilford 168,000, Romford 122,000, Chelmsford 180,000, Brentwood 76,000, Basildon 185,000, Hornchurch 43,000), with the field and its "Population:" line.
+- **Transport lines** now name stations and lines only: no "TfL Rail", no journey times, no "35 mins to Bond Street". Ilford, Romford and Brentwood follow their rewritten area pages. Chelmsford (Greater Anglia to Liverpool Street), Basildon (c2c from Basildon, Laindon and Pitsea to Fenchurch Street) and Hornchurch (District line at Hornchurch, Upminster Bridge and Elm Park; London Overground at Emerson Park) were checked against Wikipedia this session.
+- **Descriptions** rewritten from sourced facts: for example Chelmsford is "the county town of Essex, granted city status in 2012" (letters patent received 6 June 2012) and Basildon a "new town … designated in 1949" (4 January 1949). Gone: "excellent transport links", "thriving", "known for excellent schools", and the US spelling "center".
+- **Postcodes and names** corrected to match the area pages: Romford "RM1-RM3, RM5, RM7"; "Exchange Ilford"; the rewritten residential lists for Ilford, Romford and Brentwood.
+- **Hornchurch landmarks:** "Queen Elizabeth II Country Park" and "The Bull pub" dropped; no source was found for the first. "Queen's Theatre" added (Wikipedia: a 500-seat producing theatre in the town centre).
+- **Time promises and the base claim:** the hero's "Same-day surveys available, with local engineers covering all major towns", the "Local Engineers … based across Essex and Greater London, ensuring quick response times" card, the "Same-Day Service … Emergency callouts within 2-4 hours" card, "emergency support across all areas" and the closing "Same-day appointments available across all our service areas" are replaced. The cards now read "Based in Brentwood", "Free Surveys" and "Full Service", and the hero and closing text say the engineers work from Brentwood and surveys are free and booked at a time that suits you.
+- "Detailed local knowledge and established presence in key locations" becomes "Six of the towns we cover, each with its own area page".
+
+**Verified:** `npm run build` exits 0. Compared with the build before this change, only `/locations` differs (plus the sitemap's `lastmod`). Its `<main>` text has no same-day, 2 to 4 hour, "within N", 24/7, population, minutes, "based across" or "quick response" wording; its JSON-LD parses; both phone numbers are present.
+
+**Left as found, flagged:**
+- The "Coverage Map" box shows developer placeholder text to the public: "(Map integration available - Google Maps embed or custom solution)". Remove the box or embed a map.
+- "Our engineers cover a 30-mile radius from our Brentwood base" is J&L's own claim with no source; confirm with Jag or remove.
+- The July area pages for Chelmsford, Basildon and Hornchurch still carry unsourced populations and journey times in their own base fields ("~180,000", "in 35 minutes" and so on), and Hornchurch's `lib/data.ts` landmarks still list "Queen Elizabeth II Country Park". Same fix as the eight rewritten pages; small.
 
 **Nothing on this branch has been pushed, deployed or emailed.** The review session drafts any note to Jag.

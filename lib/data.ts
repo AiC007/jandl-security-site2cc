@@ -293,7 +293,7 @@ export const locations: Location[] = [
     county: 'Greater London',
     postcode: 'SW8, SW11',
     nearbyAreas: ['Clapham', 'Wandsworth', 'Vauxhall', 'Nine Elms', 'Chelsea'],
-    landmarks: ['Battersea Power Station', 'Battersea Park', 'Clapham Junction Station', 'New US Embassy'],
+    landmarks: ['Battersea Power Station', 'Battersea Park', 'Clapham Junction Station', 'US Embassy, Nine Elms'],
     noTimePromises: true
   },
   {

@@ -961,25 +961,212 @@ const locationExtended: Record<string, LocationExtended> = {
     residential: ['Hammersmith Broadway', 'Brook Green', 'Ravenscourt Park', 'Shepherd\'s Bush', 'Olympia', 'West Kensington'],
   },
   battersea: {
-    description: 'A South West London area in the London Borough of Wandsworth, covering Battersea, Nine Elms, and the south bank of the Thames opposite Pimlico. Battersea has been substantially redeveloped in the past decade with the Power Station regeneration and the Northern Line extension to Battersea Power Station; the area combines new-build apartments, period mansion blocks, and commercial premises along the riverside. Wireless intruder alarms and access control for new-build blocks are core demand.',
-    population: '~75,000',
-    commuting: 'Northern Line from Battersea Power Station and Nine Elms; Clapham Junction main-line; Overground.',
-    whyLocal: 'We extend our coverage to Battersea SW8 and SW11 for residential customers in the Power Station and Nine Elms developments, period mansion blocks across Battersea Square, and commercial premises along the riverside.',
-    residential: ['Battersea Park', 'Nine Elms', 'Clapham Junction', 'Battersea Square', 'Queenstown', 'Wandsworth'],
+    description:
+      'Battersea and Nine Elms, in the London Borough of Wandsworth, together with Vauxhall and South Lambeth in the neighbouring London Borough of Lambeth, make up the Vauxhall, Nine Elms and Battersea Opportunity Area, where more than 10,000 new homes have been completed since it was designated in 2004. The Battersea Power Station redevelopment, the US Embassy and the Northern line extension sit alongside Victorian terraces, mansion blocks and council estates, so the area combines new-build apartments, period homes and commercial premises.',
+    population: 'SW8 38,648 and SW11 81,336 (Census 2021)',
+    commuting: 'Northern line from Battersea Power Station and Nine Elms; Victoria line and National Rail from Vauxhall; National Rail and London Overground from Clapham Junction.',
+    whyLocal:
+      'Our engineers travel to Battersea, Nine Elms, Vauxhall and South Lambeth (SW8 and SW11) from our base in Brentwood, for residential customers in the new developments and period homes, and for commercial premises.',
+    residential: ['Battersea Park', 'Nine Elms', 'Vauxhall', 'South Lambeth', 'Battersea Square', 'Clapham Junction'],
+    propertyStock:
+      'The area\'s housing runs from the 17th century to the 2020s. Old Battersea House, of 1699, survives by the original village at Battersea Square, and South Lambeth has 19th-century middle-class terraces and villas in the Albert Square and Lansdowne Gardens conservation areas. In the Victorian period, Park Town was laid out on Queenstown Road from 1863, the Shaftesbury Park Estate of two-storey workers\' cottages was built between 1873 and 1877, and five-storey mansion blocks went up facing Battersea Park, which opened in 1858. The Latchmere Estate of 1903 was the first council estate in the country built by a council\'s own workforce. Large post-war estates followed across north Battersea, and since 2004 more than 10,000 new homes have been built in the Opportunity Area, including over 2,200 so far at Battersea Power Station. A Victorian cottage on the Shaftesbury Park Estate and an apartment at Nine Elms call for different systems, so we survey before quoting.',
+    securityContext:
+      'Three kinds of property set the requirements. In the new developments at Nine Elms and Battersea Power Station, apartments sit in managed blocks with controlled entrances and communal areas, so access control, door entry and communal fire detection lead, along with maintenance of the systems installed at completion. In the Victorian and Edwardian houses and mansion flats, wireless intruder alarms avoid disturbing period interiors, and ground-floor flats need their windows and rear access covered. Many of these streets are in conservation areas, including Battersea Park, Park Town, Shaftesbury Park Estate, Vauxhall and Albert Square, so external sounders and cameras should be sited discreetly. Shops, offices and industrial premises, from Clapham Junction to the Queenstown Road industrial area, need CCTV, intruder alarms and commercial fire alarms to BS 5839-1.',
+    commercial:
+      'Clapham Junction is a major town centre around what the London Plan calls Europe\'s busiest rail interchange station, with Victorian and Edwardian shop terraces on St John\'s Road, St John\'s Hill and Lavender Hill. Battersea Power Station reopened in 2022 as a shopping, leisure and office destination, including Apple\'s UK headquarters, beside the new Electric Boulevard high street. New Covent Garden Market at Nine Elms, the UK\'s largest fruit, vegetable and flower wholesale market, has around 130 businesses on 38 acres, and Queenstown Road is a Strategic Industrial Location. Retail, office and wholesale premises need CCTV, access control and intruder alarms, and commercial fire alarm systems to BS 5839-1. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Battersea Park',
+        note: 'Mansion blocks and period houses around the park, which opened in 1858 and is a Grade II* registered landscape, in the Battersea Park conservation area. Wireless alarms suit the mansion flats.',
+      },
+      {
+        name: 'Battersea Power Station and Nine Elms',
+        note: 'The redeveloped Power Station, reopened in 2022, and the riverside apartments of Nine Elms, served by Northern line stations since 2021, with the US Embassy on Nine Elms Lane. Access control and communal fire detection lead.',
+      },
+      {
+        name: 'Vauxhall',
+        note: 'An 18th and 19th-century mixed residential and commercial area around Kennington Lane and Harleyford Road, in Lambeth, now with a cluster of towers such as St George Wharf. Door entry in the towers and discreet systems in the conservation area.',
+      },
+      {
+        name: 'South Lambeth',
+        note: '19th-century terraces and villas in the Albert Square, Lansdowne Gardens and South Lambeth Road conservation areas, in Lambeth. Wireless intruder alarms avoid disturbing period interiors.',
+      },
+      {
+        name: 'Park Town',
+        note: 'A Victorian planned estate built along Queenstown Road between 1863 and the eve of the First World War, now a conservation area.',
+      },
+      {
+        name: 'Shaftesbury Park and Clapham Junction',
+        note: 'Two-storey workers\' cottages of 1873 to 1877 off Lavender Hill, and the Victorian and Edwardian shop terraces of Clapham Junction, both conservation areas.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Do you install access control in new-build blocks at Nine Elms and Battersea Power Station?',
+        answer:
+          'Yes. We install, maintain and take over access control, door entry and communal fire detection for managed residential blocks. When we take over a system installed at completion, we survey the equipment first and confirm what can be kept.',
+      },
+      {
+        question: 'Do you cover Vauxhall and South Lambeth as well as Battersea?',
+        answer:
+          'Yes. We cover SW8 and SW11, including Battersea, Nine Elms, Vauxhall and South Lambeth, across the London Boroughs of Wandsworth and Lambeth. Our engineers travel from our base in Brentwood, and we agree an appointment time with you when you call.',
+      },
+      {
+        question: 'Can you fit a burglar alarm to a mansion flat or period house in Battersea?',
+        answer:
+          'Yes. For mansion flats near Battersea Park and period houses in areas such as Park Town and the Shaftesbury Park Estate, wireless intruder alarms avoid chasing cables into decorated walls. Many of these streets are conservation areas, so we site sounders and cameras discreetly. If you are unsure whether a change to the outside of the property needs consent, check with Wandsworth or Lambeth Council\'s planning team before any external equipment is fitted.',
+      },
+    ],
+    metaTitle: 'Alarms, CCTV & Access Control in Battersea, Nine Elms & Vauxhall',
+    metaDescription:
+      'Security installers covering Battersea, Nine Elms, Vauxhall and South Lambeth (SW8, SW11). Burglar alarms, CCTV, access control and fire alarms. SSAIB and BAFE.',
+    extraKeywords: [
+      'burglar alarms battersea',
+      'cctv installation battersea',
+      'access control nine elms',
+      'burglar alarms vauxhall',
+      'security systems south lambeth',
+      'door entry systems battersea',
+      'fire alarms battersea',
+    ],
   },
   fulham: {
-    description: 'A high-value residential area in the south of the London Borough of Hammersmith and Fulham, with a strong period housing stock and an active small-commercial sector along North End Road and Fulham Road. Fulham is a settled residential market with insurance-driven demand for monitored, inspectorate-approved alarms, and a steady commercial requirement for CCTV and access control along the main retail streets.',
-    population: '~85,000',
-    commuting: 'District Line; Overground from West Brompton; Imperial Wharf and Fulham Broadway National Rail.',
-    whyLocal: 'Our engineers cover Fulham SW6 and SW10 routinely. Wireless Grade 2 packages suit the period terraces and converted flats, and our SSAIB approval supports customers with insurance policies that require an inspectorate-approved system.',
-    residential: ['Fulham Broadway', 'Parsons Green', 'Sands End', 'Imperial Wharf', 'Bishops Park', 'West Brompton'],
+    description:
+      'A high-value residential area in the south of the London Borough of Hammersmith and Fulham, with a strong period housing stock and an active small-commercial sector along North End Road and Fulham Road. Fulham is a settled residential market with insurance-driven demand for monitored, inspectorate-approved alarms, and a steady commercial requirement for CCTV and access control along the main retail streets.',
+    commuting: 'District line from Fulham Broadway, Parsons Green and Putney Bridge; London Overground and Southern from Imperial Wharf and West Brompton.',
+    whyLocal:
+      'Our engineers travel to Fulham SW6 and SW10 from our base in Brentwood. Wireless Grade 2 packages suit the period terraces and converted flats, and our SSAIB approval supports customers with insurance policies that require an inspectorate-approved system.',
+    residential: ['Fulham Broadway', 'Parsons Green', 'Sands End', 'Imperial Wharf', 'Chelsea Harbour', 'Bishops Park'],
+    propertyStock:
+      'Fulham is mostly Victorian and Edwardian, long roads of terraced houses, with 1960s council estates in the north such as the West Kensington, Gibbs Green and Clem Attlee estates. Around Parsons Green most of the housing was in place by the 1890s, alongside the arrival of the District Railway: mainly Victorian terraces around a triangular green that keeps its village character, with a few older houses on New Kings Road dating from 1795. South Fulham has two-storey terraces in long streets and post-war estates, while the riverside has changed from industry to housing: Chelsea Harbour, granted planning permission in 1986, Imperial Wharf, and King\'s Road Park on the former Fulham Gasworks, with more than 1,800 homes around a Grade II listed gasholder. A converted Victorian terrace and a riverside apartment need different systems, so we survey before quoting.',
+    securityContext:
+      'Where Fulham\'s period terraces have been divided into flats, each flat needs its own entry points covered and the shared front door needs door entry that works. Where a house is still a single home, wireless intruder alarms avoid disturbing decorated interiors, and the rear of the house needs covering as well as the front. About half of Hammersmith and Fulham is covered by conservation areas, including Parsons Green, Sands End and Walham Green in Fulham, so external sounders and cameras should be sited discreetly. The riverside developments at Imperial Wharf, Chelsea Harbour and King\'s Road Park are managed blocks where access control and communal fire detection lead. Shops on North End Road and Fulham Road need CCTV positioned for identification at the doors.',
+    commercial:
+      'Fulham\'s town centre is around Fulham Broadway, with the Fulham Broadway Shopping Centre and the North End Road market, which trades six days a week and is known for fresh fruit and vegetables. Fulham Road runs past Stamford Bridge, home of Chelsea Football Club since 1905 and, despite its name, in Hammersmith and Fulham. Along the river, South Fulham Riverside mixes housing with commercial, industrial and retail uses, and the Design Centre at Chelsea Harbour is a design trade centre. Retail and hospitality premises need shopfront CCTV and intruder alarms, and larger commercial buildings need access control and BS 5839-1 fire alarm systems. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Parsons Green',
+        note: 'Mainly Victorian terraces around a triangular green with a village character, a conservation area since 1975, running towards Eel Brook Common. Wireless alarms suit the period houses.',
+      },
+      {
+        name: 'Fulham Broadway',
+        note: 'The town centre, formerly Walham Green, with the shopping centre, the North End Road market and Victorian and Edwardian streets around it. Shopfront CCTV and door entry for flats.',
+      },
+      {
+        name: 'Sands End',
+        note: 'South Fulham by the river, with some 300-year-old cottages, 19th-century streets and two-storey terraces, much of it in the Sands End conservation area, and King\'s Road Park on the former gasworks.',
+      },
+      {
+        name: 'Imperial Wharf',
+        note: 'A riverside development on former industrial land, with its own London Overground station since 2009. Managed apartment blocks where access control and communal fire detection lead.',
+      },
+      {
+        name: 'Chelsea Harbour',
+        note: 'Despite its name, in Hammersmith and Fulham: luxury apartments, a marina, the Design Centre and a hotel, granted planning permission in 1986. Access control and CCTV for managed buildings.',
+      },
+      {
+        name: 'West Brompton',
+        note: 'Straddles the boundary with Kensington and Chelsea. On the Fulham side, the Billings and Brompton Cutting conservation area follows the railway cutting north from Stamford Bridge; Brompton Cemetery, The Boltons and West Brompton station are on the Kensington and Chelsea side, covered on our Chelsea and Kensington page.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Do you cover Parsons Green, West Brompton and Chelsea Harbour?',
+        answer:
+          'Yes. We cover Fulham SW6 and the Hammersmith and Fulham part of SW10, including Parsons Green, Fulham Broadway, Sands End, Imperial Wharf, Chelsea Harbour and the Fulham side of West Brompton. Our engineers travel from our base in Brentwood, and we agree an appointment time with you when you call.',
+      },
+      {
+        question: 'Can you fit an alarm to a converted Victorian house in Fulham?',
+        answer:
+          'Yes. Where a terrace has been divided into flats, we protect each flat\'s own entry points and can fit door entry for the shared front door. Wireless intruder alarms avoid disturbing decorated interiors. Parsons Green and other parts of Fulham are conservation areas, so we site sounders and cameras discreetly. If you are unsure whether a change to the outside of the property needs consent, check with Hammersmith and Fulham Council\'s planning team before any external equipment is fitted.',
+      },
+      {
+        question: 'Do you install access control in riverside developments at Imperial Wharf and King\'s Road Park?',
+        answer:
+          'Yes. We install, maintain and take over access control, door entry and communal fire detection for managed residential blocks, and survey any existing system first to confirm what can be kept.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Fire Alarms in Fulham and Parsons Green',
+    metaDescription:
+      'Security installers covering Fulham, Parsons Green, Sands End, Imperial Wharf and Chelsea Harbour (SW6, SW10). Burglar alarms, CCTV and fire alarms.',
+    extraKeywords: [
+      'burglar alarms fulham',
+      'burglar alarms sands end',
+      'burglar alarms parsons green',
+      'cctv installation fulham',
+      'fire alarms fulham',
+      'access control imperial wharf',
+      'security company fulham',
+    ],
   },
   streatham: {
-    description: 'A South London area straddling the boroughs of Lambeth and Wandsworth, with a long high street running from Streatham Hill through Streatham Common. Streatham combines large Victorian and Edwardian houses, converted flats, and an active commercial high street with strong demand for both residential intruder alarms and commercial CCTV. The high concentration of converted houses and shared accommodation also drives BS 5839-6 fire alarm requirements.',
-    population: '~70,000',
-    commuting: 'National Rail from Streatham, Streatham Hill, and Streatham Common; Victoria Line via Brixton.',
-    whyLocal: 'We work regularly across Streatham SW2 and SW16, with installations covering wireless intruder alarms for residential customers, BS 5839-6 fire alarms for HMOs and shared accommodation, and commercial CCTV and access control along the high street.',
-    residential: ['Streatham Hill', 'Streatham Common', 'Streatham Vale', 'Norbury', 'Furzedown', 'Tooting Bec'],
+    description:
+      'A South London area mostly in the London Borough of Lambeth, with the Streatham Park and Furzedown side in Wandsworth, and a long high street running from Streatham Hill through to Streatham Common. Streatham combines large Victorian and Edwardian houses, converted flats and interwar mansion blocks with an active commercial high street. This page also covers Brixton Hill, Tulse Hill and Clapham Park, which lie wholly or partly in SW2.',
+    commuting: 'National Rail from Streatham, Streatham Hill, Streatham Common and Tulse Hill; Victoria line at Brixton and Northern line at Tooting Bec.',
+    whyLocal:
+      'Our engineers travel to Streatham, Brixton Hill, Tulse Hill and Clapham Park (SW2 and SW16) from our base in Brentwood, for wireless intruder alarms in period homes, BS 5839-6 fire alarms for HMOs and shared housing, and commercial CCTV and access control along the high street.',
+    residential: ['Streatham Hill', 'Streatham Common', 'Streatham Vale', 'Brixton Hill', 'Tulse Hill', 'Clapham Park'],
+    propertyStock:
+      'Streatham and its neighbours were built across a century and a half. Brixton Hill has early 19th-century town houses, and Tulse Hill had a continuous line of detached villas by 1843, many later replaced by council housing. Streatham High Road is mostly late 19th century, Telford Park was laid out between 1878 and 1882, and the Leigham Court Estate was built by the Artizans, Labourers and General Dwellings Company between 1889 and 1928 as long terraces of purpose-built flats and houses. The Hyde Farm Estate, near Clapham Park, followed between 1896 and 1916. In the 1930s large blocks of flats went up along the High Road and on Brixton Hill, such as Tudor Close of 1933, and the Tulse Hill estate was begun in the mid-1930s. Clapham Park, first laid out by Thomas Cubitt from 1825, was largely rebuilt by the London County Council and is now being regenerated by Metropolitan Thames Valley Housing, which reported 843 homes completed or started there since 2022 as of October 2025. A mansion flat, a model-dwelling terrace and a new apartment each need a different specification, so we survey before quoting.',
+    securityContext:
+      'Where Streatham\'s large Victorian and Edwardian houses have been converted into flats or shared homes, door entry and fire detection for the shared areas come into the specification, along with BS 5839-6 fire alarm systems where a property is let as an HMO. Houses still in single occupation need wireless intruder alarms that avoid disturbing period interiors, with side and rear access covered. The interwar mansion blocks along the High Road and Brixton Hill need door entry and access control for their shared entrances. The area has many conservation areas, including Streatham High Road and Streatham Hill, Telford Park, Leigham Court Estate and Rush Common and Brixton Hill, so external equipment should be sited discreetly. Shops along the high street need CCTV positioned for identification at the doors.',
+    commercial:
+      'Streatham and Brixton are both major town centres in the London Plan, and West Norwood and Tulse Hill a district centre. Streatham High Road, running from Streatham Hill to Streatham Common, has shops, cinemas, churches and public buildings, including the Tate library and St Leonard\'s Church, whose original building dates from the 1350s. Brixton Hill has shopping parades and late Victorian pubs, and the Streatham Hub beside Streatham station brought a new leisure centre and a supermarket with flats above. Shops, pubs and leisure premises need shopfront CCTV, intruder alarms and fire detection sized against the fire risk assessment. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Streatham Hill',
+        note: 'Early and mid 20th-century shops, entertainment buildings and mansion blocks along Streatham Hill, with the Telford Park and Leigham Court Estate conservation areas behind. Door entry for mansion blocks and wireless alarms for period houses.',
+      },
+      {
+        name: 'Streatham Common',
+        note: '19th-century houses around the common and The Rookery gardens, opened to the public in 1913, in the Streatham Common conservation area.',
+      },
+      {
+        name: 'Streatham Park',
+        note: 'Queen Anne-style houses from the 1880s to the interwar period, many overlooking Tooting Bec Common, on both the Lambeth and Wandsworth sides.',
+      },
+      {
+        name: 'Brixton Hill',
+        note: 'Early 19th-century town houses, Victorian terraces and 1930s blocks of flats such as Tudor Close along the A23, in the Rush Common and Brixton Hill conservation area.',
+      },
+      {
+        name: 'Tulse Hill',
+        note: 'A Lambeth district of 1930s and later council estates, including the Tulse Hill estate, beside Brockwell Park, with a Southern and Thameslink station.',
+      },
+      {
+        name: 'Clapham Park',
+        note: 'Thomas Cubitt\'s estate of 1825 onwards, largely rebuilt by the London County Council and now being regenerated by Metropolitan Thames Valley Housing, with the Edwardian Hyde Farm Estate nearby.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Do you cover Brixton Hill, Tulse Hill and Clapham Park as well as Streatham?',
+        answer:
+          'Yes. We cover SW2 and SW16, including Streatham Hill, Streatham Common, Streatham Vale, Brixton Hill, Tulse Hill and Clapham Park. Our engineers travel from our base in Brentwood, and we agree an appointment time with you when you call.',
+      },
+      {
+        question: 'Do you fit BS 5839-6 fire alarms in converted houses and HMOs in Streatham?',
+        answer:
+          'Yes. Where a house has been converted into flats or is let as an HMO, we design and install BS 5839-6 fire alarm systems to the grade and category set by the fire risk assessment and the council\'s licensing schedule, and we can service them afterwards. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+      },
+      {
+        question: 'Can you fit door entry to a mansion block on Streatham High Road or Brixton Hill?',
+        answer:
+          'Yes. We install, maintain and take over door entry and access control for blocks of flats, including the interwar mansion blocks along Streatham High Road and Brixton Hill, and survey any existing system first to confirm what can be kept.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Fire Alarms in Streatham and Brixton Hill',
+    metaDescription:
+      'Security installers covering Streatham, Streatham Hill, Brixton Hill, Tulse Hill and Clapham Park (SW2, SW16). Burglar alarms, CCTV and fire alarms.',
+    extraKeywords: [
+      'burglar alarms streatham',
+      'fire detection system streatham',
+      'cctv installation streatham',
+      'burglar alarms brixton hill',
+      'alarm installers tulse hill',
+      'door entry systems streatham',
+      'fire alarms streatham',
+    ],
   },
   finchley: {
     description: 'A North London suburban area in the London Borough of Barnet, covering Finchley Central, North Finchley, East Finchley, and Whetstone. Finchley has a high proportion of family homes, period semi-detached and detached houses, and converted flats, alongside a steady commercial high street. Demand is led by residential intruder alarms for family homes and converted flats, with insurance-driven preference for monitored systems where contents values are higher.',

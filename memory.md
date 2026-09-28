@@ -263,9 +263,17 @@ Priority sequence:
 
 ## 11. Last Session Summary
 
-### 2026-09-28 (maintenance round, build session): Next.js security upgrade, BS 5839-6 definitions, fire "Service Includes". ON BRANCH, NOT SHIPPED.
+### 2026-09-28 (maintenance round): Next.js security upgrade, BS 5839-6 definitions, fire "Service Includes". SHIPPED and verified live.
 
-**Where it is.** Branch `fix/next-upgrade-bs5839-service-includes`, cut from `main` at `6578118`, six commits, local only: not pushed, no PR, not merged, not deployed, no email. The review session checks it, then decides what ships. Full record: `docs/2026-09-28-maintenance-round-implementation.md`. Brief: `docs/2026-09-28-maintenance-round-handoff-prompt.md`.
+**Shipped.** The review session approved the branch, subject to two decisions, applied in their own commit. First, the unsourced "most fire risk assessors will recommend LD2 Grade A" is removed. Second, testing and Grade D servicing are no longer credited to BS 5839-6: test-button testing is the manufacturers' advice, and annual inspection is good practice often required by HMO licences. The branch was rebased onto `origin/main`, opened as [PR #24](https://github.com/AiC007/jandl-security-site2cc/pull/24), and the preview `dpl_7irhcEK8XjBunfgJcgjt9BdZTDjw` reached READY. It was squash-merged as **`005fb37`** and the branch deleted. Production `dpl_CeW7hv2U7513X36YREBsknxvTzBV` is READY. **Verified live with curl:**
+- markdown negotiation works;
+- the discovery files, and the security and `Link` headers, are present;
+- the sitemap has 112 URLs, and all 112 return 200 with both numbers;
+- the 9 fire pages show the new lists, with no intruder list;
+- the HMO guide shows the corrected LD2 and BS 5839-6 wording;
+- `/api/quote` returns 400 for invalid payloads (only invalid ones were sent).
+
+The evidence table is in the record. No email was sent. Commit hashes below are the pre-squash branch commits. Full record: `docs/2026-09-28-maintenance-round-implementation.md`. Brief: `docs/2026-09-28-maintenance-round-handoff-prompt.md`.
 
 **Item 1, security upgrade (`6190c1c`, `ae09cb2`).** `next` 15.4.10 to 15.5.26 (latest 15.x), `eslint-config-next` ^15.5.26, `sharp` 0.35.5 and `nanoid` 3.3.19 within range. **15.5.26 alone did not clear the audit:** it pins `postcss` to exactly 8.4.31. A scoped npm override moves it to 8.5.23, the version Next 16.3.x pins, in its own commit so it can be dropped. Production audit 4 findings (1 critical, 3 high) to **0**. Proof of no regression: all 115 prerendered pages identical to 15.4.10 once framework hashes are stripped; CSS byte-identical (hash `4ec827107fcab58c`); sitemap 112 URLs; 49 `next start` and `curl` probes (markdown negotiation, the four API routes with `/api/quote` validation only and no key, headers, `/_next/image`, discovery files) identical apart from lower-case `Vary` names, the 404 now served prerendered with identical content, and a smaller AVIF from the newer libvips. The compiled middleware matcher now also covers `.rsc` segment-prefetch paths, which is the advisory fix. **Corrected here:** `middleware.ts` is markdown content negotiation only; the apex/www and jandlalarms.co.uk redirects are Vercel domain settings.
 
@@ -392,9 +400,9 @@ The standing rule worked exactly as designed and is worth keeping as the templat
 
 **PR backlog found and cleared.** Six PRs were open at session start, not one. #15, #16 and #17 were the July content PRs whose commits are all ancestors of main via #18, so their content shipped and only the PR records were stale. #11 was docs-only and its `memory.md` changes had been overtaken, but it carried two records worth keeping, which were salvaged onto main: `docs/2026-06-22-agent-readiness-client-email.md` and the live re-scan result in `docs/agent-readiness-2026-06-22.md` (Level 1 at 21/100 to Level 5). #1 was a Vercel security PR bumping Next from 15.4.6 to 15.4.8; main is already on 15.4.10, so it was superseded. **Audit open PRs at the start of every session: content can be merged while the PR record stays open, and a whole PR can be abandoned after its preview builds.**
 
-### SECURITY ACTION: Next.js upgrade. RESOLVED ON BRANCH 2026-09-28, NOT YET DEPLOYED
+### SECURITY ACTION: Next.js upgrade. RESOLVED AND DEPLOYED 2026-09-28
 
-**Status 2026-09-28:** resolved on branch `fix/next-upgrade-bs5839-service-includes` (commits `6190c1c` and `ae09cb2`): `next` 15.5.26, `sharp` 0.35.5, `nanoid` 3.3.19, and an npm override moving Next's pinned `postcss` to 8.5.23. `npm audit --omit=dev` reports 0 vulnerabilities on the branch. **Production still runs 15.4.10 until the review session merges and deploys.** Record: `docs/2026-09-28-maintenance-round-implementation.md`. The text below is the original 2026-08-17 entry, kept for history; its middleware sentence has been corrected.
+**Status 2026-09-28:** shipped in `005fb37` ([PR #24](https://github.com/AiC007/jandl-security-site2cc/pull/24)), live on production (`dpl_CeW7hv2U7513X36YREBsknxvTzBV`): `next` 15.5.26, `sharp` 0.35.5, `nanoid` 3.3.19, and an npm override moving Next's pinned `postcss` to 8.5.23. `npm audit --omit=dev` reports 0 vulnerabilities. Record: `docs/2026-09-28-maintenance-round-implementation.md`. The text below is the original 2026-08-17 entry, kept for history; its middleware sentence has been corrected.
 
 **This was the largest open item on the project and it is not a content task.** `npm audit --omit=dev` against main on 2026-08-17 reports four vulnerable packages at high severity: `next`, `postcss` (Next's bundled copy), `sharp` (below 0.35.0, inheriting libvips CVE-2026-33327, CVE-2026-33328, CVE-2026-35590, CVE-2026-35591) and `nanoid`. **Every one of them resolves at `next@15.5.23`.** The site is on 15.4.10.
 

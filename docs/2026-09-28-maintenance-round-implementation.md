@@ -3,8 +3,24 @@
 **Date:** 2026-09-28
 **Session:** Claude Code (Opus 5.5), build session. Brief: `docs/2026-09-28-maintenance-round-handoff-prompt.md`.
 **Branch:** `fix/next-upgrade-bs5839-service-includes`, cut from `main` at `6578118` (up to date with `origin/main`, no open PRs at start).
-**Status:** committed locally. **Not pushed, no PR, not merged, not deployed, no email.** A separate review session checks it before anything ships.
+**Status: SHIPPED and verified live.** Approved by the review session, subject to two decisions (applied in `67f3e9d`). The branch was rebased onto `origin/main` (docs-only upstream commits) and opened as [PR #24](https://github.com/AiC007/jandl-security-site2cc/pull/24). The Vercel preview `dpl_7irhcEK8XjBunfgJcgjt9BdZTDjw` reached READY at the branch tip. The PR was squash-merged as **`005fb37`** and the branch deleted, local and remote. Production deployment `dpl_CeW7hv2U7513X36YREBsknxvTzBV` reached READY with `jandlsecurity.co.uk` aliased. No email was sent.
+
+The commit hashes below are the pre-squash branch commits, as reviewed. After the rebase they became `ab45a90`, `3cfd13d`, `6bfd601`, `9eb430c`, `21bba7a`, `e751047`, `29dadc2` and `36169ae`, all preserved in PR #24.
 **Maturity:** Pilot.
+
+## Live verification on https://jandlsecurity.co.uk (curl, 2026-09-28, after `005fb37` went live)
+
+| Check | Result |
+|---|---|
+| `GET` with `Accept: text/markdown` on `/`, `/services/fire-alarms`, the HMO guide | 200 `text/markdown; charset=utf-8`, starting "# J&L Security", "# Fire Alarms" and the guide title. A browser `GET /` still gets `text/html`. |
+| Discovery files | `llms.txt`, `llms-full.txt` and `robots.txt` return 200 `text/plain`; `/.well-known/api-catalog` returns 200 `application/linkset+json`; the MCP server card, agent card and agent-skills index return 200 `application/json`; `GET /mcp` returns 405 as designed. |
+| Headers on `/` | `Link` (api-catalog, service-desc, service-doc, describedby), `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`, `X-XSS-Protection`, `X-DNS-Prefetch-Control` and HSTS are all present. |
+| Sitemap | 112 URLs. |
+| Every sitemap URL | All 112 return 200 and carry both 0204 538 5925 and 0208 220 4770 (covers every page type: home, services, locations, matrix of every type, blog, FAQs, contact, legal). |
+| Fire pages | Installation and commissioning pages open with "BS 5839-1 compliant system design". The five servicing pages open with "Testing of every detector, manual call point and sounder"; Monitoring with "24/7 monitoring for commercial properties …"; the Audit page with "Inspection of the existing system and its condition". The intruder list appears on none of the 9. |
+| HMO guide | Has "BS 5839-6: System Categories", "BS 5839-6: System Grades" and "any kitchen, the principal habitable room". Has none of "BS 5839-1: System Categories", "rooms that open onto escape routes" or "most fire risk assessors will recommend". |
+| `/api/quote` (invalid payloads only) | Invalid JSON returns 400 "Invalid request body"; a too-fast submission 400 "Form submitted too quickly"; missing fields 400 "Missing required fields"; `GET` returns 405. **No valid enquiry was submitted.** |
+| Image optimiser | `/_next/image` returns 200 `image/avif`. |
 
 ## Commits, in order
 

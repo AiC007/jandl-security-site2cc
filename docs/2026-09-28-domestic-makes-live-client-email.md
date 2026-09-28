@@ -1,6 +1,6 @@
 # Client email: domestic makes, page corrections, FAQ search and beeping guide are live (Wendy AI)
 
-**Status:** CANONICAL COPY, written 2026-09-28 after the merge and live verification. **Not yet reviewed, no Gmail draft exists.** The review session reviews the copy and creates the draft, once, as a reply in thread `1a0e714b643af248`.
+**Status:** CANONICAL COPY, written 2026-09-28 after the merge and live verification. **Reviewed 2026-09-28 by the review session** (two fixes: the lock pages are three, not two; question 5 now notes that the Services page also lists this work, and the .md and .html wording of question 5 were aligned). Gmail draft created once, 2026-09-28, as a reply in thread `1a0e714b643af248`: draft `r-7224632525260659694`. **Not sent.** Operator sends.
 
 **Reply to:** Jag's message `1a0e714b643af248` of 2026-09-28 08:13 UTC. Our previous reply in the thread is `1a0e730f2babd2c8` (08:45 UTC).
 
@@ -32,7 +32,7 @@ Everything from this morning is now live on jandlsecurity.co.uk: the four domest
 **What is live**
 
 - Aico, Kidde, FireAngel and Hispec now appear on the fire alarms page, the About page and your three domestic smoke alarm pages (Basildon, Chelmsford and South Woodford), which are written to BS 5839-6. The fire alarms page and the About page say that J&L Security is an Aico Expert Installer.
-- The eight pages we told you about are corrected. The five fire pages show fire content, Emergency Locksmith in Romford no longer shows lighting content, and the two lock and safe pages carry a short neutral description.
+- The eight pages we told you about are corrected. The five fire pages show fire content, and the three lock and safe pages (Emergency Locksmith in Romford, BS3621 Locks in Ilford and Safe Fitting in Brentwood) now carry a short neutral description instead of lighting or burglar alarm content.
 - The FAQs search box now narrows the questions as you type.
 - The beeping guide is at jandlsecurity.co.uk/blog/smoke-alarm-beeping-guide-by-make. It explains what the common beeps generally mean, points readers to each manufacturer's own guidance for simple checks, and says when to call you, particularly for mains-wired and interlinked alarms. It gives no model-specific instructions and never suggests taking an alarm down.
 
@@ -44,7 +44,7 @@ Everything from this morning is now live on jandlsecurity.co.uk: the four domest
 2. **Kidde, FireAngel and Hispec:** do you fit them new, or mainly replace and maintain existing ones?
 3. **Carbon monoxide alarms:** do you fit them?
 4. **HMO Alarm Packages in Stratford** is now a domestic fire alarm page. Is that right, or was it meant to be intruder alarms?
-5. **Locksmith, BS3621 locks and safe fitting:** do you offer this work at all? Three pages describe it, and we would rather remove them than advertise work you do not do.
+5. **Locks and safes:** Do you offer locksmith, BS3621 lock fitting and safe fitting at all? Your Services page and three area pages describe this work, and if you do not offer it we will take it off the site rather than advertise it.
 
 Any questions, just reply here or call us on 020 335 50558.
 

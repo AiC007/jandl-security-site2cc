@@ -998,7 +998,7 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: COMPANY_INFO.website },
     { name: 'Services', url: `${COMPANY_INFO.website}/services` },
-    { name: `${combination.service} in ${combination.location}`, url: `${COMPANY_INFO.website}/${resolvedParams.service}-${resolvedParams.location}` },
+    { name: `${combination.service} in ${combination.location}`, url: `${COMPANY_INFO.website}${serviceLocationPath(combination)}` },
   ]);
 
   return (

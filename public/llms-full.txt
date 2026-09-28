@@ -114,10 +114,10 @@ Brentwood, Chelmsford, Basildon, Romford, Ilford, Hornchurch, Upminster, Barking
 Enfield, Stratford, Canary Wharf, Islington, Hackney, Clapton, Dalston, Camden, Westminster, Walthamstow, City of London, Docklands.
 
 ### Greater London (South and South East)
-Greenwich, Woolwich, Southwark, Battersea, Streatham.
+Greenwich, Woolwich, Southwark, Battersea, Clapham, Streatham.
 
 ### Greater London (West and North)
-Hammersmith, Fulham, Finchley, Barnet, Ealing, Harrow.
+Hammersmith, Fulham, Chelsea and Kensington, Finchley, Barnet, Ealing, Harrow.
 
 ### Kent Borders
 Coverage extends to Kent border areas on request.
@@ -254,19 +254,29 @@ Central London borough covering some of the highest-value residential and commer
 West London town and the centre of the London Borough of Hammersmith and Fulham, with a substantial office base, strong retail and hospitality presence, and a large residential population in period terraces, mansion blocks, and modern apartments. J&L Security covers W6, W12, and W14. Engineers operate routinely across the area for residential intruder alarms (wireless Grade 2 systems for period properties), commercial CCTV and access control for offices and shopfronts, and BS 5839 fire alarm work for HMOs and commercial premises. Both phone numbers operate: 0204 538 5925 and 0208 220 4770.
 
 ### Battersea
-South West London area in the London Borough of Wandsworth, substantially redeveloped with the Power Station regeneration and the Northern Line extension, combining new-build apartments, period mansion blocks, and commercial premises along the riverside. J&L Security covers SW8 and SW11. Engineers operate routinely across the area for residential intruder alarms and access control for new-build blocks, commercial CCTV, and BS 5839 fire alarm work for HMOs and commercial premises. Both phone numbers operate: 0204 538 5925 and 0208 220 4770.
+Battersea, Nine Elms, Vauxhall and South Lambeth, across the London Boroughs of Wandsworth and Lambeth. The riverside between them is the Vauxhall, Nine Elms and Battersea Opportunity Area, redeveloped around the Battersea Power Station regeneration, the US Embassy and the Northern line extension. The area combines new-build apartments in managed blocks with Victorian terraces, mansion flats and post-war estates, and commercial premises from Clapham Junction to New Covent Garden Market. J&L Security covers SW8 and SW11, travelling from its Brentwood base, for access control, door entry and communal fire detection in new-build blocks, wireless intruder alarms for period homes, commercial CCTV, and BS 5839 fire alarm work for HMOs and commercial premises. Both phone numbers operate: 0204 538 5925 and 0208 220 4770.
 
 ### Fulham
-High-value residential area in the south of the London Borough of Hammersmith and Fulham, with a strong period housing stock and an active small-commercial sector along North End Road and Fulham Road. J&L Security covers SW6 and SW10. Engineers operate routinely across the area for residential intruder alarms (wireless Grade 2 packages and SSAIB-approved monitored installations for insurance-driven demand), commercial CCTV and access control along the main retail streets, and BS 5839 fire alarm work for HMOs and commercial premises. Both phone numbers operate: 0204 538 5925 and 0208 220 4770.
+Residential area in the south of the London Borough of Hammersmith and Fulham, covering Fulham Broadway, Parsons Green, Sands End, Imperial Wharf, Chelsea Harbour and the Fulham side of West Brompton, with mainly Victorian and Edwardian terraces, many divided into flats, riverside apartment developments, and a small-commercial sector along North End Road and Fulham Road. J&L Security covers SW6 and the Hammersmith and Fulham part of SW10, travelling from its Brentwood base, for residential intruder alarms (wireless Grade 2 packages and SSAIB-approved monitored installations), door entry and access control for converted houses and managed blocks, commercial CCTV along the main retail streets, and BS 5839 fire alarm work for HMOs and commercial premises. Both phone numbers operate: 0204 538 5925 and 0208 220 4770.
 
 ### Streatham
-South London area straddling the boroughs of Lambeth and Wandsworth, with a long high street running from Streatham Hill through Streatham Common and combining large Victorian and Edwardian houses, converted flats, and an active commercial high street. J&L Security covers SW2 and SW16. Engineers operate routinely across the area for residential intruder alarms, commercial CCTV and access control along the high street, and BS 5839-6 fire alarm work for HMOs and shared accommodation as well as BS 5839-1 commercial systems. Both phone numbers operate: 0204 538 5925 and 0208 220 4770.
+South London area mostly in the London Borough of Lambeth, with the Streatham Park and Furzedown side in Wandsworth, with a long high street running from Streatham Hill to Streatham Common. The page also covers Brixton Hill, Tulse Hill and Clapham Park, which lie wholly or partly in SW2. The area combines large Victorian and Edwardian houses, converted flats, interwar mansion blocks and post-war estates with an active commercial high street. J&L Security covers SW2 and SW16, travelling from its Brentwood base, for residential intruder alarms, door entry for mansion blocks, commercial CCTV and access control along the high street, and BS 5839-6 fire alarm work for HMOs and shared accommodation as well as BS 5839-1 commercial systems. Both phone numbers operate: 0204 538 5925 and 0208 220 4770.
 
 ### Finchley
 North London suburban area in the London Borough of Barnet, covering Finchley Central, North Finchley, East Finchley, and Whetstone, with a high proportion of family homes, period semi-detached and detached houses, and converted flats alongside a steady commercial high street. J&L Security covers N2, N3, and N12. Engineers operate routinely across the area for residential intruder alarms (wireless Grade 2 packages and SSAIB-approved monitored installations for insurance-driven demand), commercial CCTV and access control, and BS 5839 fire alarm work for HMOs and commercial premises. Both phone numbers operate: 0204 538 5925 and 0208 220 4770.
 
 ### Barnet
 Northernmost of the London boroughs, covering High Barnet, New Barnet, Cockfosters, Hadley Wood, and Totteridge, with a high proportion of family homes, large detached and semi-detached properties, and a settled residential market with strong insurance-driven demand. J&L Security covers EN4, EN5, and N20. Engineers operate routinely across the area for residential intruder alarms (wireless Grade 2 packages with monitored options and SSAIB-approved installations for insurance-required policies), commercial CCTV and access control along Barnet High Street, and BS 5839 fire alarm work for HMOs and commercial premises. Both phone numbers operate: 0204 538 5925 and 0208 220 4770.
+
+## South-west London Location Summaries (added September 2026)
+
+Two location pages added in September 2026, bringing the total to 31. Each summary corresponds to a dedicated page at https://jandlsecurity.co.uk/locations/[slug]. J&L Security is Brentwood-based and travels to these areas from its Essex base; no response or travel time is promised.
+
+### Clapham
+Clapham, mostly in the London Borough of Lambeth with its western side in Wandsworth, together with Stockwell and the Oval side of Kennington (SW9) and Balham (SW12, Wandsworth). Georgian and Regency houses around Clapham Common and the Old Town, Victorian terraces around Abbeville Road and Larkhall, mansion blocks in Clapham and Balham, and post-war estates, with district town centres at Clapham High Street, Stockwell and Balham. J&L Security covers SW4, SW9 and SW12 for wireless intruder alarms in period houses, door entry and access control for mansion blocks and converted houses, commercial CCTV for the high streets, and BS 5839 fire alarm work. Page: https://jandlsecurity.co.uk/locations/clapham. Both phone numbers operate: 0204 538 5925 and 0208 220 4770.
+
+### Chelsea and Kensington
+Chelsea, Brompton, Earl's Court, South Kensington and Knightsbridge, in the south of the Royal Borough of Kensington and Chelsea, with part of Knightsbridge in the City of Westminster. Georgian and Victorian terraces, garden squares, mews houses and mansion blocks, with nearly three quarters of the Royal Borough in conservation areas, and commercial centres at Knightsbridge, the King's Road and South Kensington. J&L Security covers SW3, SW5, SW7 and SW10 for intruder alarms suited to listed and period buildings, door entry and access control for mansion blocks, CCTV for retail and commercial premises, and BS 5839 fire alarm work. Page: https://jandlsecurity.co.uk/locations/chelsea-and-kensington. Both phone numbers operate: 0204 538 5925 and 0208 220 4770.
 
 ## Blog
 

@@ -370,7 +370,9 @@ function locationMarkdown(slug: string): string | null {
     '',
     `${c.name} provides burglar alarms, CCTV, fire alarms, access control and security lighting in ${loc.name} (${loc.county}, ${loc.postcode}) and nearby areas: ${loc.nearbyAreas.join(', ')}.`,
     '',
-    'All services include free surveys and 24/7 emergency support.',
+    loc.noTimePromises
+      ? 'All services include free, no-obligation surveys, booked at a time that suits you.'
+      : 'All services include free surveys and 24/7 emergency support.',
     '',
     contactBlock(),
   ].join('\n');

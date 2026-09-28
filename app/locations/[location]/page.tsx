@@ -15,7 +15,8 @@ import { generateLocalBusinessSchema, generateFAQPageSchema, generateBreadcrumbS
 // guarded, so towns without them keep the original layout unchanged.
 type LocationExtended = {
   description: string;
-  population: string;
+  /** Omitted where no published figure fits the area (for example areas spanning boroughs). */
+  population?: string;
   commuting: string;
   whyLocal: string;
   residential: string[];
@@ -38,18 +39,144 @@ type LocationExtended = {
 
 const locationExtended: Record<string, LocationExtended> = {
   ilford: {
-    description: 'Major East London town with excellent transport links to Central London via the Elizabeth Line and TfL Rail. Ilford is one of the most densely populated areas in Greater London, making security systems an important consideration for both residential and commercial properties.',
-    population: '~168,000',
-    commuting: 'Elizabeth Line to Liverpool Street in 22 minutes; Stratford in 15 minutes.',
-    whyLocal: 'Our engineers are regularly working across Ilford IG1–IG6, with rapid response times for emergency call-outs and same-day surveys available throughout the area.',
-    residential: ['Valentines', 'Seven Kings', 'Goodmayes', 'Newbury Park', 'Gants Hill', 'Redbridge', 'Chadwell Heath'],
+    description:
+      'Ilford is the largest town centre in the London Borough of Redbridge and one of London\'s Metropolitan town centres, on the Elizabeth line to Stratford and Liverpool Street. Its housing is dominated by late Victorian and Edwardian terraces, with interwar suburbs to the north and new flats in the town centre, so demand runs from domestic alarms to commercial CCTV.',
+    commuting: 'Elizabeth line from Ilford, Seven Kings and Goodmayes to Stratford and Liverpool Street; Central line from Redbridge, Gants Hill, Newbury Park, Barkingside and Fairlop.',
+    whyLocal:
+      'Our engineers work across Ilford IG1 to IG6, from the town centre and the Victorian terraces around it to the interwar suburbs of Gants Hill, Newbury Park and Redbridge.',
+    residential: ['Cranbrook', 'Valentines', 'Seven Kings', 'Goodmayes', 'Gants Hill', 'Newbury Park'],
+    propertyStock:
+      'Most of Ilford was built in one burst. The town had 10,913 people in 1891 and 78,188 in 1911, and the estates of that boom still make up much of its housing: the Grange estate north of the station from 1894, the Cranbrook estate from 1897, and the Downshall estate in Seven Kings and the Mayfield estate in Goodmayes from 1898. They are long streets of two-storey terraced houses on narrow frontages, with few larger detached or semi-detached houses. The Ilford Garden Suburb, south of Valentines Mansion around Emerson Road and The Square, was built to fund the extension of Valentines Park. Between the wars private building spread north through Gants Hill and Newbury Park, and Redbridge filled with suburban houses and bungalows. The town centre is now a London Plan Opportunity Area and the focus of new building, and apartments outnumber houses in Ilford. A narrow-fronted terrace in Seven Kings and a flat in a new town-centre block need very different systems, so we survey before quoting.',
+    securityContext:
+      'In Ilford\'s Victorian and Edwardian terraces, the rear of the house is usually the less overlooked side, so intruder alarms need the rear door and ground-floor windows covered as well as the front. Where a house has been converted into flats, door entry and fire detection for the shared hallway come into the specification. The interwar houses and bungalows of Gants Hill, Newbury Park and Redbridge are simpler to wire and suit either wired or wireless systems. In the town centre, shops on the High Road and Ilford Lane need cameras positioned for identification at the doors, and the newer apartment blocks need access control and communal fire detection.',
+    commercial:
+      'Ilford is one of London\'s Metropolitan town centres and the only one in Redbridge. Its main shopping streets in and around the High Road were largely built between 1890 and 1914, and the Exchange Ilford shopping centre opened in 1991. Ilford Lane is a local centre with a high proportion of independent businesses, and Goodmayes Retail Park lies to the east. Ilford is also a London Plan Opportunity Area, with potential for 6,000 new homes by 2041, the Ilford Western Gateway is planned for around 1,000 new homes, and work has started on 326 homes for social rent on the former Harrison Gibson site. Retail units need shopfront CCTV and intruder alarms, and mixed-use blocks need access control and fire detection. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Ilford Town Centre',
+        note: 'Metropolitan town centre on the High Road, with Exchange Ilford and a growing number of apartment blocks. Shopfront CCTV, access control and commercial fire alarm work.',
+      },
+      {
+        name: 'Cranbrook',
+        note: 'Late Victorian estates north of the station, the Grange from 1894 and Cranbrook from 1897, of two-storey terraces on narrow frontages. Rear doors and ground-floor windows need covering as well as the front.',
+      },
+      {
+        name: 'Valentines',
+        note: 'Around Valentines Park and the late 17th-century Valentines Mansion, including the Ilford Garden Suburb built to fund the park\'s extension. The council has recommended assessing the area for conservation area status.',
+      },
+      {
+        name: 'Seven Kings and Goodmayes',
+        note: 'Estates begun in 1898, with Edwardian terraces near the stations and interwar houses further out, plus the 1920s and 1930s bungalows of The Bungalow Estate conservation area.',
+      },
+      {
+        name: 'Gants Hill',
+        note: 'A town centre that grew around Eastern Avenue and its roundabout in the 1920s, with a Charles Holden Central line station and surrounding interwar suburbs. Straightforward domestic alarm and CCTV work.',
+      },
+      {
+        name: 'Newbury Park',
+        note: 'Interwar suburban housing around the Central line station, whose 1947 to 1949 bus shelter by Oliver Hill is Grade II listed, and an older grid of terraces begun in the 1870s.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Can you fit a burglar alarm to a Victorian terrace in Ilford?',
+        answer:
+          'Yes. Much of Ilford is late Victorian and Edwardian terraced housing from the estates built between 1894 and 1914. We cover the front door, the rear door and the ground-floor windows, and wireless systems avoid chasing cables into decorated walls. Where a house has been converted into flats, we can also fit door entry and fire detection for the shared hallway.',
+      },
+      {
+        question: 'Do you work on properties in the Valentines area and The Bungalow Estate?',
+        answer:
+          'Yes. Both have historic character: The Bungalow Estate in Seven Kings is a conservation area of 1920s and 1930s bungalows, and the council has recommended assessing the Valentines area for conservation area status. We site external sounders and cameras as discreetly as the property allows. If you are unsure whether a change to the outside of the property needs consent, check with Redbridge Council\'s planning team before any external equipment is fitted.',
+      },
+      {
+        question: 'Do you install CCTV and fire alarms for shops and flats in Ilford town centre?',
+        answer:
+          'Yes. We install shopfront CCTV positioned for identification at the doors, intruder alarms for retail premises, access control for apartment blocks, and commercial fire alarm systems to BS 5839-1 with a 6-monthly servicing contract. J&L Security is BAFE accredited for the installation and maintenance of fire alarms. We are also SSAIB approved.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Fire Alarms in Ilford',
+    metaDescription:
+      'Security installers covering Ilford, Cranbrook, Valentines, Seven Kings, Goodmayes, Gants Hill and Newbury Park. Burglar alarms, CCTV and fire alarms.',
+    extraKeywords: [
+      'burglar alarms ilford',
+      'burglar alarm installation ilford',
+      'intruder alarm ilford',
+      'cctv installation ilford',
+      'fire alarms ilford',
+      'alarm installers seven kings',
+      'burglar alarms gants hill',
+      'security company ilford',
+    ],
   },
   romford: {
-    description: 'Historic market town and major retail centre in East London, now part of the London Borough of Havering. Romford is home to a large residential population alongside a busy commercial and hospitality sector, creating demand for everything from domestic alarm systems to commercial CCTV.',
-    population: '~122,000',
-    commuting: 'Elizabeth Line to Bond Street in 35 minutes; Liverpool Street in 28 minutes.',
-    whyLocal: 'Based in Brentwood, J&L Security\'s engineers know the area well. We regularly install systems throughout RM1–RM7 and can offer some of the fastest response times in the area.',
-    residential: ['Gidea Park', 'Harold Wood', 'Rise Park', 'Collier Row', 'Heath Park', 'Rush Green'],
+    description:
+      'Historic market town and major retail centre in East London, now part of the London Borough of Havering. Romford is home to a large residential population alongside a busy commercial and hospitality sector, creating demand for everything from domestic alarm systems to commercial CCTV.',
+    commuting: 'Elizabeth line from Romford, Gidea Park and Harold Wood; London Overground (Liberty line) from Romford to Upminster.',
+    whyLocal:
+      'J&L Security is based in Brentwood, next to the London Borough of Havering, and our engineers work across Romford, from the town centre to Gidea Park, Harold Hill, Harold Wood and Collier Row.',
+    residential: ['Gidea Park', 'Heath Park', 'Harold Hill', 'Harold Wood', 'Collier Row', 'Rise Park'],
+    propertyStock:
+      'Romford was built in distinct waves, and the wave usually decides what an installation involves. Close to the town centre are Victorian streets laid out from the 1850s, such as the Stewards estate east of South Street and the Mawneys estate north-west of the High Street, which was sold for building in 1883. Heath Park was being developed by 1908, and Gidea Park was built as a garden suburb for the 1910 to 1911 exhibition, which produced 159 homes; a second exhibition in 1934 added 35 more, most of them with flat roofs. Collier Row was built up rapidly between 1929 and 1939. After the war the London County Council built the Harold Hill estate between 1948 and 1958, mostly two-storey houses in pairs and short terraces, while the borough council built estates at Collier Row, Chase Cross and Rise Park. A detached Edwardian house in Gidea Park and a post-war terrace in Harold Hill need quite different systems, which is why we survey before quoting.',
+    securityContext:
+      'Three requirements come up across Romford. In the Edwardian and interwar houses of Gidea Park, Heath Park and Collier Row, wireless intruder alarms are usually the better choice because they avoid chasing cables into finished walls, and detached and semi-detached houses need the side and rear approaches covered as well as the front door. Gidea Park is a conservation area, so external sounders and cameras should be sited as discreetly as the house allows. In and around the town centre, flats above shops and newer apartment blocks need door entry and communal fire detection, and the shops below need cameras positioned to identify people at the doors. On the industrial estates, larger premises need yard and perimeter CCTV, intruder detection graded to the contents, and commercial fire alarms to BS 5839-1 with a servicing contract.',
+    commercial:
+      'Romford grew from its market, first granted by royal order in 1247 and still held on Wednesdays, Fridays and Saturdays in the Market Place. Around it are The Liberty, completed in 1972, The Mercury Mall, and The Brewery, built on the site of the Ind Coope brewery, which closed in 1993. Havering Council adopted the Romford Masterplan in March 2025 to guide the next phase of change in the town centre. Beyond the centre, Harold Hill Industrial Estate and the King George Close Estate are Strategic Industrial Locations in the London Plan. Retail and hospitality premises usually need shopfront CCTV, intruder alarms and fire detection sized against the fire risk assessment, and industrial units need yard coverage and BS 5839-1 fire alarm systems. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Romford Town Centre',
+        note: 'The historic market crossroads of Market Place, High Street, North Street and South Street, inside the ring road built in 1970 and at the heart of the Romford Conservation Area. Shops, flats above shops and newer apartment blocks, so shopfront CCTV, door entry and commercial fire alarm work.',
+      },
+      {
+        name: 'Gidea Park',
+        note: 'Garden suburb built for the 1910 to 1911 exhibition, with modernist houses from the 1934 exhibition, and a conservation area since 1970. Mostly detached and semi-detached houses, where wireless alarms and discreetly sited external equipment suit the setting.',
+      },
+      {
+        name: 'Heath Park',
+        note: 'An Edwardian estate beyond the railway, being developed by 1908. Family houses with side access and rear gardens, where the side and rear approaches need covering as well as the front door.',
+      },
+      {
+        name: 'Harold Hill',
+        note: 'Built by the London County Council between 1948 and 1958, mostly two-storey houses in pairs and short terraces. Straightforward domestic alarm and CCTV work, with commercial security on the Harold Hill Industrial Estate.',
+      },
+      {
+        name: 'Harold Wood',
+        note: 'A Victorian railway suburb on the Elizabeth line, with the Kings Park estate on the former hospital site, completed in 2023. A mix of period and new-build houses.',
+      },
+      {
+        name: 'Collier Row',
+        note: 'Built up rapidly between 1929 and 1939, with large post-war council estates at Collier Row and neighbouring Chase Cross and Rise Park. Interwar semis and terraces suit either wired or wireless systems.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Can you fit a burglar alarm to a house in the Gidea Park conservation area?',
+        answer:
+          'Yes. Gidea Park has been a conservation area since 1970, and many of its houses date from the 1910 to 1911 and 1934 exhibitions. Wireless intruder alarms avoid disturbing original interiors, and we site external sounders and cameras as discreetly as the house allows. If you are unsure whether a change to the outside of the property needs consent, check with Havering Council\'s planning team before any external equipment is fitted.',
+      },
+      {
+        question: 'Do you cover Harold Hill and Harold Wood?',
+        answer:
+          'Yes. Harold Hill and Harold Wood (RM3) are part of our Romford coverage, from the post-war London County Council houses in Harold Hill to the newer Kings Park estate in Harold Wood. We install and maintain burglar alarms, CCTV, fire alarms and access control, and we can take over systems installed by another company.',
+      },
+      {
+        question: 'Do you work with shops and businesses in Romford town centre?',
+        answer:
+          'Yes. We install shopfront CCTV positioned for identification at the doors, intruder alarms for retail and hospitality premises, and commercial fire alarm systems to BS 5839-1 with a 6-monthly servicing contract. J&L Security is BAFE accredited for the installation and maintenance of fire alarms. We are also SSAIB approved.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Fire Alarms in Romford',
+    metaDescription:
+      'Security installers covering Romford, Gidea Park, Heath Park, Harold Hill, Harold Wood and Collier Row. Burglar alarms, CCTV and fire alarms. SSAIB and BAFE.',
+    extraKeywords: [
+      'burglar alarms romford',
+      'burglar alarm installation romford',
+      'burglar alarm installers romford',
+      'intruder alarms romford',
+      'cctv installation romford',
+      'fire alarms romford',
+      'alarm installer gidea park',
+      'burglar alarms harold hill',
+    ],
   },
   chelmsford: {
     description: 'The county town of Essex and one of the fastest-growing cities in the East of England. Chelmsford has a thriving business district, university, and a large and expanding residential population, all of which drive strong demand for professional security systems.',
@@ -59,11 +186,74 @@ const locationExtended: Record<string, LocationExtended> = {
     residential: ['Great Baddow', 'Galleywood', 'Springfield', 'Writtle', 'Broomfield', 'Moulsham'],
   },
   brentwood: {
-    description: 'An affluent Essex town known for excellent schools, green spaces, and easy rail access to London. Brentwood has a high proportion of family homes and high-value properties, making comprehensive home security a priority for many residents.',
-    population: '~76,000',
-    commuting: 'Elizabeth Line to Liverpool Street in 45 minutes; Shenfield to London in 38 minutes.',
-    whyLocal: 'J&L Security serves customers throughout Brentwood CM13–CM15, Shenfield, and surrounding villages. Our engineers regularly work across the borough and provide fast same-day survey availability.',
-    residential: ['Shenfield', 'Hutton', 'Ingrave', 'Herongate', 'South Weald', 'Ingatestone'],
+    description:
+      'A market town and borough in south-west Essex, on the Elizabeth line at Brentwood and Shenfield, and the home of J&L Security. Almost two thirds of its homes are detached or semi-detached, against just over half nationally, so most domestic systems protect family houses with side and rear access.',
+    population: 'around 77,000 (borough, Census 2021)',
+    commuting: 'Elizabeth line from Brentwood and Shenfield; Greater Anglia services from Shenfield to London Liverpool Street.',
+    whyLocal:
+      'J&L Security is based in Great Warley, Brentwood, and our engineers work across Brentwood CM13 to CM15, from the town centre to Shenfield, Hutton, Warley and the surrounding villages.',
+    residential: ['Shenfield', 'Hutton', 'Warley', 'Great Warley', 'Ingrave', 'Herongate'],
+    propertyStock:
+      'Brentwood is a borough of just over 32,000 homes, almost 63% of them detached or semi-detached, against a national average of 53%. The town grew along the High Street, a Roman road where a market was licensed in 1227 and where the White Hart dates from the late 15th century. Warley grew as a Victorian suburb after the Great Warley and Little Warley commons were sold, and Christ Church parish was created in 1855 for its new residents. In 1934 the town absorbed the surrounding parishes, including Shenfield, Hutton, Ingrave and South Weald. After the war, housing estates spread west of the old village of Hutton, while Hutton Mount remained largely affluent. The result is a town of family houses, from period properties near the High Street to post-war estates and large detached homes, and the right specification depends on which of those you live in.',
+    securityContext:
+      'Brentwood\'s housing is dominated by detached and semi-detached family homes, so most domestic systems need to cover more than a front door: side gates, rear doors, garages and outbuildings are all entry points to consider, and larger plots call for external detection and cameras covering the driveway. Wireless intruder alarms suit period and extended houses where cabling would disturb finished interiors. In the borough\'s 13 conservation areas, including Brentwood Town Centre, Great Warley and Hutton Village, sounders and cameras should be sited discreetly. The town centre and the shopping parades at Shenfield and Warley Hill have shops and flats that need CCTV, intruder alarms and fire detection, and the business areas around Warley and the M25 need commercial systems.',
+    commercial:
+      'Brentwood\'s town centre is centred on the High Street, with district shopping centres at Shenfield on Hutton Road, at Ingatestone High Street, and on Warley Hill by Brentwood station. Most office employment is in the town centre, around the station and at Warley Business Park, and the Local Plan allocates Brentwood Enterprise Park at M25 junction 29 as a strategic employment site, alongside Childerditch Industrial Estate. The council bought the Baytree Shopping Centre in 2021 and plans to redevelop it. Offices, shops and industrial units need CCTV, intruder alarms and access control, and commercial fire alarm systems to BS 5839-1. J&L Security is BAFE accredited for the installation and maintenance of fire alarms. Brentwood is our home town.',
+    neighbourhoods: [
+      {
+        name: 'Brentwood Town Centre',
+        note: 'The High Street and surrounding streets, a conservation area formed from the former Wilson\'s Corner, Chapel and Hart Street areas, with shops, offices and flats. Shopfront CCTV and commercial fire alarm work.',
+      },
+      {
+        name: 'Shenfield',
+        note: 'A former village absorbed into Brentwood in 1934, with its own Elizabeth line station, Shenfield Common and a district shopping centre on Hutton Road. Family houses where side and rear protection matters.',
+      },
+      {
+        name: 'Hutton',
+        note: 'Post-war estates west of the old village and the largely affluent Hutton Mount, with the Hutton Village conservation area at the historic core.',
+      },
+      {
+        name: 'Warley',
+        note: 'A Victorian suburb that grew after the commons were sold, home to Warley Barracks until 1958 and now to Warley Business Park. A mix of period houses and business premises.',
+      },
+      {
+        name: 'Great Warley',
+        note: 'A village south-west of the town centre, where J&L Security is based, with a conservation area and the church of St Mary the Virgin, consecrated in 1904.',
+      },
+      {
+        name: 'Ingrave and Herongate',
+        note: 'Villages absorbed into Brentwood in 1934, with the Herongate conservation area. Village properties where wireless systems avoid disturbing older fabric.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Where is J&L Security based in Brentwood?',
+        answer:
+          'Our office is at Jubilee House, The Drive, Great Warley, Brentwood CM13 3FR. Brentwood is our home town, and we install and maintain burglar alarms, CCTV, fire alarms, access control and security lighting across the town, Shenfield, Hutton, Warley and the surrounding villages.',
+      },
+      {
+        question: 'Can you fit an alarm in a Brentwood conservation area?',
+        answer:
+          'Yes. Brentwood has 13 conservation areas, including Brentwood Town Centre, Great Warley, Hutton Village and Herongate. Wireless systems avoid disturbing older interiors, and we site sounders and cameras as discreetly as the property allows. If you are unsure whether a change to the outside of the property needs consent, check with Brentwood Borough Council\'s planning team before any external equipment is fitted.',
+      },
+      {
+        question: 'Do you install security systems for businesses in Brentwood?',
+        answer:
+          'Yes. We install CCTV, intruder alarms and access control for shops, offices and industrial units, including premises at Warley Business Park, and commercial fire alarm systems to BS 5839-1 with a 6-monthly servicing contract. J&L Security is BAFE accredited for the installation and maintenance of fire alarms. We are also SSAIB approved.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Fire Alarms in Brentwood',
+    metaDescription:
+      'Brentwood security installers based in Great Warley, covering Shenfield, Hutton, Warley, Ingrave and Herongate. Burglar alarms, CCTV and fire alarms.',
+    extraKeywords: [
+      'burglar alarms brentwood',
+      'fire alarm installer brentwood',
+      'fire alarm testing brentwood',
+      'cctv installation brentwood',
+      'security company brentwood',
+      'burglar alarms shenfield',
+      'alarm installers hutton',
+    ],
   },
   basildon: {
     description: 'One of Essex\'s largest towns with a major retail and business centre. Basildon encompasses a wide area including Laindon, Pitsea, Vange, and Wickford outskirts, with a mix of residential estates and substantial industrial and retail parks.',
@@ -276,18 +466,144 @@ const locationExtended: Record<string, LocationExtended> = {
     ],
   },
   dagenham: {
-    description: 'A large town in the London Borough of Barking and Dagenham. Dagenham has a significant industrial heritage and a large residential population, with strong demand for both domestic alarm systems and commercial security across its industrial estates.',
-    population: '~110,000',
-    commuting: 'District Line to Central London; C2C line from Dagenham Dock.',
-    whyLocal: 'J&L Security regularly works across RM9–RM10 Dagenham, covering both the residential estates and the industrial areas along the A13 corridor.',
-    residential: ['Becontree', 'Chadwell Heath', 'Rush Green', 'Marks Gate', 'Heathway', 'Gale Street'],
+    description:
+      'A large town in the London Borough of Barking and Dagenham. Dagenham has a significant industrial heritage and a large residential population, with strong demand for both domestic alarm systems and commercial security across its industrial estates.',
+    commuting: 'District line from Becontree, Dagenham Heathway and Dagenham East; c2c from Dagenham Dock; Elizabeth line from Chadwell Heath.',
+    whyLocal:
+      'J&L Security works across Dagenham RM8 to RM10, covering both the Becontree estate and the industrial areas around Dagenham Dock.',
+    residential: ['Becontree', 'Becontree Heath', 'Dagenham Village', 'Dagenham East', 'Beam Park'],
+    propertyStock:
+      'Most of Dagenham\'s housing belongs to the Becontree estate, built by the London County Council between 1921 and 1935 on garden city principles. Its houses are mostly two storeys, some three, set along streets and cul-de-sacs known locally as banjos, and around a quarter were built with shared porches. The LCC added further houses after 1945 in the Heath Park extension, and the borough council later built more for the next generation of tenants. Older fabric survives in Dagenham Village, around the church of St Peter and St Paul, with Victorian shops and houses on Church Street and 1930s terraces nearby, while Chadwell Heath grew as a suburb from 1900. The newest housing is at Beam Park, a new neighbourhood on former factory land, approved in 2018 across the Barking and Dagenham and Havering boundary. The council treats the Becontree estate as a non-designated heritage asset, and its Local Plan steers the least new development there, to protect its character.',
+    securityContext:
+      'The Becontree house type shapes most domestic work in Dagenham. Terraced and semi-detached houses need the front door, the rear door and any side access covered, and where a porch is shared with the house next door, detectors and door contacts have to protect one home without reacting to the other. Wireless intruder alarms suit owners who have redecorated and do not want cables chased into walls. New housing at Beam Park, and the homes planned around Dagenham Heathway, bring the requirements of any managed development: door entry and access control on shared entrances, and fire detection in communal areas. On the industrial land at Dagenham Dock, premises are large and exposed after dark, and usually need yard and perimeter CCTV, intruder detection graded to the contents, and commercial fire alarm systems to BS 5839-1.',
+    commercial:
+      'Dagenham Dock is a Strategic Industrial Location in the London Plan, together with the neighbouring Rainham employment area, and the council\'s Local Plan describes it as the borough\'s economic heart, home to the Thames Freeport. Ford\'s Dagenham plant opened in 1931 and built vehicles there until 2002. Dagenham Heathway is the district centre for the Becontree area, with a shopping centre and a District line station, and the Chadwell Heath Industrial Estate is identified for redevelopment with homes and intensified industrial space. Industrial and distribution sites typically need external CCTV covering yards and loading areas, perimeter intruder detection, and BS 5839-1 fire alarm systems with a 6-monthly servicing contract. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Becontree',
+        note: 'Built by the London County Council between 1921 and 1935, mostly two-storey houses, some with shared porches, along streets and cul-de-sacs known locally as banjos. Front and rear door protection and wireless intruder alarms are the usual specification.',
+      },
+      {
+        name: 'Becontree Heath',
+        note: 'Home to Dagenham Civic Centre, opened in 1937 and Grade II listed, now a Coventry University centre, backing on to Central Park.',
+      },
+      {
+        name: 'Dagenham Village',
+        note: 'The historic core around the church of St Peter and St Paul, a conservation area since 1995, with Victorian shops and houses on Church Street and 1930s terraces nearby. Discreet external equipment suits the setting.',
+      },
+      {
+        name: 'Dagenham Heathway',
+        note: 'The district centre for the Becontree area, with a shopping centre and District line station, and new homes planned on the Heathway Mall site. Shopfront CCTV and commercial fire alarm work in the retail units.',
+      },
+      {
+        name: 'Chadwell Heath',
+        note: 'A suburb in RM6 that grew from 1900, split between Barking and Dagenham and Redbridge, with an Elizabeth line station and an industrial estate identified for redevelopment. A mix of domestic alarm work and commercial security.',
+      },
+      {
+        name: 'Beam Park',
+        note: 'A new neighbourhood on former factory land, approved in 2018 and spanning the Barking and Dagenham and Havering boundary. Where new homes share entrances, door entry, access control and communal fire detection lead.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Can you fit a burglar alarm to a Becontree estate house?',
+        answer:
+          'Yes. The Becontree estate, built by the London County Council between 1921 and 1935, is mostly two-storey terraced and semi-detached houses, and some share a porch with the house next door. We cover the front and rear doors and any side access, and where a porch is shared we position contacts and detectors so the system protects your house without reacting to your neighbour\'s. Wireless systems avoid chasing cables into decorated walls.',
+      },
+      {
+        question: 'Do you install door entry and fire detection in new developments such as Beam Park?',
+        answer:
+          'Yes. We install and maintain door entry, access control and communal fire detection for managed blocks, and we can take over systems installed by the developer where the managing agent wants to move the maintenance. We survey the existing equipment first and confirm what can be kept.',
+      },
+      {
+        question: 'Do you cover industrial premises at Dagenham Dock?',
+        answer:
+          'Yes. Dagenham Dock is one of London\'s Strategic Industrial Locations, and premises there typically need external CCTV covering yards and loading areas, perimeter intruder detection and BS 5839-1 commercial fire alarm systems with a 6-monthly servicing contract. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Fire Alarms in Dagenham',
+    metaDescription:
+      'Security installers covering Becontree, Dagenham Village, Dagenham Heathway, Chadwell Heath and Beam Park. Burglar alarms, CCTV and fire alarms. SSAIB and BAFE.',
+    extraKeywords: [
+      'burglar alarms dagenham',
+      'burglar alarm installation dagenham',
+      'cctv installation dagenham',
+      'cctv dagenham',
+      'fire alarms dagenham',
+      'alarm installers becontree',
+      'door entry systems dagenham',
+      'security company dagenham',
+    ],
   },
   redbridge: {
-    description: 'The London Borough of Redbridge covers a large area of North East London including Ilford, Wanstead, Woodford, and Gants Hill. It is one of the most populous London boroughs and has a diverse mix of residential and commercial properties.',
-    population: '~310,000 (borough)',
-    commuting: 'Central Line from Gants Hill and Woodford; Elizabeth Line from Ilford.',
-    whyLocal: 'As one of our most active coverage areas, the Redbridge borough accounts for a significant proportion of our customer base. Our engineers know the area thoroughly and response times are excellent.',
+    description:
+      'The London Borough of Redbridge, formed in 1965 from Ilford and from Wanstead and Woodford, covers a large area of north-east London including Ilford, Wanstead, Woodford, Gants Hill and Barkingside. Over a third of the borough is Green Belt, and its housing is largely late Victorian, Edwardian and interwar suburb, with a diverse mix of residential and commercial property.',
+    population: 'about 310,300 (borough, Census 2021)',
+    commuting: 'Elizabeth line from Ilford, Seven Kings and Goodmayes; Central line across the north of the borough, including Redbridge, Gants Hill, Newbury Park, Barkingside and Fairlop.',
+    whyLocal:
+      'Our engineers work across the London Borough of Redbridge, from Ilford and Gants Hill to Wanstead, South Woodford, Woodford Green and Barkingside.',
     residential: ['Ilford', 'Wanstead', 'South Woodford', 'Woodford Green', 'Barkingside', 'Gants Hill'],
+    propertyStock:
+      'Redbridge was formed in 1965 from the boroughs of Ilford and of Wanstead and Woodford, and its housing reflects both. Between 1880 and 1939 much of the borough was built up in a long phase of late Victorian, Edwardian and interwar suburbs, which is why most residential streets are relatively low density. Wanstead and South Woodford are older: middle-class housing began at South Woodford after Woodford Hall was sold in 1869, and much of Wanstead was built in the second half of the 19th century before planned estates such as the Counties Estate were added. Aldersbrook, south of Wanstead Park, is an Edwardian suburb whose Lake House Estate was built between 1907 and 1911. After the war the London County Council built the large Hainault estate. More recently, flats have been built at higher density, and they now outnumber houses in Ilford and around South Woodford and Snaresbrook. Over a third of the borough is Green Belt.',
+    securityContext:
+      'Across Redbridge the property decides the system more than the postcode. Victorian and Edwardian terraces in Ilford, Seven Kings and Goodmayes need the rear door and ground-floor windows covered as well as the front. The larger period houses of Wanstead and Woodford Green need the side approach covered where there is side access, and in the borough\'s 16 conservation areas external equipment should be sited discreetly. Interwar suburbs and bungalows in Gants Hill, Clayhall and Redbridge are straightforward to wire. Flats in Ilford and South Woodford need door entry and communal fire detection, and business units at Hainault Business Park need yard CCTV and commercial fire alarms to BS 5839-1.',
+    commercial:
+      'Ilford is the borough\'s Metropolitan town centre, and Barkingside, Gants Hill, South Woodford and Wanstead are district centres, with local centres such as Ilford Lane and Woodford Broadway. Redbridge has relatively few industrial areas, but Hainault Business Park and the Southend Road Business Area are designated as strategic employment land, and Hainault Business Park alone has more than 150 companies, according to its business improvement district. Shops and offices in the town centres need CCTV, intruder alarms and fire detection sized against the fire risk assessment, and industrial units need yard coverage and BS 5839-1 fire alarm systems. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Ilford',
+        note: 'The borough\'s Metropolitan town centre, surrounded by late Victorian and Edwardian terraces. Shopfront CCTV in the centre and rear-door protection in the terraces.',
+      },
+      {
+        name: 'Wanstead',
+        note: 'A village centre with a conservation area designated in 1970, one of the borough\'s first, and 19th and early 20th-century housing, including the Counties Estate. Discreet external equipment suits the setting.',
+      },
+      {
+        name: 'Aldersbrook',
+        note: 'An Edwardian suburb south of Wanstead Park, whose Lake House Estate was built between 1907 and 1911, now a conservation area.',
+      },
+      {
+        name: 'South Woodford',
+        note: 'Suburban housing that began after Woodford Hall was sold in 1869, with George Lane as its centre and a high share of flats. Door entry and communal fire detection for the blocks.',
+      },
+      {
+        name: 'Woodford Green',
+        note: 'Georgian, Victorian, Edwardian and interwar houses around the green, protected as conservation areas since 1970, with the Churchill statue of 1959. Part of Woodford Green is in Waltham Forest.',
+      },
+      {
+        name: 'Barkingside',
+        note: 'A district centre next to the Barnardo\'s Village Homes conservation area, with Fairlop Waters Country Park on Forest Road.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Do you cover the whole of the London Borough of Redbridge?',
+        answer:
+          'Yes. We work across Redbridge, including Ilford, Seven Kings, Goodmayes, Gants Hill, Barkingside, Wanstead, South Woodford and Woodford Green. The borough uses E, IG and RM postcodes, so tell us your postcode when you call and we will arrange a survey.',
+      },
+      {
+        question: 'Can you fit alarms to period houses in the Wanstead and Woodford conservation areas?',
+        answer:
+          'Yes. Redbridge has 16 conservation areas, including Wanstead Village, Woodford Green and Woodford Wells, and Aldersbrook and Lake House Estate. Wireless intruder alarms avoid disturbing period interiors, and we site sounders and cameras as discreetly as the house allows. If you are unsure whether a change to the outside of the property needs consent, check with Redbridge Council\'s planning team before any external equipment is fitted.',
+      },
+      {
+        question: 'Do you work with businesses on Hainault Business Park?',
+        answer:
+          'Yes. Hainault Business Park is one of the borough\'s two strategic employment areas. Typical work is external CCTV for yards and loading areas, intruder detection graded to the contents, and BS 5839-1 fire alarm systems with a 6-monthly servicing contract. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Fire Alarms in Redbridge',
+    metaDescription:
+      'Security installers covering Redbridge: Ilford, Gants Hill, Barkingside, Wanstead, South Woodford and Woodford Green. Burglar alarms, CCTV and fire alarms.',
+    extraKeywords: [
+      'burglar alarms redbridge',
+      'cctv installation redbridge',
+      'fire alarms redbridge',
+      'burglar alarms wanstead',
+      'burglar alarms woodford green',
+      'alarm installers south woodford',
+      'security company redbridge',
+    ],
   },
   enfield: {
     description: 'A large North London borough with a mix of urban and semi-rural areas. The London Borough of Enfield includes Enfield Town, Palmers Green, Southgate, and Edmonton, with a substantial commercial sector and large residential population.',
@@ -304,11 +620,74 @@ const locationExtended: Record<string, LocationExtended> = {
     residential: ['Stratford New Town', 'Maryland', 'Forest Gate', 'West Ham', 'Leyton', 'Bow'],
   },
   'canary-wharf': {
-    description: 'London\'s secondary financial district on the Isle of Dogs, home to the headquarters of major global banks, media companies, and professional services firms. Canary Wharf has some of the most demanding commercial security requirements in the country, including access control, CCTV, and fire alarm systems.',
-    population: '~25,000 residents (E14)',
-    commuting: 'Jubilee Line to Waterloo in 11 minutes; Elizabeth Line (Crossrail) to Paddington in 17 minutes.',
-    whyLocal: 'We install and maintain commercial security systems across E14 and the wider Docklands area, including fire alarm servicing, access control maintenance, and CCTV for commercial developments.',
-    residential: ['Canary Wharf', 'Isle of Dogs', 'Poplar', 'Millwall', 'Cubitt Town', 'South Quay'],
+    description:
+      'Canary Wharf, on the Isle of Dogs in the London Borough of Tower Hamlets, is a Metropolitan town centre and, with the City, one of the locations the London Plan names as nationally important for globally-oriented financial and business services. Around it, the E14 postcode is under intense development pressure for very high density housing, from riverside towers to post-war council estates, and its buildings have demanding requirements for access control, CCTV and fire alarm systems.',
+    population: '108,214 (E14, Census 2021)',
+    commuting: 'Elizabeth line, Jubilee line and DLR at Canary Wharf; DLR across the Isle of Dogs to Island Gardens.',
+    whyLocal:
+      'We install and maintain commercial security systems across E14 and the wider Docklands area, including fire alarm servicing, access control maintenance, and CCTV for commercial developments.',
+    residential: ['Canary Wharf', 'Wood Wharf', 'South Quay', 'Millwall', 'Cubitt Town', 'Poplar'],
+    propertyStock:
+      'E14 had 108,214 residents at the 2021 Census, and its housing spans two centuries. Cubitt Town\'s first Victorian houses were built from 1862, though almost all of them were lost in the Second World War. Millwall keeps terraces of 1902 to 1904 and the Chapel House Street Estate of 1920 to 1921, now part of a conservation area. After the war came large council estates: Lansbury in Poplar, which includes the permanent buildings of the 1951 Festival of Britain, the Samuda Estate from 1965, the Barkantine Estate in the late 1960s, and Erno Goldfinger\'s Balfron Tower and Carradale House. The London Docklands Development Corporation, created in 1981, began the era of private development, and since 2000 residential towers have risen around Marsh Wall and South Quay, while Wood Wharf is planned for more than 3,600 homes. A flat in a managed tower and a house on a 1960s estate need very different systems, which is why we survey before quoting.',
+    securityContext:
+      'Much of E14\'s newer housing is in managed buildings. Residential towers and build-to-rent blocks have controlled entrances and communal areas, so access control, door entry and communal fire detection lead, and we maintain and take over systems installed at completion as well as fitting new ones. Offices and shops on the Canary Wharf estate and around it need access control integrated with CCTV, and commercial fire alarm systems to BS 5839-1 with a servicing contract. In the older estates and the terraces of Millwall and Cubitt Town, domestic intruder alarms and door entry for low-rise blocks are the usual requirement.',
+    commercial:
+      'The London Plan treats the northern Isle of Dogs, with the City, as one of London\'s nationally important locations for financial and business services, and Canary Wharf as a Metropolitan town centre. Its shopping centre links five malls: Canada Place, Cabot Place, Jubilee Place, Crossrail Place and Churchill Place. Beyond the estate, Chrisp Street in Poplar is a district centre. The Isle of Dogs and South Poplar Opportunity Area has London Plan capacity for 29,000 new homes and 110,000 new jobs by 2041, so construction and fit-out continue across E14. Offices and retail units need access control, CCTV and intruder detection, and commercial fire alarm systems to BS 5839-1 with a 6-monthly servicing contract. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Canary Wharf Estate',
+        note: 'The office, retail and residential estate around One Canada Square, including Newfoundland, the first residential tower on the estate. Access control, CCTV and commercial fire alarm work in managed buildings.',
+      },
+      {
+        name: 'Wood Wharf',
+        note: 'The newest part of the estate, begun in 2015 and planned for more than 3,600 homes, including build-to-rent blocks run by Canary Wharf Group\'s rental business. Door entry and communal fire detection lead.',
+      },
+      {
+        name: 'South Quay and Marsh Wall',
+        note: 'A cluster of residential towers such as Pan Peninsula, Landmark Pinnacle and South Quay Plaza. Access control and fire detection in high-rise managed blocks.',
+      },
+      {
+        name: 'Millwall',
+        note: 'The western and southern Isle of Dogs, with Edwardian terraces and the Chapel House Street garden estate of 1920 to 1921 alongside post-war estates such as the Barkantine.',
+      },
+      {
+        name: 'Cubitt Town',
+        note: 'The eastern Isle of Dogs, largely rebuilt after wartime bombing, with post-war estates including the Samuda Estate, and the Island Gardens conservation area.',
+      },
+      {
+        name: 'Poplar',
+        note: 'North of the docks, with the Lansbury estate, which includes the permanent buildings of the 1951 Festival of Britain, Balfron Tower, and the Chrisp Street district centre.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Do you maintain access control and door entry in Canary Wharf residential towers?',
+        answer:
+          'Yes. We install, maintain and take over access control, door entry and communal fire detection for managed residential buildings in E14, including build-to-rent blocks. When we take over a system installed by the developer, we survey the equipment first and confirm what can be kept.',
+      },
+      {
+        question: 'Do you service commercial fire alarms in Canary Wharf offices?',
+        answer:
+          'Yes. We service BS 5839-1 fire alarm systems on a 6-monthly contract, carry out fault finding and repairs, and take over systems installed by other contractors. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+      },
+      {
+        question: 'Do you cover the whole of the Isle of Dogs and Poplar?',
+        answer:
+          'Yes. We cover E14, including Canary Wharf, Wood Wharf, South Quay, Millwall, Cubitt Town and Poplar, for homes, managed blocks and businesses.',
+      },
+    ],
+    metaTitle: 'Access Control, CCTV & Fire Alarms, Canary Wharf',
+    metaDescription:
+      'Security installers covering Canary Wharf, Wood Wharf, South Quay, Millwall, Cubitt Town and Poplar. Access control, CCTV and fire alarms. SSAIB and BAFE.',
+    extraKeywords: [
+      'access control canary wharf',
+      'cctv installation canary wharf',
+      'fire alarm servicing canary wharf',
+      'fire alarm commissioning canary wharf',
+      'security systems isle of dogs',
+      'door entry systems canary wharf',
+      'security company e14',
+    ],
   },
   greenwich: {
     description: 'The Royal Borough of Greenwich in South East London combines a rich maritime heritage with significant commercial development. The area includes Greenwich town centre, the O2 entertainment complex, Royal Arsenal Riverside, and extensive residential areas from Blackheath through Charlton to Woolwich.',
@@ -381,18 +760,142 @@ const locationExtended: Record<string, LocationExtended> = {
     ],
   },
   harlow: {
-    description: 'A new town in West Essex, designed post-war with a distinctive layout of residential neighbourhoods surrounding a town centre. Harlow has a significant industrial and business park sector, particularly in the Pinnacles and Templefields areas, alongside a large residential population.',
-    population: '~90,000',
-    commuting: 'Direct rail to London Liverpool Street in 40 minutes.',
-    whyLocal: 'We serve clients across Harlow CM17–CM20, from domestic alarm installations in the residential areas to commercial fire alarms and CCTV for the business parks.',
-    residential: ['The Pinnacles', 'Potter Street', 'Great Parndon', 'Netteswell', 'Staple Tye', 'Kingsmoor'],
+    description:
+      'A new town in West Essex, designed post-war with a distinctive layout of residential neighbourhoods surrounding a town centre. Harlow has a significant industrial and business park sector, particularly in the Pinnacles and Templefields areas, alongside a large residential population.',
+    population: 'around 93,300 (district, Census 2021)',
+    commuting: 'West Anglia Main Line from Harlow Town and Harlow Mill to London Liverpool Street and Cambridge; Stansted Express from Harlow Town.',
+    whyLocal:
+      'We serve clients across Harlow CM17 to CM20, from domestic alarm installations in the residential areas to commercial fire alarms and CCTV for the business parks.',
+    residential: ['Mark Hall', 'Old Harlow', 'Netteswell', 'Potter Street', 'Great Parndon', 'Church Langley'],
+    propertyStock:
+      'Harlow was designated a new town in 1947, and Frederick Gibberd\'s master plan set its shape: residential neighbourhoods, each with its own centre, around a town centre, with industry in separate employment areas. The neighbourhoods were built in sequence. Mark Hall North was complete by 1954, including The Lawn of 1950 to 1951, the first residential tower block in Britain. Netteswell and Mark Hall South followed, Great Parndon was under construction in 1960, Stewards, Kingsmoor and Staple Tye were built mainly between 1965 and 1974, and Katherines and Sumners were begun in 1974. Church Langley and Newhall were added in the late 1990s and 2000s. Harlow has a higher than average share of terraced houses, and in 2021 29.3% of households rented from a social landlord, in the highest 5% of English local authority areas. Old Harlow, the original market settlement, keeps its older buildings and Victorian and Edwardian homes along Bury Road, New Road and Park Hill.',
+    securityContext:
+      'Harlow\'s new-town layout shapes the work. On the neighbourhood estates, where much of the housing is terraced, the rear of the house needs covering as well as the front, and wireless systems avoid disturbing finished interiors. Social landlords and managing agents need door entry and communal fire detection for blocks of flats. The two main employment areas, Templefields in the north and The Pinnacles in the west, have industrial, logistics and office premises that need yard and perimeter CCTV, intruder detection and commercial fire alarms to BS 5839-1. In Old Harlow and Harlow\'s other conservation areas, external equipment should be sited discreetly.',
+    commercial:
+      'Harlow\'s two main employment areas are Templefields in the north, with around 80,000 square metres of mostly industrial and logistics floorspace, and The Pinnacles in the west, with modern industrial units for production, distribution and offices. Burnt Mill has warehousing and workshops, and Harlow Enterprise Zone covers Kao Park, Harlow Science Park and part of Templefields. The town centre, the first in a new town to be built around a pedestrian precinct, includes the Harvey Centre, Broad Walk and the Water Gardens, and each neighbourhood has its own centre. Industrial and logistics sites need external CCTV, perimeter detection and BS 5839-1 fire alarm systems with a servicing contract. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Mark Hall',
+        note: 'Mark Hall North, the first neighbourhood, was complete by 1954 and is now a conservation area; it includes The Lawn, Britain\'s first residential tower block. Mark Hall South followed. Terraces and flats where rear-door protection and communal door entry matter.',
+      },
+      {
+        name: 'Old Harlow',
+        note: 'The original market settlement, with a conservation area and Victorian and Edwardian houses along Bury Road, New Road and Park Hill. Discreet external equipment suits the setting.',
+      },
+      {
+        name: 'Netteswell',
+        note: 'One of the first neighbourhoods, nearing completion by 1954, and home to Harlow Town Park, laid out by Frederick Gibberd and Sylvia Crowe.',
+      },
+      {
+        name: 'Potter Street',
+        note: 'A former hamlet in the east of the town, named after the pottery once made there, enlarged into a new-town neighbourhood in the 1950s.',
+      },
+      {
+        name: 'Great Parndon',
+        note: 'A former parish in the south-west, under construction as a neighbourhood in 1960.',
+      },
+      {
+        name: 'Church Langley',
+        note: 'A planned extension completed in 2005, of newer houses where wired and wireless systems are both straightforward to fit.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Do you install alarms on Harlow\'s new-town estates?',
+        answer:
+          'Yes. Harlow\'s neighbourhoods were built in sequence, from Mark Hall North in the early 1950s to Church Langley in 2005, and much of the housing is terraced. We cover the front and rear doors and ground-floor windows, and wireless systems avoid disturbing decorated interiors. For blocks of flats we install door entry, access control and communal fire detection.',
+      },
+      {
+        question: 'Do you cover businesses at Templefields and The Pinnacles?',
+        answer:
+          'Yes. Templefields and The Pinnacles are Harlow\'s two main employment areas. Typical work is external CCTV covering yards and loading areas, intruder detection graded to the contents, and BS 5839-1 fire alarm systems with a 6-monthly servicing contract. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+      },
+      {
+        question: 'Can you fit security to a house in Old Harlow or another conservation area?',
+        answer:
+          'Yes. Harlow has 10 conservation areas, including Old Harlow, Mark Hall North and Churchgate Street, which also has an Article 4 Direction. We site sounders and cameras discreetly and use wireless systems where cabling would disturb older fabric. If you are unsure whether a change to the outside of the property needs consent, check with Harlow Council\'s planning team before any external equipment is fitted.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Fire Alarms in Harlow',
+    metaDescription:
+      'Security installers covering Harlow, Old Harlow, Mark Hall, Church Langley, Templefields and The Pinnacles. Burglar alarms, CCTV and fire alarms.',
+    extraKeywords: [
+      'burglar alarms harlow',
+      'cctv installation harlow',
+      'fire alarms harlow',
+      'fire alarm maintenance harlow',
+      'alarm installers harlow',
+      'security company harlow',
+      'cctv templefields harlow',
+    ],
   },
   epping: {
-    description: 'A market town at the southern edge of Epping Forest in West Essex, Epping serves as a gateway to the forest and is the terminus of the Central Line. The town has a mix of period residential properties and small businesses, with many homeowners investing in home security.',
-    population: '~12,000',
-    commuting: 'Central Line to Central London (Bank/Liverpool Street area in ~50 minutes).',
-    whyLocal: 'We regularly cover Epping CM16 and the surrounding Essex villages. Many of our customers in this area are looking for wireless alarm systems suitable for older and listed properties.',
-    residential: ['Epping', 'Theydon Bois', 'North Weald', 'Coopersale', 'Thornwood', 'Toot Hill'],
+    description:
+      'A market town at the northern end of Epping Forest in West Essex, at the eastern end of the Central line and home to the offices of Epping Forest District Council. Its High Street is lined with listed buildings, most from the 18th century, and hosts a weekly market, with period houses at the core of the town and later housing around it.',
+    commuting: 'Central line from Epping, at the eastern end of the line, and from Theydon Bois.',
+    whyLocal:
+      'Our engineers work across Epping CM16 and the villages around it, including Coopersale, Theydon Bois and North Weald. Wireless systems suit the town\'s older and listed buildings.',
+    residential: ['Epping', 'Coopersale', 'Bell Common', 'Theydon Bois', 'North Weald', 'Thornwood'],
+    propertyStock:
+      'Epping stayed compact for a long time: on the 1873 Ordnance Survey map the town barely extended beyond its present conservation area. The High Street and Lindsey Street core has cottages and townhouses built between the 16th and 20th centuries, and by the end of the 19th century the High Street was lined with 26 coaching inns. The railway reached Epping in 1865, and by the early 20th century new houses had been built on Station Road and on roads laid out in the late 19th century, such as St John\'s Road, Hartland Road and Kendal Avenue. In the 1960s and 1970s housing estates were built around the town, including Theydon Grove from 1964, and blocks of flats followed on Hemnall Street and Station Road. The Local Plan allocates land south of the town for at least 450 new homes. A listed High Street building and a 1960s estate house need quite different approaches, which is why we survey before quoting.',
+    securityContext:
+      'Epping\'s older properties set the tone. Listed buildings and period cottages in the town centre and around Bell Common need wireless systems that avoid disturbing historic fabric, with external sounders and cameras sited carefully in the conservation areas. The late Victorian and Edwardian houses built around the edges of the old town, and the post-war estates, are more straightforward, though detached and semi-detached houses still need side and rear access covered. Shops on the High Street need intruder alarms and CCTV positioned for identification at the doors, and blocks of flats need door entry and communal fire detection.',
+    commercial:
+      'Epping\'s commerce is concentrated on the High Street, a conservation area lined with listed buildings, where a weekly market has been held since a charter of 1253 and now runs every Monday with around 55 stalls. Some of the old coaching inns survive as pubs, such as The Thatched House, The George and Dragon and The Black Lion, and the Civic Offices of Epping Forest District Council are on the High Street. North Weald Airfield, a general aviation airfield owned by the district council, hosts a large Saturday market. Shops, pubs and offices need intruder alarms, CCTV and fire detection sized against the fire risk assessment. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Epping Town Centre',
+        note: 'The High Street and Lindsey Street core, a conservation area of listed buildings from the 16th to the 20th centuries, most of them 18th century, with the Monday market. Wireless alarms and discreet external equipment suit the listed buildings.',
+      },
+      {
+        name: 'Station Road and St John\'s Road',
+        note: 'Late Victorian and Edwardian streets around the edges of the old town, built up by the early 20th century after the railway arrived in 1865. Period houses with side and rear access to cover.',
+      },
+      {
+        name: 'Bell Common',
+        note: 'A conservation area on the edge of the forest, with two groups of 19th-century cottages on the High Road built for workers on the Copped Hall estate.',
+      },
+      {
+        name: 'Coopersale',
+        note: 'A village of about a thousand people, separated from Epping by forest land but part of the parish, with the Coopersale Street conservation area to the south-east.',
+      },
+      {
+        name: 'Theydon Bois',
+        note: 'A separate village and parish in CM16 with its own Central line station, which grew after the railway arrived in 1865.',
+      },
+      {
+        name: 'North Weald',
+        note: 'A separate parish in CM16, home to North Weald Airfield, established in 1916 and home to 56 Squadron\'s Hurricanes in the Battle of Britain period.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Can you fit an alarm to a listed building in Epping?',
+        answer:
+          'Yes. Epping High Street is a conservation area lined with listed buildings, most of them from the 18th century. Wireless intruder alarms avoid chasing cables into historic walls, and we site sounders and cameras as discreetly as the building allows. Listed building consent can be needed for changes to a listed building, so check with Epping Forest District Council before any external equipment is fitted.',
+      },
+      {
+        question: 'Do you cover Theydon Bois, North Weald and Coopersale?',
+        answer:
+          'Yes. We cover Epping and the villages around it, including Coopersale, Theydon Bois, North Weald and Thornwood, for burglar alarms, CCTV, fire alarms and access control.',
+      },
+      {
+        question: 'Do you install security for shops and pubs on Epping High Street?',
+        answer:
+          'Yes. We install intruder alarms, CCTV positioned for identification at the doors, and fire alarm systems sized against the fire risk assessment, with a servicing contract. J&L Security is BAFE accredited for the installation and maintenance of fire alarms. We are also SSAIB approved.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Fire Alarms in Epping CM16',
+    metaDescription:
+      'Security installers covering Epping, Coopersale, Bell Common, Theydon Bois and North Weald. Wireless alarms for listed buildings, CCTV and fire alarms.',
+    extraKeywords: [
+      'burglar alarms epping',
+      'cctv installation epping',
+      'fire alarms epping',
+      'alarm installers theydon bois',
+      'burglar alarms north weald',
+      'security company epping',
+    ],
   },
   islington: {
     description: 'A central inner London borough running from the City fringes at Angel up through Highbury and Holloway. Islington combines high-density Georgian and Victorian terraced housing with a dense commercial base of offices, restaurants, and independent retail along Upper Street and Old Street. Demand is driven by high-value residential properties, owner-managed businesses, and small commercial premises that need straightforward, reliable security without disruption.',
@@ -458,25 +961,212 @@ const locationExtended: Record<string, LocationExtended> = {
     residential: ['Hammersmith Broadway', 'Brook Green', 'Ravenscourt Park', 'Shepherd\'s Bush', 'Olympia', 'West Kensington'],
   },
   battersea: {
-    description: 'A South West London area in the London Borough of Wandsworth, covering Battersea, Nine Elms, and the south bank of the Thames opposite Pimlico. Battersea has been substantially redeveloped in the past decade with the Power Station regeneration and the Northern Line extension to Battersea Power Station; the area combines new-build apartments, period mansion blocks, and commercial premises along the riverside. Wireless intruder alarms and access control for new-build blocks are core demand.',
-    population: '~75,000',
-    commuting: 'Northern Line from Battersea Power Station and Nine Elms; Clapham Junction main-line; Overground.',
-    whyLocal: 'We extend our coverage to Battersea SW8 and SW11 for residential customers in the Power Station and Nine Elms developments, period mansion blocks across Battersea Square, and commercial premises along the riverside.',
-    residential: ['Battersea Park', 'Nine Elms', 'Clapham Junction', 'Battersea Square', 'Queenstown', 'Wandsworth'],
+    description:
+      'Battersea, Nine Elms, Vauxhall and South Lambeth lie across the London Boroughs of Wandsworth and Lambeth. Along the river between them is the Vauxhall, Nine Elms and Battersea Opportunity Area, where more than 10,000 new homes have been completed since it was designated in 2004. The Battersea Power Station redevelopment, the US Embassy and the Northern line extension sit alongside Victorian terraces, mansion blocks and council estates, so the area combines new-build apartments, period homes and commercial premises.',
+    population: 'SW8 38,648 and SW11 81,336 (Census 2021)',
+    commuting: 'Northern line from Battersea Power Station and Nine Elms; Victoria line and National Rail from Vauxhall; National Rail and London Overground from Clapham Junction.',
+    whyLocal:
+      'Our engineers travel to Battersea, Nine Elms, Vauxhall and South Lambeth (SW8 and SW11) from our base in Brentwood, for residential customers in the new developments and period homes, and for commercial premises.',
+    residential: ['Battersea Park', 'Nine Elms', 'Vauxhall', 'South Lambeth', 'Battersea Square', 'Clapham Junction'],
+    propertyStock:
+      'The area\'s housing runs from the 17th century to the 2020s. Old Battersea House, of 1699, survives by the original village at Battersea Square, and South Lambeth has 19th-century middle-class terraces and villas in the Albert Square and Lansdowne Gardens conservation areas. In the Victorian period, Park Town was laid out on Queenstown Road from 1863, the Shaftesbury Park Estate of two-storey workers\' cottages was built between 1873 and 1877, and five-storey mansion blocks went up facing Battersea Park, which opened in 1858. The Latchmere Estate of 1903 was the first council estate in the country built by a council\'s own workforce. Large post-war estates followed across north Battersea, and since 2004 more than 10,000 new homes have been built in the Opportunity Area, including over 2,200 so far at Battersea Power Station. A Victorian cottage on the Shaftesbury Park Estate and an apartment at Nine Elms call for different systems, so we survey before quoting.',
+    securityContext:
+      'Three kinds of property set the requirements. In the new developments at Nine Elms and Battersea Power Station, apartments sit in managed blocks with controlled entrances and communal areas, so access control, door entry and communal fire detection lead, along with maintenance of the systems installed at completion. In the Victorian and Edwardian houses and mansion flats, wireless intruder alarms avoid disturbing period interiors, and ground-floor flats need their windows and rear access covered. Many of these streets are in conservation areas, including Battersea Park, Park Town, Shaftesbury Park Estate, Vauxhall and Albert Square, so external sounders and cameras should be sited discreetly. Shops, offices and industrial premises, from Clapham Junction to the Queenstown Road industrial area, need CCTV, intruder alarms and commercial fire alarms to BS 5839-1.',
+    commercial:
+      'Clapham Junction is a major town centre around what the London Plan calls Europe\'s busiest rail interchange station, with Victorian and Edwardian shop terraces on St John\'s Road, St John\'s Hill and Lavender Hill. Battersea Power Station reopened in 2022 as a shopping, leisure and office destination, including Apple\'s UK headquarters, beside the new Electric Boulevard high street. New Covent Garden Market at Nine Elms, a fruit, vegetable and flower wholesale market, has around 130 businesses on 38 acres, and Queenstown Road is a Strategic Industrial Location. Retail, office and wholesale premises need CCTV, access control and intruder alarms, and commercial fire alarm systems to BS 5839-1. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Battersea Park',
+        note: 'Mansion blocks and period houses around the park, which opened in 1858 and is a Grade II* registered landscape, in the Battersea Park conservation area. Wireless alarms suit the mansion flats.',
+      },
+      {
+        name: 'Battersea Power Station and Nine Elms',
+        note: 'The redeveloped Power Station, reopened in 2022, and the riverside apartments of Nine Elms, served by Northern line stations since 2021, with the US Embassy on Nine Elms Lane. Access control and communal fire detection lead.',
+      },
+      {
+        name: 'Vauxhall',
+        note: 'An 18th and 19th-century mixed residential and commercial area around Kennington Lane and Harleyford Road, in Lambeth, now with a cluster of towers such as St George Wharf. Door entry in the towers and discreet systems in the conservation area.',
+      },
+      {
+        name: 'South Lambeth',
+        note: '19th-century terraces and villas in the Albert Square, Lansdowne Gardens and South Lambeth Road conservation areas, in Lambeth. Wireless intruder alarms avoid disturbing period interiors.',
+      },
+      {
+        name: 'Park Town',
+        note: 'A Victorian planned estate built along Queenstown Road between 1863 and the eve of the First World War, now a conservation area.',
+      },
+      {
+        name: 'Shaftesbury Park and Clapham Junction',
+        note: 'Two-storey workers\' cottages of 1873 to 1877 off Lavender Hill, and the Victorian and Edwardian shop terraces of Clapham Junction, both conservation areas.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Do you install access control in new-build blocks at Nine Elms and Battersea Power Station?',
+        answer:
+          'Yes. We install, maintain and take over access control, door entry and communal fire detection for managed residential blocks. When we take over a system installed at completion, we survey the equipment first and confirm what can be kept.',
+      },
+      {
+        question: 'Do you cover Vauxhall and South Lambeth as well as Battersea?',
+        answer:
+          'Yes. We cover SW8 and SW11, including Battersea, Nine Elms, Vauxhall and South Lambeth, across the London Boroughs of Wandsworth and Lambeth. Our engineers travel from our base in Brentwood, and we agree an appointment time with you when you call.',
+      },
+      {
+        question: 'Can you fit a burglar alarm to a mansion flat or period house in Battersea?',
+        answer:
+          'Yes. For mansion flats near Battersea Park and period houses in areas such as Park Town and the Shaftesbury Park Estate, wireless intruder alarms avoid chasing cables into decorated walls. Many of these streets are conservation areas, so we site sounders and cameras discreetly. If you are unsure whether a change to the outside of the property needs consent, check with Wandsworth or Lambeth Council\'s planning team before any external equipment is fitted.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Access Control, Battersea',
+    metaDescription:
+      'Security installers covering Battersea, Nine Elms, Vauxhall and South Lambeth (SW8, SW11). Burglar alarms, CCTV, access control and fire alarms. SSAIB and BAFE.',
+    extraKeywords: [
+      'burglar alarms battersea',
+      'cctv installation battersea',
+      'access control nine elms',
+      'burglar alarms vauxhall',
+      'security systems south lambeth',
+      'door entry systems battersea',
+      'fire alarms battersea',
+    ],
   },
   fulham: {
-    description: 'A high-value residential area in the south of the London Borough of Hammersmith and Fulham, with a strong period housing stock and an active small-commercial sector along North End Road and Fulham Road. Fulham is a settled residential market with insurance-driven demand for monitored, inspectorate-approved alarms, and a steady commercial requirement for CCTV and access control along the main retail streets.',
-    population: '~85,000',
-    commuting: 'District Line; Overground from West Brompton; Imperial Wharf and Fulham Broadway National Rail.',
-    whyLocal: 'Our engineers cover Fulham SW6 and SW10 routinely. Wireless Grade 2 packages suit the period terraces and converted flats, and our SSAIB approval supports customers with insurance policies that require an inspectorate-approved system.',
-    residential: ['Fulham Broadway', 'Parsons Green', 'Sands End', 'Imperial Wharf', 'Bishops Park', 'West Brompton'],
+    description:
+      'A residential area in the south of the London Borough of Hammersmith and Fulham, covering Fulham Broadway, Parsons Green, Sands End, Imperial Wharf, Chelsea Harbour and the Fulham side of West Brompton. Its housing is mainly Victorian and Edwardian terraces, many divided into flats, with riverside apartment developments and shops along North End Road and Fulham Road.',
+    commuting: 'District line from Fulham Broadway, Parsons Green and Putney Bridge; London Overground and Southern from Imperial Wharf and West Brompton.',
+    whyLocal:
+      'Our engineers travel to Fulham SW6 and SW10 from our base in Brentwood. Wireless Grade 2 packages suit the period terraces and converted flats, and our SSAIB approval supports customers with insurance policies that require an inspectorate-approved system.',
+    residential: ['Fulham Broadway', 'Parsons Green', 'Sands End', 'Imperial Wharf', 'Chelsea Harbour', 'Bishops Park'],
+    propertyStock:
+      'Fulham is mostly Victorian and Edwardian, long roads of terraced houses, with 1960s council estates in the north such as the West Kensington, Gibbs Green and Clem Attlee estates. Around Parsons Green most of the housing was in place by the 1890s, alongside the arrival of the District Railway: mainly Victorian terraces around a triangular green that keeps its village character, with a few older houses on New Kings Road dating from 1795. South Fulham has two-storey terraces in long streets and post-war estates, while the riverside has changed from industry to housing: Chelsea Harbour, granted planning permission in 1986, Imperial Wharf, and King\'s Road Park on the former Fulham Gasworks, planned for more than 1,800 homes around a Grade II listed gasholder. A converted Victorian terrace and a riverside apartment need different systems, so we survey before quoting.',
+    securityContext:
+      'Where Fulham\'s period terraces have been divided into flats, each flat needs its own entry points covered and the shared front door needs door entry that works. Where a house is still a single home, wireless intruder alarms avoid disturbing decorated interiors, and the rear of the house needs covering as well as the front. About half of Hammersmith and Fulham is covered by conservation areas, including Parsons Green, Sands End and Walham Green in Fulham, so external sounders and cameras should be sited discreetly. The riverside developments at Imperial Wharf, Chelsea Harbour and King\'s Road Park are managed blocks where access control and communal fire detection lead. Shops on North End Road and Fulham Road need CCTV positioned for identification at the doors.',
+    commercial:
+      'Fulham\'s town centre is around Fulham Broadway, with the Fulham Broadway Shopping Centre and the North End Road market, which trades six days a week and is known for fresh fruit and vegetables. Fulham Road runs past Stamford Bridge, home of Chelsea Football Club since 1905 and, despite its name, in Hammersmith and Fulham. Along the river, South Fulham Riverside mixes housing with commercial, industrial and retail uses, and the Design Centre at Chelsea Harbour is a design trade centre. Retail and hospitality premises need shopfront CCTV and intruder alarms, and larger commercial buildings need access control and BS 5839-1 fire alarm systems. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Parsons Green',
+        note: 'Mainly Victorian terraces around a triangular green with a village character, a conservation area since 1975, running towards Eel Brook Common. Wireless alarms suit the period houses.',
+      },
+      {
+        name: 'Fulham Broadway',
+        note: 'The town centre, formerly Walham Green, with the shopping centre, the North End Road market and Victorian and Edwardian streets around it. Shopfront CCTV and door entry for flats.',
+      },
+      {
+        name: 'Sands End',
+        note: 'South Fulham by the river, with some 300-year-old cottages, 19th-century streets and two-storey terraces, much of it in the Sands End conservation area, and King\'s Road Park on the former gasworks.',
+      },
+      {
+        name: 'Imperial Wharf',
+        note: 'A riverside development on former industrial land, with its own London Overground station since 2009. Managed apartment blocks where access control and communal fire detection lead.',
+      },
+      {
+        name: 'Chelsea Harbour',
+        note: 'Despite its name, in Hammersmith and Fulham: apartments, a marina, the Design Centre and a hotel, granted planning permission in 1986. Access control and CCTV for managed buildings.',
+      },
+      {
+        name: 'West Brompton',
+        note: 'Straddles the boundary with Kensington and Chelsea. On the Fulham side, the Billings and Brompton Cutting conservation area follows the railway cutting north from Stamford Bridge; Brompton Cemetery, The Boltons and West Brompton station are on the Kensington and Chelsea side, covered on our Chelsea and Kensington page.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Do you cover Parsons Green, West Brompton and Chelsea Harbour?',
+        answer:
+          'Yes. We cover Fulham SW6 and the Hammersmith and Fulham part of SW10, including Parsons Green, Fulham Broadway, Sands End, Imperial Wharf, Chelsea Harbour and the Fulham side of West Brompton. Our engineers travel from our base in Brentwood, and we agree an appointment time with you when you call.',
+      },
+      {
+        question: 'Can you fit an alarm to a converted Victorian house in Fulham?',
+        answer:
+          'Yes. Where a terrace has been divided into flats, we protect each flat\'s own entry points and can fit door entry for the shared front door. Wireless intruder alarms avoid disturbing decorated interiors. Parsons Green and other parts of Fulham are conservation areas, so we site sounders and cameras discreetly. If you are unsure whether a change to the outside of the property needs consent, check with Hammersmith and Fulham Council\'s planning team before any external equipment is fitted.',
+      },
+      {
+        question: 'Do you install access control in riverside developments at Imperial Wharf and King\'s Road Park?',
+        answer:
+          'Yes. We install, maintain and take over access control, door entry and communal fire detection for managed residential blocks, and survey any existing system first to confirm what can be kept.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Fire Alarms in Fulham',
+    metaDescription:
+      'Security installers covering Fulham, Parsons Green, Sands End, Imperial Wharf and Chelsea Harbour (SW6, SW10). Burglar alarms, CCTV and fire alarms.',
+    extraKeywords: [
+      'burglar alarms fulham',
+      'burglar alarms sands end',
+      'burglar alarms parsons green',
+      'cctv installation fulham',
+      'fire alarms fulham',
+      'access control imperial wharf',
+      'security company fulham',
+    ],
   },
   streatham: {
-    description: 'A South London area straddling the boroughs of Lambeth and Wandsworth, with a long high street running from Streatham Hill through Streatham Common. Streatham combines large Victorian and Edwardian houses, converted flats, and an active commercial high street with strong demand for both residential intruder alarms and commercial CCTV. The high concentration of converted houses and shared accommodation also drives BS 5839-6 fire alarm requirements.',
-    population: '~70,000',
-    commuting: 'National Rail from Streatham, Streatham Hill, and Streatham Common; Victoria Line via Brixton.',
-    whyLocal: 'We work regularly across Streatham SW2 and SW16, with installations covering wireless intruder alarms for residential customers, BS 5839-6 fire alarms for HMOs and shared accommodation, and commercial CCTV and access control along the high street.',
-    residential: ['Streatham Hill', 'Streatham Common', 'Streatham Vale', 'Norbury', 'Furzedown', 'Tooting Bec'],
+    description:
+      'A South London area mostly in the London Borough of Lambeth, with the Streatham Park and Furzedown side in Wandsworth, and a long high street running from Streatham Hill through to Streatham Common. Streatham combines large Victorian and Edwardian houses, converted flats and interwar mansion blocks with an active commercial high street. This page also covers Brixton Hill, Tulse Hill and Clapham Park, which lie wholly or partly in SW2.',
+    commuting: 'National Rail from Streatham, Streatham Hill, Streatham Common and Tulse Hill; Victoria line at Brixton and Northern line at Tooting Bec.',
+    whyLocal:
+      'Our engineers travel to Streatham, Brixton Hill, Tulse Hill and Clapham Park (SW2 and SW16) from our base in Brentwood, for wireless intruder alarms in period homes, BS 5839-6 fire alarms for HMOs and shared housing, and commercial CCTV and access control along the high street.',
+    residential: ['Streatham Hill', 'Streatham Common', 'Streatham Vale', 'Brixton Hill', 'Tulse Hill', 'Clapham Park'],
+    propertyStock:
+      'Streatham and its neighbours were built across a century and a half. Brixton Hill has early 19th-century town houses, and Tulse Hill had a continuous line of detached villas by 1843, many later replaced by council housing. Streatham High Road is mostly late 19th century, Telford Park was laid out between 1878 and 1882, and the Leigham Court Estate was built by the Artizans, Labourers and General Dwellings Company between 1889 and 1928 as long terraces of purpose-built flats and houses. The Hyde Farm Estate, near Clapham Park, followed between 1896 and 1916. In the 1930s large blocks of flats went up along the High Road and on Brixton Hill, such as Tudor Close of 1933, and the Tulse Hill estate was begun in the mid-1930s. Clapham Park, first laid out by Thomas Cubitt from 1825, was largely rebuilt by the London County Council and is now being regenerated by Metropolitan Thames Valley Housing, which reported 843 homes completed or started there since 2022 as of October 2025. A mansion flat, a model-dwelling terrace and a new apartment each need a different specification, so we survey before quoting.',
+    securityContext:
+      'Where Streatham\'s large Victorian and Edwardian houses have been converted into flats or shared homes, door entry and fire detection for the shared areas come into the specification, along with BS 5839-6 fire alarm systems where a property is let as an HMO. Houses still in single occupation need wireless intruder alarms that avoid disturbing period interiors, with side and rear access covered. The interwar mansion blocks along the High Road and Brixton Hill need door entry and access control for their shared entrances. The area has many conservation areas, including Streatham High Road and Streatham Hill, Telford Park, Leigham Court Estate and Rush Common and Brixton Hill, so external equipment should be sited discreetly. Shops along the high street need CCTV positioned for identification at the doors.',
+    commercial:
+      'Streatham and Brixton are both major town centres in the London Plan, and West Norwood and Tulse Hill a district centre. Streatham High Road, running from Streatham Hill to Streatham Common, has shops, cinemas, churches and public buildings, including the Tate library and St Leonard\'s Church, whose original building dates from the 1350s. Brixton Hill has shopping parades and late Victorian pubs, and the Streatham Hub beside Streatham station brought a new leisure centre and a supermarket with flats above. Shops, pubs and leisure premises need shopfront CCTV, intruder alarms and fire detection sized against the fire risk assessment. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Streatham Hill',
+        note: 'Early and mid 20th-century shops, entertainment buildings and mansion blocks along Streatham Hill, with the Telford Park and Leigham Court Estate conservation areas behind. Door entry for mansion blocks and wireless alarms for period houses.',
+      },
+      {
+        name: 'Streatham Common',
+        note: '19th-century houses around the common and The Rookery gardens, opened to the public in 1913, in the Streatham Common conservation area.',
+      },
+      {
+        name: 'Streatham Park',
+        note: 'Queen Anne-style houses from the 1880s to the interwar period, many overlooking Tooting Bec Common, on both the Lambeth and Wandsworth sides.',
+      },
+      {
+        name: 'Brixton Hill',
+        note: 'Early 19th-century town houses, Victorian terraces and 1930s blocks of flats such as Tudor Close along the A23, in the Rush Common and Brixton Hill conservation area.',
+      },
+      {
+        name: 'Tulse Hill',
+        note: 'A Lambeth district of 1930s and later council estates, including the Tulse Hill estate, beside Brockwell Park, with a Southern and Thameslink station.',
+      },
+      {
+        name: 'Clapham Park',
+        note: 'Thomas Cubitt\'s estate of 1825 onwards, largely rebuilt by the London County Council and now being regenerated by Metropolitan Thames Valley Housing, with the Edwardian Hyde Farm Estate nearby.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Do you cover Brixton Hill, Tulse Hill and Clapham Park as well as Streatham?',
+        answer:
+          'Yes. We cover SW2 and SW16, including Streatham Hill, Streatham Common, Streatham Vale, Brixton Hill, Tulse Hill and Clapham Park. Our engineers travel from our base in Brentwood, and we agree an appointment time with you when you call.',
+      },
+      {
+        question: 'Do you fit BS 5839-6 fire alarms in converted houses and HMOs in Streatham?',
+        answer:
+          'Yes. Where a house has been converted into flats or is let as an HMO, we design and install BS 5839-6 fire alarm systems to the grade and category set by the fire risk assessment and the council\'s licensing schedule, and we can service them afterwards. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+      },
+      {
+        question: 'Can you fit door entry to a mansion block on Streatham High Road or Brixton Hill?',
+        answer:
+          'Yes. We install, maintain and take over door entry and access control for blocks of flats, including the interwar mansion blocks along Streatham High Road and Brixton Hill, and survey any existing system first to confirm what can be kept.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Fire Alarms in Streatham',
+    metaDescription:
+      'Security installers covering Streatham, Streatham Hill, Brixton Hill, Tulse Hill and Clapham Park (SW2, SW16). Burglar alarms, CCTV and fire alarms.',
+    extraKeywords: [
+      'burglar alarms streatham',
+      'fire detection system streatham',
+      'cctv installation streatham',
+      'burglar alarms brixton hill',
+      'alarm installers tulse hill',
+      'door entry systems streatham',
+      'fire alarms streatham',
+    ],
   },
   finchley: {
     description: 'A North London suburban area in the London Borough of Barnet, covering Finchley Central, North Finchley, East Finchley, and Whetstone. Finchley has a high proportion of family homes, period semi-detached and detached houses, and converted flats, alongside a steady commercial high street. Demand is led by residential intruder alarms for family homes and converted flats, with insurance-driven preference for monitored systems where contents values are higher.',
@@ -492,6 +1182,146 @@ const locationExtended: Record<string, LocationExtended> = {
     whyLocal: 'We extend our coverage across the Barnet borough EN4, EN5, and N20. The area\'s family homes and high-value residential stock suit wireless Grade 2 packages with monitored options, and we provide SSAIB-approved installations for customers whose insurance policies require an inspectorate-approved alarm.',
     residential: ['High Barnet', 'New Barnet', 'Cockfosters', 'Hadley Wood', 'Totteridge', 'Whetstone'],
   },
+  clapham: {
+    description:
+      'Clapham lies mostly in the London Borough of Lambeth, with part of Clapham Common and its western side in Wandsworth. This page also covers Stockwell and the Oval side of Kennington in SW9, and Balham in SW12, which is in Wandsworth. The area runs from Georgian and Regency houses around Clapham Common to Victorian terraces, mansion flats and post-war estates, with busy high streets at Clapham High Street, Stockwell and Balham.',
+    commuting: 'Northern line from Clapham North, Clapham Common, Clapham South, Stockwell, Oval and Balham; Victoria line from Stockwell; London Overground from Clapham High Street and Wandsworth Road; Southern from Balham.',
+    whyLocal:
+      'Our engineers travel to Clapham, Stockwell, Oval and Balham from our base in Brentwood, for burglar alarms, CCTV, fire alarms and access control in homes, blocks of flats and businesses.',
+    residential: ['Clapham Old Town', 'Clapham North', 'Abbeville', 'Stockwell', 'Oval', 'Balham'],
+    propertyStock:
+      'Around Clapham Common and the Old Town are large Queen Anne, Georgian and Regency houses, such as 113 North Side, built in 1763, and Holy Trinity Church on the common dates from 1776. Stockwell developed in the 19th century as an elegant middle-class suburb, and the villas of Stockwell Park were mostly built between 1825 and 1840, while the terraced streets of Kennington, around the Oval, developed from the late 18th century onwards. Later in the 19th century came the grid of Victorian streets around Abbeville Road and the terraces of Albert Square and Larkhall. Balham grew after the railway arrived in 1856, with the early Edwardian Dinsmore Road estate; to the south, towards Tooting Bec Common and in SW17, are the Heaver Estate of about 1890 to 1910 and Du Cane Court, a 1930s block of 676 flats. Clapham has social housing on estates from the 1930s and 1960s, and Stockwell\'s post-war estates include Stockwell Park, Lansdowne Green and Spurgeon. A Georgian house on the common and a flat on a 1960s estate need very different systems, so we survey before quoting.',
+    securityContext:
+      'Where a large period house has been divided into flats, each flat needs its own entry points covered and the shared front door needs door entry; where it remains one home, wireless intruder alarms avoid disturbing decorated interiors, and side and rear access need covering as well as the front. The mansion blocks of Clapham Common North Side, such as Grove Mansions of 1896, and of Balham, such as Du Cane Court, need door entry and access control for their shared entrances. Much of the area is in conservation areas, from Clapham and Stockwell Park in Lambeth to Clapham Common, Heaver Estate and Nightingale Lane in Wandsworth, so external equipment should be sited discreetly. On the high streets, shops and restaurants need CCTV and intruder alarms, and fire detection sized against the fire risk assessment.',
+    commercial:
+      'Clapham High Street, Stockwell and Balham are all district town centres in the London Plan. Clapham High Street began as 18th and early 19th-century houses converted to shops, with whole new blocks added in the late 19th and early 20th centuries. The Old Town, Abbeville Road and Nightingale Lane have smaller parades, Venn Street has a cinema, restaurants and a weekend food market, and Balham High Road grew into a commercial street of shops, banks and entertainment after the railway arrived in 1856. Retail and hospitality premises need shopfront CCTV, intruder alarms and fire detection sized against the fire risk assessment, and flats above shops need door entry. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Clapham Common and Old Town',
+        note: 'Georgian and Regency houses around the common and the Old Town, in the Clapham conservation area, with Holy Trinity Church of 1776 and the Grade II listed bandstand of 1890. Wireless alarms and discreet external equipment suit the setting.',
+      },
+      {
+        name: 'Clapham North and Larkhall',
+        note: '19th-century terraces either side of Clapham Road, including the Larkhall and Sibella Road conservation areas, near Clapham North and Clapham High Street stations.',
+      },
+      {
+        name: 'Abbeville',
+        note: 'A grid of late Victorian streets around Abbeville Road, with a parade of shops with flats above in the Abbeville Road conservation area.',
+      },
+      {
+        name: 'Stockwell',
+        note: 'An early 19th-century suburb whose villas survive in the Stockwell Park conservation area, with Albert Square and Lansdowne Gardens nearby and post-war estates. Northern and Victoria lines at Stockwell.',
+      },
+      {
+        name: 'Oval',
+        note: 'The part of Kennington around The Oval cricket ground, where SE11 meets SW8 and SW9, with terraced housing from the late 18th century onwards in the Kennington and St Marks conservation areas.',
+      },
+      {
+        name: 'Balham',
+        note: 'A Wandsworth town centre on Balham High Road, with the early Edwardian Dinsmore Road estate and the larger houses of Nightingale Lane, and Du Cane Court and the Heaver Estate to the south in SW17. Door entry for mansion blocks and wireless alarms for period houses.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Do you cover Stockwell, Oval and Balham as well as Clapham?',
+        answer:
+          'Yes. This page covers Clapham (SW4), Stockwell and the Oval side of Kennington (SW9), and Balham (SW12), across the London Boroughs of Lambeth and Wandsworth. Our engineers travel from our base in Brentwood, and we agree an appointment time with you when you call.',
+      },
+      {
+        question: 'Can you fit an alarm to a Georgian or Victorian house near Clapham Common?',
+        answer:
+          'Yes. Wireless intruder alarms avoid chasing cables into decorated walls, and we cover side and rear access as well as the front door. Much of the area around the common is in the Clapham and Clapham Common conservation areas, so we site sounders and cameras discreetly. If you are unsure whether a change to the outside of the property needs consent, check with Lambeth or Wandsworth Council\'s planning team before any external equipment is fitted.',
+      },
+      {
+        question: 'Do you install door entry for mansion blocks in Balham and Clapham?',
+        answer:
+          'Yes. We install, maintain and take over door entry and access control for blocks of flats, including mansion blocks, and survey any existing system first to confirm what can be kept.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Fire Alarms in Clapham',
+    metaDescription:
+      'Security installers covering Clapham, Stockwell, Oval and Balham (SW4, SW9, SW12). Burglar alarms, CCTV, door entry and fire alarms. SSAIB and BAFE.',
+    extraKeywords: [
+      'burglar alarm clapham',
+      'burglar alarms clapham',
+      'cctv installation clapham',
+      'burglar alarms balham',
+      'burglar alarms stockwell',
+      'door entry systems clapham',
+      'fire alarms clapham',
+      'alarm installers sw4',
+    ],
+  },
+  'chelsea-and-kensington': {
+    description:
+      'Chelsea, Brompton, Earl\'s Court, South Kensington and Knightsbridge lie in the south of the Royal Borough of Kensington and Chelsea, with part of Knightsbridge in the City of Westminster. The area is one of Georgian and Victorian terraces, garden squares, mews houses and mansion blocks, with the international shopping centre of Knightsbridge, the King\'s Road, and the museums of South Kensington.',
+    commuting: 'District, Circle and Piccadilly lines from South Kensington, Gloucester Road, Sloane Square, Earl\'s Court and Knightsbridge; District line and London Overground from West Brompton.',
+    whyLocal:
+      'Our engineers travel to Chelsea, Kensington and Knightsbridge from our base in Brentwood, for intruder alarms, CCTV, access control and fire alarms in period houses, mansion flats, mews houses and commercial premises.',
+    residential: ['Chelsea', 'Brompton', 'South Kensington', 'Earl\'s Court', 'West Brompton', 'Knightsbridge'],
+    propertyStock:
+      'Most of the area was laid out between the late 18th century and the late 19th, with rebuilding in parts of Chelsea up to the 1950s. Chelsea Common came first, from the late 18th century, together with Hans Town, which Henry Holland laid out around Sloane Street. Brompton Square followed in the 1820s, and in South Kensington the Thurloe Estate and Smith\'s Charity estate was built up from the 1830s, with Pelham Crescent between 1833 and 1838 and Thurloe Square from 1840 to 1846. The Boltons and Redcliffe Square, in West Brompton, were developed between 1850 and 1876 in an Italianate style, and Earl\'s Court was built up after the Metropolitan District Railway was authorised in 1864, with mansion blocks around Earl\'s Court Square in the 1890s. The result is a borough of terraces, villas, squares, crescents, mansion blocks and mews, where a high proportion of homes are flats, over 4,000 buildings are listed and there are more than 100 garden squares. A mews house, a stucco terrace and a mansion flat each need a different specification, so we survey before quoting.',
+    securityContext:
+      'Security here is shaped by the buildings\' age and value. Georgian and Victorian terraces and mews houses need intruder alarms that avoid disturbing period interiors, which usually means wireless systems or carefully concealed wiring, and cover for mews doors, basements and rear access as well as the front. Mansion blocks and converted houses need door entry and access control for shared entrances, and communal fire detection. Nearly three quarters of the Royal Borough is covered by its 38 conservation areas, and over 4,000 buildings are listed, so external sounders and cameras need careful, discreet siting, and consent may be needed for changes to a listed building. Shops, galleries and offices on the King\'s Road, Brompton Road and in South Kensington need CCTV, intruder alarms and commercial fire alarm systems to BS 5839-1.',
+    commercial:
+      'The Royal Borough\'s largest town centre is Knightsbridge, an international shopping centre anchored by Harrods on Brompton Road. The King\'s Road is a major centre, anchored at its eastern end by Peter Jones at Sloane Square and the Duke of York Square development, with the Royal Court, Cadogan Hall and the Saatchi Gallery nearby, while its western end is known for furniture and design retailers. South Kensington, Brompton Cross and Earl\'s Court Road are district centres, and South Kensington is the borough\'s cultural centre, home to the Victoria and Albert Museum, the Natural History Museum, the Science Museum and Imperial College. The Lots Road area by Chelsea Harbour is an employment zone. Premises range from department stores, shops and galleries to offices and institutions, and need CCTV, access control, intruder alarms and BS 5839-1 fire alarm systems with a servicing contract. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Chelsea',
+        note: 'Laid out from the early 19th century up to the 1950s, from small two-storey terraced houses to five-storey terraces and flats, with shops on the King\'s Road, Fulham Road and Walton Street. Wireless alarms and discreet external equipment suit the conservation areas.',
+      },
+      {
+        name: 'Royal Hospital',
+        note: 'Georgian and Victorian terraces between the King\'s Road and the Embankment, around the Royal Hospital, founded in 1682 and home of the Chelsea Flower Show since 1913.',
+      },
+      {
+        name: 'Brompton and Knightsbridge',
+        note: 'Brompton Square of the 1820s and grand houses on Brompton Road, with two-storey cottages and former mews behind, and Harrods. Part of Knightsbridge is in the City of Westminster.',
+      },
+      {
+        name: 'South Kensington',
+        note: 'The Thurloe Estate and Smith\'s Charity squares and crescents of the 1830s and 1840s, and Queen\'s Gate, where most of the 14 mews terraces are now homes, beside the museums.',
+      },
+      {
+        name: 'Earl\'s Court',
+        note: 'Terraces built after the District Railway, and 1890s mansion blocks around Earl\'s Court Square, with a range of property types and tenures. Door entry and access control for mansion blocks.',
+      },
+      {
+        name: 'West Brompton and The Boltons',
+        note: 'Italianate houses of 1850 to 1876 around The Boltons and Redcliffe Square, bounded by Brompton Cemetery, a Grade I registered landscape.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Can you fit an alarm to a listed house or mews house in Chelsea or Kensington?',
+        answer:
+          'Yes. Wireless intruder alarms, or carefully concealed wiring, avoid disturbing period interiors, and we cover mews doors and rear access as well as the front. Over 4,000 buildings in the Royal Borough are listed and nearly three quarters of it is in conservation areas, so check with Kensington and Chelsea Council\'s planning team whether consent is needed before any external equipment is fitted.',
+      },
+      {
+        question: 'Do you cover Earl\'s Court, South Kensington and Knightsbridge?',
+        answer:
+          'Yes. We cover SW3, SW5, SW7 and SW10, including Chelsea, Brompton, Earl\'s Court, South Kensington, West Brompton and Knightsbridge, on both the Kensington and Chelsea and the Westminster sides. Our engineers travel from our base in Brentwood, and we agree an appointment time with you when you call.',
+      },
+      {
+        question: 'Do you install door entry and access control in mansion blocks?',
+        answer:
+          'Yes. We install, maintain and take over door entry, access control and communal fire detection for mansion blocks and converted houses, and survey any existing system first to confirm what can be kept. J&L Security is BAFE accredited for the installation and maintenance of fire alarms. We are also SSAIB approved.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms & CCTV in Chelsea and Kensington',
+    metaDescription:
+      'Security installers covering Chelsea, Brompton, Earl\'s Court, South Kensington and Knightsbridge (SW3, SW5, SW7, SW10). Alarms, CCTV and access control.',
+    extraKeywords: [
+      'burglar alarms chelsea',
+      'burglar alarm chelsea',
+      'cctv installation chelsea',
+      'burglar alarms kensington',
+      'burglar alarms knightsbridge',
+      'access control chelsea',
+      'alarm installers south kensington',
+      'security company chelsea',
+    ],
+  },
 };
 
 const serviceIcons = {
@@ -502,26 +1332,34 @@ const serviceIcons = {
   'security-lighting': Lightbulb,
 } as const;
 
-const genericLocationFaqs = (locationName: string) => [
-  {
-    question: `Do you offer same-day security surveys in ${locationName}?`,
-    answer: `Yes. We offer free same-day security surveys across ${locationName} and the surrounding area. Call us before noon and we can usually arrange an afternoon visit.`,
-  },
-  {
-    question: `How quickly can you respond to an emergency alarm fault in ${locationName}?`,
-    answer: `For customers on our maintenance contract we aim to respond to emergency call-outs in ${locationName} within 2–4 hours, 24 hours a day, 7 days a week.`,
-  },
+const genericLocationFaqs = (locationName: string, noTimePromises = false) => [
+  ...(noTimePromises
+    ? []
+    : [
+        {
+          question: `Do you offer same-day security surveys in ${locationName}?`,
+          answer: `Yes. We offer free same-day security surveys across ${locationName} and the surrounding area. Call us before noon and we can usually arrange an afternoon visit.`,
+        },
+        {
+          question: `How quickly can you respond to an emergency alarm fault in ${locationName}?`,
+          answer: `For customers on our maintenance contract we aim to respond to emergency call-outs in ${locationName} within 2–4 hours, 24 hours a day, 7 days a week.`,
+        },
+      ]),
   {
     question: `What security systems do you install in ${locationName}?`,
     answer: `We install the full range of security systems in ${locationName}: burglar alarms (wired and wireless), CCTV, fire alarms (domestic and commercial), access control, door entry, and security lighting.`,
   },
   {
     question: `Are you based near ${locationName}?`,
-    answer: `J&L Security is based in Brentwood, Essex, giving us excellent coverage across ${locationName} and the surrounding areas. Our engineers work throughout Essex and Greater London daily.`,
+    answer: noTimePromises
+      ? `J&L Security is based in Brentwood, Essex. Our engineers travel to ${locationName} for surveys, installations and maintenance, and we agree an appointment time with you when you call.`
+      : `J&L Security is based in Brentwood, Essex, giving us excellent coverage across ${locationName} and the surrounding areas. Our engineers work throughout Essex and Greater London daily.`,
   },
   {
     question: `Do you provide maintenance contracts in ${locationName}?`,
-    answer: `Yes. We offer annual maintenance contracts for all systems we install in ${locationName}, covering regular servicing visits, priority emergency response, and software updates.`,
+    answer: noTimePromises
+      ? `Yes. We offer annual maintenance contracts for all systems we install in ${locationName}, covering regular servicing visits and software updates.`
+      : `Yes. We offer annual maintenance contracts for all systems we install in ${locationName}, covering regular servicing visits, priority emergency response, and software updates.`,
   },
   {
     question: `Do you install and service fire alarms in ${locationName}?`,
@@ -535,9 +1373,9 @@ const genericLocationFaqs = (locationName: string) => [
 
 // Town-specific questions lead, because they are the ones that answer a local
 // search. The generic set follows and is unchanged for towns without local FAQs.
-const locationFaqs = (locationName: string, ext?: LocationExtended) => [
+const locationFaqs = (locationName: string, ext?: LocationExtended, noTimePromises = false) => [
   ...(ext?.localFaqs ?? []),
-  ...genericLocationFaqs(locationName),
+  ...genericLocationFaqs(locationName, noTimePromises),
 ];
 
 // ─── Page component ──────────────────────────────────────────────────────────
@@ -589,7 +1427,7 @@ export default async function LocationPage({ params }: Props) {
   if (!location) notFound();
 
   const ext = locationExtended[locationSlug];
-  const faqs = locationFaqs(location.name, ext);
+  const faqs = locationFaqs(location.name, ext, location.noTimePromises);
 
   // Service-location pages for this area
   const localPages = serviceLocationMatrix.filter(
@@ -634,7 +1472,7 @@ export default async function LocationPage({ params }: Props) {
                 Security Systems in {location.name}
               </h1>
               <p className="text-xl text-primary-100 mb-8">
-                Professional burglar alarms, CCTV, fire alarms and access control, installed and maintained by local engineers across {location.name} and surrounding areas.
+                Professional burglar alarms, CCTV, fire alarms and access control, installed and maintained by {location.noTimePromises ? 'our engineers' : 'local engineers'} across {location.name} and surrounding areas.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex flex-col gap-1">
@@ -693,7 +1531,7 @@ export default async function LocationPage({ params }: Props) {
               {ext?.securityContext && (
                 <>
                   <h3 className="text-xl font-bold text-gray-900 mt-8 mb-3">
-                    What We Are Usually Asked to Do in {location.name}
+                    {location.noTimePromises ? `Typical Requirements in ${location.name}` : `What We Are Usually Asked to Do in ${location.name}`}
                   </h3>
                   <p className="text-gray-700 leading-relaxed mb-6">{ext.securityContext}</p>
                 </>
@@ -702,13 +1540,21 @@ export default async function LocationPage({ params }: Props) {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
                 <div className="bg-primary-50 rounded-xl p-5">
                   <Clock className="h-6 w-6 text-primary-600 mb-3" />
-                  <h3 className="font-semibold text-gray-900 mb-1">Same-Day Surveys</h3>
-                  <p className="text-sm text-gray-600">Free security assessments available today across {location.name}</p>
+                  <h3 className="font-semibold text-gray-900 mb-1">{location.noTimePromises ? 'Free Surveys' : 'Same-Day Surveys'}</h3>
+                  <p className="text-sm text-gray-600">
+                    {location.noTimePromises
+                      ? `No-obligation security assessments across ${location.name}, booked at a time that suits you`
+                      : `Free security assessments available today across ${location.name}`}
+                  </p>
                 </div>
                 <div className="bg-primary-50 rounded-xl p-5">
                   <Shield className="h-6 w-6 text-primary-600 mb-3" />
-                  <h3 className="font-semibold text-gray-900 mb-1">24/7 Emergency Cover</h3>
-                  <p className="text-sm text-gray-600">Round-the-clock emergency callouts for alarm faults and break-ins</p>
+                  <h3 className="font-semibold text-gray-900 mb-1">{location.noTimePromises ? 'Maintenance Contracts' : '24/7 Emergency Cover'}</h3>
+                  <p className="text-sm text-gray-600">
+                    {location.noTimePromises
+                      ? 'Servicing contracts for the alarm, CCTV, fire and access control systems we install'
+                      : 'Round-the-clock emergency callouts for alarm faults and break-ins'}
+                  </p>
                 </div>
                 <div className="bg-primary-50 rounded-xl p-5">
                   <CheckCircle className="h-6 w-6 text-primary-600 mb-3" />
@@ -717,8 +1563,12 @@ export default async function LocationPage({ params }: Props) {
                 </div>
                 <div className="bg-primary-50 rounded-xl p-5">
                   <MapPin className="h-6 w-6 text-primary-600 mb-3" />
-                  <h3 className="font-semibold text-gray-900 mb-1">Locally Based</h3>
-                  <p className="text-sm text-gray-600">Engineers working from our Brentwood base cover {location.name} daily</p>
+                  <h3 className="font-semibold text-gray-900 mb-1">{location.noTimePromises ? 'Based in Brentwood' : 'Locally Based'}</h3>
+                  <p className="text-sm text-gray-600">
+                    {location.noTimePromises
+                      ? `Our engineers travel from our Brentwood base to ${location.name}`
+                      : `Engineers working from our Brentwood base cover ${location.name} daily`}
+                  </p>
                 </div>
               </div>
             </div>
@@ -734,7 +1584,7 @@ export default async function LocationPage({ params }: Props) {
                     <span className="font-medium text-gray-700">County:</span>
                     <span className="text-gray-600 ml-2">{location.county}</span>
                   </div>
-                  {ext && (
+                  {ext?.population && (
                     <div>
                       <span className="font-medium text-gray-700">Population:</span>
                       <span className="text-gray-600 ml-2">{ext.population}</span>
@@ -787,7 +1637,9 @@ export default async function LocationPage({ params }: Props) {
                 Areas We Cover in and around {location.name}
               </h2>
               <p className="text-gray-600 text-lg">
-                What we are typically asked for varies street by street. These are the parts of {location.name} we work in most often, and the requirements that come up in each.
+                {location.noTimePromises
+                  ? `What is needed varies street by street. These are the parts of ${location.name} this page covers, and the requirements typical of each.`
+                  : `What we are typically asked for varies street by street. These are the parts of ${location.name} we work in most often, and the requirements that come up in each.`}
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -838,7 +1690,7 @@ export default async function LocationPage({ params }: Props) {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Security Services Available in {location.name}
             </h2>
-            <p className="text-gray-600 text-lg">All services installed and maintained by our local engineers</p>
+            <p className="text-gray-600 text-lg">All services installed and maintained by our {location.noTimePromises ? '' : 'local '}engineers</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => {
@@ -958,7 +1810,9 @@ export default async function LocationPage({ params }: Props) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Get a Free Security Survey in {location.name}</h2>
           <p className="text-xl mb-8 text-primary-100">
-            Our qualified engineers cover {location.name} and all surrounding areas. No-obligation assessment, with same-day appointments available.
+            {location.noTimePromises
+              ? `Our qualified engineers cover ${location.name} and the surrounding areas. No-obligation assessment, booked at a time that suits you.`
+              : `Our qualified engineers cover ${location.name} and all surrounding areas. No-obligation assessment, with same-day appointments available.`}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="flex flex-col gap-1">

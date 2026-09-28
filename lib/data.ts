@@ -77,14 +77,14 @@ export const locations: Location[] = [
     county: 'Greater London',
     postcode: 'IG1-IG6',
     nearbyAreas: ['Seven Kings', 'Goodmayes', 'Redbridge', 'Gants Hill'],
-    landmarks: ['Ilford Station', 'The Exchange Shopping Centre', 'Valentines Park']
+    landmarks: ['Ilford Station', 'Exchange Ilford', 'Valentines Park']
   },
   {
     id: 'romford',
     name: 'Romford',
     slug: 'romford',
     county: 'Greater London',
-    postcode: 'RM1-RM3',
+    postcode: 'RM1-RM3, RM5, RM7',
     nearbyAreas: ['Hornchurch', 'Upminster', 'Emerson Park', 'Harold Wood'],
     landmarks: ['Romford Station', 'The Liberty Shopping Centre', 'Raphael Park']
   },
@@ -138,7 +138,7 @@ export const locations: Location[] = [
     name: 'Dagenham',
     slug: 'dagenham',
     county: 'Greater London',
-    postcode: 'RM9-RM10',
+    postcode: 'RM8-RM10',
     nearbyAreas: ['Barking', 'Rainham', 'Romford', 'Hornchurch', 'Chadwell Heath'],
     landmarks: ['Central Park Dagenham', 'Dagenham Civic Centre', 'Beam Parklands']
   },
@@ -147,7 +147,7 @@ export const locations: Location[] = [
     name: 'Redbridge',
     slug: 'redbridge',
     county: 'Greater London',
-    postcode: 'IG4-IG6',
+    postcode: 'IG1-IG8, E11, E12, E18',
     nearbyAreas: ['Ilford', 'Wanstead', 'Woodford', 'Gants Hill', 'Barkingside'],
     landmarks: ['Redbridge Town Hall', 'Valentines Park', 'Gants Hill Station']
   },
@@ -176,7 +176,7 @@ export const locations: Location[] = [
     county: 'Greater London',
     postcode: 'E14',
     nearbyAreas: ['Docklands', 'Isle of Dogs', 'Greenwich', 'Bermondsey', 'Poplar'],
-    landmarks: ['Canary Wharf Tower', 'Jubilee Line Station', 'West India Quay', 'Crossrail Station']
+    landmarks: ['Canary Wharf Tower', 'Jubilee Line Station', 'West India Quay', 'Elizabeth line station']
   },
   {
     id: 'greenwich',
@@ -292,8 +292,9 @@ export const locations: Location[] = [
     slug: 'battersea',
     county: 'Greater London',
     postcode: 'SW8, SW11',
-    nearbyAreas: ['Clapham', 'Wandsworth', 'Vauxhall', 'Nine Elms', 'Chelsea'],
-    landmarks: ['Battersea Power Station', 'Battersea Park', 'Clapham Junction Station', 'New US Embassy']
+    nearbyAreas: ['Clapham', 'Chelsea and Kensington', 'Fulham', 'Wandsworth', 'Kennington'],
+    landmarks: ['Battersea Power Station', 'Battersea Park', 'Clapham Junction Station', 'US Embassy, Nine Elms'],
+    noTimePromises: true
   },
   {
     id: 'fulham',
@@ -301,8 +302,9 @@ export const locations: Location[] = [
     slug: 'fulham',
     county: 'Greater London',
     postcode: 'SW6, SW10',
-    nearbyAreas: ['Hammersmith', 'Chelsea', 'Parsons Green', 'Putney', 'Earls Court'],
-    landmarks: ['Fulham Palace', 'Craven Cottage', 'Stamford Bridge', 'Bishops Park']
+    nearbyAreas: ['Hammersmith', 'Chelsea and Kensington', 'Putney', 'Battersea'],
+    landmarks: ['Fulham Palace', 'Craven Cottage', 'Stamford Bridge', 'Bishops Park'],
+    noTimePromises: true
   },
   {
     id: 'streatham',
@@ -310,8 +312,29 @@ export const locations: Location[] = [
     slug: 'streatham',
     county: 'Greater London',
     postcode: 'SW2, SW16',
-    nearbyAreas: ['Brixton', 'Tooting', 'Norbury', 'Balham', 'Crystal Palace'],
-    landmarks: ['Streatham Common', 'Streatham High Road', 'Streatham Hill Station', 'The Rookery']
+    nearbyAreas: ['Clapham', 'Brixton', 'Tooting', 'Norbury', 'Crystal Palace'],
+    landmarks: ['Streatham Common', 'Streatham High Road', 'Streatham Hill Station', 'The Rookery'],
+    noTimePromises: true
+  },
+  {
+    id: 'clapham',
+    name: 'Clapham',
+    slug: 'clapham',
+    county: 'Greater London',
+    postcode: 'SW4, SW9, SW12',
+    nearbyAreas: ['Battersea', 'Streatham', 'Brixton', 'Vauxhall', 'Tooting'],
+    landmarks: ['Clapham Common', 'Clapham Common Bandstand', 'Holy Trinity Church', 'Clapham High Street'],
+    noTimePromises: true
+  },
+  {
+    id: 'chelsea-and-kensington',
+    name: 'Chelsea and Kensington',
+    slug: 'chelsea-and-kensington',
+    county: 'Greater London',
+    postcode: 'SW3, SW5, SW7, SW10',
+    nearbyAreas: ['Fulham', 'Battersea', 'Westminster', 'Hammersmith'],
+    landmarks: ['Royal Hospital Chelsea', 'Natural History Museum', 'Victoria and Albert Museum', 'Brompton Cemetery'],
+    noTimePromises: true
   },
   {
     id: 'finchley',

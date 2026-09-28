@@ -107,7 +107,7 @@ const extendedLocationData: Record<string, LocationData> = {
       },
       {
         question: 'Are your fire alarm engineers BAFE certified for Romford HMO and commercial work?',
-        answer: 'Yes. J&L Security is BAFE certified and an FIA member, which is the standard required by most local authority HMO licence schedules and commercial fire risk assessors. For Romford HMOs (Havering Council licence schedule typically applies), we install BS 5839-6 Grade D1 systems for smaller properties and BS 5839-1 Grade A panel-controlled systems for larger HMOs. All installations include the BAFE handover certificate, log book, and 6-monthly servicing eligible to be cited in the council\'s licence file.'
+        answer: 'Yes. J&L Security is BAFE certified and an FIA member, which is the standard required by most local authority HMO licence schedules and commercial fire risk assessors. For Romford HMOs (Havering Council licence schedule typically applies), we install BS 5839-6 Grade D1 systems for smaller properties and BS 5839-6 Grade A panel-controlled systems for larger HMOs. All installations include the BAFE handover certificate, log book, and 6-monthly servicing eligible to be cited in the council\'s licence file.'
       }
     ]
   },
@@ -499,7 +499,7 @@ function generateServiceFAQs(service: string, location: string) {
       },
       {
         question: `What fire alarm do I need for an HMO in ${location}?`,
-        answer: `HMO fire alarm requirements in ${location} depend on the number of storeys, the number of occupants, and your local authority licensing conditions. Most HMOs require at least a Category LD2 system: interlinked smoke detectors in hallways and landings, heat detectors in kitchens, and smoke detectors in bedrooms. Larger or higher-risk HMOs may require a Grade A addressable system with a dedicated fire alarm panel. We review your specific requirements and local authority conditions during the survey.`
+        answer: `HMO fire alarm requirements in ${location} depend on the number of storeys, the number of occupants, and your local authority licensing conditions. Most HMOs require at least a BS 5839-6 Category LD2 system: interlinked smoke detection on the escape routes (hallways and landings), a heat detector in every kitchen, and a smoke detector in the principal living room. Larger or higher-risk HMOs may require a Grade A addressable system with a dedicated fire alarm panel. We review your specific requirements and local authority conditions during the survey.`
       },
       {
         question: `What is included in fire alarm servicing in ${location}?`,
@@ -517,11 +517,11 @@ function generateServiceFAQs(service: string, location: string) {
     'domestic': [
       {
         question: `What smoke alarms do you fit in ${location} homes?`,
-        answer: `We fit Aico smoke and heat alarms, and we work with Kidde, FireAngel and Hispec alarms as well, so we can replace like for like or assess what is already installed. For new work in ${location} homes and HMOs the usual specification is Grade D: mains-powered, interlinked, with battery backup, so that when one alarm detects smoke every alarm in the property sounds. Heat alarms go in kitchens, where a smoke alarm would give false alarms from cooking, and smoke alarms cover the hallway, landing and living areas.`
+        answer: `We fit Aico smoke and heat alarms, and we work with Kidde, FireAngel and Hispec alarms as well, so we can replace like for like or assess what is already installed. For new work in ${location} homes and HMOs the usual specification is BS 5839-6 Grade D: mains-powered alarms, each with a backup battery (sealed in Grade D1, user-replaceable in Grade D2), interlinked so that when one alarm detects smoke every alarm in the property sounds. Heat alarms go in kitchens, where a smoke alarm would give false alarms from cooking, and smoke alarms cover the hallway, landing and living areas.`
       },
       {
         question: `Do I need interlinked smoke alarms in ${location}?`,
-        answer: `Interlinked means that when one alarm activates, all of them sound, so a fire in the kitchen wakes someone asleep upstairs. BS 5839-6 Grade D systems are interlinked by definition, and interlinking is what HMO licensing schedules in ${location} and across Essex and London normally require. For a family home we recommend it for the same reason: a single alarm in the hallway is easy to sleep through from a closed bedroom. We advise on the grade and category your property needs at the free survey.`
+        answer: `Interlinked means that when one alarm activates, all of them sound, so a fire in the kitchen wakes someone asleep upstairs. Grades D1 and D2 in BS 5839-6 describe how the alarms are powered rather than whether they are linked, but the standard recommends interconnecting them, and interlinking is what HMO licensing schedules in ${location} and across Essex and London normally require. For a family home we recommend it for the same reason: a single alarm in the hallway is easy to sleep through from a closed bedroom. We advise on the grade and category your property needs at the free survey.`
       },
       {
         question: `My smoke alarm in ${location} keeps beeping. Can you replace it?`,
@@ -644,14 +644,16 @@ const serviceDetailBlocks: Record<string, {
       'Fire alarm takeover and service for a property where the previous contractor did not complete the 6-monthly service visit'
     ],
     equipmentUsed: 'We install, service, repair and take over Kentec, Advanced, C-TEC, Haes, Fike and Zeta control panels, EMS, EDA Zerio Plus and SmartCell wireless and hybrid systems, and Apollo and Hochiki detection devices. Gent is the one exception: we service, maintain, fault find and take over Gent systems, but we do not install new Gent systems. Equipment includes conventional, addressable and bi-wire panels, optical and heat detectors, manual call points, sounders, and beacon strobes. If you are reporting a fault on an existing system, the make is normally printed on the front of the panel, and telling us when you call helps us come prepared.',
-    complianceNote: 'All installations comply with BS 5839-1. The system category (L1 to L5, M, or P1/P2) is determined by the fire risk assessment and the property type. HMOs typically require at least a Category LD2 system. Commercial premises fall under the Regulatory Reform (Fire Safety) Order 2005.',
+    complianceNote: 'Commercial installations comply with BS 5839-1. The system category (L1 to L5, M, or P1/P2) is determined by the fire risk assessment and the property type. HMOs normally fall under BS 5839-6 instead, which uses Categories LD1 to LD3, and most HMOs require at least Category LD2. Commercial premises fall under the Regulatory Reform (Fire Safety) Order 2005.',
     maintenanceInfo: 'BS 5839-1 requires professional servicing every 6 months. Each service visit tests every detector, call point, and sounder; checks battery condition and backup power; inspects cabling for damage; and updates the fire alarm log book. Weekly user testing (activating one call point) is also advised and takes approximately 2 minutes.',
     pricingIndicator: 'Fire alarm pricing depends on the system category, building size, and number of devices. We provide a detailed quotation after reviewing your fire risk assessment and surveying the property. HMO alarm packages and 6-monthly service contracts are available.'
   },
   // Domestic smoke and heat alarms under BS 5839-6. Deliberately separate from
   // the "fire" block above, which describes BS 5839-1 commercial panel systems.
-  // Grade and category wording follows the HMO guide and the BS 5839 explainer
-  // in lib/blog.ts. Pricing is the existing residential servicing figure only.
+  // Grade and category wording follows BS 5839-6:2019 as published by Aico and
+  // FireAngel; the sources are listed in
+  // docs/2026-09-28-maintenance-round-implementation.md. Pricing is the
+  // existing residential servicing figure only.
   domestic: {
     typicalProjects: [
       'Grade D Category LD2 system for a 3-bedroom family home: mains-powered interlinked smoke alarms in the hallway, on the landing and in the living room, a heat alarm in the kitchen, each with battery backup',
@@ -660,8 +662,8 @@ const serviceDetailBlocks: Record<string, {
       'Assessment and repair of a domestic system where one alarm chirps intermittently or the alarms no longer sound together when tested'
     ],
     equipmentUsed: 'For domestic and HMO smoke and heat alarms we fit Aico alarms, and we work with Kidde, FireAngel and Hispec smoke and heat alarms, whether you need a like-for-like replacement or an assessment of an existing system. Mains-powered interlinked alarms with battery backup (Grade D) are the usual specification for new work. If your property already has alarms of another make, tell us the make when you call and we will advise. Larger HMOs that need a panel-controlled Grade A system use the same control panel makes listed on our fire alarms service page.',
-    complianceNote: 'Domestic smoke and heat alarm systems are designed and installed to BS 5839-6, the British Standard for fire detection and fire alarm systems in domestic premises. The standard describes a system by grade and category. The grade is the type of equipment: Grade A is a panel-controlled system, Grade D is mains-powered interlinked alarms with battery backup, and Grade F is battery-only. The category is where the alarms go: LD3 covers the escape routes only, LD2 adds rooms that open onto escape routes and higher-risk rooms such as the kitchen and living room, and LD1 covers every room except bathrooms and toilets. For a licensed HMO the grade and category are normally set by the local authority licensing schedule.',
-    maintenanceInfo: 'Grade D alarms have no control panel to service, but they still need looking after. Test them weekly with the test button, keep them free of dust, and replace them when they reach the end of the life stated by the manufacturer. For HMOs, the BS 5839-6 maintenance recommendations and the council licence normally mean an annual inspection by a competent person, with the results recorded in the log book. Panel-controlled Grade A systems in HMOs are typically serviced every 6 months.',
+    complianceNote: 'Domestic smoke and heat alarm systems are designed and installed to BS 5839-6, the British Standard for fire detection and fire alarm systems in domestic premises. The standard describes a system by grade and category. The grade is the type of equipment and how it is powered: Grade A is a panel-controlled system using equipment to BS EN 54, Grade C uses central control equipment with a common mains and standby supply, Grades D1 and D2 are mains-powered alarms each with a backup battery (sealed in D1, user-replaceable in D2), and Grades F1 and F2 are battery-powered alarms. The 2019 edition removed Grades B and E. The category is where the alarms go: LD3 covers the circulation areas that form the escape routes, such as the hallway and landing; LD2 adds the rooms that present a high fire risk, including any kitchen (with a heat alarm) and the principal habitable room, usually the living room; and LD1 covers the escape routes and every room or area where a fire might start, except bathrooms, shower rooms and toilets. For a licensed HMO the grade and category are normally set by the local authority licensing schedule.',
+    maintenanceInfo: 'Grade D alarms have no control panel to service, but they still need looking after. Test them regularly with the test button, as the manufacturers advise, following the instructions for your alarms. Keep them free of dust, and replace them when they reach the end of the life stated by the manufacturer. For HMOs, an annual inspection by a competent person, with the results recorded in the log book, is good practice, and HMO licences often require it. Panel-controlled Grade A systems in HMOs are typically serviced every 6 months.',
     pricingIndicator: 'Domestic and HMO smoke alarm installations are quoted after a free survey, because the price depends on the grade, the category and the number of alarms. Annual servicing for residential and small HMO systems is from GBP 120 plus VAT per year. Surveys and quotations are free.'
   },
   // Lock and safe pages. These are not one of J&L's five core services, so
@@ -805,7 +807,7 @@ function generateContent(service: string, location: string) {
       : `We provide ${service.toLowerCase()} services throughout ${location} (${locationData.postcode}) and nearby areas including ${locationData.nearbyAreas.join(', ')}. Our local knowledge means we understand the specific security challenges facing ${location} residents and businesses, from the property types common in the area to the response times achievable from our base in Brentwood.`,
 
     fireCompliance: isFireService
-      ? `All our fire alarm installations in ${location} comply with BS 5839-1 standards and include the mandatory 6-monthly servicing to maintain compliance. This is particularly important for HMOs, commercial properties, and shared residential buildings throughout ${location}. We provide full compliance documentation including commissioning certificates and log books.`
+      ? `Our commercial fire alarm installations in ${location} comply with BS 5839-1 and include the 6-monthly servicing it recommends. HMOs are designed to BS 5839-6, the domestic standard, with the grade and category set by the fire risk assessment and the local authority licensing schedule. We provide full compliance documentation including commissioning certificates and log books.`
       : isDomesticFire
         ? `Domestic smoke and heat alarm systems in ${location} are designed and installed to BS 5839-6, the British Standard for fire detection and fire alarm systems in domestic premises. The grade and category are agreed at the survey, and for a licensed HMO they follow the local authority licensing schedule. We provide the installation certificate and, for HMOs, the log book the council expects to see.`
         : null,
@@ -849,10 +851,64 @@ function generateServiceIncludes(service: string, serviceType: string) {
     ];
   }
 
-  // Note: fire pages hit the "alarm" rule below before the "fire" rule, so
-  // they get the intruder list. Pre-existing, left as-is here so their output
-  // does not change in this round.
-  if (baseService.includes('burglar') || baseService.includes('alarm')) {
+  // Fire pages are routed by serviceType, not by name: every fire page name
+  // contains "alarm", so a name test sent them to the intruder list below.
+  // The list renders as "{service} Service Includes:", so it follows the
+  // page's subject: installation and commissioning, monitoring, compliance
+  // audit, or servicing (servicing, maintenance, annual service, fault
+  // finding and testing). Each item restates the fire FAQs or the fire block
+  // above. No list names a make, because Gent is service-only.
+  if (serviceType === 'fire') {
+    if (baseService.includes('installation') || baseService.includes('commissioning')) {
+      return [
+        'BS 5839-1 compliant system design',
+        'Professional installation and commissioning',
+        'Smoke and heat detector installation',
+        'Fire alarm panel configuration',
+        'Emergency lighting integration',
+        '6-monthly servicing and testing',
+        'Compliance certification provided',
+        'Staff training on system operation',
+        '24/7 monitoring options'
+      ];
+    }
+    if (baseService.includes('monitoring')) {
+      return [
+        '24/7 monitoring for commercial properties through an approved Alarm Receiving Centre',
+        'Nominated keyholders contacted when the system activates',
+        'Fire brigade attendance requested where needed',
+        'Particularly suited to unoccupied commercial premises',
+        '6-monthly service contracts available for the monitored system'
+      ];
+    }
+    if (baseService.includes('audit')) {
+      return [
+        'Inspection of the existing system and its condition',
+        'Testing of every detector, manual call point and sounder',
+        'Backup battery and power supply checks',
+        'Cabling inspected for damage',
+        'Fire alarm log book updated'
+      ];
+    }
+    return [
+      'Testing of every detector, manual call point and sounder',
+      'Backup battery and power supply checks',
+      'Fault finding and repair on conventional, addressable and bi-wire panels',
+      'Service certificate issued and fire alarm log book updated',
+      'Takeover of systems installed by other contractors',
+      '6-monthly service contracts for panel systems under BS 5839-1',
+      'Emergency lighting checked where it is part of the system',
+      '24/7 monitoring for commercial properties through an approved Alarm Receiving Centre',
+      'Cabling inspected for damage'
+    ];
+  }
+
+  // The remaining lists follow serviceType too, so a page gets the list for
+  // its type rather than whichever word its name happens to contain. This
+  // moves Video Intercom, Keypad/Fob and Maglock pages from the generic list
+  // to the access list, and Police Response Eligibility to the intruder list.
+  // Lighting pages have no list of their own and keep the generic one.
+  if (serviceType === 'burglar') {
     return [
       'Free security survey and consultation',
       'Professional installation by qualified engineers',
@@ -866,7 +922,7 @@ function generateServiceIncludes(service: string, serviceType: string) {
     ];
   }
   
-  if (baseService.includes('cctv')) {
+  if (serviceType === 'cctv') {
     return [
       'Free site survey and system design',
       'Professional camera installation',
@@ -880,21 +936,7 @@ function generateServiceIncludes(service: string, serviceType: string) {
     ];
   }
   
-  if (baseService.includes('fire')) {
-    return [
-      'BS 5839-1 compliant system design',
-      'Professional installation and commissioning',
-      'Smoke and heat detector installation',
-      'Fire alarm panel configuration',
-      'Emergency lighting integration',
-      '6-monthly servicing and testing',
-      'Compliance certification provided',
-      'Staff training on system operation',
-      '24/7 monitoring options'
-    ];
-  }
-  
-  if (baseService.includes('access') || baseService.includes('door')) {
+  if (serviceType === 'access') {
     return [
       'Free access control assessment',
       'Professional system installation',

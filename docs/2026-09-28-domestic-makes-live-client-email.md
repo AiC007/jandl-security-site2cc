@@ -1,6 +1,6 @@
 # Client email: domestic makes, page corrections, FAQ search and beeping guide are live (Wendy AI)
 
-**Status:** CANONICAL COPY, written 2026-09-28 after the merge and live verification. **Reviewed 2026-09-28 by the review session** (two fixes: the lock pages are three, not two; question 5 now notes that the Services page also lists this work, and the .md and .html wording of question 5 were aligned). Gmail draft created once, 2026-09-28, as a reply in thread `1a0e714b643af248`: draft `r-7224632525260659694`. **Not sent.** Operator sends.
+**Status:** CANONICAL COPY, written 2026-09-28 after the merge and live verification. **Reviewed 2026-09-28 by the review session** (two fixes: the lock pages are three, not two; question 5 now notes that the Services page also lists this work, and the .md and .html wording of question 5 were aligned). Gmail draft created once, 2026-09-28, as a reply in thread `1a0e714b643af248`: draft `r-7224632525260659694`. **SENT by the operator 2026-09-28 10:56 UTC**, message `1a0e7a85e148150d`.
 
 **Reply to:** Jag's message `1a0e714b643af248` of 2026-09-28 08:13 UTC. Our previous reply in the thread is `1a0e730f2babd2c8` (08:45 UTC).
 

@@ -3,7 +3,7 @@
 **Date:** 2026-09-28
 **Branch:** `feat/domestic-makes-and-page-fixes`, cut from local `main` at `9ddb3be` (two docs commits ahead of `origin/main` at the time; nothing else differed).
 **Built by:** Claude Code (Fable 5.1) build session, from `docs/2026-09-28-domestic-makes-handoff-prompt.md`.
-**Status:** local branch, reviewed and verified. Not pushed, no PR, not deployed. The review session pushes, merges and deploys.
+**Status:** SHIPPED. Approved by the review session (including the beeping guide), PR [AiC007/jandl-security-site2cc#23](https://github.com/AiC007/jandl-security-site2cc/pull/23) squash-merged to `main` as `bbccb59` on 2026-09-28, production deployment `dpl_8iKrr2QMpW17P9UeGhxB4i86rAuM` READY at 10:45 UTC, verified live with curl (see "Live verification" below). Branch deleted, no open PRs.
 **Maturity:** Pilot.
 **What this delivers:** every commitment in the client email sent 2026-09-28 08:45 UTC (`docs/2026-09-28-domestic-makes-client-email.md`), except the parts that depend on Jag's answers, which are built to the defaults below.
 
@@ -119,6 +119,34 @@ Everything else the reviewer checked was clean: FAQ search markup and hydration,
 7. Review fixes: guide source links, Stratford to the domestic block, neutral lock-page template text, Expert Installer wording, domestic includes bullet, Grade A wording, llms-full date, and the Codex image wired into the guide
 8. Docs: this record and the memory.md entry
 
+## Shipping (2026-09-28, after the review session's approval)
+
+1. Local `main` (two docs commits ahead) pushed to `origin/main` first, then the branch.
+2. PR #23 opened with `gh`: unit summaries, the defaults in use, and what is waiting on Jag. Vercel preview `dpl_2RTaSRKGs4FFi7d75niG4FXJxL6k` built READY in 46 seconds; PR checks passing. The preview URL is behind Vercel deployment protection (302 to sign-in), so it could not be curled. The review session had already exercised the FAQ search interactively on a local production build.
+3. Squash-merged as `bbccb59` ("Domestic makes, eight-page fix, FAQ search and beeping guide (#23)"), remote and local branches deleted, stale `origin/fix/enquiry-form-delivery` ref pruned. No open PRs.
+4. Production deployment `dpl_8iKrr2QMpW17P9UeGhxB4i86rAuM` (commit `bbccb59`) READY at 10:45:40 UTC, aliased to jandlsecurity.co.uk, www, and both jandlalarms.co.uk hosts.
+
+## Live verification (curl against https://jandlsecurity.co.uk, 2026-09-28 after deploy)
+
+| Check | Result |
+|---|---|
+| Eight corrected pages | All HTTP 200. Basildon, Chelmsford, South Woodford and Stratford: 0 "Pyronix", 30 "BS 5839-6", "BS 5839-6 Compliance Notice" present. Docklands: 0 "Pyronix", commercial fire block. Romford: "emergency lighting" 2 (nav and footer only; 77 before the fix), "Lock and Safe Requirements" heading present; the 8 "Pyronix" are the Romford location FAQs shared by every Romford page. Ilford and Brentwood: 0 "Pyronix", lock block present. |
+| /faqs | 200. Labelled `type="search"` input present. 28 questions in the FAQPage JSON-LD and all 28 in the HTML. |
+| /blog/smoke-alarm-beeping-guide-by-make | 200. Hero `<img>` present; the image itself returns 200, `image/webp`, 41,530 bytes. 0800 111 999 present 10 times. |
+| /sitemap.xml | 112 `<loc>` entries; the new guide is listed once. |
+| /services/fire-alarms and /about | 200. "Kidde, FireAngel and Hispec" (10 and 4 occurrences), "Aico Expert Installer" (12 and 2), Gent's "do not install new Gent" wording intact on the fire-alarms page. |
+| /llms.txt | Domestic makes line and the guide entry present. |
+| Both phone numbers | Present on every page checked (0204 538 5925: 15 to 29 per page; 0208 220 4770: 13 to 25). |
+
+## Search Console (2026-09-28 10:46 UTC, sc-domain:jandlsecurity.co.uk)
+
+- Sitemap `https://jandlsecurity.co.uk/sitemap.xml` resubmitted via the API: "Pending processing". Before resubmission GSC showed it last downloaded 2026-09-23 15:16, Valid, 111 URLs, 0 errors, 0 warnings.
+- URL Inspection of the new guide: verdict NEUTRAL, coverage "URL is unknown to Google", never crawled. Expected for a page minutes old. **Requesting indexing cannot be done through the API; the operator requests it by hand in the Search Console interface** (URL Inspection, "Request indexing"). The same applies to the three posts that were unindexed at the August review.
+
+## Client email
+
+Canonical copy for the "it is live" update: `docs/2026-09-28-domestic-makes-live-client-email.md` and `.html` (AIC branded format, 20 Wenlock Road footer). It states what is live, the defaults in use, and asks only the five open questions (Aico level, Kidde/FireAngel/Hispec new or maintained, CO alarms, Stratford, lock and safe work). **No Gmail draft exists.** The review session reviews the copy and creates the draft once.
+
 ## Boundaries respected
 
-Nothing pushed, no PR, no merge, no deploy. No Gmail drafts, nothing sent. Next.js left at 15.4.10. No page deleted or redirected. `.claude/launch.json` was temporarily given a `next start` entry for the browser check and reverted; the working tree is clean apart from this document and `memory.md`.
+No Gmail drafts, nothing sent. Next.js left at 15.4.10. No page deleted or redirected. `.claude/launch.json` was temporarily given a `next start` entry for the browser check and reverted.

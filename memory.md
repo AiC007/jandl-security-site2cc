@@ -253,13 +253,17 @@ Priority sequence:
 | /docs/2026-09-28-domestic-makes-client-email.html | Branded HTML body of the same email, as sent |
 | /docs/2026-09-28-domestic-makes-handoff-prompt.md | Build brief for the Fable 5.1 session that produced branch feat/domestic-makes-and-page-fixes |
 | /docs/2026-09-28-beeping-guide-codex-image-prompt.md | Codex prompt for the beeping guide hero image (public/images/2026-09/smoke-alarm-beeping-guide.webp) |
-| /docs/2026-09-28-domestic-makes-implementation.md | What shipped on the branch per unit, every default relied on, verification evidence, review findings, what waits on Jag, follow-ups |
+| /docs/2026-09-28-domestic-makes-implementation.md | What shipped per unit, every default relied on, review findings, merge and deployment record, live verification, GSC actions, what waits on Jag, follow-ups |
+| /docs/2026-09-28-domestic-makes-live-client-email.md | Wendy email to Jag saying the makes, page fixes, FAQ search and beeping guide are live, asking the five open questions (canonical copy; NOT yet drafted or sent) |
+| /docs/2026-09-28-domestic-makes-live-client-email.html | Branded HTML body of the same email |
 
 ---
 
 ## 11. Last Session Summary
 
-### 2026-09-28 (build session): domestic makes, eight matrix pages fixed, FAQ search, beeping guide. Branch ready for review, not pushed.
+### 2026-09-28 (build session): domestic makes, eight matrix pages fixed, FAQ search, beeping guide. SHIPPED and verified live.
+
+**Shipped.** After the review session approved the branch (including the beeping guide), local `main` was pushed, the branch pushed, [PR #23](https://github.com/AiC007/jandl-security-site2cc/pull/23) opened and squash-merged as **`bbccb59`**, branch deleted, no open PRs. Production deployment `dpl_8iKrr2QMpW17P9UeGhxB4i86rAuM` READY 10:45 UTC. **Verified live with curl:** all eight pages 200 with the right block (0 Pyronix on the five fire pages, Romford lighting mentions down from 77 to the 2 in nav and footer, lock block on the three lock pages); /faqs has the labelled search input and all 28 questions in HTML and JSON-LD; the guide is 200 with its hero image serving (image/webp, 41,530 bytes); sitemap 112 URLs; fire-alarms and about carry the four makes and the Expert Installer line; llms.txt updated; both numbers on every page checked. Sitemap resubmitted in GSC (pending processing; was 111 URLs, last downloaded 23 Sep). Guide URL inspection: "URL is unknown to Google"; **indexing must be requested by hand in the GSC UI.** Client "it is live" email written as canonical copy (`docs/2026-09-28-domestic-makes-live-client-email.md` and `.html`), asks only the five open questions; **no draft created**, the review session reviews and drafts once.
 
 **Trigger.** Jag's email of 28 September 08:13 UTC asking for Aico, Kidde, FireAngel and Hispec on the site and stating J&L is an Aico Expert Installer. Wendy's reply (SENT 08:45 UTC, message `1a0e730f2babd2c8`) promised the makes, an Expert Installer line, correction of eight mis-routed pages, a working FAQ search, and offered a beeping guide. Research and email: `docs/2026-09-28-domestic-makes-research.md`, `docs/2026-09-28-domestic-makes-client-email.md`. Build brief: `docs/2026-09-28-domestic-makes-handoff-prompt.md`. Full record of this session: `docs/2026-09-28-domestic-makes-implementation.md`.
 

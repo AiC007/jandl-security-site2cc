@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { HelpCircle, Phone, MessageSquare, Search } from 'lucide-react';
+import { Phone, MessageSquare } from 'lucide-react';
 import { COMPANY_INFO, whatsappLink } from '@/lib/utils';
 import { generateFAQPageSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import FAQSearch, { type FAQCategory } from '@/components/FAQSearch';
 
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions - Security Systems',
@@ -27,10 +28,9 @@ export const metadata: Metadata = {
   },
 };
 
-const faqCategories = [
+const faqCategories: FAQCategory[] = [
   {
     title: 'General Questions',
-    icon: HelpCircle,
     faqs: [
       {
         question: 'How quickly can you respond to emergency callouts?',
@@ -52,7 +52,6 @@ const faqCategories = [
   },
   {
     title: 'Burglar Alarms',
-    icon: HelpCircle,
     faqs: [
       {
         question: 'What types of burglar alarms do you install?',
@@ -78,7 +77,6 @@ const faqCategories = [
   },
   {
     title: 'CCTV Systems',
-    icon: HelpCircle,
     faqs: [
       {
         question: 'What resolution CCTV cameras do you recommend?',
@@ -104,7 +102,6 @@ const faqCategories = [
   },
   {
     title: 'Fire Alarms',
-    icon: HelpCircle,
     faqs: [
       {
         question: 'How often should fire alarms be serviced?',
@@ -146,7 +143,6 @@ const faqCategories = [
   },
   {
     title: 'Warranties & Pricing',
-    icon: HelpCircle,
     faqs: [
       {
         question: 'What warranties do you offer on installations?',
@@ -216,16 +212,6 @@ export default function FAQsPage() {
               Expert answers to common questions about security systems, installation, 
               maintenance, and our services across Essex and Greater London.
             </p>
-            <div className="max-w-md mx-auto">
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
-                <input
-                  type="text"
-                  placeholder="Search FAQs..."
-                  className="w-full pl-10 pr-4 py-3 rounded-lg text-gray-900 focus:ring-2 focus:ring-primary-300 focus:border-transparent"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -257,39 +243,10 @@ export default function FAQsPage() {
         </div>
       </section>
 
-      {/* FAQ Categories */}
+      {/* FAQ Categories, with a client-side filter over the server-rendered list */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {faqCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="mb-16 last:mb-0">
-              <div className="flex items-center mb-8">
-                <category.icon className="h-8 w-8 text-primary-600 mr-4" />
-                <h2 className="text-3xl font-bold text-gray-900">{category.title}</h2>
-              </div>
-
-              <div className="space-y-6">
-                {category.faqs.map((faq, faqIndex) => (
-                  <div key={faqIndex} className="border border-gray-200 rounded-lg">
-                    <details className="group">
-                      <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-colors">
-                        <h3 className="text-lg font-semibold text-gray-900 pr-4">
-                          {faq.question}
-                        </h3>
-                        <div className="text-primary-600 group-open:rotate-45 transition-transform">
-                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                          </svg>
-                        </div>
-                      </summary>
-                      <div className="px-6 pb-6 text-gray-700 leading-relaxed">
-                        <p>{faq.answer}</p>
-                      </div>
-                    </details>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+          <FAQSearch categories={faqCategories} />
         </div>
       </section>
 

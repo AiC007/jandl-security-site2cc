@@ -127,6 +127,7 @@ const servicePageData: Record<string, {
     overview: [
       'J&L Security is a BAFE-accredited fire alarm installer and maintainer covering Essex and Greater London. We design, install, commission, and service commercial fire alarm systems to BS 5839-1 and domestic and HMO fire alarm systems to BS 5839-6. We also provide smoke alarm installs and smoke alarm repair, plus 6-monthly fire alarm servicing under contract.',
       'We install, service and maintain conventional, addressable and bi-wire fire alarm systems. The makes we support include Kentec, Advanced, C-TEC, Haes, Fike and Zeta control panels, EMS, EDA Zerio Plus and SmartCell wireless and hybrid systems, and Apollo and Hochiki detection devices. We install, service, repair and take over systems from all of those makes. We also service and maintain Gent systems, including fault repair and takeover, although we do not install new Gent systems.',
+      'For domestic smoke and heat alarms under BS 5839-6, including HMO alarm packages, we fit Aico alarms, and J&L Security is an Aico Expert Installer. We also work with Kidde, FireAngel and Hispec smoke and heat alarms, whether that is a like-for-like replacement or an assessment of what is already installed.',
       'Every installation is documented, certified at commissioning, and supported with a service contract that keeps the system compliant with BS 5839 and the Regulatory Reform (Fire Safety) Order 2005.',
     ],
     process: [
@@ -153,7 +154,11 @@ const servicePageData: Record<string, {
       },
       {
         question: 'Which makes of fire alarm panel do you work with?',
-        answer: 'We install, service, repair and take over Kentec, Advanced, C-TEC, Haes, Fike and Zeta control panels, EMS, EDA Zerio Plus and SmartCell wireless and hybrid systems, and Apollo and Hochiki detection devices. Gent is the one exception: we service, maintain, fault find and take over Gent systems, but we do not install new Gent systems. If you are reporting a fault, the make is usually printed on the front of the panel. Telling us when you call helps us bring the right parts and, where the panel needs a model-specific procedure, arrange the right engineer.',
+        answer: 'We install, service, repair and take over Kentec, Advanced, C-TEC, Haes, Fike and Zeta control panels, EMS, EDA Zerio Plus and SmartCell wireless and hybrid systems, and Apollo and Hochiki detection devices. Gent is the one exception: we service, maintain, fault find and take over Gent systems, but we do not install new Gent systems. If you are reporting a fault, the make is usually printed on the front of the panel. Telling us when you call helps us bring the right parts and, where the panel needs a model-specific procedure, arrange the right engineer. For domestic smoke and heat alarms, which have no panel, we fit Aico alarms and we work with Kidde, FireAngel and Hispec alarms as well.',
+      },
+      {
+        question: 'Are you an Aico Expert Installer?',
+        answer: 'Yes. J&L Security is an Aico Expert Installer, which means J&L Security has completed Aico\'s own training scheme for installers of its domestic alarms. It is a training scheme rather than an accreditation, so it sits alongside our SSAIB, BAFE, FIA and CHAS accreditations rather than among them. For domestic work we fit Aico smoke and heat alarms, and we work with Kidde, FireAngel and Hispec alarms too.',
       },
       {
         question: 'How often does a fire alarm need to be serviced?',
@@ -386,9 +391,15 @@ export async function generateStaticParams() {
 
 const metaOverrides: Record<string, { description?: string; keywords?: string[]; title?: string }> = {
   'fire-alarms': {
-    description: 'BAFE-certified fire alarm installation, servicing and fault repair across Essex and London. Kentec, Advanced, C-TEC and Haes panels, plus Gent servicing. Free survey.',
+    description: 'BAFE-certified fire alarm installation and servicing in Essex and London. Kentec and Advanced panels, Gent servicing, Aico domestic alarms. Free survey.',
     keywords: [
       'fire alarm installation',
+      'Aico smoke alarm installer',
+      'Aico Expert Installer',
+      'Kidde smoke alarm',
+      'FireAngel smoke alarm',
+      'Hispec smoke alarm',
+      'domestic smoke alarm installation',
       'BAFE fire alarm maintainers',
       'BAFE certified fire alarm',
       'smoke alarm install',

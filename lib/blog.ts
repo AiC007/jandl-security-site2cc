@@ -751,6 +751,8 @@ export const blogPosts: BlogPost[] = [
 
 <p>HMO fire alarms must be tested at three different intervals. <strong>Weekly:</strong> the responsible person (the landlord or managing agent) must activate one manual call point or detector test button each week and confirm the system sounds throughout the building, recording the result in the log book. <strong>6-monthly:</strong> a competent fire alarm engineer must carry out a service visit, testing every detector, sounder, and call point, checking battery condition, and inspecting cabling. The 2025 update to BS 5839-1 introduced a 5-to-7-month flexibility window for scheduling. <strong>Annually:</strong> for Grade D systems where 6-monthly servicing is not specified, an annual professional service is the practical minimum.</p>
 
+<p>If one of the alarms in an HMO starts chirping between visits, our <a href="/blog/smoke-alarm-beeping-guide-by-make">smoke alarm beeping guide</a> explains what the common patterns mean and when it needs an engineer rather than a tenant pressing buttons.</p>
+
 <h3>Do I need a mains-wired alarm in an HMO?</h3>
 
 <p>Yes, in almost all cases. BS 5839-6 Grade D systems are by definition mains-powered with battery backup. Battery-only domestic smoke alarms (BS 5839-6 Grade F) are not normally acceptable for licensable HMOs because they are not interlinked across the building and cannot reliably wake all occupants. If your council schedule accepts Grade D, this means Grade D1 (sealed lithium battery) or Grade D2 (replaceable battery), both of which are mains-wired. Battery-only Grade F1 or F2 detectors are only ever acceptable in the smallest, lowest-risk HMOs and even then only where the council schedule explicitly permits them; in practice most councils require mains-wired interlinked detectors as a minimum.</p>
@@ -1034,6 +1036,8 @@ export const blogPosts: BlogPost[] = [
 <h2>BS 5839-6 Domestic and HMO Servicing</h2>
 
 <p>For Grade A systems the regime is similar to BS 5839-1: professional servicing under contract, typically annually for domestic and twice-yearly for larger HMOs. For Grade D systems the routine combines user-side testing (a periodic test from the test button on each unit) with periodic professional inspection, often annually for HMOs as a licensing condition. Battery replacement intervals depend on whether the system is Grade D1 (sealed long-life battery, typically 10 years) or Grade D2 (replaceable battery).</p>
+
+<p>For Grade D alarms the most common call between inspections is an alarm that has started chirping. Our <a href="/blog/smoke-alarm-beeping-guide-by-make">smoke alarm beeping guide</a> explains what the patterns generally mean for Aico, Kidde, FireAngel and Hispec alarms and when to call an engineer.</p>
 
 <h2>How J&amp;L Security Helps</h2>
 
@@ -2687,6 +2691,8 @@ export const blogPosts: BlogPost[] = [
 
 <p>One thing this guide deliberately does not do is publish fault codes, reset sequences or step-by-step diagnostics for named panels. There is a section below explaining why. In short: fire detection is life safety equipment, what an indication means depends on the panel model and on how the system was configured when it was commissioned, and a generic instruction found online is a poor substitute for someone who can see the panel. If you want to know what yours is reporting, <a href="/contact">call us</a> and we will tell you.</p>
 
+<p>If your question is about a domestic smoke alarm that chirps rather than a fire alarm panel, see our <a href="/blog/smoke-alarm-beeping-guide-by-make">smoke alarm beeping guide by make</a> instead.</p>
+
 <h2>Fault and Fire Are Not the Same Signal</h2>
 
 <p>Every fire alarm control panel installed to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839-1</a> distinguishes a fire condition from a fault condition, and indicates them differently.</p>
@@ -2866,7 +2872,171 @@ export const blogPosts: BlogPost[] = [
         answer: 'Customers under our fire alarm maintenance contract have 24/7 emergency call out with a visit made within 8 hours. We attend faults on the makes we support whether we installed the system or not, and we take over systems from other contractors where the previous maintainer is no longer suitable. Call 0204 538 5925 or 0208 220 4770 with the make from the panel fascia and what it is displaying, and we can usually tell you on the phone what class of fault it looks like and what the visit will involve.',
       },
     ],
+  },
+  {
+    slug: 'smoke-alarm-beeping-guide-by-make',
+    title: 'Why Is My Smoke Alarm Beeping? A Guide by Make',
+    metaTitle: 'Smoke Alarm Beeping? Aico, Kidde, FireAngel and Hispec Explained',
+    description: 'What an intermittent chirp from a domestic smoke alarm usually means, the simple checks each manufacturer suggests, and when a mains-wired or interlinked system needs an engineer. Covers Aico, Kidde, FireAngel and Hispec.',
+    datePublished: '2026-09-28',
+    dateModified: '2026-09-28',
+    keywords: [
+      'smoke alarm beeping',
+      'mains smoke alarm beeping',
+      'smoke alarm chirping',
+      'aico smoke alarm beeping',
+      'kidde smoke alarm beeping',
+      'fireangel smoke alarm beeping',
+      'hispec smoke alarm beeping',
+      'interlinked smoke alarms beeping',
+      'smoke alarm beeping every minute',
+      'smoke alarm end of life',
+      'smoke alarm replacement essex',
+    ],
+    wordCount: 3186,
+    image: {
+      src: '/images/2026-09/smoke-alarm-beeping-guide.webp',
+      alt: 'Homeowner on the upstairs landing of a UK house looking up calmly at a ceiling-mounted smoke alarm showing a small orange indicator light and sound marks, illustrating a smoke alarm that is beeping',
+    },
+    content: `
+<p>A smoke alarm that chirps once a minute at two in the morning is one of the most searched-for problems in the home, and one of the least well answered. Most of the results are forum threads. This guide explains what an intermittent beep from a domestic smoke or heat alarm generally means, what the four makes we work with say a householder can check, and when the right answer is to call an engineer rather than keep pressing buttons.</p>
+
+<p>Two things first. A smoke alarm is life safety equipment, so nothing in this guide suggests taking an alarm down, disconnecting it or leaving it without power to stop the noise. And a carbon monoxide alarm that is sounding its full alarm is not a nuisance beep: it is an emergency, and there is a section on it below. If you are in that situation, stop reading and follow the advice in that section now.</p>
+
+<h2>Beep, Alarm or Carbon Monoxide Alarm?</h2>
+
+<p>The first thing to establish is what sound you are hearing, because the three are different.</p>
+
+<ul>
+<li><strong>A chirp or beep:</strong> a short single sound, usually repeated at a regular interval of roughly every 30 seconds to a minute, often with a small light flashing at the same time. This is the alarm telling you about itself: a low battery, a fault, or that it has reached the end of its working life. It is the subject of this guide.</li>
+<li><strong>The full alarm:</strong> a loud continuous or pulsing siren from the smoke or heat alarm. That is the alarm doing its job. If there is no fire, it is a false activation and the cause is usually steam, cooking fumes, dust or an insect, which we cover below. If you are not sure whether there is a fire, treat it as one.</li>
+<li><strong>A carbon monoxide alarm sounding:</strong> a loud repeating alarm from a CO alarm. Aico's product FAQs note that its carbon monoxide alarms use a different activation sound from its smoke and heat alarms so the two are not confused. A sounding CO alarm means leave the property and get fresh air. See the carbon monoxide section below.</li>
+</ul>
+
+<h2>What the Common Beep Patterns Generally Mean</h2>
+
+<p>The four manufacturers covered here use broadly similar signalling, and their own support pages describe it in the same terms. The exact timing, the colour of the indicator light and the number of chirps vary by make and by product series, so the summary below is a general guide and the manufacturer's page for your alarm is the authority.</p>
+
+<ul>
+<li><strong>One chirp at a regular interval, roughly once a minute.</strong> On every make we cover, this is described as the low battery warning. Hispec's homeowner FAQs put it as a consistent single beep about once a minute indicating a low battery, and Aico's homeowner guidance says the same. On a mains-powered alarm this refers to the backup battery, not the mains supply.</li>
+<li><strong>Two chirps together at a regular interval.</strong> FireAngel's guidance describes a double chirp with a double flash as a product fault. Aico's product FAQs describe two chirps with two yellow flashes on its current series as a possible sensor fault, and say the alarm should be replaced in that case.</li>
+<li><strong>Three chirps together at a regular interval.</strong> FireAngel describes one triple beep every 40 seconds as its end-of-life warning. Aico describes three beeps and three yellow flashes on its current series as the alarm having reached the end of its life and needing replacement. Kidde UK's <a href="https://www.uk.kidde.com/faq/carbon-monoxide-alarms/what-is-the-end-of-life-warning-on-my-co-alarm" rel="noopener noreferrer" target="_blank">CO alarm end-of-life FAQ</a> says its CO alarms chirp every 30 seconds at end of life, and that replacing the batteries will not stop it.</li>
+<li><strong>A faster group of chirps.</strong> Aico describes four chirps and four yellow flashes every eight seconds on its current series as the alarm having compensated for as much dust as it can, which again means replacement.</li>
+<li><strong>A chirp with no obvious pattern, or one that comes and goes.</strong> Manufacturers list dust in the sensing chamber, a loose or badly seated battery, and loose wiring or connections among the causes. Aico's homeowner FAQs say intermittent beeping can indicate the alarm needs cleaning or that there is an issue with wiring and connections. Kidde UK lists a loose or improperly installed battery and an accumulation of dust in the sensing chamber.</li>
+</ul>
+
+<p>Two general points sit behind all of this. First, a chirp is the alarm asking for attention, not failing at random. Aico puts it plainly: a beeping alarm should never be ignored. Second, on a sealed-battery alarm (the type fitted in most homes and HMOs today, because Grade D1 under <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839-6</a> calls for a sealed standby battery), a low battery warning cannot be fixed by changing a battery. The battery is designed to last the life of the alarm, so a low battery chirp on a sealed alarm normally means the alarm itself is due for replacement.</p>
+
+<h2>Simple Checks a Householder Can Make</h2>
+
+<p>These are the checks the manufacturers themselves suggest on their support pages. They involve looking, pressing the test button and cleaning. They do not involve opening the alarm, disconnecting wiring or removing it from its base.</p>
+
+<ol>
+<li><strong>Look at the indicator light.</strong> On a mains-powered alarm there is normally a small green light showing that mains power is present. Hispec's FAQs say to ensure the green indicator light is illuminated, and both Hispec and Aico say that if the green power light is off you should contact your installer to inspect the wiring and connections. That is not a householder job.</li>
+<li><strong>Press and hold the test button.</strong> Aico and Hispec both describe pressing the test button for about ten seconds. The alarm should sound. On an interlinked system, the other alarms should sound too. If they do not, the interlink has a problem and needs an engineer.</li>
+<li><strong>Check for steam, cooking fumes or dust.</strong> If the full alarm is going off rather than chirping, Aico and Hispec both say to check that no cooking fumes or steam are reaching the alarm. FireAngel lists cooking fumes, steam, dust, insects and poor alarm placement as the usual causes of false alarms. Alarms near a kitchen or bathroom door are the usual culprits, and a heat alarm rather than a smoke alarm may be the right device for that position.</li>
+<li><strong>Clean the outside of the alarm.</strong> Kidde UK suggests cleaning the alarm with a vacuum cleaner when the battery is changed; FireAngel's support page recommends cleaning smoke and heat alarms every three months. Vacuum gently around the vents. Do not open the alarm and do not spray anything into it.</li>
+<li><strong>Find the date on the alarm.</strong> FireAngel says to check the replace-by date printed on the bottom. Aico says every Aico alarm carries a date-code label on the side showing when it was made. If the alarm is at or past ten years old, the chirp is very likely the end-of-life warning and the answer is replacement, not a battery.</li>
+<li><strong>On a replaceable-battery alarm, replace the battery.</strong> If your alarm has a user-replaceable battery, replace it as soon as the warning sounds, then test. Hispec's advice is explicit: never remove the battery to stop the low battery warning without fitting a new one straight away. If the alarm is sealed, this step does not apply and the alarm needs replacing.</li>
+</ol>
+
+<p>What none of the manufacturers suggest is taking the alarm down and leaving it on a shelf. Aico's product FAQs state that the alarm head should not be taken off the base and left idle because of annoyance caused by beeping. Essex County Fire and Rescue Service, our local fire service, says on its <a href="https://www.essex-fire.gov.uk/smoke-alarms" rel="noopener noreferrer" target="_blank">smoke alarms page</a> that a hard-wired alarm that is chirping, showing a fault or not working correctly needs a qualified electrician. For an alarm that is part of a fire detection system, that means a fire alarm engineer.</p>
+
+<h2>When to Call Us</h2>
+
+<p>The checks above cover most single-alarm, battery-only situations. Call us, on 0204 538 5925 or 0208 220 4770, when:</p>
+
+<ul>
+<li><strong>The alarm is mains-wired.</strong> A chirp on a mains-powered alarm can be the backup battery, but if the green mains light is off, or the chirp continues after the checks above, the wiring or the alarm itself needs looking at. That is electrical work on a fire safety circuit.</li>
+<li><strong>The alarms are interlinked.</strong> On an interlinked system one chirping alarm can be hard to find, one alarm reaching end of life usually means the rest are close behind, and an alarm that no longer joins in when the others are tested has an interlink fault. We fit Aico alarms and we work with Kidde, FireAngel and Hispec, so we can identify what you have, replace like for like or advise on replacing the set.</li>
+<li><strong>You are a landlord or the property is an HMO.</strong> The alarms are part of the licensing conditions, and a system that is chirping or partly working is a system that is not compliant. Our <a href="/blog/hmo-fire-alarm-requirements-bs5839">HMO fire alarm guide</a> covers what the council expects; call us to put the system right and record it.</li>
+<li><strong>You do not know the make, or you cannot reach the alarm safely.</strong> Tell us what the alarm is doing and, if you can see it, the make and any date on it. We can usually tell you on the phone whether it sounds like a battery, a fault or end of life, and what the visit will involve.</li>
+</ul>
+
+<p>Our <a href="/services/fire-alarms">fire alarms service page</a> covers what we install and service, and you can <a href="/contact">book a visit online</a>.</p>
+
+<h2>Smoke Alarm Beeping, Make by Make</h2>
+
+<p>The four makes below are the domestic makes we work with. Each section says what that manufacturer's own support page describes and where to find it, and what we do for that make. It is kept at make level on purpose: what a particular pattern means depends on the product series, and the manufacturer's page for your alarm is the right place to confirm it.</p>
+
+<h3>Aico smoke alarm beeping</h3>
+
+<p>Aico publishes homeowner FAQs and a more detailed set of product FAQs on its website, and both describe the chirp signals used on its current series: a single chirp with a yellow flash for a low backup battery, two for a possible sensor fault, three for end of life, and a faster group of four when the alarm has compensated for as much dust as it can. Aico's guidance also covers the green mains light, the ten-second test, cooking fumes and steam, and the date-code label on the side of every alarm. Aico states that most of its alarms have a ten-year life, after which they should be replaced. Aico's own pages are at <a href="https://www.aico.co.uk/homeowner/faqs/" rel="noopener noreferrer" target="_blank">aico.co.uk/homeowner/faqs</a> and <a href="https://www.aico.co.uk/technical-support/faqs/products-faqs/" rel="noopener noreferrer" target="_blank">aico.co.uk/technical-support/faqs/products-faqs</a>.</p>
+
+<p>We fit Aico smoke and heat alarms. If you have an Aico system that is chirping, tell us what it is doing and how old it is, and we will advise whether it is a single alarm or the set that needs attention.</p>
+
+<h3>Kidde smoke alarm beeping</h3>
+
+<p>Kidde's UK support pages are brief and general. Its smoke alarm FAQ lists four reasons an alarm may chirp: a loose or improperly installed battery, dust in the sensing chamber, a low battery, and an alarm that has reached its end of life and should be replaced. Its carbon monoxide FAQs add that a Kidde CO alarm will indicate end of life seven or ten years after it was first powered by chirping every 30 seconds, that replacing the batteries will not stop it, and that the alarm will not detect CO in that state and must be replaced immediately. Kidde's maintenance article recommends testing at least monthly and replacing alarms at least every seven to ten years, or as the instructions for the product say. Kidde's pages are at <a href="https://www.uk.kidde.com/faq/smoke-alarms/why-does-my-smoke-alarm-beep-or-chirp" rel="noopener noreferrer" target="_blank">uk.kidde.com (why does my smoke alarm beep or chirp)</a>, <a href="https://www.uk.kidde.com/faq/carbon-monoxide-alarms/what-is-the-end-of-life-warning-on-my-co-alarm" rel="noopener noreferrer" target="_blank">the CO alarm end-of-life FAQ</a> and <a href="https://www.uk.kidde.com/know-how-hub/news/maintaining-smoke-alarms" rel="noopener noreferrer" target="_blank">maintaining smoke alarms</a>.</p>
+
+<p>We work with Kidde smoke and heat alarms: like-for-like replacement of a chirping or expired alarm, and assessment of an existing Kidde system.</p>
+
+<h3>FireAngel smoke alarm beeping</h3>
+
+<p>FireAngel has the most detailed public guidance of the four. Its support page lists four common reasons for beeping (low battery, product fault, end of product life, and false alarms) and describes the signals for the alarms it covers: one chirp and one flash every 40 seconds for low battery, two chirps and two flashes for a fault, and one triple beep every 40 seconds for end of life. It notes that on its sealed-battery alarms the whole unit is replaced when the low battery warning starts, that the low battery chirp can only be silenced a limited number of times, and that all smoke alarms must be replaced every ten years because the sensors degrade. FireAngel also has a separate page on its <a href="https://www.fireangel.co.uk/homeowners/support/why-your-co-alarm-is-beeping-a-fireangel-guide-for-uk-homeowners/" rel="noopener noreferrer" target="_blank">carbon monoxide alarms</a>. Its smoke alarm pages are at <a href="https://www.fireangel.co.uk/homeowners/support/what-does-my-smoke-alarm-beeping-mean/" rel="noopener noreferrer" target="_blank">fireangel.co.uk</a> and <a href="https://www.fireangel.co.uk/homeowners/support/why-is-my-fireangel-smoke-alarm-beeping/" rel="noopener noreferrer" target="_blank">why is my FireAngel smoke alarm beeping</a>.</p>
+
+<p>We work with FireAngel smoke and heat alarms, replacing like for like and assessing existing systems. FireAngel is one of the makes people most often type into a search engine alongside the word "beeping", and the top results are forums, so if the manufacturer's page does not settle it, call us rather than a forum.</p>
+
+<h3>Hispec smoke alarm beeping</h3>
+
+<p>Hispec's homeowner FAQs cover the same ground in plain terms: a consistent single beep about once a minute indicates a low battery, continuous chirping may signal a fault within the unit, and dust inside the alarm can cause false alerts. The page walks through checking the green mains indicator, holding the test button for ten seconds, checking for cooking fumes or steam, and contacting your installer if the green light is off. Hispec says most of its alarms are designed to last ten years and should then be replaced, and its troubleshooting guide is explicit that you should never remove the battery to stop the low battery warning. Hispec's page is at <a href="https://hispec.co.uk/for-homeowners/faqs-for-homeowners/" rel="noopener noreferrer" target="_blank">hispec.co.uk/for-homeowners/faqs-for-homeowners</a>.</p>
+
+<p>We work with Hispec smoke and heat alarms, including replacement of a chirping or expired alarm and assessment of an existing system.</p>
+
+<h2>Mains Smoke Alarm Beeping</h2>
+
+<p>Mains-powered alarms are the norm in any home built or rewired in recent years and in every HMO, because BS 5839-6 Grade D calls for mains power with a battery backup and interlinking between alarms. They chirp for the same reasons as battery alarms, with two additions.</p>
+
+<p>The first is a power problem. If the green mains light is off, the alarm is running on its backup battery, and the chirp will follow once that battery runs down. The cause can be as simple as a tripped circuit or as involved as a wiring fault, and the manufacturers are consistent that the next step is your installer or a qualified electrician, not the householder. The second is the interlink. When alarms are wired or radio-linked together, a fault on one can present on another, and a set installed at the same time will reach end of life at the same time. Replacing one alarm in a ten-year-old set is rarely the right answer.</p>
+
+<p>Essex County Fire and Rescue Service <a href="https://www.essex-fire.gov.uk/news/fire-service-urge-homeowners-replace-smoke-alarms-every-10-years" rel="noopener noreferrer" target="_blank">says</a> that all smoke alarms, whether mains-wired or battery operated, must be replaced every ten years. If your mains alarms are chirping and the property was built or rewired around a decade ago, that is almost certainly what you are hearing.</p>
+
+<h2>Carbon Monoxide Alarms: A Sounding Alarm Is an Emergency</h2>
+
+<p>Carbon monoxide alarms chirp for the same housekeeping reasons as smoke alarms: low battery, fault or end of life. FireAngel's <a href="https://www.fireangel.co.uk/homeowners/support/why-your-co-alarm-is-beeping-a-fireangel-guide-for-uk-homeowners/" rel="noopener noreferrer" target="_blank">CO alarm guidance</a> describes one beep a minute for low battery, two rapid beeps for a possible fault and three for end of life, and says any beep from a CO alarm is a reason to call the National Gas Emergency Helpline on 0800 111 999. Kidde's <a href="https://www.uk.kidde.com/faq/carbon-monoxide-alarms/what-is-the-end-of-life-warning-on-my-co-alarm" rel="noopener noreferrer" target="_blank">end-of-life FAQ</a> says an end-of-life CO alarm no longer detects CO and must be replaced immediately.</p>
+
+<p>A CO alarm sounding its full alarm is different. Carbon monoxide has no smell and no colour, so the alarm is the only warning you get. The NHS advice is to stop using appliances you think might be producing carbon monoxide, such as a boiler, cooker or heater, if you can; go outside; and get medical advice as soon as possible, and not go back into the building until you have. If you think a gas appliance is leaking carbon monoxide, the NHS says to call the free National Gas Helpline immediately on 0800 111 999. London Fire Brigade gives the same advice: leave the property immediately, call the 24-hour Gas Emergency Number, seek medical advice, and do not re-enter until the source has been fixed by a qualified professional. The NHS pages are at <a href="https://www.nhs.uk/conditions/carbon-monoxide-poisoning/" rel="noopener noreferrer" target="_blank">nhs.uk</a> and the London Fire Brigade guidance at <a href="https://www.london-fire.gov.uk/safety/the-home/carbon-monoxide-safety/" rel="noopener noreferrer" target="_blank">london-fire.gov.uk</a>.</p>
+
+<p>We are a fire alarm company rather than a gas engineer, so we do not attend a suspected carbon monoxide leak. Once the gas side has been dealt with, we can advise on the alarm.</p>
+
+<h2>Why We Do Not Publish Model-Specific Instructions</h2>
+
+<p>You may notice this guide does not tell you which button to press on which model, or how to silence a particular alarm. That is deliberate, and it is the same policy as our <a href="/blog/fire-alarm-panel-fault-guide-by-make">fire alarm panel fault guide</a>. What a chirp means and how it is dealt with depends on the exact product, and a manufacturer's instruction for one series can be wrong for the alarm on your ceiling. Every make above publishes its own guidance for its own products, and it is updated when products change; we have linked to it rather than copied it. If you cannot find your alarm on the manufacturer's page, or the guidance does not match what the alarm is doing, that is the point at which to call us.</p>
+
+<h2>Testing and Replacement</h2>
+
+<p>Whatever make you have, three habits prevent most of the chirping calls we receive. Test the alarms regularly with the test button: the manufacturers and Essex County Fire and Rescue Service say at least monthly, some UK fire and rescue services say weekly, and weekly costs nothing. Keep the alarms clean, vacuuming around the vents every few months. And know the age of the alarms: check the date on the alarm now, and if it is approaching ten years, plan the replacement of the set before the end-of-life chirps begin. If the alarms are part of a Grade D interlinked system, or the property is an HMO, we will survey, replace and certify the system to BS 5839-6 and leave you with the paperwork.</p>
+
+<p><em>This article is general guidance on what an intermittent beep from a domestic smoke, heat or carbon monoxide alarm means. Every safety statement in it is taken from the manufacturer's own published guidance or from the NHS and UK fire and rescue services, and the links are provided so you can read the source. It is not an instruction for any particular model. If an alarm is sounding and you are not sure why, treat it as real, and if a carbon monoxide alarm is sounding, leave the property and call 0800 111 999.</em></p>
+`,
+    faqs: [
+      {
+        question: 'Why does my smoke alarm beep once a minute?',
+        answer: 'A single chirp at a regular interval of roughly once a minute is the low battery warning on every make we work with, including Aico, Kidde, FireAngel and Hispec. On an alarm with a replaceable battery, fit a new battery straight away and test. On a sealed-battery alarm, which is most mains-powered alarms fitted in the last ten years, the battery is designed to last the life of the alarm, so the chirp normally means the alarm has reached the end of its life and needs replacing. Never remove an alarm or leave it without power to stop the noise.',
+      },
+      {
+        question: 'My mains smoke alarm is beeping. Why, when it does not run on a battery?',
+        answer: 'Mains-powered smoke alarms have a backup battery so they keep working in a power cut, and the chirp usually refers to that battery. It can also mean the alarm has lost mains power, in which case the green mains light will be off, or that the alarm has reached the end of its life, which on a ten-year sealed alarm sounds the same. Aico and Hispec both say that if the green power light is off you should contact your installer to inspect the wiring and connections. Call us on 0204 538 5925 or 0208 220 4770 and we will identify which it is.',
+      },
+      {
+        question: 'How do I stop my smoke alarm chirping without removing it?',
+        answer: 'Find the cause rather than the silence. Check the green mains light is on, press and hold the test button for about ten seconds, check for steam or cooking fumes reaching the alarm, vacuum gently around the vents, and look for the date on the alarm. If it has a replaceable battery, fit a new one. If it is sealed, past ten years old, or the chirp continues after those checks, the alarm needs replacing or the wiring needs looking at, and that is a job for an engineer. Manufacturers are clear that a beeping alarm should never be ignored and that an alarm should not be taken down and left idle.',
+      },
+      {
+        question: 'Do interlinked smoke alarms all need replacing together?',
+        answer: 'Usually, yes. Alarms in an interlinked set are almost always installed at the same time and reach the end of their life at the same time, so once one is giving an end-of-life chirp the others will follow. Mixing a new alarm into an old set can also cause interlink problems between different generations of product. For a BS 5839-6 Grade D system in a home or HMO, we normally recommend replacing the set and certifying it, and for an HMO that is what the licensing conditions expect. We fit Aico alarms and work with Kidde, FireAngel and Hispec.',
+      },
+      {
+        question: 'What should I do if my carbon monoxide alarm goes off?',
+        answer: 'A carbon monoxide alarm sounding its full alarm is an emergency, not a nuisance beep. The NHS advice is to stop using any appliance you think might be producing carbon monoxide if you can, go outside, and get medical advice as soon as possible without going back into the building until you have it. If you think a gas appliance is leaking carbon monoxide, call the free National Gas Helpline on 0800 111 999. London Fire Brigade gives the same advice and adds that you should not re-enter the home until the source has been fixed by a qualified professional. A CO alarm that is only chirping intermittently is signalling a low battery, a fault or end of life, and FireAngel says any beep from a CO alarm is still a reason to call 0800 111 999.',
+      },
+      {
+        question: 'How often should smoke alarms be tested and replaced?',
+        answer: 'Test them with the test button regularly: Aico, Kidde and Essex County Fire and Rescue Service say at least monthly, and some UK fire and rescue services say weekly. Replace the whole alarm every ten years, which Aico, FireAngel and Hispec all state for their alarms and Essex Fire and Rescue states for all smoke alarms, mains-wired or battery. Kidde gives seven to ten years. The date is printed on the alarm. If you are a landlord or the property is an HMO, the alarms also need the periodic inspection your licence conditions require, with the results recorded in the log book.',
+      },
+    ],
   }
+
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

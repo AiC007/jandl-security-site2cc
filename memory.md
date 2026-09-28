@@ -262,15 +262,21 @@ Priority sequence:
 | /docs/2026-09-28-jag-answers-reply-client-email.html | Branded HTML body of the same email |
 | /docs/2026-09-28-jag-answers-implementation.md | Jag's answers built on branch `content/jag-answers-0928`: CO alarms, Stratford rename, locks and safes; pages changed per commit, what was flagged, the SW London areas request |
 | /docs/2026-09-28-sw-london-areas-research.md | Review session's research on Jag's ten SW London postcodes: demand, competitors, the eight unindexed area pages, the recommendation Wendy sent |
+| /docs/2026-09-28-sw-london-ack-client-email.md | Wendy acknowledgement of Jag's ten SW postcodes (canonical copy; SENT 2026-09-28 12:06 UTC, message `1a0e7e88935f1528`) |
+| /docs/2026-09-28-sw-london-recommendation-client-email.md | Wendy recommendation: extend Fulham, Battersea, Streatham, add Clapham and Chelsea and Kensington, fix the eight unindexed pages first (canonical copy; SENT 2026-09-28 12:15 UTC, message `1a0e7f0dffacd627`) |
 | /docs/2026-09-28-sw-london-and-indexing-implementation.md | Why eight area pages are not in Google (diagnosis, evidence, confidence), the rewrite of those eight, Fulham/Battersea/Streatham extended, Clapham and Chelsea and Kensington added, the noTimePromises switch, verification, sources, the manual indexing URL list, follow-ups |
 
 ---
 
 ## 11. Last Session Summary
 
-### 2026-09-28 (evening): South-west London and the unindexed area pages. Built on a branch, NOT shipped.
+### 2026-09-28 (evening): South-west London and the unindexed area pages. SHIPPED and verified live.
 
-**Branch `content/sw-london-and-indexing`** (from `main` at `3f5baf1`), not pushed, no PR, not deployed, no email. The review session checks it first. Record: `docs/2026-09-28-sw-london-and-indexing-implementation.md`.
+**Shipped.** Review session approved; one more fix (`/locations` own copy: populations, "TfL Rail", journey times, same-day and 2 to 4 hour promises, "based across Essex and Greater London") added. [PR #26](https://github.com/AiC007/jandl-security-site2cc/pull/26) squash-merged as **`ac4be54`**; preview `dpl_JCbTNQQKZbM8ft5ctC4inFwUB3N7` and production `dpl_8CS8inLesFcNnWf6fcunUQJ1i8kw` READY; branch deleted, no open PRs. **Verified live:** all 13 area pages and `/locations` 200 with new content; sitemap 114; breadcrumbs on 8 sampled matrix pages resolve; no time promises in the SW pages' own content; both phones on all 22 pages checked. Sitemap resubmitted in Search Console 14:09. No email; the review session drafts the note to Jag. Record: `docs/2026-09-28-sw-london-and-indexing-implementation.md` (branch hashes below are pre-squash).
+
+**Operator action:** request indexing by hand for `/locations`, the eight, `/locations/clapham`, `/locations/chelsea-and-kensington`, then Fulham, Battersea, Streatham (record, section 5).
+
+**Still open (record, section 8):** the `/locations` Coverage Map box shows developer placeholder text; the "30-mile radius" claim is unsourced; the July pages for Chelmsford, Basildon and Hornchurch still carry unsourced populations and journey times, and Hornchurch lists an unconfirmed "Queen Elizabeth II Country Park".
 
 **Basis.** Wendy's recommendation of 12:15 UTC (`1a0e7f0dffacd627`): fix the eight unindexed pages first, extend Fulham, Battersea and Streatham, add Clapham and Chelsea and Kensington, not ten pages. No reply from Jag in the mailbox at the time of writing; the operator's brief says he agreed.
 

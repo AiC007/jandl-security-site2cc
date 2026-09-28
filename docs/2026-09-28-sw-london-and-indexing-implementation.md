@@ -3,7 +3,7 @@
 **Date:** 2026-09-28
 **Session:** Claude Code (Opus 5.5), build session, after Jag's answers shipped (`1cd2134`).
 **Branch:** `content/sw-london-and-indexing`, cut from `main` at `3f5baf1`.
-**Status:** committed locally. **Not pushed, no PR, not deployed, no email.** The review session checks it before anything ships.
+**Status:** **SHIPPED and verified live** (section 9). [PR #26](https://github.com/AiC007/jandl-security-site2cc/pull/26) squash-merged as **`ac4be54`**. No email sent; the review session drafts the note to Jag. Commit hashes in sections 2 to 8 are the branch's, before the squash.
 **Maturity:** Pilot.
 **Research used:** the review session's `docs/2026-09-28-sw-london-areas-research.md`, copied onto this branch. Its claims were checked again this session; the differences are noted below.
 
@@ -108,7 +108,7 @@ Branch `content/sw-london-and-indexing`, eight commits on `main` at `3f5baf1` (s
 5. `53f36fd` feat(locations): add Clapham and Chelsea and Kensington area pages.
 6. `eeea837` fix(locations): review findings on place facts and south-west wording (section 7).
 7. `800a1cb` docs: this record, the research, memory.md.
-8. The `/locations` page's own copy (section 8), added after the review session approved the branch.
+8. `28bee9a` fix(locations): the `/locations` page's own copy (section 8), added after the review session approved the branch.
 
 ### The `noTimePromises` switch
 
@@ -264,4 +264,27 @@ The review session approved the branch and asked for one more fix: the `/locatio
 - "Our engineers cover a 30-mile radius from our Brentwood base" is J&L's own claim with no source; confirm with Jag or remove.
 - The July area pages for Chelmsford, Basildon and Hornchurch still carry unsourced populations and journey times in their own base fields ("~180,000", "in 35 minutes" and so on), and Hornchurch's `lib/data.ts` landmarks still list "Queen Elizabeth II Country Park". Same fix as the eight rewritten pages; small.
 
-**Nothing on this branch has been pushed, deployed or emailed.** The review session drafts any note to Jag.
+## 9. Shipped and verified live
+
+- **Branch:** already current with `origin/main` (`3f5baf1`), so the rebase was a no-op. Pushed and opened as [PR #26](https://github.com/AiC007/jandl-security-site2cc/pull/26).
+- **Preview:** `dpl_JCbTNQQKZbM8ft5ctC4inFwUB3N7` READY at `28bee9a`; both PR checks (Vercel, Vercel Preview Comments) passed.
+- **Merge:** squash-merged as **`ac4be54`**; branch deleted locally and on GitHub, remote ref pruned. No open PRs remain.
+- **Production:** `dpl_8CS8inLesFcNnWf6fcunUQJ1i8kw` READY, aliased to `jandlsecurity.co.uk` and the `www` and `jandlalarms.co.uk` domains.
+
+**Verified on https://jandlsecurity.co.uk (GET requests only; `/api/quote` not touched):**
+
+| Check | Result |
+|---|---|
+| The 13 changed area pages and `/locations` | All 14 return 200 (curl and a Python check). Each contains a phrase that exists only in the new content, for example "known locally as banjos" (Dagenham), "Du Cane Court" (Clapham), "Thurloe Square" (Chelsea and Kensington), "Six of the towns we cover, each with its own area page" (`/locations`). |
+| `/locations` stale copy | No "TfL Rail", "Population", "35 mins" or "based across" in its `<main>` text. |
+| Sitemap | 200, **114** `<loc>` entries, including `/locations/clapham` and `/locations/chelsea-and-kensington`. |
+| Breadcrumbs on service-and-area pages | A seeded random sample of 8 (`/alarm-repairs/upminster`, `/emergency-lighting-installation/billericay`, `/emergency-locksmith/romford`, `/fire-alarm-fault-finding/city`, `/fire-alarm-maintenance/harlow`, `/hmo-alarm-packages/stratford`, `/hmo-fire-alarm-testing/basildon`, `/police-response-eligibility/redbridge`): every breadcrumb item (`/`, `/services`, the page's own path) returns 200. |
+| No time promises on the SW pages | Fulham, Battersea, Streatham, Clapham and Chelsea and Kensington: no same-day, 2 to 4 hour, "within N", "24/7 emergency" or "24/7 cover", round-the-clock, daily or "priority emergency" wording in their `<main>` text or FAQ schema. `/locations` passes the same scan. Clapham shows "Our engineers travel from our Brentwood base to Clapham". |
+| Agent markdown | `/locations/clapham` and `/locations/chelsea-and-kensington` return 200 `text/markdown` without the 24/7 line. |
+| Both phone numbers | 0204 538 5925 and 0208 220 4770 on all 22 pages checked (14 area and index pages, 8 service-and-area pages). |
+
+**Search Console:** sitemap `https://jandlsecurity.co.uk/sitemap.xml` resubmitted at 14:09 on 2026-09-28; status "Pending processing". The listing still shows the 11:16 download (112 URLs) until Google fetches it again.
+
+**For the operator: request indexing by hand** in URL Inspection, in the order in section 5 (`/locations`, the eight rewritten pages, the two new pages, then Fulham, Battersea and Streatham).
+
+**The note to Jag** is drafted by the review session; none was sent from this session. The two earlier Wendy emails of the round are now in `docs/` (`2026-09-28-sw-london-ack-client-email.md`, `2026-09-28-sw-london-recommendation-client-email.md`), copied from the review session's scratchpad.

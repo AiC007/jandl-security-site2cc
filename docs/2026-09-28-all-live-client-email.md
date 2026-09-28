@@ -1,6 +1,6 @@
 # Client email: everything agreed on 28 September is live (Wendy AI)
 
-**Status:** CANONICAL COPY, checked by the review session against production on 2026-09-28. Gmail draft created once: `r2772904667454604013`, reply to `1a0e7e52f0d16fb0`. Not sent. Operator sends.
+**Status:** CANONICAL COPY, checked by the review session against production on 2026-09-28. Gmail draft created once: `r2772904667454604013`, reply to `1a0e7e52f0d16fb0`. **SENT by the operator 2026-09-28 14:56 UTC**, message `1a0e8840bbd010cb`.
 
 **Reply to:** Jag's message `1a0e7e52f0d16fb0`, thread `1a0e714b643af248`. The last message in the thread is Wendy's recommendation of 12:15 UTC (`1a0e7f0dffacd627`); Jag has not replied to it.
 

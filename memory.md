@@ -266,9 +266,47 @@ Priority sequence:
 | /docs/2026-09-28-sw-london-recommendation-client-email.md | Wendy recommendation: extend Fulham, Battersea, Streatham, add Clapham and Chelsea and Kensington, fix the eight unindexed pages first (canonical copy; SENT 2026-09-28 12:15 UTC, message `1a0e7f0dffacd627`) |
 | /docs/2026-09-28-sw-london-and-indexing-implementation.md | Why eight area pages are not in Google (diagnosis, evidence, confidence), the rewrite of those eight, Fulham/Battersea/Streatham extended, Clapham and Chelsea and Kensington added, the noTimePromises switch, verification, sources, the manual indexing URL list, follow-ups |
 
+| /docs/2026-09-28-all-live-client-email.md | Wendy email to Jag confirming all three 28 September rounds are live, disclosing the BS 5839-6 and Service Includes corrections, and asking whether same-day and 2 to 4 hour promises hold across London (canonical copy; SENT 2026-09-28 14:56 UTC, message `1a0e8840bbd010cb`) |
+| /docs/2026-09-28-all-live-client-email.html | Branded HTML body of the same email, as sent |
 ---
 
 ## 11. Last Session Summary
+
+### 2026-09-28 (close): OUTSTANDING, pick up here next session
+
+Everything built on 28 September is merged, deployed and verified live:
+- **PR #23:** domestic makes, the eight matrix-page fix, FAQ search and the beeping guide.
+- **PR #24:** the maintenance round.
+- **PR #25:** Jag's answers.
+- **PR #26:** south-west London and the unindexed area pages.
+
+There are no open PRs and no stale branches. The last Wendy email is `1a0e8840bbd010cb` (14:56 UTC), and Jag has not yet replied to it. The operator splits work between a build session and a review session: the build session implements, and the review session reviews, drafts every Wendy email and writes the prompts.
+
+**Waiting on the operator**
+1. **Request indexing by hand** in Search Console URL Inspection, one URL at a time. There is a daily quota, so carry on the next day if it stops. Order:
+   - `/locations`;
+   - `/locations/romford`, `/brentwood`, `/ilford`, `/dagenham`, `/redbridge`, `/canary-wharf`, `/harlow`, `/epping`;
+   - `/locations/clapham`, `/chelsea-and-kensington`;
+   - `/locations/fulham`, `/battersea`, `/streatham`.
+   The operator planned to do this on the evening of 28 September. Next session: confirm it was done, then re-inspect the eight after about a week.
+
+**Waiting on Jag**
+2. **Response-time promises across London.** He was asked in the 14:56 email whether same-day surveys and 2 to 4 hour emergency callouts (for maintenance customers) hold across London. Westminster and the other May London pages still carry them; the south-west pages carry none. If he says no, remove them from the other London pages as well, using the `noTimePromises` flag the south-west pages use.
+3. **Aico Expert Installer level.** He is checking, and asked for no change until then. The site currently says "Aico Expert Installer" as a training scheme, with no level, badge or directory link.
+
+**Measure**
+4. **Indexing.** About one to two weeks after the indexing requests, re-inspect the eight rewritten pages and check their impressions. URL Inspection has proved unreliable for this site: it reported `/locations` as unknown while it had impressions. Confidence in the thin-content diagnosis is low, so judge by impressions as well.
+5. **South-west pages.** One month after launch (around 28 October), measure Clapham, Chelsea and Kensington, Fulham, Battersea and Streatham. Only then consider further south-west pages; Jag was told there would be no more for now.
+6. **Search Console generally.** The 28 September sitemap (114 URLs) was resubmitted at 14:09 and was still pending at the time.
+
+**Small fixes, logged but not done**
+7. **`/locations` page leftovers:** the Coverage Map box shows developer placeholder text to visitors, and the "30-mile radius from our Brentwood base" claim has no source.
+8. **Area pages with unsourced facts:** the Chelmsford, Basildon and Hornchurch pages still give populations and journey times with no source, and Hornchurch still lists "Queen Elizabeth II Country Park", which could not be sourced.
+9. **Sitewide 24/7 and same-day wording:** the header banner "24/7 Emergency Callouts Available", the site's social-share description ("same-day service, 24/7 emergency support"), the quote form's "within 2 hours" and the 24/7 line in the markdown contact block. These are J&L's own claims; revisit after Jag answers item 2.
+10. **Development-only npm audit findings:** nine remain in build tooling, outside the production audit, which is clean. Low priority.
+11. **Carried from earlier:** trade and certification directory listings (Checkatrade, Trustpilot, SSAIB, BAFE) are still not done. Resend housekeeping is still open: delete the two unused keys, delete the disabled Zapier workflow `01a08fe2-2984-70e1-96a7-9282b5bfa1c2`, and consider rotating the live "J&L Website" key. `llms.txt` and `llms-full.txt` may still list only some of the blog posts; check.
+
+**Next routine milestone:** the September end-of-month performance report, due around 30 September. It should cover the indexing and south-west work, stated plainly, with no promise that indexing will follow.
 
 ### 2026-09-28 (evening): South-west London and the unindexed area pages. SHIPPED and verified live.
 

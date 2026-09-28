@@ -543,11 +543,11 @@ function generateServiceFAQs(service: string, location: string) {
       },
       {
         question: `Can J&L Security fit BS3621 locks in ${location}?`,
-        answer: `Yes. If your insurer has asked for BS3621 locks on external doors, we fit them in ${location}. Tell us the policy conditions when you call, and we can design any intruder alarm to the same conditions, so that the locks and the alarm meet the insurer's requirements together.`
+        answer: `Yes. We fit BS3621 security locks on external doors in ${location}. If your insurer has set conditions for your locks or your alarm, tell us when you call, and we can design any intruder alarm to the same policy conditions.`
       },
       {
         question: `Do you provide an emergency locksmith service in ${location}?`,
-        answer: `Yes. Our locksmith work in ${location} includes helping when you are locked out or a lock is damaged. We do not publish response times or call-out charges: call us, tell us what has happened, and we will tell you when we can attend.`
+        answer: `Yes. Our locksmith work in ${location} includes lockouts and lock replacements. We do not publish response times or call-out charges: call us and describe what has happened.`
       },
       {
         question: `Can you fit a safe in ${location}?`,
@@ -674,15 +674,15 @@ const serviceDetailBlocks: Record<string, {
   // or procedures.
   locks: {
     typicalProjects: [
-      'Help for a home or business that is locked out, or has a lock that is damaged or no longer works',
+      'Help for a home or business that is locked out',
       'Lock replacements on the doors of a home or business',
-      'BS3621 security locks fitted to external doors to meet an insurer\'s conditions',
+      'BS3621 security locks fitted to external doors',
       'Home and commercial safe fitting, alongside an intruder alarm and CCTV where the contents call for it'
     ],
     equipmentUsed: 'J&L Security offers locksmith work, including lockouts and lock replacements, BS3621 security lock fitting, and safe fitting for homes and businesses. This sits alongside the burglar alarms, CCTV, fire alarms, access control and security lighting we install, so doors, locks, safes and alarms can be looked at together. Tell us what you need when you call and we will advise on the next step.',
-    complianceNote: 'If your insurer specifies a lock standard such as BS3621 for external doors, or a rating for a safe, tell us when you call so that the locks and safe we fit, and any alarm we install, meet those conditions together. We provide the documentation your insurer requires for any system we install.',
+    complianceNote: 'If your insurer specifies a lock standard such as BS3621 for external doors, or has conditions for a safe, tell us when you call so that we can take them into account. We provide the documentation your insurer requires for any alarm, CCTV or access control system we install.',
     maintenanceInfo: 'Our maintenance contracts cover the intruder alarm, CCTV, fire alarm and access control systems we install. If a lock or safe needs attention after it is fitted, call us and describe the problem.',
-    pricingIndicator: 'We do not publish prices for lock or safe work, because each job depends on the door, the lock or the safe. Tell us what you need and we will give you a quotation before any work starts.'
+    pricingIndicator: 'We do not publish prices for lock or safe work, because each job depends on the door, the lock or the safe. Tell us what you need when you call.'
   },
   access: {
     typicalProjects: [
@@ -712,10 +712,9 @@ const serviceDetailBlocks: Record<string, {
 
 function getServiceType(service: string): string {
   const s = service.toLowerCase();
-  // Lock and safe pages are not one of J&L's five core services. They get a
-  // conservative block rather than falling through to burglar or lighting.
-  // "Maglock Installation" must stay with access control, hence the explicit
-  // terms rather than a bare "lock" match.
+  // Lock and safe pages get their own block rather than falling through to
+  // burglar or lighting. "Maglock Installation" must stay with access
+  // control, hence the explicit terms rather than a bare "lock" match.
   if (s.includes('locksmith') || s.includes('bs3621') || s.includes('safe fitting')) return 'locks';
   // Domestic smoke and heat alarms are BS 5839-6, not the commercial BS 5839-1
   // block used by the panel-based fire pages. "HMO Fire Alarm Packages" is
@@ -777,7 +776,7 @@ function generateContent(service: string, location: string) {
 
     whyChoose: [
       `Local engineers covering ${location} (${locationData.postcode || 'local area'}) and surrounding areas`,
-      'Free, no-obligation security survey with same-day availability',
+      isLocks ? 'Free, no-obligation security survey' : 'Free, no-obligation security survey with same-day availability',
       // Lock pages: SSAIB covers the security systems, not lock and safe
       // work, and the Emergency Locksmith page makes no response-time claim.
       ...(isLocks ? [] : ['All installations to SSAIB standards', '24/7 emergency response for existing customers']),
@@ -853,8 +852,7 @@ function generateServiceIncludes(service: string, serviceType: string) {
       'Locksmith work, including lockouts and lock replacements',
       'BS3621 security locks fitted to external doors',
       'Safe fitting for homes and businesses',
-      'Advice on how locks and safes sit alongside your alarm, CCTV and access control',
-      'Written quotation for any work we carry out'
+      'Advice on how locks and safes sit alongside your alarm, CCTV and access control'
     ];
   }
 
@@ -1347,8 +1345,9 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
             Ready for {combination.service} in {combination.location}?
           </h2>
           <p className="text-xl mb-8 text-primary-100">
-            Get your free, no-obligation security survey today. Our local engineers 
-            serve {combination.location} with same-day appointments available.
+            {content.isLocksService
+              ? `Call us to describe what you need. Our local team serves ${combination.location} and the surrounding area.`
+              : `Get your free, no-obligation security survey today. Our local engineers serve ${combination.location} with same-day appointments available.`}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

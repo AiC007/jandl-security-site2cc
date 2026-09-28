@@ -391,6 +391,20 @@ function locationsIndexMarkdown(): string {
 function serviceLocationMarkdown(slug: string): string | null {
   const item = serviceLocationMatrix.find((m) => m.slug === slug);
   if (!item) return null;
+  // Lock and safe pages mirror their HTML: the accreditations cover the
+  // security systems, not lock and safe work, and there is no emergency
+  // support claim. Same terms as getServiceType() in the matrix page.
+  if (/locksmith|bs3621|safe fitting/i.test(item.service)) {
+    return [
+      `# ${item.service} in ${item.location}`,
+      '',
+      `${c.name} offers locksmith work, BS3621 lock fitting and safe fitting in ${item.location} and the surrounding area, alongside the burglar alarms, CCTV, fire alarms, access control and security lighting it installs. Established ${c.established}.`,
+      '',
+      'Prices and response times are not published for lock and safe work. Call to describe what you need.',
+      '',
+      contactBlock(),
+    ].join('\n');
+  }
   return [
     `# ${item.service} in ${item.location}`,
     '',

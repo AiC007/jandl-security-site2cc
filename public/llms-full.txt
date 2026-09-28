@@ -134,7 +134,6 @@ Coverage extends to Kent border areas on request.
 - Apollo, Hochiki: Fire detection devices
 - Aico: Domestic smoke and heat alarms (fitted; Aico Expert Installer)
 - Kidde, FireAngel, Hispec: Domestic smoke and heat alarms (worked with: replacement, assessment and servicing of existing alarms)
-- Carbon monoxide alarms: worked on alongside domestic smoke and heat alarms (no particular make stated)
 - Paxton: Access control systems (Net2, Paxton10)
 - Comelit: Video intercom and door entry
 

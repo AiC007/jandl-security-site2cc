@@ -261,10 +261,33 @@ Priority sequence:
 | /docs/2026-09-28-jag-answers-reply-client-email.md | Wendy reply to Jag's answers of 28 September, with the London areas targeted (canonical copy; SENT 2026-09-28 11:52 UTC, message `1a0e7dc108df097e`) |
 | /docs/2026-09-28-jag-answers-reply-client-email.html | Branded HTML body of the same email |
 | /docs/2026-09-28-jag-answers-implementation.md | Jag's answers built on branch `content/jag-answers-0928`: CO alarms, Stratford rename, locks and safes; pages changed per commit, what was flagged, the SW London areas request |
+| /docs/2026-09-28-sw-london-areas-research.md | Review session's research on Jag's ten SW London postcodes: demand, competitors, the eight unindexed area pages, the recommendation Wendy sent |
+| /docs/2026-09-28-sw-london-and-indexing-implementation.md | Why eight area pages are not in Google (diagnosis, evidence, confidence), the rewrite of those eight, Fulham/Battersea/Streatham extended, Clapham and Chelsea and Kensington added, the noTimePromises switch, verification, sources, the manual indexing URL list, follow-ups |
 
 ---
 
 ## 11. Last Session Summary
+
+### 2026-09-28 (evening): South-west London and the unindexed area pages. Built on a branch, NOT shipped.
+
+**Branch `content/sw-london-and-indexing`** (from `main` at `3f5baf1`), not pushed, no PR, not deployed, no email. The review session checks it first. Record: `docs/2026-09-28-sw-london-and-indexing-implementation.md`.
+
+**Basis.** Wendy's recommendation of 12:15 UTC (`1a0e7f0dffacd627`): fix the eight unindexed pages first, extend Fulham, Battersea and Streatham, add Clapham and Chelsea and Kensington, not ten pages. No reply from Jag in the mailbox at the time of writing; the operator's brief says he agreed.
+
+**Diagnosis of the eight unindexed pages** (Romford, Brentwood, Dagenham, Ilford, Redbridge, Canary Wharf, Harlow, Epping). All "Last crawled: Never", zero impressions in 2026, all from the original 15 towns. Not technical: 200 to Googlebot, self-canonical, `index, follow`, in the sitemap since before April. Not internal linking (Ilford, Romford and Brentwood are in the footer on every page). **Best hypothesis, low confidence: crawl deprioritisation of near-template pages** (729 to 789 words, 19 to 21% unique six-word phrases; the four July pages are 60 to 64%). Against it: 21 equally thin siblings are indexed. Before the 12 April migration Google knew no area pages at all (only 9 URLs site-wide). **URL Inspection is unreliable for this site:** `/locations` has 10 post-migration impressions on the exact URL yet reports "unknown to Google"; coverage labels also flip between inspections. Check the performance report alongside it.
+
+**Built (six commits).**
+- `cd3a5c1`: breadcrumb JSON-LD on all 50 matrix pages used hyphenated 404 URLs; now real paths. `/locations` linked 19 slugs with no page and omitted 11 May pages; now generated from `lib/data.ts`.
+- `a76836f`: `noTimePromises` on `Location` (not in the page file, so the agent markdown can read it). SW pages lose same-day, 2 to 4 hour and 24/7 promises.
+- `2d707fa`, `a96ad79`: the July `locationExtended` treatment for the eight, and for Fulham, Battersea and Streatham. Many base facts were wrong (populations, "TfL Rail", "Crossrail", journey times, boroughs, postcodes).
+- `53f36fd`: Clapham and Chelsea and Kensington. Sitemap 112 to 114.
+- `eeea837`: fresh-context review fixes: 11 must-fix items (unsourced frequency and market claims, template lines claiming daily cover and a track record on SW pages, several place facts overstated against their sources) and most should-consider items.
+
+**Verified:** build 0; only the 13 intended pages, `/locations` and the sitemap change; all 114 breadcrumb URLs return 200; JSON-LD parses; both phones; no em dash added.
+
+**After deploy, request indexing by hand** for `/locations`, the eight, the two new pages, then Fulham, Battersea and Streatham (list in the record, section 5). Watch the eight weekly for four weeks.
+
+**Lessons.** (a) Scanning the SW pages for "same-day" and "24/7" missed "daily", "usually asked", "most often" and "priority emergency response" in the template; when a brief bans a kind of claim, list its synonyms before scanning. (b) Writing from fact sheets still overstated sources in places ("make up" the Opportunity Area, "with 1,800 homes" for a planned total); a review against the sheets is worth its cost. (c) Research sub-agents with a shared brief and a "flagged / unconfirmed" section per fact sheet caught many existing errors in the site's own place data; treat old base fields as unverified. (d) Firecrawl credits ran to 70% in one day; use web search and fetch first. (e) Uniqueness by six-word shingles on the built `<main>` is a quick, repeatable thinness measure (method in the record, section 1).
 
 ### 2026-09-28 (afternoon): Jag's answers. SHIPPED and verified live.
 

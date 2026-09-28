@@ -661,7 +661,7 @@ const serviceDetailBlocks: Record<string, {
     ],
     equipmentUsed: 'For domestic and HMO smoke and heat alarms we fit Aico alarms, and we work with Kidde, FireAngel and Hispec smoke and heat alarms, whether you need a like-for-like replacement or an assessment of an existing system. Mains-powered interlinked alarms with battery backup (Grade D) are the usual specification for new work. If your property already has alarms of another make, tell us the make when you call and we will advise. Larger HMOs that need a panel-controlled Grade A system use the same control panel makes listed on our fire alarms service page.',
     complianceNote: 'Domestic smoke and heat alarm systems are designed and installed to BS 5839-6, the British Standard for fire detection and fire alarm systems in domestic premises. The standard describes a system by grade and category. The grade is the type of equipment: Grade A is a panel-controlled system, Grade D is mains-powered interlinked alarms with battery backup, and Grade F is battery-only. The category is where the alarms go: LD3 covers the escape routes only, LD2 adds rooms that open onto escape routes and higher-risk rooms such as the kitchen and living room, and LD1 covers every room except bathrooms and toilets. For a licensed HMO the grade and category are normally set by the local authority licensing schedule.',
-    maintenanceInfo: 'Grade D alarms have no control panel to service, but they still need looking after. Test them weekly with the test button, keep them free of dust, and replace them when they reach the end of the life stated by the manufacturer. For HMOs, the BS 5839-6 maintenance recommendations and the council licence normally mean an annual inspection by a competent person, with the results recorded in the log book. Panel-controlled Grade A systems are serviced every 6 months.',
+    maintenanceInfo: 'Grade D alarms have no control panel to service, but they still need looking after. Test them weekly with the test button, keep them free of dust, and replace them when they reach the end of the life stated by the manufacturer. For HMOs, the BS 5839-6 maintenance recommendations and the council licence normally mean an annual inspection by a competent person, with the results recorded in the log book. Panel-controlled Grade A systems in HMOs are typically serviced every 6 months.',
     pricingIndicator: 'Domestic and HMO smoke alarm installations are quoted after a free survey, because the price depends on the grade, the category and the number of alarms. Annual servicing for residential and small HMO systems is from GBP 120 plus VAT per year. Surveys and quotations are free.'
   },
   // Lock and safe pages. These are not one of J&L's five core services, so
@@ -714,12 +714,13 @@ function getServiceType(service: string): string {
   // terms rather than a bare "lock" match.
   if (s.includes('locksmith') || s.includes('bs3621') || s.includes('safe fitting')) return 'locks';
   // Domestic smoke and heat alarms are BS 5839-6, not the commercial BS 5839-1
-  // block used by the panel-based fire pages.
-  if (s.includes('smoke') || s.includes('interlinked')) return 'domestic';
+  // block used by the panel-based fire pages. "HMO Alarm Packages" is BS 5839-6
+  // too (Grade D or Grade A per the licensing schedule); "HMO Fire Alarm
+  // Testing" contains "fire" and stays with the commercial block.
+  if (s.includes('smoke') || s.includes('interlinked') || (s.includes('hmo') && !s.includes('fire'))) return 'domestic';
   if (s.includes('cctv')) return 'cctv';
-  // "BS 5839-1 Compliance Audits" and "HMO Alarm Packages" are fire subjects
-  // whose names do not contain the word "fire".
-  if (s.includes('fire') || s.includes('bs 5839') || s.includes('hmo')) return 'fire';
+  // "BS 5839-1 Compliance Audits" is a fire subject whose name lacks "fire".
+  if (s.includes('fire') || s.includes('bs 5839')) return 'fire';
   if (s.includes('access') || s.includes('door') || s.includes('intercom') || s.includes('maglock') || s.includes('keypad') || s.includes('fob')) return 'access';
   if (s.includes('lighting') || s.includes('emergency')) return 'security';
   return 'burglar';
@@ -752,12 +753,16 @@ function generateContent(service: string, location: string) {
   ];
 
   return {
-    h1: `${service} ${location} - Professional Installation & Maintenance`,
+    h1: isLocks
+      ? `${service} ${location}`
+      : `${service} ${location} - Professional Installation & Maintenance`,
     metaDescription: isLocks
-      ? `${service} in ${location}: J&L Security is a security systems installer covering ${location}. Call ${COMPANY_INFO.phone} or ${COMPANY_INFO.phone2} to discuss lock and safe requirements alongside alarms, CCTV and access control.`
+      ? `${service} in ${location}. J&L Security installs alarms, CCTV, fire alarms and access control. Call ${COMPANY_INFO.phone} to discuss lock and safe work.`
       : `Expert ${service.toLowerCase()} services in ${location}. Professional installation, maintenance & 24/7 support. Free surveys available. Call ${COMPANY_INFO.phone} or ${COMPANY_INFO.phone2} today.`,
 
-    hero: `Looking for reliable ${service.toLowerCase()} in ${location}? J&L Security provides professional installation and maintenance services throughout ${location} and surrounding areas. With same-day surveys available and over 12 years of experience, we are your trusted local security specialists.`,
+    hero: isLocks
+      ? `J&L Security is a security systems installer covering ${location}: burglar alarms, CCTV, fire alarms, access control and security lighting. Lock and safe requirements come up during our surveys, so tell us what you need and we will confirm whether it is work we carry out.`
+      : `Looking for reliable ${service.toLowerCase()} in ${location}? J&L Security provides professional installation and maintenance services throughout ${location} and surrounding areas. With same-day surveys available and over 12 years of experience, we are your trusted local security specialists.`,
 
     intro: `Our experienced engineers serve ${location} and the surrounding ${nearbyList} areas, providing comprehensive ${service.toLowerCase()} solutions for homes and businesses.${landmarkList ? ` Whether you are located near ${landmarkList}, our` : ' Our'} local team ensures rapid response times and personalised service. Every installation is carried out to SSAIB standards with full documentation and aftercare.`,
 
@@ -779,6 +784,10 @@ function generateContent(service: string, location: string) {
     // smoke alarm pages carry a make list too, so they share the heading.
     isFireService: isFireService || isDomesticFire,
 
+    // Lock and safe pages: neutral headings and no "work we carry out" line,
+    // because whether J&L offers this work is unconfirmed.
+    isLocksService: isLocks,
+
     equipmentUsed: details.equipmentUsed,
 
     typicalProjects: details.typicalProjects,
@@ -791,7 +800,9 @@ function generateContent(service: string, location: string) {
 
     pricingIndicator: details.pricingIndicator,
 
-    coverage: `We provide ${service.toLowerCase()} services throughout ${location} (${locationData.postcode}) and nearby areas including ${locationData.nearbyAreas.join(', ')}. Our local knowledge means we understand the specific security challenges facing ${location} residents and businesses, from the property types common in the area to the response times achievable from our base in Brentwood.`,
+    coverage: isLocks
+      ? `We cover ${location} (${locationData.postcode}) and nearby areas including ${locationData.nearbyAreas.join(', ')} for alarm, CCTV, fire alarm, access control and lighting work from our base in Brentwood. If your requirement is a lock or a safe, call us first and we will tell you whether we can help.`
+      : `We provide ${service.toLowerCase()} services throughout ${location} (${locationData.postcode}) and nearby areas including ${locationData.nearbyAreas.join(', ')}. Our local knowledge means we understand the specific security challenges facing ${location} residents and businesses, from the property types common in the area to the response times achievable from our base in Brentwood.`,
 
     fireCompliance: isFireService
       ? `All our fire alarm installations in ${location} comply with BS 5839-1 standards and include the mandatory 6-monthly servicing to maintain compliance. This is particularly important for HMOs, commercial properties, and shared residential buildings throughout ${location}. We provide full compliance documentation including commissioning certificates and log books.`
@@ -818,7 +829,7 @@ function generateServiceIncludes(service: string, serviceType: string) {
       'Free survey covering the grade and category your property needs',
       'BS 5839-6 system design for homes and HMOs',
       'Mains-powered interlinked smoke and heat alarms with battery backup',
-      'Aico, Kidde, FireAngel and Hispec smoke and heat alarms',
+      'Aico alarms fitted; Kidde, FireAngel and Hispec alarms replaced and assessed',
       'Heat alarms for kitchens, smoke alarms for escape routes and living areas',
       'Replacement of alarms that are beeping, failing tests or past their stated life',
       'Testing and installation certificate on completion',
@@ -838,24 +849,9 @@ function generateServiceIncludes(service: string, serviceType: string) {
     ];
   }
 
-  // Fire pages whose name lacks the word "fire" (HMO Alarm Packages) would
-  // otherwise match the "alarm" rule below and get the intruder list. Fire
-  // pages whose name does contain "fire" also hit that rule first today; that
-  // is a pre-existing issue left as-is here so their output does not change.
-  if (serviceType === 'fire' && !baseService.includes('fire')) {
-    return [
-      'BS 5839-1 compliant system design',
-      'Professional installation and commissioning',
-      'Smoke and heat detector installation',
-      'Fire alarm panel configuration',
-      'Emergency lighting integration',
-      '6-monthly servicing and testing',
-      'Compliance certification provided',
-      'Staff training on system operation',
-      '24/7 monitoring options'
-    ];
-  }
-
+  // Note: fire pages hit the "alarm" rule below before the "fire" rule, so
+  // they get the intruder list. Pre-existing, left as-is here so their output
+  // does not change in this round.
   if (baseService.includes('burglar') || baseService.includes('alarm')) {
     return [
       'Free security survey and consultation',
@@ -1179,9 +1175,11 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            {content.isFireService
-              ? `Equipment and Makes in ${combination.location}`
-              : `What We Install in ${combination.location}`}
+            {content.isLocksService
+              ? `Lock and Safe Requirements in ${combination.location}`
+              : content.isFireService
+                ? `Equipment and Makes in ${combination.location}`
+                : `What We Install in ${combination.location}`}
           </h2>
 
           <div className="prose prose-lg max-w-none">
@@ -1220,9 +1218,15 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
             Example Projects in {combination.location}
           </h2>
-          <p className="text-gray-600 text-center mb-8">
-            The types of {combination.service.toLowerCase()} work we carry out for customers in {combination.location} and surrounding areas:
-          </p>
+          {content.isLocksService ? (
+            <p className="text-gray-600 text-center mb-8">
+              How lock and safe requirements come up in our security work in {combination.location} and surrounding areas:
+            </p>
+          ) : (
+            <p className="text-gray-600 text-center mb-8">
+              The types of {combination.service.toLowerCase()} work we carry out for customers in {combination.location} and surrounding areas:
+            </p>
+          )}
           <div className="space-y-4">
             {content.typicalProjects.map((project, index) => (
               <div key={index} className="bg-white rounded-lg p-5 border border-gray-200">

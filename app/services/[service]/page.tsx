@@ -158,7 +158,7 @@ const servicePageData: Record<string, {
       },
       {
         question: 'Are you an Aico Expert Installer?',
-        answer: 'Yes. J&L Security is an Aico Expert Installer, which means our engineers have completed Aico\'s own training scheme for installers of its domestic alarms. It is a training scheme rather than an accreditation, so it sits alongside our SSAIB, BAFE, FIA and CHAS accreditations rather than among them. For domestic work we fit Aico smoke and heat alarms, and we work with Kidde, FireAngel and Hispec alarms too.',
+        answer: 'Yes. J&L Security is an Aico Expert Installer, which means J&L Security has completed Aico\'s own training scheme for installers of its domestic alarms. It is a training scheme rather than an accreditation, so it sits alongside our SSAIB, BAFE, FIA and CHAS accreditations rather than among them. For domestic work we fit Aico smoke and heat alarms, and we work with Kidde, FireAngel and Hispec alarms too.',
       },
       {
         question: 'How often does a fire alarm need to be serviced?',

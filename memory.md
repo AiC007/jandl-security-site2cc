@@ -1,6 +1,6 @@
 # J&L Security: Project Memory
 
-**Last updated:** 2026-09-11
+**Last updated:** 2026-09-28
 **Maintained by:** The AI Consultancy (London) Ltd
 **Purpose:** Living reference for all AI sessions working on this project. Update after every substantive session.
 
@@ -256,10 +256,26 @@ Priority sequence:
 | /docs/2026-09-28-domestic-makes-implementation.md | What shipped per unit, every default relied on, review findings, merge and deployment record, live verification, GSC actions, what waits on Jag, follow-ups |
 | /docs/2026-09-28-domestic-makes-live-client-email.md | Wendy email to Jag saying the makes, page fixes, FAQ search and beeping guide are live, asking the five open questions (canonical copy; NOT yet drafted or sent) |
 | /docs/2026-09-28-domestic-makes-live-client-email.html | Branded HTML body of the same email |
+| /docs/2026-09-28-maintenance-round-handoff-prompt.md | Build brief for the maintenance round (Next.js upgrade, BS 5839-6 definitions, fire "Service Includes") |
+| /docs/2026-09-28-maintenance-round-implementation.md | Maintenance round record: audit before and after, built-output and runtime comparisons, BS 5839-6 sources, eight practice claims flagged not changed, follow-ups |
 
 ---
 
 ## 11. Last Session Summary
+
+### 2026-09-28 (maintenance round, build session): Next.js security upgrade, BS 5839-6 definitions, fire "Service Includes". ON BRANCH, NOT SHIPPED.
+
+**Where it is.** Branch `fix/next-upgrade-bs5839-service-includes`, cut from `main` at `6578118`, six commits, local only: not pushed, no PR, not merged, not deployed, no email. The review session checks it, then decides what ships. Full record: `docs/2026-09-28-maintenance-round-implementation.md`. Brief: `docs/2026-09-28-maintenance-round-handoff-prompt.md`.
+
+**Item 1, security upgrade (`6190c1c`, `ae09cb2`).** `next` 15.4.10 to 15.5.26 (latest 15.x), `eslint-config-next` ^15.5.26, `sharp` 0.35.5 and `nanoid` 3.3.19 within range. **15.5.26 alone did not clear the audit:** it pins `postcss` to exactly 8.4.31. A scoped npm override moves it to 8.5.23, the version Next 16.3.x pins, in its own commit so it can be dropped. Production audit 4 findings (1 critical, 3 high) to **0**. Proof of no regression: all 115 prerendered pages identical to 15.4.10 once framework hashes are stripped; CSS byte-identical (hash `4ec827107fcab58c`); sitemap 112 URLs; 49 `next start` and `curl` probes (markdown negotiation, the four API routes with `/api/quote` validation only and no key, headers, `/_next/image`, discovery files) identical apart from lower-case `Vary` names, the 404 now served prerendered with identical content, and a smaller AVIF from the newer libvips. The compiled middleware matcher now also covers `.rsc` segment-prefetch paths, which is the advisory fix. **Corrected here:** `middleware.ts` is markdown content negotiation only; the apex/www and jandlalarms.co.uk redirects are Vercel domain settings.
+
+**Item 2, BS 5839-6 (`d657a4b`).** Every grade and category statement checked against Aico's and FireAngel's BS 5839-6:2019 guides (with Safelincs, the Scottish technical handbook and Building Control NI in support). Main fixes: LD2 is escape routes plus high-risk rooms including any kitchen (heat) and the principal habitable room, not "rooms opening onto escape routes" or bedrooms; LD1 wording; grades are A, C, D1, D2, F1 and F2, with B and E removed in 2019; Grade D is about power, not interlinking ("interlinked by definition" removed); the HMO guide's two "BS 5839-1" H2 headings, intro and scope FAQ now say BS 5839-6 (larger HMOs are Grade A in the communal areas, designed to BS 5839-1); LD3 is a minimum only in existing owner-occupied homes of up to two storeys; "BS 5839-1 Grade A" in the Romford FAQ and `llms-full.txt` is now BS 5839-6; the fire pages' compliance notice no longer puts HMOs under BS 5839-1. 38 pages change, including 18 where the HMO guide's card moves from 14 to 15 min read because its `wordCount` rose. **Eight licensing-practice and servicing claims are left as written and flagged. Two need an operator decision before shipping:** the HMO guide's "most fire risk assessors will recommend LD2 Grade A as the minimum", which contradicts the same page, and the servicing and testing claims attributed to BS 5839-6. A third-party repost of BSI's Table 3 shows Grade D needs monthly user tests and no competent-person servicing outside sheltered and telecare housing. That repost is used as corroboration only, never as the sole basis for site copy.
+
+**Item 3, Service Includes (`7f709ff`, `63dd99e`).** Fire pages are routed by `serviceType`, and the list follows each page's subject. Installation and commissioning pages keep the old fire list. The five servicing, maintenance, testing and fault-finding pages get a service-visit list, with 6-monthly limited to panel systems and monitoring to commercial properties. Monitoring gets its own list, and the audit page gets an inspection list (flagged: nothing on the site defines an audit). There are no makes (Gent) and no BAFE claim. Exactly those 9 pages change. The second commit routes the other lists by type too, which moves Video Intercom, Keypad/Fob and Maglock to the access list and Police Response Eligibility to the intruder list (exactly 4 pages); it can be dropped on its own.
+
+**Adversarial review.** A fresh-context sub-agent re-fetched the sources, rendered all 50 matrix pages, and checked `npm ci` from the committed lockfile under npm 10 and 11 (the override holds). It found no upgrade regression and no misrouted page. It confirmed four medium and seven low findings. Everything except the two operator decisions was fixed and folded into the item 2 and 3 commits, then rebuilt and re-diffed. Whole branch: 42 pages change against 15.4.10, both numbers on all 115 pages, no em dash added, production audit 0. **Lesson: when correcting one sentence, grep the same page for its siblings.** The compliance note was fixed while the compliance notice directly beneath it still said the opposite, and `/faqs` was fixed while the service page answered the same question the old way.
+
+**Follow-ups:** the dev-dependency audit (9 toolchain findings, fixable in range, including Tailwind's build-time `postcss`); `next lint` deprecated before Next 16; remove the `postcss` override once Next pins a fixed version; the Romford HMO FAQ's unsourced BAFE and servicing claims; the BAFE badge on the Monitoring and Audit pages; Canary Wharf's empty location data; an em dash in the site's default title and tagline; the eight flagged BS 5839-6 claims.
 
 ### 2026-09-28 (build session): domestic makes, eight matrix pages fixed, FAQ search, beeping guide. SHIPPED and verified live.
 
@@ -376,9 +392,11 @@ The standing rule worked exactly as designed and is worth keeping as the templat
 
 **PR backlog found and cleared.** Six PRs were open at session start, not one. #15, #16 and #17 were the July content PRs whose commits are all ancestors of main via #18, so their content shipped and only the PR records were stale. #11 was docs-only and its `memory.md` changes had been overtaken, but it carried two records worth keeping, which were salvaged onto main: `docs/2026-06-22-agent-readiness-client-email.md` and the live re-scan result in `docs/agent-readiness-2026-06-22.md` (Level 1 at 21/100 to Level 5). #1 was a Vercel security PR bumping Next from 15.4.6 to 15.4.8; main is already on 15.4.10, so it was superseded. **Audit open PRs at the start of every session: content can be merged while the PR record stays open, and a whole PR can be abandoned after its preview builds.**
 
-### OUTSTANDING SECURITY ACTION: upgrade Next.js to 15.5.23
+### SECURITY ACTION: Next.js upgrade. RESOLVED ON BRANCH 2026-09-28, NOT YET DEPLOYED
 
-**This is the largest open item on the project and it is not a content task.** `npm audit --omit=dev` against main on 2026-08-17 reports four vulnerable packages at high severity: `next`, `postcss` (Next's bundled copy), `sharp` (below 0.35.0, inheriting libvips CVE-2026-33327, CVE-2026-33328, CVE-2026-35590, CVE-2026-35591) and `nanoid`. **Every one of them resolves at `next@15.5.23`.** The site is on 15.4.10.
+**Status 2026-09-28:** resolved on branch `fix/next-upgrade-bs5839-service-includes` (commits `6190c1c` and `ae09cb2`): `next` 15.5.26, `sharp` 0.35.5, `nanoid` 3.3.19, and an npm override moving Next's pinned `postcss` to 8.5.23. `npm audit --omit=dev` reports 0 vulnerabilities on the branch. **Production still runs 15.4.10 until the review session merges and deploys.** Record: `docs/2026-09-28-maintenance-round-implementation.md`. The text below is the original 2026-08-17 entry, kept for history; its middleware sentence has been corrected.
+
+**This was the largest open item on the project and it is not a content task.** `npm audit --omit=dev` against main on 2026-08-17 reports four vulnerable packages at high severity: `next`, `postcss` (Next's bundled copy), `sharp` (below 0.35.0, inheriting libvips CVE-2026-33327, CVE-2026-33328, CVE-2026-35590, CVE-2026-35591) and `nanoid`. **Every one of them resolves at `next@15.5.23`.** The site is on 15.4.10.
 
 The advisory list against `next` at 15.4.10 runs to roughly 25 entries. The ones that actually touch this codebase, which has `middleware.ts` and four API routes (`/api/quote`, `/api/mcp`, `/api/markdown`, `/api/wellknown/api-catalog`):
 - Middleware / proxy bypass in App Router via segment-prefetch routes (high, plus an incomplete-fix follow-up)
@@ -389,7 +407,9 @@ The advisory list against `next` at 15.4.10 runs to roughly 25 entries. The ones
 
 **Mitigating context, which lowers urgency without removing it:** this is a public marketing site with no authentication, no user accounts, no payment handling and no PII beyond the quote form. Most of the bypass advisories are severe on apps with protected routes, which this is not.
 
-**Do not tack this onto a content release.** 15.4.10 to 15.5.23 is a minor bump outside the stated range and needs its own session: upgrade, full build, then re-verify the middleware redirects (apex/www canonical and the jandlalarms.co.uk redirect both run through `middleware.ts`), the four API routes, and the agent-readiness surfaces.
+**Do not tack this onto a content release.** 15.4.10 to 15.5.23 is a minor bump outside the stated range and needs its own session: upgrade, full build, then re-verify `middleware.ts`, the four API routes, and the agent-readiness surfaces.
+
+**Correction (2026-09-28): `middleware.ts` does not handle any redirects.** It does markdown content negotiation only: a `GET` with `Accept: text/markdown` (and not `text/html`) is rewritten to `/api/markdown`, and browsers are untouched. The apex/www canonical redirect and the jandlalarms.co.uk redirects are Vercel domain settings, so a framework upgrade cannot affect them. The earlier wording of this entry said both redirects ran through `middleware.ts`; that was wrong.
 
 **[PR #1](https://github.com/AiC007/jandl-security-site2cc/pull/1) was closed as superseded, not resolved.** It proposed 15.4.6 to 15.4.8; main was already past it at 15.4.10, so merging would have been a downgrade.
 

@@ -293,7 +293,8 @@ export const locations: Location[] = [
     county: 'Greater London',
     postcode: 'SW8, SW11',
     nearbyAreas: ['Clapham', 'Wandsworth', 'Vauxhall', 'Nine Elms', 'Chelsea'],
-    landmarks: ['Battersea Power Station', 'Battersea Park', 'Clapham Junction Station', 'New US Embassy']
+    landmarks: ['Battersea Power Station', 'Battersea Park', 'Clapham Junction Station', 'New US Embassy'],
+    noTimePromises: true
   },
   {
     id: 'fulham',
@@ -302,7 +303,8 @@ export const locations: Location[] = [
     county: 'Greater London',
     postcode: 'SW6, SW10',
     nearbyAreas: ['Hammersmith', 'Chelsea', 'Parsons Green', 'Putney', 'Earls Court'],
-    landmarks: ['Fulham Palace', 'Craven Cottage', 'Stamford Bridge', 'Bishops Park']
+    landmarks: ['Fulham Palace', 'Craven Cottage', 'Stamford Bridge', 'Bishops Park'],
+    noTimePromises: true
   },
   {
     id: 'streatham',
@@ -311,7 +313,8 @@ export const locations: Location[] = [
     county: 'Greater London',
     postcode: 'SW2, SW16',
     nearbyAreas: ['Brixton', 'Tooting', 'Norbury', 'Balham', 'Crystal Palace'],
-    landmarks: ['Streatham Common', 'Streatham High Road', 'Streatham Hill Station', 'The Rookery']
+    landmarks: ['Streatham Common', 'Streatham High Road', 'Streatham Hill Station', 'The Rookery'],
+    noTimePromises: true
   },
   {
     id: 'finchley',

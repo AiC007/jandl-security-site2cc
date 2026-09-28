@@ -503,22 +503,28 @@ const serviceIcons = {
   'security-lighting': Lightbulb,
 } as const;
 
-const genericLocationFaqs = (locationName: string) => [
-  {
-    question: `Do you offer same-day security surveys in ${locationName}?`,
-    answer: `Yes. We offer free same-day security surveys across ${locationName} and the surrounding area. Call us before noon and we can usually arrange an afternoon visit.`,
-  },
-  {
-    question: `How quickly can you respond to an emergency alarm fault in ${locationName}?`,
-    answer: `For customers on our maintenance contract we aim to respond to emergency call-outs in ${locationName} within 2–4 hours, 24 hours a day, 7 days a week.`,
-  },
+const genericLocationFaqs = (locationName: string, noTimePromises = false) => [
+  ...(noTimePromises
+    ? []
+    : [
+        {
+          question: `Do you offer same-day security surveys in ${locationName}?`,
+          answer: `Yes. We offer free same-day security surveys across ${locationName} and the surrounding area. Call us before noon and we can usually arrange an afternoon visit.`,
+        },
+        {
+          question: `How quickly can you respond to an emergency alarm fault in ${locationName}?`,
+          answer: `For customers on our maintenance contract we aim to respond to emergency call-outs in ${locationName} within 2–4 hours, 24 hours a day, 7 days a week.`,
+        },
+      ]),
   {
     question: `What security systems do you install in ${locationName}?`,
     answer: `We install the full range of security systems in ${locationName}: burglar alarms (wired and wireless), CCTV, fire alarms (domestic and commercial), access control, door entry, and security lighting.`,
   },
   {
     question: `Are you based near ${locationName}?`,
-    answer: `J&L Security is based in Brentwood, Essex, giving us excellent coverage across ${locationName} and the surrounding areas. Our engineers work throughout Essex and Greater London daily.`,
+    answer: noTimePromises
+      ? `J&L Security is based in Brentwood, Essex. Our engineers travel to ${locationName} for surveys, installations and maintenance, and we agree an appointment time with you when you call.`
+      : `J&L Security is based in Brentwood, Essex, giving us excellent coverage across ${locationName} and the surrounding areas. Our engineers work throughout Essex and Greater London daily.`,
   },
   {
     question: `Do you provide maintenance contracts in ${locationName}?`,
@@ -536,9 +542,9 @@ const genericLocationFaqs = (locationName: string) => [
 
 // Town-specific questions lead, because they are the ones that answer a local
 // search. The generic set follows and is unchanged for towns without local FAQs.
-const locationFaqs = (locationName: string, ext?: LocationExtended) => [
+const locationFaqs = (locationName: string, ext?: LocationExtended, noTimePromises = false) => [
   ...(ext?.localFaqs ?? []),
-  ...genericLocationFaqs(locationName),
+  ...genericLocationFaqs(locationName, noTimePromises),
 ];
 
 // ─── Page component ──────────────────────────────────────────────────────────
@@ -590,7 +596,7 @@ export default async function LocationPage({ params }: Props) {
   if (!location) notFound();
 
   const ext = locationExtended[locationSlug];
-  const faqs = locationFaqs(location.name, ext);
+  const faqs = locationFaqs(location.name, ext, location.noTimePromises);
 
   // Service-location pages for this area
   const localPages = serviceLocationMatrix.filter(
@@ -703,13 +709,21 @@ export default async function LocationPage({ params }: Props) {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
                 <div className="bg-primary-50 rounded-xl p-5">
                   <Clock className="h-6 w-6 text-primary-600 mb-3" />
-                  <h3 className="font-semibold text-gray-900 mb-1">Same-Day Surveys</h3>
-                  <p className="text-sm text-gray-600">Free security assessments available today across {location.name}</p>
+                  <h3 className="font-semibold text-gray-900 mb-1">{location.noTimePromises ? 'Free Surveys' : 'Same-Day Surveys'}</h3>
+                  <p className="text-sm text-gray-600">
+                    {location.noTimePromises
+                      ? `No-obligation security assessments across ${location.name}, booked at a time that suits you`
+                      : `Free security assessments available today across ${location.name}`}
+                  </p>
                 </div>
                 <div className="bg-primary-50 rounded-xl p-5">
                   <Shield className="h-6 w-6 text-primary-600 mb-3" />
-                  <h3 className="font-semibold text-gray-900 mb-1">24/7 Emergency Cover</h3>
-                  <p className="text-sm text-gray-600">Round-the-clock emergency callouts for alarm faults and break-ins</p>
+                  <h3 className="font-semibold text-gray-900 mb-1">{location.noTimePromises ? 'Maintenance Contracts' : '24/7 Emergency Cover'}</h3>
+                  <p className="text-sm text-gray-600">
+                    {location.noTimePromises
+                      ? 'Servicing contracts for the alarm, CCTV, fire and access control systems we install'
+                      : 'Round-the-clock emergency callouts for alarm faults and break-ins'}
+                  </p>
                 </div>
                 <div className="bg-primary-50 rounded-xl p-5">
                   <CheckCircle className="h-6 w-6 text-primary-600 mb-3" />
@@ -959,7 +973,9 @@ export default async function LocationPage({ params }: Props) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Get a Free Security Survey in {location.name}</h2>
           <p className="text-xl mb-8 text-primary-100">
-            Our qualified engineers cover {location.name} and all surrounding areas. No-obligation assessment, with same-day appointments available.
+            {location.noTimePromises
+              ? `Our qualified engineers cover ${location.name} and the surrounding areas. No-obligation assessment, booked at a time that suits you.`
+              : `Our qualified engineers cover ${location.name} and all surrounding areas. No-obligation assessment, with same-day appointments available.`}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="flex flex-col gap-1">

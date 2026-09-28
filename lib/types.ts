@@ -16,6 +16,13 @@ export interface Location {
   postcode: string;
   nearbyAreas: string[];
   landmarks: string[];
+  /**
+   * South-west London pages: J&L travels there from Brentwood, so these pages
+   * make no response or travel-time promise. The area page drops the same-day
+   * survey and 2 to 4 hour FAQs, the same-day and 24/7 feature cards and the
+   * same-day line in the call to action; the agent markdown drops the 24/7 line.
+   */
+  noTimePromises?: boolean;
 }
 
 export interface FormSubmission {

@@ -520,7 +520,7 @@ export const blogPosts: BlogPost[] = [
     datePublished: '2026-04-07',
     dateModified: '2026-09-28',
     keywords: ['HMO fire alarm requirements', 'BS 5839-6', 'BS 5839-1', 'fire alarm HMO landlord', 'fire alarm servicing requirements', 'HMO fire alarm cost', 'Grade D1 HMO', 'Grade A HMO fire alarm'],
-    wordCount: 3694,
+    wordCount: 3728,
     content: `
 <p>A House in Multiple Occupation (HMO) is a property rented to three or more tenants forming two or more separate households who share facilities such as a kitchen or bathroom. Under UK law, HMO landlords must install and maintain a fire alarm system that meets the relevant British Standard. For HMOs that is BS 5839-6, the standard for domestic premises: smaller HMOs normally have mains-powered Grade D1 alarms, and larger HMOs need a panel-controlled Grade A system in their communal areas, designed to BS 5839-1. The specific system category and grade required depends on the property layout, the number of storeys, the number of occupants, and the conditions set by your local authority's licensing team.</p>
 
@@ -683,13 +683,13 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Annual Servicing</h3>
 
-<p>BS 5839-1 (and the maintenance recommendations in BS 5839-6) require regular professional servicing. For HMO Grade A systems, this is two visits per year. For Grade D systems, one visit per year is the practical minimum to maintain the council's expectation of "good working order". <strong>Annual servicing typically starts from around £120 per year</strong> for a small Grade D HMO, rising to £180 to £300 per year for a Grade A system, depending on detector count and travel.</p>
+<p>Panel-controlled Grade A systems in HMOs are serviced twice a year, following BS 5839-1. For Grade D systems, an annual inspection by a competent person is good practice, and HMO licences often require it. <strong>Annual servicing typically starts from around £120 per year</strong> for a small Grade D HMO, rising to £180 to £300 per year for a Grade A system, depending on detector count and travel.</p>
 
 <p><em>Pricing note: these are indicative ranges based on representative Essex and Greater London installations. Exact costs depend on property layout, number of floors, number of detectors, cable accessibility, and any remedial electrical work. J&L Security provides <a href="/contact">free site surveys</a> with fixed-price quotations before any work is committed.</em></p>
 
 <h2>Servicing Requirements</h2>
 
-<p>BS 5839-1 requires that fire alarm systems are serviced at regular intervals. For HMOs, the key requirements are:</p>
+<p>BS 5839-1 requires that panel-controlled fire alarm systems are serviced at regular intervals. For an HMO with a panel-controlled Grade A system, the key requirements are:</p>
 
 <h3>6-Monthly Professional Servicing</h3>
 
@@ -699,7 +699,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Weekly Testing</h3>
 
-<p>The responsible person (usually the landlord or their managing agent) must conduct a weekly test of the fire alarm system. This involves activating a manual call point (or test button on a detector) and confirming that the alarm sounds throughout the building. The test should be recorded in the log book with the date, time, and result.</p>
+<p>The responsible person (usually the landlord or their managing agent) must conduct a weekly test of the fire alarm system. This involves activating a manual call point (or test button on a detector) and confirming that the alarm sounds throughout the building. The test should be recorded in the log book with the date, time, and result. Grade D mains-powered alarms should be tested regularly with the test button on each alarm, as the manufacturers advise: follow the instructions for your alarms.</p>
 
 <h3>Record Keeping</h3>
 
@@ -709,7 +709,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The Regulatory Reform (Fire Safety) Order 2005 (commonly called the Fire Safety Order or FSO) applies to the common parts of HMOs: hallways, landings, stairwells, and shared kitchens and living areas. Under the FSO, the responsible person (the landlord) must carry out a fire risk assessment of the common parts, implement the findings of the risk assessment (which typically includes the fire alarm system), keep the risk assessment under review and update it if circumstances change, and maintain all fire safety measures in good working order.</p>
 
-<p>The <a href="/services/fire-risk-assessments">fire risk assessment</a> determines what category and grade of fire alarm system is needed. In practice, most fire risk assessors will recommend LD2 Grade A as the minimum for licensable HMOs.</p>
+<p>The grade and category of fire alarm system are set by the <a href="/services/fire-risk-assessments">fire risk assessment</a> and, for a licensable HMO, the council's licensing schedule.</p>
 
 <h2>Local Authority Licensing Conditions</h2>
 
@@ -749,7 +749,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>How often should HMO fire alarms be tested?</h3>
 
-<p>HMO fire alarms must be tested at three different intervals. <strong>Weekly:</strong> the responsible person (the landlord or managing agent) must activate one manual call point or detector test button each week and confirm the system sounds throughout the building, recording the result in the log book. <strong>6-monthly:</strong> a competent fire alarm engineer must carry out a service visit, testing every detector, sounder, and call point, checking battery condition, and inspecting cabling. The 2025 update to BS 5839-1 introduced a 5-to-7-month flexibility window for scheduling. <strong>Annually:</strong> for Grade D systems where 6-monthly servicing is not specified, an annual professional service is the practical minimum.</p>
+<p>It depends on the type of system. <strong>Panel-controlled Grade A systems</strong> follow BS 5839-1: each week the responsible person (the landlord or managing agent) activates a manual call point and confirms the system sounds throughout the building, recording the result in the log book, and a competent fire alarm engineer services the system every 6 months, testing every detector, sounder, and call point, checking battery condition, and inspecting cabling. The 2025 update to BS 5839-1 introduced a 5-to-7-month flexibility window for scheduling. <strong>Grade D mains-powered alarms</strong> should be tested regularly with the test button on each alarm, as the manufacturers advise: follow the instructions for your alarms. An annual inspection by a competent person is good practice, and HMO licences often require it.</p>
 
 <p>If one of the alarms in an HMO starts chirping between visits, our <a href="/blog/smoke-alarm-beeping-guide-by-make">smoke alarm beeping guide</a> explains what the common patterns mean and when it needs an engineer rather than a tenant pressing buttons.</p>
 
@@ -798,7 +798,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: 'How often should HMO fire alarms be tested?',
-        answer: 'HMO fire alarms must be tested at three different intervals. Weekly: the responsible person (the landlord or managing agent) must activate one manual call point or detector test button each week and confirm the system sounds throughout the building, recording the result in the log book. 6-monthly: a competent fire alarm engineer must carry out a service visit, testing every detector, sounder, and call point, checking battery condition, and inspecting cabling. The 2025 update to BS 5839-1 introduced a 5-to-7-month flexibility window for scheduling. Annually: for Grade D systems where 6-monthly servicing is not specified, an annual professional service is the practical minimum.'
+        answer: 'It depends on the type of system. Panel-controlled Grade A systems follow BS 5839-1: each week the responsible person (the landlord or managing agent) activates a manual call point and confirms the system sounds throughout the building, recording the result in the log book, and a competent fire alarm engineer services the system every 6 months, testing every detector, sounder, and call point, checking battery condition, and inspecting cabling. The 2025 update to BS 5839-1 introduced a 5-to-7-month flexibility window for scheduling. Grade D mains-powered alarms should be tested regularly with the test button on each alarm, as the manufacturers advise: follow the instructions for your alarms. An annual inspection by a competent person is good practice, and HMO licences often require it.'
       },
       {
         question: 'Do I need a mains-wired alarm in an HMO?',
@@ -839,7 +839,7 @@ export const blogPosts: BlogPost[] = [
       'commercial fire alarm uk',
       'HMO fire alarm uk',
     ],
-    wordCount: 3144,
+    wordCount: 3155,
     content: `
 <p>BS 5839 is the British Standard for fire detection and fire alarm systems. It is split into two parts that cover different building types: <strong>BS 5839-1 for non-domestic premises</strong> (offices, retail, schools, warehouses, care homes, and most commercial buildings) and <strong>BS 5839-6 for domestic premises</strong> (single dwellings, flats, and houses in multiple occupation). The standards set out how a system should be designed, installed, commissioned, and maintained, and they are the reference points used by insurers, fire risk assessors, and licensing authorities when judging whether a building has appropriate fire detection in place.</p>
 
@@ -947,7 +947,7 @@ export const blogPosts: BlogPost[] = [
 <li>Detectors are correctly positioned for the room type (for example, optical smoke detectors in living rooms, heat alarms in kitchens, multi-sensor units in some configurations).</li>
 <li>For Grade D and above, detectors are interlinked so that one activation triggers all sounders in the property.</li>
 <li>The system is tested and commissioned, with a certificate issued.</li>
-<li>The maintenance regime is agreed and recorded. For Grade A systems this means professional servicing under contract, similar to BS 5839-1. For Grade D systems the routine includes regular user tests by the occupant and periodic professional inspections, particularly for HMOs where licensing typically requires annual or twice-yearly servicing.</li>
+<li>The maintenance regime is agreed and recorded. For Grade A systems this means professional servicing under contract, similar to BS 5839-1. For Grade D systems the routine is regular testing with the test button, as the alarm manufacturers advise, and periodic professional inspection, which is good practice and which HMO licences often require.</li>
 </ul>
 
 <h2>Comparison Table</h2>
@@ -1035,7 +1035,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>BS 5839-6 Domestic and HMO Servicing</h2>
 
-<p>For Grade A systems the regime is similar to BS 5839-1: professional servicing under contract, typically annually for domestic and twice-yearly for larger HMOs. For Grade D systems the routine combines user-side testing (a periodic test from the test button on each unit) with periodic professional inspection, often annually for HMOs as a licensing condition. Battery replacement intervals depend on whether the system is Grade D1 (sealed long-life battery, typically 10 years) or Grade D2 (replaceable battery).</p>
+<p>For Grade A systems the regime is similar to BS 5839-1: professional servicing under contract, typically annually for domestic and twice-yearly for larger HMOs. For Grade D systems the routine combines regular testing with the test button on each unit, as the manufacturers advise, with an annual inspection by a competent person, which is good practice and which HMO licences often require. Battery replacement intervals depend on whether the system is Grade D1 (sealed long-life battery, typically 10 years) or Grade D2 (replaceable battery).</p>
 
 <p>For Grade D alarms the most common call between inspections is an alarm that has started chirping. Our <a href="/blog/smoke-alarm-beeping-guide-by-make">smoke alarm beeping guide</a> explains what the patterns generally mean for Aico, Kidde, FireAngel and Hispec alarms and when to call an engineer.</p>
 

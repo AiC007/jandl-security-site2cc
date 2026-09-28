@@ -125,9 +125,9 @@ const servicePageData: Record<string, {
   'fire-alarms': {
     heroTagline: 'BAFE-Certified Fire Alarm Installation and Servicing, plus Fire Risk Assessments',
     overview: [
-      'J&L Security is a BAFE-accredited fire alarm installer and maintainer covering Essex and Greater London. We design, install, commission, and service commercial fire alarm systems to BS 5839-1 and domestic and HMO fire alarm systems to BS 5839-6. We also provide smoke alarm installs and smoke alarm repair, plus 6-monthly fire alarm servicing under contract.',
+      'J&L Security is a BAFE-accredited fire alarm installer and maintainer covering Essex and Greater London. We design, install, commission, and service commercial fire alarm systems to BS 5839-1 and domestic and HMO fire alarm systems to BS 5839-6. We also provide smoke alarm installs and smoke alarm repair and work on carbon monoxide alarms, plus 6-monthly fire alarm servicing under contract.',
       'We install, service and maintain conventional, addressable and bi-wire fire alarm systems. The makes we support include Kentec, Advanced, C-TEC, Haes, Fike and Zeta control panels, EMS, EDA Zerio Plus and SmartCell wireless and hybrid systems, and Apollo and Hochiki detection devices. We install, service, repair and take over systems from all of those makes. We also service and maintain Gent systems, including fault repair and takeover, although we do not install new Gent systems.',
-      'For domestic smoke and heat alarms under BS 5839-6, including HMO alarm packages, we fit Aico alarms, and J&L Security is an Aico Expert Installer. We also work with Kidde, FireAngel and Hispec smoke and heat alarms, whether that is a like-for-like replacement or an assessment of what is already installed.',
+      'For domestic smoke and heat alarms under BS 5839-6, including HMO fire alarm packages, we fit Aico alarms, and J&L Security is an Aico Expert Installer. We also work with Kidde, FireAngel and Hispec smoke and heat alarms, whether that is a like-for-like replacement or an assessment of what is already installed. We also work on carbon monoxide alarms, alongside smoke and heat alarms.',
       'Every installation is documented, certified at commissioning, and supported with a service contract that keeps the system compliant with BS 5839 and the Regulatory Reform (Fire Safety) Order 2005.',
     ],
     process: [
@@ -143,7 +143,7 @@ const servicePageData: Record<string, {
       'HMOs and residential blocks under BS 5839-6',
       'Landlords needing fire risk assessments arranged and remedial works delivered',
       'Schools, care homes, and healthcare facilities',
-      'Domestic customers needing smoke alarm installs or smoke alarm repair',
+      'Domestic customers needing smoke alarm installs, smoke alarm repair or carbon monoxide alarms',
       'Existing system owners switching to a BAFE-certified maintainer',
     ],
     pricing: 'Fire alarm servicing contracts from £180 + VAT per year for commercial premises and from £120 + VAT per year for residential and HMO systems. Includes one routine maintenance and one emergency callout. Installation prices and fire risk assessment fees provided after free site survey.',
@@ -190,7 +190,7 @@ const servicePageData: Record<string, {
       },
       {
         question: 'Do you install and repair smoke alarms?',
-        answer: 'Yes. We carry out smoke alarm installs and smoke alarm repair for domestic properties under BS 5839-6, including for HMO landlords meeting licensing conditions. Work covers Grade D mains-powered interlinked alarms with battery backup, Grade F battery-only systems, and panel-controlled Grade A systems for larger HMOs. We can also assess and repair existing smoke alarm systems that have failed user tests.',
+        answer: 'Yes. We carry out smoke alarm installs and smoke alarm repair for domestic properties under BS 5839-6, including for HMO landlords meeting licensing conditions. Work covers Grade D mains-powered interlinked alarms with battery backup, Grade F battery-only systems, and panel-controlled Grade A systems for larger HMOs. We can also assess and repair existing smoke alarm systems that have failed user tests, and we work on carbon monoxide alarms as well.',
       },
       {
         question: 'What does BAFE certification mean for fire alarm maintainers?',

@@ -66,6 +66,7 @@ J&L Security is a BAFE-certified fire alarm maintainer (SP203-1 scheme) covering
 - BS 5839-6 systems for domestic premises and HMOs across Grades A, C, and D and Categories LD1 to LD3
 - HMO fire alarm packages (Grade D mains-powered interlinked, Grade A panel-controlled where licensing requires)
 - Smoke alarm installs and smoke alarm repair for domestic properties and HMO landlords
+- Carbon monoxide (CO) alarms, worked on alongside domestic smoke and heat alarms (no particular make stated)
 - 6-monthly servicing (BS 5839-1) and annual or 6-monthly servicing (BS 5839-6 by Grade)
 - Emergency lighting installation and testing (BS 5266-1)
 - Fire alarm commissioning, certification, and handover documentation
@@ -76,7 +77,7 @@ J&L Security is a BAFE-certified fire alarm maintainer (SP203-1 scheme) covering
 
 **Gent: servicing only.** J&L Security services, maintains, fault finds and takes over Gent fire alarm systems. J&L Security does not install new Gent systems. Gent is the only make on this list to which that restriction applies.
 
-**Domestic smoke and heat alarm makes (BS 5839-6).** Aico: fitted; J&L Security is an Aico Expert Installer (Aico's training scheme for installers of its alarms; a training scheme, not an accreditation, so it is not listed with SSAIB, CHAS, FIA and BAFE). Kidde, FireAngel and Hispec: worked with, meaning like-for-like replacement, assessment and servicing of existing alarms. Smoke and heat alarms only; these are self-contained domestic alarms with no control panel, so the panel makes above do not apply to them.
+**Domestic smoke and heat alarm makes (BS 5839-6).** Aico: fitted; J&L Security is an Aico Expert Installer (Aico's training scheme for installers of its alarms; a training scheme, not an accreditation, so it is not listed with SSAIB, CHAS, FIA and BAFE). Kidde, FireAngel and Hispec: worked with, meaning like-for-like replacement, assessment and servicing of existing alarms. These makes are listed for smoke and heat alarms, which are self-contained domestic alarms with no control panel, so the panel makes above do not apply to them. J&L Security also works on carbon monoxide alarms; no particular make is stated for them.
 
 Customers reporting a fault are asked for the make printed on the panel fascia, which lets the engineer carry the right parts to site and, where the panel needs a model-specific procedure, arrange the right engineer.
 
@@ -133,6 +134,7 @@ Coverage extends to Kent border areas on request.
 - Apollo, Hochiki: Fire detection devices
 - Aico: Domestic smoke and heat alarms (fitted; Aico Expert Installer)
 - Kidde, FireAngel, Hispec: Domestic smoke and heat alarms (worked with: replacement, assessment and servicing of existing alarms)
+- Carbon monoxide alarms: worked on alongside domestic smoke and heat alarms (no particular make stated)
 - Paxton: Access control systems (Net2, Paxton10)
 - Comelit: Video intercom and door entry
 

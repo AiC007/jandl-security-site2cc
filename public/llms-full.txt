@@ -76,6 +76,8 @@ J&L Security is a BAFE-certified fire alarm maintainer (SP203-1 scheme) covering
 
 **Gent: servicing only.** J&L Security services, maintains, fault finds and takes over Gent fire alarm systems. J&L Security does not install new Gent systems. Gent is the only make on this list to which that restriction applies.
 
+**Domestic smoke and heat alarm makes (BS 5839-6).** Aico: fitted. Kidde, FireAngel and Hispec: worked with, meaning like-for-like replacement, assessment and servicing of existing alarms. Smoke and heat alarms only; these are self-contained domestic alarms with no control panel, so the panel makes above do not apply to them.
+
 Customers reporting a fault are asked for the make printed on the panel fascia, which lets the engineer carry the right parts to site and, where the panel needs a model-specific procedure, arrange the right engineer.
 
 **System wiring types.** Conventional systems divide a building into zones and indicate the zone rather than the device. Addressable systems give each device its own address on a loop so the panel names the exact device, which speeds up fault finding on larger sites. Bi-wire systems are conventional systems in which detection and sounder signals share the same pair of cables, commonly found on smaller commercial premises and on upgrades retaining existing two-core cabling. Which type suits a given building is determined by the fire risk assessment and the site survey.
@@ -129,6 +131,8 @@ Coverage extends to Kent border areas on request.
 - Gent: Fire alarm control panels (serviced, maintained and taken over only; new Gent systems are not installed)
 - EMS, EDA Zerio Plus, SmartCell: Wireless and hybrid fire alarm systems
 - Apollo, Hochiki: Fire detection devices
+- Aico: Domestic smoke and heat alarms (fitted)
+- Kidde, FireAngel, Hispec: Domestic smoke and heat alarms (worked with: replacement, assessment and servicing of existing alarms)
 - Paxton: Access control systems (Net2, Paxton10)
 - Comelit: Video intercom and door entry
 

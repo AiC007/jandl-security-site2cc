@@ -52,7 +52,8 @@ const accreditations = [
 const supplierBrands = [
   'Pyronix', 'Advanced', 'Paxton', 'Comelit', 'Uniview', 'C-TEC',
   'Fike', 'Haes', 'Kentec', 'EDA Zerio Plus', 'EMS', 'SmartCell', 'Zeta',
-  'Gent', 'Hochiki', 'Apollo'
+  'Gent', 'Hochiki', 'Apollo',
+  'Aico', 'Kidde', 'FireAngel', 'Hispec'
 ];
 
 const keyStats = [
@@ -128,7 +129,9 @@ export default function AboutPage() {
                   Comelit for access control, and for fire detection, Kentec, Advanced, C-TEC and Haes
                   control panels, EMS, EDA Zerio Plus and SmartCell wireless systems, and Apollo and
                   Hochiki detection devices. We also service and maintain Gent fire alarm systems,
-                  although we do not install new ones. We do not install cheap or unbranded equipment.
+                  although we do not install new ones. For domestic smoke and heat alarms we fit Aico,
+                  and we also work with Kidde, FireAngel and Hispec alarms. We do not install cheap or
+                  unbranded equipment.
                 </p>
                 <p className="text-gray-700 leading-relaxed mt-4 bg-primary-50 border border-primary-200 rounded-lg p-4">
                   J&L Security trades as part of the same team behind J&L Alarms, bringing over 13 years of
@@ -280,7 +283,7 @@ export default function AboutPage() {
 
           <div className="mt-8 text-center">
             <p className="text-gray-600">
-              <em>Makes shown are those we install, service and take over, with one exception: Gent, which we service, maintain and take over but do not install new. We also attend systems from other makes on request.</em>
+              <em>Makes shown are those we install, service and take over, with one exception: Gent, which we service, maintain and take over but do not install new. Aico, Kidde, FireAngel and Hispec are domestic smoke and heat alarm makes: we fit Aico, and we work with the other three. We also attend systems from other makes on request.</em>
             </p>
           </div>
         </div>

@@ -77,6 +77,7 @@ These are starting prices excluding VAT. Final quotations follow a free site sur
 - [Business CCTV and the ICO: 2026 Compliance Guide](https://jandlsecurity.co.uk/blog/business-cctv-ico-compliance-uk-2026): ICO Code of Practice, signage, retention, and DPIA guidance for UK business CCTV.
 - [Why Does My Burglar Alarm Keep Going Off?](https://jandlsecurity.co.uk/blog/why-does-my-burglar-alarm-keep-going-off): Common false-alarm causes and fixes for domestic intruder alarm systems.
 - [Fire Alarm Panel Fault: What It Means, Make by Make](https://jandlsecurity.co.uk/blog/fire-alarm-panel-fault-guide-by-make): What a fault indication on a fire alarm panel means, the common fault categories, and make-by-make guidance for Kentec, Advanced, C-TEC, Gent, Haes, Fike, Zeta, EMS, EDA Zerio Plus, SmartCell, Apollo and Hochiki. No panel model names, fault codes or reset procedures are published, by design.
+- [Why Is My Smoke Alarm Beeping? A Guide by Make](https://jandlsecurity.co.uk/blog/smoke-alarm-beeping-guide-by-make): What an intermittent chirp from a domestic smoke, heat or carbon monoxide alarm generally means (low battery, fault, end of life, dust), the simple checks Aico, Kidde, FireAngel and Hispec suggest on their own pages, when a mains-wired or interlinked system needs an engineer, and why a sounding carbon monoxide alarm is an emergency. No model-specific procedures, by design.
 
 ## Links
 

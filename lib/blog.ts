@@ -518,23 +518,23 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'HMO Fire Alarm Requirements: BS 5839 Guide (2026)',
     description: 'A guide to fire alarm requirements for HMO landlords in the UK. Covers BS 5839-6 grades, system categories, costs, servicing obligations, and licensing conditions.',
     datePublished: '2026-04-07',
-    dateModified: '2026-05-03',
+    dateModified: '2026-09-28',
     keywords: ['HMO fire alarm requirements', 'BS 5839-6', 'BS 5839-1', 'fire alarm HMO landlord', 'fire alarm servicing requirements', 'HMO fire alarm cost', 'Grade D1 HMO', 'Grade A HMO fire alarm'],
-    wordCount: 3407,
+    wordCount: 3694,
     content: `
-<p>A House in Multiple Occupation (HMO) is a property rented to three or more tenants forming two or more separate households who share facilities such as a kitchen or bathroom. Under UK law, HMO landlords must install and maintain a fire alarm system that meets the relevant British Standard: BS 5839-6 for domestic-scale HMOs, or BS 5839-1 for larger or higher-risk HMOs. The specific system category and grade required depends on the property layout, the number of storeys, the number of occupants, and the conditions set by your local authority's licensing team.</p>
+<p>A House in Multiple Occupation (HMO) is a property rented to three or more tenants forming two or more separate households who share facilities such as a kitchen or bathroom. Under UK law, HMO landlords must install and maintain a fire alarm system that meets the relevant British Standard. For HMOs that is BS 5839-6, the standard for domestic premises: smaller HMOs normally have mains-powered Grade D1 alarms, and larger HMOs need a panel-controlled Grade A system in their communal areas, designed to BS 5839-1. The specific system category and grade required depends on the property layout, the number of storeys, the number of occupants, and the conditions set by your local authority's licensing team.</p>
 
-<p>This guide explains what BS 5839-1 requires, what the different system categories and grades mean, and what landlords must do to stay compliant.</p>
+<p>This guide explains what BS 5839-6 recommends for HMOs, what the different system categories and grades mean, and what landlords must do to stay compliant.</p>
 
 <h2>Why Fire Alarms in HMOs Are Different</h2>
 
 <p>A standard domestic smoke alarm (the type you buy from a hardware shop and screw to the ceiling) is designed for a single household where everyone knows each other and can alert one another. In an HMO, the situation is fundamentally different: tenants may sleep with their doors closed, may not know each other, and may not hear an alarm sounding in another part of the building.</p>
 
-<p>This is why HMOs require a system designed to BS 5839-1 rather than BS 5839-6 (the domestic standard). The system must detect a fire wherever it starts, sound an alarm loud enough to wake everyone in the building, and be professionally installed and maintained.</p>
+<p>This is why BS 5839-6, the domestic standard that covers HMOs, recommends a higher level of protection for an HMO than for an owner-occupied home, and why larger HMOs may need a panel-controlled Grade A system. The system must detect a fire wherever it starts, sound an alarm loud enough to wake everyone in the building, and be professionally installed and maintained.</p>
 
-<h2>BS 5839-1: System Categories</h2>
+<h2>BS 5839-6: System Categories</h2>
 
-<p>BS 5839-1 defines several categories of fire detection system. The category determines where detectors are placed and what they are designed to protect. For HMOs, the three relevant categories are LD1, LD2, and LD3.</p>
+<p>BS 5839-6, the standard for domestic premises including HMOs, defines several categories of fire detection system. The category determines where detectors are placed and what they are designed to protect. For HMOs, the three relevant categories are LD1, LD2, and LD3.</p>
 
 <h3>Category LD3: Escape Route Protection</h3>
 
@@ -542,17 +542,17 @@ export const blogPosts: BlogPost[] = [
 
 <ul>
 <li><strong>Where detectors go:</strong> entrance hallways, landings, stairwells</li>
-<li><strong>When it is acceptable:</strong> some local authorities accept LD3 for smaller, lower-risk HMOs (typically two-storey properties with fewer than five tenants), though this is becoming less common</li>
+<li><strong>When it is acceptable:</strong> the current (2019) edition of BS 5839-6 accepts LD3 as a minimum only in existing owner-occupied homes of up to two storeys. For one- and two-storey HMOs with no floor larger than 200 square metres it recommends LD2 in existing premises and LD1 where the HMO is new or materially altered. Some local authorities accept LD3 for smaller, lower-risk HMOs (typically two-storey properties with fewer than five tenants), though this is becoming less common</li>
 <li><strong>Limitations:</strong> does not detect fires that start in rooms, only on escape routes</li>
 </ul>
 
 <h3>Category LD2: Escape Route Plus High-Risk Rooms</h3>
 
-<p>LD2 includes everything in LD3, plus detectors in rooms that open onto escape routes and rooms that pose a higher fire risk. In practice, this means detectors in kitchens (heat detectors rather than smoke detectors to avoid false alarms from cooking), living rooms, and any room where a fire could start and spread to the escape route before being detected.</p>
+<p>LD2 covers the escape routes, as LD3 does, plus the rooms and areas that present a high fire risk to occupants. BS 5839-6 names any kitchen and the principal habitable room, usually the living room. The kitchen takes a heat detector rather than a smoke detector, to avoid false alarms from cooking, and the principal habitable room takes a smoke detector. Any other room that the fire risk assessment identifies as high risk is added to the list.</p>
 
 <ul>
-<li><strong>Where detectors go:</strong> escape routes plus kitchens, living rooms, and rooms opening onto escape routes</li>
-<li><strong>When it is required:</strong> this is the most commonly specified category for HMOs. Most local authority licensing conditions require LD2 as a minimum.</li>
+<li><strong>Where detectors go:</strong> escape routes plus any kitchen, the principal habitable room, and any other room identified as high risk</li>
+<li><strong>When it is required:</strong> this is the most commonly specified category for HMOs, and BS 5839-6 recommends Grade D1, Category LD2 for existing one- and two-storey HMOs with no floor larger than 200 square metres. Most local authority licensing conditions require LD2 as a minimum.</li>
 </ul>
 
 <h3>Category LD1: Full Coverage</h3>
@@ -566,13 +566,13 @@ export const blogPosts: BlogPost[] = [
 
 <p>When in doubt, LD1 is the safest option. The additional cost of full coverage compared to LD2 is relatively modest, and it provides substantially better protection for your tenants.</p>
 
-<h2>BS 5839-1: System Grades</h2>
+<h2>BS 5839-6: System Grades</h2>
 
-<p>As well as the category (where detectors go), BS 5839-1 specifies the grade (what type of equipment is used). The main grades relevant to HMOs are:</p>
+<p>As well as the category (where detectors go), BS 5839-6 specifies the grade (what type of equipment is used and how it is powered). Since the 2019 edition the grades are A, C, D1, D2, F1 and F2; Grades B and E were removed. The main grades relevant to HMOs are:</p>
 
 <h3>Grade A</h3>
 
-<p>A Grade A system uses a fire alarm panel, dedicated wiring, and commercial-grade detectors and sounders. This is a full conventional or addressable fire alarm system, the same type used in commercial buildings. The panel provides zone information, fault monitoring, and a fire log.</p>
+<p>A Grade A system uses a fire alarm panel, dedicated wiring, and separate detectors and sounders, with the equipment conforming to BS EN 54. This is a full conventional or addressable fire alarm system, the same type used in commercial buildings. The panel provides zone information, fault monitoring, and a fire log.</p>
 
 <ul>
 <li><strong>Required for:</strong> larger HMOs (typically three or more storeys), mandatory licensing HMOs with five or more tenants, and any property where the local authority specifies it</li>
@@ -582,7 +582,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Grade D</h3>
 
-<p>A Grade D system uses mains-powered, interlinked detectors. There is no fire alarm panel. Each detector is wired to the mains supply and connected to the other detectors so that when one triggers, they all sound. Grade D detectors include a battery backup in case of power failure.</p>
+<p>A Grade D system uses mains-powered smoke and heat alarms, each with its own backup battery in case of power failure. There are two versions: in Grade D1 the backup battery is sealed and tamper-proof, and in Grade D2 it is user-replaceable. There is no fire alarm panel. Where more than one alarm is fitted they are interlinked, by wiring or by radio, so that when one triggers, they all sound.</p>
 
 <ul>
 <li><strong>Required for:</strong> smaller HMOs (typically two-storey, fewer than five tenants) where the local authority accepts this grade</li>
@@ -594,7 +594,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>BS 5839-6 Grades and Categories: Comparison Table</h2>
 
-<p>BS 5839-6 is the British Standard for fire detection and fire alarm systems in domestic premises, including most HMOs. It defines a system using two attributes: a <strong>grade</strong> (the type of equipment, A through F) and a <strong>category</strong> (the scope of coverage, LD1 to LD3 for life safety, or PD for property protection). The table below summarises the grades and categories most commonly specified for HMOs.</p>
+<p>BS 5839-6 is the British Standard for fire detection and fire alarm systems in domestic premises, including most HMOs. It defines a system using two attributes: a <strong>grade</strong> (the type of equipment: A, C, D1, D2, F1 or F2, since the 2019 edition removed Grades B and E) and a <strong>category</strong> (the scope of coverage, LD1 to LD3 for life safety, or PD for property protection). The table below summarises the grades and categories most commonly specified for HMOs.</p>
 
 <table>
 <thead>
@@ -617,7 +617,7 @@ export const blogPosts: BlogPost[] = [
 <tr>
 <td><strong>Grade D1</strong></td>
 <td>Mains-powered interlinked detectors, each with a tamper-proof, sealed-in standby battery (typically a 10-year sealed lithium cell)</td>
-<td>Most modern HMOs that the council accepts for Grade D rather than Grade A; this is the current default for new installations under BS 5839-6</td>
+<td>Most modern HMOs that the council accepts for Grade D rather than Grade A; BS 5839-6 recommends Grade D1 for most rented homes and for one- and two-storey HMOs</td>
 <td>From ~£150 supply-only for detectors; typical installed cost £350 to £900 for a 5-bedroom HMO depending on detector count and cable runs</td>
 <td>No (standalone)</td>
 </tr>
@@ -637,7 +637,7 @@ export const blogPosts: BlogPost[] = [
 </tr>
 <tr>
 <td><strong>Category LD2</strong></td>
-<td>Detection on escape routes plus rooms presenting a high fire risk (kitchens, living rooms, bedrooms in some cases). Combine with a grade.</td>
+<td>Detection on escape routes plus rooms presenting a high fire risk: any kitchen and the principal habitable room, plus any other room the risk assessment identifies. Combine with a grade.</td>
 <td>The most commonly specified category for licensable HMOs across England</td>
 <td>Mid-range: typically 5 to 8 detectors for a 5-bed HMO</td>
 <td>Determined by grade</td>
@@ -645,7 +645,7 @@ export const blogPosts: BlogPost[] = [
 <tr>
 <td><strong>Category LD3</strong></td>
 <td>Detection on escape routes only (hallways, landings, stairwells). Combine with a grade.</td>
-<td>Smaller, lower-risk HMOs where the council schedule accepts it. Becoming less common.</td>
+<td>Smaller, lower-risk HMOs where the council schedule accepts it. Becoming less common: the current edition of BS 5839-6 accepts LD3 as a minimum only in existing owner-occupied homes of up to two storeys.</td>
 <td>Lowest detector count, smallest install cost</td>
 <td>Determined by grade</td>
 </tr>
@@ -755,7 +755,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>Do I need a mains-wired alarm in an HMO?</h3>
 
-<p>Yes, in almost all cases. BS 5839-6 Grade D systems are by definition mains-powered with battery backup. Battery-only domestic smoke alarms (BS 5839-6 Grade F) are not normally acceptable for licensable HMOs because they are not interlinked across the building and cannot reliably wake all occupants. If your council schedule accepts Grade D, this means Grade D1 (sealed lithium battery) or Grade D2 (replaceable battery), both of which are mains-wired. Battery-only Grade F1 or F2 detectors are only ever acceptable in the smallest, lowest-risk HMOs and even then only where the council schedule explicitly permits them; in practice most councils require mains-wired interlinked detectors as a minimum.</p>
+<p>Yes, in almost all cases. BS 5839-6 Grade D systems are by definition mains-powered with battery backup. Battery-only domestic smoke alarms (BS 5839-6 Grades F1 and F2) are not normally acceptable for licensable HMOs because they have no mains supply and fall below the Grade D1 that BS 5839-6 recommends for HMOs. If your council schedule accepts Grade D, this means Grade D1 (sealed lithium battery) or Grade D2 (replaceable battery), both of which are mains-wired. Battery-only Grade F1 or F2 detectors are only ever acceptable in the smallest, lowest-risk HMOs and even then only where the council schedule explicitly permits them; in practice most councils require mains-wired interlinked detectors as a minimum.</p>
 
 <h3>What is the difference between Grade A and Grade D fire alarms?</h3>
 
@@ -763,14 +763,14 @@ export const blogPosts: BlogPost[] = [
 
 <h3>What is BS 5839-6 and does it apply to my HMO?</h3>
 
-<p>BS 5839-6 is the British Standard <em>Fire detection and fire alarm systems for buildings: Part 6: Code of practice for the design, installation, commissioning and maintenance of fire detection and fire alarm systems in domestic premises</em>. It is the standard that applies to most HMOs. BS 5839-6 defines the grades (A through F) and the categories (LD1 to LD3 for life safety, PD1 and PD2 for property protection). For larger HMOs that fall outside the scope of BS 5839-6, BS 5839-1 (the standard for non-domestic premises) applies instead. In practice, a fire risk assessment will identify which standard applies to your specific HMO. Most HMOs in England fall under BS 5839-6 with a council-specified grade and category, while HMOs that are very large, of unusual layout, or commercially run typically fall under BS 5839-1.</p>
+<p>BS 5839-6 is the British Standard <em>Fire detection and fire alarm systems for buildings: Part 6: Code of practice for the design, installation, commissioning and maintenance of fire detection and fire alarm systems in domestic premises</em>. It is the standard that applies to most HMOs. BS 5839-6 defines the grades (A, C, D1, D2, F1 and F2 since the 2019 edition removed Grades B and E) and the categories (LD1 to LD3 for life safety, PD1 and PD2 for property protection). For larger HMOs, BS 5839-6 recommends a panel-controlled Grade A system in the communal areas, with detectors sited to BS 5839-1 (the standard for non-domestic premises), and separate Grade D1 alarms in each letting. Premises outside its scope, such as hostels and boarding houses, fall under BS 5839-1 instead. In practice, a fire risk assessment will identify the system your specific HMO needs, and most HMOs in England have a council-specified BS 5839-6 grade and category.</p>
 
 <h2>What We Provide for HMO Landlords</h2>
 
-<p>At J&L Security, we are BAFE certified and FIA members, and we have been installing BS 5839-1 compliant fire alarm systems for HMO landlords across Essex and Greater London since 2011. Our service includes:</p>
+<p>At J&L Security, we are BAFE certified and FIA members, and we have been installing BS 5839-6 and BS 5839-1 compliant fire alarm systems for HMO landlords across Essex and Greater London since 2011. Our service includes:</p>
 
 <ul>
-<li>Free initial survey and fire alarm system design to BS 5839-1</li>
+<li>Free initial survey and fire alarm system design to BS 5839-6 or BS 5839-1, as the property requires</li>
 <li>Installation of Grade A and Grade D systems to the category specified in your fire risk assessment</li>
 <li>Full commissioning, testing, and handover documentation</li>
 <li>6-monthly servicing contracts with reminder notifications</li>
@@ -802,7 +802,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: 'Do I need a mains-wired alarm in an HMO?',
-        answer: 'Yes, in almost all cases. BS 5839-6 Grade D systems are by definition mains-powered with battery backup. Battery-only domestic smoke alarms (BS 5839-6 Grade F) are not normally acceptable for licensable HMOs because they are not interlinked across the building and cannot reliably wake all occupants. If your council schedule accepts Grade D, this means Grade D1 (sealed lithium battery) or Grade D2 (replaceable battery), both of which are mains-wired. Battery-only Grade F1 or F2 detectors are only ever acceptable in the smallest, lowest-risk HMOs and even then only where the council schedule explicitly permits them; in practice most councils require mains-wired interlinked detectors as a minimum.'
+        answer: 'Yes, in almost all cases. BS 5839-6 Grade D systems are by definition mains-powered with battery backup. Battery-only domestic smoke alarms (BS 5839-6 Grades F1 and F2) are not normally acceptable for licensable HMOs because they have no mains supply and fall below the Grade D1 that BS 5839-6 recommends for HMOs. If your council schedule accepts Grade D, this means Grade D1 (sealed lithium battery) or Grade D2 (replaceable battery), both of which are mains-wired. Battery-only Grade F1 or F2 detectors are only ever acceptable in the smallest, lowest-risk HMOs and even then only where the council schedule explicitly permits them; in practice most councils require mains-wired interlinked detectors as a minimum.'
       },
       {
         question: 'What is the difference between Grade A and Grade D fire alarms?',
@@ -810,7 +810,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: 'What is BS 5839-6 and does it apply to my HMO?',
-        answer: 'BS 5839-6 is the British Standard "Fire detection and fire alarm systems for buildings: Part 6: Code of practice for the design, installation, commissioning and maintenance of fire detection and fire alarm systems in domestic premises". It is the standard that applies to most HMOs. BS 5839-6 defines the grades (A through F) and the categories (LD1 to LD3 for life safety, PD1 and PD2 for property protection). For larger HMOs that fall outside the scope of BS 5839-6, BS 5839-1 (the standard for non-domestic premises) applies instead. In practice, a fire risk assessment will identify which standard applies to your specific HMO. Most HMOs in England fall under BS 5839-6 with a council-specified grade and category, while HMOs that are very large, of unusual layout, or commercially run typically fall under BS 5839-1.'
+        answer: 'BS 5839-6 is the British Standard "Fire detection and fire alarm systems for buildings: Part 6: Code of practice for the design, installation, commissioning and maintenance of fire detection and fire alarm systems in domestic premises". It is the standard that applies to most HMOs. BS 5839-6 defines the grades (A, C, D1, D2, F1 and F2 since the 2019 edition removed Grades B and E) and the categories (LD1 to LD3 for life safety, PD1 and PD2 for property protection). For larger HMOs, BS 5839-6 recommends a panel-controlled Grade A system in the communal areas, with detectors sited to BS 5839-1 (the standard for non-domestic premises), and separate Grade D1 alarms in each letting. Premises outside its scope, such as hostels and boarding houses, fall under BS 5839-1 instead. In practice, a fire risk assessment will identify the system your specific HMO needs, and most HMOs in England have a council-specified BS 5839-6 grade and category.'
       }
     ]
   },
@@ -820,7 +820,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'BS 5839-1 vs BS 5839-6: UK Fire Alarm Standards Explained 2026',
     description: 'A practical guide to BS 5839-1 and BS 5839-6, the two British Standards for fire detection and fire alarm systems. Covers scope, categories, grades, who each applies to, servicing obligations, and how to specify the right system.',
     datePublished: '2026-05-06',
-    dateModified: '2026-05-06',
+    dateModified: '2026-09-28',
     keywords: [
       'BS 5839-1',
       'BS 5839-6',
@@ -839,7 +839,7 @@ export const blogPosts: BlogPost[] = [
       'commercial fire alarm uk',
       'HMO fire alarm uk',
     ],
-    wordCount: 3032,
+    wordCount: 3144,
     content: `
 <p>BS 5839 is the British Standard for fire detection and fire alarm systems. It is split into two parts that cover different building types: <strong>BS 5839-1 for non-domestic premises</strong> (offices, retail, schools, warehouses, care homes, and most commercial buildings) and <strong>BS 5839-6 for domestic premises</strong> (single dwellings, flats, and houses in multiple occupation). The standards set out how a system should be designed, installed, commissioned, and maintained, and they are the reference points used by insurers, fire risk assessors, and licensing authorities when judging whether a building has appropriate fire detection in place.</p>
 
@@ -853,7 +853,7 @@ export const blogPosts: BlogPost[] = [
 
 <ul>
 <li><strong>BS 5839-1</strong> applies to non-domestic premises. It uses two main category families: M (manual call points only), L (automatic detection for life safety), and P (automatic detection for property protection). Within those families, you specify the exact category (L1 to L5, P1 or P2) based on the level of cover required.</li>
-<li><strong>BS 5839-6</strong> applies to domestic premises. It uses Grades (A, B, C, D, F) and Categories (LD1, LD2, LD3). The Grade describes the type of system and how reliably it operates. The Category describes which parts of the building are protected.</li>
+<li><strong>BS 5839-6</strong> applies to domestic premises. It uses Grades (A, C, D1, D2, F1 and F2 since the 2019 edition) and Categories (LD1, LD2, LD3). The Grade describes the type of system and how reliably it operates. The Category describes which parts of the building are protected.</li>
 <li>For both standards, the responsible person must keep the system in working order. For BS 5839-1 systems this means professional servicing approximately every six months. For BS 5839-6 systems the maintenance regime depends on the Grade.</li>
 <li>Use a <a href="/services/fire-alarms">BAFE-certified fire alarm maintainer</a> for design, installation, commissioning, and maintenance. BAFE certification is the recognised competency benchmark in the UK fire safety industry and is regularly required by insurers and fire risk assessors.</li>
 </ul>
@@ -921,11 +921,11 @@ export const blogPosts: BlogPost[] = [
 <p>BS 5839-6 uses Grades to describe the type of system, ranging from a simple battery-only smoke alarm at one end (Grade F) up to a fully panel-controlled commercial-style system at the other (Grade A). The Grade is chosen based on the property type, occupancy risk, and any licensing conditions that apply.</p>
 
 <ul>
-<li><strong>Grade A:</strong> a panel-controlled system using BS 5839-1 components. Required for larger HMOs and higher-risk domestic properties. The system has its own power supply with battery backup, dedicated sounders, and a control panel that displays system status.</li>
-<li><strong>Grade B:</strong> rarely specified in current practice; not commonly used.</li>
-<li><strong>Grade C:</strong> a system of mains-powered detectors and call points connected to a common control unit that may include a backup battery. Suitable for medium-sized HMOs.</li>
-<li><strong>Grade D:</strong> mains-powered, interlinked smoke and heat alarms with integral battery backup, no separate panel. The standard specification for most domestic and small HMO installations. Typically subdivided into Grade D1 (with sealed long-life battery backup) and Grade D2 (with replaceable battery backup).</li>
-<li><strong>Grade F:</strong> battery-only smoke alarms. Permitted only in lower-risk properties; typically not acceptable for HMO licensing purposes. Subdivided into Grade F1 and F2 by battery type.</li>
+<li><strong>Grade A:</strong> a panel-controlled system with separate detectors, sounders and control equipment conforming to BS EN 54, installed largely to BS 5839-1. Required for larger HMOs and higher-risk domestic properties. The system has its own power supply with battery backup, dedicated sounders, and a control panel that displays system status.</li>
+<li><strong>Grades B and E:</strong> removed in the 2019 edition. Systems installed to an earlier edition do not automatically have to be replaced.</li>
+<li><strong>Grade C:</strong> a system of fire detectors and alarm sounders (which may be combined as smoke alarms) connected to a common power supply, made up of the normal mains and a standby supply, with central control equipment.</li>
+<li><strong>Grades D1 and D2:</strong> mains-powered smoke and heat alarms, each with an integral backup battery, and no separate panel. In Grade D1 the backup battery is sealed and tamper-proof; in Grade D2 it is user-replaceable. Where more than one alarm is fitted, they are interlinked. The standard specification for most domestic and small HMO installations.</li>
+<li><strong>Grades F1 and F2:</strong> battery-powered alarms, with a sealed tamper-proof battery in Grade F1 and a user-replaceable battery in Grade F2. Permitted only in lower-risk properties; typically not acceptable for HMO licensing purposes.</li>
 </ul>
 
 <h3>BS 5839-6 Categories</h3>
@@ -933,9 +933,9 @@ export const blogPosts: BlogPost[] = [
 <p>The Category describes which parts of the property are protected. For domestic premises BS 5839-6 uses three categories:</p>
 
 <ul>
-<li><strong>LD1:</strong> detectors throughout the property including in all rooms used for sleeping and main circulation areas. The highest level of cover.</li>
-<li><strong>LD2:</strong> detectors in circulation areas and in any rooms that present a particularly high fire risk (for example, the kitchen and the principal habitable room).</li>
-<li><strong>LD3:</strong> detectors in circulation areas only (hallways, landings, stairwells). The minimum coverage for life safety.</li>
+<li><strong>LD1:</strong> detectors in all circulation areas that form part of the escape routes, and in all rooms and areas where a fire might start, other than bathrooms, shower rooms and toilets. The highest level of cover.</li>
+<li><strong>LD2:</strong> detectors in the circulation areas that form part of the escape routes, and in the rooms that present a high fire risk to occupants, including any kitchen and the principal habitable room.</li>
+<li><strong>LD3:</strong> detectors in the circulation areas that form part of the escape routes only (hallways, landings, stairwells). The minimum coverage for life safety, which the current edition accepts only in existing owner-occupied homes of up to two storeys.</li>
 </ul>
 
 <p>A typical HMO licensing requirement is for a Grade D Category LD2 system, with mains-powered interlinked detectors in circulation areas plus the kitchen and any high-risk rooms. Larger HMOs and properties with more complex layouts may require Grade A or Grade A with LD1.</p>
@@ -974,7 +974,7 @@ export const blogPosts: BlogPost[] = [
 <tr>
 <td>Grades / system types</td>
 <td>One panel-controlled system architecture</td>
-<td>Grades A, B, C, D, F (with subgrades D1, D2, F1, F2)</td>
+<td>Grades A, C, D1, D2, F1 and F2 (Grades B and E were removed in 2019)</td>
 </tr>
 <tr>
 <td>Typical specifier</td>
@@ -2893,7 +2893,7 @@ export const blogPosts: BlogPost[] = [
       'smoke alarm end of life',
       'smoke alarm replacement essex',
     ],
-    wordCount: 3186,
+    wordCount: 3189,
     image: {
       src: '/images/2026-09/smoke-alarm-beeping-guide.webp',
       alt: 'Homeowner on the upstairs landing of a UK house looking up calmly at a ceiling-mounted smoke alarm showing a small orange indicator light and sound marks, illustrating a smoke alarm that is beeping',
@@ -2985,7 +2985,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Mains Smoke Alarm Beeping</h2>
 
-<p>Mains-powered alarms are the norm in any home built or rewired in recent years and in every HMO, because BS 5839-6 Grade D calls for mains power with a battery backup and interlinking between alarms. They chirp for the same reasons as battery alarms, with two additions.</p>
+<p>Mains-powered alarms are the norm in any home built or rewired in recent years and in every HMO, because BS 5839-6 Grades D1 and D2 are mains-powered with a battery backup, and the standard recommends interlinking the alarms. They chirp for the same reasons as battery alarms, with two additions.</p>
 
 <p>The first is a power problem. If the green mains light is off, the alarm is running on its backup battery, and the chirp will follow once that battery runs down. The cause can be as simple as a tripped circuit or as involved as a wiring fault, and the manufacturers are consistent that the next step is your installer or a qualified electrician, not the householder. The second is the interlink. When alarms are wired or radio-linked together, a fault on one can present on another, and a set installed at the same time will reach end of life at the same time. Replacing one alarm in a ten-year-old set is rarely the right answer.</p>
 

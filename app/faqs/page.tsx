@@ -129,7 +129,7 @@ const faqCategories: FAQCategory[] = [
       },
       {
         question: 'What is the difference between BS 5839-1 and BS 5839-6 fire alarm systems?',
-        answer: 'BS 5839-1 is the British Standard for fire detection and fire alarm systems in non-domestic premises (offices, retail, schools, care homes, warehouses, and most commercial buildings). BS 5839-6 covers domestic premises including single-family homes, individual dwellings, and HMOs. The two standards specify different system categories and grades. J&L Security is a BAFE-certified fire alarm maintainer covering both.'
+        answer: 'BS 5839-1 is the British Standard for fire detection and fire alarm systems in non-domestic premises (offices, retail, schools, care homes, warehouses, and most commercial buildings). BS 5839-6 covers domestic premises including single-family homes, individual dwellings, and HMOs. BS 5839-1 describes a system by category (M, L1 to L5, P1 or P2); BS 5839-6 describes it by grade (A, C, D1, D2, F1 or F2) and category (LD1, LD2 or LD3 for life safety, PD1 or PD2 for property). J&L Security is a BAFE-certified fire alarm maintainer covering both.'
       },
       {
         question: 'Do you carry out fire risk assessments?',

@@ -292,7 +292,7 @@ export const locations: Location[] = [
     slug: 'battersea',
     county: 'Greater London',
     postcode: 'SW8, SW11',
-    nearbyAreas: ['Clapham', 'Wandsworth', 'Vauxhall', 'Nine Elms', 'Chelsea'],
+    nearbyAreas: ['Clapham', 'Chelsea and Kensington', 'Fulham', 'Wandsworth', 'Kennington'],
     landmarks: ['Battersea Power Station', 'Battersea Park', 'Clapham Junction Station', 'US Embassy, Nine Elms'],
     noTimePromises: true
   },
@@ -302,7 +302,7 @@ export const locations: Location[] = [
     slug: 'fulham',
     county: 'Greater London',
     postcode: 'SW6, SW10',
-    nearbyAreas: ['Hammersmith', 'Chelsea', 'Parsons Green', 'Putney', 'Earls Court'],
+    nearbyAreas: ['Hammersmith', 'Chelsea and Kensington', 'Putney', 'Battersea'],
     landmarks: ['Fulham Palace', 'Craven Cottage', 'Stamford Bridge', 'Bishops Park'],
     noTimePromises: true
   },
@@ -312,8 +312,28 @@ export const locations: Location[] = [
     slug: 'streatham',
     county: 'Greater London',
     postcode: 'SW2, SW16',
-    nearbyAreas: ['Brixton', 'Tooting', 'Norbury', 'Balham', 'Crystal Palace'],
+    nearbyAreas: ['Clapham', 'Brixton', 'Tooting', 'Norbury', 'Crystal Palace'],
     landmarks: ['Streatham Common', 'Streatham High Road', 'Streatham Hill Station', 'The Rookery'],
+    noTimePromises: true
+  },
+  {
+    id: 'clapham',
+    name: 'Clapham',
+    slug: 'clapham',
+    county: 'Greater London',
+    postcode: 'SW4, SW9, SW12',
+    nearbyAreas: ['Battersea', 'Streatham', 'Brixton', 'Vauxhall', 'Tooting'],
+    landmarks: ['Clapham Common', 'Clapham Common Bandstand', 'Holy Trinity Church', 'Clapham High Street'],
+    noTimePromises: true
+  },
+  {
+    id: 'chelsea-and-kensington',
+    name: 'Chelsea and Kensington',
+    slug: 'chelsea-and-kensington',
+    county: 'Greater London',
+    postcode: 'SW3, SW5, SW7, SW10',
+    nearbyAreas: ['Fulham', 'Battersea', 'Westminster', 'Hammersmith'],
+    landmarks: ['Royal Hospital Chelsea', 'Natural History Museum', 'Victoria and Albert Museum', 'Brompton Cemetery'],
     noTimePromises: true
   },
   {

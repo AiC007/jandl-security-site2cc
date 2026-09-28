@@ -1182,6 +1182,147 @@ const locationExtended: Record<string, LocationExtended> = {
     whyLocal: 'We extend our coverage across the Barnet borough EN4, EN5, and N20. The area\'s family homes and high-value residential stock suit wireless Grade 2 packages with monitored options, and we provide SSAIB-approved installations for customers whose insurance policies require an inspectorate-approved alarm.',
     residential: ['High Barnet', 'New Barnet', 'Cockfosters', 'Hadley Wood', 'Totteridge', 'Whetstone'],
   },
+  clapham: {
+    description:
+      'Clapham lies mostly in the London Borough of Lambeth, with part of Clapham Common and its western side in Wandsworth. This page also covers Stockwell and the Oval side of Kennington in SW9, and Balham in SW12, which is in Wandsworth. The area runs from Georgian and Regency houses around Clapham Common to Victorian terraces, mansion flats and post-war estates, with busy high streets at Clapham High Street, Stockwell and Balham.',
+    commuting: 'Northern line from Clapham North, Clapham Common, Clapham South, Stockwell, Oval and Balham; Victoria line from Stockwell; London Overground from Clapham High Street and Wandsworth Road; Southern from Balham.',
+    whyLocal:
+      'Our engineers travel to Clapham, Stockwell, Oval and Balham from our base in Brentwood, for burglar alarms, CCTV, fire alarms and access control in homes, blocks of flats and businesses.',
+    residential: ['Clapham Old Town', 'Clapham North', 'Abbeville', 'Stockwell', 'Oval', 'Balham'],
+    propertyStock:
+      'Clapham\'s housing includes some of the oldest in south London. Around Clapham Common and the Old Town are large Queen Anne, Georgian and Regency houses, such as 113 North Side of 1763, near Holy Trinity Church of 1776. Stockwell developed in the 19th century as an elegant middle-class suburb, and the villas of Stockwell Park were mostly built between 1825 and 1840, while the terraced streets of Kennington, around the Oval, developed from the late 18th century onwards. Later in the 19th century came the grid of Victorian streets around Abbeville Road and the terraces of Albert Square and Larkhall. Balham grew after the railway arrived in 1856, with the Heaver Estate of about 1890 to 1910 towards Tooting Bec Common, the early Edwardian Dinsmore Road estate, and in the 1930s Du Cane Court, with 676 flats. Clapham, Stockwell and Balham also have social housing on estates from the 1930s and 1960s, including the post-war Stockwell Park, Lansdowne Green and Spurgeon estates. A Georgian house on the common and a flat on a 1960s estate need very different systems, so we survey before quoting.',
+    securityContext:
+      'Where a large period house has been divided into flats, each flat needs its own entry points covered and the shared front door needs door entry; where it remains one home, wireless intruder alarms avoid disturbing decorated interiors, and side and rear access need covering as well as the front. The mansion blocks of Clapham Common North Side, such as Grove Mansions of 1896, and of Balham, such as Du Cane Court, need door entry and access control for their shared entrances. Much of the area is in conservation areas, from Clapham and Stockwell Park in Lambeth to Clapham Common, Heaver Estate and Nightingale Lane in Wandsworth, so external equipment should be sited discreetly. On the high streets, shops and restaurants need CCTV and intruder alarms, and fire detection sized against the fire risk assessment.',
+    commercial:
+      'Clapham High Street, Stockwell and Balham are all district town centres in the London Plan. Clapham High Street began as 18th and early 19th-century houses converted to shops, with whole new blocks added in the late 19th and early 20th centuries. The Old Town, Abbeville Road and Nightingale Lane have smaller parades, Venn Street has a cinema, restaurants and a weekend food market, and Balham High Road grew into a commercial street of shops, banks and entertainment after the railway arrived in 1856. Retail and hospitality premises need shopfront CCTV, intruder alarms and fire detection sized against the fire risk assessment, and flats above shops need door entry. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Clapham Common and Old Town',
+        note: 'Georgian and Regency houses around the common and the Old Town, in the Clapham conservation area, with Holy Trinity Church of 1776 and the Grade II listed bandstand of 1890. Wireless alarms and discreet external equipment suit the setting.',
+      },
+      {
+        name: 'Clapham North and Larkhall',
+        note: '19th-century terraces either side of Clapham Road, including the Larkhall and Sibella Road conservation areas, near Clapham North and Clapham High Street stations.',
+      },
+      {
+        name: 'Abbeville',
+        note: 'A grid of late Victorian streets around Abbeville Road, with a parade of shops with flats above in the Abbeville Road conservation area.',
+      },
+      {
+        name: 'Stockwell',
+        note: 'An early 19th-century suburb whose villas survive in the Stockwell Park conservation area, with Albert Square and Lansdowne Gardens nearby and post-war estates. Northern and Victoria lines at Stockwell.',
+      },
+      {
+        name: 'Oval',
+        note: 'The part of Kennington around The Oval cricket ground, where SE11 meets SW8 and SW9, with terraced housing from the late 18th century onwards in the Kennington and St Marks conservation areas.',
+      },
+      {
+        name: 'Balham',
+        note: 'A Wandsworth town centre on Balham High Road, with the early Edwardian Dinsmore Road estate, the larger houses of Nightingale Lane and Du Cane Court nearby, and the Heaver Estate between Balham and Tooting Bec Common. Door entry for mansion blocks and wireless alarms for period houses.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Do you cover Stockwell, Oval and Balham as well as Clapham?',
+        answer:
+          'Yes. This page covers Clapham (SW4), Stockwell and the Oval side of Kennington (SW9), and Balham (SW12), across the London Boroughs of Lambeth and Wandsworth. Our engineers travel from our base in Brentwood, and we agree an appointment time with you when you call.',
+      },
+      {
+        question: 'Can you fit an alarm to a Georgian or Victorian house near Clapham Common?',
+        answer:
+          'Yes. Wireless intruder alarms avoid chasing cables into decorated walls, and we cover side and rear access as well as the front door. Much of the area around the common is in the Clapham and Clapham Common conservation areas, so we site sounders and cameras discreetly. If you are unsure whether a change to the outside of the property needs consent, check with Lambeth or Wandsworth Council\'s planning team before any external equipment is fitted.',
+      },
+      {
+        question: 'Do you install door entry for mansion blocks in Balham and Clapham?',
+        answer:
+          'Yes. We install, maintain and take over door entry and access control for blocks of flats, including mansion blocks, and survey any existing system first to confirm what can be kept.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Fire Alarms in Clapham, Stockwell & Balham',
+    metaDescription:
+      'Security installers covering Clapham, Stockwell, Oval and Balham (SW4, SW9, SW12). Burglar alarms, CCTV, door entry and fire alarms. SSAIB and BAFE.',
+    extraKeywords: [
+      'burglar alarm clapham',
+      'burglar alarms clapham',
+      'cctv installation clapham',
+      'burglar alarms balham',
+      'burglar alarms stockwell',
+      'door entry systems clapham',
+      'fire alarms clapham',
+      'alarm installers sw4',
+    ],
+  },
+  'chelsea-and-kensington': {
+    description:
+      'Chelsea, Brompton, Earl\'s Court, South Kensington and Knightsbridge lie in the south of the Royal Borough of Kensington and Chelsea, with part of Knightsbridge in the City of Westminster. The area is one of Georgian and Victorian terraces, garden squares, mews houses and mansion blocks, with international shopping in Knightsbridge, the King\'s Road and the South Kensington museums.',
+    population: 'around 143,400 (Royal Borough, Census 2021)',
+    commuting: 'District, Circle and Piccadilly lines from South Kensington, Gloucester Road, Sloane Square, Earl\'s Court and Knightsbridge; District line and London Overground from West Brompton.',
+    whyLocal:
+      'Our engineers travel to Chelsea, Kensington and Knightsbridge from our base in Brentwood, for intruder alarms, CCTV, access control and fire alarms in period houses, mansion flats, mews houses and commercial premises.',
+    residential: ['Chelsea', 'Brompton', 'South Kensington', 'Earl\'s Court', 'West Brompton', 'Knightsbridge'],
+    propertyStock:
+      'The area was built out between the late 18th century and the late 19th. Chelsea Common and Hans Town, laid out by Henry Holland around Sloane Street, came first. Brompton Square followed in the 1820s, and in South Kensington the Thurloe Estate and Smith\'s Charity estate was built up from the 1830s, with Pelham Crescent between 1833 and 1838 and Thurloe Square from 1840 to 1846. The Boltons and Redcliffe Square, in West Brompton, were developed between 1850 and 1876 in an Italianate style, and Earl\'s Court was built up after the Metropolitan District Railway was authorised in 1864, with mansion blocks around Earl\'s Court Square in the 1890s. The result is a borough of terraces, villas, squares, crescents, mansion blocks and mews, where a high proportion of homes are flats, over 4,000 buildings are listed and there are more than 100 garden squares. A mews house, a stucco terrace and a mansion flat each need a different specification, so we survey before quoting.',
+    securityContext:
+      'Security here is shaped by the buildings\' age and value. Georgian and Victorian terraces and mews houses need intruder alarms that avoid disturbing period interiors, which usually means wireless systems or carefully concealed wiring, and cover for mews doors, basements and rear access as well as the front. Mansion blocks and converted houses need door entry and access control for shared entrances, and communal fire detection. Nearly three quarters of the Royal Borough is covered by its 38 conservation areas, and over 4,000 buildings are listed, so external sounders and cameras need careful, discreet siting, and consent may be needed for changes to a listed building. Shops, galleries and offices on the King\'s Road, Brompton Road and in South Kensington need CCTV, intruder alarms and commercial fire alarm systems to BS 5839-1.',
+    commercial:
+      'The Royal Borough\'s largest town centre is Knightsbridge, an international shopping centre anchored by Harrods on Brompton Road. The King\'s Road is a major centre, anchored at its eastern end by Peter Jones at Sloane Square and the Duke of York Square development, with the Royal Court, Cadogan Hall and the Saatchi Gallery nearby, while its western end is known for furniture and design retailers. South Kensington, Brompton Cross and Earl\'s Court Road are district centres, and South Kensington is the borough\'s cultural centre, home to the Victoria and Albert Museum, the Natural History Museum, the Science Museum and Imperial College. The Lots Road area by Chelsea Harbour is an employment zone. Premises range from luxury retail and galleries to offices and institutions, and need CCTV, access control, intruder alarms and BS 5839-1 fire alarm systems with a servicing contract. J&L Security is BAFE accredited for the installation and maintenance of fire alarms.',
+    neighbourhoods: [
+      {
+        name: 'Chelsea',
+        note: 'Laid out from the early 19th century up to the 1950s, from small two-storey terraced houses to five-storey terraces and flats, with shops on the King\'s Road, Fulham Road and Walton Street. Wireless alarms and discreet external equipment suit the conservation areas.',
+      },
+      {
+        name: 'Royal Hospital',
+        note: 'Georgian and Victorian terraces between the King\'s Road and the Embankment, around the Royal Hospital, founded in 1682 and home of the Chelsea Flower Show since 1913.',
+      },
+      {
+        name: 'Brompton and Knightsbridge',
+        note: 'Brompton Square of the 1820s and grand houses on Brompton Road, with two-storey cottages and former mews behind, and Harrods. Part of Knightsbridge is in the City of Westminster.',
+      },
+      {
+        name: 'South Kensington',
+        note: 'The Thurloe Estate and Smith\'s Charity squares and crescents of the 1830s and 1840s, and Queen\'s Gate, where most of the 14 mews terraces are now homes, beside the museums.',
+      },
+      {
+        name: 'Earl\'s Court',
+        note: 'Terraces built after the District Railway, and 1890s mansion blocks around Earl\'s Court Square, with a range of property types and tenures. Door entry and access control for mansion blocks.',
+      },
+      {
+        name: 'West Brompton and The Boltons',
+        note: 'Italianate houses of 1850 to 1876 around The Boltons and Redcliffe Square, bounded by Brompton Cemetery, a Grade I registered landscape.',
+      },
+    ],
+    localFaqs: [
+      {
+        question: 'Can you fit an alarm to a listed house or mews house in Chelsea or Kensington?',
+        answer:
+          'Yes. Wireless intruder alarms, or carefully concealed wiring, avoid disturbing period interiors, and we cover mews doors and rear access as well as the front. Over 4,000 buildings in the Royal Borough are listed and nearly three quarters of it is in conservation areas, so check with Kensington and Chelsea Council\'s planning team whether consent is needed before any external equipment is fitted.',
+      },
+      {
+        question: 'Do you cover Earl\'s Court, South Kensington and Knightsbridge?',
+        answer:
+          'Yes. We cover SW3, SW5, SW7 and SW10, including Chelsea, Brompton, Earl\'s Court, South Kensington, West Brompton and Knightsbridge, on both the Kensington and Chelsea and the Westminster sides. Our engineers travel from our base in Brentwood, and we agree an appointment time with you when you call.',
+      },
+      {
+        question: 'Do you install door entry and access control in mansion blocks?',
+        answer:
+          'Yes. We install, maintain and take over door entry, access control and communal fire detection for mansion blocks and converted houses, and survey any existing system first to confirm what can be kept. J&L Security is BAFE accredited for the installation and maintenance of fire alarms. We are also SSAIB approved.',
+      },
+    ],
+    metaTitle: 'Burglar Alarms, CCTV & Access Control in Chelsea and Kensington',
+    metaDescription:
+      'Security installers covering Chelsea, Brompton, Earl\'s Court, South Kensington and Knightsbridge (SW3, SW5, SW7, SW10). Alarms, CCTV and access control.',
+    extraKeywords: [
+      'burglar alarms chelsea',
+      'burglar alarm chelsea',
+      'cctv installation chelsea',
+      'burglar alarms kensington',
+      'burglar alarms knightsbridge',
+      'access control chelsea',
+      'alarm installers south kensington',
+      'security company chelsea',
+    ],
+  },
 };
 
 const serviceIcons = {

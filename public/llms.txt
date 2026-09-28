@@ -21,9 +21,9 @@ Essex: Brentwood, Chelmsford, Basildon, Romford, Ilford, Hornchurch, Upminster, 
 
 Greater London (East and Central): Enfield, Stratford, Canary Wharf, Islington, Hackney, Clapton, Dalston, Camden, Westminster.
 
-Greater London (South and South East): Greenwich, Woolwich, Southwark, Battersea, Streatham.
+Greater London (South and South East): Greenwich, Woolwich, Southwark, Battersea, Clapham, Streatham.
 
-Greater London (West and North): Hammersmith, Fulham, Finchley, Barnet.
+Greater London (West and North): Hammersmith, Fulham, Chelsea and Kensington, Finchley, Barnet.
 
 ## Contact
 

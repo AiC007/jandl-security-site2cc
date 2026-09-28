@@ -114,10 +114,10 @@ Brentwood, Chelmsford, Basildon, Romford, Ilford, Hornchurch, Upminster, Barking
 Enfield, Stratford, Canary Wharf, Islington, Hackney, Clapton, Dalston, Camden, Westminster, Walthamstow, City of London, Docklands.
 
 ### Greater London (South and South East)
-Greenwich, Woolwich, Southwark, Battersea, Streatham.
+Greenwich, Woolwich, Southwark, Battersea, Clapham, Streatham.
 
 ### Greater London (West and North)
-Hammersmith, Fulham, Finchley, Barnet, Ealing, Harrow.
+Hammersmith, Fulham, Chelsea and Kensington, Finchley, Barnet, Ealing, Harrow.
 
 ### Kent Borders
 Coverage extends to Kent border areas on request.
@@ -267,6 +267,16 @@ North London suburban area in the London Borough of Barnet, covering Finchley Ce
 
 ### Barnet
 Northernmost of the London boroughs, covering High Barnet, New Barnet, Cockfosters, Hadley Wood, and Totteridge, with a high proportion of family homes, large detached and semi-detached properties, and a settled residential market with strong insurance-driven demand. J&L Security covers EN4, EN5, and N20. Engineers operate routinely across the area for residential intruder alarms (wireless Grade 2 packages with monitored options and SSAIB-approved installations for insurance-required policies), commercial CCTV and access control along Barnet High Street, and BS 5839 fire alarm work for HMOs and commercial premises. Both phone numbers operate: 0204 538 5925 and 0208 220 4770.
+
+## South-west London Location Summaries (added September 2026)
+
+Two location pages added in September 2026, bringing the total to 31. Each summary corresponds to a dedicated page at https://jandlsecurity.co.uk/locations/[slug]. J&L Security is Brentwood-based and travels to these areas from its Essex base; no response or travel time is promised.
+
+### Clapham
+Clapham, mostly in the London Borough of Lambeth with its western side in Wandsworth, together with Stockwell and the Oval side of Kennington (SW9) and Balham (SW12, Wandsworth). Georgian and Regency houses around Clapham Common and the Old Town, Victorian terraces around Abbeville Road and Larkhall, mansion blocks in Clapham and Balham, and post-war estates, with district town centres at Clapham High Street, Stockwell and Balham. J&L Security covers SW4, SW9 and SW12 for wireless intruder alarms in period houses, door entry and access control for mansion blocks and converted houses, commercial CCTV for the high streets, and BS 5839 fire alarm work. Page: https://jandlsecurity.co.uk/locations/clapham. Both phone numbers operate: 0204 538 5925 and 0208 220 4770.
+
+### Chelsea and Kensington
+Chelsea, Brompton, Earl's Court, South Kensington and Knightsbridge, in the south of the Royal Borough of Kensington and Chelsea, with part of Knightsbridge in the City of Westminster. Georgian and Victorian terraces, garden squares, mews houses and mansion blocks, with nearly three quarters of the Royal Borough in conservation areas, and commercial centres at Knightsbridge, the King's Road and South Kensington. J&L Security covers SW3, SW5, SW7 and SW10 for intruder alarms suited to listed and period buildings, door entry and access control for mansion blocks, CCTV for retail and commercial premises, and BS 5839 fire alarm work. Page: https://jandlsecurity.co.uk/locations/chelsea-and-kensington. Both phone numbers operate: 0204 538 5925 and 0208 220 4770.
 
 ## Blog
 

@@ -266,9 +266,16 @@ Priority sequence:
 
 ## 11. Last Session Summary
 
-### 2026-09-28 (afternoon, build session): Jag's answers built on a branch. NOT PUSHED, NOT SHIPPED.
+### 2026-09-28 (afternoon): Jag's answers. SHIPPED and verified live.
 
-**Where it is.** Branch `content/jag-answers-0928`, cut from `main` at `6ef46c5`, local only: not pushed, no PR, not deployed, no email. The review session checks it, then decides what ships. Record: `docs/2026-09-28-jag-answers-implementation.md`.
+**Shipped.** Approved by the review session and opened as [PR #25](https://github.com/AiC007/jandl-security-site2cc/pull/25). The preview `dpl_6Z8R558a82a7ppna4BnYxicf9gm1` reached READY. It was squash-merged as **`1cd2134`** and the branch deleted. Production `dpl_6U9RSZ78SgUUXaeFXrwF8FA8C8Xa` is READY. **Verified live with curl:**
+- the lock pages and Stratford show the new content;
+- the lock pages' markdown has no accreditation or 24/7 claim;
+- the CO wording is on the fire alarms and About pages;
+- the sitemap has 112 URLs;
+- both phone numbers are on every page checked.
+
+The review session drafts the "now live" note to Jag; none was sent from this session. Record: `docs/2026-09-28-jag-answers-implementation.md`. Branch commit hashes below are pre-squash.
 
 **Trigger.** Jag's reply of 11:47 UTC (thread `1a0e714b643af248`, message `1a0e7d7f1c7c37b2`): "Yes we work on CO alarms"; Stratford "should be a HMO fire alarm packages"; "keep the locks and safes too, but they can be more generic". Wendy's reply promising the three changes was sent at 11:52 UTC (`1a0e7dc108df097e`).
 

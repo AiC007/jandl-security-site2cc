@@ -3,7 +3,17 @@
 **Date:** 2026-09-28
 **Session:** Claude Code (Opus 5.5), build session, after the maintenance round shipped (`005fb37`).
 **Branch:** `content/jag-answers-0928`, cut from `main` at `6ef46c5`.
-**Status:** committed locally. **Not pushed, no PR, not merged, not deployed, no email.** The review session checks it before anything ships.
+**Status: SHIPPED and verified live.** Approved by the review session. The branch was already level with `origin/main`, so the rebase was a no-op. It was opened as [PR #25](https://github.com/AiC007/jandl-security-site2cc/pull/25), and the preview `dpl_6Z8R558a82a7ppna4BnYxicf9gm1` reached READY at the branch head `c2a06f1`. The PR was squash-merged as **`1cd2134`** and the branch deleted. Production `dpl_6U9RSZ78SgUUXaeFXrwF8FA8C8Xa` reached READY. **No email was sent;** the review session drafts the "now live" note to Jag.
+
+## Live verification on https://jandlsecurity.co.uk (curl, 2026-09-28, after `1cd2134`)
+
+| Check | Result |
+|---|---|
+| Lock pages | Emergency Locksmith Romford, BS3621 Locks Fitted Ilford and Safe Fitting Brentwood all return 200. Each carries "offers locksmith work" and the "Locks and Safes in …" heading. None has the old hedge "confirm whether it is work we carry out" or "within 2 to 4 hours". Both phone numbers are on each. |
+| Lock pages as `Accept: text/markdown` | `text/markdown` on all three, opening "J&L Security offers locksmith work, BS3621 lock fitting and safe fitting in …". There is no SSAIB, CHAS, FIA, BAFE or "accredit", and no "24/7 emergency support". The shared contact block still says "Hours: … plus 24/7 emergency callouts" (site-wide company data, flagged). |
+| Stratford | 200. The H1 and title read "HMO Fire Alarm Packages Stratford - Professional Installation & Maintenance". It shows the "BS 5839-6 Compliance Notice" and the CO Service Includes line. Both phone numbers are present. |
+| CO wording | `/services/fire-alarms` carries "work on carbon monoxide alarms"; `/about` carries "We also work on carbon monoxide alarms"; `llms.txt` has the CO bullet. Both phone numbers are on both pages. |
+| Sitemap | 112 URLs. |
 **Maturity:** Pilot.
 
 ## Trigger

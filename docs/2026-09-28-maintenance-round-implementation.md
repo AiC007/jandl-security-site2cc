@@ -15,7 +15,8 @@
 | `d657a4b` | 2 | Corrects BS 5839-6 grade and category wording across the site. |
 | `7f709ff` | 3 | Fire pages get a fire "Service Includes" list, chosen by page type. |
 | `63dd99e` | 3 | The remaining lists follow page type too (four non-fire pages change). Separate so it can be dropped on its own. |
-| (this commit) | close | This record and the `memory.md` updates. |
+| `69517d0` | close | This record and the `memory.md` updates. |
+| `67f3e9d` | 2 | The review session's two decisions on the flagged BS 5839-6 claims (see "Operator decisions" below). |
 
 Verification common to every commit: `npm run build` exits 0, and no added line on the branch contains an em dash (a count of U+2014 in the added lines of `git diff main..HEAD` returns 0). All 115 built pages still carry both 0204 538 5925 and 0208 220 4770.
 
@@ -154,9 +155,26 @@ Aggregator pages that contradicted these (one lists an "LD4", another lists Grad
 - 2 Romford matrix pages (`burglar-alarm-servicing/romford`, `emergency-locksmith/romford`), which carry the Romford HMO FAQ;
 - 18 blog pages (17 posts plus the index), whose **only** change is the HMO guide card's "14 min read" becoming "15 min read" (checked page by page).
 
+### Operator decisions (review session, 2026-09-28), commit `67f3e9d`
+
+The review session approved the branch subject to decisions on flagged items 1 and 2 below. Both are applied:
+
+1. **"Most fire risk assessors will recommend LD2 Grade A as the minimum" is removed.** The paragraph now reads: the grade and category are set by the fire risk assessment and, for a licensable HMO, the council's licensing schedule.
+2. **Testing and Grade D servicing are no longer credited to BS 5839-6.** Test-button testing is presented as the manufacturers' advice, telling readers to follow their alarms' instructions. An annual inspection is presented as good practice that HMO licences often require. No test frequency is stated as a BS 5839-6 requirement. Weekly call-point tests and 6-monthly servicing remain, attributed to BS 5839-1 and scoped to panel-controlled Grade A systems.
+
+   Changed in:
+   - the HMO guide: Annual Servicing; Servicing Requirements, now scoped to Grade A with one Grade D testing sentence added; the testing FAQ in its HTML and JSON-LD copies;
+   - the explainer: the "What BS 5839-6 Requires" maintenance bullet and the servicing paragraph;
+   - the domestic block's maintenance note;
+   - `llms-full.txt`: the fire alarms bullet and the HMO guide summary.
+
+Rebuilt and diffed against the previous tip. **Exactly 6 pages change:** the two BS 5839 posts and the 4 domestic-block matrix pages, plus `llms-full.txt`. Reading times are unchanged: `wordCount` goes from 3,694 to 3,728 (15 min) and from 3,144 to 3,155 (13 min). No em dash is added.
+
+Still open from item 2 of the flag list: the explainer's "Grade A … typically annually for domestic". It was not part of the decision, and it conflicts with the six-monthly Grade A servicing stated elsewhere on the site.
+
 ### Flagged, not changed
 
-These are licensing-practice or servicing claims rather than definitions. No permitted source settles them, so they are left as written for an operator decision. **Decide items 1 and 2 before this ships**, because the corrected text on the same page now sits next to them.
+These are licensing-practice or servicing claims rather than definitions. No permitted source settles them, so they were left as written for an operator decision. **Items 1 and 2 have since been decided; see above.**
 
 1. **HMO guide, Fire Safety Order section: "most fire risk assessors will recommend LD2 Grade A as the minimum for licensable HMOs".** It contradicts the same page's Grade D1 guidance and Table 1 (D1 LD2 for existing small HMOs). The contradiction predates this branch: the FAQ already said councils accept D1 for smaller HMOs. The corrected LD2 bullet makes it sharper. It is a claim about assessors' practice, which no source here can confirm or refute. **Recommended:** delete it, or narrow it to HMOs outside the small-HMO row.
 2. **Servicing and testing by grade (BS 5839-6 Table 3).** The BSI extract says Grade A is tested weekly and serviced at intervals not exceeding six months. Grades C, D and F are tested monthly by the user, and the standard "does not specifically recommend" competent-person servicing for them except in sheltered housing, telecare-enabled systems or where the manufacturer says so. Aico, a permitted source, confirms only the monthly testing. Four live sentences conflict with this:

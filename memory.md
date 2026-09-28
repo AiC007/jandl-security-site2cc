@@ -258,10 +258,41 @@ Priority sequence:
 | /docs/2026-09-28-domestic-makes-live-client-email.html | Branded HTML body of the same email |
 | /docs/2026-09-28-maintenance-round-handoff-prompt.md | Build brief for the maintenance round (Next.js upgrade, BS 5839-6 definitions, fire "Service Includes") |
 | /docs/2026-09-28-maintenance-round-implementation.md | Maintenance round record: audit before and after, built-output and runtime comparisons, BS 5839-6 sources, eight practice claims flagged not changed, follow-ups |
+| /docs/2026-09-28-jag-answers-reply-client-email.md | Wendy reply to Jag's answers of 28 September, with the London areas targeted (canonical copy; SENT 2026-09-28 11:52 UTC, message `1a0e7dc108df097e`) |
+| /docs/2026-09-28-jag-answers-reply-client-email.html | Branded HTML body of the same email |
+| /docs/2026-09-28-jag-answers-implementation.md | Jag's answers built on branch `content/jag-answers-0928`: CO alarms, Stratford rename, locks and safes; pages changed per commit, what was flagged, the SW London areas request |
 
 ---
 
 ## 11. Last Session Summary
+
+### 2026-09-28 (afternoon, build session): Jag's answers built on a branch. NOT PUSHED, NOT SHIPPED.
+
+**Where it is.** Branch `content/jag-answers-0928`, cut from `main` at `6ef46c5`, local only: not pushed, no PR, not deployed, no email. The review session checks it, then decides what ships. Record: `docs/2026-09-28-jag-answers-implementation.md`.
+
+**Trigger.** Jag's reply of 11:47 UTC (thread `1a0e714b643af248`, message `1a0e7d7f1c7c37b2`): "Yes we work on CO alarms"; Stratford "should be a HMO fire alarm packages"; "keep the locks and safes too, but they can be more generic". Wendy's reply promising the three changes was sent at 11:52 UTC (`1a0e7dc108df097e`).
+
+**Built, one commit per change.**
+- **`22879dd` (CO alarms).** Named alongside smoke and heat alarms in the matrix domestic block, its FAQ and Service Includes, the fire alarms page, the About page and both llms files. The copy uses Jag's verb, "work on", and never ties a make to CO. 6 pages change.
+- **`2f95305` (Stratford).** Renamed "HMO Fire Alarm Packages", URL unchanged (the slug drives it). `getServiceType()` keeps HMO *package* pages on the domestic BS 5839-6 block. 5 pages change: Stratford plus 4 whose link text shows the name.
+- **`7ef6f09` (locks and safes).** The three pages say plainly that J&L offers locksmith work, BS3621 lock fitting and safe fitting, using only services `/services` already lists, with no prices, response times, brands or procedures. Lock pages now also skip the location FAQs, because Romford's and Brentwood's quote 2 to 4 and 1 to 2 hour callout times that would read as locksmith times. They drop "rapid response times", the SSAIB lines and the 24/7 Why Choose item. 3 pages change.
+
+Whole branch: 12 pages, both phone numbers on each, no em dash added, build exits 0.
+
+**Flagged, not changed.**
+- The site-wide header banner "24/7 Emergency Callouts Available" still shows on the Emergency Locksmith page.
+- The burglar alarms service page lists fire, smoke and lock pages in its area list (its filter matches "alarm", "smoke", "detector" and "lock").
+- The lower-cased service names in generic matrix copy.
+
+**Owed to Jag:** a "now live" note once this ships. He also asked at 12:02 UTC (`1a0e7e52f0d16fb0`) for ten south-west London areas; Wendy replied at 12:06 UTC (`1a0e7e88935f1528`) that SW2, SW6, SW8, SW10 and SW11 are covered by existing pages and **promised a recommendation on the rest after checking search demand**. That needs its own research round.
+
+**Adversarial review.** A fresh-context sub-agent confirmed the routing and the 12-page footprint, and found one real miss. **The agent markdown for the lock pages still claimed the four accreditations and 24/7 emergency support**, because only the HTML had been checked. It also found:
+- "same-day" wording on the lock pages;
+- an attendance promise;
+- insurer-outcome and quotation wording;
+- a shared CO sentence on the About page.
+
+All are fixed in `356984c` (only the 3 lock pages and About change); the rest are flagged. **Lesson: when a brief says a page must not make a claim, check the page's markdown (`Accept: text/markdown`) and the site-wide layout too, not just the page template.** Also found: the breadcrumb JSON-LD on all 50 matrix pages points at hyphenated 404 URLs (a follow-up).
 
 ### 2026-09-28 (maintenance round): Next.js security upgrade, BS 5839-6 definitions, fire "Service Includes". SHIPPED and verified live.
 

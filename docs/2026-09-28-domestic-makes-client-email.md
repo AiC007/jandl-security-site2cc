@@ -1,6 +1,6 @@
 # Client email: reply to Jag on domestic fire alarm makes (Wendy AI)
 
-**Status:** CANONICAL COPY, REVIEWED, APPROVED by the operator 2026-09-28. Gmail draft created once, 2026-09-28, as a reply in thread `1a0e714b643af248`: draft `r-4524881033299591077`, message `1a0e72f750409250`. **Not sent.** Operator sends.
+**Status:** CANONICAL COPY, REVIEWED, APPROVED by the operator 2026-09-28. Gmail draft created once, 2026-09-28, as a reply in thread `1a0e714b643af248`: draft `r-4524881033299591077`. **SENT by the operator 2026-09-28 08:45 UTC**, message `1a0e730f2babd2c8`. Jag had not replied at the time the build handoff was written.
 
 **Reply to:** Jag's message `1a0e714b643af248` of 2026-09-28 08:13 UTC, thread `1a0e714b643af248`.
 

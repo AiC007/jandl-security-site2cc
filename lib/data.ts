@@ -433,7 +433,7 @@ export const serviceLocationMatrix = [
   { service: 'CCTV Remote Viewing Setup', location: 'Goodmayes', slug: 'cctv-remote-viewing-goodmayes' },
   { service: 'CCTV Annual Maintenance', location: 'Wanstead', slug: 'cctv-annual-maintenance-wanstead' },
   { service: 'Fire Alarm Annual Service', location: 'Harlow', slug: 'fire-alarm-annual-service-harlow' },
-  { service: 'HMO Alarm Packages', location: 'Stratford', slug: 'hmo-alarm-packages-stratford' },
+  { service: 'HMO Fire Alarm Packages', location: 'Stratford', slug: 'hmo-alarm-packages-stratford' },
   { service: 'Access Control Upgrades', location: 'Chigwell', slug: 'access-control-upgrades-chigwell' },
   { service: 'Door Entry Repairs', location: 'Loughton', slug: 'door-entry-repairs-loughton' }
 ];

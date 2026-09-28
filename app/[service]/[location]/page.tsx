@@ -716,10 +716,11 @@ function getServiceType(service: string): string {
   // terms rather than a bare "lock" match.
   if (s.includes('locksmith') || s.includes('bs3621') || s.includes('safe fitting')) return 'locks';
   // Domestic smoke and heat alarms are BS 5839-6, not the commercial BS 5839-1
-  // block used by the panel-based fire pages. "HMO Alarm Packages" is BS 5839-6
-  // too (Grade D or Grade A per the licensing schedule); "HMO Fire Alarm
-  // Testing" contains "fire" and stays with the commercial block.
-  if (s.includes('smoke') || s.includes('interlinked') || (s.includes('hmo') && !s.includes('fire'))) return 'domestic';
+  // block used by the panel-based fire pages. "HMO Fire Alarm Packages" is
+  // BS 5839-6 too (Grade D or Grade A per the licensing schedule), so an HMO
+  // package goes to the domestic block even though its name contains "fire";
+  // "HMO Fire Alarm Testing" has no "package" and stays with the commercial block.
+  if (s.includes('smoke') || s.includes('interlinked') || (s.includes('hmo') && (s.includes('package') || !s.includes('fire')))) return 'domestic';
   if (s.includes('cctv')) return 'cctv';
   // "BS 5839-1 Compliance Audits" is a fire subject whose name lacks "fire".
   if (s.includes('fire') || s.includes('bs 5839')) return 'fire';

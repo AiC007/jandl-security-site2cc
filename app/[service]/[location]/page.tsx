@@ -517,7 +517,7 @@ function generateServiceFAQs(service: string, location: string) {
     'domestic': [
       {
         question: `What smoke alarms do you fit in ${location} homes?`,
-        answer: `We fit Aico smoke and heat alarms, and we work with Kidde, FireAngel and Hispec alarms as well, so we can replace like for like or assess what is already installed. For new work in ${location} homes and HMOs the usual specification is BS 5839-6 Grade D: mains-powered alarms, each with a backup battery (sealed in Grade D1, user-replaceable in Grade D2), interlinked so that when one alarm detects smoke every alarm in the property sounds. Heat alarms go in kitchens, where a smoke alarm would give false alarms from cooking, and smoke alarms cover the hallway, landing and living areas.`
+        answer: `We fit Aico smoke and heat alarms, and we work with Kidde, FireAngel and Hispec alarms as well, so we can replace like for like or assess what is already installed. For new work in ${location} homes and HMOs the usual specification is BS 5839-6 Grade D: mains-powered alarms, each with a backup battery (sealed in Grade D1, user-replaceable in Grade D2), interlinked so that when one alarm detects smoke every alarm in the property sounds. Heat alarms go in kitchens, where a smoke alarm would give false alarms from cooking, and smoke alarms cover the hallway, landing and living areas. We also work on carbon monoxide alarms, alongside smoke and heat alarms.`
       },
       {
         question: `Do I need interlinked smoke alarms in ${location}?`,
@@ -539,19 +539,19 @@ function generateServiceFAQs(service: string, location: string) {
     'locks': [
       {
         question: `Do you offer locksmith, lock fitting and safe work in ${location}?`,
-        answer: `J&L Security is a security systems installer: burglar alarms, CCTV, fire alarms, access control and security lighting across ${location} and the surrounding area. Lock and safe requirements come up during security surveys, and the simplest route is to call us and describe what you need. We will confirm whether it is work we carry out and, if it is not, what we suggest instead.`
+        answer: `Yes. J&L Security offers locksmith work, BS3621 lock fitting and safe fitting in ${location} and the surrounding area, alongside the burglar alarms, CCTV, fire alarms, access control and security lighting we install. Call us and describe what you need, and we will advise on the next step.`
       },
       {
         question: `Can J&L Security fit BS3621 locks in ${location}?`,
-        answer: `If your insurer has asked for BS3621 locks on external doors, tell us when you call and we will confirm whether it is something we can arrange as part of your security work in ${location}. What we can always do is design the intruder alarm to the same policy conditions, so that the locks and the alarm meet the insurer's requirements together.`
+        answer: `Yes. We fit BS3621 security locks on external doors in ${location}. If your insurer has set conditions for your locks or your alarm, tell us when you call, and we can design any intruder alarm to the same policy conditions.`
       },
       {
         question: `Do you provide an emergency locksmith service in ${location}?`,
-        answer: `We provide 24/7 emergency response for existing alarm, CCTV, fire alarm and access control customers under a maintenance contract. We do not publish an emergency locksmith response time or call-out charge. If you are locked out or have a damaged lock in ${location}, call us and we will tell you straight away whether we can help.`
+        answer: `Yes. Our locksmith work in ${location} includes lockouts and lock replacements. We do not publish response times or call-out charges: call us and describe what has happened.`
       },
       {
         question: `Can you fit a safe in ${location}?`,
-        answer: `Tell us what you want to protect and where, and we will confirm whether safe fitting is work we can carry out for your ${location} property. If you are protecting high-value items, a monitored intruder alarm and CCTV are the systems we install every week and can quote for after a free survey.`
+        answer: `Yes. We fit safes in homes and businesses in ${location}. Tell us what you want to protect and where, and we will advise on the safe and where to fit it. If you are protecting high-value items, a monitored intruder alarm and CCTV can work alongside the safe, and we can quote for those after a free survey.`
       }
     ],
     'access': [
@@ -661,26 +661,28 @@ const serviceDetailBlocks: Record<string, {
       'Grade D package for a 4-bedroom HMO to meet the local authority licensing schedule, with a heat alarm in the kitchen and interlinked smoke alarms in the bedrooms and on every escape route',
       'Assessment and repair of a domestic system where one alarm chirps intermittently or the alarms no longer sound together when tested'
     ],
-    equipmentUsed: 'For domestic and HMO smoke and heat alarms we fit Aico alarms, and we work with Kidde, FireAngel and Hispec smoke and heat alarms, whether you need a like-for-like replacement or an assessment of an existing system. Mains-powered interlinked alarms with battery backup (Grade D) are the usual specification for new work. If your property already has alarms of another make, tell us the make when you call and we will advise. Larger HMOs that need a panel-controlled Grade A system use the same control panel makes listed on our fire alarms service page.',
+    equipmentUsed: 'For domestic and HMO smoke and heat alarms we fit Aico alarms, and we work with Kidde, FireAngel and Hispec smoke and heat alarms, whether you need a like-for-like replacement or an assessment of an existing system. We also work on carbon monoxide alarms, alongside smoke and heat alarms. Mains-powered interlinked alarms with battery backup (Grade D) are the usual specification for new work. If your property already has alarms of another make, tell us the make when you call and we will advise. Larger HMOs that need a panel-controlled Grade A system use the same control panel makes listed on our fire alarms service page.',
     complianceNote: 'Domestic smoke and heat alarm systems are designed and installed to BS 5839-6, the British Standard for fire detection and fire alarm systems in domestic premises. The standard describes a system by grade and category. The grade is the type of equipment and how it is powered: Grade A is a panel-controlled system using equipment to BS EN 54, Grade C uses central control equipment with a common mains and standby supply, Grades D1 and D2 are mains-powered alarms each with a backup battery (sealed in D1, user-replaceable in D2), and Grades F1 and F2 are battery-powered alarms. The 2019 edition removed Grades B and E. The category is where the alarms go: LD3 covers the circulation areas that form the escape routes, such as the hallway and landing; LD2 adds the rooms that present a high fire risk, including any kitchen (with a heat alarm) and the principal habitable room, usually the living room; and LD1 covers the escape routes and every room or area where a fire might start, except bathrooms, shower rooms and toilets. For a licensed HMO the grade and category are normally set by the local authority licensing schedule.',
     maintenanceInfo: 'Grade D alarms have no control panel to service, but they still need looking after. Test them regularly with the test button, as the manufacturers advise, following the instructions for your alarms. Keep them free of dust, and replace them when they reach the end of the life stated by the manufacturer. For HMOs, an annual inspection by a competent person, with the results recorded in the log book, is good practice, and HMO licences often require it. Panel-controlled Grade A systems in HMOs are typically serviced every 6 months.',
     pricingIndicator: 'Domestic and HMO smoke alarm installations are quoted after a free survey, because the price depends on the grade, the category and the number of alarms. Annual servicing for residential and small HMO systems is from GBP 120 plus VAT per year. Surveys and quotations are free.'
   },
-  // Lock and safe pages. These are not one of J&L's five core services, so
-  // this block restates only what the site already says about them (the
-  // services page lists lockouts, lock replacements, BS3621 locks and safe
-  // fitting) and adds no prices, response times or procedures.
+  // Lock and safe pages. Jag confirmed on 28 September 2026 that J&L offers
+  // locksmith work, BS3621 lock fitting and safe fitting, and asked for the
+  // wording to stay general. This block restates what the services page
+  // already lists (lockouts, lock replacements, BS3621 security locks, home
+  // and commercial safe fitting) and adds no prices, response times, brands
+  // or procedures.
   locks: {
     typicalProjects: [
-      'Security survey of a home or business that looks at doors, windows and points of entry alongside the alarm, CCTV and access control recommendations',
-      'Lock replacements and BS3621 security locks discussed and quoted as part of a wider security survey',
-      'Electronic locking (maglocks and electric strikes) fitted to access control doors, working alongside the existing physical locks',
-      'Home and commercial safe fitting requirements discussed at the survey and quoted alongside alarm and CCTV work'
+      'Help for a home or business that is locked out',
+      'Lock replacements on the doors of a home or business',
+      'BS3621 security locks fitted to external doors',
+      'Home and commercial safe fitting, alongside an intruder alarm and CCTV where the contents call for it'
     ],
-    equipmentUsed: 'Locks and safes are handled as part of a wider security assessment rather than as a stand-alone trade. Our core services are burglar alarms, CCTV, fire alarms, access control and security lighting, and the free security survey looks at the property as a whole, including doors, windows and points of entry. If you have a specific lock or safe requirement, tell us what you need when you call and we will confirm whether it is work we carry out and what the next step is.',
-    complianceNote: 'If your insurer specifies a lock standard such as BS3621 for external doors, or a rating for a safe, tell us at the survey so that our alarm, CCTV and access control recommendations sit alongside those requirements. We provide the documentation your insurer requires for any system we install.',
-    maintenanceInfo: 'Our maintenance contracts cover the intruder alarm, CCTV, fire alarm and access control systems we install. For locks and safes, ask when you call and we will confirm what support is available.',
-    pricingIndicator: 'We do not publish prices for lock or safe work. Tell us what you need and we will confirm whether it is work we carry out. If it is, we quote in writing after a free survey.'
+    equipmentUsed: 'J&L Security offers locksmith work, including lockouts and lock replacements, BS3621 security lock fitting, and safe fitting for homes and businesses. This sits alongside the burglar alarms, CCTV, fire alarms, access control and security lighting we install, so doors, locks, safes and alarms can be looked at together. Tell us what you need when you call and we will advise on the next step.',
+    complianceNote: 'If your insurer specifies a lock standard such as BS3621 for external doors, or has conditions for a safe, tell us when you call so that we can take them into account. We provide the documentation your insurer requires for any alarm, CCTV or access control system we install.',
+    maintenanceInfo: 'Our maintenance contracts cover the intruder alarm, CCTV, fire alarm and access control systems we install. If a lock or safe needs attention after it is fitted, call us and describe the problem.',
+    pricingIndicator: 'We do not publish prices for lock or safe work, because each job depends on the door, the lock or the safe. Tell us what you need when you call.'
   },
   access: {
     typicalProjects: [
@@ -710,16 +712,16 @@ const serviceDetailBlocks: Record<string, {
 
 function getServiceType(service: string): string {
   const s = service.toLowerCase();
-  // Lock and safe pages are not one of J&L's five core services. They get a
-  // conservative block rather than falling through to burglar or lighting.
-  // "Maglock Installation" must stay with access control, hence the explicit
-  // terms rather than a bare "lock" match.
+  // Lock and safe pages get their own block rather than falling through to
+  // burglar or lighting. "Maglock Installation" must stay with access
+  // control, hence the explicit terms rather than a bare "lock" match.
   if (s.includes('locksmith') || s.includes('bs3621') || s.includes('safe fitting')) return 'locks';
   // Domestic smoke and heat alarms are BS 5839-6, not the commercial BS 5839-1
-  // block used by the panel-based fire pages. "HMO Alarm Packages" is BS 5839-6
-  // too (Grade D or Grade A per the licensing schedule); "HMO Fire Alarm
-  // Testing" contains "fire" and stays with the commercial block.
-  if (s.includes('smoke') || s.includes('interlinked') || (s.includes('hmo') && !s.includes('fire'))) return 'domestic';
+  // block used by the panel-based fire pages. "HMO Fire Alarm Packages" is
+  // BS 5839-6 too (Grade D or Grade A per the licensing schedule), so an HMO
+  // package goes to the domestic block even though its name contains "fire";
+  // "HMO Fire Alarm Testing" has no "package" and stays with the commercial block.
+  if (s.includes('smoke') || s.includes('interlinked') || (s.includes('hmo') && (s.includes('package') || !s.includes('fire')))) return 'domestic';
   if (s.includes('cctv')) return 'cctv';
   // "BS 5839-1 Compliance Audits" is a fire subject whose name lacks "fire".
   if (s.includes('fire') || s.includes('bs 5839')) return 'fire';
@@ -749,9 +751,13 @@ function generateContent(service: string, location: string) {
   // Combine generic service-specific FAQs with any location-specific FAQs
   // configured for the priority SEO locations. Both sets render in the page
   // and are included in the FAQPage schema.
+  // Lock pages leave out the location FAQs: they are about alarms, and the
+  // Romford and Brentwood sets quote callout response times, which would read
+  // as locksmith response times on the Emergency Locksmith and Safe Fitting
+  // pages.
   const combinedFaqs = [
     ...generateServiceFAQs(service, location),
-    ...(locationData.locationFAQs ?? [])
+    ...(isLocks ? [] : (locationData.locationFAQs ?? []))
   ];
 
   return {
@@ -759,20 +765,21 @@ function generateContent(service: string, location: string) {
       ? `${service} ${location}`
       : `${service} ${location} - Professional Installation & Maintenance`,
     metaDescription: isLocks
-      ? `${service} in ${location}. J&L Security installs alarms, CCTV, fire alarms and access control. Call ${COMPANY_INFO.phone} to discuss lock and safe work.`
+      ? `${service} in ${location}: J&L Security offers locksmith work, BS3621 lock fitting and safe fitting. Call ${COMPANY_INFO.phone} or ${COMPANY_INFO.phone2}.`
       : `Expert ${service.toLowerCase()} services in ${location}. Professional installation, maintenance & 24/7 support. Free surveys available. Call ${COMPANY_INFO.phone} or ${COMPANY_INFO.phone2} today.`,
 
     hero: isLocks
-      ? `J&L Security is a security systems installer covering ${location}: burglar alarms, CCTV, fire alarms, access control and security lighting. Lock and safe requirements come up during our surveys, so tell us what you need and we will confirm whether it is work we carry out.`
+      ? `J&L Security offers locksmith work, BS3621 lock fitting and safe fitting in ${location} and the surrounding area, alongside the burglar alarms, CCTV, fire alarms, access control and security lighting we install. Tell us what you need and we will advise on the next step.`
       : `Looking for reliable ${service.toLowerCase()} in ${location}? J&L Security provides professional installation and maintenance services throughout ${location} and surrounding areas. With same-day surveys available and over 12 years of experience, we are your trusted local security specialists.`,
 
-    intro: `Our experienced engineers serve ${location} and the surrounding ${nearbyList} areas, providing comprehensive ${service.toLowerCase()} solutions for homes and businesses.${landmarkList ? ` Whether you are located near ${landmarkList}, our` : ' Our'} local team ensures rapid response times and personalised service. Every installation is carried out to SSAIB standards with full documentation and aftercare.`,
+    intro: `Our experienced engineers serve ${location} and the surrounding ${nearbyList} areas, providing comprehensive ${service.toLowerCase()} solutions for homes and businesses.${landmarkList ? ` Whether you are located near ${landmarkList}, our` : ' Our'} local team ${isLocks ? 'provides personalised service.' : 'ensures rapid response times and personalised service. Every installation is carried out to SSAIB standards with full documentation and aftercare.'}`,
 
     whyChoose: [
       `Local engineers covering ${location} (${locationData.postcode || 'local area'}) and surrounding areas`,
-      'Free, no-obligation security survey with same-day availability',
-      'All installations to SSAIB standards',
-      '24/7 emergency response for existing customers',
+      isLocks ? 'Free, no-obligation security survey' : 'Free, no-obligation security survey with same-day availability',
+      // Lock pages: SSAIB covers the security systems, not lock and safe
+      // work, and the Emergency Locksmith page makes no response-time claim.
+      ...(isLocks ? [] : ['All installations to SSAIB standards', '24/7 emergency response for existing customers']),
       'Transparent, fixed-price quotes with no hidden charges',
       'Ongoing maintenance contracts available'
     ],
@@ -786,8 +793,7 @@ function generateContent(service: string, location: string) {
     // smoke alarm pages carry a make list too, so they share the heading.
     isFireService: isFireService || isDomesticFire,
 
-    // Lock and safe pages: neutral headings and no "work we carry out" line,
-    // because whether J&L offers this work is unconfirmed.
+    // Lock and safe pages get their own section headings.
     isLocksService: isLocks,
 
     equipmentUsed: details.equipmentUsed,
@@ -803,7 +809,7 @@ function generateContent(service: string, location: string) {
     pricingIndicator: details.pricingIndicator,
 
     coverage: isLocks
-      ? `We cover ${location} (${locationData.postcode}) and nearby areas including ${locationData.nearbyAreas.join(', ')} for alarm, CCTV, fire alarm, access control and lighting work from our base in Brentwood. If your requirement is a lock or a safe, call us first and we will tell you whether we can help.`
+      ? `We cover ${location} (${locationData.postcode}) and nearby areas including ${locationData.nearbyAreas.join(', ')} for locksmith work, BS3621 lock fitting and safe fitting, as well as alarm, CCTV, fire alarm, access control and lighting work, from our base in Brentwood.`
       : `We provide ${service.toLowerCase()} services throughout ${location} (${locationData.postcode}) and nearby areas including ${locationData.nearbyAreas.join(', ')}. Our local knowledge means we understand the specific security challenges facing ${location} residents and businesses, from the property types common in the area to the response times achievable from our base in Brentwood.`,
 
     fireCompliance: isFireService
@@ -833,6 +839,7 @@ function generateServiceIncludes(service: string, serviceType: string) {
       'Mains-powered interlinked smoke and heat alarms with battery backup',
       'Aico alarms fitted; Kidde, FireAngel and Hispec alarms replaced and assessed',
       'Heat alarms for kitchens, smoke alarms for escape routes and living areas',
+      'Carbon monoxide alarms, alongside smoke and heat alarms',
       'Replacement of alarms that are beeping, failing tests or past their stated life',
       'Testing and installation certificate on completion',
       'HMO packages to meet local authority licensing schedules',
@@ -842,12 +849,10 @@ function generateServiceIncludes(service: string, serviceType: string) {
 
   if (serviceType === 'locks') {
     return [
-      'Free security survey and consultation',
-      'Advice on how locks and safes sit alongside your alarm, CCTV and access control',
-      'Written quotation for any work we carry out',
-      'Intruder alarm, CCTV and access control installation',
-      'Ongoing maintenance options for installed systems',
-      'Emergency support for existing customers'
+      'Locksmith work, including lockouts and lock replacements',
+      'BS3621 security locks fitted to external doors',
+      'Safe fitting for homes and businesses',
+      'Advice on how locks and safes sit alongside your alarm, CCTV and access control'
     ];
   }
 
@@ -1218,7 +1223,7 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
             {content.isLocksService
-              ? `Lock and Safe Requirements in ${combination.location}`
+              ? `Locks and Safes in ${combination.location}`
               : content.isFireService
                 ? `Equipment and Makes in ${combination.location}`
                 : `What We Install in ${combination.location}`}
@@ -1262,7 +1267,7 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
           </h2>
           {content.isLocksService ? (
             <p className="text-gray-600 text-center mb-8">
-              How lock and safe requirements come up in our security work in {combination.location} and surrounding areas:
+              The types of lock and safe work we carry out for customers in {combination.location} and surrounding areas:
             </p>
           ) : (
             <p className="text-gray-600 text-center mb-8">
@@ -1340,8 +1345,9 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
             Ready for {combination.service} in {combination.location}?
           </h2>
           <p className="text-xl mb-8 text-primary-100">
-            Get your free, no-obligation security survey today. Our local engineers 
-            serve {combination.location} with same-day appointments available.
+            {content.isLocksService
+              ? `Call us to describe what you need. Our local team serves ${combination.location} and the surrounding area.`
+              : `Get your free, no-obligation security survey today. Our local engineers serve ${combination.location} with same-day appointments available.`}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

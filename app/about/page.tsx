@@ -131,7 +131,8 @@ export default function AboutPage() {
                   Hochiki detection devices. We also service and maintain Gent fire alarm systems,
                   although we do not install new ones. For domestic smoke and heat alarms we fit Aico,
                   and J&L Security is an Aico Expert Installer; we also work with Kidde, FireAngel and
-                  Hispec alarms. We do not install cheap or unbranded equipment.
+                  Hispec alarms. We also work on carbon monoxide alarms, alongside smoke and heat alarms.
+                  We do not install cheap or unbranded equipment.
                 </p>
                 <p className="text-gray-700 leading-relaxed mt-4 bg-primary-50 border border-primary-200 rounded-lg p-4">
                   J&L Security trades as part of the same team behind J&L Alarms, bringing over 13 years of

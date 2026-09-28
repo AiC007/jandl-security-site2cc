@@ -18,9 +18,12 @@ export interface Location {
   landmarks: string[];
   /**
    * South-west London pages: J&L travels there from Brentwood, so these pages
-   * make no response or travel-time promise. The area page drops the same-day
-   * survey and 2 to 4 hour FAQs, the same-day and 24/7 feature cards and the
-   * same-day line in the call to action; the agent markdown drops the 24/7 line.
+   * make no response or travel-time promise and no claim about how often J&L
+   * works there. The area page drops the same-day survey and 2 to 4 hour FAQs,
+   * "priority emergency response", the same-day, 24/7 and "daily" feature
+   * cards, the same-day line in the call to action and "local engineers", and
+   * uses neutral headings for the typical-requirements and neighbourhood
+   * sections; the agent markdown drops the 24/7 line.
    */
   noTimePromises?: boolean;
 }

@@ -15,7 +15,8 @@ import { generateLocalBusinessSchema, generateFAQPageSchema, generateBreadcrumbS
 // guarded, so towns without them keep the original layout unchanged.
 type LocationExtended = {
   description: string;
-  population: string;
+  /** Omitted where no published figure fits the area (for example areas spanning boroughs). */
+  population?: string;
   commuting: string;
   whyLocal: string;
   residential: string[];
@@ -734,7 +735,7 @@ export default async function LocationPage({ params }: Props) {
                     <span className="font-medium text-gray-700">County:</span>
                     <span className="text-gray-600 ml-2">{location.county}</span>
                   </div>
-                  {ext && (
+                  {ext?.population && (
                     <div>
                       <span className="font-medium text-gray-700">Population:</span>
                       <span className="text-gray-600 ml-2">{ext.population}</span>

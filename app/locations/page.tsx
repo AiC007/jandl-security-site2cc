@@ -4,6 +4,7 @@ import { MapPin, Phone, Clock, CheckCircle } from 'lucide-react';
 import { COMPANY_INFO, whatsappLink } from '@/lib/utils';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { locations } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Service Areas - Essex & Greater London Coverage',
@@ -95,16 +96,19 @@ const locationData = [
   }
 ];
 
-const essexLocations = [
-  'Basildon', 'Billericay', 'Brentwood', 'Canvey Island', 'Chelmsford', 'Colchester', 
-  'Epping', 'Harlow', 'Loughton', 'Rayleigh', 'Southend-on-Sea', 'Stanford-le-Hope',
-  'Wickford', 'Witham', 'Buckhurst Hill', 'Chigwell', 'Saffron Walden', 'Braintree'
-];
+// Every area page is linked from here, straight from lib/data.ts, so a new
+// page can never be missed and no link can point at a page that does not
+// exist. Places covered without a page of their own are listed as plain text.
+const byName = (a: { name: string }, b: { name: string }) => a.name.localeCompare(b.name);
+const essexLocations = locations.filter((l) => l.county === 'Essex').sort(byName);
+const greaterLondonLocations = locations.filter((l) => l.county === 'Greater London').sort(byName);
 
-const greaterLondonLocations = [
-  'Barking', 'Dagenham', 'Enfield', 'Greenwich', 'Hackney', 'Havering', 'Ilford',
-  'Islington', 'Newham', 'Redbridge', 'Romford', 'Stratford', 'Tower Hamlets',
-  'Waltham Forest', 'Woolwich', 'Canary Wharf', 'Docklands', 'City of London'
+const essexAlsoCovered = [
+  'Billericay', 'Braintree', 'Buckhurst Hill', 'Canvey Island', 'Chigwell', 'Colchester',
+  'Loughton', 'Rayleigh', 'Saffron Walden', 'Southend-on-Sea', 'Stanford-le-Hope', 'Wickford', 'Witham'
+];
+const greaterLondonAlsoCovered = [
+  'City of London', 'Docklands', 'Havering', 'Newham', 'Tower Hamlets', 'Waltham Forest'
 ];
 
 export default function LocationsPage() {
@@ -288,15 +292,18 @@ export default function LocationsPage() {
               <div className="grid grid-cols-2 gap-3">
                 {essexLocations.map((location) => (
                   <Link
-                    key={location}
-                    href={`/locations/${location.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
+                    key={location.slug}
+                    href={`/locations/${location.slug}`}
                     className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-200 hover:border-primary-300"
                   >
-                    <div className="text-gray-800 font-medium text-sm">{location}</div>
-                    <div className="text-xs text-gray-600 mt-1">Security Services Available</div>
+                    <div className="text-gray-800 font-medium text-sm">{location.name}</div>
+                    <div className="text-xs text-gray-600 mt-1">{location.postcode}</div>
                   </Link>
                 ))}
               </div>
+              <p className="text-sm text-gray-600 mt-4">
+                Also covered: {essexAlsoCovered.join(', ')}.
+              </p>
             </div>
 
             {/* Greater London */}
@@ -305,15 +312,18 @@ export default function LocationsPage() {
               <div className="grid grid-cols-2 gap-3">
                 {greaterLondonLocations.map((location) => (
                   <Link
-                    key={location}
-                    href={`/locations/${location.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
+                    key={location.slug}
+                    href={`/locations/${location.slug}`}
                     className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-200 hover:border-primary-300"
                   >
-                    <div className="text-gray-800 font-medium text-sm">{location}</div>
-                    <div className="text-xs text-gray-600 mt-1">Security Services Available</div>
+                    <div className="text-gray-800 font-medium text-sm">{location.name}</div>
+                    <div className="text-xs text-gray-600 mt-1">{location.postcode}</div>
                   </Link>
                 ))}
               </div>
+              <p className="text-sm text-gray-600 mt-4">
+                Also covered: {greaterLondonAlsoCovered.join(', ')}.
+              </p>
             </div>
           </div>
 

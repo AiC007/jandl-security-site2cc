@@ -851,9 +851,58 @@ function generateServiceIncludes(service: string, serviceType: string) {
     ];
   }
 
-  // Note: fire pages hit the "alarm" rule below before the "fire" rule, so
-  // they get the intruder list. Pre-existing, left as-is here so their output
-  // does not change in this round.
+  // Fire pages are routed by serviceType, not by name: every fire page name
+  // contains "alarm", so a name test sent them to the intruder list below.
+  // The list renders as "{service} Service Includes:", so it follows the
+  // page's subject: installation and commissioning, monitoring, compliance
+  // audit, or servicing (servicing, maintenance, annual service, fault
+  // finding and testing). Each item restates the fire FAQs or the fire block
+  // above. No list names a make, because Gent is service-only.
+  if (serviceType === 'fire') {
+    if (baseService.includes('installation') || baseService.includes('commissioning')) {
+      return [
+        'BS 5839-1 compliant system design',
+        'Professional installation and commissioning',
+        'Smoke and heat detector installation',
+        'Fire alarm panel configuration',
+        'Emergency lighting integration',
+        '6-monthly servicing and testing',
+        'Compliance certification provided',
+        'Staff training on system operation',
+        '24/7 monitoring options'
+      ];
+    }
+    if (baseService.includes('monitoring')) {
+      return [
+        '24/7 monitoring for commercial properties through an approved Alarm Receiving Centre',
+        'Nominated keyholders contacted when the system activates',
+        'Fire brigade attendance requested where needed',
+        'Particularly suited to unoccupied commercial premises',
+        '6-monthly service contracts available for the monitored system'
+      ];
+    }
+    if (baseService.includes('audit')) {
+      return [
+        'Inspection of the existing system and its condition',
+        'Testing of every detector, manual call point and sounder',
+        'Backup battery and power supply checks',
+        'Cabling inspected for damage',
+        'Fire alarm log book updated'
+      ];
+    }
+    return [
+      'Testing of every detector, manual call point and sounder',
+      'Backup battery and power supply checks',
+      'Fault finding and repair on conventional, addressable and bi-wire panels',
+      'Service certificate issued and fire alarm log book updated',
+      'Takeover of systems installed by other contractors',
+      '6-monthly service contracts for panel systems under BS 5839-1',
+      'Emergency lighting checked where it is part of the system',
+      '24/7 monitoring for commercial properties through an approved Alarm Receiving Centre',
+      'Cabling inspected for damage'
+    ];
+  }
+
   if (baseService.includes('burglar') || baseService.includes('alarm')) {
     return [
       'Free security survey and consultation',
@@ -879,20 +928,6 @@ function generateServiceIncludes(service: string, serviceType: string) {
       'Professional cable management',
       'System configuration and training',
       'Ongoing maintenance packages'
-    ];
-  }
-  
-  if (baseService.includes('fire')) {
-    return [
-      'BS 5839-1 compliant system design',
-      'Professional installation and commissioning',
-      'Smoke and heat detector installation',
-      'Fire alarm panel configuration',
-      'Emergency lighting integration',
-      '6-monthly servicing and testing',
-      'Compliance certification provided',
-      'Staff training on system operation',
-      '24/7 monitoring options'
     ];
   }
   

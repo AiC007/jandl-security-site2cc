@@ -268,13 +268,13 @@ Priority sequence:
 
 | /docs/2026-09-28-all-live-client-email.md | Wendy email to Jag confirming all three 28 September rounds are live, disclosing the BS 5839-6 and Service Includes corrections, and asking whether same-day and 2 to 4 hour promises hold across London (canonical copy; SENT 2026-09-28 14:56 UTC, message `1a0e8840bbd010cb`) |
 | /docs/2026-09-28-all-live-client-email.html | Branded HTML body of the same email, as sent |
-| /docs/2026-09-30-september-performance-report-client-email.md | September 2026 performance report: figures, the 16 September impressions fall, delivery against the August plan, October plan (canonical copy; reviewed; Gmail draft `r1635903352710068737`) |
+| /docs/2026-09-30-september-performance-report-client-email.md | September 2026 performance report: figures, the 16 September impressions fall, delivery against the August plan, October plan (canonical copy; reviewed; SENT 2026-09-30 06:35 UTC, message `1a0f106371e357ea`) |
 | /docs/2026-09-30-september-performance-report-client-email.html | Branded HTML body of the same email |
 ---
 
 ## 11. Last Session Summary
 
-### 2026-09-30: September performance report drafted. Awaiting the operator's send.
+### 2026-09-30: September performance report SENT (06:35 UTC, message `1a0f106371e357ea`).
 
 **Search Console, 1 to 28 September against 1 to 28 August,** summed from daily rows:
 

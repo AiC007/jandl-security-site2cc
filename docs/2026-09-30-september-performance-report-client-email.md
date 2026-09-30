@@ -1,6 +1,6 @@
 # Client email: September 2026 performance report (Wendy AI)
 
-**Status:** CANONICAL COPY, reviewed (independent second pass, 2026-09-30) and corrected before any draft existed. Gmail draft created once: `r1635903352710068737` (new thread, series subject). **Not sent.** Operator sends.
+**Status:** CANONICAL COPY, reviewed (independent second pass, 2026-09-30) and corrected before any draft existed. Gmail draft created once: `r1635903352710068737` (new thread, series subject). **SENT by the operator 2026-09-30 06:35 UTC**, message `1a0f106371e357ea`.
 
 **Review fixes applied:**
 1. The opening overclaimed. "The traffic that matters held" and "almost all" were replaced: daily clicks fell from about 7.5 (1 to 15 September) to about 5.8 (16 to 28 September), against 6.4 across August, and the email now says so.

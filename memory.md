@@ -1,6 +1,6 @@
 # J&L Security: Project Memory
 
-**Last updated:** 2026-09-28
+**Last updated:** 2026-09-30
 **Maintained by:** The AI Consultancy (London) Ltd
 **Purpose:** Living reference for all AI sessions working on this project. Update after every substantive session.
 
@@ -268,9 +268,62 @@ Priority sequence:
 
 | /docs/2026-09-28-all-live-client-email.md | Wendy email to Jag confirming all three 28 September rounds are live, disclosing the BS 5839-6 and Service Includes corrections, and asking whether same-day and 2 to 4 hour promises hold across London (canonical copy; SENT 2026-09-28 14:56 UTC, message `1a0e8840bbd010cb`) |
 | /docs/2026-09-28-all-live-client-email.html | Branded HTML body of the same email, as sent |
+| /docs/2026-09-30-september-performance-report-client-email.md | September 2026 performance report: figures, the 16 September impressions fall, delivery against the August plan, October plan (canonical copy; reviewed; Gmail draft `r1635903352710068737`) |
+| /docs/2026-09-30-september-performance-report-client-email.html | Branded HTML body of the same email |
 ---
 
 ## 11. Last Session Summary
+
+### 2026-09-30: September performance report drafted. Awaiting the operator's send.
+
+**Search Console, 1 to 28 September against 1 to 28 August,** summed from daily rows:
+
+| | August | September |
+|---|---|---|
+| Clicks | 179 | 187 (+4%) |
+| Impressions | 38,706 | 26,631 (-31%) |
+| Blended position | 24.5 | 19.9 |
+| CTR | 0.46% | 0.70% |
+
+August's full month settled at 186 clicks and 42,020 impressions.
+
+**The impressions fall began on 16 September.** Daily impressions went from about 1,170 (1 to 15 September) to about 700 (16 to 28 September), and daily clicks from about 7.5 to 5.8. About 80% of the loss was on pages ranking beyond position 20 in August: the area pages and the burglar alarm, fire alarm, fire risk assessment and CCTV service pages. The cause is not visible. The only change before the fall was the 11 September release (enquiry form, WhatsApp, 50 pages of internal links, 10 sitemap fixes). **Watch in October whether it continues.**
+
+**Top pages:**
+- HMO guide: 93 clicks at position 6.2. The query "hmo fire alarm requirements" averages position 1.2.
+- Selling-a-flat guide: 43 clicks at position 4.2.
+- Homepage: 23 clicks.
+- BS 5839 explainer: 16 clicks.
+
+**July's four rewritten area pages** have mixed results. Positions improved for Barking, Basildon and Greenwich; Hornchurch got worse. Clicks went from 3 to 6, and impressions fell 45%.
+
+**Delivery against the August plan was disclosed plainly in the report.**
+- **Not done:**
+  - internal links to the three unindexed guides;
+  - indexing requests (the operator confirmed on 2026-09-30 that none were made for the guides or the 14 area pages);
+  - the fire risk assessment page rebuild (third month running);
+  - the directories (fourth month).
+- **Done:** the platform update.
+
+**The October plan in the report:**
+1. Indexing requests for Martyn's Law, the commercial fire alarm cost guide, the panel fault guide, the beeping guide and the 14 area URLs, plus links to the guides from the HMO guide.
+2. The fire risk assessment page rebuild.
+3. Hold Chelmsford and Enfield.
+
+**Two questions asked of Jag:** the number of website enquiries since 11 September, and whether he wants a list of what each directory needs from him.
+
+**Review lesson:** the second-pass review caught five material problems before any draft existed:
+1. an overclaiming first line ("the traffic that matters held");
+2. an implied timeline that ignored the 11 September link repairs;
+3. a click statistic that rested on a hand-picked set of pages;
+4. the July pages' 45% impressions fall left out;
+5. an undisclosed missed promise (the indexing requests).
+
+**For performance reports, recompute any group statistic from its stated rule, not from a chosen list, and check every promise in last month's plan against git and the operator.**
+
+**Also noted:**
+- **AI-generated URLs:** Search Console shows single impressions at position 1 on many invented URLs that are variants of real posts (for example `/blog/hmo-fire-alarm-requirements-bs5839-guide`). They look like AI-answer citations of URLs that do not exist and return 404. Consider redirects to the real posts if they persist.
+- **URL Inspection is unreliable for this site:** Brentwood read "Discovered" on 28 September and "unknown" on 30 September.
 
 ### 2026-09-28 (close): OUTSTANDING, pick up here next session
 

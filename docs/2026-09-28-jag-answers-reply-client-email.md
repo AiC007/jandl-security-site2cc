@@ -1,6 +1,6 @@
 # Client email: reply to Jag's answers, and the London areas we target (Wendy AI)
 
-**Status:** CANONICAL COPY, reviewed by the review session 2026-09-28 (every place name checked against `lib/data.ts`; the carbon monoxide line was reworded so it does not tie CO alarms to each of the four makes, which Jag did not say). Gmail draft created once, as a reply to `1a0e7d7f1c7c37b2`: draft `r-6683698949769558256`. **Not sent.** Operator sends.
+**Status:** CANONICAL COPY, reviewed by the review session 2026-09-28 (every place name checked against `lib/data.ts`; the carbon monoxide line was reworded so it does not tie CO alarms to each of the four makes, which Jag did not say). Gmail draft created once, as a reply to `1a0e7d7f1c7c37b2`: draft `r-6683698949769558256`. **SENT by the operator 2026-09-28 11:52 UTC**, message `1a0e7dc108df097e`.
 
 **Reply to:** Jag's message `1a0e7d7f1c7c37b2` of 2026-09-28 11:47 UTC, thread `1a0e714b643af248`.
 

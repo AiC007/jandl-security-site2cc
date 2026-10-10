@@ -75,7 +75,7 @@ export default function TermsPage() {
           <ul>
             <li>24/7 emergency callout services are available.</li>
             <li>Emergency callout charges apply outside regular business hours (Monday to Friday 9AM to 5PM, Saturday 9AM to 1PM).</li>
-            <li>Emergency response times are typically 2 to 4 hours, subject to engineer availability.</li>
+            <li>Customers on a maintenance contract receive same-day attendance. For all other callouts, attendance depends on the type of job and how urgent it is, subject to engineer availability.</li>
           </ul>
 
           <h2>8. Liability</h2>

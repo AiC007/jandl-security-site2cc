@@ -34,7 +34,7 @@ const faqCategories: FAQCategory[] = [
     faqs: [
       {
         question: 'How quickly can you respond to emergency callouts?',
-        answer: 'We offer 24/7 emergency response across Essex and Greater London, typically arriving within 2-4 hours depending on location and time of day. Emergency callout charges apply outside normal business hours (Mon-Fri 9AM-5PM, Sat 9AM-1PM).'
+        answer: 'We offer 24/7 emergency response across Essex and Greater London. Customers on a maintenance contract get same-day attendance. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Emergency callout charges apply outside normal business hours (Mon-Fri 9AM-5PM, Sat 9AM-1PM).'
       },
       {
         question: 'Do you provide free security surveys?',
@@ -125,7 +125,7 @@ const faqCategories: FAQCategory[] = [
       },
       {
         question: 'What happens if my fire alarm has a fault?',
-        answer: 'Fire alarm faults should be addressed immediately for safety and legal compliance. We provide 24/7 emergency callouts for fire system faults, with typical response within 4 hours. Many faults can be diagnosed remotely to expedite repairs.'
+        answer: 'Fire alarm faults should be addressed immediately for safety and legal compliance. We provide 24/7 emergency callouts for fire system faults. Customers on a maintenance contract get same-day attendance. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Many faults can be diagnosed remotely to expedite repairs.'
       },
       {
         question: 'What is the difference between BS 5839-1 and BS 5839-6 fire alarm systems?',

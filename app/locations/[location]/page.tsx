@@ -1342,7 +1342,7 @@ const genericLocationFaqs = (locationName: string, noTimePromises = false) => [
         },
         {
           question: `How quickly can you respond to an emergency alarm fault in ${locationName}?`,
-          answer: `For customers on our maintenance contract we aim to respond to emergency call-outs in ${locationName} within 2–4 hours, 24 hours a day, 7 days a week.`,
+          answer: `Customers on our maintenance contract get same-day attendance for callouts in ${locationName}. For all other callouts, how soon we attend depends on the type of job and how urgent it is.`,
         },
       ]),
   {

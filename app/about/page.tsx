@@ -254,8 +254,10 @@ export default function AboutPage() {
               <Clock className="h-6 w-6 text-primary-600 mb-4" />
               <h3 className="text-lg font-semibold mb-2">Response Times</h3>
               <p className="text-gray-700">
-                Same-day surveys available across our coverage area. Emergency callouts typically
-                within 2-4 hours, 24/7 across Essex and Greater London.
+                Same-day surveys available across our coverage area. Emergency callouts are available
+                24/7 across Essex and Greater London: customers on a maintenance contract get same-day
+                attendance, and for all other callouts how soon we attend depends on the type of job
+                and how urgent it is.
               </p>
             </div>
           </div>

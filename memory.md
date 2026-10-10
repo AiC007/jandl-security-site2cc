@@ -1,6 +1,6 @@
 # J&L Security: Project Memory
 
-**Last updated:** 2026-09-30
+**Last updated:** 2026-10-10
 **Maintained by:** The AI Consultancy (London) Ltd
 **Purpose:** Living reference for all AI sessions working on this project. Update after every substantive session.
 
@@ -270,9 +270,28 @@ Priority sequence:
 | /docs/2026-09-28-all-live-client-email.html | Branded HTML body of the same email, as sent |
 | /docs/2026-09-30-september-performance-report-client-email.md | September 2026 performance report: figures, the 16 September impressions fall, delivery against the August plan, October plan (canonical copy; reviewed; SENT 2026-09-30 06:35 UTC, message `1a0f106371e357ea`) |
 | /docs/2026-09-30-september-performance-report-client-email.html | Branded HTML body of the same email |
+| /docs/2026-10-10-callout-attendance-ack-client-email.md | Wendy acknowledgement of Jag's callout attendance answer of 9 October (canonical copy; Gmail draft `r164876399552225821`, NOT yet sent) |
+| /docs/2026-10-10-callout-attendance-ack-client-email.html | Branded HTML body of the same email |
 ---
 
 ## 11. Last Session Summary
+
+### 2026-10-10: Jag's callout attendance answer. Built on branch `content/callout-attendance-1010`; NOT yet merged or live.
+
+**Trigger.** Jag's reply of 2026-10-09 21:07 UTC (thread `1a0e714b643af248`, message `1a1227e170ed42e3`): "Let's keep same day attendance for maintained customers for London and surrounding areas. Any other call outs are dependant on the job type and urgency." This closes "Waiting on Jag" item 2 below.
+
+**Decision (the rule the site now follows).** Customers on a maintenance contract get same-day attendance. For all other callouts, how soon J&L attends depends on the type of job and how urgent it is. No hours-based callout promise appears anywhere.
+
+**Built.** Every "2 to 4 hours", "within 4 hours" and "1 to 2 hours" callout promise replaced with that rule: the generic area-page FAQ, the Romford, Chelmsford, Brentwood (two) and Upminster service-and-area FAQs, Contact, Terms section 7, About, the FAQs page (two), Services, `lib/data.ts` and `llms-full.txt`. "Priority response zone" and "fastest in our coverage area" went with them. Lint clean, build 0; no old wording in any built page; both phones present on the pages sampled.
+
+**Assumptions this session introduced.**
+- "London and surrounding areas" is read as the whole coverage area, so the rule is applied to the Essex pages too. It is a weaker promise than the 2 to 4 hours it replaces, so it cannot overstate.
+- The south-west pages (`noTimePromises`) are unchanged and still make no time promise, although Jag's wording would allow the maintained-customer line there. Operator's call.
+- Left unchanged because Jag did not address them, and named in the acknowledgement: same-day surveys; the 24/7 availability claims (header banner, Contact, About, Terms, social description); the fire alarms page's "visit made within 8 hours" for fire maintenance customers (Jag's own wording, March 2026; it also appears in the panel fault guide). The 8 hours and "same-day" do not quite agree for a late-evening call.
+
+**Email.** Wendy acknowledgement drafted once as a reply on the thread: draft `r164876399552225821`. It promises a confirmation when the change is live.
+
+**Next.** Operator: review and merge the PR, then send or follow the acknowledgement with the "live" confirmation.
 
 ### 2026-09-30: September performance report SENT (06:35 UTC, message `1a0f106371e357ea`).
 

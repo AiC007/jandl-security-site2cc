@@ -184,7 +184,7 @@ const faqs = [
   },
   {
     question: 'How quickly can you respond to emergency callouts?',
-    answer: 'We provide 24/7 emergency response across Essex and Greater London, typically arriving within 2-4 hours depending on location and time of day. Emergency callout charges apply outside normal business hours.'
+    answer: 'We provide 24/7 emergency response across Essex and Greater London. Customers on a maintenance contract get same-day attendance. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Emergency callout charges apply outside normal business hours.'
   },
   {
     question: 'Do your systems qualify for insurance discounts?',

@@ -276,7 +276,9 @@ Priority sequence:
 
 ## 11. Last Session Summary
 
-### 2026-10-10: Jag's callout attendance answer. Built on branch `content/callout-attendance-1010`; NOT yet merged or live.
+### 2026-10-10: Jag's callout attendance answer. SHIPPED and verified live.
+
+**Shipped.** [PR #27](https://github.com/AiC007/jandl-security-site2cc/pull/27) squash-merged as **`98c81ca`** on the operator's instruction; branch deleted, no open PRs. Vercel production status on the merge commit: success. **Verified live with curl, all 114 sitemap URLs:** every one returns 200; none carries the old hours-based wording; 36 carry the new wording, including Westminster, Romford, Chelmsford, Brentwood, Contact, FAQs, Terms, About, Services and `llms-full.txt`; the south-west pages and the lock and safe pages carry neither, as intended; both phones on every page sampled.
 
 **Trigger.** Jag's reply of 2026-10-09 21:07 UTC (thread `1a0e714b643af248`, message `1a1227e170ed42e3`): "Let's keep same day attendance for maintained customers for London and surrounding areas. Any other call outs are dependant on the job type and urgency." This closes "Waiting on Jag" item 2 below.
 
@@ -289,9 +291,9 @@ Priority sequence:
 - The south-west pages (`noTimePromises`) are unchanged and still make no time promise, although Jag's wording would allow the maintained-customer line there. Operator's call.
 - Left unchanged because Jag did not address them, and named in the acknowledgement: same-day surveys; the 24/7 availability claims (header banner, Contact, About, Terms, social description); the fire alarms page's "visit made within 8 hours" for fire maintenance customers (Jag's own wording, March 2026; it also appears in the panel fault guide). The 8 hours and "same-day" do not quite agree for a late-evening call.
 
-**Email.** Wendy acknowledgement drafted once as a reply on the thread: draft `r164876399552225821`. It promises a confirmation when the change is live.
+**Email.** Wendy acknowledgement drafted once as a reply on the thread: draft `r164876399552225821`, not yet sent. It was written before the merge, so it says "we are updating" and "we will confirm when it is live". Not a material defect, so no second draft was created; the operator can change those two phrases in Gmail before sending, which saves a separate "live" email.
 
-**Next.** Operator: review and merge the PR, then send or follow the acknowledgement with the "live" confirmation.
+**Next.** Operator: send the draft. Still open with Jag: the Aico Expert Installer level, and whether same-day surveys, the 24/7 claims and the fire alarm 8-hour line stand.
 
 ### 2026-09-30: September performance report SENT (06:35 UTC, message `1a0f106371e357ea`).
 

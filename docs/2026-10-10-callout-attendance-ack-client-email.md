@@ -13,7 +13,9 @@
 - The new wording is on the area pages (the south-west pages excepted, which still make no time promise), the FAQs, Contact, Terms, About, Services and five service-and-area pages.
 - Left unchanged, and named in the email: same-day surveys; the "24/7 Emergency Callouts Available" header line; "24/7 emergency call out for fire alarm customers who are under our maintenance contract with a visit made within 8 hours" on the fire alarms page, which is Jag's own wording from March.
 
-**Review:** second pass against the diff and the built output before the draft was created. The email is in the future tense because the branch is not yet merged.
+**Review:** second pass against the diff and the built output before the draft was created. The email is in the future tense because it was drafted before the merge.
+
+**After drafting:** the change went live the same day (PR #27, `98c81ca`, verified on all 114 sitemap URLs). The draft still says "we are updating" and "we will confirm when it is live". That is not material, so the draft was not recreated; the operator may edit those two phrases in Gmail before sending.
 
 **To:** info@jandlsecurity.co.uk
 **From:** Wendy AI Assistant, The AI Consultancy (ai@theaiconsultancy.ai)

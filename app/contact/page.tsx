@@ -308,7 +308,7 @@ export default function ContactPage() {
             </a>
           </div>
           <p className="text-sm text-red-700 mt-4">
-            Typical response time: 2-4 hours • Emergency callout charges apply
+            Same-day attendance for maintenance contract customers • Other callouts depend on the type of job and how urgent it is • Emergency callout charges apply
           </p>
         </div>
       </section>

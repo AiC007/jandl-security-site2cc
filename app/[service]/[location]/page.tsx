@@ -99,7 +99,7 @@ const extendedLocationData: Record<string, LocationData> = {
       },
       {
         question: 'How quickly can J&L Security respond to a callout in Romford?',
-        answer: 'For customers on a maintenance contract, we aim to respond to emergency callouts in Romford within 2 to 4 hours, 24 hours a day, 7 days a week. From our Brentwood base, Romford is within our priority response zone and most callouts are met inside that window. For non-emergency surveys and quotes, we typically attend within 1 to 3 working days; same-day surveys are sometimes available if you call before noon.'
+        answer: 'Customers on a maintenance contract get same-day attendance for callouts in Romford. For all other callouts, how soon we attend depends on the type of job and how urgent it is. For non-emergency surveys and quotes, we typically attend within 1 to 3 working days; same-day surveys are sometimes available if you call before noon.'
       },
       {
         question: 'Do you fit wireless alarms suitable for Victorian terraced housing in Romford?',
@@ -143,7 +143,7 @@ const extendedLocationData: Record<string, LocationData> = {
       },
       {
         question: 'How quickly can your engineers attend a fire alarm callout in Chelmsford?',
-        answer: 'For fire alarm customers on a maintenance contract, we target a 2 to 4 hour response to Chelmsford callouts during business hours, and within 4 hours out of hours, 24/7. Chelmsford is within easy reach of our Brentwood base via the A12 corridor. For non-urgent service visits, we work to scheduled 6-monthly slots agreed at the start of the contract.'
+        answer: 'Fire alarm customers on a maintenance contract get same-day attendance for callouts in Chelmsford. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Chelmsford is within easy reach of our Brentwood base via the A12 corridor. For non-urgent service visits, we work to scheduled 6-monthly slots agreed at the start of the contract.'
       },
       {
         question: 'Do you offer 6-monthly fire alarm servicing contracts for Chelmsford properties?',
@@ -175,7 +175,7 @@ const extendedLocationData: Record<string, LocationData> = {
     locationFAQs: [
       {
         question: 'How quickly can J&L Security respond to a callout in Brentwood?',
-        answer: 'J&L Security is based in Brentwood (CM13 3FR), so callout response times here are the fastest in our coverage area. For maintenance contract customers, we target 1 to 2 hours for emergency callouts in CM13 to CM15, 24 hours a day, 7 days a week. Most non-urgent surveys are arranged within 1 to 2 working days; same-day surveys are available on request if you call before noon.'
+        answer: 'J&L Security is based in Brentwood (CM13 3FR). Customers on a maintenance contract get same-day attendance for callouts in CM13 to CM15. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Most non-urgent surveys are arranged within 1 to 2 working days; same-day surveys are available on request if you call before noon.'
       },
       {
         question: 'What burglar alarm grades do you install in Brentwood residential properties?',
@@ -183,7 +183,7 @@ const extendedLocationData: Record<string, LocationData> = {
       },
       {
         question: 'Do you cover Shenfield, Hutton, and Ingatestone alongside Brentwood?',
-        answer: 'Yes. Shenfield, Hutton, Ingatestone, Mountnessing, Doddinghurst, Kelvedon Hatch, and the wider CM4 to CM15 belt are within our daily routing. Many of our long-standing customers in these areas have transitioned from older bell-only systems to monitored Grade 2 systems with smartphone control. Our engineer is typically on-site within 24 to 48 hours of an enquiry for surveys, and within 1 to 2 hours for emergency callouts on a maintenance contract.'
+        answer: 'Yes. Shenfield, Hutton, Ingatestone, Mountnessing, Doddinghurst, Kelvedon Hatch, and the wider CM4 to CM15 belt are within our daily routing. Many of our long-standing customers in these areas have transitioned from older bell-only systems to monitored Grade 2 systems with smartphone control. Our engineer is typically on-site within 24 to 48 hours of an enquiry for surveys. Customers on a maintenance contract get same-day attendance for callouts; for all other callouts, how soon we attend depends on the type of job and how urgent it is.'
       },
       {
         question: 'Are J&L Security SSAIB and BAFE approved for installations in Brentwood?',
@@ -237,7 +237,7 @@ const extendedLocationData: Record<string, LocationData> = {
       },
       {
         question: 'How quickly can J&L Security respond to a callout in Upminster?',
-        answer: 'For maintenance contract customers, we target 2 to 4 hour response to emergency callouts in Upminster, 24 hours a day, 7 days a week. From our Brentwood base, Upminster is within our priority response zone via the A127. For non-emergency surveys, we typically attend within 1 to 2 working days; same-day surveys are available on request.'
+        answer: 'Customers on a maintenance contract get same-day attendance for callouts in Upminster. For all other callouts, how soon we attend depends on the type of job and how urgent it is. We reach Upminster from our Brentwood base via the A127. For non-emergency surveys, we typically attend within 1 to 2 working days; same-day surveys are available on request.'
       },
       {
         question: 'Do you cover Cranham, Corbets Tey, and South Ockendon alongside Upminster?',

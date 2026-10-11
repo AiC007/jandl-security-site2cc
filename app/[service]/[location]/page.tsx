@@ -99,7 +99,7 @@ const extendedLocationData: Record<string, LocationData> = {
       },
       {
         question: 'How quickly can J&L Security respond to a callout in Romford?',
-        answer: 'Customers on a maintenance contract get same-day attendance for callouts in Romford. For all other callouts, how soon we attend depends on the type of job and how urgent it is. For non-emergency surveys and quotes, we typically attend within 1 to 3 working days.'
+        answer: 'Customers on a maintenance contract get same-day attendance for callouts in Romford, and fire alarm maintenance customers get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is. For non-emergency surveys and quotes, we typically attend within 1 to 3 working days.'
       },
       {
         question: 'Do you fit wireless alarms suitable for Victorian terraced housing in Romford?',
@@ -142,7 +142,7 @@ const extendedLocationData: Record<string, LocationData> = {
         answer: 'Yes. We design, install, commission, and service BS 5839-1 commercial fire alarm systems across the Chelmer Valley business park, the Great Baddow industrial estate, and similar Chelmsford commercial sites. Standard installations use addressable panels from Advanced, C-TEC, or Kentec, with optical smoke detectors, heat detectors, manual call points, and sounder-beacons sized to the property. We deliver to the system category specified by the client\'s fire risk assessment (typically L1 to L4 for commercial premises) and include the commissioning certificate, log book, and 6-monthly service contract.'
       },
       {
-        question: 'How quickly can your engineers attend a fire alarm callout in Chelmsford?',
+        question: 'How quickly do you respond to a fire alarm callout in Chelmsford?',
         answer: 'Fire alarm customers on a maintenance contract get a response within 4 hours for callouts in Chelmsford. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Chelmsford is within easy reach of our Brentwood base via the A12 corridor. For non-urgent service visits, we work to scheduled 6-monthly slots agreed at the start of the contract.'
       },
       {
@@ -175,7 +175,7 @@ const extendedLocationData: Record<string, LocationData> = {
     locationFAQs: [
       {
         question: 'How quickly can J&L Security respond to a callout in Brentwood?',
-        answer: 'J&L Security is based in Brentwood (CM13 3FR). Customers on a maintenance contract get same-day attendance for callouts in CM13 to CM15. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Most non-urgent surveys are arranged within 1 to 2 working days.'
+        answer: 'J&L Security is based in Brentwood (CM13 3FR). Customers on a maintenance contract get same-day attendance for callouts in CM13 to CM15, and fire alarm maintenance customers get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Most non-urgent surveys are arranged within 1 to 2 working days.'
       },
       {
         question: 'What burglar alarm grades do you install in Brentwood residential properties?',
@@ -183,7 +183,7 @@ const extendedLocationData: Record<string, LocationData> = {
       },
       {
         question: 'Do you cover Shenfield, Hutton, and Ingatestone alongside Brentwood?',
-        answer: 'Yes. Shenfield, Hutton, Ingatestone, Mountnessing, Doddinghurst, Kelvedon Hatch, and the wider CM4 to CM15 belt are within our daily routing. Many of our long-standing customers in these areas have transitioned from older bell-only systems to monitored Grade 2 systems with smartphone control. Our engineer is typically on-site within 24 to 48 hours of an enquiry for surveys. Customers on a maintenance contract get same-day attendance for callouts; for all other callouts, how soon we attend depends on the type of job and how urgent it is.'
+        answer: 'Yes. Shenfield, Hutton, Ingatestone, Mountnessing, Doddinghurst, Kelvedon Hatch, and the wider CM4 to CM15 belt are within our daily routing. Many of our long-standing customers in these areas have transitioned from older bell-only systems to monitored Grade 2 systems with smartphone control. Our engineer is typically on-site within 24 to 48 hours of an enquiry for surveys. Customers on a maintenance contract get same-day attendance for callouts, and fire alarm maintenance customers get a response within 4 hours; for all other callouts, how soon we attend depends on the type of job and how urgent it is.'
       },
       {
         question: 'Are J&L Security SSAIB and BAFE approved for installations in Brentwood?',
@@ -237,7 +237,7 @@ const extendedLocationData: Record<string, LocationData> = {
       },
       {
         question: 'How quickly can J&L Security respond to a callout in Upminster?',
-        answer: 'Customers on a maintenance contract get same-day attendance for callouts in Upminster. For all other callouts, how soon we attend depends on the type of job and how urgent it is. We reach Upminster from our Brentwood base via the A127. For non-emergency surveys, we typically attend within 1 to 2 working days.'
+        answer: 'Customers on a maintenance contract get same-day attendance for callouts in Upminster, and fire alarm maintenance customers get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is. We reach Upminster from our Brentwood base via the A127. For non-emergency surveys, we typically attend within 1 to 2 working days.'
       },
       {
         question: 'Do you cover Cranham, Corbets Tey, and South Ockendon alongside Upminster?',
@@ -664,7 +664,7 @@ const serviceDetailBlocks: Record<string, {
     equipmentUsed: 'For domestic and HMO smoke and heat alarms we fit Aico alarms, and we work with Kidde, FireAngel and Hispec smoke and heat alarms, whether you need a like-for-like replacement or an assessment of an existing system. We also work on carbon monoxide alarms, alongside smoke and heat alarms. Mains-powered interlinked alarms with battery backup (Grade D) are the usual specification for new work. If your property already has alarms of another make, tell us the make when you call and we will advise. Larger HMOs that need a panel-controlled Grade A system use the same control panel makes listed on our fire alarms service page.',
     complianceNote: 'Domestic smoke and heat alarm systems are designed and installed to BS 5839-6, the British Standard for fire detection and fire alarm systems in domestic premises. The standard describes a system by grade and category. The grade is the type of equipment and how it is powered: Grade A is a panel-controlled system using equipment to BS EN 54, Grade C uses central control equipment with a common mains and standby supply, Grades D1 and D2 are mains-powered alarms each with a backup battery (sealed in D1, user-replaceable in D2), and Grades F1 and F2 are battery-powered alarms. The 2019 edition removed Grades B and E. The category is where the alarms go: LD3 covers the circulation areas that form the escape routes, such as the hallway and landing; LD2 adds the rooms that present a high fire risk, including any kitchen (with a heat alarm) and the principal habitable room, usually the living room; and LD1 covers the escape routes and every room or area where a fire might start, except bathrooms, shower rooms and toilets. For a licensed HMO the grade and category are normally set by the local authority licensing schedule.',
     maintenanceInfo: 'Grade D alarms have no control panel to service, but they still need looking after. Test them regularly with the test button, as the manufacturers advise, following the instructions for your alarms. Keep them free of dust, and replace them when they reach the end of the life stated by the manufacturer. For HMOs, an annual inspection by a competent person, with the results recorded in the log book, is good practice, and HMO licences often require it. Panel-controlled Grade A systems in HMOs are typically serviced every 6 months.',
-    pricingIndicator: 'Domestic and HMO smoke alarm installations are quoted after a survey, because the price depends on the grade, the category and the number of alarms. Annual servicing for residential and small HMO systems is from GBP 120 plus VAT per year. Quotations are free. Surveys are free depending on location and the type of service required. If a fee is charged, it is a nominal fee which is deducted from the final invoice.'
+    pricingIndicator: 'Domestic and HMO smoke alarm installations are quoted after a survey, because the price depends on the grade, the category and the number of alarms. Annual servicing for residential and small HMO systems is from GBP 120 plus VAT per year. Quotations are free. ' + SURVEY_TERMS
   },
   // Lock and safe pages. Jag confirmed on 28 September 2026 that J&L offers
   // locksmith work, BS3621 lock fitting and safe fitting, and asked for the
@@ -772,7 +772,7 @@ function generateContent(service: string, location: string) {
       ? `J&L Security offers locksmith work, BS3621 lock fitting and safe fitting in ${location} and the surrounding area, alongside the burglar alarms, CCTV, fire alarms, access control and security lighting we install. Tell us what you need and we will advise on the next step.`
       : `Looking for reliable ${service.toLowerCase()} in ${location}? J&L Security provides professional installation and maintenance services throughout ${location} and surrounding areas. With over 12 years of experience, we are your trusted local security specialists.`,
 
-    intro: `Our experienced engineers serve ${location} and the surrounding ${nearbyList} areas, providing comprehensive ${service.toLowerCase()} solutions for homes and businesses.${landmarkList ? ` Whether you are located near ${landmarkList}, our` : ' Our'} local team ${isLocks ? 'provides personalised service.' : 'ensures rapid response times and personalised service. Every installation is carried out to SSAIB standards with full documentation and aftercare.'}`,
+    intro: `Our experienced engineers serve ${location} and the surrounding ${nearbyList} areas, providing comprehensive ${service.toLowerCase()} solutions for homes and businesses.${landmarkList ? ` Whether you are located near ${landmarkList}, our` : ' Our'} local team ${isLocks ? 'provides personalised service.' : 'provides personalised service. Every installation is carried out to SSAIB standards with full documentation and aftercare.'}`,
 
     whyChoose: [
       `Local engineers covering ${location} (${locationData.postcode || 'local area'}) and surrounding areas`,

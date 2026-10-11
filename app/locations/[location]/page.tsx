@@ -329,7 +329,7 @@ const locationExtended: Record<string, LocationExtended> = {
     description: 'A popular suburban town in the London Borough of Havering, known for its historic high street, excellent country parks, and strong community. Hornchurch has a mix of period properties and modern new builds that benefit from discreet wireless alarm systems.',
     population: '~43,000',
     commuting: 'District Line to Westminster in 50 minutes; Elizabeth Line interchange at Romford.',
-    whyLocal: 'Being part of the Havering borough, Hornchurch is well within our core coverage area. Our engineers regularly cover RM11–RM12 and can usually offer next-day surveys.',
+    whyLocal: 'Being part of the Havering borough, Hornchurch is well within our core coverage area. Our engineers regularly cover RM11 to RM12.',
     residential: ['Emerson Park', 'Ardleigh Green', 'Elm Park', 'Hacton', 'St Andrews', 'South Hornchurch'],
     propertyStock:
       'Hornchurch is overwhelmingly a product of the interwar suburban boom. The parish held around 28,000 people in 1931 and the enlarged district was estimated at roughly 90,800 by 1938, and almost all of that growth arrived as private speculative housing built to a small number of repeated patterns. The result today is street after street of 1930s bay-fronted semi-detached houses, with a smaller stock of Edwardian property, some post-war infill, and a modest amount of recent apartment development near the station and along the high street. Elm Park was laid out in the 1930s as a planned garden-city style development and has been served by the electrified District Line since 1935. Emerson Park sits at the other end of the range, with wider avenues and larger detached and semi-detached houses on generous plots. For a security installer this consistency is useful: the 1930s semi has a predictable layout, and the vulnerable points are nearly always the same three.',
@@ -1338,7 +1338,7 @@ const genericLocationFaqs = (locationName: string, noTimePromises = false) => [
     : [
         {
           question: `Do you charge for a security survey in ${locationName}?`,
-          answer: `Surveys in ${locationName} are free depending on location and the type of service required. If a fee is charged, it is a nominal fee which is deducted from the final invoice.`,
+          answer: `Whether a survey in ${locationName} is free depends on the location and the type of service required. If a fee is charged, it is a nominal fee which is deducted from the final invoice.`,
         },
         {
           question: `How quickly can you respond to an emergency alarm fault in ${locationName}?`,

@@ -34,7 +34,7 @@ const faqCategories: FAQCategory[] = [
     faqs: [
       {
         question: 'How quickly can you respond to emergency callouts?',
-        answer: '24/7 emergency callouts are available across Essex and Greater London, depending on location and the system fault. Customers on a maintenance contract get same-day attendance, and fire alarm maintenance customers get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Emergency callout charges apply outside normal business hours (Mon-Fri 9AM-5PM, Sat 9AM-1PM).'
+        answer: '24/7 emergency callouts are available, depending on location and the system fault. Customers on a maintenance contract get same-day attendance, and fire alarm maintenance customers get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Emergency callout charges apply outside normal business hours (Mon-Fri 9AM-5PM, Sat 9AM-1PM).'
       },
       {
         question: 'Do you charge for security surveys?',
@@ -125,7 +125,7 @@ const faqCategories: FAQCategory[] = [
       },
       {
         question: 'What happens if my fire alarm has a fault?',
-        answer: 'Fire alarm faults should be addressed immediately for safety and legal compliance. 24/7 emergency callouts are available for fire system faults, depending on location and the system fault. Customers on a fire alarm maintenance contract get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Many faults can be diagnosed remotely to expedite repairs.'
+        answer: 'Fire alarm faults should be addressed immediately for safety and legal compliance. 24/7 emergency callouts are available for fire alarm systems, depending on location and the system fault. Customers on a fire alarm maintenance contract get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Many faults can be diagnosed remotely to expedite repairs.'
       },
       {
         question: 'What is the difference between BS 5839-1 and BS 5839-6 fire alarm systems?',

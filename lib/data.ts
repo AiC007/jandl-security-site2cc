@@ -360,7 +360,7 @@ export const faqs: FAQ[] = [
   {
     id: '1',
     question: 'How quickly can you respond to emergency callouts?',
-    answer: '24/7 emergency callouts are available across Essex and Greater London, depending on location and the system fault. Customers on a maintenance contract get same-day attendance, and fire alarm maintenance customers get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is.',
+    answer: '24/7 emergency callouts are available, depending on location and the system fault. Customers on a maintenance contract get same-day attendance, and fire alarm maintenance customers get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is.',
     category: 'general'
   },
   {

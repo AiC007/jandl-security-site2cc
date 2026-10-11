@@ -282,8 +282,8 @@ export default function ContactPage() {
             <h2 className="text-3xl font-bold text-red-900 mb-4">Emergency Callouts</h2>
           </div>
           <p className="text-xl text-red-800 mb-6">
-            Security system fault? Locked out? Break-in damage? 
-            24/7 emergency callouts are available across Essex and Greater London, depending on location and the system fault.
+            Security system fault? Locked out? Break-in damage? Call us and describe what has happened.
+            24/7 emergency callouts are available, depending on location and the system fault.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

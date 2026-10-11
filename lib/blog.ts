@@ -474,7 +474,7 @@ export const blogPosts: BlogPost[] = [
 <p>A professional CCTV installation for a typical domestic property takes 4 to 8 hours. The process includes:</p>
 
 <ol>
-<li><strong>Site survey:</strong> an engineer visits your property to assess camera positions, cable routes, NVR location, and network connectivity. This is without obligation at J&L Security.</li>
+<li><strong>Site survey:</strong> an engineer visits your property to assess camera positions, cable routes, NVR location, and network connectivity. At J&L Security this carries no obligation.</li>
 <li><strong>System design:</strong> based on the survey, we recommend camera types, positions, and a recording configuration that meets your requirements.</li>
 <li><strong>Installation:</strong> cameras are mounted, cables are run (internally where possible to protect against tampering), and the NVR is installed in a secure location.</li>
 <li><strong>Configuration:</strong> each camera is adjusted for optimal viewing angle, recording schedules are set, and motion detection zones are configured to reduce false alerts.</li>
@@ -2868,7 +2868,7 @@ export const blogPosts: BlogPost[] = [
         answer: 'For non-domestic premises, the Regulatory Reform (Fire Safety) Order 2005 requires the responsible person to keep fire safety measures in efficient working order and in good repair, and a system sitting in fault is not in efficient working order. That does not mean a fault puts you automatically in breach. It means the clock starts when the fault appears and what you do next is what will be judged. Record the fault in the logbook, report it promptly, and consider temporary arrangements if a significant part of the building is left without detection until it is repaired.',
       },
       {
-        question: 'How quickly can you attend a fire alarm fault?',
+        question: 'How quickly do you respond to a fire alarm fault?',
         answer: 'Customers under our fire alarm maintenance contract get a response within 4 hours. 24/7 emergency call out is available, depending on location and the system fault. We attend faults on the makes we support whether we installed the system or not, and we take over systems from other contractors where the previous maintainer is no longer suitable. Call 0204 538 5925 or 0208 220 4770 with the make from the panel fascia and what it is displaying, and we can usually tell you on the phone what class of fault it looks like and what the visit will involve.',
       },
     ],

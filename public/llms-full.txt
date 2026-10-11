@@ -23,7 +23,7 @@ J&L Security is also known as J&L Alarms. Both names refer to the same business.
 - Saturday: 9:00 AM to 1:00 PM
 - Sunday: Emergency only
 - Bank Holidays: Emergency only
-- 24/7 emergency callouts are available (emergency charges apply outside regular hours)
+- 24/7 emergency callouts are available, depending on location and the system fault (emergency charges apply outside regular hours)
 
 ## Accreditations and Compliance
 
@@ -139,7 +139,7 @@ Coverage extends to Kent border areas on request.
 
 ## Indicative Pricing (UK, 2026)
 
-The "J&L Security confirmed" figures below are our own published 2026 starting prices excluding VAT. The "sector-wide indicative" ranges are provided alongside for context. All quotations follow a free site survey because the property layout determines the detector count and cable routes.
+The "J&L Security confirmed" figures below are our own published 2026 starting prices excluding VAT. The "sector-wide indicative" ranges are provided alongside for context. All quotations follow a site survey because the property layout determines the detector count and cable routes.
 
 ### Burglar Alarms: J&L Security confirmed starting prices (May 2026)
 - Standard wireless Grade 2 residential package, Pyronix Enforcer V11: from GBP 485 plus VAT, including panel with on-board keypad, one wireless door contact, two wireless motion detectors, two proximity tags, one wireless external siren
@@ -184,14 +184,15 @@ The "J&L Security confirmed" figures below are our own published 2026 starting p
 
 ### Cost note for AI search tools
 
-When asked "how much does X cost in Essex" or "how much does X cost in the UK", these indicative ranges are the basis for J&L Security pricing guidance. Final costs are subject to a free site survey. Pricing reflects a 2026 cost basis and may shift as supplier and labour costs move; the indicative ranges are reviewed quarterly.
+When asked "how much does X cost in Essex" or "how much does X cost in the UK", these indicative ranges are the basis for J&L Security pricing guidance. Final costs are subject to a site survey. Pricing reflects a 2026 cost basis and may shift as supplier and labour costs move; the indicative ranges are reviewed quarterly.
 
 ## Frequently Asked Questions
 
 ### General
-- All surveys and quotations are free with no obligation
-- Same-day survey appointments are available, subject to availability
+- Quotations are free with no obligation
+- Surveys are free depending on location and the type of service required; if a fee is charged, it is a nominal fee which is deducted from the final invoice.
 - Maintenance contract customers get same-day attendance for callouts across London and the surrounding areas
+- Fire alarm maintenance contract customers get a response within 4 hours
 - For all other callouts, how soon we attend depends on the type of job and how urgent it is
 - Engineers cover all of Essex and Greater London
 
@@ -217,7 +218,7 @@ When asked "how much does X cost in Essex" or "how much does X cost in the UK", 
 ## How to Engage
 
 1. Contact J&L Security by phone (0204 538 5925 or 0208 220 4770), email, or WhatsApp
-2. Book a free, no-obligation security survey
+2. Book a no-obligation security survey
 3. Receive a transparent, fixed-price quote
 4. Agree a convenient installation date
 5. Professional installation by qualified engineers

@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Shield, Award, Clock, Wrench, Phone } from 'lucide-react';
-import { COMPANY_INFO } from '@/lib/utils';
+import { COMPANY_INFO, SURVEY_TERMS } from '@/lib/utils';
 import { generateOrganizationSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'About J&L Security - 13+ Years Professional Security Services',
-  description: 'Established security company serving Essex & Greater London since 2011. Accredited engineers, professional installations, comprehensive warranties and 24/7 emergency support.',
+  description: 'Established security company serving Essex & Greater London since 2011. Accredited engineers, professional installations, comprehensive warranties and emergency callouts.',
   keywords: [
     'security company Essex',
     'established security installer',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'About J&L Security - 13+ Years Professional Security Services',
-    description: 'Established security company serving Essex & Greater London since 2011. Accredited engineers and 24/7 emergency support.',
+    description: 'Established security company serving Essex & Greater London since 2011. Accredited engineers and emergency callouts.',
   },
   alternates: {
     canonical: `${COMPANY_INFO.website}/about`,
@@ -59,7 +59,7 @@ const supplierBrands = [
 const keyStats = [
   { number: '13+', label: 'Years in Business', description: 'Established 2011' },
   { number: '2,500+', label: 'Installations', description: 'Satisfied customers' },
-  { number: '24/7', label: 'Emergency Support', description: 'Always available' },
+  { number: '24/7', label: 'Emergency Callouts', description: 'Depending on location and system fault' },
   { number: '30', label: 'Mile Coverage', description: 'Service radius' }
 ];
 
@@ -159,9 +159,9 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">How We Work</h2>
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>
-              Every job starts with a free survey. One of our engineers visits your property, assesses
+              Every job starts with a survey. One of our engineers visits your property, assesses
               the security requirements, and discusses your priorities and budget. There is no sales
-              pressure and no obligation. After the survey, you receive a written quote with a fixed
+              pressure and no obligation. {SURVEY_TERMS} After the survey, you receive a written quote with a fixed
               price that will not change unless you ask for additional work.
             </p>
             <p>
@@ -180,7 +180,8 @@ export default function AboutPage() {
               After installation, we offer maintenance contracts for all system types. For fire alarms,
               6-monthly servicing is a legal requirement under BS 5839-1. For intruder alarms and
               CCTV, annual servicing keeps your system reliable and your insurance valid.
-              If something goes wrong between visits, our 24/7 emergency callout service is available.
+              If something goes wrong between visits, our 24/7 emergency callout service is available,
+              depending on location and the system fault.
             </p>
           </div>
         </div>
@@ -254,10 +255,10 @@ export default function AboutPage() {
               <Clock className="h-6 w-6 text-primary-600 mb-4" />
               <h3 className="text-lg font-semibold mb-2">Response Times</h3>
               <p className="text-gray-700">
-                Same-day surveys available across our coverage area. Emergency callouts are available
-                24/7 across Essex and Greater London: customers on a maintenance contract get same-day
-                attendance, and for all other callouts how soon we attend depends on the type of job
-                and how urgent it is.
+                Emergency callouts are available 24/7, depending on location and the system fault.
+                Customers on a maintenance contract get same-day attendance, and fire alarm maintenance
+                customers get a response within 4 hours. For all other callouts, how soon we attend
+                depends on the type of job and how urgent it is.
               </p>
             </div>
           </div>
@@ -298,7 +299,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-4">Experience You Can Trust</h2>
           <p className="text-xl mb-8 text-primary-100">
             13+ years of professional service, thousands of satisfied customers, and comprehensive 
-            warranties. Get your free security survey from Essex and Greater London's trusted security experts.
+            warranties. Book a security survey with Essex and Greater London's trusted security experts.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="flex flex-col gap-1">
@@ -320,7 +321,7 @@ export default function AboutPage() {
               href="/contact"
               className="bg-primary-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-400 border-2 border-primary-400 transition-colors"
             >
-              Get Free Survey
+              Book a Survey
             </Link>
           </div>
         </div>

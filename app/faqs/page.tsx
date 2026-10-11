@@ -34,11 +34,11 @@ const faqCategories: FAQCategory[] = [
     faqs: [
       {
         question: 'How quickly can you respond to emergency callouts?',
-        answer: 'We offer 24/7 emergency response across Essex and Greater London. Customers on a maintenance contract get same-day attendance. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Emergency callout charges apply outside normal business hours (Mon-Fri 9AM-5PM, Sat 9AM-1PM).'
+        answer: '24/7 emergency callouts are available, depending on location and the system fault. Customers on a maintenance contract get same-day attendance, and fire alarm maintenance customers get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Emergency callout charges apply outside normal business hours (Mon-Fri 9AM-5PM, Sat 9AM-1PM).'
       },
       {
-        question: 'Do you provide free security surveys?',
-        answer: 'Yes, we offer free, no-obligation security surveys for all new customers. Our experienced engineers will assess your property, identify potential security risks, and recommend the most suitable solutions for your needs and budget.'
+        question: 'Do you charge for security surveys?',
+        answer: 'Surveys are free depending on location and the type of service required. If a fee is charged, it is a nominal fee which is deducted from the final invoice. Surveys carry no obligation. Our experienced engineers will assess your property, identify potential security risks, and recommend the most suitable solutions for your needs and budget.'
       },
       {
         question: 'What areas do you cover?',
@@ -125,7 +125,7 @@ const faqCategories: FAQCategory[] = [
       },
       {
         question: 'What happens if my fire alarm has a fault?',
-        answer: 'Fire alarm faults should be addressed immediately for safety and legal compliance. We provide 24/7 emergency callouts for fire system faults. Customers on a maintenance contract get same-day attendance. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Many faults can be diagnosed remotely to expedite repairs.'
+        answer: 'Fire alarm faults should be addressed immediately for safety and legal compliance. 24/7 emergency callouts are available for fire alarm systems, depending on location and the system fault. Customers on a fire alarm maintenance contract get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Many faults can be diagnosed remotely to expedite repairs.'
       },
       {
         question: 'What is the difference between BS 5839-1 and BS 5839-6 fire alarm systems?',
@@ -162,15 +162,15 @@ const faqCategories: FAQCategory[] = [
       },
       {
         question: 'Do you charge for quotations and surveys?',
-        answer: 'All surveys and quotations are completely free with no obligation. We believe you should have all the information needed to make an informed decision about your security without any upfront costs.'
+        answer: 'Quotations are free with no obligation. Surveys are free depending on location and the type of service required. If a fee is charged, it is a nominal fee which is deducted from the final invoice.'
       }
     ]
   }
 ];
 
 const quickLinks = [
-  { title: 'Emergency Callout', description: '24/7 emergency response', link: '/contact', urgent: true },
-  { title: 'Free Survey', description: 'Book your security assessment', link: '/contact' },
+  { title: 'Emergency Callout', description: '24/7, depending on location and system fault', link: '/contact', urgent: true },
+  { title: 'Book a Survey', description: 'Book your security assessment', link: '/contact' },
   { title: 'Service Areas', description: 'Check if we cover your location', link: '/locations' },
   { title: 'Our Services', description: 'Complete service overview', link: '/services' }
 ];

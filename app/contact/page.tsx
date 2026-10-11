@@ -1,24 +1,24 @@
 import type { Metadata } from 'next';
 import { Phone, Mail, MapPin, Clock, MessageSquare, Calendar, CheckCircle } from 'lucide-react';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
-import { COMPANY_INFO, whatsappLink } from '@/lib/utils';
+import { COMPANY_INFO, SURVEY_TERMS, whatsappLink } from '@/lib/utils';
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Contact J&L Security - Free Surveys & Emergency Callouts',
-  description: 'Contact J&L Security for free security surveys, emergency callouts, and expert advice. Covering Essex & Greater London with same-day response available.',
+  title: 'Contact J&L Security - Surveys & Emergency Callouts',
+  description: 'Contact J&L Security for security surveys, emergency callouts, and expert advice. Covering Essex & Greater London.',
   keywords: [
     'contact security company',
-    'free security survey',
+    'security survey',
     'emergency locksmith',
     'security system quote',
     'Essex security contact',
     'London security services'
   ],
   openGraph: {
-    title: 'Contact J&L Security - Free Surveys & Emergency Callouts',
-    description: 'Contact J&L Security for free security surveys, emergency callouts, and expert advice across Essex and Greater London.',
+    title: 'Contact J&L Security - Surveys & Emergency Callouts',
+    description: 'Contact J&L Security for security surveys, emergency callouts, and expert advice across Essex and Greater London.',
   },
   alternates: {
     canonical: `${COMPANY_INFO.website}/contact`,
@@ -30,8 +30,8 @@ const contactMethods = [
     icon: Phone,
     title: 'Phone',
     primary: `${COMPANY_INFO.phone} / ${COMPANY_INFO.phone2}`,
-    secondary: '24/7 Emergency Line',
-    description: 'Speak directly with our team for immediate assistance or to book your free survey.',
+    secondary: '24/7 emergency callouts, depending on location and system fault',
+    description: 'Speak directly with our team for immediate assistance or to book your survey.',
     action: `tel:${COMPANY_INFO.phone}`,
     actionText: 'Call Now'
   },
@@ -57,8 +57,8 @@ const contactMethods = [
     icon: Calendar,
     title: 'Online Booking',
     primary: 'Schedule Survey',
-    secondary: 'Free & No Obligation',
-    description: 'Book your free security survey online at a time that suits you.',
+    secondary: 'No Obligation',
+    description: 'Book your security survey online at a time that suits you.',
     action: '#booking-form',
     actionText: 'Book Survey'
   }
@@ -72,10 +72,10 @@ const openingHours = [
 ];
 
 const servicePromises = [
-  'Free, no-obligation security surveys',
-  'Same-day surveys available',
+  'No-obligation security surveys',
+  'Surveys free depending on location and type of service; any fee is nominal and deducted from the final invoice',
   'Transparent, fixed-price quotes',
-  '24/7 emergency response',
+  '24/7 emergency callouts, depending on location and system fault',
   'Local engineers across Essex & Greater London',
   'Comprehensive warranties on all work'
 ];
@@ -105,8 +105,8 @@ export default function ContactPage() {
           <div className="text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">Contact J&L Security</h1>
             <p className="text-xl mb-8 text-primary-100 max-w-3xl mx-auto">
-              Get your free security survey, expert advice, or emergency assistance. 
-              Professional service across Essex and Greater London with same-day response available.
+              Book your security survey, get expert advice, or ask for emergency assistance.
+              Professional service across Essex and Greater London.
             </p>
           </div>
         </div>
@@ -148,10 +148,10 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Get Your Free Security Survey</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Book Your Security Survey</h2>
               <p className="text-gray-600 mb-8">
-                Complete the form below and we'll contact you to arrange your free, 
-                no-obligation security assessment at a time convenient for you.
+                Complete the form below and we'll contact you to arrange your
+                no-obligation security assessment at a time convenient for you. {SURVEY_TERMS}
               </p>
               <div id="booking-form">
                 <QuickQuoteForm />
@@ -199,7 +199,7 @@ export default function ContactPage() {
                     <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg">
                       <p className="text-red-800 text-sm">
                         <strong>24/7 Emergency Callouts Available</strong><br />
-                        Emergency charges apply outside regular hours
+                        Depending on location and the system fault. Emergency charges apply outside regular hours
                       </p>
                     </div>
                   </div>
@@ -282,8 +282,8 @@ export default function ContactPage() {
             <h2 className="text-3xl font-bold text-red-900 mb-4">Emergency Callouts</h2>
           </div>
           <p className="text-xl text-red-800 mb-6">
-            Security system fault? Locked out? Break-in damage? 
-            We provide 24/7 emergency response across Essex and Greater London.
+            Security system fault? Locked out? Break-in damage? Call us and describe what has happened.
+            24/7 emergency callouts are available, depending on location and the system fault.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -308,7 +308,7 @@ export default function ContactPage() {
             </a>
           </div>
           <p className="text-sm text-red-700 mt-4">
-            Same-day attendance for maintenance contract customers • Other callouts depend on the type of job and how urgent it is • Emergency callout charges apply
+            Same-day attendance for maintenance contract customers • Response within 4 hours for fire alarm maintenance customers • Other callouts depend on the type of job and how urgent it is • Emergency callout charges apply
           </p>
         </div>
       </section>

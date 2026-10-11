@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { CheckCircle, Phone, MessageSquare, MapPin, Shield, Camera, Flame, Lock, Lightbulb, Clock, ArrowRight } from 'lucide-react';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
-import { COMPANY_INFO, whatsappLink } from '@/lib/utils';
+import { COMPANY_INFO, SURVEY_TERMS, whatsappLink } from '@/lib/utils';
 import { locations, services, serviceLocationMatrix, serviceLocationPath } from '@/lib/data';
 import { generateLocalBusinessSchema, generateFAQPageSchema, generateBreadcrumbSchema } from '@/lib/schema';
 
@@ -297,7 +297,7 @@ const locationExtended: Record<string, LocationExtended> = {
       {
         question: 'Why does the layout of Basildon estates matter for a burglar alarm?',
         answer:
-          'Much of Basildon was laid out as a new town with footpath networks running separately from the roads, so many houses are approached from a shared pedestrian route and back onto one. That gives an approach to the rear of the property which is not overlooked from a road and which a camera at the front will not cover. Detector and camera positions need to account for the rear boundary, not just the front elevation. It is one of the specific things our engineers check during the free survey.',
+          'Much of Basildon was laid out as a new town with footpath networks running separately from the roads, so many houses are approached from a shared pedestrian route and back onto one. That gives an approach to the rear of the property which is not overlooked from a road and which a camera at the front will not cover. Detector and camera positions need to account for the rear boundary, not just the front elevation. It is one of the specific things our engineers check during the survey.',
       },
       {
         question: 'Do you install commercial fire alarms on the Basildon industrial estates?',
@@ -329,7 +329,7 @@ const locationExtended: Record<string, LocationExtended> = {
     description: 'A popular suburban town in the London Borough of Havering, known for its historic high street, excellent country parks, and strong community. Hornchurch has a mix of period properties and modern new builds that benefit from discreet wireless alarm systems.',
     population: '~43,000',
     commuting: 'District Line to Westminster in 50 minutes; Elizabeth Line interchange at Romford.',
-    whyLocal: 'Being part of the Havering borough, Hornchurch is well within our core coverage area. Our engineers regularly cover RM11–RM12 and can usually offer next-day surveys.',
+    whyLocal: 'Being part of the Havering borough, Hornchurch is well within our core coverage area. Our engineers regularly cover RM11 to RM12.',
     residential: ['Emerson Park', 'Ardleigh Green', 'Elm Park', 'Hacton', 'St Andrews', 'South Hornchurch'],
     propertyStock:
       'Hornchurch is overwhelmingly a product of the interwar suburban boom. The parish held around 28,000 people in 1931 and the enlarged district was estimated at roughly 90,800 by 1938, and almost all of that growth arrived as private speculative housing built to a small number of repeated patterns. The result today is street after street of 1930s bay-fronted semi-detached houses, with a smaller stock of Edwardian property, some post-war infill, and a modest amount of recent apartment development near the station and along the high street. Elm Park was laid out in the 1930s as a planned garden-city style development and has been served by the electrified District Line since 1935. Emerson Park sits at the other end of the range, with wider avenues and larger detached and semi-detached houses on generous plots. For a security installer this consistency is useful: the 1930s semi has a predictable layout, and the vulnerable points are nearly always the same three.',
@@ -367,7 +367,7 @@ const locationExtended: Record<string, LocationExtended> = {
       {
         question: 'Which alarm system suits a 1930s semi-detached house in Hornchurch?',
         answer:
-          'For most 1930s semis in Hornchurch, Ardleigh Green and Elm Park, a wireless Grade 2 system is the practical choice. The properties are decorated and wireless avoids chasing cable into finished walls, and detectors can be added to a detached garage or outbuilding without a trenched cable run. The specification should cover the side access and the rear kitchen or dining door rather than concentrating on the front of the house, because the flank path behind a side gate is the route that cannot be seen from the street. We confirm the detector positions during the free survey.',
+          'For most 1930s semis in Hornchurch, Ardleigh Green and Elm Park, a wireless Grade 2 system is the practical choice. The properties are decorated and wireless avoids chasing cable into finished walls, and detectors can be added to a detached garage or outbuilding without a trenched cable run. The specification should cover the side access and the rear kitchen or dining door rather than concentrating on the front of the house, because the flank path behind a side gate is the route that cannot be seen from the street. We confirm the detector positions during the survey.',
       },
       {
         question: 'Do you install security systems in Emerson Park?',
@@ -382,7 +382,7 @@ const locationExtended: Record<string, LocationExtended> = {
     ],
     metaTitle: 'Burglar Alarms, CCTV & Fire Alarms in Hornchurch RM11',
     metaDescription:
-      'Security installers covering Hornchurch, Emerson Park, Elm Park and Ardleigh Green. Burglar alarms, CCTV and fire alarms. SSAIB and BAFE accredited. Free survey.',
+      'Security installers covering Hornchurch, Emerson Park, Elm Park and Ardleigh Green. Burglar alarms, CCTV and fire alarms. SSAIB and BAFE accredited.',
     extraKeywords: [
       'burglar alarms hornchurch',
       'cctv installer hornchurch',
@@ -1337,12 +1337,12 @@ const genericLocationFaqs = (locationName: string, noTimePromises = false) => [
     ? []
     : [
         {
-          question: `Do you offer same-day security surveys in ${locationName}?`,
-          answer: `Yes. We offer free same-day security surveys across ${locationName} and the surrounding area. Call us before noon and we can usually arrange an afternoon visit.`,
+          question: `Do you charge for a security survey in ${locationName}?`,
+          answer: `Whether a survey in ${locationName} is free depends on the location and the type of service required. If a fee is charged, it is a nominal fee which is deducted from the final invoice.`,
         },
         {
           question: `How quickly can you respond to an emergency alarm fault in ${locationName}?`,
-          answer: `Customers on our maintenance contract get same-day attendance for callouts in ${locationName}. For all other callouts, how soon we attend depends on the type of job and how urgent it is.`,
+          answer: `Customers on our maintenance contract get same-day attendance for callouts in ${locationName}, and fire alarm maintenance customers get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is.`,
         },
       ]),
   {
@@ -1398,7 +1398,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = ext?.metaTitle ?? `Security Systems ${location.name}: Alarms, CCTV & Fire Protection`;
   const description =
     ext?.metaDescription ??
-    `Professional security system installation in ${location.name}, ${location.county}. Burglar alarms, CCTV, fire alarms, access control. Free surveys, same-day service. Call J&L Security.`;
+    `Professional security system installation in ${location.name}, ${location.county}. Burglar alarms, CCTV, fire alarms, access control. Call J&L Security.`;
 
   return {
     title,
@@ -1493,7 +1493,7 @@ export default async function LocationPage({ params }: Props) {
                   href="/contact"
                   className="bg-primary-500 text-white px-8 py-3 rounded-md font-semibold hover:bg-primary-400 border-2 border-primary-400 transition-colors text-center"
                 >
-                  Free Survey in {location.name}
+                  Book a Survey in {location.name}
                 </Link>
               </div>
             </div>
@@ -1540,20 +1540,18 @@ export default async function LocationPage({ params }: Props) {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
                 <div className="bg-primary-50 rounded-xl p-5">
                   <Clock className="h-6 w-6 text-primary-600 mb-3" />
-                  <h3 className="font-semibold text-gray-900 mb-1">{location.noTimePromises ? 'Free Surveys' : 'Same-Day Surveys'}</h3>
+                  <h3 className="font-semibold text-gray-900 mb-1">Site Surveys</h3>
                   <p className="text-sm text-gray-600">
-                    {location.noTimePromises
-                      ? `No-obligation security assessments across ${location.name}, booked at a time that suits you`
-                      : `Free security assessments available today across ${location.name}`}
+                    {`No-obligation security assessments across ${location.name}, booked at a time that suits you`}
                   </p>
                 </div>
                 <div className="bg-primary-50 rounded-xl p-5">
                   <Shield className="h-6 w-6 text-primary-600 mb-3" />
-                  <h3 className="font-semibold text-gray-900 mb-1">{location.noTimePromises ? 'Maintenance Contracts' : '24/7 Emergency Cover'}</h3>
+                  <h3 className="font-semibold text-gray-900 mb-1">{location.noTimePromises ? 'Maintenance Contracts' : '24/7 Emergency Callouts'}</h3>
                   <p className="text-sm text-gray-600">
                     {location.noTimePromises
                       ? 'Servicing contracts for the alarm, CCTV, fire and access control systems we install'
-                      : 'Round-the-clock emergency callouts for alarm faults and break-ins'}
+                      : 'Available depending on location and the system fault'}
                   </p>
                 </div>
                 <div className="bg-primary-50 rounded-xl p-5">
@@ -1670,7 +1668,7 @@ export default async function LocationPage({ params }: Props) {
                 href="/contact"
                 className="bg-primary-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-700 transition-colors text-center"
               >
-                Book a Free Commercial Survey
+                Book a Commercial Survey
               </Link>
               <a
                 href={`tel:${COMPANY_INFO.phone}`}
@@ -1808,11 +1806,12 @@ export default async function LocationPage({ params }: Props) {
       {/* CTA */}
       <section className="py-16 bg-gradient-to-br from-primary-800 to-primary-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Get a Free Security Survey in {location.name}</h2>
+          <h2 className="text-3xl font-bold mb-4">Book a Security Survey in {location.name}</h2>
           <p className="text-xl mb-8 text-primary-100">
             {location.noTimePromises
               ? `Our qualified engineers cover ${location.name} and the surrounding areas. No-obligation assessment, booked at a time that suits you.`
-              : `Our qualified engineers cover ${location.name} and all surrounding areas. No-obligation assessment, with same-day appointments available.`}
+              : `Our qualified engineers cover ${location.name} and all surrounding areas. No-obligation assessment, booked at a time that suits you.`}
+            <span className="block text-sm mt-3">{SURVEY_TERMS}</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="flex flex-col gap-1">
@@ -1831,7 +1830,7 @@ export default async function LocationPage({ params }: Props) {
               </a>
             </div>
             <a
-              href={whatsappLink(`Hi, I'd like a free security survey in ${location.name}`)}
+              href={whatsappLink(`Hi, I'd like a security survey in ${location.name}`)}
               className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors"
               target="_blank"
               rel="noopener noreferrer"

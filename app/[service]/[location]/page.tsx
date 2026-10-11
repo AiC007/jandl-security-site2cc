@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Phone, MessageCircle, CalendarDays, Shield, CheckCircle, MapPin } from 'lucide-react';
 import { serviceLocationMatrix, serviceLocationPath } from '@/lib/data';
-import { COMPANY_INFO, whatsappLink } from '@/lib/utils';
+import { COMPANY_INFO, SURVEY_TERMS, whatsappLink } from '@/lib/utils';
 import { generateFAQPageSchema, generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
 
@@ -63,7 +63,7 @@ const extendedLocationData: Record<string, LocationData> = {
       },
       {
         question: 'Do you cover the IG1 to IG6 postcodes from a single Ilford-area engineer?',
-        answer: 'Yes. Ilford and the surrounding IG1 to IG6 postcodes (Seven Kings, Goodmayes, Newbury Park, Gants Hill, Redbridge, Barkingside) are within our daily routing from Brentwood. We dispatch the closest available engineer for callouts and surveys, and most locations across the IG belt receive a same-day or next-day appointment.'
+        answer: 'Yes. Ilford and the surrounding IG1 to IG6 postcodes (Seven Kings, Goodmayes, Newbury Park, Gants Hill, Redbridge, Barkingside) are within our daily routing from Brentwood. We dispatch the closest available engineer for callouts and surveys.'
       },
       {
         question: 'Is J&L Security SSAIB approved for the police-response URN scheme in Ilford?',
@@ -99,7 +99,7 @@ const extendedLocationData: Record<string, LocationData> = {
       },
       {
         question: 'How quickly can J&L Security respond to a callout in Romford?',
-        answer: 'Customers on a maintenance contract get same-day attendance for callouts in Romford. For all other callouts, how soon we attend depends on the type of job and how urgent it is. For non-emergency surveys and quotes, we typically attend within 1 to 3 working days; same-day surveys are sometimes available if you call before noon.'
+        answer: 'Customers on a maintenance contract get same-day attendance for callouts in Romford, and fire alarm maintenance customers get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is. For non-emergency surveys and quotes, we typically attend within 1 to 3 working days.'
       },
       {
         question: 'Do you fit wireless alarms suitable for Victorian terraced housing in Romford?',
@@ -142,8 +142,8 @@ const extendedLocationData: Record<string, LocationData> = {
         answer: 'Yes. We design, install, commission, and service BS 5839-1 commercial fire alarm systems across the Chelmer Valley business park, the Great Baddow industrial estate, and similar Chelmsford commercial sites. Standard installations use addressable panels from Advanced, C-TEC, or Kentec, with optical smoke detectors, heat detectors, manual call points, and sounder-beacons sized to the property. We deliver to the system category specified by the client\'s fire risk assessment (typically L1 to L4 for commercial premises) and include the commissioning certificate, log book, and 6-monthly service contract.'
       },
       {
-        question: 'How quickly can your engineers attend a fire alarm callout in Chelmsford?',
-        answer: 'Fire alarm customers on a maintenance contract get same-day attendance for callouts in Chelmsford. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Chelmsford is within easy reach of our Brentwood base via the A12 corridor. For non-urgent service visits, we work to scheduled 6-monthly slots agreed at the start of the contract.'
+        question: 'How quickly do you respond to a fire alarm callout in Chelmsford?',
+        answer: 'Fire alarm customers on a maintenance contract get a response within 4 hours for callouts in Chelmsford. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Chelmsford is within easy reach of our Brentwood base via the A12 corridor. For non-urgent service visits, we work to scheduled 6-monthly slots agreed at the start of the contract.'
       },
       {
         question: 'Do you offer 6-monthly fire alarm servicing contracts for Chelmsford properties?',
@@ -175,7 +175,7 @@ const extendedLocationData: Record<string, LocationData> = {
     locationFAQs: [
       {
         question: 'How quickly can J&L Security respond to a callout in Brentwood?',
-        answer: 'J&L Security is based in Brentwood (CM13 3FR). Customers on a maintenance contract get same-day attendance for callouts in CM13 to CM15. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Most non-urgent surveys are arranged within 1 to 2 working days; same-day surveys are available on request if you call before noon.'
+        answer: 'J&L Security is based in Brentwood (CM13 3FR). Customers on a maintenance contract get same-day attendance for callouts in CM13 to CM15, and fire alarm maintenance customers get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Most non-urgent surveys are arranged within 1 to 2 working days.'
       },
       {
         question: 'What burglar alarm grades do you install in Brentwood residential properties?',
@@ -183,7 +183,7 @@ const extendedLocationData: Record<string, LocationData> = {
       },
       {
         question: 'Do you cover Shenfield, Hutton, and Ingatestone alongside Brentwood?',
-        answer: 'Yes. Shenfield, Hutton, Ingatestone, Mountnessing, Doddinghurst, Kelvedon Hatch, and the wider CM4 to CM15 belt are within our daily routing. Many of our long-standing customers in these areas have transitioned from older bell-only systems to monitored Grade 2 systems with smartphone control. Our engineer is typically on-site within 24 to 48 hours of an enquiry for surveys. Customers on a maintenance contract get same-day attendance for callouts; for all other callouts, how soon we attend depends on the type of job and how urgent it is.'
+        answer: 'Yes. Shenfield, Hutton, Ingatestone, Mountnessing, Doddinghurst, Kelvedon Hatch, and the wider CM4 to CM15 belt are within our daily routing. Many of our long-standing customers in these areas have transitioned from older bell-only systems to monitored Grade 2 systems with smartphone control. Our engineer is typically on-site within 24 to 48 hours of an enquiry for surveys. Customers on a maintenance contract get same-day attendance for callouts, and fire alarm maintenance customers get a response within 4 hours; for all other callouts, how soon we attend depends on the type of job and how urgent it is.'
       },
       {
         question: 'Are J&L Security SSAIB and BAFE approved for installations in Brentwood?',
@@ -237,7 +237,7 @@ const extendedLocationData: Record<string, LocationData> = {
       },
       {
         question: 'How quickly can J&L Security respond to a callout in Upminster?',
-        answer: 'Customers on a maintenance contract get same-day attendance for callouts in Upminster. For all other callouts, how soon we attend depends on the type of job and how urgent it is. We reach Upminster from our Brentwood base via the A127. For non-emergency surveys, we typically attend within 1 to 2 working days; same-day surveys are available on request.'
+        answer: 'Customers on a maintenance contract get same-day attendance for callouts in Upminster, and fire alarm maintenance customers get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is. We reach Upminster from our Brentwood base via the A127. For non-emergency surveys, we typically attend within 1 to 2 working days.'
       },
       {
         question: 'Do you cover Cranham, Corbets Tey, and South Ockendon alongside Upminster?',
@@ -451,7 +451,7 @@ function generateServiceFAQs(service: string, location: string) {
     'burglar': [
       {
         question: `How much does a burglar alarm cost in ${location}?`,
-        answer: `Domestic burglar alarm systems in ${location} start from GBP 450 plus VAT. A typical 3-bedroom house with PIR detectors in the main ground-floor rooms, magnetic contacts on entry doors, a keypad, and an external bell box usually costs between GBP 450 and GBP 800 plus VAT. Wireless systems cost slightly more than wired but avoid the need for cable runs. Adding 24/7 monitoring with police response is an additional monthly cost. We provide a fixed-price quote after a free survey with no obligation.`
+        answer: `Domestic burglar alarm systems in ${location} start from GBP 450 plus VAT. A typical 3-bedroom house with PIR detectors in the main ground-floor rooms, magnetic contacts on entry doors, a keypad, and an external bell box usually costs between GBP 450 and GBP 800 plus VAT. Wireless systems cost slightly more than wired but avoid the need for cable runs. Adding 24/7 monitoring with police response is an additional monthly cost. We provide a fixed-price quote after a survey, with no obligation.`
       },
       {
         question: `How quickly can you install a burglar alarm in ${location}?`,
@@ -489,7 +489,7 @@ function generateServiceFAQs(service: string, location: string) {
       },
       {
         question: `Can you upgrade my existing CCTV system in ${location}?`,
-        answer: `Yes. We regularly upgrade older analogue CCTV systems in ${location} to modern IP cameras. If your existing cabling is Cat5e or better, we can often reuse it, which reduces the installation cost. If the cabling is older coaxial, replacement may be needed. We assess this during the free site survey and include any cabling work in the quote.`
+        answer: `Yes. We regularly upgrade older analogue CCTV systems in ${location} to modern IP cameras. If your existing cabling is Cat5e or better, we can often reuse it, which reduces the installation cost. If the cabling is older coaxial, replacement may be needed. We assess this during the site survey and include any cabling work in the quote.`
       }
     ],
     'fire': [
@@ -521,7 +521,7 @@ function generateServiceFAQs(service: string, location: string) {
       },
       {
         question: `Do I need interlinked smoke alarms in ${location}?`,
-        answer: `Interlinked means that when one alarm activates, all of them sound, so a fire in the kitchen wakes someone asleep upstairs. Grades D1 and D2 in BS 5839-6 describe how the alarms are powered rather than whether they are linked, but the standard recommends interconnecting them, and interlinking is what HMO licensing schedules in ${location} and across Essex and London normally require. For a family home we recommend it for the same reason: a single alarm in the hallway is easy to sleep through from a closed bedroom. We advise on the grade and category your property needs at the free survey.`
+        answer: `Interlinked means that when one alarm activates, all of them sound, so a fire in the kitchen wakes someone asleep upstairs. Grades D1 and D2 in BS 5839-6 describe how the alarms are powered rather than whether they are linked, but the standard recommends interconnecting them, and interlinking is what HMO licensing schedules in ${location} and across Essex and London normally require. For a family home we recommend it for the same reason: a single alarm in the hallway is easy to sleep through from a closed bedroom. We advise on the grade and category your property needs at the survey.`
       },
       {
         question: `My smoke alarm in ${location} keeps beeping. Can you replace it?`,
@@ -533,7 +533,7 @@ function generateServiceFAQs(service: string, location: string) {
       },
       {
         question: `How much does a domestic smoke alarm installation cost in ${location}?`,
-        answer: `The cost depends on the grade, the category and the number of alarms, so we quote after a free survey rather than publishing a single figure. Annual servicing for residential and small HMO systems in ${location} is from GBP 120 plus VAT per year. There is no charge for the survey or the quotation.`
+        answer: `The cost depends on the grade, the category and the number of alarms, so we quote after a survey rather than publishing a single figure. Annual servicing for residential and small HMO systems in ${location} is from GBP 120 plus VAT per year. There is no charge for the quotation. ${SURVEY_TERMS}`
       }
     ],
     'locks': [
@@ -551,7 +551,7 @@ function generateServiceFAQs(service: string, location: string) {
       },
       {
         question: `Can you fit a safe in ${location}?`,
-        answer: `Yes. We fit safes in homes and businesses in ${location}. Tell us what you want to protect and where, and we will advise on the safe and where to fit it. If you are protecting high-value items, a monitored intruder alarm and CCTV can work alongside the safe, and we can quote for those after a free survey.`
+        answer: `Yes. We fit safes in homes and businesses in ${location}. Tell us what you want to protect and where, and we will advise on the safe and where to fit it. If you are protecting high-value items, a monitored intruder alarm and CCTV can work alongside the safe, and we can quote for those after a survey.`
       }
     ],
     'access': [
@@ -569,7 +569,7 @@ function generateServiceFAQs(service: string, location: string) {
       },
       {
         question: `How much does access control cost in ${location}?`,
-        answer: `Access control pricing in ${location} varies significantly by scope. A single standalone door with a keypad and maglock is considerably less expensive than a multi-door networked Paxton system with video intercom. We provide detailed quotes after a free site assessment, so you know exactly what the system will cost before committing.`
+        answer: `Access control pricing in ${location} varies significantly by scope. A single standalone door with a keypad and maglock is considerably less expensive than a multi-door networked Paxton system with video intercom. We provide detailed quotes after a site assessment, so you know exactly what the system will cost before committing.`
       },
       {
         question: `Can I manage who has access to my ${location} building remotely?`,
@@ -595,7 +595,7 @@ function generateServiceFAQs(service: string, location: string) {
       },
       {
         question: `How much does security lighting cost in ${location}?`,
-        answer: `Security lighting costs in ${location} depend on the number of fittings, cable runs, and whether existing wiring can be reused. LED PIR floodlights are energy-efficient and have a lifespan of 25,000 to 50,000 hours, so running costs are low. Emergency lighting is quoted based on the building layout and the number of fittings required for BS 5266-1 compliance. All quotes follow a free survey with no obligation.`
+        answer: `Security lighting costs in ${location} depend on the number of fittings, cable runs, and whether existing wiring can be reused. LED PIR floodlights are energy-efficient and have a lifespan of 25,000 to 50,000 hours, so running costs are low. Emergency lighting is quoted based on the building layout and the number of fittings required for BS 5266-1 compliance. All quotes follow a survey, with no obligation.`
       }
     ]
   };
@@ -622,7 +622,7 @@ const serviceDetailBlocks: Record<string, {
     equipmentUsed: 'We install Pyronix Euro and Enforcer (version 11) alarm panels. Sensors include dual-technology PIR detectors, pet-friendly PIRs (up to 25kg), magnetic door and window contacts, vibration sensors, and external sounder/strobe bell boxes.',
     complianceNote: 'All installations follow SSAIB guidelines. Systems are eligible for police response via URN registration where monitoring is selected. We provide the documentation your insurer requires for any premium discount.',
     maintenanceInfo: 'Annual servicing keeps your alarm system compliant with insurance requirements and in reliable working order. A typical service visit takes 45 to 60 minutes and includes testing all detectors, checking battery condition, verifying communication links, and updating firmware.',
-    pricingIndicator: 'Domestic intruder alarm systems start from GBP 450 plus VAT. The final price depends on the number of detectors, monitoring options, and any additional features such as smartphone control. All quotes are provided after a free survey with no obligation.'
+    pricingIndicator: 'Domestic intruder alarm systems start from GBP 450 plus VAT. The final price depends on the number of detectors, monitoring options, and any additional features such as smartphone control. All quotes are provided after a survey, with no obligation.'
   },
   cctv: {
     typicalProjects: [
@@ -634,7 +634,7 @@ const serviceDetailBlocks: Record<string, {
     equipmentUsed: 'We install Uniview IP cameras ranging from 2MP (1080p) to 8MP (4K). Camera types include dome, bullet, turret, and PTZ. All systems include a Uniview NVR with at least 1TB storage. Remote viewing is through the Uniview EZView app on iOS and Android.',
     complianceNote: 'Domestic CCTV on your own property does not normally require planning permission. If cameras overlook a public area or a neighbour\'s property, ICO guidance on domestic CCTV applies. For commercial installations, we advise on signage requirements under the ICO CCTV Code of Practice and GDPR data controller obligations.',
     maintenanceInfo: 'Annual CCTV maintenance includes cleaning camera lenses and housings, checking cable connections, verifying recording schedules, testing night vision performance, updating NVR firmware, and confirming remote access is working correctly.',
-    pricingIndicator: 'A 2-camera domestic CCTV system starts from GBP 850 plus VAT. Commercial systems are quoted individually based on camera count, resolution, and site requirements. All quotes follow a free site survey.'
+    pricingIndicator: 'A 2-camera domestic CCTV system starts from GBP 850 plus VAT. Commercial systems are quoted individually based on camera count, resolution, and site requirements. All quotes follow a site survey.'
   },
   fire: {
     typicalProjects: [
@@ -664,7 +664,7 @@ const serviceDetailBlocks: Record<string, {
     equipmentUsed: 'For domestic and HMO smoke and heat alarms we fit Aico alarms, and we work with Kidde, FireAngel and Hispec smoke and heat alarms, whether you need a like-for-like replacement or an assessment of an existing system. We also work on carbon monoxide alarms, alongside smoke and heat alarms. Mains-powered interlinked alarms with battery backup (Grade D) are the usual specification for new work. If your property already has alarms of another make, tell us the make when you call and we will advise. Larger HMOs that need a panel-controlled Grade A system use the same control panel makes listed on our fire alarms service page.',
     complianceNote: 'Domestic smoke and heat alarm systems are designed and installed to BS 5839-6, the British Standard for fire detection and fire alarm systems in domestic premises. The standard describes a system by grade and category. The grade is the type of equipment and how it is powered: Grade A is a panel-controlled system using equipment to BS EN 54, Grade C uses central control equipment with a common mains and standby supply, Grades D1 and D2 are mains-powered alarms each with a backup battery (sealed in D1, user-replaceable in D2), and Grades F1 and F2 are battery-powered alarms. The 2019 edition removed Grades B and E. The category is where the alarms go: LD3 covers the circulation areas that form the escape routes, such as the hallway and landing; LD2 adds the rooms that present a high fire risk, including any kitchen (with a heat alarm) and the principal habitable room, usually the living room; and LD1 covers the escape routes and every room or area where a fire might start, except bathrooms, shower rooms and toilets. For a licensed HMO the grade and category are normally set by the local authority licensing schedule.',
     maintenanceInfo: 'Grade D alarms have no control panel to service, but they still need looking after. Test them regularly with the test button, as the manufacturers advise, following the instructions for your alarms. Keep them free of dust, and replace them when they reach the end of the life stated by the manufacturer. For HMOs, an annual inspection by a competent person, with the results recorded in the log book, is good practice, and HMO licences often require it. Panel-controlled Grade A systems in HMOs are typically serviced every 6 months.',
-    pricingIndicator: 'Domestic and HMO smoke alarm installations are quoted after a free survey, because the price depends on the grade, the category and the number of alarms. Annual servicing for residential and small HMO systems is from GBP 120 plus VAT per year. Surveys and quotations are free.'
+    pricingIndicator: 'Domestic and HMO smoke alarm installations are quoted after a survey, because the price depends on the grade, the category and the number of alarms. Annual servicing for residential and small HMO systems is from GBP 120 plus VAT per year. Quotations are free. ' + SURVEY_TERMS
   },
   // Lock and safe pages. Jag confirmed on 28 September 2026 that J&L offers
   // locksmith work, BS3621 lock fitting and safe fitting, and asked for the
@@ -694,7 +694,7 @@ const serviceDetailBlocks: Record<string, {
     equipmentUsed: 'We install Paxton access control (Net2, Paxton10) and Comelit door entry systems. Hardware includes proximity card readers, keypad readers, biometric fingerprint readers, maglocks, electric strikes, and video intercom handsets.',
     complianceNote: 'All maglock installations include a break-glass release or request-to-exit button for fire evacuation compliance. Maglocks are fail-safe: they release when power is lost, ensuring occupants can always exit the building safely.',
     maintenanceInfo: 'Access control maintenance includes checking all readers and locks for correct operation, testing break-glass units, verifying backup battery condition, reviewing audit logs for anomalies, and updating user credentials as staff change.',
-    pricingIndicator: 'Access control pricing varies by the number of doors, reader types, and user count. A single-door standalone system is significantly less expensive than a networked multi-door system. All quotes follow a free site assessment.'
+    pricingIndicator: 'Access control pricing varies by the number of doors, reader types, and user count. A single-door standalone system is significantly less expensive than a networked multi-door system. All quotes follow a site assessment.'
   },
   security: {
     typicalProjects: [
@@ -706,7 +706,7 @@ const serviceDetailBlocks: Record<string, {
     equipmentUsed: 'We install LED PIR floodlights, dusk-to-dawn sensors, bulkhead emergency fittings, maintained and non-maintained emergency lights, and illuminated exit signs. All emergency lighting meets BS 5266-1 requirements.',
     complianceNote: 'Emergency lighting is a legal requirement for most commercial premises under the Regulatory Reform (Fire Safety) Order 2005. BS 5266-1 specifies the minimum illumination levels, battery duration (3 hours for most premises), and testing requirements.',
     maintenanceInfo: 'Emergency lighting requires monthly brief function tests and an annual full 3-hour duration test. We carry out and certify the annual test. Security lighting requires minimal maintenance beyond occasional lens cleaning and PIR sensor adjustment.',
-    pricingIndicator: 'Security lighting installation costs depend on the number of fittings, cable runs, and whether existing wiring can be reused. Emergency lighting is quoted based on the building layout and number of fittings required for compliance. All quotes follow a free survey.'
+    pricingIndicator: 'Security lighting installation costs depend on the number of fittings, cable runs, and whether existing wiring can be reused. Emergency lighting is quoted based on the building layout and number of fittings required for compliance. All quotes follow a survey.'
   }
 };
 
@@ -766,20 +766,20 @@ function generateContent(service: string, location: string) {
       : `${service} ${location} - Professional Installation & Maintenance`,
     metaDescription: isLocks
       ? `${service} in ${location}: J&L Security offers locksmith work, BS3621 lock fitting and safe fitting. Call ${COMPANY_INFO.phone} or ${COMPANY_INFO.phone2}.`
-      : `Expert ${service.toLowerCase()} services in ${location}. Professional installation, maintenance & 24/7 support. Free surveys available. Call ${COMPANY_INFO.phone} or ${COMPANY_INFO.phone2} today.`,
+      : `Expert ${service.toLowerCase()} services in ${location}. Professional installation, maintenance & support. Call ${COMPANY_INFO.phone} or ${COMPANY_INFO.phone2} today.`,
 
     hero: isLocks
       ? `J&L Security offers locksmith work, BS3621 lock fitting and safe fitting in ${location} and the surrounding area, alongside the burglar alarms, CCTV, fire alarms, access control and security lighting we install. Tell us what you need and we will advise on the next step.`
-      : `Looking for reliable ${service.toLowerCase()} in ${location}? J&L Security provides professional installation and maintenance services throughout ${location} and surrounding areas. With same-day surveys available and over 12 years of experience, we are your trusted local security specialists.`,
+      : `Looking for reliable ${service.toLowerCase()} in ${location}? J&L Security provides professional installation and maintenance services throughout ${location} and surrounding areas. With over 12 years of experience, we are your trusted local security specialists.`,
 
-    intro: `Our experienced engineers serve ${location} and the surrounding ${nearbyList} areas, providing comprehensive ${service.toLowerCase()} solutions for homes and businesses.${landmarkList ? ` Whether you are located near ${landmarkList}, our` : ' Our'} local team ${isLocks ? 'provides personalised service.' : 'ensures rapid response times and personalised service. Every installation is carried out to SSAIB standards with full documentation and aftercare.'}`,
+    intro: `Our experienced engineers serve ${location} and the surrounding ${nearbyList} areas, providing comprehensive ${service.toLowerCase()} solutions for homes and businesses.${landmarkList ? ` Whether you are located near ${landmarkList}, our` : ' Our'} local team ${isLocks ? 'provides personalised service.' : 'provides personalised service. Every installation is carried out to SSAIB standards with full documentation and aftercare.'}`,
 
     whyChoose: [
       `Local engineers covering ${location} (${locationData.postcode || 'local area'}) and surrounding areas`,
-      isLocks ? 'Free, no-obligation security survey' : 'Free, no-obligation security survey with same-day availability',
+      'No-obligation security survey',
       // Lock pages: SSAIB covers the security systems, not lock and safe
       // work, and the Emergency Locksmith page makes no response-time claim.
-      ...(isLocks ? [] : ['All installations to SSAIB standards', '24/7 emergency response for existing customers']),
+      ...(isLocks ? [] : ['All installations to SSAIB standards', '24/7 emergency callouts, depending on location and system fault']),
       'Transparent, fixed-price quotes with no hidden charges',
       'Ongoing maintenance contracts available'
     ],
@@ -834,7 +834,7 @@ function generateServiceIncludes(service: string, serviceType: string) {
 
   if (serviceType === 'domestic') {
     return [
-      'Free survey covering the grade and category your property needs',
+      'Survey covering the grade and category your property needs',
       'BS 5839-6 system design for homes and HMOs',
       'Mains-powered interlinked smoke and heat alarms with battery backup',
       'Aico alarms fitted; Kidde, FireAngel and Hispec alarms replaced and assessed',
@@ -915,7 +915,7 @@ function generateServiceIncludes(service: string, serviceType: string) {
   // Lighting pages have no list of their own and keep the generic one.
   if (serviceType === 'burglar') {
     return [
-      'Free security survey and consultation',
+      'Security survey and consultation',
       'Professional installation by qualified engineers',
       'High-quality wireless or wired alarm systems',
       'Smartphone app control and monitoring',
@@ -929,7 +929,7 @@ function generateServiceIncludes(service: string, serviceType: string) {
   
   if (serviceType === 'cctv') {
     return [
-      'Free site survey and system design',
+      'Site survey and system design',
       'Professional camera installation',
       'High-definition 4K or 1080p cameras',
       'Night vision and motion detection',
@@ -943,7 +943,7 @@ function generateServiceIncludes(service: string, serviceType: string) {
   
   if (serviceType === 'access') {
     return [
-      'Free access control assessment',
+      'Access control assessment',
       'Professional system installation',
       'Key fob or proximity card systems',
       'Biometric reader options',
@@ -1347,7 +1347,8 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
           <p className="text-xl mb-8 text-primary-100">
             {content.isLocksService
               ? `Call us to describe what you need. Our local team serves ${combination.location} and the surrounding area.`
-              : `Get your free, no-obligation security survey today. Our local engineers serve ${combination.location} with same-day appointments available.`}
+              : `Book your no-obligation security survey. Our local engineers serve ${combination.location}.`}
+            {!content.isLocksService && <span className="block text-sm mt-3">{SURVEY_TERMS}</span>}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -1380,7 +1381,7 @@ export default async function ServiceLocationPage({ params }: ServiceLocationPag
               className="bg-primary-500 text-white px-8 py-3 rounded-md font-semibold hover:bg-primary-400 border-2 border-primary-400 transition-colors inline-flex items-center justify-center"
             >
               <CalendarDays className="h-5 w-5 mr-2" />
-              Book Free Survey
+              Book a Survey
             </Link>
           </div>
         </div>

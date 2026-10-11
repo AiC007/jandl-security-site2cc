@@ -7,7 +7,7 @@
 // avoids inventing any figures: indicative prices are transcribed verbatim from
 // the client-approved public/llms.txt.
 
-import { COMPANY_INFO } from './utils';
+import { COMPANY_INFO, SURVEY_TERMS } from './utils';
 import { services, locations, faqs, serviceLocationMatrix } from './data';
 import { blogPosts, type BlogPost } from './blog';
 
@@ -30,8 +30,8 @@ export function getCompanyInfo() {
     accreditations: COMPANY_INFO.accreditations,
     serviceAreas: COMPANY_INFO.serviceAreas,
     emergencyHours: COMPANY_INFO.emergencyHours,
-    openingHours: 'Mon to Fri 09:00 to 17:00, Sat 09:00 to 13:00, plus 24/7 emergency callouts',
-    notes: 'Free, no-obligation security surveys. Same-day survey appointments available.',
+    openingHours: 'Mon to Fri 09:00 to 17:00, Sat 09:00 to 13:00, plus 24/7 emergency callouts depending on location and system fault',
+    notes: `No-obligation security surveys. ${SURVEY_TERMS}`,
   };
 }
 
@@ -178,7 +178,7 @@ export function checkServiceArea(query: string): {
 }
 
 // Indicative installed costs, transcribed verbatim from public/llms.txt.
-// Starting prices excluding VAT; final quotes follow a free site survey.
+// Starting prices excluding VAT; final quotes follow a site survey.
 export const PRICING_LINES: string[] = [
   'Burglar alarm, J&L standard wireless Grade 2 residential package (Pyronix Enforcer V11): from GBP 485 plus VAT, including panel with keypad, one door contact, two motion detectors, two proximity tags, one wireless external siren',
   'Additional motion detector: from GBP 55 plus VAT',
@@ -199,7 +199,7 @@ export const PRICING_LINES: string[] = [
 export function getPricingGuide() {
   return {
     currency: 'GBP',
-    vat: 'Prices exclude VAT at 20 percent unless stated. Final quotation follows a free site survey.',
+    vat: 'Prices exclude VAT at 20 percent unless stated. Final quotation follows a site survey.',
     items: PRICING_LINES,
   };
 }
@@ -371,8 +371,8 @@ function locationMarkdown(slug: string): string | null {
     `${c.name} provides burglar alarms, CCTV, fire alarms, access control and security lighting in ${loc.name} (${loc.county}, ${loc.postcode}) and nearby areas: ${loc.nearbyAreas.join(', ')}.`,
     '',
     loc.noTimePromises
-      ? 'All services include free, no-obligation surveys, booked at a time that suits you.'
-      : 'All services include free surveys and 24/7 emergency support.',
+      ? `All services include no-obligation surveys, booked at a time that suits you. ${SURVEY_TERMS}`
+      : `All services include no-obligation surveys. ${SURVEY_TERMS} 24/7 emergency callouts are available, depending on location and the system fault.`,
     '',
     contactBlock(),
   ].join('\n');
@@ -412,7 +412,7 @@ function serviceLocationMarkdown(slug: string): string | null {
     '',
     `${c.name} provides ${item.service.toLowerCase()} in ${item.location} and the surrounding area. Established ${c.established}, ${c.accreditations.join(', ')} accredited.`,
     '',
-    'Free survey, transparent pricing, and 24/7 emergency support.',
+    `No-obligation survey and transparent pricing. ${SURVEY_TERMS} 24/7 emergency callouts are available, depending on location and the system fault.`,
     '',
     contactBlock(),
   ].join('\n');

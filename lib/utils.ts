@@ -48,5 +48,10 @@ export const COMPANY_INFO = {
   serviceAreas: ["Essex", "Greater London", "Kent borders"],
   accreditations: ["SSAIB", "CHAS", "FIA", "BAFE"],
   emergencyHours: "24/7",
-  responseTime: "Same day surveys available"
+  responseTime: "Surveys by appointment"
 };
+
+// Survey wording agreed with the client on 11 October 2026. Show it wherever a
+// survey is offered, so the condition travels with the offer.
+export const SURVEY_TERMS =
+  "Surveys are free depending on location and the type of service required. If a fee is charged, it is a nominal fee which is deducted from the final invoice.";

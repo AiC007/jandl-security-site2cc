@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { CheckCircle, Phone, MessageSquare, ArrowRight, MapPin, Shield, Camera, Flame, Lock, Lightbulb, ClipboardCheck } from 'lucide-react';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
-import { COMPANY_INFO, whatsappLink } from '@/lib/utils';
+import { COMPANY_INFO, SURVEY_TERMS, whatsappLink } from '@/lib/utils';
 import { services, serviceLocationMatrix, serviceLocationPath } from '@/lib/data';
 import { generateServiceSchema, generateFAQPageSchema, generateBreadcrumbSchema } from '@/lib/schema';
 
@@ -39,7 +39,7 @@ const servicePageData: Record<string, {
       'Every system we install meets SSAIB standards and is eligible for police response.',
     ],
     process: [
-      { step: 'Free Security Survey', detail: 'One of our engineers visits your property, assesses entry points, and identifies vulnerabilities at no charge.' },
+      { step: 'Security Survey', detail: 'One of our engineers visits your property, assesses entry points, and identifies vulnerabilities.' },
       { step: 'System Design', detail: 'We specify the right grade of alarm, sensor positions, and monitoring option for your needs and budget.' },
       { step: 'Professional Installation', detail: 'Fully insured engineers install the system with minimal disruption, tidying up after themselves.' },
       { step: 'Commissioning & Testing', detail: 'Every zone is walked and tested before we leave. You receive a full test certificate.' },
@@ -54,7 +54,7 @@ const servicePageData: Record<string, {
       'Schools and healthcare facilities',
       'Listed buildings (wireless systems available)',
     ],
-    pricing: 'From £450 plus VAT for a standard domestic system — full quote provided after free survey.',
+    pricing: 'From £450 plus VAT for a standard domestic system, with a full quote provided after a survey.',
     faqs: [
       {
         question: 'Do you install wireless burglar alarms?',
@@ -146,7 +146,7 @@ const servicePageData: Record<string, {
       'Domestic customers needing smoke alarm installs, smoke alarm repair or carbon monoxide alarms',
       'Existing system owners switching to a BAFE-certified maintainer',
     ],
-    pricing: 'Fire alarm servicing contracts from £180 + VAT per year for commercial premises and from £120 + VAT per year for residential and HMO systems. Includes one routine maintenance and one emergency callout. Installation prices and fire risk assessment fees provided after free site survey.',
+    pricing: 'Fire alarm servicing contracts from £180 + VAT per year for commercial premises and from £120 + VAT per year for residential and HMO systems. Includes one routine maintenance and one emergency callout. Installation prices and fire risk assessment fees provided after a site survey.',
     faqs: [
       {
         question: 'What is the difference between a conventional, addressable and bi-wire fire alarm?',
@@ -174,7 +174,7 @@ const servicePageData: Record<string, {
       },
       {
         question: 'Do you provide emergency fire alarm call-outs?',
-        answer: 'Yes, we offer 24/7 emergency call out for fire alarm customers who are under our maintenance contract with a visit made within 8 hours.',
+        answer: 'Yes. Fire alarm customers who are under our maintenance contract get a response within 4 hours. 24/7 emergency call out is available, depending on location and the system fault.',
       },
       {
         question: 'What documentation do I receive after installation?',
@@ -300,7 +300,7 @@ const servicePageData: Record<string, {
       'Where that action plan identifies remedial work, J&L Security carries it out directly. We are an established Essex and Greater London fire and security company, BAFE-accredited for the installation and maintenance of fire alarms, and we install and maintain fire alarms, emergency lighting and related life-safety systems every day. That means one point of contact from the assessment through to a compliant building, rather than a report that leaves you to find separate contractors.',
     ],
     process: [
-      { step: 'Free Survey and Scope', detail: 'We visit the building, agree the scope of the assessment, and confirm the right route for landlords, businesses or flat sales.' },
+      { step: 'Survey and Scope', detail: 'We visit the building, agree the scope of the assessment, and confirm the right route for landlords, businesses or flat sales.' },
       { step: 'Accredited Assessment', detail: 'The fire risk assessor we work with (AIFSM, TMIFPO, NEBOSH) carries out the assessment, covering ignition sources, escape routes, detection, emergency lighting, fire doors and management arrangements.' },
       { step: 'Written Report and Action Plan', detail: 'You receive a written report recording the hazards, the people at risk, and a prioritised action plan that tells you what to do and in what order.' },
       { step: 'Remedial Works by J&L', detail: 'Where the action plan identifies work, we deliver it directly: fire alarms to BS 5839, emergency lighting to BS 5266, electrical testing and fire door works.' },
@@ -391,7 +391,7 @@ export async function generateStaticParams() {
 
 const metaOverrides: Record<string, { description?: string; keywords?: string[]; title?: string }> = {
   'fire-alarms': {
-    description: 'BAFE-certified fire alarm installation and servicing in Essex and London. Kentec and Advanced panels, Gent servicing, Aico domestic alarms. Free survey.',
+    description: 'BAFE-certified fire alarm installation and servicing in Essex and London. Kentec and Advanced panels, Gent servicing, Aico domestic alarms.',
     keywords: [
       'fire alarm installation',
       'Aico smoke alarm installer',
@@ -428,7 +428,7 @@ const metaOverrides: Record<string, { description?: string; keywords?: string[];
   },
   'fire-risk-assessments': {
     title: 'Fire Risk Assessments in Essex & London',
-    description: 'Accredited fire risk assessments for landlords, HMOs and businesses across Essex and London. We assess, then carry out the alarm and lighting remedials. Free survey.',
+    description: 'Accredited fire risk assessments for landlords, HMOs and businesses across Essex and London. We assess, then carry out the alarm and lighting remedials.',
     keywords: [
       'fire risk assessment Essex',
       'fire risk assessment London',
@@ -453,7 +453,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const override = metaOverrides[serviceSlug];
   const description =
     override?.description ??
-    `${service.description}. Professional installation and maintenance across Essex & Greater London. Free surveys, same-day service, 24/7 support. Call J&L Security today.`;
+    `${service.description}. Professional installation and maintenance across Essex & Greater London. Call J&L Security today.`;
   const keywords =
     override?.keywords ?? [
       `${service.name.toLowerCase()} Essex`,
@@ -475,7 +475,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: { canonical: `${COMPANY_INFO.website}/services/${serviceSlug}` },
     openGraph: {
       title,
-      description: override?.description ?? `${service.description}. Free surveys across Essex & Greater London.`,
+      description: override?.description ?? `${service.description}. Covering Essex & Greater London.`,
       url: `${COMPANY_INFO.website}/services/${serviceSlug}`,
       type: 'website',
       images: ogImages,
@@ -567,7 +567,7 @@ export default async function ServicePage({ params }: Props) {
                   href="/contact"
                   className="bg-primary-500 text-white px-8 py-3 rounded-md font-semibold hover:bg-primary-400 border-2 border-primary-400 transition-colors text-center"
                 >
-                  Book Free Survey
+                  Book a Survey
                 </Link>
               </div>
             </div>
@@ -763,9 +763,10 @@ export default async function ServicePage({ params }: Props) {
       {/* CTA */}
       <section className="py-16 bg-gradient-to-br from-primary-800 to-primary-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Get a Free {service.name} Survey</h2>
+          <h2 className="text-3xl font-bold mb-4">Book Your {service.name} Survey</h2>
           <p className="text-xl mb-8 text-primary-100">
-            No-obligation assessment from our qualified engineers. Same-day appointments available across Essex and Greater London.
+            No-obligation assessment from our qualified engineers across Essex and Greater London.
+            <span className="block text-sm mt-3">{SURVEY_TERMS}</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="flex flex-col gap-1">
@@ -784,7 +785,7 @@ export default async function ServicePage({ params }: Props) {
               </a>
             </div>
             <a
-              href={whatsappLink(`Hi, I'd like a free ${service.name} survey`)}
+              href={whatsappLink(`Hi, I'd like a ${service.name} survey`)}
               className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors"
               target="_blank"
               rel="noopener noreferrer"

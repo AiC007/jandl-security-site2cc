@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Calendar, ArrowLeft } from 'lucide-react';
-import { COMPANY_INFO } from '@/lib/utils';
+import { COMPANY_INFO, SURVEY_TERMS } from '@/lib/utils';
 import { generateBlogPostingSchema, generateBreadcrumbSchema, generateFAQPageSchema } from '@/lib/schema';
 import { blogPosts, getBlogPost, getAllBlogSlugs } from '@/lib/blog';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -180,7 +180,8 @@ export default async function BlogPostPage({ params }: PageProps) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Secure Your Property?</h2>
           <p className="text-xl mb-8 text-primary-100">
-            Book a free, no-obligation security survey with one of our experienced engineers.
+            Book a no-obligation security survey with one of our experienced engineers.
+            <span className="block text-sm mt-3">{SURVEY_TERMS}</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="flex flex-col gap-1">

@@ -6,7 +6,7 @@
       "type": "skill-md",
       "description": "Find which security and fire-safety systems J&L Security installs and maintains across Essex and Greater London, with features, benefits and page links.",
       "url": "/.well-known/agent-skills/find-security-services/SKILL.md",
-      "digest": "sha256:30542895f0637ba1d17de4ed8619f674270791e5665d0963844382d419ae3892"
+      "digest": "sha256:b47f461f07317ef3ba8bcf148bb6b94ee2dbe6d4d0e1c1e2425a8a6c6c5caf34"
     },
     {
       "name": "check-service-area",
@@ -18,16 +18,16 @@
     {
       "name": "get-quote-and-contact",
       "type": "skill-md",
-      "description": "Get J&L Security contact channels and explain how a customer books a free security or fire-safety survey and quote.",
+      "description": "Get J&L Security contact channels and explain how a customer books a security or fire-safety survey and quote.",
       "url": "/.well-known/agent-skills/get-quote-and-contact/SKILL.md",
-      "digest": "sha256:57a6882e82a7c3c0fe6186690ab63a3e7d4bdd53c90ee97eb934cac94f58c088"
+      "digest": "sha256:e4965d51e4e615168fb73e853a88cd83ce40e1274e0cea911dfecd93941304ae"
     },
     {
       "name": "get-pricing-guide",
       "type": "skill-md",
       "description": "Retrieve J&L Security indicative installed costs for burglar alarms, CCTV and fire-alarm systems in the UK for 2026.",
       "url": "/.well-known/agent-skills/get-pricing-guide/SKILL.md",
-      "digest": "sha256:1133b032ae9482b1a3e312160441b9e88d37dc5422467b22d0a3bcc1c4c49b88"
+      "digest": "sha256:65427a26fa1e845e4afd825cc020cf9d64cf3f0e3b8a792bba57d20e359aadf6"
     }
   ]
 }

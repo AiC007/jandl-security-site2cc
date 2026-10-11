@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Shield, Camera, Flame, Lock, Lightbulb, Clock, CheckCircle, Star, ClipboardCheck } from 'lucide-react';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
-import { COMPANY_INFO, whatsappLink } from '@/lib/utils';
+import { COMPANY_INFO, SURVEY_TERMS, whatsappLink } from '@/lib/utils';
 import { generateLocalBusinessSchema, generateServiceSchema } from '@/lib/schema';
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       icon: Shield,
       name: 'Burglar Alarms',
       description: 'Wireless & wired systems with 24/7 monitoring and smartphone app control',
-      features: ['Same-day surveys', 'SSAIB standards', 'Insurance approved'],
+      features: ['No-obligation surveys', 'SSAIB standards', 'Insurance approved'],
       link: '/services/burglar-alarms'
     },
     {
@@ -95,7 +95,7 @@ export default function Home() {
                 {COMPANY_INFO.tagline}
               </h1>
               <p className="text-xl mb-8 text-primary-100">
-                Professional security systems with same-day surveys, SSAIB standards,
+                Professional security systems with no-obligation surveys, SSAIB standards,
                 and 24/7 monitoring options. Trusted by thousands across Essex and Greater London since 2011.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -117,7 +117,7 @@ export default function Home() {
                   href="/contact"
                   className="bg-primary-500 text-white px-8 py-3 rounded-md font-semibold hover:bg-primary-400 border-2 border-primary-400 transition-colors text-center"
                 >
-                  Book Free Survey
+                  Book a Survey
                 </Link>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -144,8 +144,8 @@ export default function Home() {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-50 rounded-full mb-4">
                 <Clock className="h-8 w-8 text-primary-600" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Same-Day Surveys</h3>
-              <p className="text-gray-600 text-sm">Free security assessments available today</p>
+              <h3 className="text-lg font-semibold mb-2">Site Surveys</h3>
+              <p className="text-gray-600 text-sm">No-obligation security assessments by appointment</p>
             </div>
             <div className="text-center p-6 rounded-xl hover:bg-white hover:shadow-md transition-all">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-50 rounded-full mb-4">
@@ -159,7 +159,7 @@ export default function Home() {
                 <CheckCircle className="h-8 w-8 text-primary-600" />
               </div>
               <h3 className="text-lg font-semibold mb-2">24/7 Monitoring</h3>
-              <p className="text-gray-600 text-sm">Round-the-clock monitoring and support</p>
+              <p className="text-gray-600 text-sm">Round-the-clock alarm monitoring options</p>
             </div>
             <div className="text-center p-6 rounded-xl hover:bg-white hover:shadow-md transition-all">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-50 rounded-full mb-4">
@@ -299,8 +299,8 @@ export default function Home() {
             Ready to Secure Your Property?
           </h2>
           <p className="text-xl mb-8 text-primary-100">
-            Get a free, no-obligation security survey from our professional engineers. 
-            Same-day appointments available, subject to availability.
+            Get a no-obligation security survey from our professional engineers.
+            <span className="block text-sm mt-3">{SURVEY_TERMS}</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="flex flex-col gap-1">
@@ -318,7 +318,7 @@ export default function Home() {
               </a>
             </div>
             <a
-              href={whatsappLink(`Hi, I'd like a free security survey`)}
+              href={whatsappLink(`Hi, I'd like a security survey`)}
               className="bg-green-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors"
               target="_blank"
               rel="noopener noreferrer"

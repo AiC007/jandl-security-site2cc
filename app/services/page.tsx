@@ -3,12 +3,12 @@ import Link from 'next/link';
 import { Shield, Camera, Flame, Lock, Lightbulb, CheckCircle, ArrowRight, HelpCircle, ClipboardCheck } from 'lucide-react';
 import QuickQuoteForm from '@/components/QuickQuoteForm';
 import { generateServiceSchema, generateFAQPageSchema, generateBreadcrumbSchema } from '@/lib/schema';
-import { COMPANY_INFO } from '@/lib/utils';
+import { COMPANY_INFO, SURVEY_TERMS } from '@/lib/utils';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Security Services - Alarms, CCTV, Fire Protection',
-  description: 'Professional security services across Essex & Greater London. Burglar alarms, CCTV systems, fire alarms, access control, security lighting. Free surveys, same-day service.',
+  description: 'Professional security services across Essex & Greater London. Burglar alarms, CCTV systems, fire alarms, access control, security lighting.',
   keywords: [
     'security services Essex',
     'burglar alarm installation',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Security Services - Alarms, CCTV, Fire Protection',
-    description: 'Professional security services across Essex & Greater London. Free surveys, same-day service, 24/7 emergency support.',
+    description: 'Professional security services across Essex & Greater London. Burglar alarms, CCTV, fire alarms, access control and security lighting.',
   },
   alternates: {
     canonical: `${COMPANY_INFO.website}/services`,
@@ -35,7 +35,7 @@ const serviceDetails = [
     slug: 'burglar-alarms',
     description: 'Comprehensive burglar alarm systems for complete property protection',
     features: ['Wired & wireless systems', '24/7 monitoring available', 'Smartphone app control', 'Police response eligible', 'Pet-friendly detectors', 'SSAIB approved installation'],
-    process: ['Free security survey', 'Custom system design', 'Professional installation', 'Full system commissioning', 'User training provided', 'Ongoing maintenance'],
+    process: ['Security survey', 'Custom system design', 'Professional installation', 'Full system commissioning', 'User training provided', 'Ongoing maintenance'],
     benefits: ['Insurance premium discounts', 'Deterrent effect on intruders', 'Peace of mind 24/7', 'Remote monitoring capability', 'Quick emergency response'],
     priceRange: 'From £450 plus VAT',
     childPages: [
@@ -134,7 +134,7 @@ const serviceDetails = [
       'Essex and Greater London coverage',
     ],
     process: [
-      'Free survey and scope',
+      'Survey and scope',
       'Accredited assessment',
       'Written report and prioritised action plan',
       'Remedial works by J&L Security',
@@ -184,7 +184,7 @@ const faqs = [
   },
   {
     question: 'How quickly can you respond to emergency callouts?',
-    answer: 'We provide 24/7 emergency response across Essex and Greater London. Customers on a maintenance contract get same-day attendance. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Emergency callout charges apply outside normal business hours.'
+    answer: '24/7 emergency callouts are available, depending on location and the system fault. Customers on a maintenance contract get same-day attendance, and fire alarm maintenance customers get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is. Emergency callout charges apply outside normal business hours.'
   },
   {
     question: 'Do your systems qualify for insurance discounts?',
@@ -233,7 +233,7 @@ export default function ServicesPage() {
             </h1>
             <p className="text-xl mb-8 text-primary-100 max-w-3xl mx-auto">
               Comprehensive security solutions across Essex & Greater London. From burglar alarms 
-              to fire protection, we provide professional installation, maintenance, and 24/7 support.
+              to fire protection, we provide professional installation, maintenance, and support.
             </p>
           </div>
         </div>
@@ -382,8 +382,9 @@ export default function ServicesPage() {
             <div>
               <h2 className="text-3xl font-bold mb-4">Ready to Secure Your Property?</h2>
               <p className="text-xl mb-6 text-primary-100">
-                Get a free, no-obligation security survey from our experienced engineers. 
+                Get a no-obligation security survey from our experienced engineers.
                 We'll assess your needs and recommend the most suitable security solutions.
+                <span className="block text-sm mt-3">{SURVEY_TERMS}</span>
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex flex-col gap-1">

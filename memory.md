@@ -1,6 +1,6 @@
 # J&L Security: Project Memory
 
-**Last updated:** 2026-10-10
+**Last updated:** 2026-10-11
 **Maintained by:** The AI Consultancy (London) Ltd
 **Purpose:** Living reference for all AI sessions working on this project. Update after every substantive session.
 
@@ -270,11 +270,34 @@ Priority sequence:
 | /docs/2026-09-28-all-live-client-email.html | Branded HTML body of the same email, as sent |
 | /docs/2026-09-30-september-performance-report-client-email.md | September 2026 performance report: figures, the 16 September impressions fall, delivery against the August plan, October plan (canonical copy; reviewed; SENT 2026-09-30 06:35 UTC, message `1a0f106371e357ea`) |
 | /docs/2026-09-30-september-performance-report-client-email.html | Branded HTML body of the same email |
-| /docs/2026-10-10-callout-attendance-ack-client-email.md | Wendy acknowledgement of Jag's callout attendance answer of 9 October (canonical copy; Gmail draft `r164876399552225821`, NOT yet sent) |
+| /docs/2026-10-10-callout-attendance-ack-client-email.md | Wendy acknowledgement of Jag's callout attendance answer of 9 October (canonical copy; SENT 2026-10-10 07:00 UTC, message `1a1249c84d28ebe9`, unedited) |
 | /docs/2026-10-10-callout-attendance-ack-client-email.html | Branded HTML body of the same email |
+| /docs/2026-10-11-survey-callout-fire-reply-client-email.md | Wendy reply to Jag's three further changes of 11 October: surveys, 24/7 callouts, fire alarm 4 hours (canonical copy; Gmail draft `r7922601539220793888`, NOT yet sent) |
+| /docs/2026-10-11-survey-callout-fire-reply-client-email.html | Branded HTML body of the same email |
 ---
 
 ## 11. Last Session Summary
+
+### 2026-10-11: Jag's three further changes. Reply DRAFTED; NOTHING BUILT. Pick up here.
+
+**Trigger.** Jag's reply of 2026-10-11 15:14 UTC (thread `1a0e714b643af248`, message `1a12b87c00a6afba`), answering the three items the 10 October acknowledgement left open:
+1. **Surveys.** Change "free same day surveys" to "free surveys depending on location and type of service required. If a fee is charged it will be a nominal fee which will be deducted from the final invoice".
+2. **24/7.** "Yes 24/7 emergency call outs available depending location and system fault."
+3. **Fire.** "Maintained fire alarm customer response time = 4 hours."
+
+**Email.** Wendy reply drafted once on the thread: draft `r7922601539220793888`, not yet sent. It confirms the callout change is live, restates the three changes, and tells Jag that "Free Survey" buttons will become "Book a Survey". The 10 October acknowledgement went out unedited at 07:00 UTC (`1a1249c84d28ebe9`), so this reply also discharges its "we will confirm when it is live".
+
+**To build (source counts, 2026-10-11, `app`, `components`, `lib`, `public`).**
+- **Surveys, the large one.** About 31 same-day survey, appointment or service claims in 13 files, and about 111 "free survey" mentions in 22 files (32 in `lib/blog.ts`, 22 in the service-and-area template, 13 on Contact, 11 each in the service and area templates), plus the "Free Survey" header button on every page, "Book Free Survey" on the homepage, meta descriptions, `llms.txt`, `llms-full.txt` and the agent-skill files. Unqualified "free" has to go wherever Jag's condition cannot sit beside it. Jag did not mention quotes; "Get Free Quote" stays unless he says otherwise.
+- **24/7.** About 32 emergency, support or callout claims in 16 files, including the header banner, Contact, About ("Always available"), Terms section 7, the area-page "24/7 Emergency Cover" card and the social-share description. Each needs "depending on location and the system fault". 24/7 monitoring through the ARC is a different claim and stays.
+- **Fire, the small one.** "visit made within 8 hours" appears three times (`app/services/[service]/page.tsx` line 177, and twice in the panel fault guide in `lib/blog.ts`). Two lines changed on 10 October now also need it: the fire-fault answer on the FAQs page and the Chelmsford fire servicing FAQ, both of which say same-day. Use Jag's word "response", not "visit".
+
+**Assumptions in the draft, for the operator to confirm or edit before sending.**
+- Non-fire maintained customers stay at same-day attendance.
+- "Book a Survey" as the button label.
+- The south-west pages still make no time promise.
+
+**Still open with Jag:** the Aico Expert Installer level.
 
 ### 2026-10-10: Jag's callout attendance answer. SHIPPED and verified live.
 

@@ -360,13 +360,13 @@ export const faqs: FAQ[] = [
   {
     id: '1',
     question: 'How quickly can you respond to emergency callouts?',
-    answer: 'We offer 24/7 emergency response across Essex and Greater London. Customers on a maintenance contract get same-day attendance. For all other callouts, how soon we attend depends on the type of job and how urgent it is.',
+    answer: '24/7 emergency callouts are available across Essex and Greater London, depending on location and the system fault. Customers on a maintenance contract get same-day attendance, and fire alarm maintenance customers get a response within 4 hours. For all other callouts, how soon we attend depends on the type of job and how urgent it is.',
     category: 'general'
   },
   {
     id: '2',
-    question: 'Do you provide free security surveys?',
-    answer: 'Yes, we offer free, no-obligation security surveys for all new customers. Our engineers will assess your property and recommend the most suitable security solutions.',
+    question: 'Do you charge for security surveys?',
+    answer: 'Surveys are free depending on location and the type of service required. If a fee is charged, it is a nominal fee which is deducted from the final invoice. Surveys carry no obligation. Our engineers will assess your property and recommend the most suitable security solutions.',
     category: 'general'
   },
   {

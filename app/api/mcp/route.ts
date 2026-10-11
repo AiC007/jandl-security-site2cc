@@ -81,7 +81,7 @@ const TOOLS = [
   {
     name: 'get_pricing_guide',
     description:
-      'Get J&L Security indicative installed costs for alarms, CCTV and fire systems. Prices are starting points excluding VAT; a free survey gives an exact quote.',
+      'Get J&L Security indicative installed costs for alarms, CCTV and fire systems. Prices are starting points excluding VAT; a site survey gives an exact quote.',
     inputSchema: { type: 'object', properties: {}, additionalProperties: false },
   },
   {

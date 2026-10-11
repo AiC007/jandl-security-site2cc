@@ -42,7 +42,8 @@ export default function TermsPage() {
 
           <h2>3. Quotations and Pricing</h2>
           <ul>
-            <li>All surveys and quotations are provided free of charge with no obligation.</li>
+            <li>Quotations are provided free of charge with no obligation.</li>
+            <li>Surveys are free depending on location and the type of service required. If a fee is charged, it is a nominal fee which is deducted from the final invoice.</li>
             <li>All quoted prices are exclusive of VAT unless stated otherwise.</li>
             <li>Quotations are valid for 30 days from the date of issue unless otherwise stated.</li>
             <li>Final pricing may vary if the scope of work changes after the initial survey.</li>
@@ -73,9 +74,9 @@ export default function TermsPage() {
 
           <h2>7. Emergency Callouts</h2>
           <ul>
-            <li>24/7 emergency callout services are available.</li>
+            <li>24/7 emergency callout services are available, depending on location and the system fault.</li>
             <li>Emergency callout charges apply outside regular business hours (Monday to Friday 9AM to 5PM, Saturday 9AM to 1PM).</li>
-            <li>Customers on a maintenance contract receive same-day attendance. For all other callouts, attendance depends on the type of job and how urgent it is, subject to engineer availability.</li>
+            <li>Customers on a maintenance contract receive same-day attendance. Customers on a fire alarm maintenance contract receive a response within 4 hours. For all other callouts, attendance depends on the type of job and how urgent it is, subject to engineer availability.</li>
           </ul>
 
           <h2>8. Liability</h2>

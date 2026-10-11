@@ -22,7 +22,7 @@ export default function Header() {
     <>
       {/* Emergency Banner */}
       <div className="bg-red-600 text-white text-center py-2 text-sm">
-        <strong>24/7 Emergency Callouts Available</strong> - Call {COMPANY_INFO.phone} or {COMPANY_INFO.phone2} Now
+        <strong>24/7 Emergency Callouts Available</strong>, depending on location and system fault. Call {COMPANY_INFO.phone} or {COMPANY_INFO.phone2}
       </div>
 
       <header className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
@@ -72,7 +72,7 @@ export default function Header() {
                 href="/contact"
                 className="bg-primary-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-primary-700 transition-colors"
               >
-                Free Survey
+                Book a Survey
               </Link>
             </div>
 
@@ -121,7 +121,7 @@ export default function Header() {
                   className="block mx-3 mt-2 bg-primary-600 text-white px-4 py-2 rounded-md text-center font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Free Survey
+                  Book a Survey
                 </Link>
               </div>
             </nav>

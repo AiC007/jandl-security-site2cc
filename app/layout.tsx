@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: `${COMPANY_INFO.name} - ${COMPANY_INFO.tagline}`,
     template: `%s | ${COMPANY_INFO.name}`
   },
-  description: "Professional security system installation and maintenance across Essex & Greater London. Burglar alarms, CCTV, fire alarms, access control. Same-day surveys, 24/7 support.",
+  description: "Professional security system installation and maintenance across Essex & Greater London. Burglar alarms, CCTV, fire alarms, access control.",
   keywords: [
     "security systems",
     "burglar alarms",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: COMPANY_INFO.name,
     title: `${COMPANY_INFO.name} - ${COMPANY_INFO.tagline}`,
-    description: "Professional security systems across Essex & Greater London. Free surveys, same-day service, 24/7 emergency support.",
+    description: "Professional security systems across Essex & Greater London. Burglar alarms, CCTV, fire alarms and access control, installed and maintained.",
     url: COMPANY_INFO.website,
     images: [
       {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: `${COMPANY_INFO.name} - ${COMPANY_INFO.tagline}`,
-    description: "Professional security systems across Essex & Greater London. Free surveys, same-day service, 24/7 emergency support.",
+    description: "Professional security systems across Essex & Greater London. Burglar alarms, CCTV, fire alarms and access control, installed and maintained.",
     images: ['/images/og-image.jpg'],
   },
   // Google Search Console: verify via DNS TXT record after domain is connected

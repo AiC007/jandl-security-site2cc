@@ -26,7 +26,7 @@ export const blogPosts: BlogPost[] = [
     content: `
 <p>A professionally installed burglar alarm in the UK typically costs <strong>£450 to £2,500 for a domestic property in 2026</strong>, depending on the system type, the number of detectors, and whether monitoring is included. The figures in this guide are based on our experience installing intruder alarm systems across Essex and Greater London since 2011, including hundreds of installations across Brentwood, Romford, Ilford, Chelmsford, Upminster, and the wider M25 corridor.</p>
 
-<p>The aim of this guide is straightforward: to give you a realistic picture of what a burglar alarm costs to install in the UK in 2026, what affects the price, and what to expect from a properly accredited installer. All figures here are indicative ranges; the only reliable way to get an exact price is to <a href="/contact">book a free site survey</a>.</p>
+<p>The aim of this guide is straightforward: to give you a realistic picture of what a burglar alarm costs to install in the UK in 2026, what affects the price, and what to expect from a properly accredited installer. All figures here are indicative ranges; the only reliable way to get an exact price is to <a href="/contact">book a site survey</a>.</p>
 
 <h2>Types of Alarm and What They Cost</h2>
 
@@ -67,7 +67,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>What Affects the Price?</h2>
 
-<p>Beyond the system type, several factors push the price up or down. A free survey lets the installer see them all in context; the ranges below are typical contributions.</p>
+<p>Beyond the system type, several factors push the price up or down. A survey lets the installer see them all in context; the ranges below are typical contributions.</p>
 
 <h3>Wired vs Wireless</h3>
 
@@ -102,7 +102,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>J&amp;L Security 2026 Pricing: Confirmed Installed Rates</h2>
 
-<p>The ranges above are sector-wide indicative figures. The pricing in this section is our own confirmed 2026 starting pricing for installations in Essex and Greater London. Final quotations follow a free site survey because the property layout determines the detector count and cable routes; the figures below are the published starting points.</p>
+<p>The ranges above are sector-wide indicative figures. The pricing in this section is our own confirmed 2026 starting pricing for installations in Essex and Greater London. Final quotations follow a site survey because the property layout determines the detector count and cable routes; the figures below are the published starting points.</p>
 
 <h3>Standard Wireless Grade 2 Residential Package: from £485 + VAT</h3>
 
@@ -167,7 +167,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Both packages include one routine annual maintenance visit and one emergency callout within the contract year.</p>
 
-<p><em>Note on pricing: all figures above are starting prices excluding VAT. The final quotation is provided in writing after a free site survey, because the detector count, mounting requirements, and cable routes vary by property. Pricing is current as at May 2026 and may be reviewed periodically.</em></p>
+<p><em>Note on pricing: all figures above are starting prices excluding VAT. The final quotation is provided in writing after a site survey, because the detector count, mounting requirements, and cable routes vary by property. Pricing is current as at May 2026 and may be reviewed periodically.</em></p>
 
 <h2>NSI and SSAIB Approved Installer vs Unaccredited: Why It Matters</h2>
 
@@ -302,7 +302,7 @@ export const blogPosts: BlogPost[] = [
 </tbody>
 </table>
 
-<p><em>Pricing note: all figures are starting prices excluding VAT. Final quotations follow a free site survey because the detector count, mounting requirements, and cable routes vary by property. Pricing current as at May 2026.</em></p>
+<p><em>Pricing note: all figures are starting prices excluding VAT. Final quotations follow a site survey because the detector count, mounting requirements, and cable routes vary by property. Pricing current as at May 2026.</em></p>
 
 <h2>FAQs</h2>
 
@@ -328,7 +328,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>What does the standard J&amp;L Security wireless burglar alarm package include?</h3>
 
-<p>The J&amp;L Security standard wireless residential package starts from £485 + VAT and uses the Pyronix Enforcer V11 Grade 2 control panel. It includes the panel with an on-board mains-powered keypad, one wireless door contact for the main entrance, two wireless motion detectors, two proximity tags for arming and disarming, and one wireless external siren. The system is supplied as a "bells only" alarm by default, meaning the siren sounds at the property when triggered. Most customers add the Homecontrol 2.0 app module (£48 + VAT for the module plus the first year) so they can receive push notifications and arm or disarm remotely. Additional detectors, panic buttons, vibration sensors, dummy sirens, keyfobs, and an LCD keypad can be added at fixed accessory prices, with the final specification finalised at the free site survey.</p>
+<p>The J&amp;L Security standard wireless residential package starts from £485 + VAT and uses the Pyronix Enforcer V11 Grade 2 control panel. It includes the panel with an on-board mains-powered keypad, one wireless door contact for the main entrance, two wireless motion detectors, two proximity tags for arming and disarming, and one wireless external siren. The system is supplied as a "bells only" alarm by default, meaning the siren sounds at the property when triggered. Most customers add the Homecontrol 2.0 app module (£48 + VAT for the module plus the first year) so they can receive push notifications and arm or disarm remotely. Additional detectors, panic buttons, vibration sensors, dummy sirens, keyfobs, and an LCD keypad can be added at fixed accessory prices, with the final specification finalised at the site survey.</p>
 
 <h3>How much does ongoing burglar alarm monitoring and maintenance cost with J&amp;L Security?</h3>
 
@@ -336,9 +336,9 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Get a Quote</h2>
 
-<p>Burglar alarm pricing depends on too many factors to accurately quote without seeing the property. Every J&L Security installation starts with a free site survey: we visit the property, agree the system specification, and provide a fixed-price written quotation before any work starts. There is no obligation, and the survey itself is genuinely free.</p>
+<p>Burglar alarm pricing depends on too many factors to accurately quote without seeing the property. Every J&L Security installation starts with a site survey: we visit the property, agree the system specification, and provide a fixed-price written quotation before any work starts. There is no obligation. Surveys are free depending on location and the type of service required. If a fee is charged, it is a nominal fee which is deducted from the final invoice.</p>
 
-<p>To book a free survey, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770. We cover all of Essex and Greater London, with active customers across <a href="/locations/brentwood">Brentwood</a>, <a href="/burglar-alarm-servicing/romford">Romford</a>, Ilford, Chelmsford, Upminster, and across our 14 London target boroughs from Islington and Hackney through to Hammersmith, Battersea, and Barnet. For more on our intruder alarm offer, see our <a href="/services/burglar-alarms">burglar alarm services</a> page or read about <a href="/blog/insurance-approved-burglar-alarms-uk-2026">insurance-approved burglar alarms in 2026</a>.</p>
+<p>To book a survey, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770. We cover all of Essex and Greater London, with active customers across <a href="/locations/brentwood">Brentwood</a>, <a href="/burglar-alarm-servicing/romford">Romford</a>, Ilford, Chelmsford, Upminster, and across our 14 London target boroughs from Islington and Hackney through to Hammersmith, Battersea, and Barnet. For more on our intruder alarm offer, see our <a href="/services/burglar-alarms">burglar alarm services</a> page or read about <a href="/blog/insurance-approved-burglar-alarms-uk-2026">insurance-approved burglar alarms in 2026</a>.</p>
 `,
     faqs: [
       {
@@ -363,7 +363,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: 'What does the standard J&L Security wireless burglar alarm package include?',
-        answer: 'The J&L Security standard wireless residential package starts from £485 + VAT and uses the Pyronix Enforcer V11 Grade 2 control panel. It includes the panel with an on-board mains-powered keypad, one wireless door contact for the main entrance, two wireless motion detectors, two proximity tags for arming and disarming, and one wireless external siren. The system is supplied as a "bells only" alarm by default, meaning the siren sounds at the property when triggered. Most customers add the Homecontrol 2.0 app module (£48 + VAT for the module plus the first year) so they can receive push notifications and arm or disarm remotely. Additional detectors, panic buttons, vibration sensors, dummy sirens, keyfobs, and an LCD keypad can be added at fixed accessory prices, with the final specification finalised at the free site survey.'
+        answer: 'The J&L Security standard wireless residential package starts from £485 + VAT and uses the Pyronix Enforcer V11 Grade 2 control panel. It includes the panel with an on-board mains-powered keypad, one wireless door contact for the main entrance, two wireless motion detectors, two proximity tags for arming and disarming, and one wireless external siren. The system is supplied as a "bells only" alarm by default, meaning the siren sounds at the property when triggered. Most customers add the Homecontrol 2.0 app module (£48 + VAT for the module plus the first year) so they can receive push notifications and arm or disarm remotely. Additional detectors, panic buttons, vibration sensors, dummy sirens, keyfobs, and an LCD keypad can be added at fixed accessory prices, with the final specification finalised at the site survey.'
       },
       {
         question: 'How much does ongoing burglar alarm monitoring and maintenance cost with J&L Security?',
@@ -474,7 +474,7 @@ export const blogPosts: BlogPost[] = [
 <p>A professional CCTV installation for a typical domestic property takes 4 to 8 hours. The process includes:</p>
 
 <ol>
-<li><strong>Site survey:</strong> an engineer visits your property to assess camera positions, cable routes, NVR location, and network connectivity. This is free and without obligation at J&L Security.</li>
+<li><strong>Site survey:</strong> an engineer visits your property to assess camera positions, cable routes, NVR location, and network connectivity. This is without obligation at J&L Security.</li>
 <li><strong>System design:</strong> based on the survey, we recommend camera types, positions, and a recording configuration that meets your requirements.</li>
 <li><strong>Installation:</strong> cameras are mounted, cables are run (internally where possible to protect against tampering), and the NVR is installed in a secure location.</li>
 <li><strong>Configuration:</strong> each camera is adjusted for optimal viewing angle, recording schedules are set, and motion detection zones are configured to reduce false alerts.</li>
@@ -507,7 +507,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Avoid installers who offer to quote over the phone without seeing the property, who use consumer-grade cameras (the type sold in retail stores), or who cannot provide evidence of their accreditations.</p>
 
-<p>At J&L Security, we are SSAIB approved and have been installing CCTV systems across Essex since 2011. All our installations use Uniview commercial-grade equipment. To discuss your requirements, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> for a free survey.</p>
+<p>At J&L Security, we are SSAIB approved and have been installing CCTV systems across Essex since 2011. All our installations use Uniview commercial-grade equipment. To discuss your requirements, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> for a survey.</p>
 
 <p>Read more about our <a href="/services/cctv-systems">CCTV installation services</a> or explore our <a href="/services">full range of security services</a>.</p>
 `
@@ -652,11 +652,11 @@ export const blogPosts: BlogPost[] = [
 </tbody>
 </table>
 
-<p><sup>1</sup> Cost ranges are indicative, based on typical Essex and Greater London installations carried out by J&L Security from 2024 to 2026, supply and installed inclusive of VAT. They assume a standard property layout, accessible cable routes, and no significant making-good or remedial electrical work. Final costs depend on detector count, number of floors, cable runs, and the condition of any existing wiring. <a href="/contact">Book a free site survey</a> for a fixed-price quotation against your specific property.</p>
+<p><sup>1</sup> Cost ranges are indicative, based on typical Essex and Greater London installations carried out by J&L Security from 2024 to 2026, supply and installed inclusive of VAT. They assume a standard property layout, accessible cable routes, and no significant making-good or remedial electrical work. Final costs depend on detector count, number of floors, cable runs, and the condition of any existing wiring. <a href="/contact">Book a site survey</a> for a fixed-price quotation against your specific property.</p>
 
 <h2>What Does an HMO Fire Alarm System Cost?</h2>
 
-<p>Pricing for HMO fire alarm systems is one of the most common questions landlords ask. The honest answer is that it depends on the grade, the category, the property layout, and the number of detectors required. The figures below are indicative ranges drawn from typical installations across Essex and Greater London. Use them for budgeting only; your actual quote will be based on a free site survey.</p>
+<p>Pricing for HMO fire alarm systems is one of the most common questions landlords ask. The honest answer is that it depends on the grade, the category, the property layout, and the number of detectors required. The figures below are indicative ranges drawn from typical installations across Essex and Greater London. Use them for budgeting only; your actual quote will be based on a site survey.</p>
 
 <h3>Typical 5-Bedroom HMO (Grade D1, Category LD2 or LD3)</h3>
 
@@ -685,7 +685,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Panel-controlled Grade A systems in HMOs are serviced twice a year, following BS 5839-1. For Grade D systems, an annual inspection by a competent person is good practice, and HMO licences often require it. <strong>Annual servicing typically starts from around £120 per year</strong> for a small Grade D HMO, rising to £180 to £300 per year for a Grade A system, depending on detector count and travel.</p>
 
-<p><em>Pricing note: these are indicative ranges based on representative Essex and Greater London installations. Exact costs depend on property layout, number of floors, number of detectors, cable accessibility, and any remedial electrical work. J&L Security provides <a href="/contact">free site surveys</a> with fixed-price quotations before any work is committed.</em></p>
+<p><em>Pricing note: these are indicative ranges based on representative Essex and Greater London installations. Exact costs depend on property layout, number of floors, number of detectors, cable accessibility, and any remedial electrical work. J&L Security provides <a href="/contact">site surveys</a> with fixed-price quotations before any work is committed.</em></p>
 
 <h2>Servicing Requirements</h2>
 
@@ -770,7 +770,7 @@ export const blogPosts: BlogPost[] = [
 <p>At J&L Security, we are BAFE certified and FIA members, and we have been installing BS 5839-6 and BS 5839-1 compliant fire alarm systems for HMO landlords across Essex and Greater London since 2011. Our service includes:</p>
 
 <ul>
-<li>Free initial survey and fire alarm system design to BS 5839-6 or BS 5839-1, as the property requires</li>
+<li>Initial survey and fire alarm system design to BS 5839-6 or BS 5839-1, as the property requires</li>
 <li>Installation of Grade A and Grade D systems to the category specified in your fire risk assessment</li>
 <li>Full commissioning, testing, and handover documentation</li>
 <li>6-monthly servicing contracts with reminder notifications</li>
@@ -779,7 +779,7 @@ export const blogPosts: BlogPost[] = [
 <li>Certificates suitable for submission to your local authority licensing team</li>
 </ul>
 
-<p>If you are unsure what system your HMO needs, <a href="/contact">contact us for a free survey</a> or call <a href="tel:02045385925">0204 538 5925</a>. We can advise on the requirements for your specific property and local authority area.</p>
+<p>If you are unsure what system your HMO needs, <a href="/contact">contact us for a survey</a> or call <a href="tel:02045385925">0204 538 5925</a>. We can advise on the requirements for your specific property and local authority area.</p>
 
 <p>This article covers HMO licensing specifically. For the standards themselves, including the full set of categories, grades and servicing obligations, see our companion guide to <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839-1 and BS 5839-6</a>. That guide is the right starting point if you need to understand <a href="/blog/bs5839-1-and-bs5839-6-explained-2026">BS 5839-1</a> for non-domestic premises rather than the domestic and HMO requirements set out here.</p>
 
@@ -1052,7 +1052,7 @@ export const blogPosts: BlogPost[] = [
 <li>Take-over of existing systems where the previous maintainer is no longer suitable</li>
 </ul>
 
-<p>Annual servicing contracts start at £180 + VAT for commercial premises and £120 + VAT for residential and small HMO systems. Both packages include one routine service and one emergency callout within the contract year. New installations and fire risk assessments are quoted after a free site survey.</p>
+<p>Annual servicing contracts start at £180 + VAT for commercial premises and £120 + VAT for residential and small HMO systems. Both packages include one routine service and one emergency callout within the contract year. New installations and fire risk assessments are quoted after a site survey.</p>
 
 <h2>FAQs</h2>
 
@@ -1082,7 +1082,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Get a Survey</h2>
 
-<p>For a free survey covering fire alarm specification, <a href="/services/fire-risk-assessments">fire risk assessment</a>, or service contract takeover, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770. We cover all of Essex and Greater London. For more on fire alarms see our <a href="/services/fire-alarms">fire alarm services</a> page or read our <a href="/blog/hmo-fire-alarm-requirements-bs5839">HMO fire alarm requirements guide</a>.</p>
+<p>For a survey covering fire alarm specification, <a href="/services/fire-risk-assessments">fire risk assessment</a>, or service contract takeover, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770. We cover all of Essex and Greater London. For more on fire alarms see our <a href="/services/fire-alarms">fire alarm services</a> page or read our <a href="/blog/hmo-fire-alarm-requirements-bs5839">HMO fire alarm requirements guide</a>.</p>
 `,
     faqs: [
       {
@@ -1156,7 +1156,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Be cautious of any company that quotes over the phone or by email without visiting. A phone quote means they are guessing: guessing the number of detectors, guessing the cable routes, guessing the equipment needed. This leads to systems that are over-specified (costing you more than necessary), under-specified (leaving gaps in coverage), or require additional work on installation day at extra cost.</p>
 
-<p>A proper survey should be free and without obligation. During the survey, the engineer should ask about your security concerns, explain their recommendations and why, and discuss the different system options available within your budget.</p>
+<p>A proper survey should be without obligation. During the survey, the engineer should ask about your security concerns, explain their recommendations and why, and discuss the different system options available within your budget.</p>
 
 <h2>4. What Is Included in the Price?</h2>
 
@@ -1233,7 +1233,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Getting two or three quotes from inspectorate-registered companies gives you a fair comparison. The cheapest quote is not always the best value: factor in equipment quality, warranty terms, and ongoing support costs over the life of the system.</p>
 
-<p>At J&L Security, we are SSAIB approved, BAFE certified, and have been serving Essex and Greater London since 2011. We provide free, no-obligation surveys, transparent fixed-price quotes, and ongoing maintenance and support. If you would like to discuss your security requirements, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a>.</p>
+<p>At J&L Security, we are SSAIB approved, BAFE certified, and have been serving Essex and Greater London since 2011. We provide no-obligation surveys, transparent fixed-price quotes, and ongoing maintenance and support. If you would like to discuss your security requirements, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a>.</p>
 
 <p>Learn more about our <a href="/services">security services</a> or read our other <a href="/blog">blog articles</a> for more guidance on choosing and maintaining security systems.</p>
 `
@@ -1345,7 +1345,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>At J&L Security, every alarm we install is certified, documented, and delivered with the paperwork your insurer will expect. We have been serving homes and businesses across Essex and Greater London since 2011, and we handle URN applications, monitoring contracts, and annual servicing as part of our standard installation package.</p>
 
-<p>If you have an insurance condition you need to meet, or you are comparing quotes for an approved alarm, <a href="/contact">contact us</a> for a free survey or call <a href="tel:02045385925">0204 538 5925</a>. Read more about our <a href="/services/burglar-alarms">burglar alarm installation services</a> or explore our <a href="/services">full range of security services</a>.</p>
+<p>If you have an insurance condition you need to meet, or you are comparing quotes for an approved alarm, <a href="/contact">contact us</a> for a survey or call <a href="tel:02045385925">0204 538 5925</a>. Read more about our <a href="/services/burglar-alarms">burglar alarm installation services</a> or explore our <a href="/services">full range of security services</a>.</p>
 `
   },
   {
@@ -1453,7 +1453,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>At J&L Security, we install both wired and wireless systems across Essex and Greater London, and we regularly fit hybrid systems where it is the best fit for the property. Every installation is SSAIB approved, certified to BS EN 50131, and supported by our ongoing maintenance service.</p>
 
-<p>If you would like a free survey and a written recommendation for your property, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a>. You can also read more about our <a href="/services/burglar-alarms">burglar alarm services</a> or explore our <a href="/blog">other guides</a>.</p>
+<p>If you would like a survey and a written recommendation for your property, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a>. You can also read more about our <a href="/services/burglar-alarms">burglar alarm services</a> or explore our <a href="/blog">other guides</a>.</p>
 `
   },
   {
@@ -1565,7 +1565,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>If you are considering adding cameras because your premises may fall within scope of Martyn's Law, note that the data protection position is unchanged: expanding a system is the point at which signage and retention obligations are most often breached. See our guide to <a href="/blog/martyns-law-premises-requirements-2026">Martyn's Law and which premises are in scope</a> for what the Act actually requires.</p>
 
-<p>To arrange a free CCTV survey or compliance review for your business, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a>. Read more about our <a href="/services/cctv-systems">CCTV installation services</a> or explore our <a href="/services">full range of business security services</a>.</p>
+<p>To arrange a CCTV survey or compliance review for your business, <a href="/contact">contact us</a> or call <a href="tel:02045385925">0204 538 5925</a>. Read more about our <a href="/services/cctv-systems">CCTV installation services</a> or explore our <a href="/services">full range of business security services</a>.</p>
 
 <p><em>This article is general guidance based on ICO publications and is not a substitute for legal advice. For specific compliance questions, consult a qualified data protection professional or the ICO directly.</em></p>
 `
@@ -2436,7 +2436,7 @@ export const blogPosts: BlogPost[] = [
 <li>Install and maintain <a href="/services/access-control">access control, door entry and electronic locking</a>, including zoned access for restricted areas</li>
 <li>Install and maintain intruder alarm systems</li>
 <li>Design, install, commission and service <a href="/services/fire-alarms">fire alarm systems</a> to BS 5839. J&amp;L Security is BAFE accredited for the installation and maintenance of fire alarms</li>
-<li>Carry out a free survey of existing systems and tell you honestly what is working and what is not</li>
+<li>Carry out a survey of existing systems and tell you honestly what is working and what is not</li>
 </ul>
 
 <p><strong>What we do not do:</strong></p>
@@ -2465,7 +2465,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Get a Survey of Your Existing Systems</h2>
 
-<p>If you operate premises in Essex or Greater London and want an honest assessment of whether your existing CCTV, access control or door entry systems are doing what you think they are doing, we offer a free site survey. We will tell you what is working, what needs repair, and where coverage falls short. We will not tell you that you need to buy something in order to comply with a law that does not require it.</p>
+<p>If you operate premises in Essex or Greater London and want an honest assessment of whether your existing CCTV, access control or door entry systems are doing what you think they are doing, we offer a site survey. We will tell you what is working, what needs repair, and where coverage falls short. We will not tell you that you need to buy something in order to comply with a law that does not require it.</p>
 
 <p><a href="/contact">Contact us</a> or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770. We cover all of Essex and Greater London.</p>
 
@@ -2524,7 +2524,7 @@ export const blogPosts: BlogPost[] = [
     content: `
 <p>There is no single price for a commercial fire alarm system, and any figure quoted before someone has looked at your building should be treated with caution. Two premises of identical floor area can differ by a multiple, not a margin, because the thing that drives the cost is not the size of the building. It is the level of detection the building actually needs, and that is set by the fire risk assessment rather than by the installer.</p>
 
-<p>This guide explains what genuinely determines the price, so that you can read a quote with confidence and compare two quotes fairly. It is general guidance rather than a price list. For a figure that applies to your building, the only reliable route is a <a href="/contact">free site survey</a>.</p>
+<p>This guide explains what genuinely determines the price, so that you can read a quote with confidence and compare two quotes fairly. It is general guidance rather than a price list. For a figure that applies to your building, the only reliable route is a <a href="/contact">site survey</a>.</p>
 
 <p>If you are looking for domestic or HMO costs rather than commercial, our guides to <a href="/blog/burglar-alarm-cost-uk-2026">burglar alarm costs</a> and <a href="/blog/hmo-fire-alarm-requirements-bs5839">HMO fire alarm requirements</a> cover that ground instead.</p>
 
@@ -2639,7 +2639,7 @@ export const blogPosts: BlogPost[] = [
     faqs: [
       {
         question: 'How much does a commercial fire alarm system cost in the UK?',
-        answer: 'There is no single figure, because the cost is driven by the BS 5839-1 category the building needs rather than by its floor area. Two premises of the same size can differ by a multiple depending on whether they need manual call points only, detection on escape routes, or full coverage of every area. The category is set by the fire risk assessment. The reliable way to get a figure for a specific building is a free site survey, and a quote should itemise equipment, installation, interfaces, commissioning and certification separately.',
+        answer: 'There is no single figure, because the cost is driven by the BS 5839-1 category the building needs rather than by its floor area. Two premises of the same size can differ by a multiple depending on whether they need manual call points only, detection on escape routes, or full coverage of every area. The category is set by the fire risk assessment. The reliable way to get a figure for a specific building is a site survey, and a quote should itemise equipment, installation, interfaces, commissioning and certification separately.',
       },
       {
         question: 'What is the difference between a conventional and an addressable fire alarm system?',
@@ -2840,7 +2840,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Getting the Fault Cleared</h2>
 
-<p>J&amp;L Security is a BAFE-certified fire alarm maintainer covering Essex and Greater London. We attend faults on the makes listed above, whether we installed the system or not, and we take over systems from other contractors where the previous maintainer is no longer suitable. Customers under our fire alarm maintenance contract have 24/7 emergency call out with a visit made within 8 hours.</p>
+<p>J&amp;L Security is a BAFE-certified fire alarm maintainer covering Essex and Greater London. We attend faults on the makes listed above, whether we installed the system or not, and we take over systems from other contractors where the previous maintainer is no longer suitable. Customers under our fire alarm maintenance contract get a response within 4 hours. 24/7 emergency call out is available, depending on location and the system fault.</p>
 
 <p>If you are reporting a fault, have the make from the panel fascia and what it is displaying ready when you call. See our <a href="/services/fire-alarms">fire alarm services</a> page for what we cover, <a href="/contact">request a call back</a>, or call <a href="tel:02045385925">0204 538 5925</a> or 0208 220 4770.</p>
 
@@ -2869,7 +2869,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: 'How quickly can you attend a fire alarm fault?',
-        answer: 'Customers under our fire alarm maintenance contract have 24/7 emergency call out with a visit made within 8 hours. We attend faults on the makes we support whether we installed the system or not, and we take over systems from other contractors where the previous maintainer is no longer suitable. Call 0204 538 5925 or 0208 220 4770 with the make from the panel fascia and what it is displaying, and we can usually tell you on the phone what class of fault it looks like and what the visit will involve.',
+        answer: 'Customers under our fire alarm maintenance contract get a response within 4 hours. 24/7 emergency call out is available, depending on location and the system fault. We attend faults on the makes we support whether we installed the system or not, and we take over systems from other contractors where the previous maintainer is no longer suitable. Call 0204 538 5925 or 0208 220 4770 with the make from the panel fascia and what it is displaying, and we can usually tell you on the phone what class of fault it looks like and what the visit will involve.',
       },
     ],
   },

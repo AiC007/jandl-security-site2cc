@@ -18,7 +18,7 @@
     {
       "name": "get-quote-and-contact",
       "type": "skill-md",
-      "description": "Get J&L Security contact channels and explain how a customer books a free security or fire-safety survey and quote.",
+      "description": "Get J&L Security contact channels and explain how a customer books a security or fire-safety survey and quote.",
       "url": "/.well-known/agent-skills/get-quote-and-contact/SKILL.md",
       "digest": "sha256:57a6882e82a7c3c0fe6186690ab63a3e7d4bdd53c90ee97eb934cac94f58c088"
     },

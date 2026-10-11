@@ -5,7 +5,7 @@ description: Retrieve J&L Security indicative installed costs for burglar alarms
 
 # J&L Security indicative pricing
 
-These are starting prices excluding VAT. Final quotations follow a free site
+These are starting prices excluding VAT. Final quotations follow a site
 survey. Use these as a guide only, not a fixed quote.
 
 ## How to use
@@ -24,5 +24,5 @@ ranges and context.
 - Fire alarm (HMO Grade D, BS 5839-6, 5-bedroom): approximately GBP 350 to 600 installed.
 - Domestic CCTV (2-camera basic system): from GBP 850 plus VAT installed.
 
-Always tell the user that an exact price needs a free survey, bookable on
+Always tell the user that an exact price needs a survey, bookable on
 0204 538 5925.

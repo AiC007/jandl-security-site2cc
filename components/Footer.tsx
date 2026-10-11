@@ -110,7 +110,7 @@ export default function Footer() {
                   >
                     {COMPANY_INFO.phone2}
                   </a>
-                  <div className="text-xs text-base-400">24/7 Emergency</div>
+                  <div className="text-xs text-base-400">24/7 emergency callouts, depending on location and system fault</div>
                 </div>
               </div>
               <div className="flex items-center space-x-3">

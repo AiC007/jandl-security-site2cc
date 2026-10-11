@@ -272,13 +272,41 @@ Priority sequence:
 | /docs/2026-09-30-september-performance-report-client-email.html | Branded HTML body of the same email |
 | /docs/2026-10-10-callout-attendance-ack-client-email.md | Wendy acknowledgement of Jag's callout attendance answer of 9 October (canonical copy; SENT 2026-10-10 07:00 UTC, message `1a1249c84d28ebe9`, unedited) |
 | /docs/2026-10-10-callout-attendance-ack-client-email.html | Branded HTML body of the same email |
-| /docs/2026-10-11-survey-callout-fire-reply-client-email.md | Wendy reply to Jag's three further changes of 11 October: surveys, 24/7 callouts, fire alarm 4 hours (canonical copy; Gmail draft `r7922601539220793888`, NOT yet sent) |
+| /docs/2026-10-11-survey-callout-fire-reply-client-email.md | Wendy reply to Jag's three further changes of 11 October: surveys, 24/7 callouts, fire alarm 4 hours (canonical copy; SENT 2026-10-11 15:33 UTC, message `1a12b994d41c881e`) |
 | /docs/2026-10-11-survey-callout-fire-reply-client-email.html | Branded HTML body of the same email |
+| /docs/2026-10-11-survey-callout-fire-live-client-email.md | Wendy email to Jag confirming the survey, 24/7 and fire alarm changes are live, with two things for him to check (canonical copy; Gmail draft `r-6385204077536785627`, NOT yet sent) |
+| /docs/2026-10-11-survey-callout-fire-live-client-email.html | Branded HTML body of the same email |
 ---
 
 ## 11. Last Session Summary
 
-### 2026-10-11: Jag's three further changes. Reply DRAFTED; NOTHING BUILT. Pick up here.
+### 2026-10-11 (evening): Surveys, 24/7 callouts and fire alarm 4 hours. SHIPPED and verified live.
+
+**Shipped.** [PR #28](https://github.com/AiC007/jandl-security-site2cc/pull/28) squash-merged as **`d56bf31`** on the operator's instruction; branch deleted, no open PRs; Vercel production status success. **Verified live with curl, all 114 sitemap URLs:** every one 200; none carries "free survey", same-day or next-day survey wording, "visit made within 8 hours" or an unqualified 24/7 emergency line; survey terms on 111 (not the three lock and safe pages), qualified 24/7 on 114, "response within 4 hours" on 38, "Book a Survey" on 114, both phones on 114. The Westminster markdown page, `llms.txt`, `llms-full.txt` and the agent-skill files carry the new wording.
+
+**The rules the site now follows (all from Jag, 9 and 11 October).**
+- **Surveys.** No same-day promise. "Surveys are free depending on location and the type of service required. If a fee is charged, it is a nominal fee which is deducted from the final invoice." That sentence is `SURVEY_TERMS` in `lib/utils.ts`; use the constant, never retype it. Buttons say "Book a Survey". Never write an unqualified "free survey".
+- **Emergency callouts.** 24/7, "depending on location and the system fault". Every 24/7 callout claim carries the condition. 24/7 monitoring through the ARC is a separate claim.
+- **Attendance.** Maintenance contract customers: same-day attendance. Fire alarm maintenance customers: a response within 4 hours. Everyone else: depends on the type of job and how urgent it is.
+- **Quotations** are still free; Jag has not said otherwise.
+
+**Review lesson.** The fresh-context review caught a whole file the build session's greps had missed: `lib/agent-content.ts`, which feeds the MCP server and every `Accept: text/markdown` page. When a claim changes, check that file and `public/.well-known/` as well as the pages. It also caught "rapid response times" in the service-and-area template, Hornchurch "next-day surveys", FAQ questions that said "attend" over answers that said "response", and stale digests in `public/.well-known/agent-skills/index.json` (recompute with `shasum -a 256` whenever a SKILL.md changes; one was already wrong on main and was fixed too).
+
+**Email.** Wendy "now live" confirmation drafted once on the thread: draft `r-6385204077536785627`, not yet sent. It asks Jag one thing: whether the 4 hours means a response or an engineer on site.
+
+**Left as they are, logged not done.**
+- Survey timings in working days on the Romford, Brentwood and Upminster service-and-area FAQs ("within 1 to 3 working days", "24 to 48 hours of an enquiry").
+- "Quick emergency response" in the burglar alarm benefits list (`lib/data.ts`, `app/services/page.tsx`).
+- The homepage testimonial "Engineer arrived within 2 hours" (a customer quote, also in the Review schema).
+- The quote form's "we will call you within 2 hours during business hours".
+- `dateModified` was not bumped on the edited blog posts.
+- South-west pages still make no time promise.
+
+**Still open with Jag:** response or visit for the 4 hours; the Aico Expert Installer level.
+
+### 2026-10-11 (afternoon): the request and the first reply.
+
+**Superseded by the evening entry above: the reply below was sent at 15:33 UTC and the three changes were then built and shipped.**
 
 **Trigger.** Jag's reply of 2026-10-11 15:14 UTC (thread `1a0e714b643af248`, message `1a12b87c00a6afba`), answering the three items the 10 October acknowledgement left open:
 1. **Surveys.** Change "free same day surveys" to "free surveys depending on location and type of service required. If a fee is charged it will be a nominal fee which will be deducted from the final invoice".
